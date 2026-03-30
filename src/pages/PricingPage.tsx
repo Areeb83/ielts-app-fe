@@ -71,12 +71,12 @@ export function PricingPage() {
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
             <span className="text-sm font-medium">Simple, Transparent Pricing</span>
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Choose Your
             <span className="block text-orange-500">Learning Path</span>
           </h1>
-          
+
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Start free and upgrade when you're ready. All plans include access to our Cambridge IELTS test library.
           </p>
@@ -92,9 +92,8 @@ export function PricingPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative bg-white rounded-2xl shadow-lg overflow-hidden ${
-                  plan.popular ? 'ring-2 ring-orange-500 transform md:scale-105' : ''
-                }`}
+                className={`relative bg-white rounded-2xl shadow-lg overflow-hidden ${plan.popular ? 'ring-2 ring-orange-500 transform md:scale-105' : ''
+                  }`}
               >
                 {plan.popular && (
                   <div className="absolute top-0 right-0 bg-orange-500 text-white px-4 py-1 text-sm font-medium rounded-bl-lg">
@@ -104,9 +103,8 @@ export function PricingPage() {
 
                 <div className="p-8">
                   {/* Icon */}
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                    plan.popular ? 'bg-orange-500' : 'bg-gray-100'
-                  }`}>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${plan.popular ? 'bg-orange-500' : 'bg-gray-100'
+                    }`}>
                     <Icon className={`w-6 h-6 ${plan.popular ? 'text-white' : 'text-gray-600'}`} />
                   </div>
 
@@ -126,11 +124,10 @@ export function PricingPage() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full py-3 px-6 rounded-lg font-medium mb-8 transition-colors ${
-                      plan.popular
+                    className={`w-full py-3 px-6 rounded-lg font-medium mb-8 transition-colors ${plan.popular
                         ? 'bg-orange-500 text-white hover:bg-orange-600 shadow-lg'
                         : 'bg-gray-900 text-white hover:bg-gray-800'
-                    }`}
+                      }`}
                   >
                     {plan.cta}
                   </motion.button>
@@ -139,9 +136,8 @@ export function PricingPage() {
                   <div className="space-y-4">
                     {plan.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                          plan.popular ? 'bg-orange-100' : 'bg-gray-100'
-                        }`}>
+                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${plan.popular ? 'bg-orange-100' : 'bg-gray-100'
+                          }`}>
                           <Check className={`w-3 h-3 ${plan.popular ? 'text-orange-600' : 'text-gray-600'}`} />
                         </div>
                         <span className="text-gray-700 text-sm">{feature}</span>
@@ -213,7 +209,6 @@ export function PricingPage() {
         </motion.div>
       </div>
 
-      <Footer />
     </div>
   );
 }

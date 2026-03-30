@@ -1,10 +1,11 @@
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, GraduationCap, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const skills = [
   {
     title: 'Listening',
+    link: 'listening',
     description: 'Practice with authentic audio recordings and improve comprehension.',
     color: '#F97316',
     svg: (
@@ -46,6 +47,7 @@ const skills = [
   },
   {
     title: 'Reading',
+    link: 'reading',
     description: 'Enhance reading speed and accuracy with varied passages.',
     color: '#10B981',
     svg: (
@@ -80,6 +82,7 @@ const skills = [
   },
   {
     title: 'Writing',
+    link: 'writing',
     description: 'Master Task 1 and Task 2 with guided practice and feedback.',
     color: '#8B5CF6',
     svg: (
@@ -114,6 +117,7 @@ const skills = [
   },
   {
     title: 'Speaking',
+    link: 'speaking',
     description: 'Build confidence with simulated speaking tests and evaluation.',
     color: '#EF4444',
     svg: (
@@ -175,7 +179,7 @@ export function SkillsSection() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.title}
@@ -184,7 +188,7 @@ export function SkillsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="group relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all cursor-pointer border-2 border-gray-100 hover:border-orange-500"
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border-2 border-gray-100 hover:border-[#FF6900] flex flex-col"
             >
               {/* Icon */}
               <div className="mb-6 h-32">
@@ -194,17 +198,27 @@ export function SkillsSection() {
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {skill.title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+
+              <p className="text-gray-600 mb-8 leading-relaxed">
                 {skill.description}
               </p>
 
-              <Link 
-                to={`/${skill.title.toLowerCase()}`}
-                className="inline-flex items-center gap-2 text-orange-600 font-medium group-hover:gap-3 transition-all"
-              >
-                Practice Now
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+                <Link
+                  to={`/academic/${skill.link}`}
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-[#FF6900] text-white py-3.5 px-6 rounded-xl font-bold hover:bg-[#e55e00] transition-all shadow-md hover:shadow-lg active:scale-95"
+                >
+                  <GraduationCap className="w-5 h-5" />
+                  Academic
+                </Link>
+                <Link
+                  to={`/general/${skill.link}`}
+                  className="flex-1 inline-flex items-center justify-center gap-2 border-2 border-[#FF6900] text-[#FF6900] py-3.5 px-6 rounded-xl font-bold hover:bg-orange-50 transition-all active:scale-95"
+                >
+                  <Globe className="w-5 h-5" />
+                  General
+                </Link>
+              </div>
             </motion.div>
           ))}
         </div>

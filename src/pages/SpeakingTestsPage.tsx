@@ -1,10 +1,9 @@
-import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, Mic, Clock, BookOpen, ChevronDown, ChevronRight, Play, CheckCircle2, Award } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Mic, Clock, BookOpen, ChevronLeft, ChevronRight, GraduationCap, Globe } from 'lucide-react';
+import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import { motion } from 'motion/react';
 import { Footer } from '../components/Footer';
 
-// Mock data for completed tests with band scores
 const completedTests = {
   11: { 1: 6.5, 2: 7.0 },
   14: { 3: 8.0 },
@@ -23,318 +22,222 @@ const books = [
   { number: 19, tests: [1, 2, 3, 4] },
 ];
 
-function getBandColor(band: number) {
-  if (band >= 8.0) return 'text-green-600 bg-green-50 border-green-200';
-  if (band >= 7.0) return 'text-blue-600 bg-blue-50 border-blue-200';
-  if (band >= 6.0) return 'text-orange-600 bg-orange-50 border-orange-200';
-  return 'text-red-600 bg-red-50 border-red-200';
-}
-
 export function SpeakingTestsPage() {
-  const [expandedBook, setExpandedBook] = useState<number | null>(null);
+  const { examType } = useParams<{ examType: string }>();
+  const isAcademic = examType === 'academic';
+  const examLabel = isAcademic ? 'Academic' : 'General Training';
 
-  const toggleBook = (bookNumber: number) => {
-    setExpandedBook(expandedBook === bookNumber ? null : bookNumber);
-  };
+  const [currentPage, setCurrentPage] = useState(1);
+  const booksPerPage = 6;
 
   const getTestStatus = (bookNumber: number, testNumber: number) => {
     return completedTests[bookNumber as keyof typeof completedTests]?.[testNumber as 1 | 2 | 3 | 4];
   };
 
-  const getBookProgress = (bookNumber: number) => {
-    const bookTests = completedTests[bookNumber as keyof typeof completedTests];
-    if (!bookTests) return { completed: 0, total: 4 };
-    return { completed: Object.keys(bookTests).length, total: 4 };
-  };
+  const indexOfLastBook = currentPage * booksPerPage;
+  const indexOfFirstBook = indexOfLastBook - booksPerPage;
+  const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
+  const totalPages = Math.ceil(books.length / booksPerPage);
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-red-50 to-white">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-8"
-          >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-red-100 rounded-2xl mb-6">
-              <Mic className="w-10 h-10 text-red-600" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Speaking Practice Tests
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Choose from Cambridge IELTS books 11-19. Each book contains 4 authentic practice tests.
-            </p>
-          </motion.div>
+      <section className="relative overflow-hidden py-12 md:py-20 bg-gradient-to-br from-red-100 to-white">
+        <div className="page-container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-2xl">
+                  <Mic className="w-8 h-8 text-red-500" />
+                </div>
+                <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold ${
+                  isAcademic
+                    ? 'bg-red-100 text-red-600 border border-red-200'
+                    : 'bg-gray-100 text-gray-700 border border-gray-200'
+                }`}>
+                  {isAcademic ? <GraduationCap className="w-4 h-4" /> : <Globe className="w-4 h-4" />}
+                  {examLabel}
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Speaking
+                <span className="block text-red-500">Practice Tests</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Choose from Cambridge IELTS books 11-19. Each book contains 4 authentic practice tests.
+              </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-6 mb-8"
-          >
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <BookOpen className="w-5 h-5 text-red-600" />
-              <div>
-                <div className="font-semibold text-gray-900">9 Books</div>
-                <div className="text-sm text-gray-600">Cambridge IELTS</div>
+              <div className="flex flex-wrap gap-4 mb-8">
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-red-100">
+                  <BookOpen className="w-6 h-6 text-red-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">9 Books</div>
+                    <div className="text-sm text-gray-600">Cambridge IELTS</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-red-100">
+                  <Mic className="w-6 h-6 text-red-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">36 Tests</div>
+                    <div className="text-sm text-gray-600">Total available</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-red-100">
+                  <Clock className="w-6 h-6 text-red-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">11-14 mins</div>
+                    <div className="text-sm text-gray-600">Per test</div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <Mic className="w-5 h-5 text-red-600" />
-              <div>
-                <div className="font-semibold text-gray-900">36 Tests</div>
-                <div className="text-sm text-gray-600">Total available</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <Clock className="w-5 h-5 text-red-600" />
-              <div>
-                <div className="font-semibold text-gray-900">11-14 mins</div>
-                <div className="text-sm text-gray-600">Per test</div>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+
+            {/* Right illustration */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="relative"
+            >
+              <svg viewBox="0 0 120 120" fill="none" className="w-full max-w-lg mx-auto drop-shadow-2xl">
+                <circle cx="60" cy="60" r="50" fill="#FEF2F2" />
+                {/* Person head */}
+                <circle cx="60" cy="55" r="18" fill="#FDBA74" />
+                <path d="M48 50 Q60 40 72 50" fill="#1F2937" />
+                <circle cx="54" cy="55" r="2" fill="#1F2937" />
+                <circle cx="66" cy="55" r="2" fill="#1F2937" />
+                {/* Mouth */}
+                <motion.path
+                  d="M52 62 Q60 66 68 62"
+                  stroke="#1F2937"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                  animate={{ d: ["M52 62 Q60 66 68 62", "M52 64 Q60 68 68 64", "M52 62 Q60 66 68 62"] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                />
+                {/* Microphone */}
+                <motion.g
+                  animate={{ y: [0, -2, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <rect x="75" y="55" width="10" height="18" rx="5" fill="#EF4444" />
+                  <path d="M70 73 Q80 78 90 73" stroke="#EF4444" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  <line x1="80" y1="73" x2="80" y2="78" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" />
+                </motion.g>
+                {/* Sound waves */}
+                <motion.g
+                  animate={{ opacity: [0.3, 1, 0.3] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  <path d="M35 50 Q30 55 35 60" stroke="#EF4444" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  <path d="M28 45 Q20 55 28 65" stroke="#EF4444" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </motion.g>
+              </svg>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Accordion List */}
-      <section className="px-6 py-12 md:py-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="space-y-4">
-            {books.map((book, index) => {
-              const isExpanded = expandedBook === book.number;
-              const progress = getBookProgress(book.number);
-              const hasProgress = progress.completed > 0;
-
-              return (
-                <motion.div
-                  key={book.number}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden"
-                >
-                  {/* Accordion Header */}
-                  <button
-                    onClick={() => toggleBook(book.number)}
-                    className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="flex items-center gap-4">
-                      {/* Book Icon */}
-                      <div className="relative flex-shrink-0">
-                        <div className="w-14 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-lg shadow-md flex items-center justify-center">
-                          <span className="text-white font-bold text-xl">{book.number}</span>
-                        </div>
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
-                          <Mic className="w-3 h-3 text-red-600" />
-                        </div>
+      <section className="py-12 md:py-16">
+        <div className="page-container">
+          <div className="space-y-10">
+            <div className="grid gap-8">
+              {currentBooks.map((book, index) => (
+                <motion.div key={book.number} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.05 }} className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden p-6">
+                  <div className="flex items-start gap-6 mb-6">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-14 h-16 bg-red-500 rounded-lg shadow-md flex items-center justify-center">
+                        <span className="text-white font-bold text-xl">{book.number}</span>
                       </div>
-
-                      {/* Book Info */}
-                      <div className="text-left">
-                        <h3 className="text-xl font-bold text-gray-900 mb-1">
-                          Cambridge IELTS {book.number}
-                        </h3>
-                        <div className="flex items-center gap-4 text-sm text-gray-600">
-                          <span className="flex items-center gap-1">
-                            <BookOpen className="w-4 h-4" />
-                            4 Tests
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            11-14 min each
-                          </span>
-                        </div>
+                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
+                        <Mic className="w-3 h-3 text-red-500" />
                       </div>
                     </div>
-
-                    <div className="flex items-center gap-4">
-                      {/* Progress Badge */}
-                      {hasProgress && (
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          animate={{ scale: 1 }}
-                          className="flex items-center gap-2 px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg"
-                        >
-                          <CheckCircle2 className="w-4 h-4 text-green-600" />
-                          <span className="text-sm font-medium text-green-700">
-                            {progress.completed}/{progress.total} completed
-                          </span>
-                        </motion.div>
-                      )}
-
-                      {/* Expand Icon */}
-                      <motion.div
-                        animate={{ rotate: isExpanded ? 180 : 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        <ChevronDown className="w-6 h-6 text-gray-400" />
-                      </motion.div>
+                    <div className="text-left">
+                      <h2 className="text-2xl font-bold text-gray-900 mb-2">Cambridge IELTS {book.number}</h2>
+                      <div className="flex items-center gap-4 text-sm text-gray-600">
+                        <span className="flex items-center gap-1"><BookOpen className="w-4 h-4 text-red-500" />4 Tests</span>
+                        <span className="flex items-center gap-1"><Clock className="w-4 h-4 text-red-500" />11-14 min each</span>
+                      </div>
                     </div>
-                  </button>
-
-                  {/* Accordion Content */}
-                  <AnimatePresence>
-                    {isExpanded && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-6 pb-6 pt-2 border-t border-gray-100">
-                          <div className="space-y-3">
-                            {book.tests.map((test, testIndex) => {
-                              const bandScore = getTestStatus(book.number, test);
-                              const isCompleted = !!bandScore;
-
-                              return (
-                                <motion.div
-                                  key={test}
-                                  initial={{ opacity: 0, x: -20 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: testIndex * 0.1 }}
-                                >
-                                  <button
-                                    className="w-full group bg-gray-50 hover:bg-red-50 border-2 border-gray-100 hover:border-red-500 rounded-xl p-4 transition-all"
-                                  >
-                                    <div className="flex items-center justify-between">
-                                      <div className="flex items-center gap-4">
-                                        {/* Test Icon */}
-                                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
-                                          isCompleted 
-                                            ? 'bg-green-100 text-green-600' 
-                                            : 'bg-white border-2 border-gray-200 text-gray-600 group-hover:border-red-500 group-hover:text-red-600'
-                                        }`}>
-                                          {isCompleted ? (
-                                            <CheckCircle2 className="w-6 h-6" />
-                                          ) : (
-                                            <Play className="w-5 h-5" />
-                                          )}
-                                        </div>
-
-                                        {/* Test Info */}
-                                        <div className="text-left">
-                                          <div className="font-semibold text-gray-900 mb-1">
-                                            Speaking Test {test}
-                                          </div>
-                                          <div className="text-sm text-gray-600 flex items-center gap-2">
-                                            <span>3 Parts</span>
-                                            <span className="w-1 h-1 rounded-full bg-gray-400"></span>
-                                            <span>Interview Format</span>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div className="flex items-center gap-3">
-                                        {/* Band Score Badge */}
-                                        {isCompleted && bandScore && (
-                                          <motion.div
-                                            initial={{ scale: 0 }}
-                                            animate={{ scale: 1 }}
-                                            className={`flex items-center gap-2 px-4 py-2 border-2 rounded-lg ${getBandColor(bandScore)}`}
-                                          >
-                                            <Award className="w-4 h-4" />
-                                            <span className="font-bold">Band {bandScore}</span>
-                                          </motion.div>
-                                        )}
-
-                                        {/* Action Button */}
-                                        <div className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                                          isCompleted
-                                            ? 'bg-white text-red-600 border-2 border-red-500'
-                                            : 'bg-red-500 text-white group-hover:bg-red-600'
-                                        }`}>
-                                          {isCompleted ? 'Retake' : 'Start Test'}
-                                        </div>
-
-                                        <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" />
-                                      </div>
-                                    </div>
-                                  </button>
-                                </motion.div>
-                              );
-                            })}
-                          </div>
-
-                          {/* Book Footer Stats */}
-                          <div className="mt-4 pt-4 border-t border-gray-100">
-                            <div className="flex items-center justify-between text-sm">
-                              <div className="text-gray-600">
-                                {hasProgress 
-                                  ? `You've completed ${progress.completed} out of ${progress.total} tests in this book`
-                                  : 'Start your first test to track your progress'
-                                }
+                  </div>
+                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                    {book.tests.map((test) => {
+                      const bandScore = getTestStatus(book.number, test);
+                      const isCompleted = typeof bandScore === 'number';
+                      const percent = isCompleted ? Math.max(0, Math.min(100, Math.round((bandScore / 9) * 100))) : 0;
+                      const r = 45;
+                      const circumference = 2 * Math.PI * r;
+                      const dashOffset = circumference * (1 - percent / 100);
+                      const ringStrokeClass = isCompleted ? 'text-red-400' : 'text-gray-400';
+                      return (
+                        <div key={test} className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all p-4">
+                          <div className="text-left"><div className="font-semibold text-gray-900">Speaking Test {test}</div></div>
+                          <div className="mt-6 flex items-center justify-center">
+                            <div className="relative w-28 h-28">
+                              <svg className="absolute inset-0" viewBox="0 0 100 100" aria-hidden>
+                                <circle cx="50" cy="50" r={r} stroke="currentColor" strokeWidth="10" fill="none" className="text-gray-200" />
+                                <circle cx="50" cy="50" r={r} stroke="currentColor" strokeWidth="10" strokeLinecap="round" fill="none" className={ringStrokeClass} strokeDasharray={circumference} strokeDashoffset={dashOffset} style={{ transition: 'stroke-dashoffset 300ms ease' }} transform="rotate(-90 50 50)" />
+                              </svg>
+                              <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                                {isCompleted && bandScore ? <div className="text-lg font-bold text-gray-900">{bandScore}</div> : <><div className="text-lg font-bold text-gray-700">0%</div><div className="text-xs text-gray-500 mt-0.5">Not taken</div></>}
                               </div>
-                              {hasProgress && (
-                                <div className="flex items-center gap-2">
-                                  <div className="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <motion.div
-                                      initial={{ width: 0 }}
-                                      animate={{ width: `${(progress.completed / progress.total) * 100}%` }}
-                                      transition={{ duration: 0.5, delay: 0.3 }}
-                                      className="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full"
-                                    />
-                                  </div>
-                                  <span className="font-medium text-gray-700">
-                                    {Math.round((progress.completed / progress.total) * 100)}%
-                                  </span>
-                                </div>
-                              )}
                             </div>
                           </div>
+                          <div className="mt-5 flex flex-col gap-2">
+                            <button type="button" className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted ? 'bg-white text-red-500 border-red-400 hover:bg-red-50' : 'bg-red-500 text-white border-red-500 hover:bg-red-600'}`}>
+                              {isCompleted ? 'Retake' : 'Start Test'}
+                            </button>
+                            {isCompleted && <button type="button" className="w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 border-gray-200 text-gray-700 hover:bg-gray-50">Review</button>}
+                          </div>
                         </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                      );
+                    })}
+                  </div>
                 </motion.div>
-              );
-            })}
+              ))}
+            </div>
+
+            <div className="flex justify-center items-center gap-4 mt-12">
+              <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className={`p-2 rounded-lg border-2 transition-all ${currentPage === 1 ? 'border-gray-100 text-gray-300 cursor-not-allowed' : 'border-red-100 text-red-500 hover:bg-red-50 hover:border-red-400'}`}>
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <div className="flex gap-2">
+                {[...Array(totalPages)].map((_, i) => (
+                  <button key={i + 1} onClick={() => setCurrentPage(i + 1)} className={`w-12 h-12 rounded-xl font-bold transition-all border-2 ${currentPage === i + 1 ? 'bg-red-500 text-white border-red-500 shadow-md scale-110' : 'bg-white text-gray-600 border-gray-100 hover:border-red-400 hover:text-red-500'}`}>
+                    {i + 1}
+                  </button>
+                ))}
+              </div>
+              <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className={`p-2 rounded-lg border-2 transition-all ${currentPage === totalPages ? 'border-gray-100 text-gray-300 cursor-not-allowed' : 'border-red-100 text-red-500 hover:bg-red-50 hover:border-red-400'}`}>
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            </div>
           </div>
 
-          {/* Info Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="mt-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">About IELTS Speaking Tests</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  The Speaking test is a face-to-face interview that lasts 11-14 minutes. It consists of three parts and assesses your spoken English skills.
-                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">The Speaking test is a face-to-face interview that lasts 11-14 minutes. It consists of three parts and assesses your spoken English skills.</p>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                    <span><strong>Part 1 (4-5 mins):</strong> Introduction and interview on familiar topics like home, family, work, or studies</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                    <span><strong>Part 2 (3-4 mins):</strong> Individual long turn where you speak about a specific topic for 1-2 minutes</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                    <span><strong>Part 3 (4-5 mins):</strong> Two-way discussion on more abstract ideas related to Part 2 topic</span>
-                  </li>
+                  <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" /><span><strong>Part 1 (4-5 mins):</strong> Introduction and interview on familiar topics like home, family, work, or studies</span></li>
+                  <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" /><span><strong>Part 2 (3-4 mins):</strong> Individual long turn where you speak about a specific topic for 1-2 minutes</span></li>
+                  <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" /><span><strong>Part 3 (4-5 mins):</strong> Two-way discussion on more abstract ideas related to Part 2 topic</span></li>
                 </ul>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

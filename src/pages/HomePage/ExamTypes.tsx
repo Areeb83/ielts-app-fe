@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function ExamTypes() {
   return (
@@ -13,10 +14,10 @@ export function ExamTypes() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Choose Your Exam Type
+            Mock Tests by Full Test Sets
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Select the path that matches your goals
+            Take IELTS practice tests online with Cambridge
           </p>
         </motion.div>
 
@@ -91,10 +92,10 @@ export function ExamTypes() {
               </li>
             </ul>
 
-            <button className="inline-flex items-center gap-2 text-orange-600 font-medium group-hover:gap-3 transition-all">
+            <Link to="/academic" className="inline-flex items-center gap-2 text-orange-600 font-medium group-hover:gap-3 transition-all">
               Start Academic Practice
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </motion.div>
 
           {/* General IELTS */}
@@ -170,10 +171,10 @@ export function ExamTypes() {
               </li>
             </ul>
 
-            <button className="inline-flex items-center gap-2 text-orange-600 font-medium group-hover:gap-3 transition-all">
+            <Link to="/general" className="inline-flex items-center gap-2 text-orange-600 font-medium group-hover:gap-3 transition-all">
               Start General Practice
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

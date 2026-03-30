@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import { HeroIllustration } from './illustrations/HeroIllustration';
+import { HeroIllustration } from '../../components/illustrations/HeroIllustration';
 
 export function Hero() {
   return (

@@ -1,300 +1,385 @@
+
+import { Headphones, Clock, BookOpen, ChevronLeft, ChevronRight, GraduationCap, Globe, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
+import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, Headphones, Clock, BookOpen, ChevronDown, ChevronRight, Play, CheckCircle2, Award } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { Footer } from '../components/Footer';
-
-// Mock data for completed tests with band scores
-const completedTests = {
-  11: { 1: 7.5, 3: 6.5 },
-  12: { 2: 8.0 },
-  15: { 1: 7.0, 4: 7.5 },
-};
-
-const books = [
-  { number: 11, tests: [1, 2, 3, 4] },
-  { number: 12, tests: [1, 2, 3, 4] },
-  { number: 13, tests: [1, 2, 3, 4] },
-  { number: 14, tests: [1, 2, 3, 4] },
-  { number: 15, tests: [1, 2, 3, 4] },
-  { number: 16, tests: [1, 2, 3, 4] },
-  { number: 17, tests: [1, 2, 3, 4] },
-  { number: 18, tests: [1, 2, 3, 4] },
-  { number: 19, tests: [1, 2, 3, 4] },
-];
-
-function getBandColor(band: number) {
-  if (band >= 8.0) return 'text-green-600 bg-green-50 border-green-200';
-  if (band >= 7.0) return 'text-blue-600 bg-blue-50 border-blue-200';
-  if (band >= 6.0) return 'text-orange-600 bg-orange-50 border-orange-200';
-  return 'text-red-600 bg-red-50 border-red-200';
-}
+import { useListeningBooks } from '../hooks';
+import type { TestData } from '../api/types';
 
 export function ListeningTestsPage() {
-  const [expandedBook, setExpandedBook] = useState<number | null>(null);
+  const { examType } = useParams<{ examType: string }>();
+  const isAcademic = examType === 'academic';
+  const examLabel = isAcademic ? 'Academic' : 'General Training';
 
-  const toggleBook = (bookNumber: number) => {
-    setExpandedBook(expandedBook === bookNumber ? null : bookNumber);
-  };
+  // ─── Fetch data via API hook ──────────────────────────────────────────
+  const {
+    books,
+    stats,
+    pagination,
+    loading,
+    error,
+    currentPage,
+    changePage,
+    refetch,
+  } = useListeningBooks((examType as 'academic' | 'general') || 'academic', 6);
 
-  const getTestStatus = (bookNumber: number, testNumber: number) => {
-    return completedTests[bookNumber as keyof typeof completedTests]?.[testNumber as 1 | 2 | 3 | 4];
-  };
+  const totalPages = pagination?.totalPages ?? 1;
 
-  const getBookProgress = (bookNumber: number) => {
-    const bookTests = completedTests[bookNumber as keyof typeof completedTests];
-    if (!bookTests) return { completed: 0, total: 4 };
-    return { completed: Object.keys(bookTests).length, total: 4 };
+  // ─── Helper: get band score from API data ─────────────────────────────
+  const getTestResult = (test: TestData) => {
+    if (test.status === 'completed' && test.result) {
+      return test.result;
+    }
+    return null;
   };
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-orange-50 to-white">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-8"
-          >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-2xl mb-6">
-              <Headphones className="w-10 h-10 text-orange-500" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Listening Practice Tests
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Choose from Cambridge IELTS books 11-19. Each book contains 4 authentic practice tests.
-            </p>
-          </motion.div>
+      <section className="relative overflow-hidden py-12 md:py-20 bg-gradient-to-br from-orange-50 to-white">
+        <div className="page-container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-2xl">
+                  <Headphones className="w-8 h-8 text-orange-500" />
+                </div>
+                <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold ${
+                  isAcademic
+                    ? 'bg-orange-100 text-orange-700 border border-orange-200'
+                    : 'bg-gray-100 text-gray-700 border border-gray-200'
+                }`}>
+                  {isAcademic ? <GraduationCap className="w-4 h-4" /> : <Globe className="w-4 h-4" />}
+                  {examLabel}
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Listening
+                <span className="block text-orange-500">Practice Tests</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Choose from Cambridge IELTS books 11-19. Each book contains 4 authentic practice tests.
+              </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-6 mb-8"
-          >
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <BookOpen className="w-5 h-5 text-orange-500" />
-              <div>
-                <div className="font-semibold text-gray-900">9 Books</div>
-                <div className="text-sm text-gray-600">Cambridge IELTS</div>
+              {/* Stats from API */}
+              <div className="flex flex-wrap gap-4 mb-8">
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-orange-100">
+                  <BookOpen className="w-6 h-6 text-orange-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">
+                      {stats?.totalBooks ?? '—'} Books
+                    </div>
+                    <div className="text-sm text-gray-600">Cambridge IELTS</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-orange-100">
+                  <Headphones className="w-6 h-6 text-orange-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">
+                      {stats?.totalTests ?? '—'} Tests
+                    </div>
+                    <div className="text-sm text-gray-600">Total available</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-orange-100">
+                  <Clock className="w-6 h-6 text-orange-500" />
+                  <div>
+                    <div className="font-bold text-lg text-gray-900">~30 mins</div>
+                    <div className="text-sm text-gray-600">Per test</div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <Headphones className="w-5 h-5 text-orange-500" />
-              <div>
-                <div className="font-semibold text-gray-900">36 Tests</div>
-                <div className="text-sm text-gray-600">Total available</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm">
-              <Clock className="w-5 h-5 text-orange-500" />
-              <div>
-                <div className="font-semibold text-gray-900">~30 mins</div>
-                <div className="text-sm text-gray-600">Per test</div>
-              </div>
-            </div>
-          </motion.div>
+
+              {/* Completion stats from API */}
+              {stats && stats.completedTests > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="inline-flex items-center gap-3 px-5 py-3 bg-green-50 border border-green-200 rounded-xl text-sm"
+                >
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                  <span className="text-green-800 font-medium">
+                    {stats.completedTests} of {stats.totalTests} completed
+                    {stats.averageBandScore && ` · Avg band: ${stats.averageBandScore}`}
+                  </span>
+                </motion.div>
+              )}
+            </motion.div>
+
+            {/* Right illustration */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="relative"
+            >
+              <svg viewBox="0 0 120 120" fill="none" className="w-full max-w-lg mx-auto drop-shadow-2xl">
+                <circle cx="60" cy="60" r="50" fill="#FFF7ED" />
+                {/* Headphones */}
+                <motion.g
+                  animate={{ y: [0, -3, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <path d="M35 50 Q35 30 60 30 Q85 30 85 50" stroke="#F97316" strokeWidth="6" strokeLinecap="round" fill="none" />
+                  <rect x="30" y="48" width="12" height="20" rx="4" fill="#F97316" />
+                  <rect x="78" y="48" width="12" height="20" rx="4" fill="#F97316" />
+                  {/* Sound waves */}
+                  <motion.path
+                    d="M95 45 Q100 50 95 55"
+                    stroke="#F97316"
+                    strokeWidth="2"
+                    fill="none"
+                    initial={{ opacity: 0.3 }}
+                    animate={{ opacity: [0.3, 1, 0.3], x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  />
+                  <motion.path
+                    d="M100 40 Q108 50 100 60"
+                    stroke="#F97316"
+                    strokeWidth="2"
+                    fill="none"
+                    initial={{ opacity: 0.3 }}
+                    animate={{ opacity: [0.3, 1, 0.3], x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, delay: 0.3 }}
+                  />
+                </motion.g>
+                {/* Person's head */}
+                <circle cx="60" cy="75" r="15" fill="#FDBA74" />
+                <path d="M50 70 Q60 60 70 70" fill="#1F2937" />
+              </svg>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Accordion List */}
-      <section className="px-6 py-12 md:py-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="space-y-4">
-            {books.map((book, index) => {
-              const isExpanded = expandedBook === book.number;
-              const progress = getBookProgress(book.number);
-              const hasProgress = progress.completed > 0;
+      {/* Test Cards */}
+      <section className="py-12 md:py-16">
+        <div className="page-container">
+          {/* ── Loading State ──────────────────────────────────────────────── */}
+          {loading && (
+            <div className="flex flex-col items-center justify-center py-24 gap-4">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+              >
+                <Loader2 className="w-10 h-10 text-orange-500" />
+              </motion.div>
+              <p className="text-gray-500 font-medium">Loading practice tests...</p>
+            </div>
+          )}
 
-              return (
-                <motion.div
-                  key={book.number}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden"
-                >
-                  {/* Accordion Header */}
+          {/* ── Error State ───────────────────────────────────────────────── */}
+          {error && !loading && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex flex-col items-center justify-center py-24 gap-5"
+            >
+              <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center">
+                <AlertCircle className="w-8 h-8 text-red-500" />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Something went wrong</h3>
+                <p className="text-gray-500 max-w-md">{error}</p>
+              </div>
+              <button
+                onClick={refetch}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-medium hover:bg-orange-600 transition-colors"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Try Again
+              </button>
+            </motion.div>
+          )}
+
+          {/* ── Data State ────────────────────────────────────────────────── */}
+          {!loading && !error && (
+            <div className="space-y-10">
+              <div className="grid gap-8">
+                <AnimatePresence mode="wait">
+                  {books.map((book, index) => (
+                    <motion.div
+                      key={book.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      transition={{ duration: 0.5, delay: index * 0.05 }}
+                      className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden p-6"
+                    >
+                      <div className="flex items-start gap-6 mb-6">
+                        <div className="relative flex-shrink-0">
+                          <div className="w-14 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg shadow-md flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">{book.number}</span>
+                          </div>
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
+                            <Headphones className="w-3 h-3 text-orange-600" />
+                          </div>
+                        </div>
+
+                        <div className="text-left">
+                          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                            {book.title}
+                          </h2>
+                          <div className="flex items-center gap-4 text-sm text-gray-600">
+                            <span className="flex items-center gap-1">
+                              <BookOpen className="w-4 h-4" />
+                              {book.totalTests} Tests
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Clock className="w-4 h-4" />
+                              ~30 min each
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                        {book.tests.map((test) => {
+                          const result = getTestResult(test);
+                          const isCompleted = !!result;
+                          const bandScore = result?.bandScore ?? 0;
+
+                          const percent = isCompleted ? Math.max(0, Math.min(100, Math.round((bandScore / 9) * 100))) : 0;
+                          const r = 45;
+                          const circumference = 2 * Math.PI * r;
+                          const dashOffset = circumference * (1 - percent / 100);
+                          const ringStrokeClass = isCompleted ? 'text-orange-500' : 'text-gray-400';
+
+                          return (
+                            <div
+                              key={test.id}
+                              className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm hover:shadow-md transition-all p-4"
+                            >
+                              <div className="text-left">
+                                <div className="font-semibold text-gray-900">
+                                  Listening Test {test.testNumber}
+                                </div>
+                                {isCompleted && (
+                                  <div className="text-xs text-gray-400 mt-1">
+                                    {result.correctAnswers}/{result.totalQuestions} correct
+                                  </div>
+                                )}
+                              </div>
+
+                              <div className="mt-6 flex items-center justify-center">
+                                <div className="relative w-28 h-28">
+                                  <svg className="absolute inset-0" viewBox="0 0 100 100" aria-hidden>
+                                    <circle
+                                      cx="50"
+                                      cy="50"
+                                      r={r}
+                                      stroke="currentColor"
+                                      strokeWidth="10"
+                                      fill="none"
+                                      className="text-gray-200"
+                                    />
+                                    <circle
+                                      cx="50"
+                                      cy="50"
+                                      r={r}
+                                      stroke="currentColor"
+                                      strokeWidth="10"
+                                      strokeLinecap="round"
+                                      fill="none"
+                                      className={ringStrokeClass}
+                                      strokeDasharray={circumference}
+                                      strokeDashoffset={dashOffset}
+                                      style={{ transition: 'stroke-dashoffset 600ms ease' }}
+                                      transform="rotate(-90 50 50)"
+                                    />
+                                  </svg>
+
+                                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                                    {isCompleted ? (
+                                      <div className="text-lg font-bold text-gray-900">
+                                        {bandScore}
+                                      </div>
+                                    ) : (
+                                      <>
+                                        <div className="text-lg font-bold text-gray-700">0%</div>
+                                        <div className="text-xs text-gray-500 mt-0.5">Not taken</div>
+                                      </>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="mt-5 flex flex-col gap-2">
+                                <button
+                                  type="button"
+                                  className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted
+                                    ? 'bg-white text-orange-600 border-orange-500 hover:bg-orange-50'
+                                    : 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'
+                                    }`}
+                                >
+                                  {isCompleted ? 'Retake' : 'Start Test'}
+                                </button>
+
+                                {isCompleted && (
+                                  <button
+                                    type="button"
+                                    className="w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 border-gray-200 text-gray-700 hover:bg-gray-50"
+                                  >
+                                    Review
+                                  </button>
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </div>
+
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center gap-4 mt-12">
                   <button
-                    onClick={() => toggleBook(book.number)}
-                    className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                    onClick={() => changePage(Math.max(1, currentPage - 1))}
+                    disabled={currentPage === 1}
+                    className={`p-2 rounded-lg border-2 transition-all ${currentPage === 1
+                      ? 'border-gray-100 text-gray-300 cursor-not-allowed'
+                      : 'border-orange-100 text-orange-600 hover:bg-orange-50 hover:border-orange-500'
+                      }`}
                   >
-                    <div className="flex items-center gap-4">
-                      {/* Book Icon */}
-                      <div className="relative flex-shrink-0">
-                        <div className="w-14 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg shadow-md flex items-center justify-center">
-                          <span className="text-white font-bold text-xl">{book.number}</span>
-                        </div>
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
-                          <Headphones className="w-3 h-3 text-orange-600" />
-                        </div>
-                      </div>
-
-                      {/* Book Info */}
-                      <div className="text-left">
-                        <h3 className="text-xl font-bold text-gray-900 mb-1">
-                          Cambridge IELTS {book.number}
-                        </h3>
-                        <div className="flex items-center gap-4 text-sm text-gray-600">
-                          <span className="flex items-center gap-1">
-                            <BookOpen className="w-4 h-4" />
-                            4 Tests
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            ~30 min each
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                      {/* Progress Badge */}
-                      {hasProgress && (
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          animate={{ scale: 1 }}
-                          className="flex items-center gap-2 px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg"
-                        >
-                          <CheckCircle2 className="w-4 h-4 text-green-600" />
-                          <span className="text-sm font-medium text-green-700">
-                            {progress.completed}/{progress.total} completed
-                          </span>
-                        </motion.div>
-                      )}
-
-                      {/* Expand Icon */}
-                      <motion.div
-                        animate={{ rotate: isExpanded ? 180 : 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        <ChevronDown className="w-6 h-6 text-gray-400" />
-                      </motion.div>
-                    </div>
+                    <ChevronLeft className="w-6 h-6" />
                   </button>
 
-                  {/* Accordion Content */}
-                  <AnimatePresence>
-                    {isExpanded && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
+                  <div className="flex gap-2">
+                    {[...Array(totalPages)].map((_, i) => (
+                      <button
+                        key={i + 1}
+                        onClick={() => changePage(i + 1)}
+                        className={`w-12 h-12 rounded-xl font-bold transition-all border-2 ${currentPage === i + 1
+                          ? 'bg-orange-500 text-white border-orange-500 shadow-md scale-110'
+                          : 'bg-white text-gray-600 border-gray-100 hover:border-orange-500 hover:text-orange-600'
+                          }`}
                       >
-                        <div className="px-6 pb-6 pt-2 border-t border-gray-100">
-                          <div className="space-y-3">
-                            {book.tests.map((test, testIndex) => {
-                              const bandScore = getTestStatus(book.number, test);
-                              const isCompleted = !!bandScore;
+                        {i + 1}
+                      </button>
+                    ))}
+                  </div>
 
-                              return (
-                                <motion.div
-                                  key={test}
-                                  initial={{ opacity: 0, x: -20 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: testIndex * 0.1 }}
-                                >
-                                  <button
-                                    className="w-full group bg-gray-50 hover:bg-orange-50 border-2 border-gray-100 hover:border-orange-500 rounded-xl p-4 transition-all"
-                                  >
-                                    <div className="flex items-center justify-between">
-                                      <div className="flex items-center gap-4">
-                                        {/* Test Icon */}
-                                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
-                                          isCompleted 
-                                            ? 'bg-green-100 text-green-600' 
-                                            : 'bg-white border-2 border-gray-200 text-gray-600 group-hover:border-orange-500 group-hover:text-orange-600'
-                                        }`}>
-                                          {isCompleted ? (
-                                            <CheckCircle2 className="w-6 h-6" />
-                                          ) : (
-                                            <Play className="w-5 h-5" />
-                                          )}
-                                        </div>
-
-                                        {/* Test Info */}
-                                        <div className="text-left">
-                                          <div className="font-semibold text-gray-900 mb-1">
-                                            Listening Test {test}
-                                          </div>
-                                          <div className="text-sm text-gray-600 flex items-center gap-2">
-                                            <span>40 Questions</span>
-                                            <span className="w-1 h-1 rounded-full bg-gray-400"></span>
-                                            <span>4 Sections</span>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div className="flex items-center gap-3">
-                                        {/* Band Score Badge */}
-                                        {isCompleted && bandScore && (
-                                          <motion.div
-                                            initial={{ scale: 0 }}
-                                            animate={{ scale: 1 }}
-                                            className={`flex items-center gap-2 px-4 py-2 border-2 rounded-lg ${getBandColor(bandScore)}`}
-                                          >
-                                            <Award className="w-4 h-4" />
-                                            <span className="font-bold">Band {bandScore}</span>
-                                          </motion.div>
-                                        )}
-
-                                        {/* Action Button */}
-                                        <div className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                                          isCompleted
-                                            ? 'bg-white text-orange-600 border-2 border-orange-500'
-                                            : 'bg-orange-500 text-white group-hover:bg-orange-600'
-                                        }`}>
-                                          {isCompleted ? 'Retake' : 'Start Test'}
-                                        </div>
-
-                                        <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-orange-500 transition-colors" />
-                                      </div>
-                                    </div>
-                                  </button>
-                                </motion.div>
-                              );
-                            })}
-                          </div>
-
-                          {/* Book Footer Stats */}
-                          <div className="mt-4 pt-4 border-t border-gray-100">
-                            <div className="flex items-center justify-between text-sm">
-                              <div className="text-gray-600">
-                                {hasProgress 
-                                  ? `You've completed ${progress.completed} out of ${progress.total} tests in this book`
-                                  : 'Start your first test to track your progress'
-                                }
-                              </div>
-                              {hasProgress && (
-                                <div className="flex items-center gap-2">
-                                  <div className="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <motion.div
-                                      initial={{ width: 0 }}
-                                      animate={{ width: `${(progress.completed / progress.total) * 100}%` }}
-                                      transition={{ duration: 0.5, delay: 0.3 }}
-                                      className="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full"
-                                    />
-                                  </div>
-                                  <span className="font-medium text-gray-700">
-                                    {Math.round((progress.completed / progress.total) * 100)}%
-                                  </span>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              );
-            })}
-          </div>
+                  <button
+                    onClick={() => changePage(Math.min(totalPages, currentPage + 1))}
+                    disabled={currentPage === totalPages}
+                    className={`p-2 rounded-lg border-2 transition-all ${currentPage === totalPages
+                      ? 'border-gray-100 text-gray-300 cursor-not-allowed'
+                      : 'border-orange-100 text-orange-600 hover:bg-orange-50 hover:border-orange-500'
+                      }`}
+                  >
+                    <ChevronRight className="w-6 h-6" />
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Info Card */}
           <motion.div
@@ -337,8 +422,6 @@ export function ListeningTestsPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
