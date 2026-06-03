@@ -1,0 +1,495 @@
+{
+  "testId": "book-13-test-2",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Listening Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "South City Cycling Club",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Membership" }] },
+              { "content": ["Example — Name of club secretary: ", { "type": "bold", "text": "Jim Hunter" }] },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• Full membership costs $260; this covers cycling and ",
+                  { "id": "1", "type": "input" },
+                  " all over Australia"
+                ]
+              },
+              { "content": ["• Recreational membership costs $108"] },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• Cost of membership includes the club fee and ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• The club kit is made by a company called ",
+                  { "id": "3", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 4,
+          "endQuestion": 6,
+          "hideRange": true,
+          "data": {
+            "title": "Training rides",
+            "sentences": [
+              { "content": ["• Chance to improve cycling skills and fitness"] },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "• Level B: speed about ",
+                  { "id": "4", "type": "input" },
+                  " kph"
+                ]
+              },
+              { "content": ["• Weekly sessions"] },
+              {
+                "questionNumber": 5,
+                "content": [
+                  " - Tuesdays at 5.30 am, meet at the ",
+                  { "id": "5", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 6,
+                "content": [
+                  " - Thursdays at 5.30 am, meet at the entrance to the ",
+                  { "id": "6", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Further information",
+            "sentences": [
+              { "content": ["• Rides are about an hour and a half"] },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "• Members often have ",
+                  { "id": "7", "type": "input" },
+                  " together afterwards"
+                ]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "• There is not always a ",
+                  { "id": "8", "type": "input" },
+                  " with the group on these rides"
+                ]
+              },
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• Check and print the ",
+                  { "id": "9", "type": "input" },
+                  " on the website beforehand"
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• Bikes must have ",
+                  { "id": "10", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "Information on company volunteering projects",
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "How much time for volunteering does the company allow per employee?",
+                "options": [
+                  { "letter": "A", "text": "two hours per week" },
+                  { "letter": "B", "text": "one day per month" },
+                  { "letter": "C", "text": "8 hours per year" }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "In feedback almost all employees said that volunteering improved their",
+                "options": [
+                  { "letter": "A", "text": "chances of promotion." },
+                  { "letter": "B", "text": "job satisfaction." },
+                  { "letter": "C", "text": "relationships with colleagues." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "Last year some staff helped unemployed people with their",
+                "options": [
+                  { "letter": "A", "text": "literacy skills." },
+                  { "letter": "B", "text": "job applications." },
+                  { "letter": "C", "text": "communication skills." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "This year the company will start a new volunteering project with a local",
+                "options": [
+                  { "letter": "A", "text": "school." },
+                  { "letter": "B", "text": "park." },
+                  { "letter": "C", "text": "charity." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "Where will the Digital Inclusion Day be held?",
+                "options": [
+                  { "letter": "A", "text": "at the company's training facility" },
+                  { "letter": "B", "text": "at a college" },
+                  { "letter": "C", "text": "in a community centre" }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "What should staff do if they want to take part in the Digital Inclusion Day?",
+                "options": [
+                  { "letter": "A", "text": "fill in a form" },
+                  { "letter": "B", "text": "attend a training workshop" },
+                  { "letter": "C", "text": "get permission from their manager" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 17,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "17",
+                "text": "What **TWO** things are mentioned about the participants on the last Digital Inclusion Day?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "They were all over 70." },
+                  { "letter": "B", "text": "They never used their computer." },
+                  { "letter": "C", "text": "Their phones were mostly old-fashioned." },
+                  { "letter": "D", "text": "They only used their phones for making calls." },
+                  { "letter": "E", "text": "They initially showed little interest." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19",
+                "text": "What **TWO** activities on the last Digital Inclusion Day did participants describe as useful?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "learning to use tablets" },
+                  { "letter": "B", "text": "communicating with family" },
+                  { "letter": "C", "text": "shopping online" },
+                  { "letter": "D", "text": "playing online games" },
+                  { "letter": "E", "text": "sending emails" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 25,
+          "data": {
+            "title": "Planning a presentation on nanotechnology",
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "Russ says that his difficulty in planning the presentation is due to",
+                "options": [
+                  { "letter": "A", "text": "his lack of knowledge about the topic." },
+                  { "letter": "B", "text": "his uncertainty about what he should try to achieve." },
+                  { "letter": "C", "text": "the short time that he has for preparation." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Russ and his tutor agree that his approach in the presentation will be",
+                "options": [
+                  { "letter": "A", "text": "to concentrate on how nanotechnology is used in one field." },
+                  { "letter": "B", "text": "to follow the chronological development of nanotechnology." },
+                  { "letter": "C", "text": "to show the range of applications of nanotechnology." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "In connection with slides, the tutor advises Russ to",
+                "options": [
+                  { "letter": "A", "text": "talk about things that he can find slides to illustrate." },
+                  { "letter": "B", "text": "look for slides to illustrate the points he makes." },
+                  { "letter": "C", "text": "consider omitting slides altogether." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "They both agree that the best way for Russ to start his presentation is",
+                "options": [
+                  { "letter": "A", "text": "to encourage the audience to talk." },
+                  { "letter": "B", "text": "to explain what Russ intends to do." },
+                  { "letter": "C", "text": "to provide an example." }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "What does the tutor advise Russ to do next while preparing his presentation?",
+                "options": [
+                  { "letter": "A", "text": "summarise the main point he wants to make" },
+                  { "letter": "B", "text": "read the notes he has already made" },
+                  { "letter": "C", "text": "list the topics he wants to cover" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What comments do the speakers make about each of the following aspects of Russ's previous presentation?\n\nChoose **FIVE** answers from the box and write the correct letter, **A–G**, next to Questions 26–30.",
+          "startQuestion": 26,
+          "endQuestion": 30,
+          "data": {
+            "title": "Aspects of Russ's previous presentation",
+            "options": [
+              { "letter": "A", "text": "lacked a conclusion" },
+              { "letter": "B", "text": "useful in the future" },
+              { "letter": "C", "text": "not enough" },
+              { "letter": "D", "text": "sometimes distracting" },
+              { "letter": "E", "text": "showed originality" },
+              { "letter": "F", "text": "covered a wide range" },
+              { "letter": "G", "text": "not too technical" }
+            ],
+            "questions": [
+              { "id": "26", "questionNumber": 26, "text": "structure" },
+              { "id": "27", "questionNumber": 27, "text": "eye contact" },
+              { "id": "28", "questionNumber": 28, "text": "body language" },
+              { "id": "29", "questionNumber": 29, "text": "choice of words" },
+              { "id": "30", "questionNumber": 30, "text": "handouts" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "Episodic memory",
+            "sentences": [
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• the ability to recall details, e.g. the time and ",
+                  { "id": "31", "type": "input" },
+                  " of past events"
+                ]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• different to semantic memory - the ability to remember general information about the ",
+                  { "id": "32", "type": "input" },
+                  ", which does not involve recalling"
+                ]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  { "id": "33", "type": "input" },
+                  " information"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Forming episodic memories involves three steps",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Encoding" }] },
+              { "content": ["• involves receiving and processing information"] },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• the more ",
+                  { "id": "34", "type": "input" },
+                  " given to an event, the more successfully it can be encoded"
+                ]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• to remember a ",
+                  { "id": "35", "type": "input" },
+                  ", it is useful to have a strategy for encoding such information"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Consolidation",
+            "sentences": [
+              { "content": ["• how memories are strengthened and stored"] },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• most effective when memories can be added to a ",
+                  { "id": "36", "type": "input" },
+                  " of related information"
+                ]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• the ",
+                  { "id": "37", "type": "input" },
+                  " of retrieval affects the strength of memories"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Retrieval",
+            "sentences": [
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• memory retrieval often depends on using a prompt, e.g. the ",
+                  { "id": "38", "type": "input" },
+                  " of an object near to the place where you left your car"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Episodic memory impairments",
+            "sentences": [
+              { "content": ["• these affect people with a wide range of medical conditions"] },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• games which stimulate the ",
+                  { "id": "39", "type": "input" },
+                  " have been found to help people with schizophrenia"
+                ]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• children with autism may have difficulty forming episodic memories - possibly because their concept of the ",
+                  { "id": "40", "type": "input" },
+                  " may be absent"
+                ]
+              },
+              { "content": ["• memory training may help autistic children develop social skills"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+/* ═══════════════════════════════════════════════════════════════
+   Flow Chart Drag & Drop — IELTS Theme (exact replica)
+   All rules use high specificity to override globals/Tailwind
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Container */
+.flow-chart-drag-drop {
+    max-width: 1154px;
+    background-color: #fff;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Question Range Heading */
+.flow-chart-drag-drop .flow-chart-drag-drop__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+/* Instruction */
+.flow-chart-drag-drop .flow-chart-drag-drop__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bold chart title */
+.flow-chart-drag-drop .flow-chart-drag-drop__title {
+    font-size: 18px !important;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* Main flex layout: steps LEFT, options RIGHT */
+.flow-chart-drag-drop .flow-chart-drag-drop__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: fit-content;
+    /* Don't force to container width */
+}
+
+/* ─── FLOW CHART STEPS (left column) ─── */
+
+.flow-chart-drag-drop .flow-chart__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 500px;
+    min-width: 500px;
+    flex-shrink: 0;
+    /* Don't shrink */
+}
+
+.flow-chart-drag-drop .flow-chart__step-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Step box — rounded with shadow */
+.flow-chart-drag-drop .flow-chart__step {
+    padding: 14px 20px;
+    border: 1px solid #3e3e3e;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Step text */
+.flow-chart-drag-drop .flow-chart__step-content {
+    display: block;
+    font-size: 15px !important;
+    line-height: 1.8;
+    color: #222;
+}
+
+.flow-chart-drag-drop .flow-chart__step-content span {
+    font-size: 15px !important;
+    vertical-align: middle;
+}
+
+.flow-chart-drag-drop .flow-chart__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    color: #000;
+}
+
+.flow-chart-drag-drop .flow-chart__arrow-icon {
+    font-size: 18px;
+}
+
+/* ─── OPTIONS POOL (right column) ─── */
+
+.flow-chart-drag-drop .options-pool {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    flex-shrink: 0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    min-width: 300px;
+    background-color: #f0f0f0;
+}
+
+.flow-chart-drag-drop .options-pool__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* ─── DRAGGABLE WORD ─── */
+
+.flow-chart-drag-drop .draggable-word {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    background-color: #fff;
+    border: 1px solid #3e3e3e !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #222;
+    cursor: move;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    min-width: 80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.flow-chart-drag-drop .draggable-word:hover {
+    background-color: #f5f5f5;
+}
+
+.flow-chart-drag-drop .draggable-word--dragging {
+    /* Hide the source element while dragging so it feels like it's picked up */
+    opacity: 0.01 !important;
+}
+
+.flow-chart-drag-drop .draggable-word--disabled {
+    /* Make the word vanish but keep its space in the pool */
+    visibility: hidden !important;
+    pointer-events: none;
+}
+
+/* ─── DROP ZONE (inline in step text) ─── */
+
+.flow-chart-drag-drop .dropzone {
+    display: inline-flex;
+    align-items: stretch; /* Stretch children to fill height */
+    justify-content: center;
+    min-width: 110px;
+    min-height: 26px;
+    background-color: #fff;
+    border: 1.7px dashed #0056b3 !important;
+    border-radius: 8px !important;
+    margin: 1px 3px;
+    padding: 0; /* Remove padding so inner word can fill */
+    vertical-align: middle;
+    box-shadow: none !important;
+    overflow: hidden; /* Round corners for child */
+}
+
+.flow-chart-drag-drop .dropzone .dropzone__placeholder {
+    color: #000;
+    font-size: 13px !important;
+    font-weight: 700;
+}
+
+.flow-chart-drag-drop .dropzone--over {
+    background-color: #e6edff;
+    border-color: #0056b3 !important;
+}
+
+.flow-chart-drag-drop .dropzone--filled {
+    border-color: #0056b3 !important;
+    border-style: solid !important;
+    min-width: 110px;
+    background-color: transparent;
+    cursor: move; /* Show move cursor on entire filled zone */
+}
+
+.flow-chart-drag-drop .dropzone--filled.dropzone--over {
+    background-color: #e6edff !important;
+    /* Light blue highlight */
+    border-color: #003d82 !important;
+    /* Darker blue border */
+    border-style: dashed !important;
+    /* Dashed to show it can be dropped */
+}
+
+/* Word placed inside a dropzone */
+.passage-section__dropzone-wrapper .dropzone .draggable-word--dragging {
+    opacity: 0.01 !important;
+}
+.flow-chart-drag-drop .dropzone .draggable-word {
+    margin: 0;
+    border: none !important;
+    background-color: transparent !important;
+    color: #222;
+    font-size: 15px !important;
+    width: 100%; /* Fill entire zone */
+    height: 100%; /* Fill entire zone */
+    display: flex; /* Center text */
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px; /* Add padding back here */
+    min-width: auto;
+    min-height: 26px;
+    box-shadow: none !important;
+    cursor: move;
+}
+
+.flow-chart-drag-drop .dropzone .draggable-word:hover {
+    background-color: transparent !important;
+}
+
+/* ─── Options pool drag-over highlight ─── */
+
+.flow-chart-drag-drop .options-pool--drag-over {
+    background-color: #e6edff;
+    outline: 2px dashed #0056b3;
+    outline-offset: -2px;
+    border-radius: 4px;
+}

@@ -1,0 +1,292 @@
+{
+  "testId": "book-15-test-3",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "Employment Agency: Possible Jobs",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "First Job" }] },
+              { "questionNumber": 1, "content": ["Administrative assistant in a company that produces ", { "id": "1", "type": "input" }, " (North London)"] },
+              { "content": ["Responsibilities"] },
+              { "content": ["• data entry"] },
+              { "questionNumber": 2, "content": ["• go to ", { "id": "2", "type": "input" }, " and take notes"] },
+              { "content": ["• general admin"] },
+              { "questionNumber": 3, "content": ["• management of ", { "id": "3", "type": "input" }] },
+              { "content": ["Requirements"] },
+              { "content": ["• good computer skills including spreadsheets"] },
+              { "content": ["• good interpersonal skills"] },
+              { "questionNumber": 4, "content": ["• attention to ", { "id": "4", "type": "input" }] },
+              { "content": ["Experience"] },
+              { "questionNumber": 5, "content": ["• need a minimum of ", { "id": "5", "type": "input" }, " of experience of teleconferencing"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Second Job",
+            "sentences": [
+              { "content": ["Warehouse assistant in South London"] },
+              { "content": ["Responsibilities"] },
+              { "content": ["• stock management"] },
+              { "questionNumber": 6, "content": ["• managing ", { "id": "6", "type": "input" }] },
+              { "content": ["Requirements"] },
+              { "content": ["• ability to work with numbers"] },
+              { "content": ["• good computer skills"] },
+              { "questionNumber": 7, "content": ["• very organised and ", { "id": "7", "type": "input" }] },
+              { "content": ["• good communication skills"] },
+              { "questionNumber": 8, "content": ["• used to working in a ", { "id": "8", "type": "input" }] },
+              { "questionNumber": 9, "content": ["• able to cope with items that are ", { "id": "9", "type": "input" }] },
+              { "content": ["Need experience of"] },
+              { "content": ["• driving in London"] },
+              { "content": ["• warehouse work"] },
+              { "questionNumber": 10, "content": ["• ", { "id": "10", "type": "input" }, " service"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "When did the Street Play Scheme first take place?",
+                "options": [
+                  { "letter": "A", "text": "two years ago" },
+                  { "letter": "B", "text": "three years ago" },
+                  { "letter": "C", "text": "six years ago" }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "How often is Beechwood Road closed to traffic now?",
+                "options": [
+                  { "letter": "A", "text": "once a week" },
+                  { "letter": "B", "text": "on Saturdays and Sundays" },
+                  { "letter": "C", "text": "once a month" }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "Who is responsible for closing the road?",
+                "options": [
+                  { "letter": "A", "text": "a council official" },
+                  { "letter": "B", "text": "the police" },
+                  { "letter": "C", "text": "local wardens" }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "Residents who want to use their cars",
+                "options": [
+                  { "letter": "A", "text": "have to park in another street." },
+                  { "letter": "B", "text": "must drive very slowly." },
+                  { "letter": "C", "text": "need permission from a warden." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "Alice says that Street Play Schemes are most needed in",
+                "options": [
+                  { "letter": "A", "text": "wealthy areas." },
+                  { "letter": "B", "text": "quiet suburban areas." },
+                  { "letter": "C", "text": "areas with heavy traffic." }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "What has been the reaction of residents who are not parents?",
+                "options": [
+                  { "letter": "A", "text": "Many of them were unhappy at first." },
+                  { "letter": "B", "text": "They like seeing children play in the street." },
+                  { "letter": "C", "text": "They are surprised by the lack of noise." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 17,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "17-18",
+                "text": "Which TWO benefits for children does Alice think are the most important?",
+                "options": [
+                  { "letter": "A", "text": "increased physical activity" },
+                  { "letter": "B", "text": "increased sense of independence" },
+                  { "letter": "C", "text": "opportunity to learn new games" },
+                  { "letter": "D", "text": "opportunity to be part of a community" },
+                  { "letter": "E", "text": "opportunity to make new friends" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19-20",
+                "text": "Which TWO results of the King Street experiment surprised Alice?",
+                "options": [
+                  { "letter": "A", "text": "more shoppers" },
+                  { "letter": "B", "text": "improved safety" },
+                  { "letter": "C", "text": "less air pollution" },
+                  { "letter": "D", "text": "more relaxed atmosphere" },
+                  { "letter": "E", "text": "less noise pollution" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "What Hazel should analyse about items in newspapers",
+            "sentences": [
+              { "questionNumber": 21, "content": ["• what ", { "id": "21", "type": "input" }, " the item is on"] },
+              { "questionNumber": 22, "content": ["• the ", { "id": "22", "type": "input" }, " of the item, including the headline"] },
+              { "questionNumber": 23, "content": ["• any ", { "id": "23", "type": "input" }, " accompanying the item"] },
+              { "questionNumber": 24, "content": ["• the ", { "id": "24", "type": "input" }, " of the item, e.g. what's made prominent"] },
+              { "questionNumber": 25, "content": ["• the writer's main ", { "id": "25", "type": "input" }] },
+              { "questionNumber": 26, "content": ["• the ", { "id": "26", "type": "input" }, " the writer may make about the reader"] }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What does Hazel decide to do about each of the following types of articles? Write the correct letter, **A**, **B** or **C**, next to Questions 27–30.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "title": "Decisions",
+            "rightSideTitle": "Types of articles",
+            "options": [
+              { "letter": "A", "text": "She will definitely look for a suitable article." },
+              { "letter": "B", "text": "She may look for a suitable article." },
+              { "letter": "C", "text": "She definitely won't look for an article." }
+            ],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "national news item" },
+              { "id": "28", "questionNumber": 28, "text": "editorial" },
+              { "id": "29", "questionNumber": 29, "text": "human interest" },
+              { "id": "30", "questionNumber": 30, "text": "arts" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "Early history of keeping clean",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Prehistoric times:" }] },
+              { "questionNumber": 31, "content": ["• water was used to wash off ", { "id": "31", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Ancient Babylon:" }] },
+              { "questionNumber": 32, "content": ["• soap-like material found in ", { "id": "32", "type": "input" }, " cylinders"] },
+              { "content": [{ "type": "bold", "text": "Ancient Greece:" }] },
+              { "content": ["• people cleaned themselves with sand and other substances"] },
+              { "questionNumber": 33, "content": ["• used a strigil – scraper made of ", { "id": "33", "type": "input" }] },
+              { "content": ["• washed clothes in streams"] },
+              { "content": [{ "type": "bold", "text": "Ancient Germany and Gaul:" }] },
+              { "questionNumber": 34, "content": ["• used soap to colour their ", { "id": "34", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Ancient Rome:" }] },
+              { "content": ["• animal fat, ashes and clay mixed through action of rain, used for washing clothes"] },
+              { "questionNumber": 35, "content": ["• from about 312 BC, water carried to Roman ", { "id": "35", "type": "input" }, " by aqueducts"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Europe in Middle Ages",
+            "sentences": [
+              { "questionNumber": 36, "content": ["• decline in bathing contributed to occurrence of ", { "id": "36", "type": "input" }] },
+              { "questionNumber": 37, "content": ["• ", { "id": "37", "type": "input" }, " began to be added to soap"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Europe from 17th century",
+            "sentences": [
+              { "content": ["• 1600s: cleanliness and bathing started becoming usual"] },
+              { "questionNumber": 38, "content": ["• 1791: Leblanc invented a way of making soda ash from ", { "id": "38", "type": "input" }] },
+              { "questionNumber": 39, "content": ["• early 1800s: Chevreul turned soapmaking into a ", { "id": "39", "type": "input" }] },
+              { "questionNumber": 40, "content": ["• from 1800s, there was no longer a ", { "id": "40", "type": "input" }, " on soap"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

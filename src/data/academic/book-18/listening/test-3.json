@@ -1,0 +1,316 @@
+{
+  "testId": "book-18-test-3",
+  "bookId": "book-18",
+  "title": "Cambridge IELTS 18 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the form below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "title": "Wayside Camera Club membership form",
+            "sentences": [
+              { "content": ["Name: Dan Green"] },
+              { "content": ["Email address: dan1068@market.com"] },
+              { "questionNumber": 1, "content": ["Home address: 52 ", { "id": "1", "type": "input" }, " Street, Peacetown"] },
+              { "questionNumber": 2, "content": ["Heard about us: from a ", { "id": "2", "type": "input" }] },
+              { "content": ["Reasons for joining: to enter competitions"] },
+              { "questionNumber": 3, "content": ["to ", { "id": "3", "type": "input" }] },
+              { "questionNumber": 4, "content": ["Type of membership: ", { "id": "4", "type": "input" }, " membership (£30)"] }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 5,
+          "endQuestion": 10,
+          "data": {
+            "title": "Photography competitions",
+            "headers": ["Title of competition", "Instructions", "Feedback to Dan"],
+            "rows": [
+              [
+                { "id": "5", "questionNumber": 5 },
+                "A scene in the home",
+                "The picture's composition was not good."
+              ],
+              [
+                "'Beautiful Sunsets'",
+                ["Scene must show some ", { "id": "6", "type": "input" }],
+                ["The ", { "id": "7", "type": "input" }, " was wrong."]
+              ],
+              [
+                { "id": "8", "questionNumber": 8 },
+                ["Scene must show ", { "id": "9", "type": "input" }],
+                ["The photograph was too ", { "id": "10", "type": "input" }]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "Which TWO warnings does Dan give about picking mushrooms?",
+                "options": [
+                  { "letter": "A", "text": "Don't pick more than one variety of mushroom at a time." },
+                  { "letter": "B", "text": "Don't pick mushrooms near busy roads." },
+                  { "letter": "C", "text": "Don't eat mushrooms given to you." },
+                  { "letter": "D", "text": "Don't eat mushrooms while picking them." },
+                  { "letter": "E", "text": "Don't pick old mushrooms." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 13,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "13-14",
+                "text": "Which TWO ideas about wild mushrooms does Dan say are correct?",
+                "options": [
+                  { "letter": "A", "text": "Mushrooms should always be peeled before eating." },
+                  { "letter": "B", "text": "Mushrooms eaten by animals may be unsafe." },
+                  { "letter": "C", "text": "Cooking destroys toxins in mushrooms." },
+                  { "letter": "D", "text": "Brightly coloured mushrooms can be edible." },
+                  { "letter": "E", "text": "All poisonous mushrooms have a bad smell." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "What advice does Dan give about picking mushrooms in parks?",
+                "options": [
+                  { "letter": "A", "text": "Choose wooded areas." },
+                  { "letter": "B", "text": "Don't disturb wildlife." },
+                  { "letter": "C", "text": "Get there early." }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "Dan says it is a good idea for beginners to",
+                "options": [
+                  { "letter": "A", "text": "use a mushroom app." },
+                  { "letter": "B", "text": "join a group." },
+                  { "letter": "C", "text": "take a reference book." }
+                ]
+              },
+              {
+                "id": "17",
+                "questionNumber": 17,
+                "text": "What does Dan say is important for conservation?",
+                "options": [
+                  { "letter": "A", "text": "selecting only fully grown mushrooms" },
+                  { "letter": "B", "text": "picking a limited amount of mushrooms" },
+                  { "letter": "C", "text": "avoiding areas where rare mushroom species grow" }
+                ]
+              },
+              {
+                "id": "18",
+                "questionNumber": 18,
+                "text": "According to Dan, some varieties of wild mushrooms are in decline because there is",
+                "options": [
+                  { "letter": "A", "text": "a huge demand for them from restaurants." },
+                  { "letter": "B", "text": "a lack of rain in this part of the country." },
+                  { "letter": "C", "text": "a rise in building developments locally." }
+                ]
+              },
+              {
+                "id": "19",
+                "questionNumber": 19,
+                "text": "Dan says that when storing mushrooms, people should",
+                "options": [
+                  { "letter": "A", "text": "keep them in the fridge for no more than two days." },
+                  { "letter": "B", "text": "keep them in a brown bag in a dark room." },
+                  { "letter": "C", "text": "leave them for a period after washing them." }
+                ]
+              },
+              {
+                "id": "20",
+                "questionNumber": 20,
+                "text": "What does Dan say about trying new varieties of mushrooms?",
+                "options": [
+                  { "letter": "A", "text": "Experiment with different recipes." },
+                  { "letter": "B", "text": "Expect some to have a strong taste." },
+                  { "letter": "C", "text": "Cook them for a long time." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO opinions about the Luddites do the students express?",
+                "options": [
+                  { "letter": "A", "text": "Their actions were ineffective." },
+                  { "letter": "B", "text": "They are still influential today." },
+                  { "letter": "C", "text": "They have received unfair criticism." },
+                  { "letter": "D", "text": "They were proved right." },
+                  { "letter": "E", "text": "Their attitude is understandable." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO predictions about the future of work are the students doubtful about?",
+                "options": [
+                  { "letter": "A", "text": "Work will be more rewarding." },
+                  { "letter": "B", "text": "Unemployment will fall." },
+                  { "letter": "C", "text": "People will want to delay retiring." },
+                  { "letter": "D", "text": "Working hours will be shorter." },
+                  { "letter": "E", "text": "People will change jobs more frequently." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What comment do the students make about each of the following jobs? Choose SIX answers from the box and write the correct letter, **A–G**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Comments",
+            "rightSideTitle": "Jobs",
+            "options": [
+              { "letter": "A", "text": "These jobs are likely to be at risk." },
+              { "letter": "B", "text": "Their role has become more interesting in recent years." },
+              { "letter": "C", "text": "The number of people working in this sector has fallen dramatically." },
+              { "letter": "D", "text": "This job will require more qualifications." },
+              { "letter": "E", "text": "Higher disposable income has led to a huge increase in jobs." },
+              { "letter": "F", "text": "There is likely to be a significant rise in demand for this service." },
+              { "letter": "G", "text": "Both employment and productivity have risen." }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Accountants" },
+              { "id": "26", "questionNumber": 26, "text": "Hairdressers" },
+              { "id": "27", "questionNumber": 27, "text": "Administrative staff" },
+              { "id": "28", "questionNumber": 28, "text": "Agricultural workers" },
+              { "id": "29", "questionNumber": 29, "text": "Care workers" },
+              { "id": "30", "questionNumber": 30, "text": "Bank clerks" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 31,
+          "data": {
+            "title": "Space Traffic Management",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "A Space Traffic Management system" }] },
+              { "content": ["• is a concept similar to Air Traffic Control, but for satellites rather than planes."] },
+              { "questionNumber": 31, "content": ["• would aim to set up legal and ", { "id": "31", "type": "input" }, " ways of improving safety."] },
+              { "content": ["• does not actually exist at present."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Problems in developing effective Space Traffic Management",
+            "sentences": [
+              { "questionNumber": 32, "content": ["• Satellites are now quite ", { "id": "32", "type": "input" }, " and therefore more widespread (e.g. there are constellations made up of ", { "id": "33", "type": "input" }, " of satellites)."] },
+              { "questionNumber": 34, "content": ["• At present, satellites are not required to transmit information to help with their ", { "id": "34", "type": "input" }] },
+              { "questionNumber": 35, "content": ["• There are few systems for ", { "id": "35", "type": "input" }, " satellites."] },
+              { "content": ["• Small pieces of debris may be difficult to identify."] },
+              { "questionNumber": 36, "content": ["• Operators may be unwilling to share details of satellites used for ", { "id": "36", "type": "input" }, " or commercial reasons."] },
+              { "questionNumber": 37, "content": ["• It may be hard to collect details of the object's ", { "id": "37", "type": "input" }, " at a given time."] },
+              { "questionNumber": 38, "content": ["• Scientists can only make a ", { "id": "38", "type": "input" }, " about where the satellite will go."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Solutions",
+            "sentences": [
+              { "content": ["• Common standards should be agreed on for the presentation of information."] },
+              { "questionNumber": 39, "content": ["• The information should be combined in one ", { "id": "39", "type": "input" }, "."] },
+              { "questionNumber": 40, "content": ["• A coordinated system must be designed to create ", { "id": "40", "type": "input" }, " among its users."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

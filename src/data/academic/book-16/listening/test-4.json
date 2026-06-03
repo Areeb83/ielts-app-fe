@@ -1,0 +1,277 @@
+{
+  "testId": "book-16-test-4",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 2,
+          "data": {
+            "title": "Holiday rental",
+            "sentences": [
+              { "content": ["Owners' names: Jack Fitzgerald and Shirley Fitzgerald"] },
+              { "content": [{ "type": "bold", "text": "Granary Cottage" }] },
+              { "questionNumber": 1, "content": ["• available for week beginning ", { "id": "1", "type": "input" }, " May"] },
+              { "questionNumber": 2, "content": ["• cost for the week: £ ", { "id": "2", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 3,
+          "endQuestion": 9,
+          "hideRange": true,
+          "data": {
+            "title": "Second Cottage",
+            "sentences": [
+              { "questionNumber": 3, "content": [{ "id": "3", "type": "input" }, " Cottage"] },
+              { "content": ["• cost for the week: £480"] },
+              { "questionNumber": 4, "content": ["• building was originally a ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["• walk through doors from living room into a ", { "id": "5", "type": "input" }] },
+              { "questionNumber": 6, "content": ["• several ", { "id": "6", "type": "input" }, " spaces at the front"] },
+              { "content": ["• bathroom has a shower"] },
+              { "questionNumber": 7, "content": ["• central heating and stove that burns ", { "id": "7", "type": "input" }] },
+              { "questionNumber": 8, "content": ["• views of old ", { "id": "8", "type": "input" }, " from living room"] },
+              { "questionNumber": 9, "content": ["• view of hilltop ", { "id": "9", "type": "input" }, " from the bedroom"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 10,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Payment",
+            "sentences": [
+              { "content": ["• deposit: £144"] },
+              { "questionNumber": 10, "content": ["• deadline for final payment: end of ", { "id": "10", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "A survey found people's main concern about traffic in the area was",
+                "options": [
+                  { "letter": "A", "text": "cuts to public transport." },
+                  { "letter": "B", "text": "poor maintenance of roads." },
+                  { "letter": "C", "text": "changes in the type of traffic." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "Which change will shortly be made to the cycle path next to the river?",
+                "options": [
+                  { "letter": "A", "text": "It will be widened." },
+                  { "letter": "B", "text": "It will be extended." },
+                  { "letter": "C", "text": "It will be resurfaced." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "Plans for a pedestrian crossing have been postponed because",
+                "options": [
+                  { "letter": "A", "text": "the Post Office has moved." },
+                  { "letter": "B", "text": "the proposed location is unsafe." },
+                  { "letter": "C", "text": "funding is not available at present." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "On Station Road, notices have been erected",
+                "options": [
+                  { "letter": "A", "text": "telling cyclists not to leave their bikes outside the station ticket office." },
+                  { "letter": "B", "text": "asking motorists to switch off engines when waiting at the level crossing." },
+                  { "letter": "C", "text": "warning pedestrians to leave enough time when crossing the railway line." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A–I**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Recreation ground after proposed changes",
+            "imageSrc": "/images/book-16-test-4-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "New car park" },
+              { "id": "16", "questionNumber": 16, "text": "New cricket pitch" },
+              { "id": "17", "questionNumber": 17, "text": "Children's playground" },
+              { "id": "18", "questionNumber": 18, "text": "Skateboard ramp" },
+              { "id": "19", "questionNumber": 19, "text": "Pavilion" },
+              { "id": "20", "questionNumber": 20, "text": "Notice board" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO benefits of city bike-sharing schemes do the students agree are the most important?",
+                "options": [
+                  { "letter": "A", "text": "reducing noise pollution" },
+                  { "letter": "B", "text": "reducing traffic congestion" },
+                  { "letter": "C", "text": "improving air quality" },
+                  { "letter": "D", "text": "encouraging health and fitness" },
+                  { "letter": "E", "text": "making cycling affordable" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO things do the students think are necessary for successful bike-sharing schemes?",
+                "options": [
+                  { "letter": "A", "text": "Bikes should have a GPS system." },
+                  { "letter": "B", "text": "The app should be easy to use." },
+                  { "letter": "C", "text": "Public awareness should be raised." },
+                  { "letter": "D", "text": "Only one scheme should be available." },
+                  { "letter": "E", "text": "There should be a large network of cycle lanes." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What is the speakers' opinion of the bike-sharing schemes in each of the following cities? Choose SIX answers from the box and write the correct letter, **A–G**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Opinion of bike-sharing scheme",
+            "rightSideTitle": "Cities",
+            "options": [
+              { "letter": "A", "text": "They agree it has been disappointing." },
+              { "letter": "B", "text": "They think it should be cheaper." },
+              { "letter": "C", "text": "They are surprised it has been so successful." },
+              { "letter": "D", "text": "They agree that more investment is required." },
+              { "letter": "E", "text": "They think the system has been well designed." },
+              { "letter": "F", "text": "They disagree about the reasons for its success." },
+              { "letter": "G", "text": "They think it has expanded too quickly." }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Amsterdam" },
+              { "id": "26", "questionNumber": 26, "text": "Dublin" },
+              { "id": "27", "questionNumber": 27, "text": "London" },
+              { "id": "28", "questionNumber": 28, "text": "Buenos Aires" },
+              { "id": "29", "questionNumber": 29, "text": "New York" },
+              { "id": "30", "questionNumber": 30, "text": "Sydney" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "THE EXTINCTION OF THE DODO BIRD",
+            "sentences": [
+              { "content": ["The dodo was a large flightless bird which used to inhabit the island of Mauritius."] },
+              { "content": [{ "type": "bold", "text": "History" }] },
+              { "questionNumber": 31, "content": ["• 1507 – Portuguese ships transporting ", { "id": "31", "type": "input" }, " stopped at the island to collect food and water."] },
+              { "questionNumber": 32, "content": ["• 1638 – The Dutch established a ", { "id": "32", "type": "input" }, " on the island."] },
+              { "content": ["• They killed the dodo birds for their meat."] },
+              { "content": ["• The last one was killed in 1681."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Description",
+            "sentences": [
+              { "content": ["• The only record we have is written descriptions and pictures (possibly unreliable)."] },
+              { "questionNumber": 33, "content": ["• A Dutch painting suggests the dodo was very ", { "id": "33", "type": "input" }, "."] },
+              { "questionNumber": 34, "content": ["• The only remaining soft tissue is a dried ", { "id": "34", "type": "input" }, "."] },
+              { "questionNumber": 35, "content": ["• Recent studies of a dodo skeleton suggest the birds were capable of rapid ", { "id": "35", "type": "input" }, "."] },
+              { "questionNumber": 36, "content": ["• It's thought they were able to use their small wings to maintain ", { "id": "36", "type": "input" }, "."] },
+              { "questionNumber": 37, "content": ["• Their ", { "id": "37", "type": "input" }, " was of average size."] },
+              { "questionNumber": 38, "content": ["• Their sense of ", { "id": "38", "type": "input" }, " enabled them to find food."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Reasons for extinction",
+            "sentences": [
+              { "content": ["• Hunting was probably not the main cause."] },
+              { "content": ["• Sailors brought dogs and monkeys."] },
+              { "questionNumber": 39, "content": ["• ", { "id": "39", "type": "input" }, " also escaped onto the island and ate the birds' eggs."] },
+              { "questionNumber": 40, "content": ["• The arrival of farming meant the ", { "id": "40", "type": "input" }, " was destroyed."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

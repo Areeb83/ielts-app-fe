@@ -1,0 +1,191 @@
+.matching-feature-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.matching-feature__header {
+    margin-bottom: 20px;
+}
+
+.matching-feature__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.matching-feature__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.matching-feature__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+/* ─── Right Side Title ─── */
+.matching-feature__right-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+/* ─── Primary Matching Grid ─── */
+.matching-feature__table-wrapper {
+    width: 60%;
+    overflow-x: auto;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.matching-feature__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Headers */
+.matching-feature__th {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    border-right: 1px solid #000;
+}
+
+.matching-feature__th:last-child {
+    border-right: none;
+}
+
+.matching-feature__th--empty {
+    width: 40%;
+    border-right: 2px solid #000;
+}
+
+/* Body rows */
+.matching-feature__row {
+    border-bottom: 1px solid #000;
+    transition: background-color 0.2s ease;
+}
+
+.matching-feature__row:last-child {
+    border-bottom: none;
+}
+
+.matching-feature__row:hover {
+    background-color: #f7fafc;
+}
+
+/* Question cell (leftmost) */
+.matching-feature__td-question {
+    padding: 12px 10px;
+    font-weight: 500;
+    text-align: left;
+    border-right: 2px solid #000;
+}
+
+.matching-feature__question-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.matching-feature__q-num {
+    display: inline-block;
+    min-width: 32px; /* Fixed width for the number column */
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #000;
+}
+
+.matching-feature__q-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+/* Radio button cells */
+.matching-feature__td-radio {
+    padding: 0;
+    text-align: center;
+    border-right: 1px solid #000;
+    vertical-align: middle;
+}
+
+.matching-feature__td-radio:last-child {
+    border-right: none;
+}
+
+.matching-feature__td-radio.selected {
+    background-color: #ebf8ff;
+}
+
+.matching-feature__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 48px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.matching-feature__radio-input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #3182ce;
+}
+
+/* ─── Options Reference Box ─── */
+.matching-feature__options-box {
+    flex-shrink: 0;
+    width: 400px;
+}
+
+.matching-feature__options-table {
+    border-collapse: collapse;
+    border: 2px solid #000;
+    width: 100%;
+}
+
+.matching-feature__options-title {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+}
+
+.matching-feature__opt-letter {
+    padding: 8px 15px;
+    font-weight: 700;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 40px;
+    text-align: center;
+}
+
+.matching-feature__opt-text {
+    padding: 8px 15px;
+    border-bottom: 1px solid #000;
+}
+
+.matching-feature__options-table tr:last-child td {
+    border-bottom: none;
+}

@@ -1,0 +1,97 @@
+/* ─── Shared Question Base Styles ────────────────────────────────────────── */
+
+/* 1. Base Container & Header */
+.q-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.q-header {
+    margin-bottom: 20px;
+}
+
+.q-range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.q-instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.q-instruction strong {
+    font-weight: 700;
+    color: #000;
+}
+
+/* 2. Atomic Elements */
+.q-num {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* 3. The "Grid Card" (The rounded frame for tables/matching) */
+.q-grid-card {
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* 4. Table Resets & Standard IELTS Borders */
+.q-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: #000;
+}
+
+/* Prominent vertical/horizontal dividers */
+.q-bold-divider-v-2 {
+    border-right: 2px solid #000;
+}
+
+.q-bold-divider-v-1 {
+    border-right: 1px solid #000;
+}
+
+.q-bold-divider-h-2 {
+    border-bottom: 2px solid #000;
+}
+
+.q-bold-divider-h-1 {
+    border-bottom: 1px solid #000;
+}
+
+/* Standard IELTS headers */
+.q-th {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    border-right: 1px solid #000;
+}
+
+/* Row hover effect */
+.q-row-hover:hover {
+    background-color: #f7fafc;
+}
+
+/* Selected state (for radio grids) */
+.q-selected-cell {
+    background-color: #ebf8ff;
+}

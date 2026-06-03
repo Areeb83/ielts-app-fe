@@ -1,0 +1,342 @@
+{
+  "testId": "book-14-test-4",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "Enquiry about booking hotel room for event",
+            "sentences": [
+              { "content": ["Example"] },
+              { "content": ["Andrew is the ", { "type": "bold", "text": "Events" }, " Manager"] },
+              { "content": [{ "type": "bold", "text": "Rooms" }] },
+              { "content": [{ "type": "bold", "text": "Adelphi Room" }] },
+              { "questionNumber": 1, "content": ["• number of people who can sit down to eat: ", { "id": "1", "type": "input" }] },
+              { "content": ["• has a gallery suitable for musicians"] },
+              { "questionNumber": 2, "content": ["• can go out and see the ", { "id": "2", "type": "input" }, " in pots on the terrace"] },
+              { "questionNumber": 3, "content": ["• terrace has a view of a group of ", { "id": "3", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 4,
+          "endQuestion": 4,
+          "hideRange": true,
+          "data": {
+            "title": "Carlton Room",
+            "sentences": [
+              { "content": ["• number of people who can sit down to eat: 110"] },
+              { "questionNumber": 4, "content": ["• has a ", { "id": "4", "type": "input" }] },
+              { "content": ["• view of the lake"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 5,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Options",
+            "sentences": [
+              { "content": ["Master of Ceremonies:"] },
+              { "questionNumber": 5, "content": ["• can give a ", { "id": "5", "type": "input" }, " while people are eating"] },
+              { "questionNumber": 6, "content": ["• will provide ", { "id": "6", "type": "input" }, " if there are any problems"] },
+              { "content": ["Accommodation:"] },
+              { "questionNumber": 7, "content": ["• in hotel rooms or ", { "id": "7", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What is said about using each of the following hotel facilities? Choose THREE answers from the box and write the correct letter, **A**, **B** or **C**, next to Questions 8–10.",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "data": {
+            "title": "Availability",
+            "rightSideTitle": "Hotel facilities",
+            "options": [
+              { "letter": "A", "text": "included in cost of hiring room" },
+              { "letter": "B", "text": "available at extra charge" },
+              { "letter": "C", "text": "not available" }
+            ],
+            "questions": [
+              { "id": "8", "questionNumber": 8, "text": "outdoor swimming pool" },
+              { "id": "9", "questionNumber": 9, "text": "gym" },
+              { "id": "10", "questionNumber": 10, "text": "tennis courts" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What information does the speaker give about each of the following excursions? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 11–16.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "Information",
+            "rightSideTitle": "Excursions",
+            "options": [
+              { "letter": "A", "text": "all downhill" },
+              { "letter": "B", "text": "suitable for beginners" },
+              { "letter": "C", "text": "only in good weather" },
+              { "letter": "D", "text": "food included" },
+              { "letter": "E", "text": "no charge" },
+              { "letter": "F", "text": "swimming possible" },
+              { "letter": "G", "text": "fully booked today" },
+              { "letter": "H", "text": "transport not included" }
+            ],
+            "questions": [
+              { "id": "11", "questionNumber": 11, "text": "dolphin watching" },
+              { "id": "12", "questionNumber": 12, "text": "forest walk" },
+              { "id": "13", "questionNumber": 13, "text": "cycle trip" },
+              { "id": "14", "questionNumber": 14, "text": "local craft tour" },
+              { "id": "15", "questionNumber": 15, "text": "observatory trip" },
+              { "id": "16", "questionNumber": 16, "text": "horse riding" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 17,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "17-18",
+                "text": "Which TWO things does the speaker say about the attraction called Musical Favourites?",
+                "options": [
+                  { "letter": "A", "text": "You pay extra for drinks." },
+                  { "letter": "B", "text": "You must book it in advance." },
+                  { "letter": "C", "text": "You get a reduction if you buy two tickets." },
+                  { "letter": "D", "text": "You can meet the performers." },
+                  { "letter": "E", "text": "You can take part in the show." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19-20",
+                "text": "Which TWO things does the speaker say about the Castle Feast?",
+                "options": [
+                  { "letter": "A", "text": "Visitors can dance after the meal." },
+                  { "letter": "B", "text": "There is a choice of food." },
+                  { "letter": "C", "text": "Visitors wear historical costume." },
+                  { "letter": "D", "text": "Knives and forks are not used." },
+                  { "letter": "E", "text": "The entertainment includes horse races." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 25,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What does Trevor find interesting about the purpose of children's literature?",
+                "options": [
+                  { "letter": "A", "text": "the fact that authors may not realise what values they're teaching" },
+                  { "letter": "B", "text": "the fact that literature can be entertaining and educational at the same time" },
+                  { "letter": "C", "text": "the fact that adults expect children to imitate characters in literature" }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Trevor says the module about the purpose of children's literature made him",
+                "options": [
+                  { "letter": "A", "text": "analyse some of the stories that his niece reads." },
+                  { "letter": "B", "text": "wonder how far popularity reflects good quality." },
+                  { "letter": "C", "text": "decide to start writing some children's stories." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "Stephanie is interested in the Pictures module because",
+                "options": [
+                  { "letter": "A", "text": "she intends to become an illustrator." },
+                  { "letter": "B", "text": "she can remember beautiful illustrations from her childhood." },
+                  { "letter": "C", "text": "she believes illustrations are more important than words." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "Trevor and Stephanie agree that comics",
+                "options": [
+                  { "letter": "A", "text": "are inferior to books." },
+                  { "letter": "B", "text": "have the potential for being useful." },
+                  { "letter": "C", "text": "discourage children from using their imagination." }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "With regard to books aimed at only boys or only girls, Trevor was surprised",
+                "options": [
+                  { "letter": "A", "text": "how long the distinction had gone unquestioned." },
+                  { "letter": "B", "text": "how few books were aimed at both girls and boys." },
+                  { "letter": "C", "text": "how many children enjoyed books intended for the opposite sex." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What comment is made about each of these stories? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 26–30.",
+          "startQuestion": 26,
+          "endQuestion": 30,
+          "data": {
+            "title": "Comments",
+            "rightSideTitle": "Stories",
+            "options": [
+              { "letter": "A", "text": "translated into many other languages" },
+              { "letter": "B", "text": "hard to read" },
+              { "letter": "C", "text": "inspired a work in a different area of art" },
+              { "letter": "D", "text": "more popular than the author's other works" },
+              { "letter": "E", "text": "original title refers to another book" },
+              { "letter": "F", "text": "started a new genre" },
+              { "letter": "G", "text": "unlikely topic" }
+            ],
+            "questions": [
+              { "id": "26", "questionNumber": 26, "text": "Perrault's fairy tales" },
+              { "id": "27", "questionNumber": 27, "text": "The Swiss Family Robinson" },
+              { "id": "28", "questionNumber": 28, "text": "The Nutcracker and The Mouse King" },
+              { "id": "29", "questionNumber": 29, "text": "The Lord of the Rings" },
+              { "id": "30", "questionNumber": 30, "text": "War Horse" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "The hunt for sunken settlements and ancient shipwrecks",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "ATLIT-YAM" }] },
+              { "content": ["• was a village on coast of eastern Mediterranean"] },
+              { "content": ["• thrived until about 7,000 BC"] },
+              { "content": ["• stone homes had a courtyard"] },
+              { "questionNumber": 31, "content": ["• had a semicircle of large stones round a ", { "id": "31", "type": "input" }] },
+              { "content": ["• cause of destruction unknown – now under the sea"] },
+              { "content": ["• biggest settlement from the prehistoric period found on the seabed"] },
+              { "questionNumber": 32, "content": ["• research carried out into structures, ", { "id": "32", "type": "input" }, " and human remains"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Traditional Autonomous Underwater Vehicles (AUVs)",
+            "sentences": [
+              { "questionNumber": 33, "content": ["• used in the oil industry, e.g. to make ", { "id": "33", "type": "input" }] },
+              { "questionNumber": 34, "content": ["• problems: they were expensive and ", { "id": "34", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Latest AUVs",
+            "sentences": [
+              { "content": ["• much easier to use, relatively cheap, sophisticated"] },
+              { "content": [{ "type": "bold", "text": "Tests:" }] },
+              { "questionNumber": 35, "content": ["• Marzamemi, Sicily: found ancient Roman ships carrying architectural elements made of ", { "id": "35", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Underwater internet",
+            "sentences": [
+              { "questionNumber": 36, "content": [{ "id": "36", "type": "input" }, " is used for short distance communication, acoustic waves for long distance"] },
+              { "content": ["• plans for communication with researchers by satellite"] },
+              { "questionNumber": 37, "content": ["• AUV can send data to another AUV that has better ", { "id": "37", "type": "input" }, ", for example"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Planned research in Gulf of Baratti",
+            "sentences": [
+              { "content": ["• to find out more about wrecks of ancient Roman ships, including:"] },
+              { "questionNumber": 38, "content": ["– one carrying ", { "id": "38", "type": "input" }, " supplies; tablets may have been used for cleaning the ", { "id": "39", "type": "input" }] },
+              { "questionNumber": 40, "content": ["– others carrying containers of olive oil or ", { "id": "40", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

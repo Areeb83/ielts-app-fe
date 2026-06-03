@@ -1,0 +1,275 @@
+{
+  "testId": "book-15-test-2",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Listening Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "title": "Festival information",
+            "headers": ["Date", "Type of event", "Details"],
+            "rows": [
+              ["17th", "a concert", "performers from Canada"],
+              ["18th", "a ballet", ["company called ", { "id": "1", "type": "input" }]],
+              ["19th–20th (afternoon)", "a play", ["type of play: a comedy called Jemima. has had a good ", { "id": "2", "type": "input" }]],
+              ["20th (evening)", ["a ", { "id": "3", "type": "input" }, " show"], ["show is called ", { "id": "4", "type": "input" }]]
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 5,
+          "endQuestion": 7,
+          "data": {
+            "title": "Workshops",
+            "sentences": [
+              { "questionNumber": 5, "content": ["• Making ", { "id": "5", "type": "input" }, " food"] },
+              { "questionNumber": 6, "content": ["• (children only) Making ", { "id": "6", "type": "input" }] },
+              { "questionNumber": 7, "content": ["• (adults only) Making toys from ", { "id": "7", "type": "input" }, " using various tools"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Outdoor activities",
+            "sentences": [
+              { "questionNumber": 8, "content": ["• Swimming in the ", { "id": "8", "type": "input" }] },
+              { "questionNumber": 9, "content": ["• Walking in the woods, led by an expert on ", { "id": "9", "type": "input" }] },
+              { "questionNumber": 10, "content": ["See the festival organiser's ", { "id": "10", "type": "input" }, " for more information"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "The park was originally established",
+                "options": [
+                  { "letter": "A", "text": "as an amenity provided by the city council." },
+                  { "letter": "B", "text": "as land belonging to a private house." },
+                  { "letter": "C", "text": "as a shared area set up by the local community." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "Why is there a statue of Diane Gosforth in the park?",
+                "options": [
+                  { "letter": "A", "text": "She was a resident who helped to lead a campaign." },
+                  { "letter": "B", "text": "She was a council member responsible for giving the public access." },
+                  { "letter": "C", "text": "She was a senior worker at the park for many years." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "During the First World War, the park was mainly used for",
+                "options": [
+                  { "letter": "A", "text": "exercises by troops." },
+                  { "letter": "B", "text": "growing vegetables." },
+                  { "letter": "C", "text": "public meetings." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "When did the physical transformation of the park begin?",
+                "options": [
+                  { "letter": "A", "text": "2013" },
+                  { "letter": "B", "text": "2015" },
+                  { "letter": "C", "text": "2016" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A–I**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Minster Park",
+            "imageSrc": "/images/book-15-test-2-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "statue of Diane Gosforth" },
+              { "id": "16", "questionNumber": 16, "text": "wooden sculptures" },
+              { "id": "17", "questionNumber": 17, "text": "playground" },
+              { "id": "18", "questionNumber": 18, "text": "maze" },
+              { "id": "19", "questionNumber": 19, "text": "tennis courts" },
+              { "id": "20", "questionNumber": 20, "text": "fitness area" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO groups of people is the display primarily intended for?",
+                "options": [
+                  { "letter": "A", "text": "students from the English department" },
+                  { "letter": "B", "text": "residents of the local area" },
+                  { "letter": "C", "text": "the university's teaching staff" },
+                  { "letter": "D", "text": "potential new students" },
+                  { "letter": "E", "text": "students from other departments" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "What are Cathy and Graham's TWO reasons for choosing the novelist Charles Dickens?",
+                "options": [
+                  { "letter": "A", "text": "His speeches inspired others to try to improve society." },
+                  { "letter": "B", "text": "He used his publications to draw attention to social problems." },
+                  { "letter": "C", "text": "His novels are well-known now." },
+                  { "letter": "D", "text": "He was consulted on a number of social issues." },
+                  { "letter": "E", "text": "His reputation has changed in recent times." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What topic do Cathy and Graham choose to illustrate with each novel? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Topics",
+            "rightSideTitle": "Novels by Dickens",
+            "options": [
+              { "letter": "A", "text": "poverty" },
+              { "letter": "B", "text": "education" },
+              { "letter": "C", "text": "Dickens's travels" },
+              { "letter": "D", "text": "entertainment" },
+              { "letter": "E", "text": "crime and the law" },
+              { "letter": "F", "text": "wealth" },
+              { "letter": "G", "text": "medicine" },
+              { "letter": "H", "text": "a woman's life" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "The Pickwick Papers" },
+              { "id": "26", "questionNumber": 26, "text": "Oliver Twist" },
+              { "id": "27", "questionNumber": 27, "text": "Nicholas Nickleby" },
+              { "id": "28", "questionNumber": 28, "text": "Martin Chuzzlewit" },
+              { "id": "29", "questionNumber": 29, "text": "Bleak House" },
+              { "id": "30", "questionNumber": 30, "text": "Little Dorrit" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "Agricultural programme in Mozambique",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "How the programme was organised" }] },
+              { "content": ["• It focused on a dry and arid region in Chicualacuala district, near the Limpopo River."] },
+              { "content": ["• People depended on the forest to provide charcoal as a source of income."] },
+              { "questionNumber": 31, "content": ["• ", { "id": "31", "type": "input" }, " was seen as the main priority to ensure the supply of water."] },
+              { "questionNumber": 32, "content": ["• Most of the work organised by farmers' associations was done by ", { "id": "32", "type": "input" }] },
+              { "content": ["• Fenced areas were created to keep animals away from crops."] },
+              { "content": ["• The programme provided:"] },
+              { "questionNumber": 33, "content": ["– ", { "id": "33", "type": "input" }, " for the fences"] },
+              { "questionNumber": 34, "content": ["– ", { "id": "34", "type": "input" }, " for suitable crops"] },
+              { "content": ["– water pumps."] },
+              { "content": ["• The farmers provided:"] },
+              { "content": ["– labour"] },
+              { "questionNumber": 35, "content": ["– ", { "id": "35", "type": "input" }, " for the fences on their land."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Further developments",
+            "sentences": [
+              { "questionNumber": 36, "content": ["• The marketing of produce was sometimes difficult due to lack of ", { "id": "36", "type": "input" }, "."] },
+              { "questionNumber": 37, "content": ["• Training was therefore provided in methods of food ", { "id": "37", "type": "input" }, "."] },
+              { "questionNumber": 38, "content": ["• Farmers made special places where ", { "id": "38", "type": "input" }, " could be kept."] },
+              { "questionNumber": 39, "content": ["• Local people later suggested keeping ", { "id": "39", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Evaluation and lessons learned",
+            "sentences": [
+              { "content": ["• Agricultural production increased, improving incomes and food security."] },
+              { "questionNumber": 40, "content": ["• Enough time must be allowed, particularly for the ", { "id": "40", "type": "input" }, " phase of the programme."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

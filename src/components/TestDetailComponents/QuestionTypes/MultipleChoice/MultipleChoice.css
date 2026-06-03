@@ -1,0 +1,191 @@
+/* ─── Multiple Choice Container ─────────────────────────────────────────── */
+
+.mc-container {
+    padding: 0;
+    max-width: 954px;
+}
+
+.mc__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.mc__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.mc__instruction {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2c2c2c;
+    margin-bottom: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mc__instruction strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.mc__explanation {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ─── Question Block ─────────────────────────────────────────────────────── */
+
+.mc__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mc-question {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.mc-question__text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin: 0 0 6px 0;
+    font-weight: 500;
+}
+
+
+
+/* ─── Option Cards ───────────────────────────────────────────────────────── */
+
+.mc-question__options {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.mc-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 6px 14px;
+    /* Increased horizontal padding for the hover box */
+    margin-left: -14px;
+    /* Offset to keep content aligned with question */
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    /* Rounded corners for the hover box */
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Radio circle & Checkbox square */
+.mc-option__radio,
+.mc-option__checkbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #7c8691;
+    background-color: #fff;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.15s ease;
+}
+
+.mc-option__radio {
+    border-radius: 50%;
+}
+
+.mc-option__checkbox {
+    border-radius: 4px;
+}
+
+/* Hover effect - Light Gray Background */
+.mc-option:hover:not(.mc-option--blocked) {
+    background-color: #e5e5e5;
+}
+
+/* Selected state (Radio & Checkbox) */
+.mc-option--selected {
+    background-color: #d8eaff;
+}
+
+.mc-option--selected .mc-option__radio {
+    border-color: #0056b3;
+    background-color: #fff;
+}
+
+.mc-option--selected .mc-option__checkbox {
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+/* The dot inside the radio */
+.mc-option--selected .mc-option__radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #0056b3;
+    border-radius: 50%;
+}
+
+/* The sharp checkmark inside the checkbox */
+.mc-option--selected .mc-option__checkbox::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+}
+
+/* Blocked state */
+.mc-option--blocked {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* ─── Option Text ────────────────────────────────────────────────────────── */
+
+.mc-option__text {
+    font-size: 15px;
+    color: #2c2c2c;
+    line-height: 1.5;
+}
+
+.mc-option--selected .mc-option__text {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Question Number Styling */
+.mc-question__number {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-right: 8px;
+    font-size: 15px;
+}

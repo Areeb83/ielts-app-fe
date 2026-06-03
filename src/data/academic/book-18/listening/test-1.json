@@ -1,0 +1,352 @@
+{
+  "testId": "book-18-test-1",
+  "bookId": "book-18",
+  "title": "Cambridge IELTS 18 – Listening Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 1,
+          "data": {
+            "title": "Transport survey",
+            "sentences": [
+              { "content": ["Name: Sadie Jones"] },
+              { "content": ["Year of birth: 1991"] },
+              { "questionNumber": 1, "content": ["Postcode: ", { "id": "1", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 2,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Travelling by bus",
+            "sentences": [
+              { "questionNumber": 2, "content": ["Date of bus journey: ", { "id": "2", "type": "input" }] },
+              { "questionNumber": 3, "content": ["Reason for trip: shopping and visit to the ", { "id": "3", "type": "input" }] },
+              { "questionNumber": 4, "content": ["Travelled by bus because cost of ", { "id": "4", "type": "input" }, " too high"] },
+              { "questionNumber": 5, "content": ["Got on bus at ", { "id": "5", "type": "input" }, " Street"] },
+              { "content": ["Complaints about bus service:"] },
+              { "questionNumber": 6, "content": ["– bus today was ", { "id": "6", "type": "input" }] },
+              { "questionNumber": 7, "content": ["– frequency of buses in the ", { "id": "7", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "Travelling by car",
+            "sentences": [
+              { "questionNumber": 8, "content": ["Goes to the ", { "id": "8", "type": "input" }, " by car"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Travelling by bicycle",
+            "sentences": [
+              { "questionNumber": 9, "content": ["Dislikes travelling by bike in the city centre because of the ", { "id": "9", "type": "input" }] },
+              { "questionNumber": 10, "content": ["Doesn't own a bike because of a lack of ", { "id": "10", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 13,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Why does the speaker apologise about the seats?",
+                "options": [
+                  { "letter": "A", "text": "They are too small." },
+                  { "letter": "B", "text": "There are not enough of them." },
+                  { "letter": "C", "text": "Some of them are very close together." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "What does the speaker say about the age of volunteers?",
+                "options": [
+                  { "letter": "A", "text": "The age of volunteers is less important than other factors." },
+                  { "letter": "B", "text": "Young volunteers are less reliable than older ones." },
+                  { "letter": "C", "text": "Most volunteers are about 60 years old." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "What does the speaker say about training?",
+                "options": [
+                  { "letter": "A", "text": "It is continuous." },
+                  { "letter": "B", "text": "It is conducted by a manager." },
+                  { "letter": "C", "text": "It takes place online." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 14,
+          "endQuestion": 15,
+          "data": {
+            "questions": [
+              {
+                "id": "14-15",
+                "text": "Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
+                "options": [
+                  { "letter": "A", "text": "their financial situation" },
+                  { "letter": "B", "text": "their level of commitment" },
+                  { "letter": "C", "text": "their work experience" },
+                  { "letter": "D", "text": "their ambition" },
+                  { "letter": "E", "text": "their availability" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What does the speaker suggest would be helpful for each of the following areas of voluntary work? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 16–20.",
+          "startQuestion": 16,
+          "endQuestion": 20,
+          "data": {
+            "title": "Helpful things volunteers might offer",
+            "rightSideTitle": "Area of voluntary work",
+            "options": [
+              { "letter": "A", "text": "experience on stage" },
+              { "letter": "B", "text": "original, new ideas" },
+              { "letter": "C", "text": "parenting skills" },
+              { "letter": "D", "text": "an understanding of food and diet" },
+              { "letter": "E", "text": "retail experience" },
+              { "letter": "F", "text": "a good memory" },
+              { "letter": "G", "text": "a good level of fitness" }
+            ],
+            "questions": [
+              { "id": "16", "questionNumber": 16, "text": "Fundraising" },
+              { "id": "17", "questionNumber": 17, "text": "Litter collection" },
+              { "id": "18", "questionNumber": 18, "text": "'Playmates'" },
+              { "id": "19", "questionNumber": 19, "text": "Story club" },
+              { "id": "20", "questionNumber": 20, "text": "First aid" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What problem did Chantal have at the start of the talk?",
+                "options": [
+                  { "letter": "A", "text": "Her view of the speaker was blocked." },
+                  { "letter": "B", "text": "She was unable to find an empty seat." },
+                  { "letter": "C", "text": "The students next to her were talking." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "What were Hugo and Chantal surprised to hear about the job market?",
+                "options": [
+                  { "letter": "A", "text": "It has become more competitive than it used to be." },
+                  { "letter": "B", "text": "There is more variety in it than they had realised." },
+                  { "letter": "C", "text": "Some areas of it are more exciting than others." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "Hugo and Chantal agree that the speaker's message was",
+                "options": [
+                  { "letter": "A", "text": "unfair to them at times." },
+                  { "letter": "B", "text": "hard for them to follow." },
+                  { "letter": "C", "text": "critical of the industry." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "What do Hugo and Chantal criticise about their school careers advice?",
+                "options": [
+                  { "letter": "A", "text": "when they received the advice" },
+                  { "letter": "B", "text": "how much advice was given" },
+                  { "letter": "C", "text": "who gave the advice" }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "When discussing their future, Hugo and Chantal disagree on",
+                "options": [
+                  { "letter": "A", "text": "which is the best career in fashion." },
+                  { "letter": "B", "text": "when to choose a career in fashion." },
+                  { "letter": "C", "text": "why they would like a career in fashion." }
+                ]
+              },
+              {
+                "id": "26",
+                "questionNumber": 26,
+                "text": "How does Hugo feel about being an unpaid assistant?",
+                "options": [
+                  { "letter": "A", "text": "He is realistic about the practice." },
+                  { "letter": "B", "text": "He feels the practice is dishonest." },
+                  { "letter": "C", "text": "He thinks others want to change the practice." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 27,
+          "endQuestion": 28,
+          "data": {
+            "questions": [
+              {
+                "id": "27-28",
+                "text": "Which TWO mistakes did the speaker admit she made in her first job?",
+                "options": [
+                  { "letter": "A", "text": "being dishonest to her employer" },
+                  { "letter": "B", "text": "paying too much attention to how she looked" },
+                  { "letter": "C", "text": "expecting to become well known" },
+                  { "letter": "D", "text": "trying to earn a lot of money" },
+                  { "letter": "E", "text": "openly disliking her client" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 29,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "29-30",
+                "text": "Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+                "options": [
+                  { "letter": "A", "text": "the reasons people return fashion items" },
+                  { "letter": "B", "text": "how much time people have to shop for clothes" },
+                  { "letter": "C", "text": "fashion designs people want but can't find" },
+                  { "letter": "D", "text": "the best time of year for fashion buying" },
+                  { "letter": "E", "text": "the most popular fashion sizes" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 31,
+          "data": {
+            "title": "Elephant translocation",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Reasons for overpopulation at Majete National Park" }] },
+              { "content": ["• strict enforcement of anti-poaching laws"] },
+              { "content": ["• successful breeding"] },
+              { "content": [{ "type": "bold", "text": "Problems caused by elephant overpopulation" }] },
+              { "content": ["• greater competition, causing hunger for elephants"] },
+              { "questionNumber": 31, "content": ["• damage to ", { "id": "31", "type": "input" }, " in the park"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "The translocation process",
+            "sentences": [
+              { "questionNumber": 32, "content": ["• a suitable group of elephants from the same ", { "id": "32", "type": "input" }, " was selected"] },
+              { "questionNumber": 33, "content": ["• vets and park staff made use of ", { "id": "33", "type": "input" }, " to help guide the elephants into an open plain"] },
+              { "content": ["• elephants were immobilised with tranquilisers"] },
+              { "questionNumber": 34, "content": ["– this process had to be completed quickly to reduce ", { "id": "34", "type": "input" }] },
+              { "questionNumber": 35, "content": ["– elephants had to be turned on their ", { "id": "35", "type": "input" }, " to avoid damage to their lungs"] },
+              { "questionNumber": 36, "content": ["– elephants' ", { "id": "36", "type": "input" }, " had to be monitored constantly"] },
+              { "content": ["– tracking devices were fitted to the matriarchs"] },
+              { "questionNumber": 37, "content": ["– data including the size of their tusks and ", { "id": "37", "type": "input" }, " was taken"] },
+              { "content": ["• elephants were taken by truck to their new reserve"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Advantages of translocation at Nkhotakota Wildlife Park",
+            "sentences": [
+              { "questionNumber": 38, "content": ["• ", { "id": "38", "type": "input" }, " opportunities"] },
+              { "questionNumber": 39, "content": ["• a reduction in the number of poachers and ", { "id": "39", "type": "input" }] },
+              { "content": ["• an example of conservation that other parks can follow"] },
+              { "questionNumber": 40, "content": ["• an increase in ", { "id": "40", "type": "input" }, " as a contributor to GDP"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

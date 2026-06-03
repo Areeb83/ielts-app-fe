@@ -181,6 +181,7 @@
 }
 
 @layer utilities {
+
   /* Shared container width/padding to align page content with the Navbar */
   .page-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;

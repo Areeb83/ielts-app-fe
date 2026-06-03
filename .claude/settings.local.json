@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1LcVj3uu0C-jOQaJcg6h5ThSDFQrjWb26\" -o \"C:/Users/Laptopwala/Desktop/orange ielts/Frontend/public/images/book-12-test-4-part2-map.jpg\")",
+      "Bash(curl:*)"
+    ]
+  }
+}

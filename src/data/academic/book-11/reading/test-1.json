@@ -1,0 +1,327 @@
+{
+  "testId": "book-11-test-1",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Listening Test 1",
+  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "passage": {
+        "title": "The Ageing Population",
+        "sections": [
+          {
+            "label": "Section A",
+            "questionId": "1",
+            "content": "Clearly, when older people do heavy physical work, their age may affect their productivity. But other skills may increase with age, including many that are crucial for good management, such as an ability to handle people diplomatically, to run a meeting or to spot a problem before it blows up. Peter Hicks, who co-ordinates OECD* work on the policy implications of ageing, says that plenty of research suggests older people are paid more because they are worth more."
+          },
+          {
+            "label": "Section B",
+            "questionId": "2",
+            "content": "And the virtues of the young may be exaggerated. ‘The few companies that have kept on older workers find they have good judgement and their productivity is good,’ says Peter Peterson, author of a recent book on the impact of ageing. ‘Besides, their education standards are much better than those of today’s young high-school graduates.’ Companies may say that older workers are not worth training because they are reaching the end of their working lives; in fact, young people tend to switch jobs so frequently that they offer the worst returns on training."
+          },
+          {
+            "label": "Section C",
+            "questionId": "3",
+            "content": "The median age for employer-driven training is the late 40s and early 50s, and this training goes mainly to managers. There is no evidence that older workers are any less capable of learning new skills than younger ones. In fact, many older workers are more motivated to learn because they want to stay in the workforce longer."
+          },
+          {
+            "label": "Section D",
+            "questionId": "4",
+            "content": "Some companies have found that having a mix of ages in the workforce can lead to better problem-solving and innovation. Older workers can provide mentorship and guidance to younger colleagues, while younger workers can bring fresh perspectives and new ideas."
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "The text has four sections. Choose the correct heading for each section and move it into the gap.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "headings": [
+              "The benefits of experience in management",
+              "The myths about younger workers' productivity",
+              "The importance of lifelong learning",
+              "The value of a multi-generational workforce",
+              "Economic implications of an ageing society",
+              "Challenges in retraining older staff",
+              "The shift in recruitment trends"
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 8,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              {
+                "id": "6",
+                "text": "Marie Curie’s husband was a joint winner of both Marie’s Nobel Prizes."
+              },
+              {
+                "id": "7",
+                "text": "Marie became interested in science when she was a child."
+              },
+              {
+                "id": "8",
+                "text": "Marie was able to attend the Sorbonne because of her sister’s financial contribution."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "passage": {
+        "title": "The Impact of Urbanization on the Local Economy",
+        "sections": [
+          {
+            "content": "Urbanization is a global phenomenon that has significant implications for local economies. As people move from rural areas to cities in search of better opportunities, the demand for housing, infrastructure, and services increases. This shift often leads to a rise in property values and a change in the traditional business landscape. For instance, small-scale farming and local crafts may be replaced by large-scale industrial activities and modern retail outlets. While these changes can bring economic growth and new jobs, they also require the workforce to adapt to new technologies and skills."
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 11,
+                "content": [
+                  "The local museum is famous for its collection of ",
+                  {
+                    "id": "11",
+                    "type": "input"
+                  },
+                  " from the Victorian era."
+                ]
+              },
+              {
+                "questionNumber": 12,
+                "content": [
+                  "Visitors are not allowed to bring ",
+                  {
+                    "id": "12",
+                    "type": "input"
+                  },
+                  " into the exhibition rooms."
+                ]
+              },
+              {
+                "questionNumber": 13,
+                "content": [
+                  "The guided tour takes approximately ",
+                  {
+                    "id": "13",
+                    "type": "input"
+                  },
+                  " and ends at the gift shop."
+                ]
+              },
+              {
+                "questionNumber": 14,
+                "content": [
+                  "If you want to have lunch, the cafe is located next to the ",
+                  {
+                    "id": "14",
+                    "type": "input"
+                  },
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "The Impact of Urbanization on the Local Economy",
+            "content": [
+              "The primary cause of the shift was the new ",
+              {
+                "id": "15",
+                "type": "input"
+              },
+              " which eventually led to a significant ",
+              {
+                "id": "16",
+                "type": "input"
+              },
+              " in the area's overall income. Many residents noticed that the traditional ",
+              {
+                "id": "17",
+                "type": "input"
+              },
+              " were slowly disappearing, replaced by modern facilities. However, some positive effects included the establishment of a ",
+              {
+                "id": "18",
+                "type": "input"
+              },
+              " that brought new jobs, although it required workers to undergo ",
+              {
+                "id": "19",
+                "type": "input"
+              },
+              ". In the long term, experts believe that maintaining a balance will depend on improved ",
+              {
+                "id": "20",
+                "type": "input"
+              },
+              "."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "passage": {
+        "title": "Research Methodology in Higher Education",
+        "sections": [
+          {
+            "content": "Conducting research in a university setting requires careful planning and a robust methodology. Students are often encouraged to start by reviewing existing literature to identify gaps in knowledge. Once a research question is formulated, the next step involves designing appropriate data collection tools, such as questionnaires or interview guides. A common concern for researchers is the sample size, as a small sample may not be representative of the broader population. Ethical approval is also a critical requirement, ensuring that the research respects the rights and privacy of participants."
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct answer.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "text": "What is the main purpose of the student's research project?",
+                "options": [
+                  { "letter": "A", "text": "To compare different teaching methods." },
+                  { "letter": "B", "text": "To analyse how students use the library." },
+                  { "letter": "C", "text": "To investigate the effects of online learning." }
+                ]
+              },
+              {
+                "id": "22",
+                "text": "The student's supervisor suggests that she should first",
+                "options": [
+                  { "letter": "A", "text": "look at the existing research on the topic." },
+                  { "letter": "B", "text": "design a questionnaire for the participants." },
+                  { "letter": "C", "text": "arrange interviews with the relevant staff." }
+                ]
+              },
+              {
+                "id": "23",
+                "text": "Why is the student concerned about the sample size?",
+                "options": [
+                  { "letter": "A", "text": "It may not represent the wider population." },
+                  { "letter": "B", "text": "It will take too long to collect the data." },
+                  { "letter": "C", "text": "It requires approval from the ethics board." }
+                ]
+              },
+              {
+                "id": "24",
+                "text": "What does the supervisor recommend regarding the data analysis?",
+                "options": [
+                  { "letter": "A", "text": "Using specialist software from the beginning." },
+                  { "letter": "B", "text": "Starting with a simple manual approach." },
+                  { "letter": "C", "text": "Asking a statistician to review the results." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO correct answers.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "Which TWO problems did the students face when starting their project?",
+                "options": [
+                  { "letter": "A", "text": "Difficulty finding relevant sources." },
+                  { "letter": "B", "text": "Lack of support from their tutor." },
+                  { "letter": "C", "text": "Not enough time to complete the work." },
+                  { "letter": "D", "text": "Problems accessing the university database." },
+                  { "letter": "E", "text": "Disagreements about the research focus." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "passage": {
+        "title": "A History of Innovation",
+        "sections": [
+          {
+            "content": "The history of human civilization is marked by a series of transformative inventions and discoveries. From the ancient use of gunpowder in China to the development of the decimal system in India, different cultures have contributed significantly to global progress. The British Industrial Revolution brought about the first steam engines, forever changing manufacturing and transport. In the Islamic world, scholars made groundbreaking advances in algebra and medicine. More recently, the digital age has been shaped by the development of internet protocols in the United States, connecting the world in unprecedented ways."
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **NO MORE THAN ONE WORD** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "Accommodation Options",
+            "headers": ["Type", "Location", "Special Feature", "Cost per night"],
+            "rows": [
+              ["Hotel", "City centre", { "id": "31", "questionNumber": 31 }, "£120"],
+              ["B&B", { "id": "32", "questionNumber": 32 }, "Family-run", "£65"],
+              ["Hostel", "Near station", "Shared kitchen", { "id": "33", "questionNumber": 33 }],
+              [{ "id": "34", "questionNumber": 34 }, "Countryside", "Swimming pool", "£200"],
+              ["Campsite", "By the lake", { "id": "35", "questionNumber": 35 }, "£20"]
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Choose the correct group, A–E, for each item. You may choose any group more than once.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "title": "First invented or used by",
+            "options": [
+              { "letter": "A", "text": "the Chinese" },
+              { "letter": "B", "text": "the Indians" },
+              { "letter": "C", "text": "the British" },
+              { "letter": "D", "text": "the Arabs" },
+              { "letter": "E", "text": "the Americans" }
+            ],
+            "questions": [
+              { "id": "36", "questionNumber": 36, "text": "The use of gunpowder in warfare." },
+              { "id": "37", "questionNumber": 37, "text": "The development of the decimal system." },
+              { "id": "38", "questionNumber": 38, "text": "The first industrial steam engine." },
+              { "id": "39", "questionNumber": 39, "text": "The invention of algebra." },
+              { "id": "40", "questionNumber": 40, "text": "The creation of the first internet protocol." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

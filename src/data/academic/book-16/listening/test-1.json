@@ -1,0 +1,291 @@
+{
+  "testId": "book-16-test-1",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Listening Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "Children's Engineering Workshops",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Tiny Engineers (ages 4–5)" }] },
+              { "content": ["Activities"] },
+              { "questionNumber": 1, "content": ["• Create a cover for an ", { "id": "1", "type": "input" }, " so they can drop it from a height without breaking it."] },
+              { "questionNumber": 2, "content": ["• Take part in a competition to build the tallest ", { "id": "2", "type": "input" }, "."] },
+              { "questionNumber": 3, "content": ["• Make a ", { "id": "3", "type": "input" }, " powered by a balloon."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 4,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Junior Engineers (ages 6–8)",
+            "sentences": [
+              { "content": ["Activities:"] },
+              { "questionNumber": 4, "content": ["• Build model cars, trucks and ", { "id": "4", "type": "input" }, " and learn how to program them so they can move."] },
+              { "questionNumber": 5, "content": ["• Take part in a competition to build the longest ", { "id": "5", "type": "input" }, " using card and wood."] },
+              { "questionNumber": 6, "content": ["• Create a short ", { "id": "6", "type": "input" }, " with special software."] },
+              { "questionNumber": 7, "content": ["• Build, ", { "id": "7", "type": "input" }, " and program a humanoid robot."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Cost and Location",
+            "sentences": [
+              { "content": ["Cost for a five-week block: £50"] },
+              { "questionNumber": 8, "content": ["Held on ", { "id": "8", "type": "input" }, " from 10 am to 11 am"] },
+              { "content": ["Location"] },
+              { "questionNumber": 9, "content": ["Building 10A, ", { "id": "9", "type": "input" }, " Industrial Estate, Grasford"] },
+              { "questionNumber": 10, "content": ["Plenty of ", { "id": "10", "type": "input" }, " is available."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Stevenson's was founded in",
+                "options": [
+                  { "letter": "A", "text": "1923." },
+                  { "letter": "B", "text": "1924." },
+                  { "letter": "C", "text": "1926." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "Originally, Stevenson's manufactured goods for",
+                "options": [
+                  { "letter": "A", "text": "the healthcare industry." },
+                  { "letter": "B", "text": "the automotive industry." },
+                  { "letter": "C", "text": "the machine tools industry." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "What does the speaker say about the company premises?",
+                "options": [
+                  { "letter": "A", "text": "The company has recently moved." },
+                  { "letter": "B", "text": "The company has no plans to move." },
+                  { "letter": "C", "text": "The company is going to move shortly." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "The programme for the work experience group includes",
+                "options": [
+                  { "letter": "A", "text": "time to do research." },
+                  { "letter": "B", "text": "meetings with a teacher." },
+                  { "letter": "C", "text": "talks by staff." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A–J**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Plan of Stevenson's site",
+            "imageSrc": "/images/book-16-test-1-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "coffee room" },
+              { "id": "16", "questionNumber": 16, "text": "warehouse" },
+              { "id": "17", "questionNumber": 17, "text": "staff canteen" },
+              { "id": "18", "questionNumber": 18, "text": "meeting room" },
+              { "id": "19", "questionNumber": 19, "text": "human resources" },
+              { "id": "20", "questionNumber": 20, "text": "boardroom" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO parts of the introductory stage to their art projects do Jess and Tom agree were useful?",
+                "options": [
+                  { "letter": "A", "text": "the Bird Park visit" },
+                  { "letter": "B", "text": "the workshop sessions" },
+                  { "letter": "C", "text": "the Natural History Museum visit" },
+                  { "letter": "D", "text": "the projects done in previous years" },
+                  { "letter": "E", "text": "the handouts with research sources" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "In which TWO ways do both Jess and Tom decide to change their proposals?",
+                "options": [
+                  { "letter": "A", "text": "by giving a rationale for their action plans" },
+                  { "letter": "B", "text": "by being less specific about the outcome" },
+                  { "letter": "C", "text": "by adding a video diary presentation" },
+                  { "letter": "D", "text": "by providing a timeline and a mind map" },
+                  { "letter": "E", "text": "by making their notes more evaluative" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Which personal meaning do the students decide to give to each of the following pictures? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Personal meanings",
+            "rightSideTitle": "Pictures",
+            "options": [
+              { "letter": "A", "text": "a childhood memory" },
+              { "letter": "B", "text": "hope for the future" },
+              { "letter": "C", "text": "fast movement" },
+              { "letter": "D", "text": "a potential threat" },
+              { "letter": "E", "text": "the power of colour" },
+              { "letter": "F", "text": "the continuity of life" },
+              { "letter": "G", "text": "protection of nature" },
+              { "letter": "H", "text": "a confused attitude to nature" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Falcon (Landseer)" },
+              { "id": "26", "questionNumber": 26, "text": "Fish hawk (Audubon)" },
+              { "id": "27", "questionNumber": 27, "text": "Kingfisher (van Gogh)" },
+              { "id": "28", "questionNumber": 28, "text": "Portrait of William Wells" },
+              { "id": "29", "questionNumber": 29, "text": "Vairumati (Gauguin)" },
+              { "id": "30", "questionNumber": 30, "text": "Portrait of Giovanni de Medici" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "Stoicism",
+            "sentences": [
+              { "questionNumber": 31, "content": ["Stoicism is still relevant today because of its ", { "id": "31", "type": "input" }, " appeal."] },
+              { "content": [{ "type": "bold", "text": "Ancient Stoics" }] },
+              { "content": ["• Stoicism was founded over 2,000 years ago in Greece."] },
+              { "questionNumber": 32, "content": ["• The Stoics' ideas are surprisingly well known, despite not being intended for ", { "id": "32", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Stoic principles",
+            "sentences": [
+              { "content": ["• Happiness could be achieved by leading a virtuous life."] },
+              { "content": ["• Controlling emotions was essential."] },
+              { "questionNumber": 33, "content": ["• Epictetus said that external events cannot be controlled but the ", { "id": "33", "type": "input" }, " people make in response can be controlled."] },
+              { "questionNumber": 34, "content": ["• A Stoic is someone who has a different view on experiences which others would consider as ", { "id": "34", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "The influence of Stoicism",
+            "sentences": [
+              { "questionNumber": 35, "content": ["• George Washington organised a ", { "id": "35", "type": "input" }, " about Cato to motivate his men."] },
+              { "content": ["• The French artist Delacroix was a Stoic."] },
+              { "questionNumber": 36, "content": ["• Adam Smith's ideas on ", { "id": "36", "type": "input" }, " were influenced by Stoicism."] },
+              { "content": ["• Some of today's political leaders are inspired by the Stoics."] },
+              { "content": ["• Cognitive Behaviour Therapy (CBT):"] },
+              { "questionNumber": 37, "content": ["– the treatment for ", { "id": "37", "type": "input" }, " is based on ideas from Stoicism"] },
+              { "questionNumber": 38, "content": ["– people learn to base their thinking on ", { "id": "38", "type": "input" }, "."] },
+              { "questionNumber": 39, "content": ["• In business, people benefit from Stoicism by identifying obstacles as ", { "id": "39", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Relevance of Stoicism",
+            "sentences": [
+              { "questionNumber": 40, "content": ["• It requires a lot of ", { "id": "40", "type": "input" }, " but Stoicism can help people to lead a good life."] },
+              { "content": ["• It teaches people that having a strong character is more important than anything else."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

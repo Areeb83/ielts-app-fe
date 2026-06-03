@@ -1,0 +1,320 @@
+{
+  "testId": "book-15-test-1",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Listening Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "Bankside Recruitment Agency",
+            "sentences": [
+              { "content": ["• Address of agency: 497 Eastside, Docklands"] },
+              { "questionNumber": 1, "content": ["• Name of agent: Becky ", { "id": "1", "type": "input" }] },
+              { "content": ["• Phone number: 07866 510333"] },
+              { "questionNumber": 2, "content": ["• Best to call her in the ", { "id": "2", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Typical jobs" }] },
+              { "content": ["• Clerical and admin roles, mainly in the finance industry"] },
+              { "questionNumber": 3, "content": ["• Must have good ", { "id": "3", "type": "input" }, " skills"] },
+              { "questionNumber": 4, "content": ["• Jobs are usually for at least one ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["• Pay is usually £ ", { "id": "5", "type": "input" }, " per hour"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "Registration process",
+            "sentences": [
+              { "questionNumber": 6, "content": ["• Wear a ", { "id": "6", "type": "input" }, " to the interview"] },
+              { "questionNumber": 7, "content": ["• Must bring your ", { "id": "7", "type": "input" }, " to the interview"] },
+              { "questionNumber": 8, "content": ["• They will ask questions about each applicant's ", { "id": "8", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Advantages of using an agency",
+            "sentences": [
+              { "questionNumber": 9, "content": ["• The ", { "id": "9", "type": "input" }, " you receive at interview will benefit you"] },
+              { "content": ["• Will get access to vacancies which are not advertised"] },
+              { "questionNumber": 10, "content": ["• Less ", { "id": "10", "type": "input" }, " is involved in applying for jobs"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "According to the speaker, the company",
+                "options": [
+                  { "letter": "A", "text": "has been in business for longer than most of its competitors." },
+                  { "letter": "B", "text": "arranges holidays to more destinations than its competitors." },
+                  { "letter": "C", "text": "has more customers than its competitors." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "Where can customers meet the tour manager before travelling to the Isle of Man?",
+                "options": [
+                  { "letter": "A", "text": "Liverpool" },
+                  { "letter": "B", "text": "Heysham" },
+                  { "letter": "C", "text": "Luton" }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "How many lunches are included in the price of the holiday?",
+                "options": [
+                  { "letter": "A", "text": "three" },
+                  { "letter": "B", "text": "four" },
+                  { "letter": "C", "text": "five" }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "Customers have to pay extra for",
+                "options": [
+                  { "letter": "A", "text": "guaranteeing themselves a larger room." },
+                  { "letter": "B", "text": "booking at short notice." },
+                  { "letter": "C", "text": "transferring to another date." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Timetable for Isle of Man holiday",
+            "headers": ["Day", "Arrive", "Notes"],
+            "rows": [
+              [
+                "Day 1",
+                "Arrive",
+                ["Introduction by manager. Hotel dining room has view of the ", { "id": "15", "type": "input" }]
+              ],
+              [
+                "Day 2",
+                "Tynwald Exhibition and Peel",
+                ["Tynwald may have been founded in ", { "id": "16", "type": "input" }, " not 979."]
+              ],
+              [
+                "Day 3",
+                "Trip to Snaefell",
+                ["Travel along promenade in a tram; train to Laxey; train to the ", { "id": "17", "type": "input" }, " of Snaefell"]
+              ],
+              [
+                "Day 4",
+                "Free day",
+                ["Company provides a ", { "id": "18", "type": "input" }, " for local transport and heritage sites."]
+              ],
+              [
+                "Day 5",
+                ["Take the ", { "id": "19", "type": "input" }, " railway train from Douglas to Port Erin"],
+                ["Free time, then coach to Castletown – former ", { "id": "20", "type": "input" }, " has old castle."]
+              ],
+              [
+                "Day 6",
+                "Leave",
+                "Leave the island by ferry or plane"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What did findings of previous research claim about the personality traits a child is likely to have because of their position in the family? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 21–26.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "Personality Traits",
+            "rightSideTitle": "Position in family",
+            "options": [
+              { "letter": "A", "text": "outgoing" },
+              { "letter": "B", "text": "selfish" },
+              { "letter": "C", "text": "independent" },
+              { "letter": "D", "text": "attention-seeking" },
+              { "letter": "E", "text": "introverted" },
+              { "letter": "F", "text": "co-operative" },
+              { "letter": "G", "text": "caring" },
+              { "letter": "H", "text": "competitive" }
+            ],
+            "questions": [
+              { "id": "21", "questionNumber": 21, "text": "the eldest child" },
+              { "id": "22", "questionNumber": 22, "text": "a middle child" },
+              { "id": "23", "questionNumber": 23, "text": "the youngest child" },
+              { "id": "24", "questionNumber": 24, "text": "a twin" },
+              { "id": "25", "questionNumber": 25, "text": "an only child" },
+              { "id": "26", "questionNumber": 26, "text": "a child with much older siblings" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 27,
+          "endQuestion": 28,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "What do the speakers say about the evidence relating to birth order and academic success?",
+                "options": [
+                  { "letter": "A", "text": "There is conflicting evidence about whether oldest children perform best in intelligence tests." },
+                  { "letter": "B", "text": "There is little doubt that birth order has less influence on academic achievement than socio-economic status." },
+                  { "letter": "C", "text": "Some studies have neglected to include important factors such as family size." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "What does Ruth think is surprising about the difference in oldest children's academic performance?",
+                "options": [
+                  { "letter": "A", "text": "It is mainly thanks to their roles as teachers for their younger siblings." },
+                  { "letter": "B", "text": "The advantages they have only lead to a slightly higher level of achievement." },
+                  { "letter": "C", "text": "The extra parental attention they receive at a young age makes little difference." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 29,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "29-30",
+                "text": "Which TWO experiences of sibling rivalry do the speakers agree has been valuable for them?",
+                "options": [
+                  { "letter": "A", "text": "learning to share" },
+                  { "letter": "B", "text": "learning to stand up for oneself" },
+                  { "letter": "C", "text": "learning to be a good loser" },
+                  { "letter": "D", "text": "learning to be tolerant" },
+                  { "letter": "E", "text": "learning to say sorry" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "The Eucalyptus Tree in Australia",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Importance" }] },
+              { "questionNumber": 31, "content": ["• it provides ", { "id": "31", "type": "input" }, " and food for a wide range of species"] },
+              { "questionNumber": 32, "content": ["• its leaves provide ", { "id": "32", "type": "input" }, " which is used to make a disinfectant"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 33,
+          "hideRange": true,
+          "data": {
+            "title": "Reasons for present decline – 'Mundulla Yellows'",
+            "sentences": [
+              { "content": ["Cause:"] },
+              { "questionNumber": 33, "content": ["– lime used for making ", { "id": "33", "type": "input" }, " was absorbed"] },
+              { "content": ["– trees were unable to take in necessary iron through their roots"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "'Bell-miner Associated Die-back'",
+            "sentences": [
+              { "content": ["Cause:"] },
+              { "questionNumber": 34, "content": ["– ", { "id": "34", "type": "input" }, " feed on eucalyptus leaves"] },
+              { "content": ["– they secrete a substance containing sugar"] },
+              { "content": ["– bell-miner birds are attracted by this and keep away other species"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Bushfires – William Jackson's theory",
+            "sentences": [
+              { "questionNumber": 35, "content": ["• high-frequency bushfires have impact on vegetation, resulting in the growth of ", { "id": "35", "type": "input" }] },
+              { "content": ["• mid-frequency bushfires result in the growth of eucalyptus forests, because they:"] },
+              { "questionNumber": 36, "content": ["– make more ", { "id": "36", "type": "input" }, " available to the trees"] },
+              { "questionNumber": 37, "content": ["– maintain the quality of the ", { "id": "37", "type": "input" }] },
+              { "questionNumber": 38, "content": ["• low-frequency bushfires result in the growth of '", { "id": "38", "type": "input" }, " rainforest', which is:"] },
+              { "questionNumber": 39, "content": ["– a ", { "id": "39", "type": "input" }, " ecosystem"] },
+              { "questionNumber": 40, "content": ["– an ideal environment for the ", { "id": "40", "type": "input" }, " of the bell-miner"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

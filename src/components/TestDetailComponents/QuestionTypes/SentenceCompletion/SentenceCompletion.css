@@ -1,0 +1,136 @@
+.sentence-completion-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sentence-completion__range {
+  font-size: 16px !important;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.sentence-completion__instruction {
+  font-size: 16px !important;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.sentence-completion__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hidden-measurer {
+  position: absolute;
+  visibility: hidden;
+  white-space: pre;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  font-size: 17px;
+  /* Must match .sentence-input */
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: 0 12px;
+  /* Must match .sentence-input horizontal padding */
+}
+
+/* Sentences */
+.sentence-completion__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  /* Matches root as discussed */
+  line-height: 1.8;
+  color: #333;
+}
+
+.sentence-completion__step-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.sentence-completion__step-wrapper--sub {
+  padding-left: 24px;
+}
+
+.sentence-completion__step {
+  flex: 1;
+  max-width: 100%;
+}
+
+.sentence-completion__step-content {
+  line-height: 2.2;
+  /* Generous for inputs */
+  word-wrap: break-word;
+  max-width: 100%;
+  padding-right: 10px;
+  color: #000000;
+  /* Added breathing room on the right */
+}
+
+.sentence-number {
+  font-weight: 600;
+  color: #1e293b;
+  min-width: 24px;
+}
+
+/* Input Fields */
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px;
+  max-width: calc(100% - 12px);
+  /* Account for 6px margins on each side */
+  vertical-align: middle;
+}
+
+.sentence-input {
+  display: block;
+  min-width: 200px;
+  max-width: 100%;
+  /* Changed from 200px to 100% to allow growth */
+  height: 30px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  font-size: 17px;
+  color: #1e293b;
+  background-color: #fff;
+  border: 1px solid #7c8691;
+  border-radius: 8px;
+  text-align: left;
+  /* Always left aligned */
+  outline: none;
+}
+
+.sentence-input:focus {
+  border-color: #0056b3;
+  border-width: 1.5px;
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.fake-placeholder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* Hide fake placeholder ONLY when has text */
+.sentence-input:not(:placeholder-shown)+.fake-placeholder {
+  display: none;
+}

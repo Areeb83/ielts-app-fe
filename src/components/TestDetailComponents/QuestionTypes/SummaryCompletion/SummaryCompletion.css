@@ -1,0 +1,117 @@
+.summary-completion-container {
+    width: 100%;
+}
+
+.summary-completion__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.summary-completion__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hidden measurer for auto-growing input */
+.summary-hidden-measurer {
+    position: absolute;
+    visibility: hidden;
+    white-space: pre;
+    height: 0;
+    overflow: hidden;
+    font-size: 17px;
+    /* Must match .summary-completion__input */
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding: 0 12px;
+    /* Must match .summary-completion__input horizontal padding */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.summary-completion__content-box {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.summary-completion__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.summary-completion__paragraph {
+    font-size: 16px;
+    line-height: 2.2;
+    /* Generous line height for inputs */
+    color: #1a202c;
+    text-align: left;
+    padding-right: 10px;
+    /* Breathing room for borders */
+}
+
+.summary-completion__input-wrapper {
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: baseline;
+}
+
+/* Input Wrapper for Fake Placeholder */
+.summary-input-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0 4px;
+    max-width: calc(100% - 8px);
+    /* Account for 4px margins */
+    vertical-align: middle;
+}
+
+.summary-completion__input {
+    display: block;
+    /* Allows width/height control */
+    min-width: 200px;
+    max-width: 100%;
+    padding: 4px 12px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #1e293b;
+    background-color: #fff;
+    border: 1px solid #7c8691;
+    border-radius: 8px;
+    text-align: left;
+    /* Always left-aligned */
+    outline: none;
+}
+
+.summary-completion__input:focus {
+    border-color: #0056b3;
+    /* Synced Blue */
+    border-width: 1.5px;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.summary-fake-placeholder {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Hide fake placeholder ONLY when has text */
+.summary-completion__input:not(:placeholder-shown)+.summary-fake-placeholder {
+    display: none;
+}

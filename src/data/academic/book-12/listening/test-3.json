@@ -1,0 +1,540 @@
+{
+  "testId": "book-12-test-3",
+  "bookId": "book-12",
+  "title": "Cambridge IELTS 12 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 10,
+          "data": {
+            "title": "PUBLIC LIBRARY",
+            "sentences": [
+              {
+                "content": ["Example – The library re-opened last ", { "type": "bold", "text": "month" }, "."]
+              },
+              {
+                "content": [{ "type": "bold", "text": "The library now has" }]
+              },
+              {
+                "content": ["• a seating area with magazines"]
+              },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• an expanded section for books on ",
+                  { "id": "1", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• a new section on local ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• a community room for meetings (also possible to ",
+                  { "id": "3", "type": "input" },
+                  " there)"
+                ]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "• a new section of books for ",
+                  { "id": "4", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 5,
+          "endQuestion": 5,
+          "hideRange": true,
+          "data": {
+            "title": "For younger children",
+            "sentences": [
+              {
+                "questionNumber": 5,
+                "content": [
+                  "• the next Science Club meeting: experiments using things from your ",
+                  { "id": "5", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• Reading Challenge: read six books during the holidays"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "For adults",
+            "sentences": [
+              {
+                "questionNumber": 6,
+                "content": [
+                  "• this Friday: a local author talks about a novel based on a real ",
+                  { "id": "6", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "• IT support is available on Tuesdays - no ",
+                  { "id": "7", "type": "input" },
+                  " is necessary"
+                ]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "• free check of blood ",
+                  { "id": "8", "type": "input" },
+                  " and cholesterol levels (over 60s only)"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Other information",
+            "sentences": [
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• the library shop sells wall-charts, cards and ",
+                  { "id": "9", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• evenings and weekends: free ",
+                  { "id": "10", "type": "input" },
+                  " is available"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "Which TWO age groups are taking increasing numbers of holidays with BC Travel?",
+                "options": [
+                  { "letter": "A", "text": "16–30 years" },
+                  { "letter": "B", "text": "31–42 years" },
+                  { "letter": "C", "text": "43–54 years" },
+                  { "letter": "D", "text": "55–64 years" },
+                  { "letter": "E", "text": "over 65 years" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 13,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "13-14",
+                "text": "Which TWO are the main reasons given for the popularity of activity holidays?",
+                "options": [
+                  { "letter": "A", "text": "Clients make new friends." },
+                  { "letter": "B", "text": "Clients learn a useful skill." },
+                  { "letter": "C", "text": "Clients learn about a different culture." },
+                  { "letter": "D", "text": "Clients are excited by the risk involved." },
+                  { "letter": "E", "text": "Clients find them good value for money." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 15,
+          "endQuestion": 17,
+          "data": {
+            "questions": [
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "How does BC Travel plan to expand the painting holidays?",
+                "options": [
+                  { "letter": "A", "text": "by adding to the number of locations" },
+                  { "letter": "B", "text": "by increasing the range of levels" },
+                  { "letter": "C", "text": "by employing more teachers" }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "Why are BC Travel's cooking holidays unusual?",
+                "options": [
+                  { "letter": "A", "text": "They only use organic foods." },
+                  { "letter": "B", "text": "They have an international focus." },
+                  { "letter": "C", "text": "They mainly involve vegetarian dishes." }
+                ]
+              },
+              {
+                "id": "17",
+                "questionNumber": 17,
+                "text": "What does the speaker say about the photography holidays?",
+                "options": [
+                  { "letter": "A", "text": "Clients receive individual tuition." },
+                  { "letter": "B", "text": "The tutors are also trained guides." },
+                  { "letter": "C", "text": "Advice is given on selling photographs." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 18,
+          "endQuestion": 20,
+          "data": {
+            "title": "Fitness Holidays",
+            "headers": ["Location", "Main focus", "Other comments"],
+            "rows": [
+              [
+                "Ireland and Italy",
+                "general fitness",
+                ["• personally designed programme", { "type": "br" }, "• also reduces ", { "id": "18", "type": "input" }]
+              ],
+              [
+                "Greece",
+                [{ "id": "19", "type": "input" }, " control"],
+                "• includes exercise on the beach"
+              ],
+              [
+                "Morocco",
+                "mountain biking",
+                ["• wide variety of levels", { "type": "br" }, "• one holiday that is specially designed for ", { "id": "20", "type": "input" }]
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "FLOW_CHART_DRAG_DROP",
+          "instruction": "Complete the flow-chart below. Choose **SIX** answers from the box and write the correct letter, **A-H**, next to **Questions 21-26**.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "STAGES IN DOING A TOURISM CASE STUDY",
+            "options": ["patterns", "names", "sources", "questions", "employees", "solutions", "headings", "officials"],
+            "steps": [
+              {
+                "type": "text",
+                "content": "Step 1 – RESEARCH"
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Locate and read relevant articles, noting key information and also ",
+                  { "id": "21", "type": "dropzone" },
+                  ". Identify a problem or need."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Select interviewees – these may be site ",
+                  { "id": "22", "type": "dropzone" },
+                  ", visitors or city ",
+                  { "id": "23", "type": "dropzone" }
+                ]
+              },
+              {
+                "type": "text",
+                "content": "Prepare and carry out interviews. If possible, collect statistics."
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Check whether ",
+                  { "id": "24", "type": "dropzone" },
+                  " of interviewees can be used"
+                ]
+              },
+              {
+                "type": "text",
+                "content": "Step 2 – ANALYSIS"
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Select relevant information and try to identify ",
+                  { "id": "25", "type": "dropzone" }
+                ]
+              },
+              {
+                "type": "text",
+                "content": "Decide on the best form of visuals"
+              },
+              {
+                "type": "text",
+                "content": "Step 3 – WRITING THE CASE STUDY"
+              },
+              {
+                "type": "text",
+                "content": "Give some background before writing the main sections"
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Do NOT end with ",
+                  { "id": "26", "type": "dropzone" }
+                ]
+              }
+            ]
+          }
+        }
+      ,
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "title": "The Horton Castle site",
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "Natalie and Dave agree one reason why so few people visit Horton Castle is that",
+                "options": [
+                  { "letter": "A", "text": "the publicity is poor." },
+                  { "letter": "B", "text": "it is difficult to get to." },
+                  { "letter": "C", "text": "there is little there of interest." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "Natalie and Dave agree that the greatest problem with a visitor centre could be",
+                "options": [
+                  { "letter": "A", "text": "covering the investment costs." },
+                  { "letter": "B", "text": "finding a big enough space for it." },
+                  { "letter": "C", "text": "dealing with planning restrictions." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What does Dave say about conditions in the town of Horton?",
+                "options": [
+                  { "letter": "A", "text": "There is a lot of unemployment." },
+                  { "letter": "B", "text": "There are few people of working age." },
+                  { "letter": "C", "text": "There are opportunities for skilled workers." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "According to Natalie, one way to prevent damage to the castle site would be to",
+                "options": [
+                  { "letter": "A", "text": "insist visitors have a guide." },
+                  { "letter": "B", "text": "make visitors keep to the paths." },
+                  { "letter": "C", "text": "limit visitor numbers." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 40,
+          "data": {
+            "title": "The effects of environmental change on birds",
+            "sentences": [
+              {
+                "content": [{ "type": "bold", "text": "Mercury (Hg)" }]
+              },
+              {
+                "content": ["• Highly toxic"]
+              },
+              {
+                "content": ["• Released into the atmosphere from coal"]
+              },
+              {
+                "content": ["• In water it may be consumed by fish"]
+              },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• It has also recently been found to affect birds which feed on ",
+                  { "id": "31", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "hideRange": true,
+          "data": {
+            "title": "Research on effects of mercury on birds",
+            "sentences": [
+              {
+                "content": ["• Claire Varian-Ramos is investigating:"]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "  - the effects on birds' ",
+                  { "id": "32", "type": "input" },
+                  " or mental processes, e.g. memory"
+                ]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  "  - the effects on bird song (usually learned from a bird's ",
+                  { "id": "33", "type": "input" },
+                  ")"
+                ]
+              },
+              {
+                "content": ["• Findings:"]
+              },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "  - songs learned by birds exposed to mercury are less ",
+                  { "id": "34", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "  - this may have a negative effect on birds' ",
+                  { "id": "35", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• Lab-based studies:"]
+              },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "  - allow more ",
+                  { "id": "36", "type": "input" },
+                  " for the experimenter"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Implications for humans",
+            "sentences": [
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• Migrating birds such as ",
+                  { "id": "37", "type": "input" },
+                  " containing mercury may be eaten by humans"
+                ]
+              },
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• Mercury also causes problems in learning ",
+                  { "id": "38", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• Mercury in a mother's body from ",
+                  { "id": "39", "type": "input" },
+                  " may affect the unborn child"
+                ]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• New regulations for mercury emissions will affect everyone's energy ",
+                  { "id": "40", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

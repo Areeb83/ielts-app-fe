@@ -1,0 +1,526 @@
+{
+  "testId": "book-12-test-1",
+  "bookId": "book-12",
+  "title": "Cambridge IELTS 12 – Listening Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 10,
+          "data": {
+            "title": "FAMILY EXCURSIONS",
+            "sentences": [
+              {
+                "content": [{ "type": "bold", "text": "Cruise on a lake" }]
+              },
+              {
+                "content": ["Example: Travel on an old steamship"]
+              },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• Can take photos of the ",
+                  { "id": "1", "type": "input" },
+                  " that surround the lake"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 2,
+          "endQuestion": 4,
+          "hideRange": true,
+          "data": {
+            "title": "Farm visit",
+            "sentences": [
+              {
+                "content": ["• Children can help feed the sheep"]
+              },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• Visit can include a 40-minute ride on a ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• Visitors can walk in the farm's ",
+                  { "id": "3", "type": "input" },
+                  " by the lake"
+                ]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  { "id": "4", "type": "input" },
+                  " is available at extra cost"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 5,
+          "endQuestion": 9,
+          "hideRange": true,
+          "data": {
+            "title": "Cycling trips",
+            "sentences": [
+              {
+                "content": ["• Cyclists explore the Back Road"]
+              },
+              {
+                "questionNumber": 5,
+                "content": [
+                  "• A ",
+                  { "id": "5", "type": "input" },
+                  " is provided"
+                ]
+              },
+              {
+                "questionNumber": 6,
+                "content": [
+                  "• Only suitable for cyclists who have some ",
+                  { "id": "6", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "  - Bikes can be hired from ",
+                  { "id": "7", "type": "input" },
+                  " (near the Cruise Ship Terminal)"
+                ]
+              },
+              {
+                "content": ["• Cyclists need:"]
+              },
+              {
+                "content": ["  - a repair kit"]
+              },
+              {
+                "content": ["  - food and drink"]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "  - a ",
+                  { "id": "8", "type": "input" },
+                  " (can be hired)"
+                ]
+              },
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• There are no ",
+                  { "id": "9", "type": "input" },
+                  " or accommodation in the area"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 10,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Cost",
+            "sentences": [
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• Total cost for whole family of cruise and farm visit: $",
+                  { "id": "10", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "title": "Talk to new kitchen assistants",
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "According to the manager, what do most people like about the job of kitchen assistant?",
+                "options": [
+                  { "letter": "A", "text": "the variety of work" },
+                  { "letter": "B", "text": "the friendly atmosphere" },
+                  { "letter": "C", "text": "the opportunities for promotion" }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "The manager is concerned about some of the new staff's",
+                "options": [
+                  { "letter": "A", "text": "jewellery." },
+                  { "letter": "B", "text": "hair styles." },
+                  { "letter": "C", "text": "shoes." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "The manager says that the day is likely to be busy for kitchen staff because",
+                "options": [
+                  { "letter": "A", "text": "it is a public holiday." },
+                  { "letter": "B", "text": "the head chef is absent." },
+                  { "letter": "C", "text": "the restaurant is almost fully booked." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "Only kitchen staff who are 18 or older are allowed to use",
+                "options": [
+                  { "letter": "A", "text": "the waste disposal unit." },
+                  { "letter": "B", "text": "the electric mixer." },
+                  { "letter": "C", "text": "the meat slicer." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 15,
+          "endQuestion": 16,
+          "data": {
+            "questions": [
+              {
+                "id": "15-16",
+                "text": "According to the manager, which TWO things can make the job of kitchen assistant stressful?",
+                "options": [
+                  { "letter": "A", "text": "They have to follow orders immediately." },
+                  { "letter": "B", "text": "The kitchen gets very hot." },
+                  { "letter": "C", "text": "They may not be able to take a break." },
+                  { "letter": "D", "text": "They have to do overtime." },
+                  { "letter": "E", "text": "The work is physically demanding." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What is the responsibility of each of the following restaurant staff?\nChoose **FOUR** answers from the box and write the correct letter, **A-F**, next to **Questions 17-20**.",
+          "startQuestion": 17,
+          "endQuestion": 20,
+          "data": {
+            "title": "Responsibilities",
+            "options": [
+              { "letter": "A", "text": "training courses" },
+              { "letter": "B", "text": "food stocks" },
+              { "letter": "C", "text": "first aid" },
+              { "letter": "D", "text": "breakages" },
+              { "letter": "E", "text": "staff discounts" },
+              { "letter": "F", "text": "timetables" }
+            ],
+            "questions": [
+              { "id": "17", "questionNumber": 17, "text": "Joy Parkins" },
+              { "id": "18", "questionNumber": 18, "text": "David Field" },
+              { "id": "19", "questionNumber": 19, "text": "Dexter Wills" },
+              { "id": "20", "questionNumber": 20, "text": "Mike Smith" }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 23,
+          "data": {
+            "title": "Paper on Public Libraries",
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What will be the main topic of Trudie and Stewart's paper?",
+                "options": [
+                  { "letter": "A", "text": "how public library services are organised in different countries" },
+                  { "letter": "B", "text": "how changes in society are reflected in public libraries" },
+                  { "letter": "C", "text": "how the funding of public libraries has changed" }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "They agree that one disadvantage of free digitalised books is that",
+                "options": [
+                  { "letter": "A", "text": "they may take a long time to read." },
+                  { "letter": "B", "text": "they can be difficult to read." },
+                  { "letter": "C", "text": "they are generally old." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "Stewart expects that in the future libraries will",
+                "options": [
+                  { "letter": "A", "text": "maintain their traditional function." },
+                  { "letter": "B", "text": "become centres for local communities." },
+                  { "letter": "C", "text": "no longer contain any books." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 24,
+          "endQuestion": 30,
+          "data": {
+            "title": "Study of local library: possible questions",
+            "sentences": [
+              {
+                "questionNumber": 24,
+                "content": [
+                  "• whether it has a ",
+                  { "id": "24", "type": "input" },
+                  " of its own"
+                ]
+              },
+              {
+                "content": ["• its policy regarding noise of various kinds"]
+              },
+              {
+                "questionNumber": 25,
+                "content": [
+                  "• how it's affected by laws regarding all aspects of ",
+                  { "id": "25", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 26,
+                "content": [
+                  "• how the design needs to take the ",
+                  { "id": "26", "type": "input" },
+                  " of customers into account"
+                ]
+              },
+              {
+                "questionNumber": 27,
+                "content": [
+                  "• what ",
+                  { "id": "27", "type": "input" },
+                  " is required in case of accidents"
+                ]
+              },
+              {
+                "questionNumber": 28,
+                "content": [
+                  "• why a famous person's ",
+                  { "id": "28", "type": "input" },
+                  " is located in the library"
+                ]
+              },
+              {
+                "questionNumber": 29,
+                "content": [
+                  "• whether it has a ",
+                  { "id": "29", "type": "input" },
+                  " of local organisations"
+                ]
+              },
+              {
+                "questionNumber": 30,
+                "content": [
+                  "• how it's different from a library in a ",
+                  { "id": "30", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 40,
+          "data": {
+            "title": "Four business values",
+            "sentences": [
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• Many business values can result in ",
+                  { "id": "31", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• Senior managers need to understand and deal with the potential ",
+                  { "id": "32", "type": "input" },
+                  " that may result."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Collaboration",
+            "sentences": [
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• During a training course, the speaker was in a team that had to build a ",
+                  { "id": "33", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• Other teams experienced ",
+                  { "id": "34", "type": "input" },
+                  " from trying to collaborate."
+                ]
+              },
+              {
+                "content": ["• The speaker's team won because they reduced collaboration."]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• Sales of a ",
+                  { "id": "35", "type": "input" },
+                  " were poor because of collaboration."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Industriousness",
+            "sentences": [
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• Hard work may be a bad use of various company ",
+                  { "id": "36", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• The word 'lazy' in this context refers to people who avoid doing tasks that are ",
+                  { "id": "37", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Creativity",
+            "sentences": [
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• An advertising campaign for a ",
+                  { "id": "38", "type": "input" },
+                  " was memorable but failed to boost sales."
+                ]
+              },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• Creativity should be used as a response to a particular ",
+                  { "id": "39", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Excellence",
+            "sentences": [
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• According to one study, on average, pioneers had a ",
+                  { "id": "40", "type": "input" },
+                  " that was far higher than that of followers."
+                ]
+              },
+              {
+                "content": ["• Companies that always aim at excellence may miss opportunities."]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

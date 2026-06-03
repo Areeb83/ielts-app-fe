@@ -1,0 +1,451 @@
+{
+  "testId": "book-13-test-3",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 1,
+          "data": {
+            "title": "Moving to Sanford City",
+            "sentences": [
+              { "content": ["Example"] },
+              { "content": ["Linda recommends living in suburb of: ", { "type": "bold", "text": "Dalton" }] },
+              { "content": [{ "type": "bold", "text": "Accommodation" }] },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• Average rent: £",
+                  { "id": "1", "type": "input" },
+                  " a month"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 2,
+          "endQuestion": 5,
+          "hideRange": true,
+          "data": {
+            "title": "Transport",
+            "sentences": [
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• Linda travels to work by ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• Limited ",
+                  { "id": "3", "type": "input" },
+                  " in city centre"
+                ]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "• Trains to London every ",
+                  { "id": "4", "type": "input" },
+                  " minutes"
+                ]
+              },
+              {
+                "questionNumber": 5,
+                "content": [
+                  "• Poor train service at ",
+                  { "id": "5", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "Advantages of living in Banford",
+            "sentences": [
+              {
+                "questionNumber": 6,
+                "content": [
+                  "• New ",
+                  { "id": "6", "type": "input" },
+                  " opened recently"
+                ]
+              },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "• ",
+                  { "id": "7", "type": "input" },
+                  " has excellent reputation"
+                ]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "• Good ",
+                  { "id": "8", "type": "input" },
+                  " on Bridge Street"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Meet Linda",
+            "sentences": [
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• Meet Linda on ",
+                  { "id": "9", "type": "input" },
+                  " after 5.30 pm"
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• In the ",
+                  { "id": "10", "type": "input" },
+                  " opposite the station"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What advantage does the speaker mention for each of the following physical activities?\n\nChoose **SIX** answers from the box and write the correct letter, **A–G**, next to Questions 11–16.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "Physical activities",
+            "options": [
+              { "letter": "A", "text": "not dependent on season" },
+              { "letter": "B", "text": "enjoyable" },
+              { "letter": "C", "text": "low risk of injury" },
+              { "letter": "D", "text": "fitness level unimportant" },
+              { "letter": "E", "text": "sociable" },
+              { "letter": "F", "text": "fast results" },
+              { "letter": "G", "text": "motivating" }
+            ],
+            "questions": [
+              { "id": "11", "questionNumber": 11, "text": "using a gym" },
+              { "id": "12", "questionNumber": 12, "text": "running" },
+              { "id": "13", "questionNumber": 13, "text": "swimming" },
+              { "id": "14", "questionNumber": 14, "text": "cycling" },
+              { "id": "15", "questionNumber": 15, "text": "doing yoga" },
+              { "id": "16", "questionNumber": 16, "text": "training with a personal trainer" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 17,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "17",
+                "text": "For which **TWO** reasons does the speaker say people give up going to the gym?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "lack of time" },
+                  { "letter": "B", "text": "loss of confidence" },
+                  { "letter": "C", "text": "too much effort required" },
+                  { "letter": "D", "text": "high costs" },
+                  { "letter": "E", "text": "feeling less successful than others" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19",
+                "text": "Which **TWO** pieces of advice does the speaker give for setting goals?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "write goals down" },
+                  { "letter": "B", "text": "have achievable aims" },
+                  { "letter": "C", "text": "set a time limit" },
+                  { "letter": "D", "text": "give yourself rewards" },
+                  { "letter": "E", "text": "challenge yourself" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "title": "Project on using natural dyes to colour fabrics",
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What first inspired Jim to choose this project?",
+                "options": [
+                  { "letter": "A", "text": "textiles displayed in an exhibition" },
+                  { "letter": "B", "text": "a book about a botanic garden" },
+                  { "letter": "C", "text": "carpets he saw on holiday" }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Jim eventually decided to do a practical investigation which involved",
+                "options": [
+                  { "letter": "A", "text": "using a range of dyes with different fibres." },
+                  { "letter": "B", "text": "applying different dyes to one type of fibre." },
+                  { "letter": "C", "text": "testing one dye and a range of fibres." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "When doing his experiments, Jim was surprised by",
+                "options": [
+                  { "letter": "A", "text": "how much natural material was needed to make the dye." },
+                  { "letter": "B", "text": "the fact that dyes were widely available on the internet." },
+                  { "letter": "C", "text": "the time that he had to leave the fabric in the dye." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "What problem did Jim have with using tartrazine as a fabric dye?",
+                "options": [
+                  { "letter": "A", "text": "It caused a slight allergic reaction." },
+                  { "letter": "B", "text": "It was not a permanent dye on cotton." },
+                  { "letter": "C", "text": "It was ineffective when used on nylon." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What problem is identified with each of the following natural dyes?\n\nChoose **SIX** answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Natural dyes",
+            "options": [
+              { "letter": "A", "text": "It is expensive." },
+              { "letter": "B", "text": "The colour is too strong." },
+              { "letter": "C", "text": "The colour is not long-lasting." },
+              { "letter": "D", "text": "It is very poisonous." },
+              { "letter": "E", "text": "It can damage the fabric." },
+              { "letter": "F", "text": "The colour may be unexpected." },
+              { "letter": "G", "text": "It is unsuitable for some fabrics." },
+              { "letter": "H", "text": "It is not generally available." }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "turmeric" },
+              { "id": "26", "questionNumber": 26, "text": "beetroot" },
+              { "id": "27", "questionNumber": 27, "text": "Tyrian purple" },
+              { "id": "28", "questionNumber": 28, "text": "logwood" },
+              { "id": "29", "questionNumber": 29, "text": "cochineal" },
+              { "id": "30", "questionNumber": 30, "text": "metal oxide" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "The sleepy lizard (tiliqua rugosa)",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Description" }] },
+              { "content": ["• They are common in Western and South Australia"] },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• They are brown, but recognisable by their blue ",
+                  { "id": "31", "type": "input" }
+                ]
+              },
+              { "content": ["• They are relatively large"] },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• Their diet consists mainly of ",
+                  { "id": "32", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• Their main predators are large birds and ",
+                  { "id": "33", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Navigation study",
+            "sentences": [
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• One study found that lizards can use the ",
+                  { "id": "34", "type": "input" },
+                  " to help them navigate"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Observations in the wild",
+            "sentences": [
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• Observations show that these lizards keep the same ",
+                  { "id": "35", "type": "input" },
+                  " for several years"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "What people want",
+            "sentences": [
+              { "content": ["• Possible reasons:"] },
+              {
+                "questionNumber": 36,
+                "content": [
+                  " - to improve the survival of their young (but little ",
+                  { "id": "36", "type": "input" },
+                  " has been noted between parents and children)"
+                ]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  " - to provide ",
+                  { "id": "37", "type": "input" },
+                  " for female lizards"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Tracking study",
+            "sentences": [
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• A study was carried out using GPS systems attached to the ",
+                  { "id": "38", "type": "input" },
+                  " of the lizards"
+                ]
+              },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• This provided information on the lizards' location and even the number of ",
+                  { "id": "39", "type": "input" },
+                  " taken"
+                ]
+              },
+              { "content": ["• It appeared that the lizards were trying to avoid one another"] },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• This may be in order to reduce chances of ",
+                  { "id": "40", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

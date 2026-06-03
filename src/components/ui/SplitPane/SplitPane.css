@@ -1,0 +1,91 @@
+.split-pane-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* Fill available height, assuming parent defines it. Otherwise it will stretch to fit content */
+    height: 100%; 
+    overflow: hidden;
+}
+
+.split-pane-left,
+.split-pane-right {
+    height: 100%;
+    overflow-y: auto; /* Scroll independently */
+    position: relative;
+    /* Smooth transition for width is generally a bad idea when dragging frequently, 
+       so we omit it to keep resizing snappy. */
+}
+
+/* Ensure padding on the panes doesn't break the percentage calculation */
+.split-pane-left {
+    padding-right: 20px;
+}
+
+.split-pane-right {
+    padding-left: 20px;
+}
+
+/* 
+  The separator: It has a thin visual line, but a wider hit area 
+  for easier grabbing with the mouse.
+*/
+.split-pane-divider {
+    position: relative;
+    width: 24px; /* Hit area width */
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: col-resize;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+/* The actual thin line */
+.split-pane-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    transform: translateX(-50%);
+    background-color: #718096; /* Darker gray */
+    transition: background-color 0.2s ease;
+}
+
+.split-pane-divider:hover::after,
+.split-pane-divider.dragging::after {
+    background-color: #0056b3; /* Blue highlight to match inputs */
+}
+
+/* The Grabber Square Handle */
+.divider-grabber {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #f8f9fa;
+    border: 1px solid #4a5568;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.grabber-icon {
+    color: #2d3748;
+}
+
+.split-pane-divider:hover .divider-grabber,
+.split-pane-divider.dragging .divider-grabber {
+    border-color: #0056b3;
+    background-color: #fff;
+}
+
+.split-pane-divider:hover .grabber-icon,
+.split-pane-divider.dragging .grabber-icon {
+    color: #0056b3;
+}

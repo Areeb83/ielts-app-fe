@@ -1,0 +1,334 @@
+{
+  "testId": "book-14-test-1",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Listening Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the form below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "CRIME REPORT FORM",
+            "sentences": [
+              { "content": ["Type of crime: ", { "type": "bold", "text": "theft" }] },
+              { "content": [{ "type": "bold", "text": "Personal information" }] },
+              { "content": ["Example"] },
+              { "content": ["Name: ", { "type": "bold", "text": "Louise Taylor" }] },
+              { "questionNumber": 1, "content": ["Nationality: ", { "id": "1", "type": "input" }] },
+              { "content": ["Date of birth: 14 December 1977"] },
+              { "content": ["Occupation: interior designer"] },
+              { "questionNumber": 2, "content": ["Reason for visit: business (to buy antique ", { "id": "2", "type": "input" }, ")"] },
+              { "content": ["Length of stay: two months"] },
+              { "questionNumber": 3, "content": ["Current address: ", { "id": "3", "type": "input" }, " Apartments (No 15)"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 4,
+          "endQuestion": 6,
+          "hideRange": true,
+          "data": {
+            "title": "Details of theft",
+            "sentences": [
+              { "content": ["Items stolen:"] },
+              { "questionNumber": 4, "content": ["– a wallet containing approximately £ ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["– a ", { "id": "5", "type": "input" }] },
+              { "questionNumber": 6, "content": ["Date of theft: ", { "id": "6", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 9,
+          "hideRange": true,
+          "data": {
+            "title": "Possible time and place of theft",
+            "sentences": [
+              { "questionNumber": 7, "content": ["Location: outside the ", { "id": "7", "type": "input" }, " at about 4 pm"] },
+              { "content": ["Details of suspect:"] },
+              { "questionNumber": 8, "content": ["– some boys asked for the ", { "id": "8", "type": "input" }, " then ran off"] },
+              { "content": ["– one had a T-shirt with a picture of a tiger"] },
+              { "questionNumber": 9, "content": ["– he was about 12, slim build with ", { "id": "9", "type": "input" }, " hair"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 10,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Crime reference number allocated",
+            "sentences": [
+              { "questionNumber": 10, "content": [{ "id": "10", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "Which TWO pieces of advice for the first week of an apprenticeship does the manager give?",
+                "options": [
+                  { "letter": "A", "text": "get to know colleagues" },
+                  { "letter": "B", "text": "learn from any mistakes" },
+                  { "letter": "C", "text": "ask lots of questions" },
+                  { "letter": "D", "text": "react positively to feedback" },
+                  { "letter": "E", "text": "enjoy new challenges" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 13,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "13-14",
+                "text": "Which TWO things does the manager say mentors can help with?",
+                "options": [
+                  { "letter": "A", "text": "confidence-building" },
+                  { "letter": "B", "text": "making career plans" },
+                  { "letter": "C", "text": "completing difficult tasks" },
+                  { "letter": "D", "text": "making a weekly timetable" },
+                  { "letter": "E", "text": "reviewing progress" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What does the manager say about each of the following aspects of the company policy for apprentices? Write the correct letter, **A**, **B** or **C**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Company policy for apprentices",
+            "options": [
+              { "letter": "A", "text": "It is encouraged." },
+              { "letter": "B", "text": "There are some restrictions." },
+              { "letter": "C", "text": "It is against the rules." }
+            ],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "Using the internet" },
+              { "id": "16", "questionNumber": 16, "text": "Flexible working" },
+              { "id": "17", "questionNumber": 17, "text": "Booking holidays" },
+              { "id": "18", "questionNumber": 18, "text": "Working overtime" },
+              { "id": "19", "questionNumber": 19, "text": "Wearing trainers" },
+              { "id": "20", "questionNumber": 20, "text": "Bringing food to work" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 25,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "Carla and Rob were surprised to learn that coastal cities",
+                "options": [
+                  { "letter": "A", "text": "contain nearly half the world's population." },
+                  { "letter": "B", "text": "include most of the world's largest cities." },
+                  { "letter": "C", "text": "are growing twice as fast as other cities." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "According to Rob, building coastal cities near to rivers",
+                "options": [
+                  { "letter": "A", "text": "may bring pollution to the cities." },
+                  { "letter": "B", "text": "may reduce the land available for agriculture." },
+                  { "letter": "C", "text": "may mean the countryside is spoiled by industry." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "What mistake was made when building water drainage channels in Miami in the 1950s?",
+                "options": [
+                  { "letter": "A", "text": "There were not enough of them." },
+                  { "letter": "B", "text": "They were made of unsuitable materials." },
+                  { "letter": "C", "text": "They did not allow for the effects of climate change." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "What do Rob and Carla think that the authorities in Miami should do immediately?",
+                "options": [
+                  { "letter": "A", "text": "take measures to restore ecosystems" },
+                  { "letter": "B", "text": "pay for a new flood prevention system" },
+                  { "letter": "C", "text": "stop disposing of waste materials into the ocean" }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "What do they agree should be the priority for international action?",
+                "options": [
+                  { "letter": "A", "text": "greater coordination of activities" },
+                  { "letter": "B", "text": "more sharing of information" },
+                  { "letter": "C", "text": "agreement on shared policies" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What decision do the students make about each of the following parts of their presentation? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 26–30.",
+          "startQuestion": 26,
+          "endQuestion": 30,
+          "data": {
+            "title": "Decisions",
+            "rightSideTitle": "Parts of the presentation",
+            "options": [
+              { "letter": "A", "text": "use visuals" },
+              { "letter": "B", "text": "keep it short" },
+              { "letter": "C", "text": "involve other students" },
+              { "letter": "D", "text": "check the information is accurate" },
+              { "letter": "E", "text": "provide a handout" },
+              { "letter": "F", "text": "focus on one example" },
+              { "letter": "G", "text": "do online research" }
+            ],
+            "questions": [
+              { "id": "26", "questionNumber": 26, "text": "Historical background" },
+              { "id": "27", "questionNumber": 27, "text": "Geographical factors" },
+              { "id": "28", "questionNumber": 28, "text": "Past mistakes" },
+              { "id": "29", "questionNumber": 29, "text": "Future risks" },
+              { "id": "30", "questionNumber": 30, "text": "International implications" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 31,
+          "data": {
+            "title": "Marine renewable energy (ocean energy)",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Introduction" }] },
+              { "questionNumber": 31, "content": ["More energy required because of growth in population and ", { "id": "31", "type": "input" }] },
+              { "content": ["What's needed:"] },
+              { "content": ["• renewable energy sources"] },
+              { "content": ["• methods that won't create pollution"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Wave energy",
+            "sentences": [
+              { "questionNumber": 32, "content": ["Advantage: waves provide a ", { "id": "32", "type": "input" }, " source of renewable energy"] },
+              { "content": ["Electricity can be generated using offshore or onshore systems"] },
+              { "content": ["Onshore systems may use a reservoir"] },
+              { "content": ["Problems:"] },
+              { "questionNumber": 33, "content": ["• waves can move in any ", { "id": "33", "type": "input" }] },
+              { "questionNumber": 34, "content": ["• movement of sand, etc. on the ", { "id": "34", "type": "input" }, " of the ocean may be affected"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Tidal energy",
+            "sentences": [
+              { "questionNumber": 35, "content": ["Tides are more ", { "id": "35", "type": "input" }, " than waves"] },
+              { "content": ["Planned tidal lagoon in Wales:"] },
+              { "questionNumber": 36, "content": ["• will be created in a ", { "id": "36", "type": "input" }, " at Swansea"] },
+              { "content": ["• breakwater (dam) containing 16 turbines"] },
+              { "content": ["• rising tide forces water through turbines, generating electricity"] },
+              { "questionNumber": 37, "content": ["• stored water is released through ", { "id": "37", "type": "input" }, ", driving the turbines in the reverse direction"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Advantages",
+            "sentences": [
+              { "content": ["• not dependent on weather"] },
+              { "questionNumber": 38, "content": ["• no ", { "id": "38", "type": "input" }, " is required to make it work"] },
+              { "questionNumber": 39, "content": ["• likely to create a number of ", { "id": "39", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Problem",
+            "sentences": [
+              { "questionNumber": 40, "content": ["• may harm fish and birds, e.g. by affecting ", { "id": "40", "type": "input" }, " and building up silt"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -7,21 +7,26 @@ import { SpeakingTestsPage } from "../pages/SpeakingTestsPage";
 import { AcademicTestsPage } from "../pages/AcademicTestsPage";
 import { GeneralTestsPage } from "../pages/GeneralTestsPage";
 import { PricingPage } from "../pages/PricingPage";
+import { ListeningTestActualPage } from "../pages/ListeningTestPage/ListeningTestActualPage";
+import { ReadingTestActualPage } from "../pages/ReadingTestPage/ReadingTestActualPage";
+import { ROUTES } from "../constants";
 
 const NormalRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path={ROUTES.HOME} element={<HomePage />} />
 
             {/* Dynamic exam type routes: :examType will be "academic" or "general" */}
-            <Route path="/:examType/listening" element={<ListeningTestsPage />} />
-            <Route path="/:examType/reading" element={<ReadingTestsPage />} />
-            <Route path="/:examType/writing" element={<WritingTestsPage />} />
-            <Route path="/:examType/speaking" element={<SpeakingTestsPage />} />
+            <Route path={ROUTES.LISTENING} element={<ListeningTestsPage />} />
+            <Route path={ROUTES.LISTENING_TEST} element={<ListeningTestActualPage />} />
+            <Route path={ROUTES.READING} element={<ReadingTestsPage />} />
+            <Route path={ROUTES.READING_TEST} element={<ReadingTestActualPage />} />
+            <Route path={ROUTES.WRITING} element={<WritingTestsPage />} />
+            <Route path={ROUTES.SPEAKING} element={<SpeakingTestsPage />} />
 
-            <Route path="/academic" element={<AcademicTestsPage />} />
-            <Route path="/general" element={<GeneralTestsPage />} />
-            <Route path="/pricing" element={<PricingPage />} />
+            <Route path={ROUTES.ACADEMIC} element={<AcademicTestsPage />} />
+            <Route path={ROUTES.GENERAL} element={<GeneralTestsPage />} />
+            <Route path={ROUTES.PRICING} element={<PricingPage />} />
 
             <Route path="*" element={<HomePage />} />
         </Routes>

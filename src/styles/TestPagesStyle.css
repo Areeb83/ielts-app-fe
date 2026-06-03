@@ -1,0 +1,235 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header__logo img {
+    height: 27px;
+}
+
+.header__candidate {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.header__candidateId {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.header__connection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.header__status.connected {
+    color: green;
+}
+
+.header__status.disconnected {
+    color: red;
+}
+
+.header__actions button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.footer__navButtons button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer__navButtons button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.footer__questionNav {
+    display: flex;
+    gap: 5px;
+}
+
+.footer__questionNo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.footer__questionNo.active {
+    background-color: #0072ce;
+    color: #fff;
+    border-color: #0072ce;
+}
+
+.footer__submit button {
+    background-color: #0072ce;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer__submit button:hover {
+    background-color: #005bb5;
+}
+
+
+
+.listening-test-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    font-family: Arial, sans-serif;
+}
+
+.section-header-banner {
+    background-color: #edebeb;
+    padding: 12px 20px;
+    /* margin: -20px -  20px 0 -20px; */
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.section-sub-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.test-content {
+    flex: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.audio-player {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.question-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/* TableCompletionQuestion */
+.table-completion-question {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.table-completion-question h3 {
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.table-completion-question table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-completion-question th,
+.table-completion-question td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-completion-question input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+
+/* Reading Passage Styles */
+.reading-passage-container {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.3;
+    word-spacing: -1px;
+    font-size: 16px;
+}
+
+.passage-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #000;
+}
+
+.passage-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passage-paragraph {
+    margin: 0;
+    text-align: justify;
+}

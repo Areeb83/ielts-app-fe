@@ -1,0 +1,297 @@
+{
+  "testId": "book-17-test-2",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Listening Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "title": "Opportunities for voluntary work in Southoe village",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Library" }] },
+              { "questionNumber": 1, "content": ["• Help with ", { "id": "1", "type": "input" }, " books (times to be arranged)"] },
+              { "questionNumber": 2, "content": ["• Help needed to keep ", { "id": "2", "type": "input" }, " of books up to date"] },
+              { "questionNumber": 3, "content": ["• Library is in the ", { "id": "3", "type": "input" }, " Room in the village hall"] },
+              { "content": [{ "type": "bold", "text": "Lunch club" }] },
+              { "questionNumber": 4, "content": ["• Help by providing ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["• Help with hobbies such as ", { "id": "5", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Help for individuals needed next week" }] },
+              { "questionNumber": 6, "content": ["• Taking Mrs Carroll to ", { "id": "6", "type": "input" }] },
+              { "questionNumber": 7, "content": ["• Work in the ", { "id": "7", "type": "input" }, " at Mr Selsbury's house"] }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "data": {
+            "title": "Village social events",
+            "headers": ["Date", "Event", "Location", "Help needed"],
+            "rows": [
+              ["19 Oct", { "id": "8", "questionNumber": 8 }, "Village hall", "providing refreshments"],
+              ["18 Nov", "dance", "Village hall", ["checking ", { "id": "9", "type": "input" }]],
+              ["31 Dec", "New Year's Eve party", "Mountfort Hotel", ["designing the ", { "id": "10", "type": "input" }]]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Many past owners made changes to",
+                "options": [
+                  { "letter": "A", "text": "the gardens." },
+                  { "letter": "B", "text": "the house." },
+                  { "letter": "C", "text": "the farm." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "Sir Edward Downes built Oniton Hall because he wanted",
+                "options": [
+                  { "letter": "A", "text": "a place for discussing politics." },
+                  { "letter": "B", "text": "a place to display his wealth." },
+                  { "letter": "C", "text": "a place for artists and writers." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "Visitors can learn about the work of servants in the past from",
+                "options": [
+                  { "letter": "A", "text": "audio guides." },
+                  { "letter": "B", "text": "photographs." },
+                  { "letter": "C", "text": "people in costume." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "What is new for children at Oniton Hall?",
+                "options": [
+                  { "letter": "A", "text": "clothes for dressing up" },
+                  { "letter": "B", "text": "mini tractors" },
+                  { "letter": "C", "text": "the adventure playground" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Which activity is offered at each of the following locations on the farm? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Activities",
+            "rightSideTitle": "Locations on the farm",
+            "options": [
+              { "letter": "A", "text": "shopping" },
+              { "letter": "B", "text": "watching cows being milked" },
+              { "letter": "C", "text": "seeing old farming equipment" },
+              { "letter": "D", "text": "eating and drinking" },
+              { "letter": "E", "text": "starting a trip" },
+              { "letter": "F", "text": "seeing rare breeds of animals" },
+              { "letter": "G", "text": "helping to look after animals" },
+              { "letter": "H", "text": "using farming tools" }
+            ],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "dairy" },
+              { "id": "16", "questionNumber": 16, "text": "large barn" },
+              { "id": "17", "questionNumber": 17, "text": "small barn" },
+              { "id": "18", "questionNumber": 18, "text": "stables" },
+              { "id": "19", "questionNumber": 19, "text": "shed" },
+              { "id": "20", "questionNumber": 20, "text": "parkland" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet?",
+                "options": [
+                  { "letter": "A", "text": "analysis of the text" },
+                  { "letter": "B", "text": "a summary of the plot" },
+                  { "letter": "C", "text": "a description of the theatre" },
+                  { "letter": "D", "text": "a personal reaction" },
+                  { "letter": "E", "text": "a reference to particular scenes" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Which opinion do the speakers give about each of the following aspects of The Emporium's production of Romeo and Juliet? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 23–27.",
+          "startQuestion": 23,
+          "endQuestion": 27,
+          "data": {
+            "title": "Opinions",
+            "rightSideTitle": "Aspects of the production",
+            "options": [
+              { "letter": "A", "text": "They both expected this to be more traditional." },
+              { "letter": "B", "text": "They both thought this was original." },
+              { "letter": "C", "text": "They agree this created the right atmosphere." },
+              { "letter": "D", "text": "They agree this was a major strength." },
+              { "letter": "E", "text": "They were both disappointed by this." },
+              { "letter": "F", "text": "They disagree about why this was an issue." },
+              { "letter": "G", "text": "They disagree about how this could be improved." }
+            ],
+            "questions": [
+              { "id": "23", "questionNumber": 23, "text": "the set" },
+              { "id": "24", "questionNumber": 24, "text": "the lighting" },
+              { "id": "25", "questionNumber": 25, "text": "the costume design" },
+              { "id": "26", "questionNumber": 26, "text": "the music" },
+              { "id": "27", "questionNumber": 27, "text": "the actors' delivery" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 28,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "The students think the story of Romeo and Juliet is still relevant for young people today because",
+                "options": [
+                  { "letter": "A", "text": "it illustrates how easily conflict can start." },
+                  { "letter": "B", "text": "it deals with problems that families experience." },
+                  { "letter": "C", "text": "it teaches them about relationships." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "The students found watching Romeo and Juliet in another language",
+                "options": [
+                  { "letter": "A", "text": "frustrating." },
+                  { "letter": "B", "text": "demanding." },
+                  { "letter": "C", "text": "moving." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "Why do the students think Shakespeare's plays have such international appeal?",
+                "options": [
+                  { "letter": "A", "text": "The stories are exciting." },
+                  { "letter": "B", "text": "There are recognisable characters." },
+                  { "letter": "C", "text": "They can be interpreted in many ways." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "The impact of digital technology on the Icelandic language",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "The Icelandic language" }] },
+              { "questionNumber": 31, "content": ["• has approximately ", { "id": "31", "type": "input" }, " speakers"] },
+              { "questionNumber": 32, "content": ["• has a ", { "id": "32", "type": "input" }, " that is still growing"] },
+              { "content": ["• has not changed a lot over the last thousand years"] },
+              { "questionNumber": 33, "content": ["• has its own words for computer-based concepts, such as web browser and ", { "id": "33", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Young speakers",
+            "sentences": [
+              { "questionNumber": 34, "content": ["• are big users of digital technology, such as ", { "id": "34", "type": "input" }] },
+              { "questionNumber": 35, "content": ["• are becoming ", { "id": "35", "type": "input" }, " very quickly"] },
+              { "questionNumber": 36, "content": ["• are having discussions using only English while they are in the ", { "id": "36", "type": "input" }, " at school"] },
+              { "questionNumber": 37, "content": ["• are better able to identify the content of a ", { "id": "37", "type": "input" }, " in English than Icelandic"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Technology and internet companies",
+            "sentences": [
+              { "questionNumber": 38, "content": ["• write very little in Icelandic because of the small number of speakers and because of how complicated its ", { "id": "38", "type": "input" }, " is"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "The Icelandic government",
+            "sentences": [
+              { "content": ["• has set up a fund to support the production of more digital content in the language"] },
+              { "content": ["• believes that Icelandic has a secure future"] },
+              { "questionNumber": 39, "content": ["• is worried that young Icelanders may lose their ", { "id": "39", "type": "input" }, " as Icelanders"] },
+              { "questionNumber": 40, "content": ["• is worried about the consequences of children not being ", { "id": "40", "type": "input" }, " in either Icelandic or English"] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "testId": "book-11-test-4",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Listening Test 4",
+  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "headers": ["Event", "Cost", "Venue", "Notes"],
+            "rows": [
+              [
+                "Jazz band",
+                "Tickets available for £15",
+                ["The ", { "id": "1", "type": "input" }, " school"],
+                ["Also appearing: Carolyn Hart (plays the ", { "id": "2", "type": "input" }, ")"]
+              ],
+              [
+                "Duck races",
+                "£1 per duck",
+                ["Start behind the ", { "id": "3", "type": "input" }],
+                ["Prize: tickets for ", { "id": "4", "type": "input" }, " held at the end of the festival. Ducks can be bought in the ", { "id": "5", "type": "input" }]
+              ],
+              [
+                "Flower show",
+                "Free",
+                [{ "id": "6", "type": "input" }, " Hall"],
+                ["Prizes presented at 5 pm by a well-known ", { "id": "7", "type": "input" }]
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Who is each play suitable for?\nWrite the correct letter, **A, B or C**, next to **Questions 8-10**.",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "mainly for children" },
+              { "letter": "B", "text": "mainly for adults" },
+              { "letter": "C", "text": "suitable for people of all ages" }
+            ],
+            "questions": [
+              { "id": "8", "questionNumber": 8, "text": "The Mystery of Muldoon" },
+              { "id": "9", "questionNumber": 9, "text": "Fire and Flood" },
+              { "id": "10", "questionNumber": 10, "text": "Silly Sailor" }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What does the speaker say about each of the following collections?\nChoose **SIX** answers from the box and write the correct letter, **A-G**, next to **Questions 11-16**.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "Comments",
+            "options": [
+              { "letter": "A", "text": "was given by one person" },
+              { "letter": "B", "text": "was recently publicised in the media" },
+              { "letter": "C", "text": "includes some items given by members of the public" },
+              { "letter": "D", "text": "includes some items given by the artists" },
+              { "letter": "E", "text": "includes the most popular exhibits in the museum" },
+              { "letter": "F", "text": "is the largest of its kind in the country" },
+              { "letter": "G", "text": "has had some of its contents relocated" }
+            ],
+            "questions": [
+              { "id": "11", "questionNumber": 11, "text": "20th- and 21st-century paintings" },
+              { "id": "12", "questionNumber": 12, "text": "19th-century paintings" },
+              { "id": "13", "questionNumber": 13, "text": "Sculptures" },
+              { "id": "14", "questionNumber": 14, "text": "'Around the world' exhibition" },
+              { "id": "15", "questionNumber": 15, "text": "Coins" },
+              { "id": "16", "questionNumber": 16, "text": "Porcelain and glass" }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the plan below.\nWrite the correct letter, **A-H**, next to **Questions 17-20**.",
+          "startQuestion": 17,
+          "endQuestion": 20,
+          "data": {
+            "title": "Basement of museum",
+            "imageSrc": "/images/book-11-test-4-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "17", "questionNumber": 17, "text": "restaurant" },
+              { "id": "18", "questionNumber": 18, "text": "cafe" },
+              { "id": "19", "questionNumber": 19, "text": "baby-changing facilities" },
+              { "id": "20", "questionNumber": 20, "text": "cloakroom" }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO characteristics were shared by the subjects of Joanna's psychology study?",
+                "options": [
+                  { "letter": "A", "text": "They had all won prizes for their music." },
+                  { "letter": "B", "text": "They had all made music recordings." },
+                  { "letter": "C", "text": "They were all under 27 years old." },
+                  { "letter": "D", "text": "They had all toured internationally." },
+                  { "letter": "E", "text": "They all played a string instrument." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO points does Joanna make about her use of telephone interviews?",
+                "options": [
+                  { "letter": "A", "text": "It meant rich data could be collected." },
+                  { "letter": "B", "text": "It allowed the involvement of top performers." },
+                  { "letter": "C", "text": "It led to a stressful atmosphere at times." },
+                  { "letter": "D", "text": "It meant interview times had to be limited." },
+                  { "letter": "E", "text": "It caused some technical problems." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO letters, A-E.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25-26",
+                "text": "Which TWO topics did Joanna originally intend to investigate in her research?",
+                "options": [
+                  { "letter": "A", "text": "regulations concerning concert dress" },
+                  { "letter": "B", "text": "audience reactions to the dress of performers" },
+                  { "letter": "C", "text": "changes in performer attitudes to concert dress" },
+                  { "letter": "D", "text": "how choice of dress relates to performer roles" },
+                  { "letter": "E", "text": "links between musical instrument and dress choice" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "Joanna concentrated on women performers because",
+                "options": [
+                  { "letter": "A", "text": "women are more influenced by fashion." },
+                  { "letter": "B", "text": "women's dress has led to more controversy." },
+                  { "letter": "C", "text": "women's code of dress is less strict than men's." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "Mike Frost's article suggests that in popular music, women's dress is affected by",
+                "options": [
+                  { "letter": "A", "text": "their wish to be taken seriously." },
+                  { "letter": "B", "text": "their tendency to copy each other." },
+                  { "letter": "C", "text": "their reaction to the masculine nature of the music." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What did Joanna's subjects say about the audience at a performance?",
+                "options": [
+                  { "letter": "A", "text": "The musicians' choice of clothing is linked to respect for the audience." },
+                  { "letter": "B", "text": "The clothing should not distract the audience from the music." },
+                  { "letter": "C", "text": "The audience should make the effort to dress appropriately." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "According to the speakers, musicians could learn from sports scientists about",
+                "options": [
+                  { "letter": "A", "text": "the importance of clothing for physical freedom." },
+                  { "letter": "B", "text": "the part played by clothing in improving performance." },
+                  { "letter": "C", "text": "the way clothing may protect against physical injury." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 40,
+          "data": {
+            "title": "The use of soil to reduce carbon dioxide (CO2) in the atmosphere",
+            "sentences": [
+              {
+                "content": [{ "type": "bold", "text": "Rattan Lal:" }]
+              },
+              {
+                "content": ["• Claims that 13% of CO2 in the atmosphere could be absorbed by agricultural soils"]
+              },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• Erosion is more likely in soil that is ",
+                  { "id": "31", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• Lal found soil in Africa that was very ",
+                  { "id": "32", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "content": ["• It was suggested that carbon from soil was entering the atmosphere"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Soil and carbon:",
+            "sentences": [
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• Plants turn CO2 from the air into carbon-based substances such as ",
+                  { "id": "33", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• Some CO2 moves from the ",
+                  { "id": "34", "type": "input" },
+                  " of plants to microbes in the soil"
+                ]
+              },
+              {
+                "content": ["• Carbon was lost from the soil when agriculture was invented"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 36,
+          "hideRange": true,
+          "data": {
+            "title": "Regenerative agriculture:",
+            "sentences": [
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• Uses established practices to make sure soil remains fertile and ",
+                  { "id": "35", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• E.g. through year-round planting and increasing the ",
+                  { "id": "36", "type": "input" },
+                  " of plants that are grown"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 37,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "California study:",
+            "sentences": [
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• Taking place on a big ",
+                  { "id": "37", "type": "input" },
+                  " farm"
+                ]
+              },
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• Uses compost made from waste from agriculture and ",
+                  { "id": "38", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Australia study:",
+            "sentences": [
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• Aims to increase soil carbon by using ",
+                  { "id": "39", "type": "input" },
+                  " that are always green"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Future developments may include:",
+            "sentences": [
+              {
+                "content": ["• Reducing the amount of fertilizer used in farming"]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• Giving farmers ",
+                  { "id": "40", "type": "input" },
+                  " for carbon storage, as well as their produce"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

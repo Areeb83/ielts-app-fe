@@ -1,0 +1,140 @@
+/* ═══════════════════════════════════════════════════════════════
+   Matching Heading — IELTS Theme (Exact Replica of FlowChartDragDrop)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Container */
+.matching-heading {
+    max-width: 1154px;
+    background-color: #fff;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Question Range Heading */
+.matching-heading .matching-heading__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+/* Instruction */
+.matching-heading .matching-heading__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main content wrapper */
+.matching-heading .matching-heading__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+}
+
+/* ─── Options Pool (exact replica of .options-pool in FlowChartDragDrop) ─── */
+
+.matching-heading .matching-heading__list-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    flex-shrink: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* List Title */
+.matching-heading .matching-heading__list-title {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* Pool items wrapper (exact replica of .options-pool__items) */
+.matching-heading .matching-heading__pool {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.matching-heading .matching-heading__pool-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Each heading row */
+.matching-heading .matching-heading__item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+/* Roman numeral label */
+.matching-heading .matching-heading__roman {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #222;
+    min-width: 24px;
+    text-align: right;
+    font-size: 16px !important;
+    flex-shrink: 0;
+}
+
+/* ─── DRAGGABLE WORD (exact replica of FlowChartDragDrop .draggable-word) ─── */
+
+.matching-heading .draggable-word {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 12px;
+    background-color: #fff;
+    border: 1px solid #3e3e3e !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: 700;
+    color: #222;
+    cursor: move;
+    user-select: none;
+    white-space: normal;
+    line-height: 1.5;
+    min-width: 80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.matching-heading .draggable-word:hover {
+    background-color: #f5f5f5;
+}
+
+/* ─── Options pool drag-over highlight (exact replica) ─── */
+.matching-heading .options-pool--drag-over {
+    background-color: #e6edff !important;
+    outline: 2px dashed #0056b3;
+    outline-offset: -2px;
+    border-radius: 4px;
+}
+
+/* Hide source while dragging (exact replica) */
+.matching-heading .draggable-word--dragging {
+    opacity: 0.01 !important;
+}
+
+/* Vanish used words but keep their space (exact replica) */
+.matching-heading .draggable-word--disabled {
+    visibility: hidden !important;
+    pointer-events: none;
+}

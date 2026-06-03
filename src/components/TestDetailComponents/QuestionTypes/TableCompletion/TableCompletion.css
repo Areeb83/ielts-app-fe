@@ -1,0 +1,132 @@
+/* ─── Table Completion Container ─────────────────────────────────────────── */
+
+.table-completion-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-completion__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.table-completion__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+/* ─── Table Wrapper (horizontal scroll on narrow screens) ────────────────── */
+
+.table-completion__wrapper {
+    overflow-x: auto;
+}
+
+.table-completion__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+/* ─── Table ──────────────────────────────────────────────────────────────── */
+
+.table-completion__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    color: #1a202c;
+}
+
+/* Header */
+.table-completion__header {
+    background-color: #f5f5f5;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    white-space: nowrap;
+}
+
+/* Body cells */
+.table-completion__cell {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    vertical-align: middle;
+    line-height: 1.8;
+}
+
+/* Row hover */
+.table-completion__row:hover .table-completion__cell {
+    background-color: #fafafa;
+}
+
+/* ─── Input Cells ────────────────────────────────────────────────────────── */
+.table-completion__hidden-measurer {
+    position: absolute;
+    visibility: hidden;
+    white-space: pre;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding: 0 12px;
+}
+
+.table-completion__cell--input,
+.table-completion__cell--mixed {
+    display: table-cell;
+}
+
+.table-completion__input-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+.table-completion__input {
+    display: block;
+    min-width: 120px;
+    max-width: 300px;
+    height: 30px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #1e293b;
+    background-color: #fff;
+    border: 1px solid #7c8691;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+}
+
+.table-completion__input:focus {
+    border-color: #0056b3;
+    border-width: 1.5px;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.table-completion__fake-placeholder {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+/* Hide fake placeholder when input has text */
+.table-completion__input:not(:placeholder-shown) + .table-completion__fake-placeholder {
+    display: none;
+}

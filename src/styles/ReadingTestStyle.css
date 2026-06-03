@@ -1,0 +1,110 @@
+/* ─── Reading Test Split Screen Layout ──────────────────────────────────── */
+
+.reading-test-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Main Split View */
+.reading-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    margin-top: 70px; /* Space for TestHeader */
+    margin-bottom: 70px; /* Space for TestFooter */
+}
+
+/* LEFT: Passage Pane */
+.passage-pane {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 60px;
+    border-right: 2px solid #e2e8f0;
+    background-color: #fcfcfc;
+}
+
+/* RIGHT: Questions Pane */
+.questions-pane {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 40px;
+    background-color: #fff;
+}
+
+/* ─── Passage Typography (Premium Look) ─────────────────────────────────── */
+
+.passage-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.passage-body {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2d3748;
+    font-family: "Inter", "Georgia", serif; /* Reading passages often use serif for readability */
+}
+
+.passage-body p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.passage-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #1a202c;
+}
+
+/* ─── Question Pane Adjustments ─────────────────────────────────────────── */
+
+.section-header-banner {
+    background-color: #f7fafc;
+    padding: 12px 20px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+/* Scrollbar Styling for Panes */
+.passage-pane::-webkit-scrollbar,
+.questions-pane::-webkit-scrollbar {
+    width: 8px;
+}
+
+.passage-pane::-webkit-scrollbar-track,
+.questions-pane::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.passage-pane::-webkit-scrollbar-thumb,
+.questions-pane::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+
+.passage-pane::-webkit-scrollbar-thumb:hover,
+.questions-pane::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Mobile Fallback */
+@media (max-width: 1024px) {
+    .reading-layout {
+        flex-direction: column;
+    }
+    .passage-pane {
+        flex: none;
+        height: 50vh;
+        border-right: none;
+        border-bottom: 2px solid #e2e8f0;
+    }
+}

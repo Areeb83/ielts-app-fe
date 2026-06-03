@@ -1,0 +1,361 @@
+{
+  "testId": "book-16-test-3",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 1,
+          "data": {
+            "title": "JUNIOR CYCLE CAMP",
+            "sentences": [
+              { "content": ["The course focuses on skills and safety."] },
+              { "content": ["• Charlie would be placed in Level 5."] },
+              { "questionNumber": 1, "content": ["• First of all, children at this level are taken to practise in a ", { "id": "1", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 2,
+          "endQuestion": 3,
+          "hideRange": true,
+          "data": {
+            "title": "Instructors",
+            "sentences": [
+              { "questionNumber": 2, "content": ["• Instructors wear ", { "id": "2", "type": "input" }, " shirts."] },
+              { "questionNumber": 3, "content": ["• A ", { "id": "3", "type": "input" }, " is required and training is given."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 4,
+          "endQuestion": 5,
+          "hideRange": true,
+          "data": {
+            "title": "Classes",
+            "sentences": [
+              { "content": ["• The size of the classes is limited."] },
+              { "questionNumber": 4, "content": ["• There are quiet times during the morning for a ", { "id": "4", "type": "input" }, " or a game."] },
+              { "questionNumber": 5, "content": ["• Classes are held even if there is ", { "id": "5", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "What to bring",
+            "sentences": [
+              { "content": ["• a change of clothing"] },
+              { "questionNumber": 6, "content": ["• a ", { "id": "6", "type": "input" }] },
+              { "content": ["• shoes (not sandals)"] },
+              { "questionNumber": 7, "content": ["• Charlie's ", { "id": "7", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 9,
+          "hideRange": true,
+          "data": {
+            "title": "Day 1",
+            "sentences": [
+              { "content": ["• Charlie should arrive at 9.20 am on the first day."] },
+              { "questionNumber": 8, "content": ["• Before the class, his ", { "id": "8", "type": "input" }, " will be checked."] },
+              { "questionNumber": 9, "content": ["• He should then go to the ", { "id": "9", "type": "input" }, " to meet his class instructor."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 10,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Cost",
+            "sentences": [
+              { "questionNumber": 10, "content": ["• The course costs $ ", { "id": "10", "type": "input" }, " per week."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
+                "options": [
+                  { "letter": "A", "text": "the active lifestyle" },
+                  { "letter": "B", "text": "the above-average salaries" },
+                  { "letter": "C", "text": "the flexible working opportunities" },
+                  { "letter": "D", "text": "the opportunities for overseas travel" },
+                  { "letter": "E", "text": "the chance to be in a natural environment" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 13,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "13-14",
+                "text": "Which TWO of the following are likely to be disadvantages for people working outdoors?",
+                "options": [
+                  { "letter": "A", "text": "the increasing risk of accidents" },
+                  { "letter": "B", "text": "being in a very quiet location" },
+                  { "letter": "C", "text": "difficult weather conditions at times" },
+                  { "letter": "D", "text": "the cost of housing" },
+                  { "letter": "E", "text": "the level of physical fitness required" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What information does Megan give about each of the following job opportunities? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Information",
+            "rightSideTitle": "Job opportunities",
+            "options": [
+              { "letter": "A", "text": "not a permanent job" },
+              { "letter": "B", "text": "involves leading a team" },
+              { "letter": "C", "text": "experience not essential" },
+              { "letter": "D", "text": "intensive work but also fun" },
+              { "letter": "E", "text": "chance to earn more through overtime" },
+              { "letter": "F", "text": "chance for rapid promotion" },
+              { "letter": "G", "text": "accommodation available" },
+              { "letter": "H", "text": "local travel involved" }
+            ],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "Fresh food commercial manager" },
+              { "id": "16", "questionNumber": 16, "text": "Agronomist" },
+              { "id": "17", "questionNumber": 17, "text": "Fresh produce buyer" },
+              { "id": "18", "questionNumber": 18, "text": "Garden centre sales manager" },
+              { "id": "19", "questionNumber": 19, "text": "Tree technician" },
+              { "id": "20", "questionNumber": 20, "text": "Farm worker" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO points does Adam make about his experiment on artificial sweeteners?",
+                "options": [
+                  { "letter": "A", "text": "The results were what he had predicted." },
+                  { "letter": "B", "text": "The experiment was simple to set up." },
+                  { "letter": "C", "text": "A large sample of people was tested." },
+                  { "letter": "D", "text": "The subjects were unaware of what they were drinking." },
+                  { "letter": "E", "text": "The test was repeated several times for each person." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO problems did Rosie have when measuring the fat content of nuts?",
+                "options": [
+                  { "letter": "A", "text": "She used the wrong sort of nuts." },
+                  { "letter": "B", "text": "She used an unsuitable chemical." },
+                  { "letter": "C", "text": "She did not grind the nuts finely enough." },
+                  { "letter": "D", "text": "The information on the nut package was incorrect." },
+                  { "letter": "E", "text": "The weighing scales may have been unsuitable." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "Adam suggests that restaurants could reduce obesity if their menus",
+                "options": [
+                  { "letter": "A", "text": "offered fewer options." },
+                  { "letter": "B", "text": "had more low-calorie foods." },
+                  { "letter": "C", "text": "were organised in a particular way." }
+                ]
+              },
+              {
+                "id": "26",
+                "questionNumber": 26,
+                "text": "The students agree that food manufacturers deliberately",
+                "options": [
+                  { "letter": "A", "text": "make calorie counts hard to understand." },
+                  { "letter": "B", "text": "fail to provide accurate calorie counts." },
+                  { "letter": "C", "text": "use ineffective methods to reduce calories." }
+                ]
+              },
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "What does Rosie say about levels of exercise in England?",
+                "options": [
+                  { "letter": "A", "text": "The amount recommended is much too low." },
+                  { "letter": "B", "text": "Most people overestimate how much they do." },
+                  { "letter": "C", "text": "Women now exercise more than they used to." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "Adam refers to the location and width of stairs in a train station to illustrate",
+                "options": [
+                  { "letter": "A", "text": "practical changes that can influence people's behaviour." },
+                  { "letter": "B", "text": "methods of helping people who have mobility problems." },
+                  { "letter": "C", "text": "ways of preventing accidents by controlling crowd movement." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What do the students agree about including reference to exercise in their presentation?",
+                "options": [
+                  { "letter": "A", "text": "They should probably leave it out." },
+                  { "letter": "B", "text": "They need to do more research on it." },
+                  { "letter": "C", "text": "They should discuss this with their tutor." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "What are the students going to do next for their presentation?",
+                "options": [
+                  { "letter": "A", "text": "prepare some slides for it" },
+                  { "letter": "B", "text": "find out how long they have for it" },
+                  { "letter": "C", "text": "decide on its content and organisation" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "Hand knitting",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Interest in knitting" }] },
+              { "content": ["• Knitting has a long history around the world."] },
+              { "questionNumber": 31, "content": ["• We imagine someone like a ", { "id": "31", "type": "input" }, " knitting."] },
+              { "questionNumber": 32, "content": ["• A ", { "id": "32", "type": "input" }, " ago, knitting was expected to disappear."] },
+              { "content": ["• The number of knitting classes is now increasing."] },
+              { "questionNumber": 33, "content": ["• People are buying more ", { "id": "33", "type": "input" }, " for knitting nowadays."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Benefits of knitting",
+            "sentences": [
+              { "questionNumber": 34, "content": ["• gives support in times of ", { "id": "34", "type": "input" }, " difficulty"] },
+              { "questionNumber": 35, "content": ["• requires only ", { "id": "35", "type": "input" }, " skills and little money to start"] },
+              { "content": ["• reduces stress in a busy life"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Early knitting",
+            "sentences": [
+              { "content": ["• The origins are not known."] },
+              { "questionNumber": 36, "content": ["• Findings show early knitted items to be ", { "id": "36", "type": "input" }, " in shape."] },
+              { "questionNumber": 37, "content": ["• The first needles were made of natural materials such as wood and ", { "id": "37", "type": "input" }, "."] },
+              { "questionNumber": 38, "content": ["• Early yarns felt ", { "id": "38", "type": "input" }, " to touch."] },
+              { "content": ["• Wool became the most popular yarn for spinning."] },
+              { "questionNumber": 39, "content": ["• Geographical areas had their own ", { "id": "39", "type": "input" }, " of knitting."] },
+              { "questionNumber": 40, "content": ["• Everyday tasks like looking after ", { "id": "40", "type": "input" }, " were done while knitting."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

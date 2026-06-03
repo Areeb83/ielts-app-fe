@@ -1,0 +1,312 @@
+{
+  "title": "Book 13 Listening Test 1",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 10,
+          "data": {
+            "title": "COOKERY CLASSES",
+            "headers": ["Cookery Class", "Focus", "Other Information"],
+            "rows": [
+              [
+                "The Food Studio",
+                ["how to ", { "id": "1", "type": "input" }, " and cook with seasonal products"],
+                ["• small classes", { "type": "br" }, "• also offers ", { "id": "2", "type": "input" }, " classes", { "type": "br" }, "• clients who return get a ", { "id": "3", "type": "input" }, " discount"]
+              ],
+              [
+                "Bond's Cookery School",
+                ["food that is ", { "id": "4", "type": "input" }],
+                ["• includes recipes to strengthen your ", { "id": "5", "type": "input" }, { "type": "br" }, "• they have a free ", { "id": "6", "type": "input" }, " every Thursday"]
+              ],
+              [
+                ["The ", { "id": "7", "type": "input" }, " Centre"],
+                ["mainly ", { "id": "8", "type": "input" }, " food"],
+                ["• located near the ", { "id": "9", "type": "input" }, { "type": "br" }, "• a special course in skills with a ", { "id": "10", "type": "input" }, " is sometimes available"]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 13,
+          "data": {
+            "title": "Traffic Changes in Granford",
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Why are changes needed to traffic systems in Granford?",
+                "options": [
+                  { "letter": "A", "text": "The number of traffic accidents has risen." },
+                  { "letter": "B", "text": "The amount of traffic on the roads has increased." },
+                  { "letter": "C", "text": "The types of vehicles on the roads have changed." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "In a survey, local residents particularly complained about",
+                "options": [
+                  { "letter": "A", "text": "dangerous driving by parents." },
+                  { "letter": "B", "text": "pollution from trucks and lorries." },
+                  { "letter": "C", "text": "inconvenience from parked cars." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "According to the speaker, one problem with the new regulations will be",
+                "options": [
+                  { "letter": "A", "text": "raising money to pay for them." },
+                  { "letter": "B", "text": "finding a way to make people follow them." },
+                  { "letter": "C", "text": "getting the support of the police." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "title": "Proposed traffic changes in Granford",
+            "imageSrc": "/images/book-13-test-1-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "New traffic lights" },
+              { "id": "15", "questionNumber": 15, "text": "Pedestrian crossing" },
+              { "id": "16", "questionNumber": 16, "text": "Parking allowed" },
+              { "id": "17", "questionNumber": 17, "text": "New 'No Parking' sign" },
+              { "id": "18", "questionNumber": 18, "text": "New disabled parking spaces" },
+              { "id": "19", "questionNumber": 19, "text": "Widened pavement" },
+              { "id": "20", "questionNumber": 20, "text": "Lorry loading/unloading restrictions" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 25,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "Why is Jack interested in investigating seed germination?",
+                "options": [
+                  { "letter": "A", "text": "He may do a module on a related topic later on." },
+                  { "letter": "B", "text": "He wants to have a career in plant science." },
+                  { "letter": "C", "text": "He is thinking of choosing this topic for his dissertation." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Jack and Emma agree the main advantage of their present experiment is that it can be",
+                "options": [
+                  { "letter": "A", "text": "described very easily." },
+                  { "letter": "B", "text": "carried out inside the laboratory." },
+                  { "letter": "C", "text": "completed in the time available." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "What do they decide to check with their tutor?",
+                "options": [
+                  { "letter": "A", "text": "whether their aim is appropriate" },
+                  { "letter": "B", "text": "whether anyone else has chosen this topic" },
+                  { "letter": "C", "text": "whether the assignment contributes to their final grade" }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "They agree that Graves' book on seed germination is disappointing because",
+                "options": [
+                  { "letter": "A", "text": "it fails to cover recent advances in seed science." },
+                  { "letter": "B", "text": "the content is irrelevant for them." },
+                  { "letter": "C", "text": "its focus is very theoretical." }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "What does Jack say about the article on seed germination by Lee Hall?",
+                "options": [
+                  { "letter": "A", "text": "The diagrams of plant development are useful." },
+                  { "letter": "B", "text": "The analysis of seed germination statistics is thorough." },
+                  { "letter": "C", "text": "The findings on seed germination after fires are surprising." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "FLOW_CHART_DRAG_DROP",
+          "instruction": "Complete the flow-chart below. Choose **FIVE** answers from the box and write the correct letter, **A-H**, next to **Questions 26-30**.",
+          "startQuestion": 26,
+          "endQuestion": 30,
+          "data": {
+            "title": "Stages in the experiment",
+            "options": ["container", "soil", "weight", "condition", "height", "colour", "types", "depths"],
+            "steps": [
+              {
+                "type": "interactive",
+                "content": [
+                  "Select seeds of different ",
+                  { "id": "26", "type": "dropzone" },
+                  " and sizes."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Measure and record the ",
+                  { "id": "27", "type": "dropzone" },
+                  " and size of each one."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Decide on the ",
+                  { "id": "28", "type": "dropzone" },
+                  " to be used."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Use a different ",
+                  { "id": "29", "type": "dropzone" },
+                  " for each seed and label it."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "After about 3 weeks, record the plant's ",
+                  { "id": "30", "type": "dropzone" },
+                  "."
+                ]
+              },
+              {
+                "type": "text",
+                "content": "Investigate the findings."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "Effects of urban environments on animals",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Introduction" }] },
+              { "content": ["Recent urban developments represent massive environmental changes. It was previously thought that only a few animals were suitable for city life, e.g."] },
+              {
+                "questionNumber": 31,
+                "content": ["• the ", { "id": "31", "type": "input" }, " because of its general adaptability"]
+              },
+              {
+                "questionNumber": 32,
+                "content": ["• the pigeon - because walls of city buildings are similar to ", { "id": "32", "type": "input" }]
+              },
+              {
+                "questionNumber": 33,
+                "content": ["In fact, many urban animals are adapting with unusual ", { "id": "33", "type": "input" }]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Recent research",
+            "sentences": [
+              { "content": ["• Emilie Snell-Rood studied small urbanised mammal specimens from museums in Minnesota."] },
+              {
+                "questionNumber": 34,
+                "content": ["- She found the size of their ", { "id": "34", "type": "input" }, " had increased."]
+              },
+              {
+                "questionNumber": 35,
+                "content": ["- She suggests this may be due to the need to locate new sources of ", { "id": "35", "type": "input" }, " and to deal with new dangers."]
+              },
+              {
+                "questionNumber": 36,
+                "content": ["• Catarina Miranda focused on the ", { "id": "36", "type": "input" }, " of urban and rural blackbirds."]
+              },
+              {
+                "questionNumber": 37,
+                "content": ["- She found urban birds were often braver, but were afraid of situations that were ", { "id": "37", "type": "input" }]
+              },
+              { "content": ["• Jonathan Atwell studies how animals respond to urban environments."] },
+              {
+                "questionNumber": 38,
+                "content": ["- He found that some animals respond to ", { "id": "38", "type": "input" }, " by producing lower levels of hormones."]
+              },
+              {
+                "questionNumber": 39,
+                "content": ["• Sarah Partan's team found urban squirrels use their ", { "id": "39", "type": "input" }, " to help them communicate."]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Long-term possibilities",
+            "sentences": [
+              {
+                "questionNumber": 40,
+                "content": ["Species of animals may develop which are unique to cities. However, some changes may not be ", { "id": "40", "type": "input" }]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

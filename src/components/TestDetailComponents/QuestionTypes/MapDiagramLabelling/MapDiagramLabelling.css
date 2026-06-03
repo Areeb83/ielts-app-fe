@@ -1,0 +1,218 @@
+/* ─── Map Diagram Labelling Container ───────────────────────────────────── */
+.map-diagram-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-diagram__header {
+    margin-bottom: 10px;
+}
+
+.map-diagram__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.map-diagram__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0;
+    color: #000;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.map-diagram__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* ─── Side-by-Side Layout ────────────────────────────────────────────────── */
+.map-diagram__content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* On smaller screens, stack them */
+@media (max-width: 900px) {
+    .map-diagram__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ─── Map Image ──────────────────────────────────────────────────────────── */
+.map-diagram__image-wrapper {
+    flex: 1;
+    max-width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.map-diagram__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-diagram__text-content {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1a202c;
+    width: 100%;
+}
+
+.map-diagram__text-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.map-diagram__image-wrapper .map-diagram__text-title {
+    margin-bottom: 12px;
+}
+
+.map-diagram__text-line {
+    font-size: 16px;
+    color: #2c2c2c;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.map-diagram__text-letter {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-right: 8px;
+    font-size: 16px;
+    min-width: 20px;
+}
+
+@media (max-width: 900px) {
+    .map-diagram__image-wrapper {
+        max-width: 100%;
+    }
+}
+
+/* ─── Matching Table ─────────────────────────────────────────────────────── */
+.map-diagram__table-wrapper {
+    flex: 1.1;
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.map-diagram__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Headers */
+.map-diagram__th {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    border-right: 1px solid #000;
+}
+
+.map-diagram__th:last-child {
+    border-right: none;
+}
+
+.map-diagram__th--empty {
+    width: 40%;
+    /* Space for the question text */
+    border-right: 2px solid #000;
+}
+
+/* Body rows */
+.map-diagram__row {
+    border-bottom: 1px solid #000;
+    transition: background-color 0.2s ease;
+}
+
+.map-diagram__row:last-child {
+    border-bottom: none;
+}
+
+.map-diagram__row:hover {
+    background-color: #f7fafc;
+}
+
+/* Question cell (leftmost) */
+.map-diagram__td-question {
+    padding: 12px 10px;
+    font-weight: 500;
+    text-align: left;
+    border-right: 2px solid #000;
+    /* Prominent vertical divider */
+}
+
+.map-diagram__q-num {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Radio button cells */
+.map-diagram__td-radio {
+    padding: 0;
+    /* Use label padding for larger clickable area */
+    text-align: center;
+    border-right: 1px solid #000;
+    vertical-align: middle;
+}
+
+.map-diagram__td-radio:last-child {
+    border-right: none;
+}
+
+/* Style when radio is selected */
+.map-diagram__td-radio.selected {
+    background-color: #ebf8ff;
+}
+
+/* Label acts as the clickable area for the entire cell */
+.map-diagram__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 48px;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Hide the actual radio button, we'll style custom or just let browser handle it */
+/* For simplicity and accessibility, keep it visible but nicely styled */
+.map-diagram__radio-input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #3182ce;
+}

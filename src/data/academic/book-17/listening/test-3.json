@@ -1,0 +1,312 @@
+{
+  "testId": "book-17-test-3",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Listening Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "title": "Advice on surfing holidays",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Jack's advice" }] },
+              { "questionNumber": 1, "content": ["• Recommends surfing for ", { "id": "1", "type": "input" }, " holidays in the summer"] },
+              { "questionNumber": 2, "content": ["• Need to be quite ", { "id": "2", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Irish surfing locations" }] },
+              { "content": ["• County Clare"] },
+              { "questionNumber": 3, "content": ["– Lahinch has some good quality ", { "id": "3", "type": "input" }, " and surf schools"] },
+              { "content": ["– There are famous cliffs nearby"] },
+              { "content": ["• County Mayo"] },
+              { "questionNumber": 4, "content": ["– Good surf school at ", { "id": "4", "type": "input" }, " beach"] },
+              { "questionNumber": 5, "content": ["– Surf camp lasts for one ", { "id": "5", "type": "input" }] },
+              { "questionNumber": 6, "content": ["– Can also explore the local ", { "id": "6", "type": "input" }, " by kayak"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "Weather",
+            "sentences": [
+              { "questionNumber": 7, "content": ["• Best month to go: ", { "id": "7", "type": "input" }] },
+              { "questionNumber": 8, "content": ["• Average temperature in summer: approx. ", { "id": "8", "type": "input" }, " degrees"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Costs",
+            "sentences": [
+              { "content": ["• Equipment"] },
+              { "questionNumber": 9, "content": ["– Wetsuit and surfboard: ", { "id": "9", "type": "input" }, " euros per day"] },
+              { "questionNumber": 10, "content": ["– Also advisable to hire ", { "id": "10", "type": "input" }, " for warmth"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "Which TWO facts are given about the school's extended hours childcare service?",
+                "options": [
+                  { "letter": "A", "text": "It started recently." },
+                  { "letter": "B", "text": "More children attend after school than before school." },
+                  { "letter": "C", "text": "An average of 50 children attend in the mornings." },
+                  { "letter": "D", "text": "A child cannot attend both the before and after school sessions." },
+                  { "letter": "E", "text": "The maximum number of children who can attend is 70." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 13,
+          "endQuestion": 15,
+          "data": {
+            "questions": [
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "How much does childcare cost for a complete afternoon session per child?",
+                "options": [
+                  { "letter": "A", "text": "£3.50" },
+                  { "letter": "B", "text": "£5.70" },
+                  { "letter": "C", "text": "£7.20" }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "What does the manager say about food?",
+                "options": [
+                  { "letter": "A", "text": "Children with allergies should bring their own food." },
+                  { "letter": "B", "text": "Children may bring healthy snacks with them." },
+                  { "letter": "C", "text": "Children are given a proper meal at 5 p.m." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "What is different about arrangements in the school holidays?",
+                "options": [
+                  { "letter": "A", "text": "Children from other schools can attend." },
+                  { "letter": "B", "text": "Older children can attend." },
+                  { "letter": "C", "text": "A greater number of children can attend." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What information is given about each of the following activities on offer? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 16–20.",
+          "startQuestion": 16,
+          "endQuestion": 20,
+          "data": {
+            "title": "Information",
+            "rightSideTitle": "Activities",
+            "options": [
+              { "letter": "A", "text": "has limited availability" },
+              { "letter": "B", "text": "is no longer available" },
+              { "letter": "C", "text": "is for over 8s only" },
+              { "letter": "D", "text": "requires help from parents" },
+              { "letter": "E", "text": "involves an additional fee" },
+              { "letter": "F", "text": "is a new activity" },
+              { "letter": "G", "text": "was requested by children" }
+            ],
+            "questions": [
+              { "id": "16", "questionNumber": 16, "text": "Spanish" },
+              { "id": "17", "questionNumber": 17, "text": "Music" },
+              { "id": "18", "questionNumber": 18, "text": "Painting" },
+              { "id": "19", "questionNumber": 19, "text": "Yoga" },
+              { "id": "20", "questionNumber": 20, "text": "Cooking" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "Holly has chosen the Orion Stadium placement because",
+                "options": [
+                  { "letter": "A", "text": "it involves children." },
+                  { "letter": "B", "text": "it is outdoors." },
+                  { "letter": "C", "text": "it sounds like fun." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Which aspect of safety does Dr Green emphasise most?",
+                "options": [
+                  { "letter": "A", "text": "ensuring children stay in the stadium" },
+                  { "letter": "B", "text": "checking the equipment children will use" },
+                  { "letter": "C", "text": "removing obstacles in changing rooms" }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "What does Dr Green say about the spectators?",
+                "options": [
+                  { "letter": "A", "text": "They can be hard to manage." },
+                  { "letter": "B", "text": "They make useful volunteers." },
+                  { "letter": "C", "text": "They shouldn't take photographs." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "What has affected the schedule in the past?",
+                "options": [
+                  { "letter": "A", "text": "bad weather" },
+                  { "letter": "B", "text": "an injury" },
+                  { "letter": "C", "text": "extra time" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What do Holly and her tutor agree is an important aspect of each of the following events management skills? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Important aspects",
+            "rightSideTitle": "Events management skills",
+            "options": [
+              { "letter": "A", "text": "being flexible" },
+              { "letter": "B", "text": "focusing on details" },
+              { "letter": "C", "text": "having a smart appearance" },
+              { "letter": "D", "text": "hiding your emotions" },
+              { "letter": "E", "text": "relying on experts" },
+              { "letter": "F", "text": "trusting your own views" },
+              { "letter": "G", "text": "doing one thing at a time" },
+              { "letter": "H", "text": "thinking of the future" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Communication" },
+              { "id": "26", "questionNumber": 26, "text": "Organisation" },
+              { "id": "27", "questionNumber": 27, "text": "Time management" },
+              { "id": "28", "questionNumber": 28, "text": "Creativity" },
+              { "id": "29", "questionNumber": 29, "text": "Leadership" },
+              { "id": "30", "questionNumber": 30, "text": "Networking" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 31,
+          "data": {
+            "title": "Bird Migration Theory",
+            "sentences": [
+              { "content": ["Most birds are believed to migrate seasonally."] },
+              { "content": [{ "type": "bold", "text": "Hibernation theory" }] },
+              { "questionNumber": 31, "content": ["• It was believed that birds hibernated underwater or buried themselves in ", { "id": "31", "type": "input" }, "."] },
+              { "content": ["• This theory was later disproved by experiments on caged birds."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 33,
+          "hideRange": true,
+          "data": {
+            "title": "Transmutation theory",
+            "sentences": [
+              { "content": ["• Aristotle believed birds changed from one species into another in summer and winter."] },
+              { "questionNumber": 32, "content": ["– In autumn he observed that redstarts experience the loss of ", { "id": "32", "type": "input" }, " and thought they then turned into robins."] },
+              { "questionNumber": 33, "content": ["– Aristotle's assumptions were logical because the two species of birds had a similar ", { "id": "33", "type": "input" }, "."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "17th century",
+            "sentences": [
+              { "questionNumber": 34, "content": ["• Charles Morton popularised the idea that birds fly to the ", { "id": "34", "type": "input" }, " in winter."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Scientific developments",
+            "sentences": [
+              { "questionNumber": 35, "content": ["• In 1822, a stork was killed in Germany which had an African spear in its ", { "id": "35", "type": "input" }, "."] },
+              { "questionNumber": 36, "content": ["– previously there had been no ", { "id": "36", "type": "input" }, " that storks migrate to Africa"] },
+              { "questionNumber": 37, "content": ["• Little was known about the ", { "id": "37", "type": "input" }, " and journeys of migrating birds until the practice of ringing was established."] },
+              { "questionNumber": 38, "content": ["– It was thought large birds carried small birds on some journeys because they were considered incapable of travelling across huge ", { "id": "38", "type": "input" }, "."] },
+              { "questionNumber": 39, "content": ["– Ringing depended on what is called the '", { "id": "39", "type": "input" }, "' of dead birds."] },
+              { "questionNumber": 40, "content": ["• In 1931, the first ", { "id": "40", "type": "input" }, " to show the migration of European birds was printed."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

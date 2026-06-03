@@ -1,0 +1,328 @@
+{
+  "testId": "book-19-test-4",
+  "bookId": "book-19",
+  "title": "Cambridge IELTS 19 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "title": "First day at work",
+            "sentences": [
+              { "questionNumber": 1, "content": ["• Name of supervisor: ", { "id": "1", "type": "input" }] },
+              { "questionNumber": 2, "content": ["• Where to leave coat and bag: use a ", { "id": "2", "type": "input" }, " in staffroom"] },
+              { "content": ["• See Tiffany in HR:"] },
+              { "questionNumber": 3, "content": ["– to give ", { "id": "3", "type": "input" }, " number"] },
+              { "questionNumber": 4, "content": ["– to confirm ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["• Location of HR office: on the ", { "id": "5", "type": "input" }, " floor"] },
+              { "questionNumber": 6, "content": ["• Supervisor's mobile number: ", { "id": "6", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 7,
+          "endQuestion": 10,
+          "data": {
+            "title": "Responsibilities",
+            "headers": ["", "Task 1", "Task 2", "Notes"],
+            "rows": [
+              [
+                "Bakery section",
+                "Check sell-by dates labels",
+                "Change price labels",
+                ["use ", { "id": "7", "type": "input" }]
+              ],
+              [
+                "Sushi takeaway counter",
+                ["Re-stock with ", { "id": "8", "type": "input" }, " boxes if needed"],
+                "Wipe preparation area and clean the sink",
+                "Do not clean any knives"
+              ],
+              [
+                "Meat and fish counters",
+                "Clean the serving area, including the weighing scales",
+                ["Collect ", { "id": "9", "type": "input" }, " for the fish from the cold-room"],
+                ["Must wear special ", { "id": "10", "type": "input" }]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 11,
+          "endQuestion": 12,
+          "data": {
+            "questions": [
+              {
+                "id": "11-12",
+                "text": "Which TWO problems with some training programmes for new runners does Liz mention?",
+                "options": [
+                  { "letter": "A", "text": "There is a risk of serious injury." },
+                  { "letter": "B", "text": "They are unsuitable for certain age groups." },
+                  { "letter": "C", "text": "They are unsuitable for people with health issues." },
+                  { "letter": "D", "text": "It is difficult to stay motivated." },
+                  { "letter": "E", "text": "There is a lack of individual support." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 13,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "13-14",
+                "text": "Which TWO tips does Liz recommend for new runners?",
+                "options": [
+                  { "letter": "A", "text": "doing two runs a week" },
+                  { "letter": "B", "text": "running in the evening" },
+                  { "letter": "C", "text": "going on runs with a friend" },
+                  { "letter": "D", "text": "listening to music during runs" },
+                  { "letter": "E", "text": "running very slowly" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What reason prevented each of the following members of the Compton Park Runners Club from joining until recently? Write the correct letter, **A, B or C**, next to Questions 15–18.",
+          "startQuestion": 15,
+          "endQuestion": 18,
+          "data": {
+            "title": "Reasons",
+            "rightSideTitle": "Club members",
+            "options": [
+              { "letter": "A", "text": "a lack of confidence" },
+              { "letter": "B", "text": "a dislike of running" },
+              { "letter": "C", "text": "a lack of time" }
+            ],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "Ceri" },
+              { "id": "16", "questionNumber": 16, "text": "James" },
+              { "id": "17", "questionNumber": 17, "text": "Leo" },
+              { "id": "18", "questionNumber": 18, "text": "Mark" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19",
+                "questionNumber": 19,
+                "text": "What does Liz say about running her first marathon?",
+                "options": [
+                  { "letter": "A", "text": "It had always been her ambition." },
+                  { "letter": "B", "text": "Her husband persuaded her to do it." },
+                  { "letter": "C", "text": "She nearly gave up before the end." }
+                ]
+              },
+              {
+                "id": "20",
+                "questionNumber": 20,
+                "text": "Liz says new runners should sign up for a race",
+                "options": [
+                  { "letter": "A", "text": "every six months." },
+                  { "letter": "B", "text": "within a few weeks of taking up running." },
+                  { "letter": "C", "text": "after completing several practice runs." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 25,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "Kieran thinks the packing advice given by Jane's grandfather is",
+                "options": [
+                  { "letter": "A", "text": "common sense." },
+                  { "letter": "B", "text": "hard to follow." },
+                  { "letter": "C", "text": "over-protective." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "How does Jane feel about the books her grandfather has given her?",
+                "options": [
+                  { "letter": "A", "text": "They are not worth keeping." },
+                  { "letter": "B", "text": "They should go to a collector." },
+                  { "letter": "C", "text": "They have sentimental value for her." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "Jane and Kieran agree that hardback books should be",
+                "options": [
+                  { "letter": "A", "text": "put out on display." },
+                  { "letter": "B", "text": "given as gifts to visitors." },
+                  { "letter": "C", "text": "more attractively designed." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "While talking about taking a book from a shelf, Jane",
+                "options": [
+                  { "letter": "A", "text": "describes the mistakes other people make doing it." },
+                  { "letter": "B", "text": "reflects on a significant childhood experience." },
+                  { "letter": "C", "text": "explains why some books are easier to remove than others." }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "What do Jane and Kieran suggest about new books?",
+                "options": [
+                  { "letter": "A", "text": "Their parents liked buying them as presents." },
+                  { "letter": "B", "text": "They would like to buy more of them." },
+                  { "letter": "C", "text": "Not everyone can afford them." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Where does Jane's grandfather keep each of the following types of books in his shop? Choose FIVE answers from the box and write the correct letter, **A–G**, next to Questions 26–30.",
+          "startQuestion": 26,
+          "endQuestion": 30,
+          "data": {
+            "title": "Location of books",
+            "rightSideTitle": "Types of books",
+            "options": [
+              { "letter": "A", "text": "near the entrance" },
+              { "letter": "B", "text": "in the attic" },
+              { "letter": "C", "text": "at the back of the shop" },
+              { "letter": "D", "text": "on a high shelf" },
+              { "letter": "E", "text": "near the stairs" },
+              { "letter": "F", "text": "in a specially designed space" },
+              { "letter": "G", "text": "within the café" }
+            ],
+            "questions": [
+              { "id": "26", "questionNumber": 26, "text": "rare books" },
+              { "id": "27", "questionNumber": 27, "text": "children's books" },
+              { "id": "28", "questionNumber": 28, "text": "unwanted books" },
+              { "id": "29", "questionNumber": 29, "text": "requested books" },
+              { "id": "30", "questionNumber": 30, "text": "coursebooks" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 34,
+          "data": {
+            "title": "Tree planting",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Reforestation projects should:" }] },
+              { "content": ["• include a range of tree species"] },
+              { "questionNumber": 31, "content": ["• not include invasive species because of possible ", { "id": "31", "type": "input" }, " with native species"] },
+              { "questionNumber": 32, "content": ["• aim to capture carbon, protect the environment and provide sustainable sources of ", { "id": "32", "type": "input" }, " for local people"] },
+              { "questionNumber": 33, "content": ["• use tree seeds with a high genetic diversity to increase resistance to ", { "id": "33", "type": "input" }, " and climate change"] },
+              { "questionNumber": 34, "content": ["• plant trees on previously forested land which is in a bad condition, not select land which is being used for ", { "id": "34", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 36,
+          "hideRange": true,
+          "data": {
+            "title": "Large-scale reforestation projects",
+            "sentences": [
+              { "questionNumber": 35, "content": ["• Base planning decisions on information from accurate ", { "id": "35", "type": "input" }, "."] },
+              { "questionNumber": 36, "content": ["• Drones are useful for identifying areas in Brazil which are endangered by keeping ", { "id": "36", "type": "input" }, " and illegal logging."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 37,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Lampang Province, Northern Thailand",
+            "sentences": [
+              { "content": ["• A forest was restored in an area damaged by mining."] },
+              { "content": ["• A variety of native fig trees were planted, which are important for:"] },
+              { "content": ["– supporting many wildlife species"] },
+              { "questionNumber": 37, "content": ["– increasing the ", { "id": "37", "type": "input" }, " of recovery by attracting animals and birds, e.g. ", { "id": "38", "type": "input" }, " were soon attracted to the area."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Involving local communities",
+            "sentences": [
+              { "questionNumber": 39, "content": ["• Destruction of mangrove forests in Madagascar made it difficult for people to make a living from ", { "id": "39", "type": "input" }, "."] },
+              { "content": ["• The mangrove reforestation project:"] },
+              { "content": ["– provided employment for local people"] },
+              { "content": ["– restored a healthy ecosystem"] },
+              { "questionNumber": 40, "content": ["– protects against the higher risk of ", { "id": "40", "type": "input" }, "."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

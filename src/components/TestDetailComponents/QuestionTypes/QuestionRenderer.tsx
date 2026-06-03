@@ -1,0 +1,146 @@
+import React from "react";
+import type { QuestionGroup, AnswerMap } from "../../../types/question";
+import FlowChartDragDrop from "./FlowChartDragDrop/FlowChartDragDrop";
+import SentenceCompletion from "./SentenceCompletion/SentenceCompletion";
+import SummaryCompletion from "./SummaryCompletion/SummaryCompletion";
+import MultipleChoice from "./MultipleChoice/MultipleChoice";
+import TableCompletion from "./TableCompletion/TableCompletion";
+import MapDiagramLabelling from "./MapDiagramLabelling/MapDiagramLabelling";
+import MatchingFeature from "./MatchingFeature/MatchingFeature";
+import MatchingHeading from "./MatchingHeading/MatchingHeading";
+
+interface QuestionRendererProps {
+    group: QuestionGroup;
+    answers: AnswerMap;
+    onAnswerChange: (questionId: string, value: string | string[]) => void;
+    testType?: 'listening' | 'reading';
+    // Shared drag state for cross-pane DnD (Matching Heading)
+    draggingWordId?: string | null;
+    onDragStart?: (wordId: string) => void;
+    onDragEnd?: () => void;
+}
+
+/**
+ * The "Switcher" component.
+ * Maps a QuestionGroup's `type` to the correct renderer.
+ * Add new question types here as you build them.
+ */
+const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, draggingWordId, onDragStart, onDragEnd }) => {
+    const questionRange = group.hideRange ? "" : `Questions ${group.startQuestion}–${group.endQuestion}`;
+
+    switch (group.type) {
+        case "FLOW_CHART_DRAG_DROP":
+            // @ts-ignore
+            return (
+                <FlowChartDragDrop
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore - Note: TS cast is fine since we know the mapping type
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                    testType={testType}
+                />
+            );
+
+        case "SENTENCE_COMPLETION":
+            // @ts-ignore
+            return (
+                <SentenceCompletion
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "SUMMARY_COMPLETION":
+            return (
+                <SummaryCompletion
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "MULTIPLE_CHOICE":
+        case "IDENTIFICATION":
+            return (
+                <MultipleChoice
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "TABLE_COMPLETION":
+            return (
+                <TableCompletion
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "MAP_DIAGRAM_LABELLING":
+            return (
+                <MapDiagramLabelling
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "MATCHING_FEATURE":
+            return (
+                <MatchingFeature
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
+        case "MATCHING_HEADING":
+            return (
+                <MatchingHeading
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    // @ts-ignore
+                    onAnswerChange={onAnswerChange}
+                    draggingWordId={draggingWordId}
+                    onDragStart={onDragStart ?? (() => { })}
+                    onDragEnd={onDragEnd ?? (() => { })}
+                />
+            );
+
+        default:
+            return (
+                <div style={{ padding: 20, background: "#fff3cd", borderRadius: 8, border: "1px solid #ffc107" }}>
+                    <p><strong>⚠️ Unknown question type:</strong> <code>{group.type}</code></p>
+                    <p>Questions {group.startQuestion}–{group.endQuestion}</p>
+                </div>
+            );
+    }
+};
+
+export default QuestionRenderer;

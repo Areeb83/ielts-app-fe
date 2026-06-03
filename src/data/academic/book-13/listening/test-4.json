@@ -1,0 +1,484 @@
+{
+  "testId": "book-13-test-4",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "title": "Alex's Training",
+            "sentences": [
+              { "content": ["Example"] },
+              { "content": ["Alex completed his training in ", { "type": "bold", "text": "2014" }] },
+              { "content": [{ "type": "bold", "text": "About the applicant:" }] },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• At first, Alex did his training in the ",
+                  { "id": "1", "type": "input" },
+                  " department."
+                ]
+              },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• Alex didn't have a qualification from school in ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• Alex thinks he should have done the diploma in ",
+                  { "id": "3", "type": "input" },
+                  " skills."
+                ]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "• Age of other trainees: the youngest was ",
+                  { "id": "4", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 5,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Benefits of doing training at JPNW:",
+            "sentences": [
+              { "content": ["• Lots of opportunities because of the size of the organisation."] },
+              {
+                "questionNumber": 5,
+                "content": [
+                  "• Trainees receive the same amount of ",
+                  { "id": "5", "type": "input" },
+                  " as permanent staff."
+                ]
+              },
+              { "content": ["• The training experience increases people's confidence a lot."] },
+              {
+                "questionNumber": 6,
+                "content": [
+                  "• Trainees go to ",
+                  { "id": "6", "type": "input" },
+                  " one day per month."
+                ]
+              },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "• The company is in a convenient ",
+                  { "id": "7", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Advice for interview:",
+            "sentences": [
+              {
+                "questionNumber": 8,
+                "content": [
+                  "• Don't wear ",
+                  { "id": "8", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• Don't be ",
+                  { "id": "9", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• Make sure you ",
+                  { "id": "10", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "The Snow Centre",
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Annie recommends that when cross-country skiing, the visitors should",
+                "options": [
+                  { "letter": "A", "text": "get away from the regular trails." },
+                  { "letter": "B", "text": "stop to enjoy views of the scenery." },
+                  { "letter": "C", "text": "go at a slow speed at the beginning." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "What does Annie tell the group about this afternoon's dog-sled trip?",
+                "options": [
+                  { "letter": "A", "text": "Those who want to can take part in a race." },
+                  { "letter": "B", "text": "Anyone has the chance to drive a team of dogs." },
+                  { "letter": "C", "text": "One group member will be chosen to lead the trail." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "What does Annie say about the team relay event?",
+                "options": [
+                  { "letter": "A", "text": "All participants receive a medal." },
+                  { "letter": "B", "text": "The course is 4 km long." },
+                  { "letter": "C", "text": "Each team is led by a teacher." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "On the snow-shoe trip, the visitors will",
+                "options": [
+                  { "letter": "A", "text": "visit an old gold mine." },
+                  { "letter": "B", "text": "learn about unusual flowers." },
+                  { "letter": "C", "text": "climb to the top of a mountain." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "The cost of accommodation in the mountain hut includes",
+                "options": [
+                  { "letter": "A", "text": "a supply of drinking water." },
+                  { "letter": "B", "text": "transport of visitors' luggage." },
+                  { "letter": "C", "text": "cooked meals." }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "If there is a storm while the visitors are in the hut, they should",
+                "options": [
+                  { "letter": "A", "text": "contact the bus driver." },
+                  { "letter": "B", "text": "wait until the weather improves." },
+                  { "letter": "C", "text": "use the emergency locator beacon." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What information does Annie give about skiing on each of the following mountain trails?\n\nChoose **FOUR** answers from the box and write the correct letter, **A–F**, next to Questions 17–20.",
+          "startQuestion": 17,
+          "endQuestion": 20,
+          "data": {
+            "title": "Information",
+            "rightSideTitle": "Mountain trails",
+            "options": [
+              { "letter": "A", "text": "It has a good place to stop and rest." },
+              { "letter": "B", "text": "It is suitable for all abilities." },
+              { "letter": "C", "text": "It involves crossing a river." },
+              { "letter": "D", "text": "It demands a lot of skill." },
+              { "letter": "E", "text": "It may be closed in bad weather." },
+              { "letter": "F", "text": "It has some very narrow sections." }
+            ],
+            "questions": [
+              { "id": "17", "questionNumber": 17, "text": "Highland Trail" },
+              { "id": "18", "questionNumber": 18, "text": "Pine Trail" },
+              { "id": "19", "questionNumber": 19, "text": "Stony Trail" },
+              { "id": "20", "questionNumber": 20, "text": "Loser's Trail" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "Labels giving nutritional information on food packaging",
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What was Jack's attitude to nutritional food labels before this project?",
+                "options": [
+                  { "letter": "A", "text": "He didn't read everything on them." },
+                  { "letter": "B", "text": "He didn't think they were important." },
+                  { "letter": "C", "text": "He thought they were too complicated." }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "Alice says that before doing this project,",
+                "options": [
+                  { "letter": "A", "text": "she was unaware of what certain foods contained." },
+                  { "letter": "B", "text": "she was too lazy to read food labels." },
+                  { "letter": "C", "text": "she was only interested in the number of calories." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "When discussing supermarket brands of pizza, Jack agrees with Alice that",
+                "options": [
+                  { "letter": "A", "text": "the list of ingredients is shocking." },
+                  { "letter": "B", "text": "he will hesitate before buying pizza again." },
+                  { "letter": "C", "text": "the nutritional label is misleading." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "Jack prefers the daily value system to other labelling systems because it is",
+                "options": [
+                  { "letter": "A", "text": "more accessible." },
+                  { "letter": "B", "text": "more logical." },
+                  { "letter": "C", "text": "more comprehensive." }
+                ]
+              },
+              {
+                "id": "25",
+                "questionNumber": 25,
+                "text": "What surprised both students about one flavour of crisps?",
+                "options": [
+                  { "letter": "A", "text": "The percentage of artificial additives given was incorrect." },
+                  { "letter": "B", "text": "The products did not contain any meat." },
+                  { "letter": "C", "text": "The labels did not list all the ingredients." }
+                ]
+              },
+              {
+                "id": "26",
+                "questionNumber": 26,
+                "text": "What do the students think about research into the impact of nutritional food labelling?",
+                "options": [
+                  { "letter": "A", "text": "It did not produce clear results." },
+                  { "letter": "B", "text": "It focused on the wrong people." },
+                  { "letter": "C", "text": "It made unrealistic recommendations." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 27,
+          "endQuestion": 28,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "Which **TWO** things surprised the students about the traffic-light system for nutritional labels?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "its widespread use" },
+                  { "letter": "B", "text": "the fact that it is voluntary for supermarkets" },
+                  { "letter": "C", "text": "how little research was done before its introduction" },
+                  { "letter": "D", "text": "its unpopularity with food manufacturers" },
+                  { "letter": "E", "text": "the way that certain colours are used" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 29,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "29",
+                "text": "Which **TWO** things are true about the participants in the study on the traffic-light system?",
+                "multiple": true,
+                "count": 2,
+                "options": [
+                  { "letter": "A", "text": "They had low literacy levels." },
+                  { "letter": "B", "text": "They were regular consumers of packaged food." },
+                  { "letter": "C", "text": "They were selected randomly." },
+                  { "letter": "D", "text": "They were from all socio-economic groups." },
+                  { "letter": "E", "text": "They were interviewed face-to-face." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 31,
+          "data": {
+            "title": "The history of coffee",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Coffee in the Arab world" }] },
+              { "content": ["• There was small-scale trade in wild coffee from Ethiopia."] },
+              { "content": ["• 1522: Coffee was approved in the Ottoman court as a type of medicine."] },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• 1623: In Constantinople, the ruler ordered the ",
+                  { "id": "31", "type": "input" },
+                  " of every coffee house."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 33,
+          "hideRange": true,
+          "data": {
+            "title": "Coffee arrives in Europe (17th century)",
+            "sentences": [
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• Coffee shops were compared to ",
+                  { "id": "32", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• They played an important part in social and ",
+                  { "id": "33", "type": "input" },
+                  " changes."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 38,
+          "hideRange": true,
+          "data": {
+            "title": "Coffee and European colonisation",
+            "sentences": [
+              { "content": ["• European powers established coffee plantations in their colonies."] },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• Types of coffee were often named according to the ",
+                  { "id": "34", "type": "input" },
+                  " they came from."
+                ]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• In Brazil and the Caribbean, most cultivation depended on ",
+                  { "id": "35", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• In Java, coffee was used as a form of ",
+                  { "id": "36", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• Coffee became almost as important as ",
+                  { "id": "37", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• The move towards the consumption of ",
+                  { "id": "38", "type": "input" },
+                  " in Britain did not also take place in the USA."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 39,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Coffee in the 19th century",
+            "sentences": [
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• Prices dropped because of improvements in ",
+                  { "id": "39", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• Industrial workers found coffee helped them to work at ",
+                  { "id": "40", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

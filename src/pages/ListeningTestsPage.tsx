@@ -1,12 +1,14 @@
 
 import { Headphones, Clock, BookOpen, ChevronLeft, ChevronRight, GraduationCap, Globe, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { useListeningBooks } from '../hooks';
 import type { TestData } from '../api/types';
+import { buildListeningTestRoute } from '../constants';
 
 export function ListeningTestsPage() {
   const { examType } = useParams<{ examType: string }>();
+  const navigate = useNavigate();
   const isAcademic = examType === 'academic';
   const examLabel = isAcademic ? 'Academic' : 'General Training';
 
@@ -311,6 +313,7 @@ export function ListeningTestsPage() {
                               <div className="mt-5 flex flex-col gap-2">
                                 <button
                                   type="button"
+                                  onClick={() => navigate(buildListeningTestRoute(examType!, book.id, test.id))}
                                   className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted
                                     ? 'bg-white text-orange-600 border-orange-500 hover:bg-orange-50'
                                     : 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'

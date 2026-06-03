@@ -1,0 +1,460 @@
+{
+  "testId": "book-12-test-4",
+  "bookId": "book-12",
+  "title": "Cambridge IELTS 12 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 10,
+          "data": {
+            "title": "Cycle tour leader: Applicant enquiry",
+            "sentences": [
+              {
+                "content": ["Example – Name: Margaret ", { "type": "bold", "text": "Smith" }]
+              },
+              {
+                "content": [{ "type": "bold", "text": "About the applicant:" }]
+              },
+              {
+                "questionNumber": 1,
+                "content": [
+                  "• wants a ",
+                  { "id": "1", "type": "input" },
+                  " job"
+                ]
+              },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "• will soon start work as a ",
+                  { "id": "2", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "• has led cycle trips in ",
+                  { "id": "3", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• interested in being a leader of a cycling trip for families"]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "• is currently doing voluntary work with members of a ",
+                  { "id": "4", "type": "input" },
+                  " club"
+                ]
+              },
+              {
+                "questionNumber": 5,
+                "content": [
+                  "• available for five months from the 1st of ",
+                  { "id": "5", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 6,
+                "content": [
+                  "• can't eat ",
+                  { "id": "6", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 8,
+          "hideRange": true,
+          "data": {
+            "title": "Contact details:",
+            "sentences": [
+              {
+                "questionNumber": 7,
+                "content": [
+                  "• address: 27 ",
+                  { "id": "7", "type": "input" },
+                  " Place, Dumfries"
+                ]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "• postcode: ",
+                  { "id": "8", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 9,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Interview:",
+            "sentences": [
+              {
+                "questionNumber": 9,
+                "content": [
+                  "• interview at 2.30 pm on ",
+                  { "id": "9", "type": "input" }
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "• will plan a short ",
+                  { "id": "10", "type": "input" },
+                  " about being a tour guide"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "title": "Visiting the Sheepmarket area",
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Which is the most rapidly-growing group of residents in the Sheepmarket area?",
+                "options": [
+                  { "letter": "A", "text": "young professional people" },
+                  { "letter": "B", "text": "students from the university" },
+                  { "letter": "C", "text": "employees in the local market" }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "The speaker recommends the side streets in the Sheepmarket for their",
+                "options": [
+                  { "letter": "A", "text": "international restaurants." },
+                  { "letter": "B", "text": "historical buildings." },
+                  { "letter": "C", "text": "arts and crafts." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "Clothes designed by entrants for the Young Fashion competition must",
+                "options": [
+                  { "letter": "A", "text": "be modelled by the designers themselves." },
+                  { "letter": "B", "text": "be inspired by aspects of contemporary culture." },
+                  { "letter": "C", "text": "be made from locally produced materials." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "Car parking is free in some car parks if you",
+                "options": [
+                  { "letter": "A", "text": "stay for less than an hour." },
+                  { "letter": "B", "text": "buy something in the shops." },
+                  { "letter": "C", "text": "park in the evenings or at weekends." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A-I**, next to **Questions 15-20**.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Art and History in the Sheepmarket",
+            "imageSrc": "/images/book-12-test-4-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "The Reynolds House" },
+              { "id": "16", "questionNumber": 16, "text": "The Thumb" },
+              { "id": "17", "questionNumber": 17, "text": "The Museum" },
+              { "id": "18", "questionNumber": 18, "text": "The Contemporary Art Gallery" },
+              { "id": "19", "questionNumber": 19, "text": "The Warner Gallery" },
+              { "id": "20", "questionNumber": 20, "text": "Nucleus" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "title": "Presentation on film adaptations of Shakespeare's plays",
+            "headers": ["Stages of presentation", "Work still to be done"],
+            "rows": [
+              [
+                ["Introduce Giannetti's book containing a ", { "id": "21", "type": "input" }, " of adaptations"],
+                "Organise notes"
+              ],
+              [
+                ["Ask class to suggest the ", { "id": "22", "type": "input" }, " adaptations"],
+                "No further work needed"
+              ],
+              [
+                "Present Rachel Malchow's ideas",
+                ["Prepare some ", { "id": "23", "type": "input" }]
+              ],
+              [
+                ["Discuss relationship between adaptations and ", { "id": "24", "type": "input" }, " at the time of making the film"],
+                "No further work needed"
+              ]
+            ]
+          }
+        }
+      ,
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What do the speakers say about each of the following films?\nChoose **SIX** answers from the box and write the correct letter, **A-G**, next to **Questions 25-30**.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Comments",
+            "rightSideTitle": "Films",
+            "options": [
+              { "letter": "A", "text": "clearly shows the historical period" },
+              { "letter": "B", "text": "contains only parts of the play" },
+              { "letter": "C", "text": "is too similar to another kind of film" },
+              { "letter": "D", "text": "turned out to be unpopular with audiences" },
+              { "letter": "E", "text": "presents the play in a different period from the original" },
+              { "letter": "F", "text": "sets the original in a different country" },
+              { "letter": "G", "text": "incorporates a variety of art forms" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Ran" },
+              { "id": "26", "questionNumber": 26, "text": "Much Ado About Nothing" },
+              { "id": "27", "questionNumber": 27, "text": "Romeo & Juliet" },
+              { "id": "28", "questionNumber": 28, "text": "Hamlet" },
+              { "id": "29", "questionNumber": 29, "text": "Prospero's Books" },
+              { "id": "30", "questionNumber": 30, "text": "Looking for Richard" }
+            ]
+          }
+        }
+      ]
+    }
+  ,
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 40,
+          "data": {
+            "title": "Noise in Cities",
+            "sentences": [
+              {
+                "content": ["Past research focused on noise level (measured in decibels) and people's responses."]
+              },
+              {
+                "content": [{ "type": "bold", "text": "Noise 'maps'" }]
+              },
+              {
+                "content": ["• show that the highest noise levels are usually found on roads"]
+              },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• do not show other sources of noise, e.g. when windows are open or people's neighbours are in their ",
+                  { "id": "31", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• ignore variations in people's perceptions of noise"]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• have made people realize that noise is a ",
+                  { "id": "32", "type": "input" },
+                  " issue that must be dealt with"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 33,
+          "hideRange": true,
+          "data": {
+            "title": "Problems caused by noise",
+            "sentences": [
+              {
+                "content": ["• sleep disturbance"]
+              },
+              {
+                "content": ["• increase in amount of stress"]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• effect on the ",
+                  { "id": "33", "type": "input" },
+                  " of school children"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Different types of noise",
+            "sentences": [
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• Some noises can be considered pleasant e.g. the sound of a ",
+                  { "id": "34", "type": "input" },
+                  " in a town"
+                ]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• To investigate this, researchers may use methods from ",
+                  { "id": "35", "type": "input" },
+                  " sciences e.g. questionnaires"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "What people want",
+            "sentences": [
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• Plenty of activity in urban environments which are ",
+                  { "id": "36", "type": "input" },
+                  ", but also allow people to relax"
+                ]
+              },
+              {
+                "content": ["• But architects and town planners:"]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "  - do not get much ",
+                  { "id": "37", "type": "input" },
+                  " in acoustics"
+                ]
+              },
+              {
+                "content": ["  - regard sound as the responsibility of engineers"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 39,
+          "hideRange": true,
+          "data": {
+            "title": "Understanding sound as an art form",
+            "sentences": [
+              {
+                "content": ["We need to know:"]
+              },
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• how sound relates to ",
+                  { "id": "38", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• what can be learnt from psychology about the effects of sound"]
+              },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• whether physics can help us understand the ",
+                  { "id": "39", "type": "input" },
+                  " of sound"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Virtual reality programs",
+            "sentences": [
+              {
+                "content": ["• advantage: predict the effect of buildings"]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• current disadvantage: they are ",
+                  { "id": "40", "type": "input" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

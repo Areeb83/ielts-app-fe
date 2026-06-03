@@ -1,0 +1,306 @@
+{
+  "testId": "book-14-test-2",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Listening Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "title": "TOTAL HEALTH CLINIC",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "PATIENT DETAILS" }] },
+              { "content": [{ "type": "bold", "text": "Personal information" }] },
+              { "content": ["Example"] },
+              { "content": ["Name: ", { "type": "bold", "text": "Julie Anne Garcia" }] },
+              { "questionNumber": 1, "content": ["Contact phone: ", { "id": "1", "type": "input" }] },
+              { "questionNumber": 2, "content": ["Date of birth: ", { "id": "2", "type": "input" }, ", 1992"] },
+              { "questionNumber": 3, "content": ["Occupation: works as a ", { "id": "3", "type": "input" }] },
+              { "questionNumber": 4, "content": ["Insurance company: ", { "id": "4", "type": "input" }, " Life Insurance"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 5,
+          "endQuestion": 6,
+          "hideRange": true,
+          "data": {
+            "title": "Details of the problem",
+            "sentences": [
+              { "questionNumber": 5, "content": ["Type of problem: pain in her left ", { "id": "5", "type": "input" }] },
+              { "questionNumber": 6, "content": ["When it began: ", { "id": "6", "type": "input" }, " ago"] },
+              { "content": ["Action already taken: has taken painkillers and applied ice"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Other information",
+            "sentences": [
+              { "content": ["Sports played:"] },
+              { "questionNumber": 7, "content": ["– belongs to a ", { "id": "7", "type": "input" }, " club"] },
+              { "questionNumber": 8, "content": ["– goes ", { "id": "8", "type": "input" }, " regularly"] },
+              { "content": ["Medical history:"] },
+              { "questionNumber": 9, "content": ["– injured her ", { "id": "9", "type": "input" }, " last year"] },
+              { "content": ["– no allergies"] },
+              { "questionNumber": 10, "content": ["– no regular medication apart from ", { "id": "10", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 15,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Before Queen Elizabeth I visited the castle in 1576,",
+                "options": [
+                  { "letter": "A", "text": "repairs were carried out to the guest rooms." },
+                  { "letter": "B", "text": "a new building was constructed for her." },
+                  { "letter": "C", "text": "a fire damaged part of the main hall." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "In 1982, the castle was sold to",
+                "options": [
+                  { "letter": "A", "text": "the government." },
+                  { "letter": "B", "text": "the Fenys family." },
+                  { "letter": "C", "text": "an entertainment company." }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "In some of the rooms, visitors can",
+                "options": [
+                  { "letter": "A", "text": "speak to experts on the history of the castle." },
+                  { "letter": "B", "text": "interact with actors dressed as famous characters." },
+                  { "letter": "C", "text": "see models of historical figures moving and talking." }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "In the castle park, visitors can",
+                "options": [
+                  { "letter": "A", "text": "see an 800-year-old tree." },
+                  { "letter": "B", "text": "go to an art exhibition." },
+                  { "letter": "C", "text": "visit a small zoo." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "At the end of the visit, the group will have",
+                "options": [
+                  { "letter": "A", "text": "afternoon tea in the conservatory." },
+                  { "letter": "B", "text": "the chance to meet the castle's owners." },
+                  { "letter": "C", "text": "a photograph together on the Great Staircase." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the plan below. Write the correct letter, **A–H**, next to Questions 16–20.",
+          "startQuestion": 16,
+          "endQuestion": 20,
+          "data": {
+            "title": "Branley Castle",
+            "imageSrc": "/images/book-14-test-2-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "16", "questionNumber": 16, "text": "Starting point for walking the walls" },
+              { "id": "17", "questionNumber": 17, "text": "Bow and arrow display" },
+              { "id": "18", "questionNumber": 18, "text": "Hunting birds display" },
+              { "id": "19", "questionNumber": 19, "text": "Traditional dancing" },
+              { "id": "20", "questionNumber": 20, "text": "Shop" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "How will Rosie and Martin introduce their presentation?",
+                "options": [
+                  { "letter": "A", "text": "with a drawing of woolly mammoths in their natural habitat" },
+                  { "letter": "B", "text": "with a timeline showing when woolly mammoths lived" },
+                  { "letter": "C", "text": "with a video clip about woolly mammoths" }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "What was surprising about the mammoth tooth found by Russell Graham?",
+                "options": [
+                  { "letter": "A", "text": "It was still embedded in the mammoth's jawbone." },
+                  { "letter": "B", "text": "It was from an unknown species of mammoth." },
+                  { "letter": "C", "text": "It was not as old as mammoth remains from elsewhere." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "The students will use an animated diagram to demonstrate how the mammoths",
+                "options": [
+                  { "letter": "A", "text": "became isolated on the island." },
+                  { "letter": "B", "text": "spread from the island to other areas." },
+                  { "letter": "C", "text": "coexisted with other animals on the island." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "According to Martin, what is unusual about the date of the mammoths' extinction on the island?",
+                "options": [
+                  { "letter": "A", "text": "how exact it is" },
+                  { "letter": "B", "text": "how early it is" },
+                  { "letter": "C", "text": "how it was established" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What action will the students take for each of the following sections of their presentation? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Actions",
+            "rightSideTitle": "Sections of presentation",
+            "options": [
+              { "letter": "A", "text": "make it more interactive" },
+              { "letter": "B", "text": "reduce visual input" },
+              { "letter": "C", "text": "add personal opinions" },
+              { "letter": "D", "text": "contact one of the researchers" },
+              { "letter": "E", "text": "make detailed notes" },
+              { "letter": "F", "text": "find information online" },
+              { "letter": "G", "text": "check timing" },
+              { "letter": "H", "text": "organise the content more clearly" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "Introduction" },
+              { "id": "26", "questionNumber": 26, "text": "Discovery of the mammoth tooth" },
+              { "id": "27", "questionNumber": 27, "text": "Initial questions asked by the researchers" },
+              { "id": "28", "questionNumber": 28, "text": "Further research carried out on the island" },
+              { "id": "29", "questionNumber": 29, "text": "Findings and possible explanations" },
+              { "id": "30", "questionNumber": 30, "text": "Relevance to the present day" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 34,
+          "data": {
+            "title": "The history of weather forecasting",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Ancient cultures" }] },
+              { "content": ["• many cultures believed that floods and other disasters were involved in the creation of the world"] },
+              { "questionNumber": 31, "content": ["• many cultures invented ", { "id": "31", "type": "input" }, " and other ceremonies to make the weather gods friendly"] },
+              { "questionNumber": 32, "content": ["• people needed to observe and interpret the sky to ensure their ", { "id": "32", "type": "input" }] },
+              { "questionNumber": 33, "content": ["• around 650 BC, Babylonians started forecasting, using weather phenomena such as ", { "id": "33", "type": "input" }] },
+              { "questionNumber": 34, "content": ["• by 300 BC, the Chinese had a calendar made up of a number of ", { "id": "34", "type": "input" }, " connected with the weather"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Ancient Greeks",
+            "sentences": [
+              { "content": ["• a more scientific approach"] },
+              { "content": ["• Aristotle tried to explain the formation of various weather phenomena"] },
+              { "questionNumber": 35, "content": ["• Aristotle also described haloes and ", { "id": "35", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 36,
+          "hideRange": true,
+          "data": {
+            "title": "Middle Ages",
+            "sentences": [
+              { "content": ["• Aristotle's work considered accurate"] },
+              { "questionNumber": 36, "content": ["• many proverbs, e.g. about the significance of the colour of the ", { "id": "36", "type": "input" }, ", passed on accurate information"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "15th–19th centuries",
+            "sentences": [
+              { "questionNumber": 37, "content": ["• 15th century: scientists recognised value of ", { "id": "37", "type": "input" }, " for the first time"] },
+              { "questionNumber": 38, "content": ["• Galileo invented the ", { "id": "38", "type": "input" }] },
+              { "content": ["• Pascal showed relationship between atmospheric pressure and altitude"] },
+              { "content": ["• from the 17th century, scientists could measure atmospheric pressure and temperature"] },
+              { "questionNumber": 39, "content": ["• 18th century: Franklin identified the movement of ", { "id": "39", "type": "input" }] },
+              { "questionNumber": 40, "content": ["• 19th century: data from different locations could be sent to the same place by ", { "id": "40", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "testId": "book-15-test-4",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the form below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 2,
+          "data": {
+            "title": "Customer Satisfaction Survey",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Customer details" }] },
+              { "content": ["Name: Sophie Bird"] },
+              { "questionNumber": 1, "content": ["Occupation: ", { "id": "1", "type": "input" }] },
+              { "questionNumber": 2, "content": ["Reason for travel today: ", { "id": "2", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 3,
+          "endQuestion": 6,
+          "hideRange": true,
+          "data": {
+            "title": "Journey information",
+            "sentences": [
+              { "questionNumber": 3, "content": ["Name of station returning to: ", { "id": "3", "type": "input" }] },
+              { "questionNumber": 4, "content": ["Type of ticket purchased: standard ", { "id": "4", "type": "input" }, " ticket"] },
+              { "questionNumber": 5, "content": ["Cost of ticket: £ ", { "id": "5", "type": "input" }] },
+              { "content": ["When ticket was purchased: yesterday"] },
+              { "questionNumber": 6, "content": ["Where ticket was bought: ", { "id": "6", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 7,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Satisfaction with journey",
+            "sentences": [
+              { "content": ["Most satisfied with: the wifi"] },
+              { "questionNumber": 7, "content": ["Least satisfied with: the ", { "id": "7", "type": "input" }, " this morning"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Satisfaction with station facilities",
+            "sentences": [
+              { "questionNumber": 8, "content": ["Most satisfied with: how much ", { "id": "8", "type": "input" }, " was provided"] },
+              { "questionNumber": 9, "content": ["Least satisfied with: lack of seats, particularly on the ", { "id": "9", "type": "input" }] },
+              { "questionNumber": 10, "content": ["Neither satisfied nor dissatisfied with: the ", { "id": "10", "type": "input" }, " available"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A–H**, next to Questions 11–16.",
+          "startQuestion": 11,
+          "endQuestion": 16,
+          "data": {
+            "title": "Croft Valley Park",
+            "imageSrc": "/images/book-15-test-4-part2-map.jpg",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "11", "questionNumber": 11, "text": "café" },
+              { "id": "12", "questionNumber": 12, "text": "toilets" },
+              { "id": "13", "questionNumber": 13, "text": "formal gardens" },
+              { "id": "14", "questionNumber": 14, "text": "outdoor gym" },
+              { "id": "15", "questionNumber": 15, "text": "skateboard ramp" },
+              { "id": "16", "questionNumber": 16, "text": "wild flowers" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 17,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "17-18",
+                "text": "What does the speaker say about the adventure playground?",
+                "options": [
+                  { "letter": "A", "text": "Children must be supervised." },
+                  { "letter": "B", "text": "It costs more in winter." },
+                  { "letter": "C", "text": "Some activities are only for younger children." },
+                  { "letter": "D", "text": "No payment is required." },
+                  { "letter": "E", "text": "It was recently expanded." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19-20",
+                "text": "What does the speaker say about the glass houses?",
+                "options": [
+                  { "letter": "A", "text": "They are closed at weekends." },
+                  { "letter": "B", "text": "Volunteers are needed to work there." },
+                  { "letter": "C", "text": "They were badly damaged by fire." },
+                  { "letter": "D", "text": "More money is needed to repair some of the glass." },
+                  { "letter": "E", "text": "Visitors can see palm trees from tropical regions." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "questionNumber": 21,
+                "text": "What did Annie discover from reading about icehouses?",
+                "options": [
+                  { "letter": "A", "text": "why they were first created" },
+                  { "letter": "B", "text": "how the ice was kept frozen" },
+                  { "letter": "C", "text": "where they were located" }
+                ]
+              },
+              {
+                "id": "22",
+                "questionNumber": 22,
+                "text": "What point does Annie make about refrigeration in ancient Rome?",
+                "options": [
+                  { "letter": "A", "text": "It became a commercial business." },
+                  { "letter": "B", "text": "It used snow from nearby." },
+                  { "letter": "C", "text": "It took a long time to become popular." }
+                ]
+              },
+              {
+                "id": "23",
+                "questionNumber": 23,
+                "text": "In connection with modern refrigerators, both Annie and Jack are worried about",
+                "options": [
+                  { "letter": "A", "text": "the complexity of the technology." },
+                  { "letter": "B", "text": "the fact that some are disposed of irresponsibly." },
+                  { "letter": "C", "text": "the large number that quickly break down." }
+                ]
+              },
+              {
+                "id": "24",
+                "questionNumber": 24,
+                "text": "What do Jack and Annie agree regarding domestic fridges?",
+                "options": [
+                  { "letter": "A", "text": "They are generally good value for money." },
+                  { "letter": "B", "text": "There are plenty of useful variations." },
+                  { "letter": "C", "text": "They are more useful than other domestic appliances." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Who is going to do research into each topic? Write the correct letter, **A**, **B** or **C**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "People",
+            "rightSideTitle": "Topics",
+            "options": [
+              { "letter": "A", "text": "Annie" },
+              { "letter": "B", "text": "Jack" },
+              { "letter": "C", "text": "both Annie and Jack" }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "the goods that are refrigerated" },
+              { "id": "26", "questionNumber": 26, "text": "the effects on health" },
+              { "id": "27", "questionNumber": 27, "text": "the impact on food producers" },
+              { "id": "28", "questionNumber": 28, "text": "the impact on cities" },
+              { "id": "29", "questionNumber": 29, "text": "refrigerated transport" },
+              { "id": "30", "questionNumber": 30, "text": "domestic fridges" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "How the Industrial Revolution affected life in Britain",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "19th century" }] },
+              { "questionNumber": 31, "content": ["• For the first time, people's possessions were used to measure Britain's ", { "id": "31", "type": "input" }, "."] },
+              { "questionNumber": 32, "content": ["• Developments in production of goods and in ", { "id": "32", "type": "input" }, " greatly changed lives."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Manufacturing",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "MAIN AREAS OF CHANGE" }] },
+              { "questionNumber": 33, "content": ["• The Industrial Revolution would not have happened without the new types of ", { "id": "33", "type": "input" }, " that were used then."] },
+              { "questionNumber": 34, "content": ["• The leading industry was ", { "id": "34", "type": "input" }, " (its products became widely available)."] },
+              { "questionNumber": 35, "content": ["• New ", { "id": "35", "type": "input" }, " made factories necessary and so more people moved into towns."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 37,
+          "hideRange": true,
+          "data": {
+            "title": "Transport",
+            "sentences": [
+              { "content": ["• The railways took the place of canals."] },
+              { "content": ["• Because of the new transport:"] },
+              { "questionNumber": 36, "content": ["– greater access to ", { "id": "36", "type": "input" }, " made people more aware of what they could buy in shops."] },
+              { "questionNumber": 37, "content": ["– when shopping, people were not limited to buying ", { "id": "37", "type": "input" }, " goods."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Retailing",
+            "sentences": [
+              { "content": ["• The first department stores were opened."] },
+              { "content": ["• The displays of goods were more visible:"] },
+              { "questionNumber": 38, "content": ["– inside stores because of better ", { "id": "38", "type": "input" }, "."] },
+              { "questionNumber": 39, "content": ["– outside stores, because ", { "id": "39", "type": "input" }, " were bigger."] },
+              { "questionNumber": 40, "content": ["• ", { "id": "40", "type": "input" }, " that was persuasive became much more common."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

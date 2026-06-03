@@ -1,0 +1,325 @@
+{
+  "testId": "book-17-test-4",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Listening Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD** for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 1,
+          "data": {
+            "title": "Easy Life Cleaning Services",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Basic cleaning package offered" }] },
+              { "content": ["• Cleaning all surfaces"] },
+              { "questionNumber": 1, "content": ["• Cleaning the ", { "id": "1", "type": "input" }, " throughout the apartment"] },
+              { "content": ["• Cleaning shower, sinks, toilet etc."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 2,
+          "endQuestion": 5,
+          "hideRange": true,
+          "data": {
+            "title": "Additional services agreed",
+            "sentences": [
+              { "content": ["• Every week"] },
+              { "questionNumber": 2, "content": ["– Cleaning the ", { "id": "2", "type": "input" }] },
+              { "questionNumber": 3, "content": ["– Ironing clothes – ", { "id": "3", "type": "input" }, " only"] },
+              { "content": ["• Every month"] },
+              { "questionNumber": 4, "content": ["– Cleaning all the ", { "id": "4", "type": "input" }, " from the inside"] },
+              { "questionNumber": 5, "content": ["– Washing down the ", { "id": "5", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 6,
+          "endQuestion": 7,
+          "hideRange": true,
+          "data": {
+            "title": "Other possibilities",
+            "sentences": [
+              { "questionNumber": 6, "content": ["• They can organise a plumber or an ", { "id": "6", "type": "input" }, " if necessary."] },
+              { "questionNumber": 7, "content": ["• A special cleaning service is available for customers who are allergic to ", { "id": "7", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 8,
+          "endQuestion": 10,
+          "hideRange": true,
+          "data": {
+            "title": "Information on the cleaners",
+            "sentences": [
+              { "questionNumber": 8, "content": ["• Before being hired, all cleaners have a background check carried out by the ", { "id": "8", "type": "input" }] },
+              { "content": ["• References are required."] },
+              { "questionNumber": 9, "content": ["• All cleaners are given ", { "id": "9", "type": "input" }, " for two weeks."] },
+              { "questionNumber": 10, "content": ["• Customers send a ", { "id": "10", "type": "input" }, " after each visit."] },
+              { "content": ["• Usually, each customer has one regular cleaner."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "questions": [
+              {
+                "id": "11",
+                "questionNumber": 11,
+                "text": "Many hotel managers are unaware that their staff often leave because of",
+                "options": [
+                  { "letter": "A", "text": "a lack of training." },
+                  { "letter": "B", "text": "long hours." },
+                  { "letter": "C", "text": "low pay." }
+                ]
+              },
+              {
+                "id": "12",
+                "questionNumber": 12,
+                "text": "What is the impact of high staff turnover on managers?",
+                "options": [
+                  { "letter": "A", "text": "an increased workload" },
+                  { "letter": "B", "text": "low morale" },
+                  { "letter": "C", "text": "an inability to meet targets" }
+                ]
+              },
+              {
+                "id": "13",
+                "questionNumber": 13,
+                "text": "What mistake should managers always avoid?",
+                "options": [
+                  { "letter": "A", "text": "failing to treat staff equally" },
+                  { "letter": "B", "text": "reorganising shifts without warning" },
+                  { "letter": "C", "text": "neglecting to have enough staff during busy periods" }
+                ]
+              },
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "What unexpected benefit did Dunwich Hotel notice after improving staff retention rates?",
+                "options": [
+                  { "letter": "A", "text": "a fall in customer complaints" },
+                  { "letter": "B", "text": "an increase in loyalty club membership" },
+                  { "letter": "C", "text": "a rise in spending per customer" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Which way of reducing staff turnover was used in each of the following hotels? Write the correct letter, **A, B or C**, next to Questions 15–20.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "Ways of reducing staff turnover",
+            "rightSideTitle": "Hotels",
+            "options": [
+              { "letter": "A", "text": "improving relationships and teamwork" },
+              { "letter": "B", "text": "offering incentives and financial benefits" },
+              { "letter": "C", "text": "providing career opportunities" }
+            ],
+            "questions": [
+              { "id": "15", "questionNumber": 15, "text": "The Sun Club" },
+              { "id": "16", "questionNumber": 16, "text": "The Portland" },
+              { "id": "17", "questionNumber": 17, "text": "Bluewater Hotels" },
+              { "id": "18", "questionNumber": 18, "text": "Pentlow Hotels" },
+              { "id": "19", "questionNumber": 19, "text": "Green Planet" },
+              { "id": "20", "questionNumber": 20, "text": "The Amesbury" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO points do Thomas and Jeanne make about Thomas's sporting activities at school?",
+                "options": [
+                  { "letter": "A", "text": "He should have felt more positive about them." },
+                  { "letter": "B", "text": "The training was too challenging for him." },
+                  { "letter": "C", "text": "He could have worked harder at them." },
+                  { "letter": "D", "text": "His parents were disappointed in him." },
+                  { "letter": "E", "text": "His fellow students admired him." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO feelings did Thomas experience when he was in Kenya?",
+                "options": [
+                  { "letter": "A", "text": "disbelief" },
+                  { "letter": "B", "text": "relief" },
+                  { "letter": "C", "text": "stress" },
+                  { "letter": "D", "text": "gratitude" },
+                  { "letter": "E", "text": "homesickness" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What comment do the students make about the development of each of the following items of sporting equipment? Choose SIX answers from the box and write the correct letter, **A–H**, next to Questions 25–30.",
+          "startQuestion": 25,
+          "endQuestion": 30,
+          "data": {
+            "title": "Comments about the development of the equipment",
+            "rightSideTitle": "Items of sporting equipment",
+            "options": [
+              { "letter": "A", "text": "It could cause excessive sweating." },
+              { "letter": "B", "text": "The material was being mass produced for another purpose." },
+              { "letter": "C", "text": "People often needed to make their own." },
+              { "letter": "D", "text": "It often had to be replaced." },
+              { "letter": "E", "text": "The material was expensive." },
+              { "letter": "F", "text": "It was unpopular among spectators." },
+              { "letter": "G", "text": "It caused injuries." },
+              { "letter": "H", "text": "No one using it liked it at first." }
+            ],
+            "questions": [
+              { "id": "25", "questionNumber": 25, "text": "the table tennis bat" },
+              { "id": "26", "questionNumber": 26, "text": "the cricket helmet" },
+              { "id": "27", "questionNumber": 27, "text": "the cycle helmet" },
+              { "id": "28", "questionNumber": 28, "text": "the golf club" },
+              { "id": "29", "questionNumber": 29, "text": "the hockey stick" },
+              { "id": "30", "questionNumber": 30, "text": "the football" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 32,
+          "data": {
+            "title": "Maple syrup",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "What is maple syrup?" }] },
+              { "content": ["• made from the sap of the maple tree"] },
+              { "content": ["• added to food or used in cooking"] },
+              { "questionNumber": 31, "content": ["• colour described as ", { "id": "31", "type": "input" }] },
+              { "questionNumber": 32, "content": ["• very ", { "id": "32", "type": "input" }, " compared to refined sugar"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 33,
+          "endQuestion": 33,
+          "hideRange": true,
+          "data": {
+            "title": "The maple tree",
+            "sentences": [
+              { "content": ["• has many species"] },
+              { "content": ["• needs sunny days and cool nights"] },
+              { "content": ["• maple leaf has been on the Canadian flag since 1964"] },
+              { "content": ["• needs moist soil but does not need fertiliser as well"] },
+              { "questionNumber": 33, "content": ["• best growing conditions and ", { "id": "33", "type": "input" }, " are in Canada and North America"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 34,
+          "endQuestion": 34,
+          "hideRange": true,
+          "data": {
+            "title": "Early maple sugar producers",
+            "sentences": [
+              { "content": ["• made holes in the tree trunks"] },
+              { "questionNumber": 34, "content": ["• used hot ", { "id": "34", "type": "input" }, " to heat the sap"] },
+              { "content": ["• used tree bark to make containers for collection"] },
+              { "content": ["• sweetened food and drink with sugar"] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 35,
+          "endQuestion": 35,
+          "hideRange": true,
+          "data": {
+            "title": "Today's maple syrup – The trees",
+            "sentences": [
+              { "questionNumber": 35, "content": ["• Tree trunks may not have the correct ", { "id": "35", "type": "input" }, " until they have been growing for 40 years."] },
+              { "content": ["• The changing temperature and movement of water within the tree produces the sap."] }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "The production",
+            "sentences": [
+              { "questionNumber": 36, "content": ["• A tap is drilled into the trunk and a ", { "id": "36", "type": "input" }, " carries the sap into a bucket."] },
+              { "questionNumber": 37, "content": ["• Large pans of sap called evaporators are heated by means of a ", { "id": "37", "type": "input" }, "."] },
+              { "questionNumber": 38, "content": ["• A lot of ", { "id": "38", "type": "input" }, " is produced during the evaporation process."] },
+              { "questionNumber": 39, "content": ["• 'Sugar sand' is removed because it makes the syrup look ", { "id": "39", "type": "input" }, " and affects the taste."] },
+              { "content": ["• The syrup is ready for use."] },
+              { "questionNumber": 40, "content": ["• A huge quantity of sap is needed to make a ", { "id": "40", "type": "input" }, " of maple syrup."] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

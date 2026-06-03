@@ -1,0 +1,401 @@
+{
+  "testId": "book-11-test-1",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Listening Test 1",
+  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "FLOW_CHART_DRAG_DROP",
+          "instruction": "Complete the flow-chart. Choose the correct answer and move it into the gap.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "Procedure for detecting life on another planet",
+            "options": [
+              "fossils",
+              "contamination",
+              "vehicle",
+              "powder",
+              "heat",
+              "results",
+              "radiation",
+              "site",
+              "microbes"
+            ],
+            "steps": [
+              {
+                "type": "text",
+                "content": "A spacecraft lands on a planet and sends out a rover."
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "The rover is directed to a ",
+                  {
+                    "id": "1",
+                    "type": "dropzone"
+                  },
+                  " which has organic material."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "It collects a sample from below the surface (in order to avoid the effects of ",
+                  {
+                    "id": "2",
+                    "type": "dropzone"
+                  },
+                  " )."
+                ]
+              },
+              {
+                "type": "text",
+                "content": "The soil and rocks are checked to look for evidence of fossils."
+              },
+              {
+                "type": "text",
+                "content": "The sample is converted to powder."
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "The sample is subjected to ",
+                  {
+                    "id": "3",
+                    "type": "dropzone"
+                  },
+                  "."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "A mass spectrometer is used to search for potential proof of life, e.g. ",
+                  {
+                    "id": "4",
+                    "type": "dropzone"
+                  },
+                  "."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "The ",
+                  {
+                    "id": "5",
+                    "type": "dropzone"
+                  },
+                  " are compared with existing data from Earth."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "FLOW_CHART_DRAG_DROP",
+          "instruction": "Complete the flow-chart. Choose the correct answer and move it into the gap.",
+          "startQuestion": 6,
+          "endQuestion": 10,
+          "data": {
+            "title": "Analysis of atmospheric samples",
+            "options": [
+              "oxygen",
+              "methane",
+              "density",
+              "color",
+              "pressure",
+              "sensor",
+              "data",
+              "transmission"
+            ],
+            "steps": [
+              {
+                "type": "text",
+                "content": "Atmospheric sensors are deployed from the rover."
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "The sensors measure the level of ",
+                  {
+                    "id": "6",
+                    "type": "dropzone"
+                  },
+                  " in the air."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "They also track fluctuations in ",
+                  {
+                    "id": "7",
+                    "type": "dropzone"
+                  },
+                  " over time."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "This data determines the ",
+                  {
+                    "id": "8",
+                    "type": "dropzone"
+                  },
+                  " of the atmosphere."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Information is sent to the ",
+                  {
+                    "id": "9",
+                    "type": "dropzone"
+                  },
+                  " module."
+                ]
+              },
+              {
+                "type": "interactive",
+                "content": [
+                  "Finally, a ",
+                  {
+                    "id": "10",
+                    "type": "dropzone"
+                  },
+                  " is sent back to the orbital station."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 11,
+          "endQuestion": 14,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 11,
+                "content": [
+                  "The local museum is famous for its collection of ",
+                  {
+                    "id": "11",
+                    "type": "input"
+                  },
+                  " from the Victorian era."
+                ]
+              },
+              {
+                "questionNumber": 12,
+                "content": [
+                  "Visitors are not allowed to bring ",
+                  {
+                    "id": "12",
+                    "type": "input"
+                  },
+                  " into the exhibition rooms."
+                ]
+              },
+              {
+                "questionNumber": 13,
+                "content": [
+                  "The guided tour takes approximately ",
+                  {
+                    "id": "13",
+                    "type": "input"
+                  },
+                  " and ends at the gift shop."
+                ]
+              },
+              {
+                "questionNumber": 14,
+                "content": [
+                  "If you want to have lunch, the cafe is located next to the ",
+                  {
+                    "id": "14",
+                    "type": "input"
+                  },
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below. Write **NO MORE THAN TWO WORDS** for each answer.",
+          "startQuestion": 15,
+          "endQuestion": 20,
+          "data": {
+            "title": "The Impact of Urbanization on the Local Economy",
+            "content": [
+              "The primary cause of the shift was the new ",
+              {
+                "id": "15",
+                "type": "input"
+              },
+              " which eventually led to a significant ",
+              {
+                "id": "16",
+                "type": "input"
+              },
+              " in the area's overall income. Many residents noticed that the traditional ",
+              {
+                "id": "17",
+                "type": "input"
+              },
+              " were slowly disappearing, replaced by modern facilities. However, some positive effects included the establishment of a ",
+              {
+                "id": "18",
+                "type": "input"
+              },
+              " that brought new jobs, although it required workers to undergo ",
+              {
+                "id": "19",
+                "type": "input"
+              },
+              ". In the long term, experts believe that maintaining a balance will depend on improved ",
+              {
+                "id": "20",
+                "type": "input"
+              },
+              "."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct answer.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "21",
+                "text": "What is the main purpose of the student's research project?",
+                "options": [
+                  { "letter": "A", "text": "To compare different teaching methods." },
+                  { "letter": "B", "text": "To analyse how students use the library." },
+                  { "letter": "C", "text": "To investigate the effects of online learning." }
+                ]
+              },
+              {
+                "id": "22",
+                "text": "The student's supervisor suggests that she should first",
+                "options": [
+                  { "letter": "A", "text": "look at the existing research on the topic." },
+                  { "letter": "B", "text": "design a questionnaire for the participants." },
+                  { "letter": "C", "text": "arrange interviews with the relevant staff." }
+                ]
+              },
+              {
+                "id": "23",
+                "text": "Why is the student concerned about the sample size?",
+                "options": [
+                  { "letter": "A", "text": "It may not represent the wider population." },
+                  { "letter": "B", "text": "It will take too long to collect the data." },
+                  { "letter": "C", "text": "It requires approval from the ethics board." }
+                ]
+              },
+              {
+                "id": "24",
+                "text": "What does the supervisor recommend regarding the data analysis?",
+                "options": [
+                  { "letter": "A", "text": "Using specialist software from the beginning." },
+                  { "letter": "B", "text": "Starting with a simple manual approach." },
+                  { "letter": "C", "text": "Asking a statistician to review the results." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose TWO correct answers.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "Which TWO problems did the students face when starting their project?",
+                "options": [
+                  { "letter": "A", "text": "Difficulty finding relevant sources." },
+                  { "letter": "B", "text": "Lack of support from their tutor." },
+                  { "letter": "C", "text": "Not enough time to complete the work." },
+                  { "letter": "D", "text": "Problems accessing the university database." },
+                  { "letter": "E", "text": "Disagreements about the research focus." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Write **NO MORE THAN ONE WORD** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "Accommodation Options",
+            "headers": ["Type", "Location", "Special Feature", "Cost per night"],
+            "rows": [
+              ["Hotel", "City centre", { "id": "31", "questionNumber": 31 }, "£120"],
+              ["B&B", { "id": "32", "questionNumber": 32 }, "Family-run", "£65"],
+              ["Hostel", "Near station", "Shared kitchen", { "id": "33", "questionNumber": 33 }],
+              [{ "id": "34", "questionNumber": 34 }, "Countryside", "Swimming pool", "£200"],
+              ["Campsite", "By the lake", { "id": "35", "questionNumber": 35 }, "£20"]
+            ]
+          }
+        },
+        {
+          "type": "MAP_DIAGRAM_LABELLING",
+          "instruction": "Label the map below. Write the correct letter, **A–H**, next to **Questions 36–40**.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "imageSrc": "https://drive.google.com/thumbnail?id=1Tve8pQUvChc5u-vUWRbY1waQspcE1L-G&sz=w1000",
+            "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "36", "questionNumber": 36, "text": "Library" },
+              { "id": "37", "questionNumber": 37, "text": "Park" },
+              { "id": "38", "questionNumber": 38, "text": "Post Office" },
+              { "id": "39", "questionNumber": 39, "text": "Supermarket" },
+              { "id": "40", "questionNumber": 40, "text": "Hospital" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

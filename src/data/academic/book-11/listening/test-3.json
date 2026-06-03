@@ -1,0 +1,440 @@
+{
+  "testId": "book-11-test-3",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Listening Test 3",
+  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Part 1",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "title": "Free activities in the Burnham area",
+            "questions": [
+              {
+                "id": "1",
+                "text": "The 'Family Welcome' event in the art gallery begins at",
+                "options": [
+                  { "letter": "A", "text": "10 am." },
+                  { "letter": "B", "text": "10.30 am." },
+                  { "letter": "C", "text": "2 pm." }
+                ]
+              },
+              {
+                "id": "2",
+                "text": "The film that is now shown in the 'Family Welcome' event is about",
+                "options": [
+                  { "letter": "A", "text": "sculpture." },
+                  { "letter": "B", "text": "painting." },
+                  { "letter": "C", "text": "ceramics." }
+                ]
+              },
+              {
+                "id": "3",
+                "text": "When do most of the free concerts take place?",
+                "options": [
+                  { "letter": "A", "text": "in the morning" },
+                  { "letter": "B", "text": "at lunchtime" },
+                  { "letter": "C", "text": "in the evening" }
+                ]
+              },
+              {
+                "id": "4",
+                "text": "Where will the 4 pm concert of Latin American music take place?",
+                "options": [
+                  { "letter": "A", "text": "in a museum" },
+                  { "letter": "B", "text": "in a theatre" },
+                  { "letter": "C", "text": "in a library" }
+                ]
+              },
+              {
+                "id": "5",
+                "text": "The boat race begins at",
+                "options": [
+                  { "letter": "A", "text": "Summer Pool." },
+                  { "letter": "B", "text": "Charlesworth Bridge." },
+                  { "letter": "C", "text": "Offord Marina." }
+                ]
+              },
+              {
+                "id": "6",
+                "text": "One of the boat race teams",
+                "options": [
+                  { "letter": "A", "text": "won a regional competition earlier this year." },
+                  { "letter": "B", "text": "has represented the region in a national competition." },
+                  { "letter": "C", "text": "has won several regional competitions." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 7,
+          "endQuestion": 10,
+          "data": {
+            "title": "Paxton Nature Reserve",
+            "sentences": [
+              {
+                "questionNumber": 7,
+                "content": [
+                  "Paxton is a good place for seeing rare ",
+                  { "id": "7", "type": "input" },
+                  " all year round."
+                ]
+              },
+              {
+                "questionNumber": 8,
+                "content": [
+                  "This is a particularly good time for seeing certain unusual ",
+                  { "id": "8", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 9,
+                "content": [
+                  "Visitors will be able to learn about ",
+                  { "id": "9", "type": "input" },
+                  " and then collect some."
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "Part of the ",
+                  { "id": "10", "type": "input" },
+                  " has been made suitable for swimming."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Part 2",
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "startQuestion": 11,
+          "endQuestion": 15,
+          "data": {
+            "title": "Changes in Barford over the last 50 years",
+            "questions": [
+              {
+                "id": "11",
+                "text": "In Shona's opinion, why do fewer people use buses in Barford these days?",
+                "options": [
+                  { "letter": "A", "text": "The buses are old and uncomfortable." },
+                  { "letter": "B", "text": "Fares have gone up too much." },
+                  { "letter": "C", "text": "There are not so many bus routes." }
+                ]
+              },
+              {
+                "id": "12",
+                "text": "What change in the road network is known to have benefited the town most?",
+                "options": [
+                  { "letter": "A", "text": "the construction of a bypass" },
+                  { "letter": "B", "text": "the development of cycle paths" },
+                  { "letter": "C", "text": "the banning of cars from certain streets" }
+                ]
+              },
+              {
+                "id": "13",
+                "text": "What is the problem affecting shopping in the town centre?",
+                "options": [
+                  { "letter": "A", "text": "lack of parking spaces" },
+                  { "letter": "B", "text": "lack of major retailers" },
+                  { "letter": "C", "text": "lack of restaurants and cafes" }
+                ]
+              },
+              {
+                "id": "14",
+                "text": "What does Shona say about medical facilities in Barford?",
+                "options": [
+                  { "letter": "A", "text": "There is no hospital." },
+                  { "letter": "B", "text": "New medical practices are planned." },
+                  { "letter": "C", "text": "The number of dentists is too low." }
+                ]
+              },
+              {
+                "id": "15",
+                "text": "The largest number of people are employed in",
+                "options": [
+                  { "letter": "A", "text": "manufacturing." },
+                  { "letter": "B", "text": "services." },
+                  { "letter": "C", "text": "education." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "What is planned for each of the following facilities? Choose **FIVE** answers from the box and write the correct letter, **A-G**.",
+          "startQuestion": 16,
+          "endQuestion": 20,
+          "data": {
+            "title": "Plans",
+            "rightSideTitle": "Facilities",
+            "options": [
+              { "letter": "A", "text": "It will move to a new location." },
+              { "letter": "B", "text": "It will have its opening hours extended." },
+              { "letter": "C", "text": "It will be refurbished." },
+              { "letter": "D", "text": "It will be used for a different purpose." },
+              { "letter": "E", "text": "It will have its opening hours reduced." },
+              { "letter": "F", "text": "It will have new management." },
+              { "letter": "G", "text": "It will be expanded." }
+            ],
+            "questions": [
+              { "id": "16", "questionNumber": 16, "text": "railway station car park" },
+              { "id": "17", "questionNumber": 17, "text": "cinema" },
+              { "id": "18", "questionNumber": 18, "text": "indoor market" },
+              { "id": "19", "questionNumber": 19, "text": "library" },
+              { "id": "20", "questionNumber": 20, "text": "nature reserve" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Part 3",
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "headers": ["Subject of drawing", "Change to be made"],
+            "rows": [
+              [
+                [
+                  "A ",
+                  { "id": "21", "type": "input" },
+                  " surrounded by trees"
+                ],
+                [
+                  "Add Malcolm and a ",
+                  { "id": "22", "type": "input" },
+                  " noticing him"
+                ]
+              ],
+              [
+                [
+                  "People who are ",
+                  { "id": "23", "type": "input" },
+                  " outside the forest"
+                ],
+                [
+                  "Add Malcolm sitting on a tree trunk and ",
+                  { "id": "24", "type": "input" }
+                ]
+              ],
+              [
+                [
+                  "Ice-skaters on ",
+                  { "id": "25", "type": "input" },
+                  " covered with ice"
+                ],
+                [
+                  "Add a ",
+                  { "id": "26", "type": "input" },
+                  " for each person"
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Who is going to write each of the following parts of the report?\nChoose the correct letter, **A-D**, next to **Questions 27-30**.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "title": "Authors",
+            "options": [
+              { "letter": "A", "text": "Helen only" },
+              { "letter": "B", "text": "Jeremy only" },
+              { "letter": "C", "text": "both Helen and Jeremy" },
+              { "letter": "D", "text": "neither Helen nor Jeremy" }
+            ],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "how they planned the project" },
+              { "id": "28", "questionNumber": 28, "text": "how they had ideas for their stories" },
+              { "id": "29", "questionNumber": 29, "text": "an interpretation of their stories" },
+              { "id": "30", "questionNumber": 30, "text": "comments on the illustrations" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Part 4",
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 40,
+          "data": {
+            "title": "ETHNOGRAPHY IN BUSINESS",
+            "sentences": [
+              {
+                "content": ["Ethnography: research which explores human cultures"]
+              },
+              {
+                "content": ["It can be used in business:"]
+              },
+              {
+                "questionNumber": 31,
+                "content": [
+                  "• to investigate customer needs and ",
+                  { "id": "31", "type": "input" }
+                ]
+              },
+              {
+                "content": ["• to help companies develop new designs"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "hideRange": true,
+          "data": {
+            "title": "Examples of ethnographic research in business",
+            "sentences": [
+              {
+                "content": [{ "type": "bold", "text": "Kitchen equipment" }]
+              },
+              {
+                "questionNumber": 32,
+                "content": [
+                  "• Researchers found that cooks could not easily see the ",
+                  { "id": "32", "type": "input" },
+                  " in measuring cups."
+                ]
+              },
+              {
+                "content": [{ "type": "bold", "text": "Cell phones" }]
+              },
+              {
+                "content": ["• In Uganda, customers paid to use the cell phones of entrepreneurs."]
+              },
+              {
+                "questionNumber": 33,
+                "content": [
+                  "• These customers wanted to check the ",
+                  { "id": "33", "type": "input" },
+                  " used."
+                ]
+              },
+              {
+                "content": [{ "type": "bold", "text": "Computer companies" }]
+              },
+              {
+                "questionNumber": 34,
+                "content": [
+                  "• There was a need to develop ",
+                  { "id": "34", "type": "input" },
+                  " to improve communication between system administrators and colleagues."
+                ]
+              },
+              {
+                "content": [{ "type": "bold", "text": "Hospitals" }]
+              },
+              {
+                "questionNumber": 35,
+                "content": [
+                  "• Nurses needed to access information about ",
+                  { "id": "35", "type": "input" },
+                  " in different parts of the hospital."
+                ]
+              },
+              {
+                "content": [{ "type": "bold", "text": "Airlines" }]
+              },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "• Respondents recorded information about their ",
+                  { "id": "36", "type": "input" },
+                  " while travelling."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "hideRange": true,
+          "data": {
+            "title": "Principles of ethnographic research in business",
+            "sentences": [
+              {
+                "content": ["• The researcher does not start off with a hypothesis."]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "• Participants may be selected by criteria such as age, ",
+                  { "id": "37", "type": "input" },
+                  " or product used."
+                ]
+              },
+              {
+                "questionNumber": 38,
+                "content": [
+                  "• The participants must feel ",
+                  { "id": "38", "type": "input" },
+                  " about taking part in the research."
+                ]
+              },
+              {
+                "questionNumber": 39,
+                "content": [
+                  "• There is usually direct ",
+                  { "id": "39", "type": "input" },
+                  " of the participants."
+                ]
+              },
+              {
+                "content": ["• The interview is guided by the participant."]
+              },
+              {
+                "questionNumber": 40,
+                "content": [
+                  "• A lot of time is needed for the ",
+                  { "id": "40", "type": "input" },
+                  " of the data."
+                ]
+              },
+              {
+                "content": ["• Researchers look for a meaningful pattern in the data."]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
