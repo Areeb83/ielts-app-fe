@@ -266,6 +266,44 @@
               }
             ]
           }
+        },
+        {
+          "type": "SENTENCE_COMPLETION_DRAG_DROP",
+          "instruction": "Complete each sentence with the correct ending. Choose the correct answer and move it into the gap.",
+          "startQuestion": 27,
+          "endQuestion": 29,
+          "data": {
+            "options": [
+              "she has the greatest knowledge of Elizabethan London.",
+              "it drew on a wider range of primary sources than usual.",
+              "she wanted to focus on the lives of ordinary people.",
+              "it was the first study to use digital archival records.",
+              "her findings challenged previously accepted conclusions."
+            ],
+            "sentences": [
+              {
+                "questionNumber": 27,
+                "content": [
+                  "Harkness's research method was different to that of other writers because ",
+                  { "type": "dropzone", "id": "27" }
+                ]
+              },
+              {
+                "questionNumber": 28,
+                "content": [
+                  "Academic reviewers were impressed by Harkness's book because ",
+                  { "type": "dropzone", "id": "28" }
+                ]
+              },
+              {
+                "questionNumber": 29,
+                "content": [
+                  "Harkness chose Elizabethan London as her subject because ",
+                  { "type": "dropzone", "id": "29" }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -282,19 +320,19 @@
       },
       "questionGroups": [
         {
-          "type": "TABLE_COMPLETION",
-          "instruction": "Complete the table below. Write **NO MORE THAN ONE WORD** for each answer.",
+          "type": "DIAGRAM_LABELLING",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
           "startQuestion": 31,
           "endQuestion": 35,
           "data": {
-            "title": "Accommodation Options",
-            "headers": ["Type", "Location", "Special Feature", "Cost per night"],
-            "rows": [
-              ["Hotel", "City centre", { "id": "31", "questionNumber": 31 }, "£120"],
-              ["B&B", { "id": "32", "questionNumber": 32 }, "Family-run", "£65"],
-              ["Hostel", "Near station", "Shared kitchen", { "id": "33", "questionNumber": 33 }],
-              [{ "id": "34", "questionNumber": 34 }, "Countryside", "Swimming pool", "£200"],
-              ["Campsite", "By the lake", { "id": "35", "questionNumber": 35 }, "£20"]
+            "title": "The Water Cycle",
+            "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Water_cycle.png/1200px-Water_cycle.png",
+            "questions": [
+              { "id": "31", "questionNumber": 31 },
+              { "id": "32", "questionNumber": 32 },
+              { "id": "33", "questionNumber": 33 },
+              { "id": "34", "questionNumber": 34 },
+              { "id": "35", "questionNumber": 35 }
             ]
           }
         },

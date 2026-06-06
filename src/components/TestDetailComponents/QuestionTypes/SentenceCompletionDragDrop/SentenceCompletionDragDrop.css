@@ -1,0 +1,189 @@
+/* ═══════════════════════════════════════════════════════════════
+   Sentence Completion (Drag & Drop)
+   ═══════════════════════════════════════════════════════════════ */
+
+.sc-dnd {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sc-dnd .sc-dnd__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.sc-dnd .sc-dnd__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sc-dnd .sc-dnd__title {
+    font-size: 18px !important;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+/* ─── Sentences ─── */
+
+.sc-dnd .sc-dnd__sentences {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.sc-dnd .sc-dnd__sentence-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    line-height: 2.2;
+    color: #000;
+    font-size: 15px !important;
+}
+
+.sc-dnd .sc-dnd__question-number {
+    font-weight: 700;
+    color: #000;
+    min-width: 22px;
+    flex-shrink: 0;
+    font-size: 15px !important;
+}
+
+.sc-dnd .sc-dnd__sentence-content {
+    flex: 1;
+    display: inline;
+    word-wrap: break-word;
+}
+
+.sc-dnd .sc-dnd__sentence-content span {
+    font-size: 15px !important;
+    vertical-align: middle;
+}
+
+/* ─── Options Pool (below sentences) ─── */
+
+.sc-dnd .sc-dnd__pool {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 14px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    min-height: 54px;
+}
+
+.sc-dnd .sc-dnd__pool--over {
+    background-color: #e6edff;
+    outline: 2px dashed #0056b3;
+    outline-offset: -2px;
+}
+
+/* ─── Draggable words (scoped) ─── */
+
+.sc-dnd .draggable-word {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: #fff;
+    border: 1px solid #3e3e3e !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #222;
+    cursor: move;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.sc-dnd .draggable-word:hover {
+    background-color: #f5f5f5;
+}
+
+.sc-dnd .draggable-word--dragging {
+    opacity: 0.01 !important;
+}
+
+.sc-dnd .draggable-word--disabled {
+    visibility: hidden !important;
+    pointer-events: none;
+}
+
+/* ─── Drop Zone (inline in sentence) ─── */
+
+.sc-dnd .dropzone {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 26px;
+    background-color: #fff;
+    border: 1.7px dashed #0056b3 !important;
+    border-radius: 8px !important;
+    margin: 1px 3px;
+    padding: 0;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.sc-dnd .dropzone .dropzone__placeholder {
+    color: #000;
+    font-size: 13px !important;
+    font-weight: 700;
+}
+
+.sc-dnd .dropzone--over {
+    background-color: #e6edff;
+    border-color: #0056b3 !important;
+}
+
+.sc-dnd .dropzone--filled {
+    border-color: #0056b3 !important;
+    border-style: solid !important;
+    min-width: 120px;
+    background-color: transparent;
+    cursor: move;
+}
+
+.sc-dnd .dropzone--filled.dropzone--over {
+    background-color: #e6edff !important;
+    border-color: #003d82 !important;
+    border-style: dashed !important;
+}
+
+/* Word placed inside a dropzone */
+.sc-dnd .dropzone .draggable-word {
+    margin: 0;
+    border: none !important;
+    background-color: transparent !important;
+    color: #222;
+    font-size: 15px !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    min-width: auto;
+    min-height: 26px;
+    box-shadow: none !important;
+    cursor: move;
+}
+
+.sc-dnd .dropzone .draggable-word:hover {
+    background-color: transparent !important;
+}
+
+.sc-dnd .dropzone .draggable-word--dragging {
+    opacity: 0.01 !important;
+}

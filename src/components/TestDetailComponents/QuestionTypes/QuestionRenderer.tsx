@@ -8,6 +8,8 @@ import TableCompletion from "./TableCompletion/TableCompletion";
 import MapDiagramLabelling from "./MapDiagramLabelling/MapDiagramLabelling";
 import MatchingFeature from "./MatchingFeature/MatchingFeature";
 import MatchingHeading from "./MatchingHeading/MatchingHeading";
+import DiagramLabelling from "./DiagramLabelling/DiagramLabelling";
+import SentenceCompletionDragDrop from "./SentenceCompletionDragDrop/SentenceCompletionDragDrop";
 
 interface QuestionRendererProps {
     group: QuestionGroup;
@@ -56,6 +58,19 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                 />
             );
 
+        case "SENTENCE_COMPLETION_DRAG_DROP":
+            return (
+                <SentenceCompletionDragDrop
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                    testType={testType}
+                />
+            );
+
         case "SUMMARY_COMPLETION":
             return (
                 <SummaryCompletion
@@ -93,6 +108,18 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                 />
             );
 
+        case "DIAGRAM_LABELLING":
+            return (
+                <DiagramLabelling
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                />
+            );
+
         case "MAP_DIAGRAM_LABELLING":
             return (
                 <MapDiagramLabelling
@@ -114,6 +141,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    optionsBelow={testType === 'reading'}
                 />
             );
 

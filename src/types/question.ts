@@ -124,9 +124,32 @@ export interface MatchingFeatureData {
   questions: MatchingFeatureQuestion[];
 }
 
+/** Diagram Labelling (Reading): Image on top, numbered text inputs below */
+export interface DiagramLabellingQuestion {
+  id: string;
+  questionNumber: number;
+  label?: string; // optional hint text next to the input, e.g. "type of soil"
+}
+
+export interface DiagramLabellingData {
+  title?: string;
+  imageSrc: string; // URL or local path
+  questions: DiagramLabellingQuestion[];
+}
+
 /** Matching Heading: A pool of headings to be matched to passage sections */
 export interface MatchingHeadingData {
   headings: string[];
+}
+
+/** Sentence Completion (Drag & Drop): Sentences with inline drop zones + options pool below */
+export interface SentenceCompletionDragDropData {
+  title?: string;
+  options: string[];
+  sentences: {
+    questionNumber?: number;
+    content: ContentPart[]; // may include DropzonePart for the blanks
+  }[];
 }
 
 /** Identification: True/False/Not Given or Yes/No/Not Given */
@@ -142,7 +165,7 @@ export interface IdentificationData {
 
 // ─── Question Group ─────────────────────────────────────────────────────────
 
-export type QuestionGroupType = "FLOW_CHART_DRAG_DROP" | "SENTENCE_COMPLETION" | "SUMMARY_COMPLETION" | "MULTIPLE_CHOICE" | "TABLE_COMPLETION" | "MAP_DIAGRAM_LABELLING" | "IDENTIFICATION" | "MATCHING_FEATURE" | "MATCHING_HEADING";
+export type QuestionGroupType = "FLOW_CHART_DRAG_DROP" | "SENTENCE_COMPLETION" | "SENTENCE_COMPLETION_DRAG_DROP" | "SUMMARY_COMPLETION" | "MULTIPLE_CHOICE" | "TABLE_COMPLETION" | "MAP_DIAGRAM_LABELLING" | "DIAGRAM_LABELLING" | "IDENTIFICATION" | "MATCHING_FEATURE" | "MATCHING_HEADING";
 
 export interface QuestionGroup {
   type: QuestionGroupType;
@@ -150,7 +173,7 @@ export interface QuestionGroup {
   startQuestion: number;
   endQuestion: number;
   hideRange?: boolean;
-  data: FlowChartDragDropData | SentenceCompletionData | SummaryCompletionData | MultipleChoiceData | TableCompletionData | MapDiagramLabellingData | IdentificationData | MatchingFeatureData | MatchingHeadingData;
+  data: FlowChartDragDropData | SentenceCompletionData | SentenceCompletionDragDropData | SummaryCompletionData | MultipleChoiceData | TableCompletionData | MapDiagramLabellingData | DiagramLabellingData | IdentificationData | MatchingFeatureData | MatchingHeadingData;
 }
 
 // ─── Passage Data (Structured for Reading) ──────────────────────────────────
