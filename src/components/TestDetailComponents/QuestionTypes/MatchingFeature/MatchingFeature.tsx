@@ -8,6 +8,7 @@ interface MatchingFeatureProps {
     data: MatchingFeatureData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    optionsBelow?: boolean;
 }
 
 const formatInstruction = (text: string) => {
@@ -26,7 +27,30 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
     data,
     answers,
     onAnswerChange,
+    optionsBelow = false,
 }) => {
+    const optionsBox = (
+        <div className="matching-feature__options-box">
+            <table className="matching-feature__options-table">
+                <thead>
+                    <tr>
+                        <th colSpan={2} className="matching-feature__options-title">
+                            {data.title || "List of Options"}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {data.options.map((opt) => (
+                        <tr key={opt.letter}>
+                            <td className="matching-feature__opt-letter">{opt.letter}</td>
+                            <td className="matching-feature__opt-text">{opt.text}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
+
     return (
         <div className="matching-feature-container">
             <div className="matching-feature__header">
@@ -36,29 +60,11 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                 <p className="matching-feature__instruction">{formatInstruction(instruction)}</p>
             </div>
 
-            <div className="matching-feature__content">
-                {/* LEFT: Options Reference Table */}
-                <div className="matching-feature__options-box">
-                    <table className="matching-feature__options-table">
-                        <thead>
-                            <tr>
-                                <th colSpan={2} className="matching-feature__options-title">
-                                    {data.title || "List of Options"}
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.options.map((opt) => (
-                                <tr key={opt.letter}>
-                                    <td className="matching-feature__opt-letter">{opt.letter}</td>
-                                    <td className="matching-feature__opt-text">{opt.text}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+            <div className={`matching-feature__content${optionsBelow ? " matching-feature__content--below" : ""}`}>
+                {/* Options box: LEFT for listening, BELOW for reading */}
+                {!optionsBelow && optionsBox}
 
-                {/* RIGHT: Primary Matching Grid */}
+                {/* Matching Grid */}
                 <div className="matching-feature__table-wrapper">
                     {data.rightSideTitle && (
                         <div className="matching-feature__right-title">{data.rightSideTitle}</div>
@@ -113,6 +119,9 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                         </tbody>
                     </table>
                 </div>
+
+                {/* Options box below questions for reading */}
+                {optionsBelow && optionsBox}
             </div>
         </div>
     );

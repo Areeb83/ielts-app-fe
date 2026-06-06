@@ -1,0 +1,86 @@
+.diagram-labelling-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.diagram-labelling__header {
+    margin-bottom: 16px;
+}
+
+.diagram-labelling__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.diagram-labelling__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.diagram-labelling__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 12px 0;
+}
+
+.diagram-labelling__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ─── Numbered Inputs ─── */
+.diagram-labelling__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.diagram-labelling__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.diagram-labelling__num {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    min-width: 28px;
+    flex-shrink: 0;
+}
+
+.diagram-labelling__label-text {
+    font-size: 15px;
+    color: #333;
+    flex-shrink: 0;
+}
+
+.diagram-labelling__input {
+    min-width: 200px;
+    height: 30px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #1e293b;
+    background-color: #fff;
+    border: 1px solid #7c8691;
+    border-radius: 8px;
+    outline: none;
+}
+
+.diagram-labelling__input:focus {
+    border-color: #0056b3;
+    border-width: 1.5px;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}

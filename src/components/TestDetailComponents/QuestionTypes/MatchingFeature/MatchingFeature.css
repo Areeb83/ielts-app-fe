@@ -152,6 +152,20 @@
     accent-color: #3182ce;
 }
 
+/* ─── Reading layout: options below questions ─── */
+.matching-feature__content--below {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.matching-feature__content--below .matching-feature__table-wrapper {
+    width: 100%;
+}
+
+.matching-feature__content--below .matching-feature__options-box {
+    width: fit-content;
+}
+
 /* ─── Options Reference Box ─── */
 .matching-feature__options-box {
     flex-shrink: 0;
