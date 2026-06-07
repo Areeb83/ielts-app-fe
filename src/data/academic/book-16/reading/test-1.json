@@ -1,0 +1,288 @@
+{
+  "testId": "book-16-reading-test-1",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Academic Reading Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Polar bear genetics",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about polar bears: Liu and colleagues studied polar bear genetics by comparing different groups of polar bears (not the first to compare with brown bears genetically). Polar bears have high fat intake but don't suffer health problems — they control 'bad' cholesterol by genetic means. Female polar bears survive about 6 months without food during denning. Bones of female polar bears remain strong when emerging in spring. The bone-density mechanism could one day help humans. Bears are considered unintelligent and 'aggressive' but may not be — Tennoji Zoo bear used branch as a tool to knock down food/objects; wild polar bear figured out how to reach a platform with a camera/food/something located on it; bears display conscious manipulation of objects and game-like play behaviour; may display frustration when hunting; may form relationships with other species.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–7 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "Polar bears suffer from various health problems due to the build-up of fat under their skin." },
+              { "id": "2", "text": "The study done by Liu and his colleagues compared different groups of polar bears." },
+              { "id": "3", "text": "Liu and colleagues were the first researchers to compare polar bears and brown bears genetically." },
+              { "id": "4", "text": "Polar bears are able to control their levels of 'bad' cholesterol by genetic means." },
+              { "id": "5", "text": "Female polar bears are able to survive for about six months without food." },
+              { "id": "6", "text": "It was found that the bones of female polar bears were very weak when they came out of their dens in spring." },
+              { "id": "7", "text": "The polar bear's mechanism for increasing bone density could also be used by people one day." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the table below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 8–13 on your answer sheet.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "title": "Reasons why polar bears should be protected",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["People think of bears as unintelligent and ", { "id": "8", "type": "input" }]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["However, this may not be correct. For example:"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["In Tennoji Zoo, a bear has been seen using a branch as a ", { "id": "9", "type": "input" }, ". This allowed him to knock down some ", { "id": "10", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["A wild polar bear worked out a method of reaching a platform where a ", { "id": "11", "type": "input" }, " was located."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Polar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a ", { "id": "12", "type": "input" }]
+                  }
+                ]
+              },
+              {
+                "heading": "Bears may also display emotions. For example:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["They may make movements suggesting ", { "id": "13", "type": "input" }, " if disappointed when hunting."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["They may form relationships with other species."]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "The Step Pyramid of Djoser",
+        "sections": [
+          { "questionId": "14", "heading": "A", "content": "[Placeholder for Paragraph A]" },
+          { "questionId": "15", "heading": "B", "content": "[Placeholder for Paragraph B]" },
+          { "questionId": "16", "heading": "C", "content": "[Placeholder for Paragraph C]" },
+          { "questionId": "17", "heading": "D", "content": "[Placeholder for Paragraph D]" },
+          { "questionId": "18", "heading": "E", "content": "[Placeholder for Paragraph E]" },
+          { "questionId": "19", "heading": "F", "content": "[Placeholder for Paragraph F]" },
+          { "questionId": "20", "heading": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**.\nChoose the correct heading for each paragraph from the list of headings below.\nWrite the correct number, **i–ix**, in boxes 14–20 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "headings": [
+              "i   The areas and artefacts within the pyramid itself",
+              "ii  A difficult task for those involved",
+              "iii A king who saved his people",
+              "iv  A single certainty among other less definite facts",
+              "v   An overview of the external buildings and areas",
+              "vi  A pyramid design that others copied",
+              "vii An idea for changing the design of burial structures",
+              "viii An incredible experience despite the few remains",
+              "ix  The answers to some unexpected questions"
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 21–24 on your answer sheet.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "title": "The Step Pyramid of Djoser",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["The complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian ", { "id": "21", "type": "input" }, " of the past. The area outside the pyramid included accommodation that was occupied by ", { "id": "22", "type": "input" }, ", along with many other buildings and features."]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["A wall ran around the outside of the complex and a number of false entrances were built into this. In addition, a long ", { "id": "23", "type": "input" }, " encircled the wall. As a result, any visitors who had not been invited were cleverly prevented from entering the pyramid grounds unless they knew the ", { "id": "24", "type": "input" }, " of the real entrance."]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\nWhich **TWO** of the following points does the writer make about King Djoser?",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "Initially he had to be persuaded to build in stone rather than clay." },
+                  { "letter": "B", "text": "There is disagreement concerning the length of his reign." },
+                  { "letter": "C", "text": "He failed to appreciate Imhotep's part in the design of the Step Pyramid." },
+                  { "letter": "D", "text": "A few of his possessions were still in his tomb when archaeologists found it." },
+                  { "letter": "E", "text": "He criticised the design and construction of other pyramids in Egypt." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The future of artificial intelligence",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about AI and work: AI will change the nature of work for many people. Stella Pachidi (Cambridge Judge Business School) studies 'algorithmication' of knowledge-economy jobs; the knowledge economy is a key driver of workplace developments. She observed staff at a telecom company allowing AI to carry out tasks they should do themselves. Hamish Low argues greater automation won't cause lower employment; several reasons AI appeals to businesses; AI's potential resembles past cultural shifts (like industrial revolution). Ewan McGaughey's research shows how job market changes can be successfully handled; governments/authorities should ensure adequately paid work for all; workers will follow less conventional career paths. Researchers working on making AI decision-making more transparent to build user confidence/trust.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–30 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "The first paragraph tells us about",
+                "options": [
+                  { "letter": "A", "text": "the kinds of jobs that will be most affected by the growth of AI." },
+                  { "letter": "B", "text": "the extent to which AI will alter the nature of the work that people do." },
+                  { "letter": "C", "text": "the proportion of the world's labour force who will have jobs in AI in the future." },
+                  { "letter": "D", "text": "the difference between ways that embodied and disembodied AI will impact on workers." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "According to the second paragraph, what is Stella Pachidi's view of the 'knowledge economy'?",
+                "options": [
+                  { "letter": "A", "text": "It is having an influence on the number of jobs available." },
+                  { "letter": "B", "text": "It is changing people's attitudes towards their occupations." },
+                  { "letter": "C", "text": "It is the main reason why the production sector is declining." },
+                  { "letter": "D", "text": "It is a key factor driving current developments in the workplace." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "What did Pachidi observe at the telecommunications company?",
+                "options": [
+                  { "letter": "A", "text": "staff disagreeing with the recommendations of AI" },
+                  { "letter": "B", "text": "staff feeling resentful about the intrusion of AI in their work" },
+                  { "letter": "C", "text": "staff making sure that AI produces the results that they want" },
+                  { "letter": "D", "text": "staff allowing AI to carry out tasks they ought to do themselves" }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "In his recently published research, Ewan McGaughey",
+                "options": [
+                  { "letter": "A", "text": "challenges the idea that redundancy is a negative thing." },
+                  { "letter": "B", "text": "shows the profound effect of mass unemployment on society." },
+                  { "letter": "C", "text": "highlights some differences between past and future job losses." },
+                  { "letter": "D", "text": "illustrates how changes in the job market can be successfully handled." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–G**, below.\nWrite the correct letter, **A–G**, in boxes 31–34 on your answer sheet.",
+          "startQuestion": 31,
+          "endQuestion": 34,
+          "data": {
+            "title": "The 'algorithmication' of jobs",
+            "options": [
+              { "letter": "A", "text": "pressure" },
+              { "letter": "B", "text": "satisfaction" },
+              { "letter": "C", "text": "intuition" },
+              { "letter": "D", "text": "promotion" },
+              { "letter": "E", "text": "reliance" },
+              { "letter": "F", "text": "confidence" },
+              { "letter": "G", "text": "information" }
+            ],
+            "content": [
+              "Stella Pachidi of Cambridge Judge Business School has been focusing on the 'algorithmication' of jobs which rely not on production but on ",
+              { "id": "31", "type": "dropzone" },
+              ".\n\nWhile monitoring a telecommunications company, Pachidi observed a growing ",
+              { "id": "32", "type": "dropzone" },
+              " on the recommendations made by AI, as workers begin to learn through the 'algorithm's eyes'. Meanwhile, staff are deterred from experimenting and using their own ",
+              { "id": "33", "type": "dropzone" },
+              ", and are therefore prevented from achieving innovation.\n\nTo avoid the kind of situations which Pachidi observed, researchers are trying to make AI's decision-making process easier to comprehend, and to increase users' ",
+              { "id": "34", "type": "dropzone" },
+              " with regard to the technology."
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 35–40) and the list of people below.\nMatch each statement with the correct person, **A**, **B** or **C**.\nWrite the correct letter, **A**, **B** or **C**, in boxes 35–40 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 35,
+          "endQuestion": 40,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "Stella Pachidi" },
+              { "letter": "B", "text": "Hamish Low" },
+              { "letter": "C", "text": "Ewan McGaughey" }
+            ],
+            "questions": [
+              { "id": "35", "text": "Greater levels of automation will not result in lower employment." },
+              { "id": "36", "text": "There are several reasons why AI is appealing to businesses." },
+              { "id": "37", "text": "AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras." },
+              { "id": "38", "text": "It is important to be aware of the range of problems that AI causes." },
+              { "id": "39", "text": "People are going to follow a less conventional career path than in the past." },
+              { "id": "40", "text": "Authorities should take measures to ensure that there will be adequately paid work for everyone." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "testId": "book-17-test-1",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Reading Test 1",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "The London Underground Railway",
+      "passage": {
+        "title": "The London Underground Railway",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "title": "The London underground railway",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "The problem" }] },
+              { "questionNumber": 1, "content": ["• The ", { "id": "1", "type": "input" }, " of London increased rapidly between 1800 and 1850"] },
+              { "content": ["• The streets were full of horse-drawn vehicles"] },
+              { "content": [{ "type": "bold", "text": "The proposed solution" }] },
+              { "content": ["• Charles Pearson, a solicitor, suggested building an underground railway"] },
+              { "questionNumber": 2, "content": ["• Building the railway would make it possible to move people to better housing in the ", { "id": "2", "type": "input" }] },
+              { "questionNumber": 3, "content": ["• A number of ", { "id": "3", "type": "input" }, " agreed with Pearson's idea"] },
+              { "questionNumber": 4, "content": ["• The company initially had problems getting the ", { "id": "4", "type": "input" }, " needed for the project"] },
+              { "questionNumber": 5, "content": ["• Negative articles about the project appeared in the ", { "id": "5", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "The construction" }] },
+              { "content": ["• The chosen route did not require many buildings to be pulled down"] },
+              { "content": ["• The 'cut and cover' method was used to construct the tunnels"] },
+              { "questionNumber": 6, "content": ["• With the completion of the brick arch, the tunnel was covered with ", { "id": "6", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 7,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "7",  "questionNumber": 7,  "text": "Other countries had built underground railways before the Metropolitan line opened." },
+              { "id": "8",  "questionNumber": 8,  "text": "More people than predicted travelled on the Metropolitan line on the first day." },
+              { "id": "9",  "questionNumber": 9,  "text": "The use of ventilation shafts failed to prevent pollution in the tunnels." },
+              { "id": "10", "questionNumber": 10, "text": "A different approach from the 'cut and cover' technique was required in London's central area." },
+              { "id": "11", "questionNumber": 11, "text": "The windows on City & South London trains were at eye level." },
+              { "id": "12", "questionNumber": 12, "text": "The City & South London Railway was a financial success." },
+              { "id": "13", "questionNumber": 13, "text": "Trains on the 'Tuppenny Tube' nearly always ran on time." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "Stadium Stories",
+      "passage": {
+        "title": "Stadium Stories",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" },
+          { "heading": "G", "content": "[Section G content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven sections, **A–G**. Which section contains the following information? You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a mention of negative attitudes towards stadium building projects" },
+              { "id": "15", "questionNumber": 15, "text": "figures demonstrating the environmental benefits of a certain stadium" },
+              { "id": "16", "questionNumber": 16, "text": "examples of the wide range of facilities available at some new stadiums" },
+              { "id": "17", "questionNumber": 17, "text": "reference to the disadvantages of the stadiums built during a certain era" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 18,
+          "endQuestion": 22,
+          "data": {
+            "title": "Roman amphitheatres",
+            "sentences": [
+              {
+                "content": [
+                  "The Roman stadiums of Europe have proved very versatile. The amphitheatre of Arles, for example, was converted first into a ",
+                  { "id": "18", "type": "input" },
+                  ", then into a residential area and finally into an arena where spectators could watch ",
+                  { "id": "19", "type": "input" },
+                  ". Meanwhile, the arena in Verona, one of the oldest Roman amphitheatres, is famous today as a venue where ",
+                  { "id": "20", "type": "input" },
+                  " is performed. The site of Lucca's amphitheatre has also been used for many purposes over the centuries, including the storage of ",
+                  { "id": "21", "type": "input" },
+                  ". It is now a market square with ",
+                  { "id": "22", "type": "input" },
+                  " and homes incorporated into the remains of the Roman amphitheatre."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "When comparing twentieth-century stadiums to ancient amphitheatres in Section D, which TWO negative features does the writer mention?",
+                "options": [
+                  { "letter": "A", "text": "They are less imaginatively designed." },
+                  { "letter": "B", "text": "They are less spacious." },
+                  { "letter": "C", "text": "They are in less convenient locations." },
+                  { "letter": "D", "text": "They are less versatile." },
+                  { "letter": "E", "text": "They are made of less durable materials." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25-26",
+                "text": "Which TWO advantages of modern stadium design does the writer mention?",
+                "options": [
+                  { "letter": "A", "text": "offering improved amenities for the enjoyment of sports events" },
+                  { "letter": "B", "text": "bringing community life back into the city environment" },
+                  { "letter": "C", "text": "facilitating research into solar and wind energy solutions" },
+                  { "letter": "D", "text": "enabling local residents to reduce their consumption of electricity" },
+                  { "letter": "E", "text": "providing a suitable site for the installation of renewable power generators" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Hunting for Charles II",
+      "passage": {
+        "title": "Hunting for Charles II",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–J**, below.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "title": "The story behind the hunt for Charles II",
+            "options": [
+              { "letter": "A", "text": "military innovation" },
+              { "letter": "B", "text": "large reward" },
+              { "letter": "C", "text": "widespread conspiracy" },
+              { "letter": "D", "text": "relative safety" },
+              { "letter": "E", "text": "new government" },
+              { "letter": "F", "text": "decisive victory" },
+              { "letter": "G", "text": "political debate" },
+              { "letter": "H", "text": "strategic alliance" },
+              { "letter": "I", "text": "popular solution" },
+              { "letter": "J", "text": "religious conviction" }
+            ],
+            "content": [
+              "Charles II's father was executed by the Parliamentarian forces in 1649. Charles II then formed a ",
+              { "id": "27", "type": "dropzone" },
+              " with the Scots, and in order to become King of Scots, he abandoned an important ",
+              { "id": "28", "type": "dropzone" },
+              " that was held by his father and had contributed to his father's death. The opposing sides then met outside Worcester in 1651. The battle led to a ",
+              { "id": "29", "type": "dropzone" },
+              " for the Parliamentarians and Charles had to flee for his life. A ",
+              { "id": "30", "type": "dropzone" },
+              " was offered for Charles's capture, but after six weeks spent in hiding, he eventually managed to reach the ",
+              { "id": "31", "type": "dropzone" },
+              " of continental Europe."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 32,
+          "endQuestion": 35,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "32", "questionNumber": 32, "text": "Charles chose Pepys for the task because he considered him to be trustworthy." },
+              { "id": "33", "questionNumber": 33, "text": "Charles's personal recollection of the escape lacked sufficient detail." },
+              { "id": "34", "questionNumber": 34, "text": "Charles indicated to Pepys that he had planned his escape before the battle." },
+              { "id": "35", "questionNumber": 35, "text": "The inclusion of Charles's account is a positive aspect of the book." }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "36",
+                "questionNumber": 36,
+                "text": "What is the reviewer's main purpose in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "to describe what happened during the Battle of Worcester" },
+                  { "letter": "B", "text": "to give an account of the circumstances leading to Charles II's escape" },
+                  { "letter": "C", "text": "to provide details of the Parliamentarians' political views" },
+                  { "letter": "D", "text": "to compare Charles II's beliefs with those of his father" }
+                ]
+              },
+              {
+                "id": "37",
+                "questionNumber": 37,
+                "text": "Why does the reviewer include examples of the fugitives' behaviour in the third paragraph?",
+                "options": [
+                  { "letter": "A", "text": "to explain how close Charles II came to losing his life" },
+                  { "letter": "B", "text": "to suggest that Charles II's supporters were badly prepared" },
+                  { "letter": "C", "text": "to illustrate how the events of the six weeks are brought to life" },
+                  { "letter": "D", "text": "to argue that certain aspects are not as well known as they should be" }
+                ]
+              },
+              {
+                "id": "38",
+                "questionNumber": 38,
+                "text": "What point does the reviewer make about Charles II in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "He chose to celebrate what was essentially a defeat." },
+                  { "letter": "B", "text": "He misunderstood the motives of his opponents." },
+                  { "letter": "C", "text": "He aimed to restore people's faith in the monarchy." },
+                  { "letter": "D", "text": "He was driven by a desire to be popular." }
+                ]
+              },
+              {
+                "id": "39",
+                "questionNumber": 39,
+                "text": "What does the reviewer say about Charles Spencer in the fifth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "His decision to write the book comes as a surprise." },
+                  { "letter": "B", "text": "He takes an unbiased approach to the subject matter." },
+                  { "letter": "C", "text": "His descriptions of events would be better if they included more detail." },
+                  { "letter": "D", "text": "He chooses language that is suitable for a twenty-first-century audience." }
+                ]
+              },
+              {
+                "id": "40",
+                "questionNumber": 40,
+                "text": "When the reviewer says the book 'doesn't quite hit the mark', she is making the point that",
+                "options": [
+                  { "letter": "A", "text": "it overlooks the impact of events on ordinary people." },
+                  { "letter": "B", "text": "it lacks an analysis of prevalent views on monarchy." },
+                  { "letter": "C", "text": "it omits any references to the deceit practised by Charles II during his time in hiding." },
+                  { "letter": "D", "text": "it fails to address whether Charles II's experiences had a lasting influence on him." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

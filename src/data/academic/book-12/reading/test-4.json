@@ -1,0 +1,272 @@
+{
+  "testId": "book-12-test-4",
+  "bookId": "book-12",
+  "title": "Cambridge IELTS 12 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The secret of staying young",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 1.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–8 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "title": "The History of Glass",
+            "sections": [
+              {
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Early humans used a material called ", { "id": "1", "type": "input" }, " to make the sharp points of their ", { "id": "2", "type": "input" }, "."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["4000 BC: ", { "id": "3", "type": "input" }, " made of stone were covered in a coating of man-made glass."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["First century BC: glass was coloured because of the ", { "id": "4", "type": "input" }, " in the material."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Until 476 AD: Only the ", { "id": "5", "type": "input" }, " knew how to make glass."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["From 10th century: Venetians became famous for making bottles out of glass."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["17th century: George Ravenscroft developed a process using ", { "id": "6", "type": "input" }, " to avoid the occurrence of ", { "id": "7", "type": "input" }, " in blown glass."]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Mid-19th century: British glass production developed after changes to laws concerning ", { "id": "8", "type": "input" }, "."]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 9–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "9",  "text": "In 1887, HM Ashley had the fastest bottle-producing machine that existed at the time." },
+              { "id": "10", "text": "Michael Owens was hired by a large US company to design a fully-automated bottle manufacturing machine for them." },
+              { "id": "11", "text": "Nowadays, most glass is produced by large international manufacturers." },
+              { "id": "12", "text": "Concern for the environment is leading to an increased demand for glass containers." },
+              { "id": "13", "text": "It is more expensive to produce recycled glass than to manufacture new glass." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Back to nature",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 2.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 14–18 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "text": "What did the 2006 discovery of the animal bone reveal about the lynx?",
+                "options": [
+                  { "letter": "A", "text": "Its physical appearance was very distinctive." },
+                  { "letter": "B", "text": "Its extinction was linked to the spread of farming." },
+                  { "letter": "C", "text": "It vanished from Britain several thousand years ago." },
+                  { "letter": "D", "text": "It survived in Britain longer than was previously thought." }
+                ]
+              },
+              {
+                "id": "15",
+                "text": "What point does the writer make about large predators in the third paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Their presence can increase biodiversity." },
+                  { "letter": "B", "text": "They may cause damage to local ecosystems." },
+                  { "letter": "C", "text": "Their behaviour can alter according to the environment." },
+                  { "letter": "D", "text": "They should be reintroduced only to areas where they were native." }
+                ]
+              },
+              {
+                "id": "16",
+                "text": "What does the writer suggest about British conservation in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "It has failed to achieve its aims." },
+                  { "letter": "B", "text": "It is beginning to change direction." },
+                  { "letter": "C", "text": "It has taken a misguided approach." },
+                  { "letter": "D", "text": "It has focused on the most widespread species." }
+                ]
+              },
+              {
+                "id": "17",
+                "text": "Protecting large areas of the sea from commercial fishing would result in",
+                "options": [
+                  { "letter": "A", "text": "practical benefits for the fishing industry." },
+                  { "letter": "B", "text": "some short-term losses to the fishing industry." },
+                  { "letter": "C", "text": "widespread opposition from the fishing industry." },
+                  { "letter": "D", "text": "certain changes to techniques within the fishing industry." }
+                ]
+              },
+              {
+                "id": "18",
+                "text": "According to the author, what distinguishes rewilding from other environmental campaigns?",
+                "options": [
+                  { "letter": "A", "text": "Its objective is more achievable." },
+                  { "letter": "B", "text": "Its supporters are more articulate." },
+                  { "letter": "C", "text": "Its positive message is more appealing." },
+                  { "letter": "D", "text": "It is based on sounder scientific principles." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words and phrases **A–F** below.\nWrite the correct letter, **A–F**, in boxes 19–22 on your answer sheet.",
+          "startQuestion": 19,
+          "endQuestion": 22,
+          "data": {
+            "title": "Reintroducing the lynx to Britain",
+            "content": [
+              "There would be many advantages to reintroducing the lynx to Britain. While there is no evidence that the lynx has ever put ",
+              { "type": "dropzone", "id": "19" },
+              " in danger, it would reduce the numbers of certain ",
+              { "type": "dropzone", "id": "20" },
+              " whose populations have increased enormously in recent decades. It would present only a minimal threat to ",
+              { "type": "dropzone", "id": "21" },
+              ", provided these were kept away from lynx habitats. Furthermore, the reintroduction programme would also link efficiently with initiatives to return native ",
+              { "type": "dropzone", "id": "22" },
+              " to certain areas of the country."
+            ],
+            "options": [
+              { "letter": "A", "text": "trees" },
+              { "letter": "B", "text": "endangered species" },
+              { "letter": "C", "text": "hillsides" },
+              { "letter": "D", "text": "wild animals" },
+              { "letter": "E", "text": "humans" },
+              { "letter": "F", "text": "farm animals" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?\nIn boxes 23–26 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "23", "text": "Britain could become the first European country to reintroduce the lynx." },
+              { "id": "24", "text": "The large growth in the European lynx population since 1970 has exceeded conservationists' expectations." },
+              { "id": "25", "text": "Changes in agricultural practices have extended the habitat of the lynx in Europe." },
+              { "id": "26", "text": "It has become apparent that species reintroduction has commercial advantages." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "What's the purpose of gaining knowledge?",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 3 has seven paragraphs, **A–G**.\nChoose the correct heading for each paragraph from the list of headings below.\nWrite the correct number, **i–viii**, in boxes 27–33 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 33,
+          "data": {
+            "headings": [
+              "i    Disputes over financial arrangements regarding senior managers",
+              "ii   The impact on companies of being subjected to close examination",
+              "iii  The possible need for fundamental change in every area of business",
+              "iv   Many external bodies being held responsible for problems",
+              "v    The falling number of board members with broad enough experience",
+              "vi   A risk that not all directors take part in solving major problems",
+              "vii  Boards not looking far enough ahead",
+              "viii A proposal to change the way the board operates"
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 34–37 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 34,
+          "endQuestion": 37,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "34", "text": "Close scrutiny of the behaviour of boards has increased since the economic downturn." },
+              { "id": "35", "text": "Banks have been mismanaged to a greater extent than other businesses." },
+              { "id": "36", "text": "Board meetings normally continue for as long as necessary to debate matters in full." },
+              { "id": "37", "text": "Using a committee structure would ensure that board members are fully informed about significant issues." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 38–40 on your answer sheet.",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 38,
+                "content": ["Before 2008, non-executive directors were at a disadvantage because of their lack of ", { "id": "38", "type": "input" }, "."]
+              },
+              {
+                "questionNumber": 39,
+                "content": ["Boards tend to place too much emphasis on ", { "id": "39", "type": "input" }, " considerations that are only of short-term relevance."]
+              },
+              {
+                "questionNumber": 40,
+                "content": ["On certain matters, such as pay, the board may have to accept the views of ", { "id": "40", "type": "input" }, "."]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

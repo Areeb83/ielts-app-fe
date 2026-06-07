@@ -11,6 +11,7 @@ interface ReadingPassageProps {
     draggingWordId?: string | null;
     onDragStart: (wordId: string) => void;
     onDragEnd: () => void;
+    headingLookup?: Record<string, string>;
 }
 
 const ReadingPassage: React.FC<ReadingPassageProps> = ({
@@ -20,6 +21,7 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     draggingWordId,
     onDragStart,
     onDragEnd,
+    headingLookup,
 }) => {
     const [dragOverZoneId, setDragOverZoneId] = React.useState<string | null>(null);
 
@@ -61,7 +63,7 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                                             <DraggableWord
                                                 key={`${section.questionId}-${answers[section.questionId]}`}
                                                 id={answers[section.questionId] as string}
-                                                text={answers[section.questionId] as string}
+                                                text={headingLookup?.[answers[section.questionId] as string] ?? answers[section.questionId] as string}
                                                 isDragging={draggingWordId === answers[section.questionId]}
                                                 onDragStart={(id, e) => {
                                                     const ghost = e.currentTarget.cloneNode(true) as HTMLElement;

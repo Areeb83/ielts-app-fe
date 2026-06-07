@@ -1,0 +1,258 @@
+{
+  "testId": "book-14-reading-test-2",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Academic Reading Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Alexander Henderson",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Alexander Henderson. The passage covers the life of Canadian photographer Alexander Henderson: born in Scotland in 1831, father was a farmer; trained as an accountant; emigrated to Canada in 1855; grew up near Press estate; collaborated with Notman in 1865 experiment; opened photographic studio in 1866; people bought his photos because equipment was heavy; sold photos as gifts or souvenirs; worked for Intercolonial Railway after Montreal-Halifax line was finished; travelled in Quebec and Ontario in 1870s-1880s by canoe; worked for CPR in 1885 photographing the mountains and Rogers Pass.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–8 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "Henderson rarely visited the area around Press estate when he was younger." },
+              { "id": "2", "text": "Henderson pursued a business career because it was what his family wanted." },
+              { "id": "3", "text": "Henderson and Notman were surprised by the results of their 1865 experiment." },
+              { "id": "4", "text": "There were many similarities between Henderson's early landscapes and those of Notman." },
+              { "id": "5", "text": "The studio that Henderson opened in 1866 was close to his home." },
+              { "id": "6", "text": "Henderson gave up portraiture so that he could focus on taking photographs of scenery." },
+              { "id": "7", "text": "When Henderson began work for the Intercolonial Railway, the Montreal to Halifax line had been finished." },
+              { "id": "8", "text": "Henderson's last work as a photographer was with the Canadian Pacific Railway." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 9–13 on your answer sheet.",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "title": "Alexander Henderson",
+            "sections": [
+              {
+                "heading": "Early life",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["was born in Scotland in 1831 – father was a ", { "id": "9", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["trained as an accountant, emigrated to Canada in 1855"]
+                  }
+                ]
+              },
+              {
+                "heading": "Start of a photographic career",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["opened up a photographic studio in 1866"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["took photos of city life, but preferred landscape photography"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["people bought Henderson's photos because photography took up considerable time and the ", { "id": "10", "type": "input" }, " was heavy"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the photographs Henderson sold were ", { "id": "11", "type": "input" }, " or souvenirs"]
+                  }
+                ]
+              },
+              {
+                "heading": "Travelling as a professional photographer",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["travelled widely in Quebec and Ontario in 1870s and 1880s"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["took many trips along eastern rivers in a ", { "id": "12", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["worked for Canadian railways between 1875 and 1897"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["worked for CPR in 1885 and photographed the ", { "id": "13", "type": "input" }, " and the railway at Rogers Pass"]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Ventilation and air quality in buildings",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Section A]" },
+          { "label": "B", "content": "[Placeholder for Section B]" },
+          { "label": "C", "content": "[Placeholder for Section C]" },
+          { "label": "D", "content": "[Placeholder for Section D]" },
+          { "label": "E", "content": "[Placeholder for Section E]" },
+          { "label": "F", "content": "[Placeholder for Section F]" },
+          { "label": "G", "content": "[Placeholder for Section G]" },
+          { "label": "H", "content": "[Placeholder for Section H]" },
+          { "label": "I", "content": "[Placeholder for Section I]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has nine sections, **A–I**.\nWhich section contains the following information?\nWrite the correct letter, **A–I**, in boxes 14–18 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "why some people avoided hospitals in the 19th century" },
+              { "id": "15", "questionNumber": 15, "text": "a suggestion that the popularity of tall buildings is linked to prestige" },
+              { "id": "16", "questionNumber": 16, "text": "a comparison between the circulation of air in a 19th-century building and modern standards" },
+              { "id": "17", "questionNumber": 17, "text": "how Short tested the circulation of air in a 19th-century building" },
+              { "id": "18", "questionNumber": 18, "text": "an implication that advertising led to the large increase in the use of air conditioning" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 19–26 on your answer sheet.",
+          "startQuestion": 19,
+          "endQuestion": 26,
+          "data": {
+            "title": "Ventilation in 19th-century hospital wards",
+            "content": [
+              "Professor Alan Short examined the work of John Shaw Billings, who influenced the architectural ",
+              { "id": "19", "type": "input" },
+              " of hospitals to ensure they had good ventilation. He calculated that ",
+              { "id": "20", "type": "input" },
+              " in the air coming from patients suffering from ",
+              { "id": "21", "type": "input" },
+              " would not have harmed other patients. He also found that the air in ",
+              { "id": "22", "type": "input" },
+              " in hospitals could change as often as in a modern operating theatre. He suggests that energy use could be reduced by locating more patients in ",
+              { "id": "23", "type": "input" },
+              " areas. A major reason for improving ventilation in 19th-century hospitals was the demand from the ",
+              { "id": "24", "type": "input" },
+              " for protection against bad air, known as ",
+              { "id": "25", "type": "input" },
+              ". These were blamed for the spread of disease for hundreds of years, including epidemics of ",
+              { "id": "26", "type": "input" },
+              " in London and Paris in the middle of the 19th century."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The future of work: is it really so different?",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Section A]" },
+          { "label": "B", "content": "[Placeholder for Section B]" },
+          { "label": "C", "content": "[Placeholder for Section C]" },
+          { "label": "D", "content": "[Placeholder for Section D]" },
+          { "label": "E", "content": "[Placeholder for Section E]" },
+          { "label": "F", "content": "[Placeholder for Section F]" },
+          { "label": "G", "content": "[Placeholder for Section G]" },
+          { "label": "H", "content": "[Placeholder for Section H]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 3 has eight sections, **A–H**.\nChoose the correct heading for each section from the list of headings below.\nWrite the correct number, **i–ix**, in boxes 27–34 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 34,
+          "data": {
+            "headings": [
+              "i    Complaints about the impact of a certain approach",
+              "ii   Fundamental beliefs that are in fact incorrect",
+              "iii  Early recommendations concerning business activities",
+              "iv   Organisations that put a new approach into practice",
+              "v    Companies that have suffered from changing their approach",
+              "vi   What people are increasingly expected to do",
+              "vii  How to achieve outcomes that are currently impossible",
+              "viii Neither approach guarantees continuous improvement",
+              "ix   Evidence that a certain approach can have more disadvantages than advantages"
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 35–37 on your answer sheet.",
+          "startQuestion": 35,
+          "endQuestion": 37,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 35,
+                "content": [
+                  "Numerous training sessions are aimed at people who feel they are not ",
+                  { "id": "35", "type": "input" },
+                  " enough."
+                ]
+              },
+              {
+                "questionNumber": 36,
+                "content": [
+                  "Being organised appeals to people who regard themselves as ",
+                  { "id": "36", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 37,
+                "content": [
+                  "Many people feel ",
+                  { "id": "37", "type": "input" },
+                  " with aspects of their work."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?\nIn boxes 38–40 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "38", "text": "Both businesses and people aim at order without really considering its value." },
+              { "id": "39", "text": "Innovation is most successful if the people involved have distinct roles." },
+              { "id": "40", "text": "Google was inspired to adopt flexibility by the success of General Electric." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

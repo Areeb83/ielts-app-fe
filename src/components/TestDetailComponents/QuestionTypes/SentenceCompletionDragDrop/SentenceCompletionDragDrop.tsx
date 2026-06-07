@@ -28,7 +28,7 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
 
     const usedWords = Object.values(answers).filter(
         (val) => typeof val === "string" && val !== ""
-    ) as string[];
+    ) as string[]; // contains placed letters e.g. ["A", "C"]
 
     useAutoScroll(!!draggingWordId, { hotZoneTop: testType === "reading" ? 150 : 90 });
 
@@ -69,6 +69,12 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
         setDraggingWordId(null);
     };
 
+    // Get display text for a placed letter (e.g. "A" → "be discouraged by difficulties.")
+    const getOptionText = (letter: string) => {
+        const opt = data.options.find((o) => o.letter === letter);
+        return opt ? opt.text : letter;
+    };
+
     const renderContentPart = (part: ContentPart, idx: number) => {
         if (typeof part === "string") {
             return <span key={idx}>{part}</span>;
@@ -77,7 +83,7 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
             return <strong key={idx}>{part.text}</strong>;
         }
         if (part.type === "dropzone") {
-            const placedWord = answers[part.id] as string | undefined;
+            const placedLetter = answers[part.id] as string | undefined;
             return (
                 <DropZone
                     key={part.id}
@@ -90,11 +96,11 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
                     onDragLeave={() => setDragOverZoneId(null)}
                     onDrop={() => handleDropOnZone(part.id)}
                 >
-                    {placedWord && placedWord !== "" ? (
+                    {placedLetter && placedLetter !== "" ? (
                         <DraggableWord
-                            id={placedWord}
-                            text={placedWord}
-                            isDragging={draggingWordId === placedWord}
+                            id={placedLetter}
+                            text={getOptionText(placedLetter)}
+                            isDragging={draggingWordId === placedLetter}
                             onDragStart={handleWordDragStart}
                             onDragEnd={handleDragEnd}
                         />
@@ -157,11 +163,11 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
             >
                 {data.options.map((opt) => (
                     <DraggableWord
-                        key={opt}
-                        id={opt}
-                        text={opt}
-                        disabled={usedWords.includes(opt)}
-                        isDragging={draggingWordId === opt}
+                        key={opt.letter}
+                        id={opt.letter}
+                        text={opt.text}
+                        disabled={usedWords.includes(opt.letter)}
+                        isDragging={draggingWordId === opt.letter}
                         onDragStart={handleWordDragStart}
                         onDragEnd={handleDragEnd}
                     />

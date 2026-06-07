@@ -95,9 +95,39 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
             <div className="summary-completion__content-box">
                 {data.title && <h3 className="summary-completion__title">{data.title}</h3>}
 
-                <p className="summary-completion__paragraph">
-                    {data.content.map((part, index) => renderContentPart(part, index))}
-                </p>
+                {data.sections ? (
+                    <div className="summary-completion__sections">
+                        {data.sections.map((section, sIdx) => (
+                            <div key={sIdx} className="summary-completion__section">
+                                {section.heading && (
+                                    <p className="summary-completion__section-heading">{section.heading}</p>
+                                )}
+                                <div className="summary-completion__notes-list">
+                                    {section.items.map((item, iIdx) => (
+                                        <div
+                                            key={iIdx}
+                                            className={[
+                                                "summary-completion__notes-item",
+                                                item.indent ? "summary-completion__notes-item--indent" : "",
+                                            ].filter(Boolean).join(" ")}
+                                        >
+                                            {item.bullet && (
+                                                <span className="summary-completion__notes-bullet">{item.bullet}</span>
+                                            )}
+                                            <span className="summary-completion__notes-content">
+                                                {item.content.map((part, pIdx) => renderContentPart(part, pIdx))}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <p className="summary-completion__paragraph">
+                        {(data.content ?? []).map((part, index) => renderContentPart(part, index))}
+                    </p>
+                )}
             </div>
         </div>
     );

@@ -1,0 +1,268 @@
+{
+  "testId": "book-17-test-4",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Reading Test 4",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Bats in Madagascar",
+      "passage": {
+        "title": "Bats in Madagascar",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "questionNumber": 1, "text": "Many Madagascan forests are being destroyed by attacks from insects." },
+              { "id": "2", "questionNumber": 2, "text": "Loss of habitat has badly affected insectivorous bats in Madagascar." },
+              { "id": "3", "questionNumber": 3, "text": "Ricardo Rocha has carried out studies of bats in different parts of the world." },
+              { "id": "4", "questionNumber": 4, "text": "Habitat modification has resulted in indigenous bats in Madagascar becoming useful to farmers." },
+              { "id": "5", "questionNumber": 5, "text": "The Malagasy mouse-eared bat is more common than other indigenous bat species in Madagascar." },
+              { "id": "6", "questionNumber": 6, "text": "Bats may feed on paddy swarming caterpillars and grass webworms." }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 7,
+          "endQuestion": 13,
+          "data": {
+            "title": "The study carried out by Rocha's team",
+            "headers": ["", ""],
+            "rows": [
+              [
+                "Aim",
+                "• to investigate the feeding habits of bats in farmland near the Ranomafana National Park"
+              ],
+              [
+                "Method",
+                [
+                  "• ultrasonic recording to identify favourite feeding spots",
+                  { "type": "br" },
+                  "• DNA analysis of bat ", { "id": "7", "type": "input" }
+                ]
+              ],
+              [
+                "Findings",
+                [
+                  "• the bats",
+                  { "type": "br" },
+                  "– were most active in rice fields located on hills",
+                  { "type": "br" },
+                  "– ate pests of rice, ", { "id": "8", "type": "input" }, ", sugarcane, nuts and fruit",
+                  { "type": "br" },
+                  "– prevent the spread of disease by eating ", { "id": "9", "type": "input" }, " and blackflies",
+                  { "type": "br" },
+                  "• local attitudes to bats are mixed:",
+                  { "type": "br" },
+                  "– they provide food rich in ", { "id": "10", "type": "input" },
+                  { "type": "br" },
+                  "– the buildings where they roost become ", { "id": "11", "type": "input" },
+                  { "type": "br" },
+                  "– they play an important role in local ", { "id": "12", "type": "input" }
+                ]
+              ],
+              [
+                "Recommendation",
+                [
+                  "• farmers should provide special ", { "id": "13", "type": "input" }, " to support the bat population"
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "Why Peasants Mattered",
+      "passage": {
+        "title": "Why Peasants Mattered",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six sections, **A–F**. Which section contains the following information?",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "an explanation of the need for research to focus on individuals with a fairly consistent income" },
+              { "id": "15", "questionNumber": 15, "text": "examples of the sources the database has been compiled from" },
+              { "id": "16", "questionNumber": 16, "text": "an account of one individual's refusal to obey an order" },
+              { "id": "17", "questionNumber": 17, "text": "a reference to a region being particularly suited to research into the link between education and economic growth" },
+              { "id": "18", "questionNumber": 18, "text": "examples of the items included in a list of personal possessions" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD** from the passage for each answer.",
+          "startQuestion": 19,
+          "endQuestion": 22,
+          "data": {
+            "title": "Demographic reconstruction of two German communities",
+            "sentences": [
+              {
+                "content": [
+                  "The database that Ogilvie and her team has compiled sheds light on the lives of a range of individuals, as well as those of their ",
+                  { "id": "19", "type": "input" },
+                  ", over a 300-year period. For example, Ana Regina and Magdalena Riethmüllerin were reprimanded for reading while they should have been paying attention to a ",
+                  { "id": "20", "type": "input" },
+                  ". There was also Juliana Schweickherdt, who came to the notice of the weavers' guild in the year 1752 for breaking guild rules. As a punishment, she was later given a ",
+                  { "id": "21", "type": "input" },
+                  ". Cases like this illustrate how the guilds could prevent ",
+                  { "id": "22", "type": "input" },
+                  " and stop skilled people from working."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO of the following statements does the writer make about literacy rates in Section B?",
+                "options": [
+                  { "letter": "A", "text": "Very little research has been done into the link between high literacy rates and improved earnings." },
+                  { "letter": "B", "text": "Literacy rates in Germany between 1600 and 1900 were very good." },
+                  { "letter": "C", "text": "There is strong evidence that high literacy rates in the modern world result in economic growth." },
+                  { "letter": "D", "text": "England is a good example of how high literacy rates helped a country industrialise." },
+                  { "letter": "E", "text": "Economic growth can help to improve literacy rates." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25-26",
+                "text": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?",
+                "options": [
+                  { "letter": "A", "text": "They helped young people to learn a skill." },
+                  { "letter": "B", "text": "They were opposed to people moving to an area for work." },
+                  { "letter": "C", "text": "They kept better records than guilds in other parts of the world." },
+                  { "letter": "D", "text": "They opposed practices that threatened their control over a trade." },
+                  { "letter": "E", "text": "They predominantly consisted of wealthy merchants." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "The Chess Master Who Plays Blindfolded",
+      "passage": {
+        "title": "The Chess Master Who Plays Blindfolded",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" },
+          { "heading": "G", "content": "[Section G content to be added]" },
+          { "heading": "H", "content": "[Section H content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 3 has eight paragraphs, **A–H**. Which paragraph contains the following information? You may use any letter more than once.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "a reference to earlier examples of blindfold chess" },
+              { "id": "28", "questionNumber": 28, "text": "an outline of what blindfold chess involves" },
+              { "id": "29", "questionNumber": 29, "text": "a claim that Gareyev's skill is limited to chess" },
+              { "id": "30", "questionNumber": 30, "text": "why Gareyev's skill is of interest to scientists" },
+              { "id": "31", "questionNumber": 31, "text": "an outline of Gareyev's priorities" },
+              { "id": "32", "questionNumber": 32, "text": "a reason why the last part of a game may be difficult" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 33,
+          "endQuestion": 36,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "33", "questionNumber": 33, "text": "In the forthcoming games, all the participants will be blindfolded." },
+              { "id": "34", "questionNumber": 34, "text": "Gareyev has won competitions in BASE jumping." },
+              { "id": "35", "questionNumber": 35, "text": "UCLA is the first university to carry out research into blindfold chess players." },
+              { "id": "36", "questionNumber": 36, "text": "Good chess players are likely to be able to play blindfold chess." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "title": "How the research was carried out",
+            "sentences": [
+              {
+                "content": [
+                  "The researchers started by testing Gareyev's ",
+                  { "id": "37", "type": "input" },
+                  "; for example, he was required to recall a string of ",
+                  { "id": "38", "type": "input" },
+                  " in order and also in reverse order. Although his performance was normal, scans showed an unusual amount of ",
+                  { "id": "39", "type": "input" },
+                  " within the areas of Gareyev's brain that are concerned with directing attention. In addition, the scans raised the possibility of unusual strength in the parts of his brain that deal with ",
+                  { "id": "40", "type": "input" },
+                  " input."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

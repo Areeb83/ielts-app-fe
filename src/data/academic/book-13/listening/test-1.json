@@ -172,7 +172,16 @@
           "endQuestion": 30,
           "data": {
             "title": "Stages in the experiment",
-            "options": ["container", "soil", "weight", "condition", "height", "colour", "types", "depths"],
+            "options": [
+              { "letter": "A", "text": "container" },
+              { "letter": "B", "text": "soil" },
+              { "letter": "C", "text": "weight" },
+              { "letter": "D", "text": "condition" },
+              { "letter": "E", "text": "height" },
+              { "letter": "F", "text": "colour" },
+              { "letter": "G", "text": "types" },
+              { "letter": "H", "text": "depths" }
+            ],
             "steps": [
               {
                 "type": "interactive",

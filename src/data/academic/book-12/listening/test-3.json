@@ -276,7 +276,16 @@
           "endQuestion": 26,
           "data": {
             "title": "STAGES IN DOING A TOURISM CASE STUDY",
-            "options": ["patterns", "names", "sources", "questions", "employees", "solutions", "headings", "officials"],
+            "options": [
+              { "letter": "A", "text": "patterns" },
+              { "letter": "B", "text": "names" },
+              { "letter": "C", "text": "sources" },
+              { "letter": "D", "text": "questions" },
+              { "letter": "E", "text": "employees" },
+              { "letter": "F", "text": "solutions" },
+              { "letter": "G", "text": "headings" },
+              { "letter": "H", "text": "officials" }
+            ],
             "steps": [
               {
                 "type": "text",

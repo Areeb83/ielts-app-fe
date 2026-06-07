@@ -1,0 +1,314 @@
+{
+  "testId": "book-14-reading-test-4",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Ants could hold the secret to a longer life",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Ants. The passage covers Ysabel Giraldo's research on Pheidole dentata ants: she studied four age groups, analysing behaviour (care of young, locating food via scent trails, effect of light, aggression when attacking prey) and brain health (number of dying cells, synaptic complexes where neurons meet in mushroom bodies, levels of two proteins associated with ageing). Giraldo was the first to use precise age data. The ants didn't behave as expected — they remained active despite old age.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–8 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "title": "Ysabel Giraldo's research",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["Focused on a total of ", { "id": "1", "type": "input" }, " different age groups of ants, analysing"]
+                  }
+                ]
+              },
+              {
+                "heading": "Behaviour:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["how well ants looked after their ", { "id": "2", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["their ability to locate ", { "id": "3", "type": "input" }, " using a scent trail"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the effect that ", { "id": "4", "type": "input" }, " had on them"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["how ", { "id": "5", "type": "input" }, " they attacked prey"]
+                  }
+                ]
+              },
+              {
+                "heading": "Brains:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["comparison between age and the ", { "id": "6", "type": "input" }, " of dying cells in the brains of ants"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["condition of synaptic complexes (areas in which ", { "id": "7", "type": "input" }, " meet) in the brain's 'mushroom bodies'"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["level of two ", { "id": "8", "type": "input" }, " in the brain associated with ageing"]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 9–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "9",  "text": "Pheidole dentata ants are the only known animals which remain active for almost their whole lives." },
+              { "id": "10", "text": "Ysabel Giraldo was the first person to study Pheidole dentata ants using precise data about the insects' ages." },
+              { "id": "11", "text": "The ants in Giraldo's experiments behaved as she had predicted that they would." },
+              { "id": "12", "text": "The recent studies of bees used different methods of measuring age-related decline." },
+              { "id": "13", "text": "Pheidole dentata ants kept in laboratory conditions tend to live longer lives." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Zoos – Joys or Jails?",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–F**, in boxes 14–17 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a reference to how quickly animal species can die out" },
+              { "id": "15", "questionNumber": 15, "text": "reasons why it is preferable to study animals in captivity rather than in the wild" },
+              { "id": "16", "questionNumber": 16, "text": "mention of two ways of learning about animals other than visiting them in zoos" },
+              { "id": "17", "questionNumber": 17, "text": "reasons why animals in zoos may be healthier than those in the wild" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 18–22 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 18,
+          "endQuestion": 22,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "18", "text": "An animal is likely to live longer in a zoo than in the wild." },
+              { "id": "19", "text": "There are some species in zoos which can no longer be found in the wild." },
+              { "id": "20", "text": "Improvements in the quality of TV wildlife documentaries have resulted in increased numbers of zoo visitors." },
+              { "id": "21", "text": "Zoos have always excelled at transmitting information about animals to the public." },
+              { "id": "22", "text": "Studying animals in zoos is less stressful for the animals than studying them in the wild." }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 23 and 24 on your answer sheet.\nWhich **TWO** of the following are stated about zoo staff in the text?",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23 – 24",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "Some take part in television documentaries about animals." },
+                  { "letter": "B", "text": "Some travel to overseas locations to join teams in zoos." },
+                  { "letter": "C", "text": "Some get experience with species in the wild before taking up zoo jobs." },
+                  { "letter": "D", "text": "Some teach people who are involved with conservation projects." },
+                  { "letter": "E", "text": "Some specialise in caring for species which are under threat." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\nWhich **TWO** of these beliefs about zoos does the writer mention in the text?",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "They can help children overcome their fears of wild animals." },
+                  { "letter": "B", "text": "They can increase public awareness of environmental issues." },
+                  { "letter": "C", "text": "They can provide employment for a range of professional people." },
+                  { "letter": "D", "text": "They can generate income to support wildlife conservation projects." },
+                  { "letter": "E", "text": "They can raise animals which can later be released into the wild." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "What we know about marine debris",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for marine debris. The passage discusses Chelsea Rochman's research reviewing studies on marine debris (ocean trash). Rochman was not the first researcher in this area. The main threats identified were small plastic pieces. Little research covers chemical contamination. Most studies focused on individual animals rather than populations. Lab concentrations of plastic didn't always match ocean levels. Rochman's work covers different types of danger, and most studies she reviewed were well designed. One study expected to find mussels harmed by plastic. Mussels don't choose plastic over natural diet. Future disasters such as oil spills are a concern.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?\nIn boxes 27–33 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 27,
+          "endQuestion": 33,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "27", "text": "Rochman and her colleagues were the first people to research the problem of marine debris." },
+              { "id": "28", "text": "The creatures most in danger from ocean trash are certain seabirds." },
+              { "id": "29", "text": "The studies Rochman has reviewed have already proved that populations of some birds will soon become extinct." },
+              { "id": "30", "text": "Rochman analysed papers on the different kinds of danger caused by ocean trash." },
+              { "id": "31", "text": "Most of the research analysed by Rochman and her colleagues was badly designed." },
+              { "id": "32", "text": "One study examined by Rochman was expecting to find that mussels were harmed by eating plastic." },
+              { "id": "33", "text": "Some mussels choose to eat plastic in preference to their natural diet." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 34–39 on your answer sheet.",
+          "startQuestion": 34,
+          "endQuestion": 39,
+          "data": {
+            "title": "Findings related to marine debris",
+            "sections": [
+              {
+                "heading": "Studies of marine debris found the biggest threats were",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["plastic (not metal or wood)"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["bits of debris that were ", { "id": "34", "type": "input" }, " (harmful to animals)"]
+                  }
+                ]
+              },
+              {
+                "heading": "There was little research into",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": [{ "id": "35", "type": "input" }, " e.g. from synthetic fibres."]
+                  }
+                ]
+              },
+              {
+                "heading": "Drawbacks of the studies examined",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["most of them focused on individual animals, not entire ", { "id": "36", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the ", { "id": "37", "type": "input" }, " of plastic used in the lab did not always reflect those in the ocean"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["there was insufficient information on:"]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["numbers of animals which could be affected"]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["the impact of a reduction in numbers on the ", { "id": "38", "type": "input" }, " of that species"]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["the impact on the ecosystem"]
+                  }
+                ]
+              },
+              {
+                "heading": "Rochman says more information is needed on the possible impact of future",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": [{ "id": "39", "type": "input" }, " (e.g. involving oil)."]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in box 40 on your answer sheet.",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "40",
+                "text": "What would be the best title for this passage?",
+                "options": [
+                  { "letter": "A", "text": "Assessing the threat of marine debris" },
+                  { "letter": "B", "text": "Marine debris: who is to blame?" },
+                  { "letter": "C", "text": "A new solution to the problem of marine debris" },
+                  { "letter": "D", "text": "Marine debris: the need for international action" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

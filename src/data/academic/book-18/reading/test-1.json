@@ -1,0 +1,225 @@
+{
+  "testId": "book-18-test-1",
+  "bookId": "book-18",
+  "title": "Cambridge IELTS 18 – Reading Test 1",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Urban Farming in Paris",
+      "passage": {
+        "title": "Urban Farming in Paris",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "Urban farming in Paris",
+            "sentences": [
+              { "questionNumber": 1, "content": ["• Vertical tubes are used to grow strawberries, ", { "id": "1", "type": "input" }, " and herbs."] },
+              { "questionNumber": 2, "content": ["• There will eventually be a daily harvest of as much as ", { "id": "2", "type": "input" }, " in weight of fruit and vegetables."] },
+              { "questionNumber": 3, "content": ["• It may be possible that the farm's produce will account for as much as 10% of the city's ", { "id": "3", "type": "input" }, " overall."] }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 4,
+          "endQuestion": 7,
+          "data": {
+            "title": "Intensive farming versus aeroponic urban farming",
+            "headers": ["", "Growth", "Selection", "Sale"],
+            "rows": [
+              [
+                "Intensive farming",
+                ["• wide range of ", { "id": "4", "type": "input" }, " used", { "type": "br" }, "• techniques pollute air"],
+                ["• quality not good", { "type": "br" }, "• varieties of fruit and vegetables chosen that can survive long ", { "id": "5", "type": "input" }],
+                ["• ", { "id": "6", "type": "input" }, " receive very little of overall income"]
+              ],
+              [
+                "Aeroponic urban farming",
+                ["• no soil used", { "type": "br" }, "• nutrients added to water, which is recycled"],
+                ["• produce chosen because of its ", { "id": "7", "type": "input" }],
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "8",  "questionNumber": 8,  "text": "Urban farming can take place above or below ground." },
+              { "id": "9",  "questionNumber": 9,  "text": "Some of the equipment used in aeroponic farming can be made by hand." },
+              { "id": "10", "questionNumber": 10, "text": "Urban farming relies more on electricity than some other types of farming." },
+              { "id": "11", "questionNumber": 11, "text": "Fruit and vegetables grown on an aeroponic urban farm are cheaper than traditionally grown organic produce." },
+              { "id": "12", "questionNumber": 12, "text": "Most produce can be grown on an aeroponic urban farm at any time of the year." },
+              { "id": "13", "questionNumber": 13, "text": "Beans take longer to grow on an urban farm than other vegetables." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "Timber!",
+      "passage": {
+        "title": "Timber!",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" },
+          { "heading": "G", "content": "[Section G content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**. Which paragraph contains the following information? You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "bad outcomes for a forest when people focus only on its financial reward" },
+              { "id": "15", "questionNumber": 15, "text": "reference to the aspects of any tree that contribute to its worth" },
+              { "id": "16", "questionNumber": 16, "text": "mention of the potential use of wood to help run vehicles" },
+              { "id": "17", "questionNumber": 17, "text": "examples of insects that attack trees" },
+              { "id": "18", "questionNumber": 18, "text": "an alternative name for trees that produce low-use wood" }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Match each purpose with the correct timber cut, **A**, **B** or **C**. You may use any letter more than once.",
+          "startQuestion": 19,
+          "endQuestion": 21,
+          "data": {
+            "title": "List of Timber Cuts",
+            "options": [
+              { "letter": "A", "text": "a TSI Cut" },
+              { "letter": "B", "text": "a Salvage Cut" },
+              { "letter": "C", "text": "a Shelterwood Cut" }
+            ],
+            "questions": [
+              { "id": "19", "questionNumber": 19, "text": "to remove trees that are diseased" },
+              { "id": "20", "questionNumber": 20, "text": "to generate income across a number of years" },
+              { "id": "21", "questionNumber": 21, "text": "to create a forest whose trees are close in age" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 22,
+          "endQuestion": 26,
+          "data": {
+            "sentences": [
+              { "questionNumber": 22, "content": ["• Some dead wood is removed to avoid the possibility of ", { "id": "22", "type": "input" }, "."] },
+              { "questionNumber": 23, "content": ["• The ", { "id": "23", "type": "input" }, " from the tops of cut trees can help improve soil quality."] },
+              { "questionNumber": 24, "content": ["• Some damaged trees should be left, as their ", { "id": "24", "type": "input" }, " provide habitats for a range of creatures."] },
+              { "questionNumber": 25, "content": ["• Some trees that are small, such as ", { "id": "25", "type": "input" }, ", are a source of food for animals and insects."] },
+              { "questionNumber": 26, "content": ["• Any trees that are ", { "id": "26", "type": "input" }, " should be left to grow, as they add to the variety of species in the forest."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Space Junk",
+      "passage": {
+        "title": "Space Junk",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 3 has six sections, **A–F**. Which section contains the following information?",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "a reference to the cooperation that takes place to try and minimise risk" },
+              { "id": "28", "questionNumber": 28, "text": "an explanation of a person's aims" },
+              { "id": "29", "questionNumber": 29, "text": "a description of a major collision that occurred in space" },
+              { "id": "30", "questionNumber": 30, "text": "a comparison between tracking objects in space and the efficiency of a transportation system" },
+              { "id": "31", "questionNumber": 31, "text": "a reference to efforts to classify space junk" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 32,
+          "endQuestion": 35,
+          "data": {
+            "title": "The Inter-Agency Space Debris Coordination Committee",
+            "sentences": [
+              {
+                "content": [
+                  "The committee gives advice on how the ",
+                  { "id": "32", "type": "input" },
+                  " of space can be achieved. The committee advises that when satellites are no longer active, any unused ",
+                  { "id": "33", "type": "input" },
+                  " or pressurised material that could cause ",
+                  { "id": "34", "type": "input" },
+                  " should be removed. Although operators of large satellite constellations accept that they have obligations as stewards of space, Holger Krag points out that the operators that become ",
+                  { "id": "35", "type": "input" },
+                  " are unlikely to prioritise removing their satellites from space."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Match each statement with the correct person, **A**, **B**, **C** or **D**. You may use any letter more than once.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "title": "List of People",
+            "options": [
+              { "letter": "A", "text": "Carolin Frueh" },
+              { "letter": "B", "text": "Holger Krag" },
+              { "letter": "C", "text": "Marlon Sorge" },
+              { "letter": "D", "text": "Moriba Jah" }
+            ],
+            "questions": [
+              { "id": "36", "questionNumber": 36, "text": "Knowing the exact location of space junk would help prevent any possible danger." },
+              { "id": "37", "questionNumber": 37, "text": "Space should be available to everyone and should be preserved for the future." },
+              { "id": "38", "questionNumber": 38, "text": "A recommendation regarding satellites is widely ignored." },
+              { "id": "39", "questionNumber": 39, "text": "There is conflicting information about where some satellites are in space." },
+              { "id": "40", "questionNumber": 40, "text": "There is a risk we will not be able to undo the damage that occurs in space." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

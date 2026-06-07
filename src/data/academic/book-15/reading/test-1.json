@@ -1,0 +1,334 @@
+{
+  "testId": "book-15-reading-test-1",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Academic Reading Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The Nutmeg's Curse",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about nutmeg: the nutmeg tree has oval/oblong-shaped leaves, a husk/pericarp that surrounds the fruit and breaks open when ripe, the kernel/seed is used to produce the spice nutmeg, the aril (a lacy covering) is used to produce mace, and the tree has yellow flowers and fruit. History: in the Middle Ages Arabs brought nutmeg to Europe. 16th century — European nations took control of the nutmeg trade. 17th century — demand for nutmeg grew as it was believed to protect against the plague/pestilence. The Dutch VOC took control of the Banda Islands, restricted nutmeg production to a few areas, put lime/poison on nutmeg to prevent cultivation elsewhere, and via the Treaty of Breda finally obtained the island of Run from the British. Late 18th century — in 1770 Pierre Poivre secretly transported nutmeg plants to Mauritius; in 1778 a volcanic eruption destroyed half the Banda Islands' nutmeg plantations.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–4 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "title": "The nutmeg tree and fruit",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["the leaves of the tree are ", { "id": "1", "type": "input" }, " in shape"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the ", { "id": "2", "type": "input" }, " surrounds the fruit and breaks open when the fruit is ripe"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the ", { "id": "3", "type": "input" }, " is used to produce the spice nutmeg"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the covering known as the aril is used to produce ", { "id": "4", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["the tree has yellow flowers and fruit"]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 5–7 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 5,
+          "endQuestion": 7,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "5", "text": "In the Middle Ages, most Europeans knew where nutmeg was grown." },
+              { "id": "6", "text": "The VOC was the world's first major trading company." },
+              { "id": "7", "text": "Following the Treaty of Breda, the Dutch had control of all the islands where nutmeg grew." }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 8–13 on your answer sheet.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "headers": ["", ""],
+            "rows": [
+              [
+                "Middle Ages",
+                ["Nutmeg was brought to Europe by the ", { "id": "8", "type": "input" }]
+              ],
+              [
+                "16th century",
+                "European nations took control of the nutmeg trade"
+              ],
+              [
+                "17th century",
+                ["Demand for nutmeg grew, as it was believed to be effective against the disease known as the ", { "id": "9", "type": "input" }]
+              ],
+              [
+                "",
+                ["The Dutch\n•  took control of the Banda Islands\n•  restricted nutmeg production to a few areas\n•  put ", { "id": "10", "type": "input" }, " on nutmeg to avoid it being cultivated outside the islands\n•  finally obtained the island of ", { "id": "11", "type": "input" }, " from the British"]
+              ],
+              [
+                "Late 18th century",
+                ["1770 – nutmeg plants were secretly taken to ", { "id": "12", "type": "input" }, "\n1778 – half the Banda Islands' nutmeg plantations were destroyed by a ", { "id": "13", "type": "input" }]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Could urban mobility be revolutionised?",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven sections, **A–G**.\nWhich section contains the following information?\nWrite the correct letter, **A–G**, in boxes 14–18 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "reference to the amount of time when a car is not in use" },
+              { "id": "15", "questionNumber": 15, "text": "mention of several advantages of driverless vehicles for individual road-users" },
+              { "id": "16", "questionNumber": 16, "text": "reference to the opportunity of choosing the most appropriate vehicle for each trip" },
+              { "id": "17", "questionNumber": 17, "text": "an estimate of how long it will take to overcome a number of problems" },
+              { "id": "18", "questionNumber": 18, "text": "a suggestion that the use of driverless cars may have no effect on the number of vehicles manufactured" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 19–22 on your answer sheet.",
+          "startQuestion": 19,
+          "endQuestion": 22,
+          "data": {
+            "title": "The impact of driverless cars",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["Figures from the Transport Research Laboratory indicate that most motor accidents are partly due to ", { "id": "19", "type": "input" }, ", so the introduction of driverless vehicles will result in greater safety. In addition to the direct benefits of automation, it may bring other advantages. For example, schemes for ", { "id": "20", "type": "input" }, " will be more workable, especially in towns and cities, resulting in fewer cars on the road."]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["According to the University of Michigan Transportation Research Institute, there could be a 43 percent drop in ", { "id": "21", "type": "input" }, " of cars. However, this would mean that the yearly ", { "id": "22", "type": "input" }, " of each car would, on average, be twice as high as it currently is. This would lead to a higher turnover of vehicles, and therefore no reduction in automotive manufacturing."]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 23 and 24 on your answer sheet.\nWhich **TWO** benefits of automated vehicles does the writer mention?",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23 – 24",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "Car travellers could enjoy considerable cost savings." },
+                  { "letter": "B", "text": "It would be easier to find parking spaces in urban areas." },
+                  { "letter": "C", "text": "Travellers could spend journeys doing something other than driving." },
+                  { "letter": "D", "text": "People who find driving physically difficult could travel independently." },
+                  { "letter": "E", "text": "A reduction in the number of cars would mean a reduction in pollution." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\nWhich **TWO** challenges to automated vehicle development does the writer mention?",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "making sure the general public has confidence in automated vehicles" },
+                  { "letter": "B", "text": "managing the pace of transition from conventional to automated vehicles" },
+                  { "letter": "C", "text": "deciding how to compensate professional drivers who become redundant" },
+                  { "letter": "D", "text": "setting up the infrastructure to make roads suitable for automated vehicles" },
+                  { "letter": "E", "text": "getting automated vehicles to adapt to various different driving conditions" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The exploration of what?",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about exploration: discusses New York visitors and exploration as intrinsic to human nature. Discusses explorers acting on urges common to everyone. References Thomas Hardy's description of Egdon Heath. Mentions a 'golden age' of exploration and argues we are wrong to think exploration is no longer necessary. Discusses definitions of exploration. Explorer quotes: Peter Fleming referred to the form of transport used in exploration; Robin Hanbury-Tenison described feelings on returning home after a long journey and worked for the benefit of indigenous peoples/specific groups; Ran Fiennes did not consider learning about oneself an essential part of exploration and defined exploration as being both unique and of value to others; Chris Bonington — various views; Wilfred Thesiger — various views. Writer's bias: has experience of a large number of expeditions, was the first stranger that certain previously uncontacted peoples had encountered, believes there is no need for further exploration of Earth's geography, except to answer specific questions such as how buffalo eat.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–32 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "The writer refers to visitors to New York to illustrate the point that",
+                "options": [
+                  { "letter": "A", "text": "exploration is an intrinsic element of being human." },
+                  { "letter": "B", "text": "most people are enthusiastic about exploring." },
+                  { "letter": "C", "text": "exploration can lead to surprising results." },
+                  { "letter": "D", "text": "most people find exploration daunting." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "According to the second paragraph, what is the writer's view of explorers?",
+                "options": [
+                  { "letter": "A", "text": "Their discoveries have brought both benefits and disadvantages." },
+                  { "letter": "B", "text": "Their main value is in teaching others." },
+                  { "letter": "C", "text": "They act on an urge that is common to everyone." },
+                  { "letter": "D", "text": "They tend to be more attracted to certain professions than to others." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "The writer refers to a description of Egdon Heath to suggest that",
+                "options": [
+                  { "letter": "A", "text": "Hardy was writing about his own experience of exploration." },
+                  { "letter": "B", "text": "Hardy was mistaken about the nature of exploration." },
+                  { "letter": "C", "text": "Hardy's aim was to investigate people's emotional states." },
+                  { "letter": "D", "text": "Hardy's aim was to show the attraction of isolation." }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "In the fourth paragraph, the writer refers to 'a golden age' to suggest that",
+                "options": [
+                  { "letter": "A", "text": "the amount of useful information produced by exploration has decreased." },
+                  { "letter": "B", "text": "fewer people are interested in exploring than in the 19th century." },
+                  { "letter": "C", "text": "recent developments have made exploration less exciting." },
+                  { "letter": "D", "text": "we are wrong to think that exploration is no longer necessary." }
+                ]
+              },
+              {
+                "id": "31",
+                "text": "In the sixth paragraph, when discussing the definition of exploration, the writer argues that",
+                "options": [
+                  { "letter": "A", "text": "people tend to relate exploration to their own professional interests." },
+                  { "letter": "B", "text": "certain people are likely to misunderstand the nature of exploration." },
+                  { "letter": "C", "text": "the generally accepted definition has changed over time." },
+                  { "letter": "D", "text": "historians and scientists have more valid definitions than the general public." }
+                ]
+              },
+              {
+                "id": "32",
+                "text": "In the last paragraph, the writer explains that he is interested in",
+                "options": [
+                  { "letter": "A", "text": "how someone's personality is reflected in their choice of places to visit." },
+                  { "letter": "B", "text": "the human ability to cast new light on places that may be familiar." },
+                  { "letter": "C", "text": "how travel writing has evolved to meet changing demands." },
+                  { "letter": "D", "text": "the feelings that writers develop about the places that they explore." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 33–37) and the list of explorers below.\nMatch each statement with the correct explorer, **A–E**.\nWrite the correct letter, **A–E**, in boxes 33–37 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 33,
+          "endQuestion": 37,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "Peter Fleming" },
+              { "letter": "B", "text": "Ran Fiennes" },
+              { "letter": "C", "text": "Chris Bonington" },
+              { "letter": "D", "text": "Robin Hanbury-Tenison" },
+              { "letter": "E", "text": "Wilfred Thesiger" }
+            ],
+            "questions": [
+              { "id": "33", "text": "He referred to the relevance of the form of transport used." },
+              { "id": "34", "text": "He described feelings on coming back home after a long journey." },
+              { "id": "35", "text": "He worked for the benefit of specific groups of people." },
+              { "id": "36", "text": "He did not consider learning about oneself an essential part of exploration." },
+              { "id": "37", "text": "He defined exploration as being both unique and of value to others." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 38–40 on your answer sheet.",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "title": "The writer's own bias",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["The writer has experience of a large number of ", { "id": "38", "type": "input" }, ", and was the first stranger that certain previously ", { "id": "39", "type": "input" }, " had encountered. He believes there is no need for further exploration of Earth's ", { "id": "40", "type": "input" }, ", except to answer specific questions such as how buffalo eat."]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

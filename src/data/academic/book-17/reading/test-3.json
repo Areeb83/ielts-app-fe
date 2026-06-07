@@ -1,0 +1,263 @@
+{
+  "testId": "book-17-test-3",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Reading Test 3",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "The Thylacine",
+      "passage": {
+        "title": "The Thylacine",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "The thylacine",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Appearance and behaviour" }] },
+              { "content": ["• looked rather like a dog"] },
+              { "content": ["• had a series of stripes along its body and tail"] },
+              { "questionNumber": 1, "content": ["• ate an entirely ", { "id": "1", "type": "input" }, " diet"] },
+              { "questionNumber": 2, "content": ["• probably depended mainly on ", { "id": "2", "type": "input" }, " when hunting"] },
+              { "questionNumber": 3, "content": ["• young spent first months of life inside its mother's ", { "id": "3", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Decline and extinction" }] },
+              { "questionNumber": 4, "content": ["• last evidence in mainland Australia is a 3,100-year-old ", { "id": "4", "type": "input" }] },
+              { "content": ["• probably went extinct in mainland Australia due to animals known as dingoes"] },
+              { "questionNumber": 5, "content": ["• reduction in ", { "id": "5", "type": "input" }, " and available sources of food were partly responsible for decline in Tasmania"] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 6,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "6",  "questionNumber": 6,  "text": "Significant numbers of thylacines were killed by humans from the 1830s onwards." },
+              { "id": "7",  "questionNumber": 7,  "text": "Several thylacines were born in zoos during the late 1800s." },
+              { "id": "8",  "questionNumber": 8,  "text": "John Gould's prediction about the thylacine surprised some biologists." },
+              { "id": "9",  "questionNumber": 9,  "text": "In the early 1900s, many scientists became worried about the possible extinction of the thylacine." },
+              { "id": "10", "questionNumber": 10, "text": "T. T. Flynn's proposal to rehome captive thylacines on an island proved to be impractical." },
+              { "id": "11", "questionNumber": 11, "text": "There were still reasonable numbers of thylacines in existence when a piece of legislation protecting the species during their breeding season was passed." },
+              { "id": "12", "questionNumber": 12, "text": "From 1930 to 1936, the only known living thylacines were all in captivity." },
+              { "id": "13", "questionNumber": 13, "text": "Attempts to find living thylacines are now rarely made." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "The Truth About Palm Oil",
+      "passage": {
+        "title": "The Truth About Palm Oil",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" },
+          { "heading": "G", "content": "[Section G content to be added]" },
+          { "heading": "H", "content": "[Section H content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has eight sections, **A–H**. Which section contains the following information?",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "examples of a range of potential environmental advantages of oil palm tree cultivation" },
+              { "id": "15", "questionNumber": 15, "text": "description of an organisation which controls the environmental impact of palm oil production" },
+              { "id": "16", "questionNumber": 16, "text": "examples of the widespread global use of palm oil" },
+              { "id": "17", "questionNumber": 17, "text": "reference to a particular species which could benefit the ecosystem of oil palm plantations" },
+              { "id": "18", "questionNumber": 18, "text": "figures illustrating the rapid expansion of the palm oil industry" },
+              { "id": "19", "questionNumber": 19, "text": "an economic justification for not opposing the palm oil industry" },
+              { "id": "20", "questionNumber": 20, "text": "examples of creatures badly affected by the establishment of oil palm plantations" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E.",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21-22",
+                "text": "Which TWO statements are made about the Roundtable on Sustainable Palm Oil (RSPO)?",
+                "options": [
+                  { "letter": "A", "text": "Its membership has grown steadily over the course of the last decade." },
+                  { "letter": "B", "text": "It demands that certified producers be open and honest about their practices." },
+                  { "letter": "C", "text": "It took several years to establish its set of criteria for sustainable palm oil certification." },
+                  { "letter": "D", "text": "Its regulations regarding sustainability are stricter than those governing other industries." },
+                  { "letter": "E", "text": "It was formed at the request of environmentalists concerned about the loss of virgin forests." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "sentences": [
+              { "questionNumber": 23, "content": ["One advantage of palm oil for manufacturers is that it stays ", { "id": "23", "type": "input" }, " even when not refrigerated."] },
+              { "questionNumber": 24, "content": ["The ", { "id": "24", "type": "input" }, " is the best known of the animals suffering habitat loss as a result of the spread of oil palm plantations."] },
+              { "questionNumber": 25, "content": ["As one of its criteria for the certification of sustainable palm oil, the RSPO insists that growers check ", { "id": "25", "type": "input" }, " on a routine basis."] },
+              { "questionNumber": 26, "content": ["Ellwood and his researchers are looking into whether the bird's nest fern could restore ", { "id": "26", "type": "input" }, " in areas where oil palm trees are grown."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Building the Skyline",
+      "passage": {
+        "title": "Building the Skyline",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "What point does Shester make about Barr's book in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "It gives a highly original explanation for urban development." },
+                  { "letter": "B", "text": "Elements of Barr's research papers are incorporated throughout the book." },
+                  { "letter": "C", "text": "Other books that are available on the subject have taken a different approach." },
+                  { "letter": "D", "text": "It covers a range of factors that affected the development of New York." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "How does Shester respond to the information in the book about tenements?",
+                "options": [
+                  { "letter": "A", "text": "She describes the reasons for Barr's interest." },
+                  { "letter": "B", "text": "She indicates a potential problem with Barr's analysis." },
+                  { "letter": "C", "text": "She compares Barr's conclusion with that of other writers." },
+                  { "letter": "D", "text": "She provides details about the sources Barr used for his research." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What does Shester say about chapter six of the book?",
+                "options": [
+                  { "letter": "A", "text": "It contains conflicting data." },
+                  { "letter": "B", "text": "It focuses too much on possible trends." },
+                  { "letter": "C", "text": "It is too specialised for most readers." },
+                  { "letter": "D", "text": "It draws on research that is out of date." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "What does Shester suggest about the chapters focusing on the 1920s building boom?",
+                "options": [
+                  { "letter": "A", "text": "The information should have been organised differently." },
+                  { "letter": "B", "text": "More facts are needed about the way construction was financed." },
+                  { "letter": "C", "text": "The explanation that is given for the building boom is unlikely." },
+                  { "letter": "D", "text": "Some parts will have limited appeal to certain people." }
+                ]
+              },
+              {
+                "id": "31",
+                "questionNumber": 31,
+                "text": "What impresses Shester the most about the chapter on land values?",
+                "options": [
+                  { "letter": "A", "text": "the broad time period that is covered" },
+                  { "letter": "B", "text": "the interesting questions that Barr asks" },
+                  { "letter": "C", "text": "the nature of the research into the topic" },
+                  { "letter": "D", "text": "the recommendations Barr makes for the future" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 32,
+          "endQuestion": 35,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "32", "questionNumber": 32, "text": "The description in the first chapter of how New York probably looked from the air in the early 1600s lacks interest." },
+              { "id": "33", "questionNumber": 33, "text": "Chapters two and three prepare the reader well for material yet to come." },
+              { "id": "34", "questionNumber": 34, "text": "The biggest problem for many nineteenth-century New York immigrant neighbourhoods was a lack of amenities." },
+              { "id": "35", "questionNumber": 35, "text": "In the nineteenth century, New York's immigrant neighbourhoods tended to concentrate around the harbour." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–J**, below.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "title": "The bedrock myth",
+            "options": [
+              { "letter": "A", "text": "development plans" },
+              { "letter": "B", "text": "deep excavations" },
+              { "letter": "C", "text": "great distance" },
+              { "letter": "D", "text": "excessive expense" },
+              { "letter": "E", "text": "impossible tasks" },
+              { "letter": "F", "text": "associated risks" },
+              { "letter": "G", "text": "water level" },
+              { "letter": "H", "text": "specific areas" },
+              { "letter": "I", "text": "total expenditure" },
+              { "letter": "J", "text": "construction guidelines" }
+            ],
+            "content": [
+              "In chapter seven, Barr indicates how the lack of bedrock close to the surface does not explain why skyscrapers are absent from ",
+              { "id": "36", "type": "dropzone" },
+              ". He points out that although the cost of foundations increases when bedrock is deep below the surface, this cannot be regarded as ",
+              { "id": "37", "type": "dropzone" },
+              ", especially when compared to ",
+              { "id": "38", "type": "dropzone" },
+              ". A particularly enjoyable part of the chapter was Barr's account of how foundations are built. He describes not only how ",
+              { "id": "39", "type": "dropzone" },
+              " are made possible by the use of caissons, but he also discusses their ",
+              { "id": "40", "type": "dropzone" },
+              ". The chapter is well researched but relatively easy to understand."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

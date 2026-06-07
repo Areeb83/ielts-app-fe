@@ -313,7 +313,7 @@ export function ListeningTestsPage() {
                               <div className="mt-5 flex flex-col gap-2">
                                 <button
                                   type="button"
-                                  onClick={() => navigate(buildListeningTestRoute(examType!, book.id, test.id))}
+                                  onClick={() => navigate(buildListeningTestRoute(examType!, test.id))}
                                   className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted
                                     ? 'bg-white text-orange-600 border-orange-500 hover:bg-orange-50'
                                     : 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'

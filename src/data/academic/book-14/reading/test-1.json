@@ -1,0 +1,276 @@
+{
+  "testId": "book-14-reading-test-1",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Academic Reading Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Children's play",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Children's play. The passage discusses the uses and importance of children's play: building magical kingdoms helps develop creativity; board games involve negotiation and turn-taking. Recent changes include growing city populations and reduced free play due to fear of strangers, fear of traffic, and increased testing in schools. International policies on play face difficulty finding funding, and research needs to study the impact of play on the rest of the child's life. It also discusses how self-control links to academic success, how play reveals medical issues, a study on dolls and writing, a Lego storytelling experiment, and current views on the significance of play.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–8 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "title": "Children's play",
+            "sections": [
+              {
+                "heading": "Uses of children's play",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["building a 'magical kingdom' may help develop ", { "id": "1", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["board games involve ", { "id": "2", "type": "input" }, " and turn-taking"]
+                  }
+                ]
+              },
+              {
+                "heading": "Recent changes affecting children's play",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["populations of ", { "id": "3", "type": "input" }, " have grown"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["opportunities for free play are limited due to:"]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["fear of ", { "id": "4", "type": "input" }]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["fear of ", { "id": "5", "type": "input" }]
+                  },
+                  {
+                    "bullet": "–",
+                    "content": ["increased ", { "id": "6", "type": "input" }, " in schools"]
+                  }
+                ]
+              },
+              {
+                "heading": "International policies on children's play",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["it is difficult to find ", { "id": "7", "type": "input" }, " to support new policies"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["research needs to study the impact of play on the rest of the child's ", { "id": "8", "type": "input" }]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 9–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "9",  "text": "Children with good self-control are known to be likely to do well at school later on." },
+              { "id": "10", "text": "The way a child plays may provide information about possible medical problems." },
+              { "id": "11", "text": "Playing with dolls was found to benefit girls' writing more than boys' writing." },
+              { "id": "12", "text": "Children had problems thinking up ideas when they first created the story with Lego." },
+              { "id": "13", "text": "People nowadays regard children's play as less significant than they did in the past." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "The white bikes of Amsterdam",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–G**, in boxes 14–18 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a description of how people misused a bike-sharing scheme" },
+              { "id": "15", "questionNumber": 15, "text": "an explanation of why a proposed bike-sharing scheme was turned down" },
+              { "id": "16", "questionNumber": 16, "text": "a reference to a person being unable to profit from their work" },
+              { "id": "17", "questionNumber": 17, "text": "an explanation of the potential savings a bike-sharing scheme would bring" },
+              { "id": "18", "questionNumber": 18, "text": "a reference to the problems a bike-sharing scheme was intended to solve" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 19 and 20 on your answer sheet.\nWhich **TWO** of the following statements are made in the text about the Amsterdam bike-sharing scheme of 1999?",
+          "startQuestion": 19,
+          "endQuestion": 20,
+          "data": {
+            "questions": [
+              {
+                "id": "19 – 20",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "It was initially opposed by a government department." },
+                  { "letter": "B", "text": "It failed when a partner in the scheme withdrew support." },
+                  { "letter": "C", "text": "It aimed to be more successful than the Copenhagen scheme." },
+                  { "letter": "D", "text": "It was made possible by a change in people's attitudes." },
+                  { "letter": "E", "text": "It attracted interest from a range of bike designers." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 21 and 22 on your answer sheet.\nWhich **TWO** of the following statements are made in the text about Amsterdam today?",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21 – 22",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "The majority of residents would like to prevent all cars from entering the city." },
+                  { "letter": "B", "text": "There is little likelihood of the city having another bike-sharing scheme." },
+                  { "letter": "C", "text": "More trips in the city are made by bike than by any other form of transport." },
+                  { "letter": "D", "text": "A bike-sharing scheme would benefit residents who use public transport." },
+                  { "letter": "E", "text": "The city has a reputation as a place that welcomes cyclists." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 23–26 on your answer sheet.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "title": "The first urban bike-sharing scheme",
+            "content": [
+              "The first bike-sharing scheme was the idea of the Dutch group Provo. The people who belonged to this group were ",
+              { "id": "23", "type": "input" },
+              ". They were concerned about damage to the environment and about ",
+              { "id": "24", "type": "input" },
+              ", and believed that the bike-sharing scheme would draw attention to these issues. As well as painting some bikes white, they handed out ",
+              { "id": "25", "type": "input" },
+              " that condemned the use of cars. However, the scheme was not a great success: almost as quickly as Provo left the bikes around the city, the ",
+              { "id": "26", "type": "input" },
+              " took them away. According to Schimmelpennink, the scheme was intended to be symbolic. The idea was to get people thinking about the issues."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Staff retention in the hospitality industry",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Staff retention in the hospitality industry. The passage discusses high staff turnover in hospitality, reasons beyond pay dissatisfaction, the role of management in retention, skill development, cooperation, and research by Tews, Michel and Stafford on fun activities in an American chain of bars and their impact on motivation, turnover, and the need to balance company goals with staff preferences.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 27–31) and the list of researchers below.\nMatch each statement with the correct researcher, **A–F**.\nWrite the correct letter, **A–F**, in boxes 27–31 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "title": "List of Researchers",
+            "options": [
+              { "letter": "A", "text": "Pfeffer" },
+              { "letter": "B", "text": "Lucas" },
+              { "letter": "C", "text": "Maroudas et al." },
+              { "letter": "D", "text": "Ng and Sorensen" },
+              { "letter": "E", "text": "Enz and Siguaw" },
+              { "letter": "F", "text": "Deery" }
+            ],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "Hotel managers need to know what would encourage good staff to remain." },
+              { "id": "28", "questionNumber": 28, "text": "The actions of managers may make staff feel they shouldn't move to a different employer." },
+              { "id": "29", "questionNumber": 29, "text": "Little is done in the hospitality industry to help workers improve their skills." },
+              { "id": "30", "questionNumber": 30, "text": "Staff are less likely to change jobs if cooperation is encouraged." },
+              { "id": "31", "questionNumber": 31, "text": "Dissatisfaction with pay is not the only reason why hospitality workers change jobs." }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 32–35 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 32,
+          "endQuestion": 35,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "32", "text": "One reason for high staff turnover in the hospitality industry is poor morale." },
+              { "id": "33", "text": "Research has shown that staff have a tendency to dislike their workplace." },
+              { "id": "34", "text": "An improvement in working conditions and job security makes staff satisfied with their jobs." },
+              { "id": "35", "text": "Staff should be allowed to choose when they take breaks during the working day." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 36–40 on your answer sheet.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "title": "Fun at work",
+            "content": [
+              "Tews, Michel and Stafford carried out research on staff in an American chain of ",
+              { "id": "36", "type": "input" },
+              ". They discovered that activities designed for staff to have fun improved their ",
+              { "id": "37", "type": "input" },
+              ", and that management involvement led to lower ",
+              { "id": "38", "type": "input" },
+              ". They also found that the activities needed to fit with both the company's ",
+              { "id": "39", "type": "input" },
+              " and the ",
+              { "id": "40", "type": "input" },
+              " of the staff. A balance was required between a degree of freedom and maintaining work standards."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

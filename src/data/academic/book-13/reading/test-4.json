@@ -1,0 +1,271 @@
+{
+  "testId": "book-13-reading-test-4",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Cutty Sark: the fastest sailing ship of its time",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Cutty Sark. The passage covers the history of the clipper ship Cutty Sark: named after a character in Robert Burns' poem 'Tam o' Shanter'; built under a contract that favoured John Willis; intended to be the fastest tea clipper on the UK–China route; lost its rudder in a storm racing Thermopylae; the Suez Canal made steam ships faster on the China route; Captain Woodget commanded it carrying wool from Australia via Antarctica; sold to Portuguese owners (renamed Ferreira); repaired at Falmouth after a storm; used for training from 1923–1954; twice damaged by fire in the 21st century.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–8 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "Clippers were originally intended to be used as passenger ships." },
+              { "id": "2", "text": "Cutty Sark was given the name of a character in a poem." },
+              { "id": "3", "text": "The contract between John Willis and Scott & Linton favoured Willis." },
+              { "id": "4", "text": "John Willis wanted Cutty Sark to be the fastest tea clipper travelling between the UK and China." },
+              { "id": "5", "text": "Despite storm damage, Cutty Sark beat Thermopylae back to London." },
+              { "id": "6", "text": "The opening of the Suez Canal meant that steam ships could travel between Britain and China faster than clippers." },
+              { "id": "7", "text": "Steam ships sometimes used the ocean route to travel between London and China." },
+              { "id": "8", "text": "Captain Woodget put Cutty Sark at risk of hitting an iceberg." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 9–13 on your answer sheet.",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 9,
+                "content": [
+                  "After 1880, Cutty Sark carried ",
+                  { "id": "9", "type": "input" },
+                  " as its main cargo during its most successful time."
+                ]
+              },
+              {
+                "questionNumber": 10,
+                "content": [
+                  "As a captain, Woodget was very skilled at ",
+                  { "id": "10", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 11,
+                "content": [
+                  "Ferreira went to Falmouth to repair damage that a ",
+                  { "id": "11", "type": "input" },
+                  " had caused."
+                ]
+              },
+              {
+                "questionNumber": 12,
+                "content": [
+                  "Between 1923 and 1954, Cutty Sark was used for ",
+                  { "id": "12", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 13,
+                "content": [
+                  "Cutty Sark has twice been damaged by ",
+                  { "id": "13", "type": "input" },
+                  " in the 21st century."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "The importance of soil",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nWrite **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 14–17 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "title": "Why soil degradation could be a disaster for humans",
+            "content": [
+              "Healthy soil contains a large variety of bacteria and other microorganisms, as well as plant remains and ",
+              { "id": "14", "type": "input" },
+              ". It provides us with food and also with antibiotics, and its function in storing ",
+              { "id": "15", "type": "input" },
+              " has a significant effect on the climate. In addition, it prevents damage to property and infrastructure because it absorbs ",
+              { "id": "16", "type": "input" },
+              ". If these microorganisms are lost, soil may lose its special properties. The main factor contributing to soil degradation is the ",
+              { "id": "17", "type": "input" },
+              " carried out by humans."
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Complete each sentence with the correct ending, **A–F**, below.\nWrite the correct letter, **A–F**, in boxes 18–21 on your answer sheet.",
+          "startQuestion": 18,
+          "endQuestion": 21,
+          "data": {
+            "title": "List of Endings",
+            "options": [
+              { "letter": "A", "text": "may improve the number and quality of plants growing there." },
+              { "letter": "B", "text": "may contain data from up to nine countries." },
+              { "letter": "C", "text": "may not be put back into the soil." },
+              { "letter": "D", "text": "may help governments to be more aware of soil-related issues." },
+              { "letter": "E", "text": "may cause damage to different aspects of the environment." },
+              { "letter": "F", "text": "may be better for use at a global level." }
+            ],
+            "questions": [
+              { "id": "18", "questionNumber": 18, "text": "Nutrients contained in the unused parts of harvested crops" },
+              { "id": "19", "questionNumber": 19, "text": "Synthetic fertilisers produced with the Haber-Bosch process" },
+              { "id": "20", "questionNumber": 20, "text": "Addition of a mixture developed by Pius Floris to the soil" },
+              { "id": "21", "questionNumber": 21, "text": "The idea of zero net soil degradation" }
+            ]
+          }
+        },
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**.\nWhich section contains the following information?\nWrite the correct letter, **A–G**, in boxes 22–26 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 22,
+          "endQuestion": 26,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "22", "questionNumber": 22, "text": "a reference to one person's motivation for a soil-improvement project" },
+              { "id": "23", "questionNumber": 23, "text": "an explanation of how soil stayed healthy before the development of farming" },
+              { "id": "24", "questionNumber": 24, "text": "examples of different ways of collecting information on soil degradation" },
+              { "id": "25", "questionNumber": 25, "text": "a suggestion for a way of keeping some types of soil safe in the near future" },
+              { "id": "26", "questionNumber": 26, "text": "a reason why it is difficult to provide an overview of soil degradation" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Book Review: The Happiness Industry by William Davies",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Book Review: The Happiness Industry by William Davies. The passage is a review discussing Jeremy Bentham's influence on positive psychology and happiness research. It covers Bentham's utilitarian philosophy, his inventions including the Panopticon prison design, his ideas on measuring happiness, and his influence on modern psychology and behaviourism through John Watson. The reviewer discusses how the book explores the relationship between psychology and economics/industry.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–29 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 29,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "What is the reviewer's attitude to advocates of positive psychology?",
+                "options": [
+                  { "letter": "A", "text": "They are wrong to reject the ideas of Bentham." },
+                  { "letter": "B", "text": "They are over-influenced by their study of Bentham's theories." },
+                  { "letter": "C", "text": "They have a fresh new approach to ideas on human happiness." },
+                  { "letter": "D", "text": "They are ignorant about the ideas they should be considering." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "The reviewer refers to the Greek philosopher Aristotle in order to suggest that happiness",
+                "options": [
+                  { "letter": "A", "text": "may not be just pleasure and the absence of pain." },
+                  { "letter": "B", "text": "should not be the main goal of humans." },
+                  { "letter": "C", "text": "is not something that should be fought for." },
+                  { "letter": "D", "text": "is not just an abstract concept." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "According to Davies, Bentham's suggestion for linking the price of goods to happiness was significant because",
+                "options": [
+                  { "letter": "A", "text": "it was the first successful way of assessing happiness." },
+                  { "letter": "B", "text": "it established a connection between work and psychology." },
+                  { "letter": "C", "text": "it was the first successful example of psychological research." },
+                  { "letter": "D", "text": "it involved consideration of the rights of consumers." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words **A–G** below.\nWrite the correct letter, **A–G**, in boxes 30–34 on your answer sheet.",
+          "startQuestion": 30,
+          "endQuestion": 34,
+          "data": {
+            "title": "Jeremy Bentham",
+            "content": [
+              "Jeremy Bentham was active in other areas besides philosophy. In the 1790s he suggested a type of technology to improve ",
+              { "type": "dropzone", "id": "30" },
+              " for different Government departments. He developed a new way of printing banknotes to increase ",
+              { "type": "dropzone", "id": "31" },
+              " and also designed a method for the ",
+              { "type": "dropzone", "id": "32" },
+              " of food. He also drew up plans for a prison which allowed the ",
+              { "type": "dropzone", "id": "33" },
+              " of prisoners at all times, and believed the same design could be used for other institutions as well. When researching happiness, he investigated possibilities for its ",
+              { "type": "dropzone", "id": "34" },
+              ", and suggested some methods of doing this."
+            ],
+            "options": [
+              { "letter": "A", "text": "measurement" },
+              { "letter": "B", "text": "security" },
+              { "letter": "C", "text": "implementation" },
+              { "letter": "D", "text": "profits" },
+              { "letter": "E", "text": "observation" },
+              { "letter": "F", "text": "communication" },
+              { "letter": "G", "text": "preservation" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 35–40 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 35,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "35", "text": "One strength of The Happiness Industry is its discussion of the relationship between psychology and economics." },
+              { "id": "36", "text": "It is more difficult to measure some emotions than others." },
+              { "id": "37", "text": "Watson's ideas on behaviourism were supported by research on humans he carried out before 1915." },
+              { "id": "38", "text": "Watson's ideas have been most influential on governments outside America." },
+              { "id": "39", "text": "The need for happiness is linked to industrialisation." },
+              { "id": "40", "text": "A main aim of government should be to increase the happiness of the population." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

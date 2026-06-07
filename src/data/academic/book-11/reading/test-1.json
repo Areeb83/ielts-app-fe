@@ -1,76 +1,103 @@
 {
-  "testId": "book-11-test-1",
+  "testId": "book-11-reading-test-1",
   "bookId": "book-11",
-  "title": "Cambridge IELTS 11 – Listening Test 1",
-  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  "title": "Cambridge IELTS 11 – Academic Reading Test 1",
+  "audioSrc": "",
   "totalQuestions": 40,
   "sections": [
     {
       "sectionNumber": 1,
-      "title": "Part 1",
+      "title": "Reading Passage 1",
       "passage": {
-        "title": "The Ageing Population",
+        "title": "Indoor farming",
         "sections": [
           {
-            "label": "Section A",
-            "questionId": "1",
-            "content": "Clearly, when older people do heavy physical work, their age may affect their productivity. But other skills may increase with age, including many that are crucial for good management, such as an ability to handle people diplomatically, to run a meeting or to spot a problem before it blows up. Peter Hicks, who co-ordinates OECD* work on the policy implications of ageing, says that plenty of research suggests older people are paid more because they are worth more."
-          },
-          {
-            "label": "Section B",
-            "questionId": "2",
-            "content": "And the virtues of the young may be exaggerated. ‘The few companies that have kept on older workers find they have good judgement and their productivity is good,’ says Peter Peterson, author of a recent book on the impact of ageing. ‘Besides, their education standards are much better than those of today’s young high-school graduates.’ Companies may say that older workers are not worth training because they are reaching the end of their working lives; in fact, young people tend to switch jobs so frequently that they offer the worst returns on training."
-          },
-          {
-            "label": "Section C",
-            "questionId": "3",
-            "content": "The median age for employer-driven training is the late 40s and early 50s, and this training goes mainly to managers. There is no evidence that older workers are any less capable of learning new skills than younger ones. In fact, many older workers are more motivated to learn because they want to stay in the workforce longer."
-          },
-          {
-            "label": "Section D",
-            "questionId": "4",
-            "content": "Some companies have found that having a mix of ages in the workforce can lead to better problem-solving and innovation. Older workers can provide mentorship and guidance to younger colleagues, while younger workers can bring fresh perspectives and new ideas."
+            "content": "[Placeholder passage text for Indoor Farming. The real passage discusses how vertical farms work, their advantages such as year-round growing and reduced transportation, and disadvantages such as the need for artificial light. It also discusses how methane from biological waste could generate energy, and how the most likely development is rooftop gardens in urban areas.]"
           }
         ]
       },
       "questionGroups": [
         {
-          "type": "MATCHING_HEADING",
-          "instruction": "The text has four sections. Choose the correct heading for each section and move it into the gap.",
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
           "startQuestion": 1,
-          "endQuestion": 4,
+          "endQuestion": 7,
           "data": {
-            "headings": [
-              "The benefits of experience in management",
-              "The myths about younger workers' productivity",
-              "The importance of lifelong learning",
-              "The value of a multi-generational workforce",
-              "Economic implications of an ageing society",
-              "Challenges in retraining older staff",
-              "The shift in recruitment trends"
+            "title": "Indoor farming",
+            "sentences": [
+              {
+                "questionNumber": 1,
+                "content": [
+                  "Some food plants, including ",
+                  { "id": "1", "type": "input" },
+                  ", are already grown indoors."
+                ]
+              },
+              {
+                "questionNumber": 2,
+                "content": [
+                  "Vertical farms would be located in ",
+                  { "id": "2", "type": "input" },
+                  ", meaning that there would be less need to take them long distances to customers."
+                ]
+              },
+              {
+                "questionNumber": 3,
+                "content": [
+                  "Vertical farms could use methane from plants and animals to produce ",
+                  { "id": "3", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "questionNumber": 4,
+                "content": [
+                  "The consumption of ",
+                  { "id": "4", "type": "input" },
+                  " would be cut because agricultural vehicles would be unnecessary."
+                ]
+              },
+              {
+                "questionNumber": 5,
+                "content": [
+                  "The fact that vertical farms would need ",
+                  { "id": "5", "type": "input" },
+                  " light is a disadvantage."
+                ]
+              },
+              {
+                "questionNumber": 6,
+                "content": [
+                  "One form of vertical farming involves planting in ",
+                  { "id": "6", "type": "input" },
+                  " which are not fixed."
+                ]
+              },
+              {
+                "questionNumber": 7,
+                "content": [
+                  "The most probable development is that food will be grown on ",
+                  { "id": "7", "type": "input" },
+                  " in towns and cities."
+                ]
+              }
             ]
           }
         },
         {
           "type": "IDENTIFICATION",
-          "instruction": "",
-          "startQuestion": 6,
-          "endQuestion": 8,
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE** if the statement agrees with the information, **FALSE** if the statement contradicts the information, or **NOT GIVEN** if there is no information on this.",
+          "startQuestion": 8,
+          "endQuestion": 13,
           "data": {
             "optionsType": "TRUE_FALSE",
             "questions": [
-              {
-                "id": "6",
-                "text": "Marie Curie’s husband was a joint winner of both Marie’s Nobel Prizes."
-              },
-              {
-                "id": "7",
-                "text": "Marie became interested in science when she was a child."
-              },
-              {
-                "id": "8",
-                "text": "Marie was able to attend the Sorbonne because of her sister’s financial contribution."
-              }
+              { "id": "8",  "text": "Methods for predicting the Earth's population have recently changed." },
+              { "id": "9",  "text": "Human beings are responsible for some of the destruction to food-producing land." },
+              { "id": "10", "text": "The crops produced in vertical farms will depend on the season." },
+              { "id": "11", "text": "Some damage to food crops is caused by climate change." },
+              { "id": "12", "text": "Fertilisers will be needed for certain crops in vertical farms." },
+              { "id": "13", "text": "Vertical farming will make plants less likely to be affected by infectious diseases." }
             ]
           }
         }
@@ -78,109 +105,49 @@
     },
     {
       "sectionNumber": 2,
-      "title": "Part 2",
+      "title": "Reading Passage 2",
       "passage": {
-        "title": "The Impact of Urbanization on the Local Economy",
+        "title": "The Falkirk Wheel",
         "sections": [
           {
-            "content": "Urbanization is a global phenomenon that has significant implications for local economies. As people move from rural areas to cities in search of better opportunities, the demand for housing, infrastructure, and services increases. This shift often leads to a rise in property values and a change in the traditional business landscape. For instance, small-scale farming and local crafts may be replaced by large-scale industrial activities and modern retail outlets. While these changes can bring economic growth and new jobs, they also require the workforce to adapt to new technologies and skills."
+            "content": "[Placeholder passage text for The Falkirk Wheel. The real passage describes the Falkirk Wheel, a rotating boat lift in Scotland that reconnects the Forth & Clyde Canal with the Union Canal. It discusses its design, engineering, construction, and how it works using the Archimedes principle to balance the two gondolas.]"
           }
         ]
       },
       "questionGroups": [
         {
-          "type": "SENTENCE_COMPLETION",
-          "instruction": "Complete the sentences below. Write **NO MORE THAN TWO WORDS** for each answer.",
-          "startQuestion": 11,
-          "endQuestion": 14,
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2? Write **TRUE** if the statement agrees with the information, **FALSE** if the statement contradicts the information, or **NOT GIVEN** if there is no information on this.",
+          "startQuestion": 14,
+          "endQuestion": 19,
           "data": {
-            "sentences": [
-              {
-                "questionNumber": 11,
-                "content": [
-                  "The local museum is famous for its collection of ",
-                  {
-                    "id": "11",
-                    "type": "input"
-                  },
-                  " from the Victorian era."
-                ]
-              },
-              {
-                "questionNumber": 12,
-                "content": [
-                  "Visitors are not allowed to bring ",
-                  {
-                    "id": "12",
-                    "type": "input"
-                  },
-                  " into the exhibition rooms."
-                ]
-              },
-              {
-                "questionNumber": 13,
-                "content": [
-                  "The guided tour takes approximately ",
-                  {
-                    "id": "13",
-                    "type": "input"
-                  },
-                  " and ends at the gift shop."
-                ]
-              },
-              {
-                "questionNumber": 14,
-                "content": [
-                  "If you want to have lunch, the cafe is located next to the ",
-                  {
-                    "id": "14",
-                    "type": "input"
-                  },
-                  "."
-                ]
-              }
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "14", "text": "The Falkirk Wheel has linked the Forth & Clyde Canal with the Union Canal for the first time in their history." },
+              { "id": "15", "text": "There was some opposition to the design of the Falkirk Wheel at first." },
+              { "id": "16", "text": "The Falkirk Wheel was initially put together at the location where its components were manufactured." },
+              { "id": "17", "text": "The Falkirk Wheel is the only boat lift in the world which has steel sections bolted together by hand." },
+              { "id": "18", "text": "The weight of the gondolas varies according to the size of boat being carried." },
+              { "id": "19", "text": "The construction of the Falkirk Wheel site took into account the presence of a nearby ancient monument." }
             ]
           }
         },
         {
-          "type": "SUMMARY_COMPLETION",
-          "instruction": "Complete the summary below. Write **NO MORE THAN TWO WORDS** for each answer.",
-          "startQuestion": 15,
-          "endQuestion": 20,
+          "type": "DIAGRAM_LABELLING",
+          "instruction": "Label the diagram below.\nChoose **ONE WORD** from the passage for each answer.",
+          "startQuestion": 20,
+          "endQuestion": 26,
           "data": {
-            "title": "The Impact of Urbanization on the Local Economy",
-            "content": [
-              "The primary cause of the shift was the new ",
-              {
-                "id": "15",
-                "type": "input"
-              },
-              " which eventually led to a significant ",
-              {
-                "id": "16",
-                "type": "input"
-              },
-              " in the area's overall income. Many residents noticed that the traditional ",
-              {
-                "id": "17",
-                "type": "input"
-              },
-              " were slowly disappearing, replaced by modern facilities. However, some positive effects included the establishment of a ",
-              {
-                "id": "18",
-                "type": "input"
-              },
-              " that brought new jobs, although it required workers to undergo ",
-              {
-                "id": "19",
-                "type": "input"
-              },
-              ". In the long term, experts believe that maintaining a balance will depend on improved ",
-              {
-                "id": "20",
-                "type": "input"
-              },
-              "."
+            "title": "How a boat is lifted on the Falkirk Wheel",
+            "imageSrc": "/images/book-11-test-1-passage2-falkirk-wheel.jpg",
+            "questions": [
+              { "id": "20", "questionNumber": 20 },
+              { "id": "21", "questionNumber": 21 },
+              { "id": "22", "questionNumber": 22 },
+              { "id": "23", "questionNumber": 23 },
+              { "id": "24", "questionNumber": 24 },
+              { "id": "25", "questionNumber": 25 },
+              { "id": "26", "questionNumber": 26 }
             ]
           }
         }
@@ -188,174 +155,89 @@
     },
     {
       "sectionNumber": 3,
-      "title": "Part 3",
+      "title": "Reading Passage 3",
       "passage": {
-        "title": "Research Methodology in Higher Education",
+        "title": "Geo-engineering: time to embrace it?",
         "sections": [
-          {
-            "content": "Conducting research in a university setting requires careful planning and a robust methodology. Students are often encouraged to start by reviewing existing literature to identify gaps in knowledge. Once a research question is formulated, the next step involves designing appropriate data collection tools, such as questionnaires or interview guides. A common concern for researchers is the sample size, as a small sample may not be representative of the broader population. Ethical approval is also a critical requirement, ensuring that the research respects the rights and privacy of participants."
-          }
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" },
+          { "label": "H", "content": "[Placeholder for Paragraph H]" }
         ]
       },
       "questionGroups": [
         {
-          "type": "MULTIPLE_CHOICE",
-          "instruction": "Choose the correct answer.",
-          "startQuestion": 21,
-          "endQuestion": 24,
-          "data": {
-            "questions": [
-              {
-                "id": "21",
-                "text": "What is the main purpose of the student's research project?",
-                "options": [
-                  { "letter": "A", "text": "To compare different teaching methods." },
-                  { "letter": "B", "text": "To analyse how students use the library." },
-                  { "letter": "C", "text": "To investigate the effects of online learning." }
-                ]
-              },
-              {
-                "id": "22",
-                "text": "The student's supervisor suggests that she should first",
-                "options": [
-                  { "letter": "A", "text": "look at the existing research on the topic." },
-                  { "letter": "B", "text": "design a questionnaire for the participants." },
-                  { "letter": "C", "text": "arrange interviews with the relevant staff." }
-                ]
-              },
-              {
-                "id": "23",
-                "text": "Why is the student concerned about the sample size?",
-                "options": [
-                  { "letter": "A", "text": "It may not represent the wider population." },
-                  { "letter": "B", "text": "It will take too long to collect the data." },
-                  { "letter": "C", "text": "It requires approval from the ethics board." }
-                ]
-              },
-              {
-                "id": "24",
-                "text": "What does the supervisor recommend regarding the data analysis?",
-                "options": [
-                  { "letter": "A", "text": "Using specialist software from the beginning." },
-                  { "letter": "B", "text": "Starting with a simple manual approach." },
-                  { "letter": "C", "text": "Asking a statistician to review the results." }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "type": "MULTIPLE_CHOICE",
-          "instruction": "Choose TWO correct answers.",
-          "startQuestion": 25,
-          "endQuestion": 26,
-          "data": {
-            "questions": [
-              {
-                "id": "25 – 26",
-                "text": "Which TWO problems did the students face when starting their project?",
-                "options": [
-                  { "letter": "A", "text": "Difficulty finding relevant sources." },
-                  { "letter": "B", "text": "Lack of support from their tutor." },
-                  { "letter": "C", "text": "Not enough time to complete the work." },
-                  { "letter": "D", "text": "Problems accessing the university database." },
-                  { "letter": "E", "text": "Disagreements about the research focus." }
-                ],
-                "multiple": true,
-                "count": 2
-              }
-            ]
-          }
-        },
-        {
-          "type": "SENTENCE_COMPLETION_DRAG_DROP",
-          "instruction": "Complete each sentence with the correct ending. Choose the correct answer and move it into the gap.",
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 3 has eight paragraphs **A–H**. Which paragraph contains the following information? Write the correct letter, **A–H**, in boxes **27–29** on your answer sheet.",
           "startQuestion": 27,
           "endQuestion": 29,
           "data": {
-            "options": [
-              "she has the greatest knowledge of Elizabethan London.",
-              "it drew on a wider range of primary sources than usual.",
-              "she wanted to focus on the lives of ordinary people.",
-              "it was the first study to use digital archival records.",
-              "her findings challenged previously accepted conclusions."
-            ],
-            "sentences": [
-              {
-                "questionNumber": 27,
-                "content": [
-                  "Harkness's research method was different to that of other writers because ",
-                  { "type": "dropzone", "id": "27" }
-                ]
-              },
-              {
-                "questionNumber": 28,
-                "content": [
-                  "Academic reviewers were impressed by Harkness's book because ",
-                  { "type": "dropzone", "id": "28" }
-                ]
-              },
-              {
-                "questionNumber": 29,
-                "content": [
-                  "Harkness chose Elizabethan London as her subject because ",
-                  { "type": "dropzone", "id": "29" }
-                ]
-              }
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H"],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "mention of a geo-engineering project based on an earlier natural phenomenon" },
+              { "id": "28", "questionNumber": 28, "text": "an example of a successful use of geo-engineering" },
+              { "id": "29", "questionNumber": 29, "text": "a common definition of geo-engineering" }
             ]
           }
-        }
-      ]
-    },
-    {
-      "sectionNumber": 4,
-      "title": "Part 4",
-      "passage": {
-        "title": "A History of Innovation",
-        "sections": [
-          {
-            "content": "The history of human civilization is marked by a series of transformative inventions and discoveries. From the ancient use of gunpowder in China to the development of the decimal system in India, different cultures have contributed significantly to global progress. The British Industrial Revolution brought about the first steam engines, forever changing manufacturing and transport. In the Islamic world, scholars made groundbreaking advances in algebra and medicine. More recently, the digital age has been shaped by the development of internet protocols in the United States, connecting the world in unprecedented ways."
-          }
-        ]
-      },
-      "questionGroups": [
+        },
         {
-          "type": "DIAGRAM_LABELLING",
-          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
-          "startQuestion": 31,
-          "endQuestion": 35,
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below.\nChoose **ONE WORD** from the passage for each answer.",
+          "startQuestion": 30,
+          "endQuestion": 36,
           "data": {
-            "title": "The Water Cycle",
-            "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Water_cycle.png/1200px-Water_cycle.png",
-            "questions": [
-              { "id": "31", "questionNumber": 31 },
-              { "id": "32", "questionNumber": 32 },
-              { "id": "33", "questionNumber": 33 },
-              { "id": "34", "questionNumber": 34 },
-              { "id": "35", "questionNumber": 35 }
+            "title": "GEO-ENGINEERING PROJECTS",
+            "headers": ["Procedure", "Aim"],
+            "rows": [
+              [
+                "put a large number of tiny spacecraft into orbit far above Earth",
+                ["to create a ", { "id": "30", "type": "input" }, " that would reduce the amount of light reaching Earth"]
+              ],
+              [
+                ["place ", { "id": "31", "type": "input" }, " in the sea"],
+                ["to encourage ", { "id": "32", "type": "input" }, " to form"]
+              ],
+              [
+                "release aerosol sprays into the stratosphere",
+                ["to create ", { "id": "33", "type": "input" }, " that would reduce the amount of light reaching Earth"]
+              ],
+              [
+                ["fix strong ", { "id": "34", "type": "input" }, " to Greenland ice sheets"],
+                "to prevent icebergs moving into the sea"
+              ],
+              [
+                "plant trees in Russian Arctic that would lose their leaves in winter",
+                ["to allow the ", { "id": "35", "type": "input" }, " to reflect radiation"]
+              ],
+              [
+                ["change the direction of ", { "id": "36", "type": "input" }],
+                "to bring more cold water into ice-forming areas"
+              ]
             ]
           }
         },
         {
           "type": "MATCHING_FEATURE",
-          "instruction": "Choose the correct group, A–E, for each item. You may choose any group more than once.",
-          "startQuestion": 36,
+          "instruction": "Look at the following statements and the list of scientists below. Match each statement with the correct scientist, **A–D**. Write the correct letter, **A–D**, in boxes **37–40** on your answer sheet.",
+          "startQuestion": 37,
           "endQuestion": 40,
           "data": {
-            "title": "First invented or used by",
+            "title": "List of Scientists",
             "options": [
-              { "letter": "A", "text": "the Chinese" },
-              { "letter": "B", "text": "the Indians" },
-              { "letter": "C", "text": "the British" },
-              { "letter": "D", "text": "the Arabs" },
-              { "letter": "E", "text": "the Americans" }
+              { "letter": "A", "text": "Roger Angel" },
+              { "letter": "B", "text": "Phil Rasch" },
+              { "letter": "C", "text": "Dan Lunt" },
+              { "letter": "D", "text": "Martin Sommerkorn" }
             ],
             "questions": [
-              { "id": "36", "questionNumber": 36, "text": "The use of gunpowder in warfare." },
-              { "id": "37", "questionNumber": 37, "text": "The development of the decimal system." },
-              { "id": "38", "questionNumber": 38, "text": "The first industrial steam engine." },
-              { "id": "39", "questionNumber": 39, "text": "The invention of algebra." },
-              { "id": "40", "questionNumber": 40, "text": "The creation of the first internet protocol." }
+              { "id": "37", "questionNumber": 37, "text": "The effects of geo-engineering may not be long-lasting." },
+              { "id": "38", "questionNumber": 38, "text": "Geo-engineering is a topic worth exploring." },
+              { "id": "39", "questionNumber": 39, "text": "It may be necessary to limit the effectiveness of geo-engineering projects." },
+              { "id": "40", "questionNumber": 40, "text": "Research into non-fossil-based fuels cannot be replaced by geo-engineering." }
             ]
           }
         }

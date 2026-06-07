@@ -232,7 +232,16 @@
           "endQuestion": 30,
           "data": {
             "title": "",
-            "options": ["size", "escape", "age", "water", "cereal", "calculations", "changes", "colour"],
+            "options": [
+              { "letter": "A", "text": "size" },
+              { "letter": "B", "text": "escape" },
+              { "letter": "C", "text": "age" },
+              { "letter": "D", "text": "water" },
+              { "letter": "E", "text": "cereal" },
+              { "letter": "F", "text": "calculations" },
+              { "letter": "G", "text": "changes" },
+              { "letter": "H", "text": "colour" }
+            ],
             "steps": [
               {
                 "type": "interactive",

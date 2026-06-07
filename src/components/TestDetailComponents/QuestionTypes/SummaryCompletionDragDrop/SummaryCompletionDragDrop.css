@@ -1,0 +1,167 @@
+/* ═══════════════════════════════════════════════════════════════
+   Summary Completion (Drag & Drop)
+   ═══════════════════════════════════════════════════════════════ */
+
+.sum-dnd {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sum-dnd .sum-dnd__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.sum-dnd .sum-dnd__instruction {
+    font-size: 16px !important;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sum-dnd .sum-dnd__title {
+    font-size: 18px !important;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: #000;
+}
+
+/* ─── Paragraph ─── */
+
+.sum-dnd .sum-dnd__paragraph {
+    font-size: 15px !important;
+    line-height: 2.4;
+    color: #000;
+    margin-bottom: 24px;
+    word-wrap: break-word;
+}
+
+.sum-dnd .sum-dnd__paragraph span {
+    font-size: 15px !important;
+    vertical-align: middle;
+}
+
+/* ─── Options Pool ─── */
+
+.sum-dnd .sum-dnd__pool {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 14px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    min-height: 54px;
+}
+
+.sum-dnd .sum-dnd__pool--over {
+    background-color: #e6edff;
+    outline: 2px dashed #0056b3;
+    outline-offset: -2px;
+}
+
+/* ─── Draggable words ─── */
+
+.sum-dnd .draggable-word {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 14px;
+    background-color: #fff;
+    border: 1px solid #3e3e3e !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #222;
+    cursor: move;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.sum-dnd .draggable-word:hover {
+    background-color: #f5f5f5;
+}
+
+.sum-dnd .draggable-word--dragging {
+    opacity: 0.01 !important;
+}
+
+.sum-dnd .draggable-word--disabled {
+    visibility: hidden !important;
+    pointer-events: none;
+}
+
+/* ─── Drop Zone (inline in paragraph) ─── */
+
+.sum-dnd .dropzone {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 140px;
+    min-height: 26px;
+    background-color: #fff;
+    border: 1.7px dashed #0056b3 !important;
+    border-radius: 8px !important;
+    margin: 1px 3px;
+    padding: 0;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.sum-dnd .dropzone .dropzone__placeholder {
+    color: #000;
+    font-size: 13px !important;
+    font-weight: 700;
+}
+
+.sum-dnd .dropzone--over {
+    background-color: #e6edff;
+    border-color: #0056b3 !important;
+}
+
+.sum-dnd .dropzone--filled {
+    border-color: #0056b3 !important;
+    border-style: solid !important;
+    min-width: 140px;
+    background-color: transparent;
+    cursor: move;
+}
+
+.sum-dnd .dropzone--filled.dropzone--over {
+    background-color: #e6edff !important;
+    border-color: #003d82 !important;
+    border-style: dashed !important;
+}
+
+/* Word placed inside a dropzone */
+.sum-dnd .dropzone .draggable-word {
+    margin: 0;
+    border: none !important;
+    background-color: transparent !important;
+    color: #222;
+    font-size: 14px !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    min-width: auto;
+    min-height: 26px;
+    box-shadow: none !important;
+    cursor: move;
+}
+
+.sum-dnd .dropzone .draggable-word:hover {
+    background-color: transparent !important;
+}
+
+.sum-dnd .dropzone .draggable-word--dragging {
+    opacity: 0.01 !important;
+}

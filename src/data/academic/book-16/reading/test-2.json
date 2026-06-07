@@ -1,0 +1,323 @@
+{
+  "testId": "book-16-reading-test-2",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Academic Reading Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Geoglyphs of England",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about geoglyphs in England: most are located in a particular area (south/southern England); more in the shape of a horse than any other creature; the Uffington White Horse was recently dated — people were mistaken about its age; historians have NOT come to an agreement about the Long Man of Wilmington's origins; geoglyphs were created by removing turf to expose white chalk (not placing chalk on hillside); many are still visible (not no longer visible); shapes have been altered over time; Uffington White Horse fame is NOT due to its size. Location: 2.5 km from Uffington village, near Ridgeway (ancient road), near barrows/burial mounds. Dating: first mention in documents from 1070s; coins 100 BCE–1 BCE show similar horses; sediment analysis shows Late Bronze Age / Early Iron Age. Possible reasons: land ownership symbol, ancient ritual, goddess Epona (protection of horses and fertility/riders), Welsh goddess Rhiannon.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–8 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "Most geoglyphs in England are located in a particular area of the country." },
+              { "id": "2", "text": "There are more geoglyphs in the shape of a horse than any other creature." },
+              { "id": "3", "text": "A recent dating of the Uffington White Horse indicates that people were mistaken about its age." },
+              { "id": "4", "text": "Historians have come to an agreement about the origins of the Long Man of Wilmington." },
+              { "id": "5", "text": "Geoglyphs were created by people placing white chalk on the hillside." },
+              { "id": "6", "text": "Many geoglyphs in England are no longer visible." },
+              { "id": "7", "text": "The shape of some geoglyphs has been altered over time." },
+              { "id": "8", "text": "The fame of the Uffington White Horse is due to its size." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 9–13 on your answer sheet.",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "title": "The Uffington White Horse",
+            "sections": [
+              {
+                "heading": "The location of the Uffington White Horse:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["a distance of 2.5 km from Uffington village"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["near an ancient road known as the ", { "id": "9", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["close to an ancient cemetery that has a number of burial mounds"]
+                  }
+                ]
+              },
+              {
+                "heading": "Dating the Uffington White Horse:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["first reference to White Horse Hill appears in ", { "id": "10", "type": "input" }, " from the 1070s"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["horses shown on coins from the period 100 BCE – 1 BCE are similar in appearance"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["according to analysis of the surrounding ", { "id": "11", "type": "input" }, ", the Horse is Late Bronze Age / Early Iron Age"]
+                  }
+                ]
+              },
+              {
+                "heading": "Possible reasons for creation of the Uffington White Horse:",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["an emblem to indicate land ownership"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["formed part of an ancient ritual"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["was a representation of goddess Epona — associated with protection of horses and ", { "id": "12", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["was a representation of a Welsh goddess called ", { "id": "13", "type": "input" }]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "I Contain Multitudes",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about microbes (based on Ed Yong's book 'I Contain Multitudes'): microbes adapt to environment; we have more microbial cells than human cells; a discovery about microbes and disease. Yong argues we should be more tolerant of microbes; only a small number cause illness; relationship with microbes is one of partnership. Microbes aid digestion, remove poisons, produce vitamins, may reduce obesity. Problems: poor nutrition, overuse of antibiotics, excessive focus on cleanliness. Antibacterial home products may fail to have desired effect. Children should NOT avoid bacteria. Book has appropriate number of case studies; squid example may have limited appeal; dengue fever control has been surprisingly successful; microbes in hospital walls are still being researched (not yet done).]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 14–16 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 16,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "text": "What point does the writer make about microbes in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "They adapt quickly to their environment." },
+                  { "letter": "B", "text": "The risk they pose has been exaggerated." },
+                  { "letter": "C", "text": "They are more plentiful in animal life than plant life." },
+                  { "letter": "D", "text": "They will continue to exist for longer than the human race." }
+                ]
+              },
+              {
+                "id": "15",
+                "text": "In the second paragraph, the writer is impressed by the fact that",
+                "options": [
+                  { "letter": "A", "text": "each species tends to have vastly different microbes." },
+                  { "letter": "B", "text": "some parts of the body contain relatively few microbes." },
+                  { "letter": "C", "text": "the average individual has more microbial cells than human ones." },
+                  { "letter": "D", "text": "scientists have limited understanding of how microbial cells behave." }
+                ]
+              },
+              {
+                "id": "16",
+                "text": "What is the writer doing in the fifth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "explaining how a discovery was made" },
+                  { "letter": "B", "text": "comparing scientists' theories about microbes" },
+                  { "letter": "C", "text": "describing confusion among scientists" },
+                  { "letter": "D", "text": "giving details of how microbes cause disease" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–H**, below.\nWrite the correct letter, **A–H**, in boxes 17–20 on your answer sheet.",
+          "startQuestion": 17,
+          "endQuestion": 20,
+          "data": {
+            "title": "We should be more tolerant of microbes",
+            "options": [
+              { "letter": "A", "text": "solution" },
+              { "letter": "B", "text": "partnership" },
+              { "letter": "C", "text": "destruction" },
+              { "letter": "D", "text": "exaggeration" },
+              { "letter": "E", "text": "cleanliness" },
+              { "letter": "F", "text": "regulations" },
+              { "letter": "G", "text": "illness" },
+              { "letter": "H", "text": "nutrition" }
+            ],
+            "content": [
+              "Yong's book argues that we should be more tolerant of microbes. Many have a beneficial effect, and only a relatively small number lead to ",
+              { "id": "17", "type": "dropzone" },
+              ", and although it is misleading to think of microbes as 'friendly', we should also stop thinking of them as the enemy. In fact, we should accept that our relationship with microbes is one based on ",
+              { "id": "18", "type": "dropzone" },
+              ".\n\nNew research shows that microbes have numerous benefits for humans. Amongst other things, they aid digestion, remove poisons, produce vitamins and may even help reduce obesity. However, there is a growing problem. Our poor ",
+              { "id": "19", "type": "dropzone" },
+              ", our overuse of antibiotics, and our excessive focus on ",
+              { "id": "20", "type": "dropzone" },
+              " are upsetting the bacterial balance and may be contributing to the huge increase in allergies and immune system problems."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?\nIn boxes 21–26 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "21", "text": "It is possible that using antibacterial products in the home fails to have the desired effect." },
+              { "id": "22", "text": "It is a good idea to ensure that children come into contact with as few bacteria as possible." },
+              { "id": "23", "text": "Yong's book contains more case studies than are necessary." },
+              { "id": "24", "text": "The case study about bacteria that prevent squid from being attacked may have limited appeal." },
+              { "id": "25", "text": "Efforts to control dengue fever have been surprisingly successful." },
+              { "id": "26", "text": "Microbes that reduce the risk of infection have already been put inside the walls of some hospital wards." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The nature of wisdom",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about wisdom: a basic assumption about wisdom may be wrong; Grossmann researches wise reasoning. Wise decision-making can vary greatly from person to person. Grossmann claims wisdom level is different in different circumstances (not fixed). The fifth paragraph describes a recommended strategy (avoiding first-person perspective) to reason wisely. Four characteristics of wise reasoning: intellectual humility/modesty about extent of knowledge, taking into account other opinions/viewpoints, broad view of situations, awareness of likelihood of change in relationships. Better to regard scenarios with detachment/objectivity; avoiding first-person perspective → focus on fairness and other moral ideals. Experiments: job prospects (students could choose perspective); couples experiment (participants NOT aware it was about wise reasoning; relationship length had NO impact on results); in both experiments, detached viewpoint led to wiser decisions. Wisdom is NOT determined mainly by intelligence.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–30 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "What point does the writer make in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Wisdom appears to be unique to the human race." },
+                  { "letter": "B", "text": "A basic assumption about wisdom may be wrong." },
+                  { "letter": "C", "text": "Concepts of wisdom may depend on the society we belong to." },
+                  { "letter": "D", "text": "There is still much to be discovered about the nature of wisdom." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "What does Igor Grossmann suggest about the ability to make wise decisions?",
+                "options": [
+                  { "letter": "A", "text": "It can vary greatly from one person to another." },
+                  { "letter": "B", "text": "Earlier research into it was based on unreliable data." },
+                  { "letter": "C", "text": "The importance of certain influences on it was underestimated." },
+                  { "letter": "D", "text": "Various branches of psychology define it according to their own criteria." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "According to the third paragraph, Grossmann claims that the level of wisdom an individual shows",
+                "options": [
+                  { "letter": "A", "text": "can be greater than they think it is." },
+                  { "letter": "B", "text": "will be different in different circumstances." },
+                  { "letter": "C", "text": "may be determined by particular aspects of their personality." },
+                  { "letter": "D", "text": "should develop over time as a result of their life experiences." }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "What is described in the fifth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "a difficulty encountered when attempting to reason wisely" },
+                  { "letter": "B", "text": "an example of the type of person who is likely to reason wisely" },
+                  { "letter": "C", "text": "a controversial view about the benefits of reasoning wisely" },
+                  { "letter": "D", "text": "a recommended strategy that can help people to reason wisely" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–J**, below.\nWrite the correct letter, **A–J**, in boxes 31–35 on your answer sheet.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "The characteristics of wise reasoning",
+            "options": [
+              { "letter": "A", "text": "opinions" },
+              { "letter": "B", "text": "confidence" },
+              { "letter": "C", "text": "view" },
+              { "letter": "D", "text": "modesty" },
+              { "letter": "E", "text": "problems" },
+              { "letter": "F", "text": "objectivity" },
+              { "letter": "G", "text": "fairness" },
+              { "letter": "H", "text": "experiences" },
+              { "letter": "I", "text": "range" },
+              { "letter": "J", "text": "reasons" }
+            ],
+            "content": [
+              "Igor Grossmann and colleagues have established four characteristics which enable us to make wise decisions. It is important to have a certain degree of ",
+              { "id": "31", "type": "dropzone" },
+              " regarding the extent of our knowledge, and to take into account ",
+              { "id": "32", "type": "dropzone" },
+              " which may not be the same as our own. We should also be able to take a broad ",
+              { "id": "33", "type": "dropzone" },
+              " of any situation. Another key characteristic is being aware of the likelihood of alterations in the way that people relate to each other.\n\nGrossmann also believes that it is better to regard scenarios with ",
+              { "id": "34", "type": "dropzone" },
+              ". By avoiding the first-person perspective, we focus more on ",
+              { "id": "35", "type": "dropzone" },
+              " and on other moral ideals, which in turn leads to wiser decision-making."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?\nIn boxes 36–40 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "36", "text": "Students participating in the job prospects experiment could choose one of two perspectives to take." },
+              { "id": "37", "text": "Participants in the couples experiment were aware that they were taking part in a study about wise reasoning." },
+              { "id": "38", "text": "In the couples experiments, the length of the couples' relationships had an impact on the results." },
+              { "id": "39", "text": "In both experiments, the participants who looked at the situation from a more detached viewpoint tended to make wiser decisions." },
+              { "id": "40", "text": "Grossmann believes that a person's wisdom is determined by their intelligence to only a very limited extent." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

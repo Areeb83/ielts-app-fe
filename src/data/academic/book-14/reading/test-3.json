@@ -1,0 +1,237 @@
+{
+  "testId": "book-14-reading-test-3",
+  "bookId": "book-14",
+  "title": "Cambridge IELTS 14 – Academic Reading Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Implicit theories of intelligence",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Section A]" },
+          { "label": "B", "content": "[Placeholder for Section B]" },
+          { "label": "C", "content": "[Placeholder for Section C]" },
+          { "label": "D", "content": "[Placeholder for Section D]" },
+          { "label": "E", "content": "[Placeholder for Section E]" },
+          { "label": "F", "content": "[Placeholder for Section F]" },
+          { "label": "G", "content": "[Placeholder for Section G]" },
+          { "label": "H", "content": "[Placeholder for Section H]" },
+          { "label": "I", "content": "[Placeholder for Section I]" },
+          { "label": "J", "content": "[Placeholder for Section J]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 1 has ten sections, **A–J**.\nWhich section contains the following information?\nWrite the correct letter, **A–J**, in boxes 1–3 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+            "questions": [
+              { "id": "1", "questionNumber": 1, "text": "information about how non-scientists' assumptions about intelligence influence their behaviour towards others" },
+              { "id": "2", "questionNumber": 2, "text": "a reference to lack of clarity over the definition of intelligence" },
+              { "id": "3", "questionNumber": 3, "text": "the point that a researcher's implicit and explicit theories may be very different" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 1?\nIn boxes 4–6 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 4,
+          "endQuestion": 6,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "4", "text": "Slow language development in children is likely to prove disappointing to their parents." },
+              { "id": "5", "text": "People's expectations of what children should gain from education are universal." },
+              { "id": "6", "text": "Scholars may discuss theories without fully understanding each other." }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 7–13) and the list of theories below.\nMatch each statement with the correct theory, **A**, **B**, or **C**.\nWrite the correct letter, **A**, **B**, or **C**, in boxes 7–13 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 7,
+          "endQuestion": 13,
+          "data": {
+            "title": "List of Theories",
+            "options": [
+              { "letter": "A", "text": "Hamiltonian" },
+              { "letter": "B", "text": "Jeffersonian" },
+              { "letter": "C", "text": "Jacksonian" }
+            ],
+            "questions": [
+              { "id": "7",  "questionNumber": 7,  "text": "It is desirable for the same possibilities to be open to everyone." },
+              { "id": "8",  "questionNumber": 8,  "text": "No section of society should have preferential treatment at the expense of another." },
+              { "id": "9",  "questionNumber": 9,  "text": "People should only gain benefits on the basis of what they actually achieve." },
+              { "id": "10", "questionNumber": 10, "text": "Variation in intelligence begins at birth." },
+              { "id": "11", "questionNumber": 11, "text": "The more intelligent people should be in positions of power." },
+              { "id": "12", "questionNumber": 12, "text": "Everyone can develop the same abilities." },
+              { "id": "13", "questionNumber": 13, "text": "People of low intelligence are likely to lead uncontrolled lives." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Insects as a source of drugs",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" },
+          { "label": "H", "content": "[Placeholder for Paragraph H]" },
+          { "label": "I", "content": "[Placeholder for Paragraph I]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has nine paragraphs, **A–I**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–I**, in boxes 14–20 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "mention of factors driving a renewed interest in natural medicinal compounds" },
+              { "id": "15", "questionNumber": 15, "text": "how recent technological advances have made insect research easier" },
+              { "id": "16", "questionNumber": 16, "text": "examples of animals which use medicinal substances from nature" },
+              { "id": "17", "questionNumber": 17, "text": "reasons why it is challenging to use insects in drug research" },
+              { "id": "18", "questionNumber": 18, "text": "reference to how interest in drug research may benefit wildlife" },
+              { "id": "19", "questionNumber": 19, "text": "a reason why nature-based medicines fell out of favour for a period" },
+              { "id": "20", "questionNumber": 20, "text": "an example of an insect-derived medicine in use at the moment" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**.\nWrite the correct letters in boxes 21 and 22 on your answer sheet.\nWhich **TWO** of the following make insects interesting for drug research?",
+          "startQuestion": 21,
+          "endQuestion": 22,
+          "data": {
+            "questions": [
+              {
+                "id": "21 – 22",
+                "text": "",
+                "options": [
+                  { "letter": "A", "text": "the huge number of individual insects in the world" },
+                  { "letter": "B", "text": "the variety of substances insects have developed to protect themselves" },
+                  { "letter": "C", "text": "the potential to extract and make use of insects' genetic codes" },
+                  { "letter": "D", "text": "the similarities between different species of insect" },
+                  { "letter": "E", "text": "the manageable size of most insects" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 23–26 on your answer sheet.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "title": "Research at Aberystwyth University",
+            "content": [
+              "Ross Piper and fellow zoologists at Aberystwyth University are using their expertise in ",
+              { "id": "23", "type": "input" },
+              " when undertaking bioprospecting with insects. They are especially interested in the compounds that insects produce to overpower and preserve their ",
+              { "id": "24", "type": "input" },
+              ". They are also interested in compounds which insects use to protect themselves from pathogenic bacteria and fungi found in their ",
+              { "id": "25", "type": "input" },
+              ". Piper hopes that these substances will be useful in the development of drugs such as ",
+              { "id": "26", "type": "input" },
+              "."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Making every drop count",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 3 about play and learning. The passage discusses how play can be divided into categories (Rubin et al.), how adults' goals affect play (Hirsch-Pasek et al.), how combining work with play helps children learn (Joan Goodman), how certain elements of play are more significant (Stuart Brown), how activities can be classified on a scale of playfulness (Pellegrini), and guided play where adults contribute to the environment or encourage children to investigate aspects of a game, based on the child's desire to play, giving children real autonomy or directing play toward particular goals.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 27–31) and the list of researchers below.\nMatch each statement with the correct researcher, **A–G**.\nWrite the correct letter, **A–G**, in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "title": "List of Researchers",
+            "options": [
+              { "letter": "A", "text": "Elkind" },
+              { "letter": "B", "text": "Miller & Almon" },
+              { "letter": "C", "text": "Rubin et al." },
+              { "letter": "D", "text": "Stuart Brown" },
+              { "letter": "E", "text": "Pellegrini" },
+              { "letter": "F", "text": "Joan Goodman" },
+              { "letter": "G", "text": "Hirsch-Pasek et al." }
+            ],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "Play can be divided into a number of separate categories." },
+              { "id": "28", "questionNumber": 28, "text": "Adults' intended goals affect how they play with children." },
+              { "id": "29", "questionNumber": 29, "text": "Combining work with play may be the best way for children to learn." },
+              { "id": "30", "questionNumber": 30, "text": "Certain elements of play are more significant than others." },
+              { "id": "31", "questionNumber": 31, "text": "Activities can be classified on a scale of playfulness." }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 32–36 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "32", "text": "Children need toys in order to play." },
+              { "id": "33", "text": "It is a mistake to treat play and learning as separate types of activities." },
+              { "id": "34", "text": "Play helps children to develop their artistic talents." },
+              { "id": "35", "text": "Researchers have agreed on a definition of play." },
+              { "id": "36", "text": "Work and play differ in terms of whether or not they have a target." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 37–40 on your answer sheet.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "title": "Guided play",
+            "content": [
+              "In the simplest form of guided play, an adult contributes to the environment in which the child is playing. Alternatively, an adult can play with a child and develop the play, for instance by ",
+              { "id": "37", "type": "input" },
+              " the child to investigate different aspects of their game. Adults can help children to learn through play, and may make the activity rather structured, but it should still be based on the child's ",
+              { "id": "38", "type": "input" },
+              " to play. Play without the intervention of adults gives children real ",
+              { "id": "39", "type": "input" },
+              "; with adults, play can be ",
+              { "id": "40", "type": "input" },
+              " at particular goals. However, all forms of play should be an opportunity for children to have fun."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

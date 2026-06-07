@@ -30,6 +30,12 @@ const MatchingHeading: React.FC<MatchingHeadingProps> = ({
         (val) => typeof val === "string" && val !== ""
     ) as string[];
 
+    // Extract the Roman numeral prefix from a heading string e.g. "ii  An undisputed..." → "ii"
+    const getRomanId = (heading: string) => {
+        const match = heading.match(/^([ivxlc]+)\s+/i);
+        return match ? match[1].toLowerCase() : heading;
+    };
+
     const handleWordDragStart = (wordId: string, e: React.DragEvent<HTMLElement>) => {
         const ghost = e.currentTarget.cloneNode(true) as HTMLElement;
         ghost.style.position = "absolute";
@@ -96,21 +102,25 @@ const MatchingHeading: React.FC<MatchingHeadingProps> = ({
                         }}
                     >
                         <div className="matching-heading__pool-items options-pool__items">
-                            {data.headings.map((heading, index) => (
-                                <div key={index} className="matching-heading__item-wrapper">
-                                    <span className="matching-heading__roman">
-                                        {getRomanNumeral(index + 1)}
-                                    </span>
-                                    <DraggableWord
-                                        id={heading}
-                                        text={heading}
-                                        disabled={usedWords.includes(heading)}
-                                        isDragging={draggingWordId === heading}
-                                        onDragStart={handleWordDragStart}
-                                        onDragEnd={handleDragEnd}
-                                    />
-                                </div>
-                            ))}
+                            {data.headings.map((heading, index) => {
+                                const romanId = getRomanId(heading);
+                                const displayText = heading.replace(/^[ivxlc]+\s+/i, "").trim();
+                                return (
+                                    <div key={index} className="matching-heading__item-wrapper">
+                                        <span className="matching-heading__roman">
+                                            {getRomanNumeral(index + 1)}
+                                        </span>
+                                        <DraggableWord
+                                            id={romanId}
+                                            text={displayText}
+                                            disabled={usedWords.includes(romanId)}
+                                            isDragging={draggingWordId === romanId}
+                                            onDragStart={handleWordDragStart}
+                                            onDragEnd={handleDragEnd}
+                                        />
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

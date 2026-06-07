@@ -1,0 +1,230 @@
+{
+  "testId": "book-19-test-4",
+  "bookId": "book-19",
+  "title": "Cambridge IELTS 19 – Reading Test 4",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Butterflies in the UK",
+      "passage": {
+        "title": "Butterflies in the UK",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "questionNumber": 1, "text": "Forty years ago, there were fewer butterflies in Britain than at present." },
+              { "id": "2", "questionNumber": 2, "text": "Caterpillars are eaten by a number of different predators." },
+              { "id": "3", "questionNumber": 3, "text": "'Phenology' is a term used to describe a creature's ability to alter the location of a lifecycle event." },
+              { "id": "4", "questionNumber": 4, "text": "Some species of butterfly have a reduced lifespan due to spring temperature increases." },
+              { "id": "5", "questionNumber": 5, "text": "There is a clear reason for the adaptations that butterflies are making to climate change." },
+              { "id": "6", "questionNumber": 6, "text": "The data used in the study was taken from the work of amateur butterfly watchers." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 7,
+          "endQuestion": 13,
+          "data": {
+            "title": "Butterflies in the UK",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "The Small Blue" }] },
+              { "questionNumber": 7, "content": ["• lives in large ", { "id": "7", "type": "input" }] },
+              { "questionNumber": 8, "content": ["• first appears at the start of ", { "id": "8", "type": "input" }] },
+              { "content": ["• completes more than one reproductive cycle per year"] },
+              { "content": [{ "type": "bold", "text": "The High Brown Fritillary" }] },
+              { "content": ["• has one reproductive cycle"] },
+              { "questionNumber": 9, "content": ["• is considered to be more ", { "id": "9", "type": "input" }, " than other species"] },
+              { "questionNumber": 10, "content": ["• its caterpillars occupy a limited range of ", { "id": "10", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "The Silver-studded Blue" }] },
+              { "questionNumber": 11, "content": ["• is already able to reproduce twice a year in warm areas of ", { "id": "11", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "The White Admiral" }] },
+              { "questionNumber": 12, "content": ["• is found in ", { "id": "12", "type": "input" }, " areas of England"] },
+              { "questionNumber": 13, "content": ["• both climate change and the ", { "id": "13", "type": "input" }, " of the caterpillar are possible reasons for decline"] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "Mining the Sea Floor",
+      "passage": {
+        "title": "Mining the Sea Floor",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**. Which paragraph contains the following information?",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "reference to the rapidly increasing need for one raw material in the transport industry" },
+              { "id": "15", "questionNumber": 15, "text": "a rough estimate of the area of the Earth covered by the oceans" },
+              { "id": "16", "questionNumber": 16, "text": "how a particular underwater habitat, where minerals and organisms co-exist, is formed" },
+              { "id": "17", "questionNumber": 17, "text": "reference to the fact that the countries of the world have yet to agree on rules for the exploration of the seabed" }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Match each statement with the correct person or people, **A–E**. You may use any letter more than once.",
+          "startQuestion": 18,
+          "endQuestion": 23,
+          "data": {
+            "title": "List of People",
+            "options": [
+              { "letter": "A", "text": "Professor Mat Upton" },
+              { "letter": "B", "text": "Julie Hunter, Julian Aguon and Pradeep Singh" },
+              { "letter": "C", "text": "Dr Jon Copley" },
+              { "letter": "D", "text": "Mike Johnston" },
+              { "letter": "E", "text": "Verena Tunnicliffe" }
+            ],
+            "questions": [
+              { "id": "18", "questionNumber": 18, "text": "A move away from the exploration of heavily mined reserves on land is a good idea." },
+              { "id": "19", "questionNumber": 19, "text": "The negative effects of undersea exploration on local areas and their inhabitants are being ignored." },
+              { "id": "20", "questionNumber": 20, "text": "There are more worthwhile things to extract from the sea than minerals." },
+              { "id": "21", "questionNumber": 21, "text": "No other form of human exploration will have such a destructive impact on marine life as deep-sea mining." },
+              { "id": "22", "questionNumber": 22, "text": "More is known about outer space than about what lies beneath the oceans." },
+              { "id": "23", "questionNumber": 23, "text": "There is one marine life habitat where experts agree mining should not take place." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "title": "Mining the sea floor",
+            "sentences": [
+              { "questionNumber": 24, "content": ["Mining corporations believe that the mineral resources lying under the sea may be superior to those found in the earth. They also say that these can be removed without producing much ", { "id": "24", "type": "input" }, "."] },
+              { "questionNumber": 25, "content": ["The extraction is often done by adapting the ", { "id": "25", "type": "input" }, " that has already been used to work on land. The method of excavation involves removing the seawater from the slurry that is brought up to ships and returning it to the seabed. However, concerned groups strongly believe that ", { "id": "26", "type": "input" }, " is necessary due to the possible number of unidentified consequences."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Human Nature and Cooperation",
+      "passage": {
+        "title": "Human Nature and Cooperation",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "What is the writer doing in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "setting out two opposing views about human nature" },
+                  { "letter": "B", "text": "justifying his opinion about our tendency to be greedy" },
+                  { "letter": "C", "text": "describing a commonly held belief about people's behaviour" },
+                  { "letter": "D", "text": "explaining why he thinks that humans act in a selfish manner" }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "What point is made about Richard Dawkins' book The Selfish Gene?",
+                "options": [
+                  { "letter": "A", "text": "Its appeal lay in the radical nature of its ideas." },
+                  { "letter": "B", "text": "Its success was due to the scientific support it offered." },
+                  { "letter": "C", "text": "It presented a view that was in line with the attitudes of its time." },
+                  { "letter": "D", "text": "It took an innovative approach to the analysis of human psychology." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What does the writer suggest about the prehistoric era in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Societies were more complex than many people believe." },
+                  { "letter": "B", "text": "Supplies of natural resources were probably relatively plentiful." },
+                  { "letter": "C", "text": "Most estimates about population sizes are likely to be inaccurate." },
+                  { "letter": "D", "text": "Humans moved across continents more than was previously thought." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "The writer refers to Bruce Knauft's work as support for the idea that",
+                "options": [
+                  { "letter": "A", "text": "selfishness is a relatively recent development in human societies." },
+                  { "letter": "B", "text": "only people in isolated communities can live in an unselfish manner." },
+                  { "letter": "C", "text": "very few lifestyles have survived unchanged since prehistoric times." },
+                  { "letter": "D", "text": "hunter-gatherer cultures worldwide are declining in number." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 31,
+          "endQuestion": 35,
+          "data": {
+            "title": "Contemporary hunter-gatherer societies",
+            "sentences": [
+              { "questionNumber": 31, "content": ["Bruce Knauft's research shows that contemporary hunter-gatherer societies tend to exhibit a high level of ", { "id": "31", "type": "input" }, " in all areas of life."] },
+              { "questionNumber": 32, "content": ["In these cultures, distributing resources fairly among all members is a moral obligation. These societies also employ strategies to prevent differences in ", { "id": "32", "type": "input" }, " occurring:"] },
+              { "questionNumber": 33, "content": ["for example, the !Kung follow a custom whereby the credit for one person's success at ", { "id": "33", "type": "input" }, " is given to another member of the group."] },
+              { "questionNumber": 34, "content": ["Individuals who behave in a ", { "id": "34", "type": "input" }, " manner are punished by being excluded from the group, and women have a considerable amount of ", { "id": "35", "type": "input" }, " in choices regarding work and marriage."] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "36", "questionNumber": 36, "text": "Some anthropologists are mistaken about the point when the number of societies such as the !Kung began to decline." },
+              { "id": "37", "questionNumber": 37, "text": "Humans who developed warlike traits in prehistory would have had an advantage over those who did not." },
+              { "id": "38", "questionNumber": 38, "text": "Being peaceful and cooperative is a natural way for people to behave." },
+              { "id": "39", "questionNumber": 39, "text": "Negative traits are more apparent in some modern cultures than in others." },
+              { "id": "40", "questionNumber": 40, "text": "Animal research has failed to reveal a link between changes in the environment and the emergence of aggressive tendencies." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

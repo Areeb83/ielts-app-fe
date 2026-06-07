@@ -1,0 +1,268 @@
+{
+  "testId": "book-18-test-2",
+  "bookId": "book-18",
+  "title": "Cambridge IELTS 18 – Reading Test 2",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Stonehenge",
+      "passage": {
+        "title": "Stonehenge",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 8,
+          "data": {
+            "title": "Stonehenge",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Construction" }] },
+              { "content": [{ "type": "bold", "text": "Stage 1:" }] },
+              { "questionNumber": 1, "content": ["• the ditch and henge were dug, possibly using tools made from ", { "id": "1", "type": "input" }] },
+              { "questionNumber": 2, "content": ["• ", { "id": "2", "type": "input" }, " may have been arranged in deep pits inside the circle"] },
+              { "content": [{ "type": "bold", "text": "Stage 2:" }] },
+              { "content": ["• bluestones from the Preseli Hills were placed in standing position"] },
+              { "content": ["• theories about the transportation of the bluestones:"] },
+              { "content": ["   – archaeological:"] },
+              { "questionNumber": 3, "content": ["      o  builders used ", { "id": "3", "type": "input" }, " to make sledges and rollers"] },
+              { "questionNumber": 4, "content": ["      o  ", { "id": "4", "type": "input" }, " pulled them on giant baskets"] },
+              { "content": ["   – geological:"] },
+              { "questionNumber": 5, "content": ["      o  they were brought from Wales by ", { "id": "5", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Stage 3:" }] },
+              { "content": ["• sandstone slabs were arranged into an outer crescent or ring"] },
+              { "content": [{ "type": "bold", "text": "Builders" }] },
+              { "questionNumber": 6, "content": ["• a theory arose in the 17th century that its builders were Celtic ", { "id": "6", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Purpose" }] },
+              { "questionNumber": 7, "content": ["• many experts agree it has been used as a ", { "id": "7", "type": "input" }, " site"] },
+              { "questionNumber": 8, "content": ["• in the 1960s, it was suggested that it worked as a kind of ", { "id": "8", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "9",  "questionNumber": 9,  "text": "During the third phase of construction, sandstone slabs were placed in both the outer areas and the middle of the Stonehenge site." },
+              { "id": "10", "questionNumber": 10, "text": "There is scientific proof that the bluestones stood in the same spot until approximately 1600 BCE." },
+              { "id": "11", "questionNumber": 11, "text": "John Aubrey's claim about Stonehenge was supported by 20th-century findings." },
+              { "id": "12", "questionNumber": 12, "text": "Objects discovered at Stonehenge seem to indicate that it was constructed by a number of different groups of people." },
+              { "id": "13", "questionNumber": 13, "text": "Criticism of Gerald Hawkins' theory about Stonehenge has come mainly from other astronomers." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "The Limits of AI",
+      "passage": {
+        "title": "The Limits of AI",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 14,
+          "endQuestion": 19,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "What point does the writer make about AI in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "It is difficult to predict how quickly AI will progress." },
+                  { "letter": "B", "text": "Much can be learned about the use of AI in chess machines." },
+                  { "letter": "C", "text": "The future is unlikely to see limitations on the capabilities of AI." },
+                  { "letter": "D", "text": "Experts disagree on which specialised tasks AI will be able to perform." }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "What is the writer doing in the second paragraph?",
+                "options": [
+                  { "letter": "A", "text": "explaining why machines will be able to outperform humans" },
+                  { "letter": "B", "text": "describing the characteristics that humans and machines share" },
+                  { "letter": "C", "text": "giving information about the development of machine intelligence" },
+                  { "letter": "D", "text": "indicating which aspects of humans are the most advanced" }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "Why does the writer mention the story of King Midas?",
+                "options": [
+                  { "letter": "A", "text": "to compare different visions of progress" },
+                  { "letter": "B", "text": "to illustrate that poorly defined objectives can go wrong" },
+                  { "letter": "C", "text": "to emphasise the need for cooperation" },
+                  { "letter": "D", "text": "to point out the financial advantages of a course of action" }
+                ]
+              },
+              {
+                "id": "17",
+                "questionNumber": 17,
+                "text": "What challenge does the writer refer to in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "encouraging humans to behave in a more principled way" },
+                  { "letter": "B", "text": "deciding which values we want AI to share with us" },
+                  { "letter": "C", "text": "creating a better world for all creatures on the planet" },
+                  { "letter": "D", "text": "ensuring AI is more human-friendly than we are ourselves" }
+                ]
+              },
+              {
+                "id": "18",
+                "questionNumber": 18,
+                "text": "What does the writer suggest about the future of AI in the fifth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "The safety of machines will become a key issue." },
+                  { "letter": "B", "text": "It is hard to know what impact machines will have on the world." },
+                  { "letter": "C", "text": "Machines will be superior to humans in certain respects." },
+                  { "letter": "D", "text": "Many humans will oppose machines having a wider role." }
+                ]
+              },
+              {
+                "id": "19",
+                "questionNumber": 19,
+                "text": "Which of the following best summarises the writer's argument in the sixth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "More intelligent machines will result in greater abuses of power." },
+                  { "letter": "B", "text": "Machine learning will share very few features with human learning." },
+                  { "letter": "C", "text": "There are a limited number of people with the knowledge to program machines." },
+                  { "letter": "D", "text": "Human shortcomings will make creating the machines we need more difficult." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 20,
+          "endQuestion": 23,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "20", "questionNumber": 20, "text": "Machines with the ability to make moral decisions may prevent us from promoting the interests of our communities." },
+              { "id": "21", "questionNumber": 21, "text": "Silicon police would need to exist in large numbers in order to be effective." },
+              { "id": "22", "questionNumber": 22, "text": "Many people are comfortable with the prospect of their independence being restricted by machines." },
+              { "id": "23", "questionNumber": 23, "text": "If we want to ensure that machines act in our best interests, we all need to work together." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–F**, below.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "title": "Using AI in the UK health system",
+            "options": [
+              { "letter": "A", "text": "medical practitioners" },
+              { "letter": "B", "text": "specialised tasks" },
+              { "letter": "C", "text": "available resources" },
+              { "letter": "D", "text": "reduced illness" },
+              { "letter": "E", "text": "professional authority" },
+              { "letter": "F", "text": "technology experts" }
+            ],
+            "content": [
+              "AI currently has a limited role in the way ",
+              { "id": "24", "type": "dropzone" },
+              " are allocated in the health service. The positive aspect of AI having a bigger role is that it would be more efficient and lead to patient benefits. However, such a change would result, for example, in certain ",
+              { "id": "25", "type": "dropzone" },
+              " not having their current level of ",
+              { "id": "26", "type": "dropzone" },
+              ". It is therefore important that AI goals are appropriate so that discriminatory practices could be avoided."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Leonardo da Vinci's Ideal City",
+      "passage": {
+        "title": "Leonardo da Vinci's Ideal City",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 27,
+          "endQuestion": 33,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "People first referred to Leonardo da Vinci as a genius 500 years ago." },
+              { "id": "28", "questionNumber": 28, "text": "The current climate crisis is predicted to cause more deaths than the plague." },
+              { "id": "29", "questionNumber": 29, "text": "Some of the challenges we face today can be compared to those of earlier times." },
+              { "id": "30", "questionNumber": 30, "text": "Leonardo da Vinci's 'ideal city' was constructed in the 15th century." },
+              { "id": "31", "questionNumber": 31, "text": "Poor town planning is a major contributor to climate change." },
+              { "id": "32", "questionNumber": 32, "text": "In Renaissance times, local people fought against the changes to Pienza and Ferrara." },
+              { "id": "33", "questionNumber": 33, "text": "Leonardo da Vinci kept a neat, organised record of his designs." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 34,
+          "endQuestion": 40,
+          "data": {
+            "title": "Leonardo da Vinci's ideal city",
+            "sentences": [
+              {
+                "content": [
+                  "A collection of Leonardo da Vinci's paperwork reveals his design of a new city beside the Ticino River. This was to provide better ",
+                  { "id": "34", "type": "input" },
+                  " for trade and a less polluted environment. Although Leonardo da Vinci's city shared many of the ideals of his time, some of his innovations were considered unconventional in their design. They included features that can be seen in some tower blocks today, such as ",
+                  { "id": "35", "type": "input" },
+                  " on the exterior of a building."
+                ]
+              },
+              {
+                "content": [
+                  "Leonardo da Vinci wasn't only an architect. His expertise in ",
+                  { "id": "36", "type": "input" },
+                  " was evident in his plans for artificial canals within his ideal city. He also believed that the height of houses should relate to the width of streets in case earthquakes occurred. The design of many cities in Italy today follows this ",
+                  { "id": "37", "type": "input" },
+                  "."
+                ]
+              },
+              {
+                "content": [
+                  "While some cities from ",
+                  { "id": "38", "type": "input" },
+                  " times have aspects that can also be found in Leonardo's designs, his ideas weren't put into practice until long after his death. ",
+                  { "id": "39", "type": "input" },
+                  " is one example of a city that was redesigned in the 19th century in the way that Leonardo had envisaged. His ideas are also relevant to today's world, where building ",
+                  { "id": "40", "type": "input" },
+                  " no longer seems to be the best approach."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

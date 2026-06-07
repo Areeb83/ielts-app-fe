@@ -1,0 +1,278 @@
+{
+  "testId": "book-19-test-1",
+  "bookId": "book-19",
+  "title": "Cambridge IELTS 19 – Reading Test 1",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "The Tennis Racket",
+      "passage": {
+        "title": "The Tennis Racket",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1",  "questionNumber": 1,  "text": "People had expected Andy Murray to become the world's top tennis player for at least five years before 2016." },
+              { "id": "2",  "questionNumber": 2,  "text": "The change that Andy Murray made to his rackets attracted a lot of attention." },
+              { "id": "3",  "questionNumber": 3,  "text": "Most of the world's top players take a professional racket stringer on tour with them." },
+              { "id": "4",  "questionNumber": 4,  "text": "Mike and Bob Bryan use rackets that are light in comparison to the majority of rackets." },
+              { "id": "5",  "questionNumber": 5,  "text": "Werner Fischer played with a spaghetti-strung racket that he designed himself." },
+              { "id": "6",  "questionNumber": 6,  "text": "The weather can affect how professional players adjust the strings on their rackets." },
+              { "id": "7",  "questionNumber": 7,  "text": "It was believed that the change Pete Sampras made to his rackets contributed to his strong serve." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "title": "The tennis racket and how it has changed",
+            "sentences": [
+              { "questionNumber": 8,  "content": ["• Mike and Bob Bryan made changes to the types of ", { "id": "8",  "type": "input" }, " used on their racket frames."] },
+              { "questionNumber": 9,  "content": ["• Players were not allowed to use the spaghetti-strung racket because of the amount of ", { "id": "9",  "type": "input" }, " it created."] },
+              { "questionNumber": 10, "content": ["• Changes to rackets can be regarded as being as important as player's diets or the ", { "id": "10", "type": "input" }, " they do."] },
+              { "questionNumber": 11, "content": ["• All rackets used to have natural strings made from the ", { "id": "11", "type": "input" }, " of animals."] },
+              { "questionNumber": 12, "content": ["• Pete Sampras had metal ", { "id": "12", "type": "input" }, " put into the frames of his rackets."] },
+              { "questionNumber": 13, "content": ["• Gonçalo Oliveira changed the ", { "id": "13", "type": "input" }, " on his racket handles."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "The History of Piracy",
+      "passage": {
+        "title": "The History of Piracy",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" },
+          { "heading": "G", "content": "[Section G content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**. Which paragraph contains the following information? You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 19,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a reference to a denial of involvement in piracy" },
+              { "id": "15", "questionNumber": 15, "text": "details of how a campaign to eradicate piracy was carried out" },
+              { "id": "16", "questionNumber": 16, "text": "a mention of the circumstances in which states in the ancient world would make use of pirates" },
+              { "id": "17", "questionNumber": 17, "text": "a reference to how people today commonly view pirates" },
+              { "id": "18", "questionNumber": 18, "text": "an explanation of how some people were encouraged not to return to piracy" },
+              { "id": "19", "questionNumber": 19, "text": "a mention of the need for many sailing vessels to stay relatively close to land" }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world?",
+          "startQuestion": 20,
+          "endQuestion": 21,
+          "data": {
+            "questions": [
+              {
+                "id": "20-21",
+                "text": "Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world?",
+                "options": [
+                  { "letter": "A", "text": "They often used stolen vessels to carry out pirate attacks." },
+                  { "letter": "B", "text": "They managed to escape capture by the authorities because they knew the area so well." },
+                  { "letter": "C", "text": "They paid for information about the routes merchant ships would take." },
+                  { "letter": "D", "text": "They depended more on the sea for their livelihood than on farming." },
+                  { "letter": "E", "text": "They stored many of the goods taken in pirate attacks in coves along the coastline." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO of the following statements does the writer make about piracy and ancient Greece?",
+          "startQuestion": 22,
+          "endQuestion": 23,
+          "data": {
+            "questions": [
+              {
+                "id": "22-23",
+                "text": "Which TWO of the following statements does the writer make about piracy and ancient Greece?",
+                "options": [
+                  { "letter": "A", "text": "The state estimated that very few people were involved in piracy." },
+                  { "letter": "B", "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written." },
+                  { "letter": "C", "text": "Important officials were known to occasionally take part in piracy." },
+                  { "letter": "D", "text": "Every citizen regarded pirate attacks on cities as unacceptable." },
+                  { "letter": "E", "text": "A favourable view of piracy is evident in certain ancient Greek texts." }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "title": "Ancient Rome and piracy",
+            "sentences": [
+              {
+                "content": [
+                  "Piracy was an issue ancient Rome had to deal with, but it also brought some benefits for Rome. For example, pirates supplied slaves that were important for Rome's industries. However, attacks on vessels transporting ",
+                  { "id": "24", "type": "input" },
+                  " to Rome resulted in calls for ",
+                  { "id": "25", "type": "input" },
+                  " for the pirates responsible. Nevertheless, piracy continued, with some pirates demanding a ",
+                  { "id": "26", "type": "input" },
+                  " for the return of the Roman officials they captured."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Misinformation",
+      "passage": {
+        "title": "Misinformation",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "What point does the writer make about misinformation in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Misinformation is a relatively recent phenomenon." },
+                  { "letter": "B", "text": "Some people find it easy to identify misinformation." },
+                  { "letter": "C", "text": "Misinformation changes as it is passed from one person to another." },
+                  { "letter": "D", "text": "There may be a number of reasons for the spread of misinformation." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "What does the writer say about the role of technology?",
+                "options": [
+                  { "letter": "A", "text": "It may at some point provide us with a solution to misinformation." },
+                  { "letter": "B", "text": "It could fundamentally alter the way in which people regard information." },
+                  { "letter": "C", "text": "It has changed the way in which organisations use misinformation." },
+                  { "letter": "D", "text": "It has made it easier for people to check whether information is accurate." }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "What is the writer doing in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "comparing the different opinions people have of misinformation" },
+                  { "letter": "B", "text": "explaining how the effects of misinformation have changed over time" },
+                  { "letter": "C", "text": "outlining which issues connected with misinformation are significant today" },
+                  { "letter": "D", "text": "describing the attitude of policy makers towards misinformation in the media" }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "What point does the writer make about regulation in the USA?",
+                "options": [
+                  { "letter": "A", "text": "The guidelines issued by the FDA need to be simplified." },
+                  { "letter": "B", "text": "Regulation does not affect people's opinions of new prescription drugs." },
+                  { "letter": "C", "text": "The USA has more regulatory bodies than most other countries." },
+                  { "letter": "D", "text": "Regulation fails to prevent misinformation from appearing in the media." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–J**, below.",
+          "startQuestion": 31,
+          "endQuestion": 36,
+          "data": {
+            "title": "What happens when people encounter misinformation?",
+            "options": [
+              { "letter": "A", "text": "constant conflict" },
+              { "letter": "B", "text": "additional evidence" },
+              { "letter": "C", "text": "different locations" },
+              { "letter": "D", "text": "experimental subjects" },
+              { "letter": "E", "text": "short period" },
+              { "letter": "F", "text": "extreme distrust" },
+              { "letter": "G", "text": "frequent exposure" },
+              { "letter": "H", "text": "mental operation" },
+              { "letter": "I", "text": "dubious reason" },
+              { "letter": "J", "text": "different ideas" }
+            ],
+            "content": [
+              "Although people have ",
+              { "id": "31", "type": "dropzone" },
+              " to misinformation, there is debate about precisely how and when we label something as true or untrue. The philosophers Descartes and Spinoza had ",
+              { "id": "32", "type": "dropzone" },
+              " about how people engage with information. While Descartes believed that people accept or reject information after considering whether it is true or not, Spinoza argued that people accepted all information they encountered (and by default misinformation) and did not verify or reject it until afterwards. Moreover, Spinoza believed that a distinct ",
+              { "id": "33", "type": "dropzone" },
+              " is involved in these stages. Recent research has provided ",
+              { "id": "34", "type": "dropzone" },
+              " for Spinoza's theory and it would appear that people accept all encountered information as if it were true, even if this is for an extremely ",
+              { "id": "35", "type": "dropzone" },
+              ", and do not label the information as true or false until later. This is consistent with the fact that the resources for scepticism and the resources for perceiving and encoding are in ",
+              { "id": "36", "type": "dropzone" },
+              " in the brain."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "37", "questionNumber": 37, "text": "Campaigns designed to correct misinformation will fail to achieve their purpose if people are unable to understand them." },
+              { "id": "38", "questionNumber": 38, "text": "Attempts to teach elementary school students about misinformation have been opposed." },
+              { "id": "39", "questionNumber": 39, "text": "It may be possible to overcome the problem of misinformation in a relatively short period." },
+              { "id": "40", "questionNumber": 40, "text": "The need to keep up with new information is hugely exaggerated in today's world." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

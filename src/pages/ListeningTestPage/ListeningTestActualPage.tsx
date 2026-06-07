@@ -84,7 +84,8 @@ const testDataMap: Record<string, TestData> = {
 };
 
 export function ListeningTestActualPage() {
-    const { examType, bookId, testId } = useParams<{ examType: string; bookId: string; testId: string }>();
+    const { examType, testId } = useParams<{ examType: string; testId: string }>();
+    const bookId = testId?.split('-test-')[0];
     const navigate = useNavigate();
     const setNavbarFooterVisible = useSetAtom(isNavbarFooterVisibleAtom);
 

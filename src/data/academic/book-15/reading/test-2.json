@@ -1,0 +1,269 @@
+{
+  "testId": "book-15-reading-test-2",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Academic Reading Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The importance of urban design",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A — reference to an appealing way of using dance that the writer is not proposing]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B — example of a contrast between past and present approaches to building]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C — mention of an objective of both dance and engineering]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D — reference to an unforeseen problem arising from ignoring the climate]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E — why some measures intended to help people are being reversed; guard rails and pedestrian safety]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F — reference to how transport has an impact on human lives]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 1 has seven paragraphs, **A–G**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–G**, in boxes 1–6 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 6,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "1", "questionNumber": 1, "text": "reference to an appealing way of using dance that the writer is not proposing" },
+              { "id": "2", "questionNumber": 2, "text": "an example of a contrast between past and present approaches to building" },
+              { "id": "3", "questionNumber": 3, "text": "mention of an objective of both dance and engineering" },
+              { "id": "4", "questionNumber": 4, "text": "reference to an unforeseen problem arising from ignoring the climate" },
+              { "id": "5", "questionNumber": 5, "text": "why some measures intended to help people are being reversed" },
+              { "id": "6", "questionNumber": 6, "text": "reference to how transport has an impact on human lives" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 7–13 on your answer sheet.",
+          "startQuestion": 7,
+          "endQuestion": 13,
+          "data": {
+            "title": "Guard rails",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["Guard rails were introduced on British roads to improve the ", { "id": "7", "type": "input" }, " of pedestrians, while ensuring that the movement of ", { "id": "8", "type": "input" }, " is not disrupted. Pedestrians are led to access points, and encouraged to cross one ", { "id": "9", "type": "input" }, " at a time."]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["An unintended effect is to create psychological difficulties in crossing the road, particularly for less ", { "id": "10", "type": "input" }, " people. Another result is that some people cross the road in a ", { "id": "11", "type": "input" }, " way. The guard rails separate ", { "id": "12", "type": "input" }, ", and make it more difficult to introduce forms of transport that are ", { "id": "13", "type": "input" }, "."]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Back from the dead",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–F**, in boxes 14–17 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a reference to how further disappearance of multiple species could be avoided" },
+              { "id": "15", "questionNumber": 15, "text": "explanation of a way of reproducing an extinct animal using the DNA of only that species" },
+              { "id": "16", "questionNumber": 16, "text": "reference to a habitat which has suffered following the extinction of a species" },
+              { "id": "17", "questionNumber": 17, "text": "mention of the exact point at which a particular species became extinct" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 18–22 on your answer sheet.",
+          "startQuestion": 18,
+          "endQuestion": 22,
+          "data": {
+            "title": "The woolly mammoth revival project",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["Professor George Church and his team are trying to identify the ", { "id": "18", "type": "input" }, " which enabled mammoths to live in the tundra. The findings could help preserve the mammoth's close relative, the endangered Asian elephant."]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["According to Church, introducing Asian elephants to the tundra would involve certain physical adaptations to minimise ", { "id": "19", "type": "input" }, ". To survive in the tundra, the species would need to have the mammoth-like features of thicker hair, ", { "id": "20", "type": "input" }, " of a reduced size and more ", { "id": "21", "type": "input" }, "."]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["Repopulating the tundra with mammoths or Asian elephant/mammoth hybrids would also have an impact on the environment, which could help to reduce temperatures and decrease ", { "id": "22", "type": "input" }, "."]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 23–26) and the list of people below.\nMatch each statement with the correct person, **A**, **B** or **C**.\nWrite the correct letter, **A**, **B** or **C**, in boxes 23–26 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "Ben Novak" },
+              { "letter": "B", "text": "Michael Archer" },
+              { "letter": "C", "text": "Beth Shapiro" }
+            ],
+            "questions": [
+              { "id": "23", "text": "Reintroducing an extinct species to its original habitat could improve the health of a particular species living there." },
+              { "id": "24", "text": "It is important to concentrate on the causes of an animal's extinction." },
+              { "id": "25", "text": "A species brought back from extinction could have an important beneficial impact on the vegetation of its habitat." },
+              { "id": "26", "text": "Our current efforts at preserving biodiversity are insufficient." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The science of laughter",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about laughter: discusses universality of laughter, Charley Douglass and the laugh track, the Santa Cruz study (identifying laughs of friends vs strangers across cultures), the San Diego study (participants exchanged roles, dominant and submissive laughs based on status), and the Australian National University study (three videos generating different emotional responses, then a frustrating task — employees' profiles, one group that watched an amusing/funny video persisted longer; Cheng and Wang concluded humour reduces anxiety/stress and may have a stimulating effect on body and mind).]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "When referring to laughter in the first paragraph, the writer emphasises",
+                "options": [
+                  { "letter": "A", "text": "its impact on language." },
+                  { "letter": "B", "text": "its function in human culture." },
+                  { "letter": "C", "text": "its value to scientific research." },
+                  { "letter": "D", "text": "its universality in animal societies." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "What does the writer suggest about Charley Douglass?",
+                "options": [
+                  { "letter": "A", "text": "He understood the importance of enjoying humour in a group setting." },
+                  { "letter": "B", "text": "He believed that TV viewers at home needed to be told when to laugh." },
+                  { "letter": "C", "text": "He wanted his shows to appeal to audiences across the social spectrum." },
+                  { "letter": "D", "text": "He preferred shows where audiences were present in the recording studio." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "What makes the Santa Cruz study particularly significant?",
+                "options": [
+                  { "letter": "A", "text": "the various different types of laughter that were studied" },
+                  { "letter": "B", "text": "the similar results produced by a wide range of cultures" },
+                  { "letter": "C", "text": "the number of different academic disciplines involved" },
+                  { "letter": "D", "text": "the many kinds of people whose laughter was recorded" }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "Which of the following happened in the San Diego study?",
+                "options": [
+                  { "letter": "A", "text": "Some participants became very upset." },
+                  { "letter": "B", "text": "Participants exchanged roles." },
+                  { "letter": "C", "text": "Participants who had not met before became friends." },
+                  { "letter": "D", "text": "Some participants were unable to laugh." }
+                ]
+              },
+              {
+                "id": "31",
+                "text": "In the fifth paragraph, what did the results of the San Diego study suggest?",
+                "options": [
+                  { "letter": "A", "text": "It is clear whether a dominant laugh is produced by a high- or low-status person." },
+                  { "letter": "B", "text": "Low-status individuals in a position of power will still produce submissive laughs." },
+                  { "letter": "C", "text": "The submissive laughs of low- and high-status individuals are surprisingly similar." },
+                  { "letter": "D", "text": "High-status individuals can always be identified by their way of laughing." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–H**, below.\nWrite the correct letter, **A–H**, in boxes 32–36 on your answer sheet.",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "data": {
+            "title": "The benefits of humour",
+            "options": [
+              { "letter": "A", "text": "laughter" },
+              { "letter": "B", "text": "relaxing" },
+              { "letter": "C", "text": "boring" },
+              { "letter": "D", "text": "anxiety" },
+              { "letter": "E", "text": "stimulating" },
+              { "letter": "F", "text": "emotion" },
+              { "letter": "G", "text": "enjoyment" },
+              { "letter": "H", "text": "amusing" }
+            ],
+            "content": [
+              "In one study at Australian National University, randomly chosen groups of participants were shown one of three videos, each designed to generate a different kind of ",
+              { "id": "32", "type": "dropzone" },
+              ". When all participants were then given a deliberately frustrating task to do, it was found that those who had watched the ",
+              { "id": "33", "type": "dropzone" },
+              " video persisted with the task for longer and tried harder to accomplish the task than either of the other two groups.",
+              "\n\nA second study in which participants were asked to perform a particularly ",
+              { "id": "34", "type": "dropzone" },
+              " task produced similar results. According to researchers David Cheng and Lu Wang, these findings suggest that humour not only reduces ",
+              { "id": "35", "type": "dropzone" },
+              " and helps build social connections but it may also have a ",
+              { "id": "36", "type": "dropzone" },
+              " effect on the body and mind."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 37–40 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "37", "text": "Participants in the Santa Cruz study were more accurate at identifying the laughs of friends than those of strangers." },
+              { "id": "38", "text": "The researchers in the San Diego study were correct in their predictions regarding the behaviour of the high-status individuals." },
+              { "id": "39", "text": "The participants in the Australian National University study were given a fixed amount of time to complete the task focusing on employee profiles." },
+              { "id": "40", "text": "Cheng and Wang's conclusions were in line with established notions regarding task performance." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

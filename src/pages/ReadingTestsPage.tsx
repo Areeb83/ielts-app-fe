@@ -184,7 +184,7 @@ export function ReadingTestsPage() {
                             </div>
                           </div>
                           <div className="mt-5 flex flex-col gap-2">
-                            <button type="button" onClick={() => navigate(buildReadingTestRoute(examType || 'academic', `book-${book.number}`, `book-${book.number}-test-${test}`))} className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted ? 'bg-white text-green-800 border-green-700 hover:bg-green-50' : 'bg-green-800 text-white border-green-800 hover:bg-green-900'}`}>
+                            <button type="button" onClick={() => navigate(buildReadingTestRoute(examType || 'academic', `book-${book.number}-test-${test}`))} className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted ? 'bg-white text-green-800 border-green-700 hover:bg-green-50' : 'bg-green-800 text-white border-green-800 hover:bg-green-900'}`}>
                               {isCompleted ? 'Retake' : 'Start Test'}
                             </button>
                             {isCompleted && <button type="button" className="w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 border-gray-200 text-gray-700 hover:bg-gray-50">Review</button>}

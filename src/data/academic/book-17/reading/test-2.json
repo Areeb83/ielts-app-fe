@@ -1,0 +1,252 @@
+{
+  "testId": "book-17-test-2",
+  "bookId": "book-17",
+  "title": "Cambridge IELTS 17 – Reading Test 2",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "The Dead Sea Scrolls",
+      "passage": {
+        "title": "The Dead Sea Scrolls",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "The Dead Sea Scrolls",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Discovery" }] },
+              { "content": ["Qumran, 1946/7:"] },
+              { "content": ["• three Bedouin shepherds in their teens were near an opening on side of cliff"] },
+              { "questionNumber": 1, "content": ["• heard a noise of breaking when one teenager threw a ", { "id": "1", "type": "input" }] },
+              { "questionNumber": 2, "content": ["• teenagers went into the ", { "id": "2", "type": "input" }, " and found a number of containers made of ", { "id": "3", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "The scrolls" }] },
+              { "content": ["• date from between 150 BCE and 70 CE"] },
+              { "questionNumber": 4, "content": ["• thought to have been written by group of people known as the ", { "id": "4", "type": "input" }] },
+              { "questionNumber": 5, "content": ["• written mainly in the ", { "id": "5", "type": "input" }, " language"] },
+              { "content": ["• most are on religious topics, written using ink on parchment or papyrus"] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 6,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "6",  "questionNumber": 6,  "text": "The Bedouin teenagers who found the scrolls were disappointed by how little money they received for them." },
+              { "id": "7",  "questionNumber": 7,  "text": "There is agreement among academics about the origin of the Dead Sea Scrolls." },
+              { "id": "8",  "questionNumber": 8,  "text": "Most of the books of the Bible written on the scrolls are incomplete." },
+              { "id": "9",  "questionNumber": 9,  "text": "The information on the Copper Scroll is written in an unusual way." },
+              { "id": "10", "questionNumber": 10, "text": "Mar Samuel was given some of the scrolls as a gift." },
+              { "id": "11", "questionNumber": 11, "text": "In the early 1950s, a number of educational establishments in the US were keen to buy scrolls from Mar Samuel." },
+              { "id": "12", "questionNumber": 12, "text": "The scroll that was pieced together in 2017 contains information about annual occasions in the Qumran area 2,000 years ago." },
+              { "id": "13", "questionNumber": 13, "text": "Academics at the University of Haifa are currently researching how to decipher the final scroll." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "The Genius of Plants",
+      "passage": {
+        "title": "The Genius of Plants",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has five sections, **A–E**. Which section contains the following information? You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "a reference to a type of tomato that can resist a dangerous infection" },
+              { "id": "15", "questionNumber": 15, "text": "an explanation of how problems can arise from focusing only on a certain type of tomato plant" },
+              { "id": "16", "questionNumber": 16, "text": "a number of examples of plants that are not cultivated at present but could be useful as food sources" },
+              { "id": "17", "questionNumber": 17, "text": "a comparison between the early domestication of the tomato and more recent research" },
+              { "id": "18", "questionNumber": 18, "text": "a personal reaction to the flavour of a tomato that has been genetically edited" }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Match each statement with the correct researcher, **A–D**. You may use any letter more than once.",
+          "startQuestion": 19,
+          "endQuestion": 23,
+          "data": {
+            "title": "List of Researchers",
+            "options": [
+              { "letter": "A", "text": "Jorg Kudla" },
+              { "letter": "B", "text": "Caixia Gao" },
+              { "letter": "C", "text": "Joyce Van Eck" },
+              { "letter": "D", "text": "Jonathan Jones" }
+            ],
+            "questions": [
+              { "id": "19", "questionNumber": 19, "text": "Domestication of certain plants could allow them to adapt to future environmental challenges." },
+              { "id": "20", "questionNumber": 20, "text": "The idea of growing and eating unusual plants may not be accepted on a large scale." },
+              { "id": "21", "questionNumber": 21, "text": "It is not advisable for the future direction of certain research to be made public." },
+              { "id": "22", "questionNumber": 22, "text": "Present efforts to domesticate one wild fruit are limited by the costs involved." },
+              { "id": "23", "questionNumber": 23, "text": "Humans only make use of a small proportion of the plant food available on Earth." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "sentences": [
+              { "questionNumber": 24, "content": ["An undesirable trait such as loss of ", { "id": "24", "type": "input" }, " may be caused by a mutation in a tomato gene."] },
+              { "questionNumber": 25, "content": ["By modifying one gene in a tomato plant, researchers made the tomato three times its original ", { "id": "25", "type": "input" }, "."] },
+              { "questionNumber": 26, "content": ["A type of tomato which was not badly affected by ", { "id": "26", "type": "input" }, ", and was rich in vitamin C, was produced by a team of researchers in China."] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "The Evolutionary Mystery of Creativity",
+      "passage": {
+        "title": "The Evolutionary Mystery of Creativity",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "questionNumber": 27,
+                "text": "The purpose of the first paragraph is to",
+                "options": [
+                  { "letter": "A", "text": "defend particular ideas." },
+                  { "letter": "B", "text": "compare certain beliefs." },
+                  { "letter": "C", "text": "disprove a widely held view." },
+                  { "letter": "D", "text": "outline a common assumption." }
+                ]
+              },
+              {
+                "id": "28",
+                "questionNumber": 28,
+                "text": "What are the writers doing in the second paragraph?",
+                "options": [
+                  { "letter": "A", "text": "criticising an opinion" },
+                  { "letter": "B", "text": "justifying a standpoint" },
+                  { "letter": "C", "text": "explaining an approach" },
+                  { "letter": "D", "text": "supporting an argument" }
+                ]
+              },
+              {
+                "id": "29",
+                "questionNumber": 29,
+                "text": "In the third paragraph, what do the writers suggest about Darwin and Einstein?",
+                "options": [
+                  { "letter": "A", "text": "They represent an exception to a general rule." },
+                  { "letter": "B", "text": "Their way of working has been misunderstood." },
+                  { "letter": "C", "text": "They are an ideal which others should aspire to." },
+                  { "letter": "D", "text": "Their achievements deserve greater recognition." }
+                ]
+              },
+              {
+                "id": "30",
+                "questionNumber": 30,
+                "text": "John Nicholson is an example of a person whose idea",
+                "options": [
+                  { "letter": "A", "text": "established his reputation as an influential scientist." },
+                  { "letter": "B", "text": "was only fully understood at a later point in history." },
+                  { "letter": "C", "text": "laid the foundations for someone else's breakthrough." },
+                  { "letter": "D", "text": "initially met with scepticism from the scientific community." }
+                ]
+              },
+              {
+                "id": "31",
+                "questionNumber": 31,
+                "text": "What is the key point of interest about the 'acey-deucy' stirrup placement?",
+                "options": [
+                  { "letter": "A", "text": "the simple reason why it was invented" },
+                  { "letter": "B", "text": "the enthusiasm with which it was adopted" },
+                  { "letter": "C", "text": "the research that went into its development" },
+                  { "letter": "D", "text": "the cleverness of the person who first used it" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "32", "questionNumber": 32, "text": "Acknowledging people such as Plato or da Vinci as geniuses will help us understand the process by which great minds create new ideas." },
+              { "id": "33", "questionNumber": 33, "text": "The Law of Effect was discovered at a time when psychologists were seeking a scientific reason why creativity occurs." },
+              { "id": "34", "questionNumber": 34, "text": "The Law of Effect states that no planning is involved in the behaviour of organisms." },
+              { "id": "35", "questionNumber": 35, "text": "The Law of Effect sets out clear explanations about the sources of new ideas and behaviours." },
+              { "id": "36", "questionNumber": 36, "text": "Many scientists are now turning away from the notion of intelligent design and genius." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–G**, below.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "title": "The origins of creative behaviour",
+            "options": [
+              { "letter": "A", "text": "invention" },
+              { "letter": "B", "text": "goals" },
+              { "letter": "C", "text": "compromise" },
+              { "letter": "D", "text": "mistakes" },
+              { "letter": "E", "text": "luck" },
+              { "letter": "F", "text": "inspiration" },
+              { "letter": "G", "text": "experiments" }
+            ],
+            "content": [
+              "The traditional view of scientific discovery is that breakthroughs happen when a single great mind has sudden ",
+              { "id": "37", "type": "dropzone" },
+              ". Although this can occur, it is not often the case. Advances are more likely to be the result of a longer process. In some cases, this involves ",
+              { "id": "38", "type": "dropzone" },
+              ", such as Nicholson's theory about proto-elements. In others, simple necessity may provoke innovation, as with Westrope's decision to modify the position of his riding stirrups. There is also often an element of ",
+              { "id": "39", "type": "dropzone" },
+              ", for example, the coincidence of ideas that led to the invention of the Post-It note. With both the Law of Natural Selection and the Law of Effect, there may be no clear ",
+              { "id": "40", "type": "dropzone" },
+              " involved, but merely a process of variation and selection."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

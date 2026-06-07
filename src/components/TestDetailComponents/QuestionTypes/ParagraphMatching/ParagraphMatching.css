@@ -1,0 +1,71 @@
+.paragraph-matching-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.paragraph-matching__header {
+    margin-bottom: 16px;
+}
+
+.paragraph-matching__range {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.paragraph-matching__instruction {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ─── Question Rows ─── */
+.paragraph-matching__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.paragraph-matching__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.paragraph-matching__num {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    min-width: 28px;
+    flex-shrink: 0;
+}
+
+.paragraph-matching__select {
+    height: 30px;
+    min-width: 80px;
+    padding: 0 8px;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #fff;
+    border: 1px solid #7c8691;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.paragraph-matching__select:focus {
+    border-color: #0056b3;
+    border-width: 1.5px;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.paragraph-matching__text {
+    font-size: 15px;
+    color: #1e293b;
+    line-height: 1.5;
+}

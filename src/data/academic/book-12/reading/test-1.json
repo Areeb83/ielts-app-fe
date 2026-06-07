@@ -1,0 +1,234 @@
+{
+  "testId": "book-12-test-1",
+  "bookId": "book-12",
+  "title": "Cambridge IELTS 12 – Academic Reading Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Cork",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Cork.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–5 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "The cork oak has the thickest bark of any living tree." },
+              { "id": "2", "text": "Scientists have developed a synthetic cork with the same cellular structure as natural cork." },
+              { "id": "3", "text": "Individual cork oak trees must be left for 25 years between the first and second harvest." },
+              { "id": "4", "text": "Cork bark should be stripped in dry atmospheric conditions." },
+              { "id": "5", "text": "The only way to remove the bark from cork oak trees is by hand." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 6–13 on your answer sheet.",
+          "startQuestion": 6,
+          "endQuestion": 13,
+          "data": {
+            "title": "Comparison of aluminium screw caps and cork bottle stoppers",
+            "sections": [
+              {
+                "heading": "Advantages of aluminium screw caps",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["do not affect the ", { "id": "6", "type": "input" }, " of the bottle contents"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["are ", { "id": "7", "type": "input" }, " to produce"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["are ", { "id": "8", "type": "input" }, " to use"]
+                  }
+                ]
+              },
+              {
+                "heading": "Advantages of cork bottle stoppers",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["suit the ", { "id": "9", "type": "input" }, " of quality products"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["made from a ", { "id": "10", "type": "input" }, " material"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["easily ", { "id": "11", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["cork forests aid ", { "id": "12", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["cork forests stop ", { "id": "13", "type": "input" }, " happening"]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Collecting as a hobby",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 2.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 14–21 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 21,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 14,
+                "content": ["The writer mentions collecting ", { "id": "14", "type": "input" }, " as an example of collecting in order to make money."]
+              },
+              {
+                "questionNumber": 15,
+                "content": ["Collectors may get a feeling of ", { "id": "15", "type": "input" }, " from buying and selling items."]
+              },
+              {
+                "questionNumber": 16,
+                "content": ["Collectors' clubs provide opportunities to share ", { "id": "16", "type": "input" }, "."]
+              },
+              {
+                "questionNumber": 17,
+                "content": ["Searching for something particular may prevent people from feeling their life is completely ", { "id": "17", "type": "input" }, "."]
+              },
+              {
+                "questionNumber": 18,
+                "content": ["Collectors' clubs offer ", { "id": "18", "type": "input" }, " with people who have similar interests."]
+              },
+              {
+                "questionNumber": 19,
+                "content": ["Collecting sometimes involves a life-long ", { "id": "19", "type": "input" }, " for a special item."]
+              },
+              {
+                "questionNumber": 20,
+                "content": ["Stamp collecting may be ", { "id": "20", "type": "input" }, " because it provides facts about different countries."]
+              },
+              {
+                "questionNumber": 21,
+                "content": [{ "id": "21", "type": "input" }, " tends to be mostly a male hobby."]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 22–26 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 22,
+          "endQuestion": 26,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "22", "text": "The number of people buying dolls has grown over the centuries." },
+              { "id": "23", "text": "Sixteenth century European dolls were normally made of wax and porcelain." },
+              { "id": "24", "text": "Arranging a stamp collection by the size of the stamps is less common than other methods." },
+              { "id": "25", "text": "Someone who collects unusual objects may want others to think he or she is also unusual." },
+              { "id": "26", "text": "Collecting gives a feeling that other hobbies are unlikely to inspire." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "What is the purpose of gaining knowledge?",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Section A]" },
+          { "label": "B", "content": "[Placeholder for Section B]" },
+          { "label": "C", "content": "[Placeholder for Section C]" },
+          { "label": "D", "content": "[Placeholder for Section D]" },
+          { "label": "E", "content": "[Placeholder for Section E]" },
+          { "label": "F", "content": "[Placeholder for Section F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 3 has six sections, **A–F**.\nChoose the correct heading for each section from the list of headings below.\nWrite the correct number, **i–viii**, in boxes 27–32 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "headings": [
+              "i    Courses that require a high level of commitment",
+              "ii   A course title with two meanings",
+              "iii  The equal importance of two key issues",
+              "iv   Applying a theory in an unexpected context",
+              "v    The financial benefits of studying",
+              "vi   A surprising course title",
+              "vii  Different names for different outcomes",
+              "viii The possibility of attracting the wrong kind of student"
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 33–36 on your answer sheet.",
+          "startQuestion": 33,
+          "endQuestion": 36,
+          "data": {
+            "title": "The 'Arson for Profit' course",
+            "content": [
+              "This is a university course intended for students who are undergraduates and who are studying ",
+              { "id": "33", "type": "input" },
+              ". The expectation is that they will become ",
+              { "id": "34", "type": "input" },
+              " specialising in arson. The course will help them to detect cases of arson and find ",
+              { "id": "35", "type": "input" },
+              " of criminal intent, leading to successful ",
+              { "id": "36", "type": "input" },
+              " in the courts."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?\nIn boxes 37–40 on your answer sheet, write\n**YES** if the statement agrees with the views of the writer\n**NO** if the statement contradicts the views of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "37", "text": "It is difficult to attract students onto courses that do not focus on a career." },
+              { "id": "38", "text": "The 'Arson for Profit' course would be useful for people intending to set fire to buildings." },
+              { "id": "39", "text": "Fire science courses are too academic to help people to be good at the job of firefighting." },
+              { "id": "40", "text": "The writer's fire science students provided a detailed definition of the purpose of their studies." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

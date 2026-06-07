@@ -1,0 +1,271 @@
+{
+  "testId": "book-11-test-3",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Academic Reading Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The Story of Silk",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for The Story of Silk.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–9 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 9,
+          "data": {
+            "title": "THE STORY OF SILK",
+            "sections": [
+              {
+                "heading": "Early silk production in China",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Around 3000 BC, according to legend:"]
+                  },
+                  {
+                    "bullet": "–",
+                    "indent": true,
+                    "content": ["silkworm cocoon fell into emperor's wife's ", { "id": "1", "type": "input" }]
+                  },
+                  {
+                    "bullet": "–",
+                    "indent": true,
+                    "content": ["emperor's wife invented a ", { "id": "2", "type": "input" }, " to pull out silk fibres"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Only ", { "id": "3", "type": "input" }, " were allowed to produce silk"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Only ", { "id": "4", "type": "input" }, " were allowed to wear silk"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Silk used as a form of ", { "id": "5", "type": "input" }]
+                  },
+                  {
+                    "bullet": "–",
+                    "indent": true,
+                    "content": ["e.g. farmers' taxes consisted partly of silk"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Silk used for many purposes"]
+                  },
+                  {
+                    "bullet": "–",
+                    "indent": true,
+                    "content": ["e.g. evidence found of ", { "id": "6", "type": "input" }, " made from silk around 168 AD"]
+                  }
+                ]
+              },
+              {
+                "heading": "Silk reaches rest of world",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Merchants use Silk Road to take silk westward and bring back ", { "id": "7", "type": "input" }, " and precious metals"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["550 AD: ", { "id": "8", "type": "input" }, " hide silkworm eggs in canes and take them to Constantinople"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Silk production spreads across Middle East and Europe"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": [{ "id": "9", "type": "input" }, " and other manmade fibres cause decline in silk production in the 20th century"]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 10–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 10,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "10", "text": "Gold was the most valuable material transported along the Silk Road." },
+              { "id": "11", "text": "Most tradesmen only went along certain sections of the Silk Road." },
+              { "id": "12", "text": "The Byzantines spread the practice of silk production across the West." },
+              { "id": "13", "text": "Silk yarn makes up the majority of silk currently exported from China." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Honey bee navigation",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 2.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 14–18 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "14", "text": "Local gulls and migrating arctic terns behave in the same way when offered food." },
+              { "id": "15", "text": "Experts' definitions of migration tend to vary according to their area of study." },
+              { "id": "16", "text": "Very few experts agree that the movement of aphids can be considered migration." },
+              { "id": "17", "text": "Aphids' journeys are affected by changes in the light that they perceive." },
+              { "id": "18", "text": "Dingle's aim is to distinguish between the migratory behaviours of different species." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION_DRAG_DROP",
+          "instruction": "Complete each sentence with the correct ending, **A–G**, below.\nWrite the correct letter, **A–G**, in boxes 19–22 on your answer sheet.",
+          "startQuestion": 19,
+          "endQuestion": 22,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "be discouraged by difficulties." },
+              { "letter": "B", "text": "travel on open land where they can look out for predators." },
+              { "letter": "C", "text": "eat more than they need for immediate purposes." },
+              { "letter": "D", "text": "be repeated daily." },
+              { "letter": "E", "text": "ignore distractions." },
+              { "letter": "F", "text": "be governed by the availability of water." },
+              { "letter": "G", "text": "follow a straight line." }
+            ],
+            "sentences": [
+              {
+                "questionNumber": 19,
+                "content": ["According to Dingle, migratory routes are likely to ", { "type": "dropzone", "id": "19" }]
+              },
+              {
+                "questionNumber": 20,
+                "content": ["To prepare for migration, animals are likely to ", { "type": "dropzone", "id": "20" }]
+              },
+              {
+                "questionNumber": 21,
+                "content": ["During migration, animals are unlikely to ", { "type": "dropzone", "id": "21" }]
+              },
+              {
+                "questionNumber": 22,
+                "content": ["Arctic terns illustrate migrating animals' ability to ", { "type": "dropzone", "id": "22" }]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 23–26 on your answer sheet.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "title": "The migration of pronghorns",
+            "content": [
+              "Pronghorns rely on their eyesight and ",
+              { "id": "23", "type": "input" },
+              " to avoid predators. One particular population's summer habitat is a national park, and their winter home is on the ",
+              { "id": "24", "type": "input" },
+              ", where they go to avoid the danger presented by the snow at that time of year. However, their route between these two areas contains three ",
+              { "id": "25", "type": "input" },
+              ". One problem is the construction of new homes in a narrow ",
+              { "id": "26", "type": "input" },
+              " of land on the pronghorns' route."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Making every drop count",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 3 has seven sections, **A–G**.\nWhich section contains the following information?\nWrite the correct letter, **A–G**, in boxes 27–34 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 27,
+          "endQuestion": 34,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F", "G"],
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "a reference to books that assume a lack of mathematical knowledge" },
+              { "id": "28", "questionNumber": 28, "text": "the way in which this is not a typical book about mathematics" },
+              { "id": "29", "questionNumber": 29, "text": "personal examples of being helped by mathematics" },
+              { "id": "30", "questionNumber": 30, "text": "examples of people who each had abilities that seemed incompatible" },
+              { "id": "31", "questionNumber": 31, "text": "mention of different focuses of books about mathematics" },
+              { "id": "32", "questionNumber": 32, "text": "a contrast between reading this book and reading other kinds of publication" },
+              { "id": "33", "questionNumber": 33, "text": "a claim that the whole of the book is accessible to everybody" },
+              { "id": "34", "questionNumber": 34, "text": "a reference to different categories of intended readers of this book" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 35–40 on your answer sheet.",
+          "startQuestion": 35,
+          "endQuestion": 40,
+          "data": {
+            "sentences": [
+              {
+                "questionNumber": 35,
+                "content": ["Some areas of both music and mathematics are suitable for someone who is ", { "id": "35", "type": "input" }, "."]
+              },
+              {
+                "questionNumber": 36,
+                "content": ["It is sometimes possible to understand advanced mathematics using no more than a limited knowledge of ", { "id": "36", "type": "input" }, "."]
+              },
+              {
+                "questionNumber": 37,
+                "content": ["The writer intends to show that mathematics requires ", { "id": "37", "type": "input" }, " thinking, as well as analytical skills."]
+              },
+              {
+                "questionNumber": 38,
+                "content": ["Some books written by ", { "id": "38", "type": "input" }, " have had to leave out the mathematics that is central to their theories."]
+              },
+              {
+                "questionNumber": 39,
+                "content": ["The writer advises non-mathematical readers to perform ", { "id": "39", "type": "input" }, " while reading the book."]
+              },
+              {
+                "questionNumber": 40,
+                "content": ["A lawyer found that studying ", { "id": "40", "type": "input" }, " helped even more than other areas of mathematics in the study of law."]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

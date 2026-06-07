@@ -1,0 +1,277 @@
+{
+  "testId": "book-15-reading-test-3",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Academic Reading Test 3",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Henry Moore",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about Henry Moore: After leaving school Moore became a teacher (as his father wished), then studied at Leeds School of Art (not sculpture in first term). The Royal College of Art's sculpture teaching was poor when he arrived. Moore read about ancient sculpture from books in the library, then visited the British Museum. The Trocadero Museum's Mayan Chac Mool sculpture had an impact on Moore — he felt it was different from European stone sculpture. He joined Unit One (artists who wanted to promote modern art). 1930s: exhibition at Leicester Galleries criticised; Moore urged to resign/offer his resignation. 1940s: materials unavailable so drew instead; drew miners in Castleford (hometown); commissioned for a Madonna and Child sculpture; American collectors started buying; increased wealth enabled more ambitious work. 1950s: bronze reclining figures marked new style.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–7 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "On leaving school, Moore did what his father wanted him to do." },
+              { "id": "2", "text": "Moore began studying sculpture in his first term at the Leeds School of Art." },
+              { "id": "3", "text": "When Moore started at the Royal College of Art, its reputation for teaching sculpture was excellent." },
+              { "id": "4", "text": "Moore became aware of ancient sculpture as a result of visiting London museums." },
+              { "id": "5", "text": "The Trocadero Museum's Mayan sculpture attracted a lot of public interest." },
+              { "id": "6", "text": "Moore thought the Mayan sculpture was similar in certain respects to other stone sculptures." },
+              { "id": "7", "text": "The artists who belonged to Unit One wanted to make modern art and architecture more popular." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 8–13 on your answer sheet.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "title": "Moore's career as an artist",
+            "sections": [
+              {
+                "heading": "1930s",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Moore's exhibition at the Leicester Galleries is criticised by the press"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Moore is urged to offer his ", { "id": "8", "type": "input" }, " and leave the Royal College"]
+                  }
+                ]
+              },
+              {
+                "heading": "1940s",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Moore turns to drawing because ", { "id": "9", "type": "input" }, " for sculpting are not readily available"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["While visiting his hometown, Moore does some drawings of ", { "id": "10", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Moore is employed to produce a sculpture of a ", { "id": "11", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": [{ "id": "12", "type": "input" }, " start to buy Moore's work"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Moore's increased ", { "id": "13", "type": "input" }, " makes it possible for him to do more ambitious sculptures"]
+                  }
+                ]
+              },
+              {
+                "heading": "1950s",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["Moore's series of bronze figures marks a further change in his style"]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "The Desolenator: producing clean water",
+        "sections": [
+          { "questionId": "14", "heading": "A", "content": "[Placeholder for Paragraph A]" },
+          { "questionId": "15", "heading": "B", "content": "[Placeholder for Paragraph B]" },
+          { "questionId": "16", "heading": "C", "content": "[Placeholder for Paragraph C]" },
+          { "questionId": "17", "heading": "D", "content": "[Placeholder for Paragraph D]" },
+          { "questionId": "18", "heading": "E", "content": "[Placeholder for Paragraph E]" },
+          { "questionId": "19", "heading": "F", "content": "[Placeholder for Paragraph F]" },
+          { "questionId": "20", "heading": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**.\nChoose the correct heading for each paragraph from the list of headings below.\nWrite the correct number, **i–x**, in boxes 14–20 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "headings": [
+              "i   A chance meeting that inspired a project",
+              "ii  The search for financial support",
+              "iii Addressing a global problem",
+              "iv  A successful first trial",
+              "v   How the device operates",
+              "vi  Plans for wider use",
+              "vii Improving on an initial design",
+              "viii A personal motivation",
+              "ix  Setting up a business",
+              "x   A patented solution"
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 21–26 on your answer sheet.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "How the Desolenator works",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["The energy required to operate the Desolenator comes from sunlight. The device can be used in different locations, as it has ", { "id": "21", "type": "input" }, ". Water is fed into a pipe, and a ", { "id": "22", "type": "input" }, " of water flows over a solar panel. The water then enters a boiler, where it turns into steam. Any particles in the water are caught in a ", { "id": "23", "type": "input" }, ". The purified water comes out through one tube, and all types of ", { "id": "24", "type": "input" }, " come out through another. A screen displays the ", { "id": "25", "type": "input" }, " of the device, and transmits the information to the company so that they know when the Desolenator requires ", { "id": "26", "type": "input" }, "."]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "What fairytales tell us",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about fairy tales and Tehrani: Tehrani used phylogenetic analysis (methods from evolutionary biology) to study 58 fairy tale variants of Little Red Riding Hood. He tested whether links/relationships existed among the stories, found that certain story elements (events/characters) changed over time, that the middle of the story was no more important than other parts, and that moral lessons/warnings were not the key to survival. The most important aspect for survival was plot (specifically horror/scary content). Jack Zipes suggests that story features only survive if they have deeper significance. Tehrani referred to Chinese and Japanese fairy tales (featuring crime) to add more evidence for Zipes' ideas. Mathias Clasen believes fairy tales provide a safe way to deal with fear. The story stems: details of the plot may change; Tehrani rejects the idea that useful lessons are the reason for survival; various theories about social significance of fairy tales lack factual basis; insights into development of fairy tales may come through biological methods; all the stories analysed were originally spoken not written.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION_DRAG_DROP",
+          "instruction": "Complete each sentence with the correct ending, **A–F**, below.\nWrite the correct letter, **A–F**, in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "may be provided through methods used in biological research." },
+              { "letter": "B", "text": "are the reason for their survival." },
+              { "letter": "C", "text": "show considerable global variation." },
+              { "letter": "D", "text": "contain animals which transform to become humans." },
+              { "letter": "E", "text": "were originally spoken rather than written." },
+              { "letter": "F", "text": "have been developed without factual basis." }
+            ],
+            "sentences": [
+              { "questionNumber": 27, "content": ["In fairy tales, details of the plot ", { "id": "27", "type": "dropzone" }] },
+              { "questionNumber": 28, "content": ["Tehrani rejects the idea that the useful lessons for life in fairy tales ", { "id": "28", "type": "dropzone" }] },
+              { "questionNumber": 29, "content": ["Various theories about the social significance of fairy tales ", { "id": "29", "type": "dropzone" }] },
+              { "questionNumber": 30, "content": ["Insights into the development of fairy tales ", { "id": "30", "type": "dropzone" }] },
+              { "questionNumber": 31, "content": ["All the fairy tales analysed by Tehrani ", { "id": "31", "type": "dropzone" }] }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–I**, below.\nWrite the correct letter, **A–I**, in boxes 32–36 on your answer sheet.",
+          "startQuestion": 32,
+          "endQuestion": 36,
+          "data": {
+            "title": "Phylogenetic analysis of Little Red Riding Hood",
+            "options": [
+              { "letter": "A", "text": "ending" },
+              { "letter": "B", "text": "events" },
+              { "letter": "C", "text": "warning" },
+              { "letter": "D", "text": "links" },
+              { "letter": "E", "text": "records" },
+              { "letter": "F", "text": "variations" },
+              { "letter": "G", "text": "horror" },
+              { "letter": "H", "text": "people" },
+              { "letter": "I", "text": "plot" }
+            ],
+            "content": [
+              "Tehrani used techniques from evolutionary biology to find out if ",
+              { "id": "32", "type": "dropzone" },
+              " existed among 58 stories from around the world. He also wanted to know which aspects of the stories had fewest ",
+              { "id": "33", "type": "dropzone" },
+              ", as he believed these aspects would be the most important ones. Contrary to other beliefs, he found that some ",
+              { "id": "34", "type": "dropzone" },
+              " that were included in a story tended to change over time, and that the middle of a story seemed no more important than the other parts. He was also surprised that parts of a story which seemed to provide some sort of ",
+              { "id": "35", "type": "dropzone" },
+              " were unimportant. The aspect that he found most important in a story's survival was ",
+              { "id": "36", "type": "dropzone" },
+              "."
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 37–40 on your answer sheet.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "37",
+                "text": "What method did Jamie Tehrani use to test his ideas about fairy tales?",
+                "options": [
+                  { "letter": "A", "text": "He compared oral and written forms of the same stories." },
+                  { "letter": "B", "text": "He looked at many different forms of the same basic story." },
+                  { "letter": "C", "text": "He looked at unrelated stories from many different countries." },
+                  { "letter": "D", "text": "He contrasted the development of fairy tales with that of living creatures." }
+                ]
+              },
+              {
+                "id": "38",
+                "text": "When discussing Tehrani's views, Jack Zipes suggests that",
+                "options": [
+                  { "letter": "A", "text": "Tehrani ignores key changes in the role of women." },
+                  { "letter": "B", "text": "stories which are too horrific are not always taken seriously." },
+                  { "letter": "C", "text": "Tehrani overemphasises the importance of violence in stories." },
+                  { "letter": "D", "text": "features of stories only survive if they have a deeper significance." }
+                ]
+              },
+              {
+                "id": "39",
+                "text": "Why does Tehrani refer to Chinese and Japanese fairy tales?",
+                "options": [
+                  { "letter": "A", "text": "to indicate that Jack Zipes' theory is incorrect" },
+                  { "letter": "B", "text": "to suggest that crime is a global problem" },
+                  { "letter": "C", "text": "to imply that all fairy tales have a similar meaning" },
+                  { "letter": "D", "text": "to add more evidence for Jack Zipes' ideas" }
+                ]
+              },
+              {
+                "id": "40",
+                "text": "What does Mathias Clasen believe about fairy tales?",
+                "options": [
+                  { "letter": "A", "text": "They are a safe way of learning to deal with fear." },
+                  { "letter": "B", "text": "They are a type of entertainment that some people avoid." },
+                  { "letter": "C", "text": "They reflect the changing values of our society." },
+                  { "letter": "D", "text": "They reduce our ability to deal with real-world problems." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "testId": "book-16-reading-test-4",
+  "bookId": "book-16",
+  "title": "Cambridge IELTS 16 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Tunnels",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about tunnels: qanat method used in Persia — sloped underground channel to direct tunnelling/water flow; water runs into a cistern/well/pool used by local people; vertical shafts for removing earth and for ventilation. Counter-excavation method: developed later (6th century BCE but did NOT completely replace qanat); required skilled builders. Saldae aqueduct: information found on an inscription/stone tablet (not a book); the two tunnel halves failed to meet (TRUE). Dolaucothi mines in Wales extracted gold. Tunnels could have names of patron and architect carved on them. Cevlik tunnel at Seleuceia Pieria built to protect the harbour/port.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "DIAGRAM_LABELLING",
+          "instruction": "Label the diagrams below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–3 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 3,
+          "data": {
+            "title": "The Persian Qanat Method",
+            "imageSrc": "/images/book-16-test-4-passage1-qanat.jpg",
+            "questions": [
+              { "id": "1", "questionNumber": 1, "label": "to direct the tunnelling" },
+              { "id": "2", "questionNumber": 2, "label": "water runs into a ___ used by local people" },
+              { "id": "3", "questionNumber": 3, "label": "vertical shafts to remove earth and for" }
+            ]
+          }
+        },
+        {
+          "type": "DIAGRAM_LABELLING",
+          "instruction": "Label the diagrams below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 4–6 on your answer sheet.",
+          "startQuestion": 4,
+          "endQuestion": 6,
+          "data": {
+            "title": "Cross-section of a Roman Qanat Shaft",
+            "imageSrc": "/images/book-16-test-4-passage1-shaft.jpg",
+            "questions": [
+              { "id": "4", "questionNumber": 4, "label": "made of wood or stone" },
+              { "id": "5", "questionNumber": 5, "label": "attached to the plumb line" },
+              { "id": "6", "questionNumber": 6, "label": "handholds and footholds used for" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 7–10 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 7,
+          "endQuestion": 10,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "7",  "text": "The counter-excavation method completely replaced the qanat method in the 6th century BCE." },
+              { "id": "8",  "text": "Only experienced builders were employed to construct a tunnel using the counter-excavation method." },
+              { "id": "9",  "text": "The information about a problem that occurred during the construction of the Saldae aqueduct system was found in an ancient book." },
+              { "id": "10", "text": "The mistake made by the builders of the Saldae aqueduct system was that the two parts of the tunnel failed to meet." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Answer the questions below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 11–13 on your answer sheet.",
+          "startQuestion": 11,
+          "endQuestion": 13,
+          "data": {
+            "sentences": [
+              { "questionNumber": 11, "content": ["What type of mineral were the Dolaucothi mines in Wales built to extract? ", { "id": "11", "type": "input" }] },
+              { "questionNumber": 12, "content": ["In addition to the patron, whose name might be carved onto a tunnel? ", { "id": "12", "type": "input" }] },
+              { "questionNumber": 13, "content": ["What part of Seleuceia Pieria was the Cevlik tunnel built to protect? ", { "id": "13", "type": "input" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Lost in a book",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about digital reading vs print reading: technology has a hidden effect on us (reading habits). Sherry Turkle says we should be aware of what is lost when innovation occurs. Brain circuits adjust to whatever is required of them (not that reading is an inborn ability). Mark Edmundson says college students' attitudes don't match those of the general public. Studies: Mangen — students read print vs digital, question-and-answer technique to test comprehension; screen readers found order of information hard to recall. Ziming Liu — students reading isolated words/phrases to save time; gives superficial understanding of emotional content. Writer's views: medium affects choice of content; all age groups at risk; no mention of false information; we still have opportunities to rectify the problems.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 14–17 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "text": "What is the writer's main point in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Our use of technology is having a hidden effect on us." },
+                  { "letter": "B", "text": "Technology can be used to help youngsters to read." },
+                  { "letter": "C", "text": "Travellers should be encouraged to use technology on planes." },
+                  { "letter": "D", "text": "Playing games is a more popular use of technology than reading." }
+                ]
+              },
+              {
+                "id": "15",
+                "text": "What main point does Sherry Turkle make about innovation?",
+                "options": [
+                  { "letter": "A", "text": "Technological innovation has led to a reduction in print reading." },
+                  { "letter": "B", "text": "We should pay attention to what might be lost when innovation occurs." },
+                  { "letter": "C", "text": "We should encourage more young people to become involved in innovation." },
+                  { "letter": "D", "text": "There is a difference between developing products and developing ideas." }
+                ]
+              },
+              {
+                "id": "16",
+                "text": "What point is the writer making in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Humans have an inborn ability to read and write." },
+                  { "letter": "B", "text": "Reading can be done using many different mediums." },
+                  { "letter": "C", "text": "Writing systems make unexpected demands on the brain." },
+                  { "letter": "D", "text": "Some brain circuits adjust to whatever is required of them." }
+                ]
+              },
+              {
+                "id": "17",
+                "text": "According to Mark Edmundson, the attitude of college students",
+                "options": [
+                  { "letter": "A", "text": "has changed the way he teaches." },
+                  { "letter": "B", "text": "has influenced what they select to read." },
+                  { "letter": "C", "text": "does not worry him as much as it does others." },
+                  { "letter": "D", "text": "does not match the views of the general public." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–H**, below.\nWrite the correct letter, **A–H**, in boxes 18–22 on your answer sheet.",
+          "startQuestion": 18,
+          "endQuestion": 22,
+          "data": {
+            "title": "Studies on digital screen use",
+            "options": [
+              { "letter": "A", "text": "fast" },
+              { "letter": "B", "text": "isolated" },
+              { "letter": "C", "text": "emotional" },
+              { "letter": "D", "text": "worrying" },
+              { "letter": "E", "text": "many" },
+              { "letter": "F", "text": "hard" },
+              { "letter": "G", "text": "combined" },
+              { "letter": "H", "text": "thorough" }
+            ],
+            "content": [
+              "There have been many studies on digital screen use, showing some ",
+              { "id": "18", "type": "dropzone" },
+              " trends. Psychologist Anne Mangen gave high-school students a short story to read, half using digital and half using print mediums. Her team then used a question-and-answer technique to find out how ",
+              { "id": "19", "type": "dropzone" },
+              " each group's understanding of the plot was. The findings showed a clear pattern in the responses, with those who read screens finding the order of information ",
+              { "id": "20", "type": "dropzone" },
+              " to recall.\n\nStudies by Ziming Liu show that students are tending to read ",
+              { "id": "21", "type": "dropzone" },
+              " words and phrases in a text to save time. This approach, she says, gives the reader a superficial understanding of the ",
+              { "id": "22", "type": "dropzone" },
+              " content of material, leaving no time for thought."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?\nIn boxes 23–26 on your answer sheet, write\n**YES** if the statement agrees with the views of the writer\n**NO** if the statement contradicts the views of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "23", "text": "The medium we use to read can affect our choice of reading content." },
+              { "id": "24", "text": "Some age groups are more likely to lose their complex reading skills than others." },
+              { "id": "25", "text": "False information has become more widespread in today's digital era." },
+              { "id": "26", "text": "We still have opportunities to rectify the problems that technology is presenting." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Attitudes to artificial intelligence",
+        "sections": [
+          { "questionId": "27", "heading": "A", "content": "[Placeholder for Section A — highlighting the existence of a problem (distrust/concern about AI)]" },
+          { "questionId": "28", "heading": "B", "content": "[Placeholder for Section B — widespread distrust of an AI innovation]" },
+          { "questionId": "29", "heading": "C", "content": "[Placeholder for Section C — reasons why we have more faith in human judgement than AI]" },
+          { "questionId": "30", "heading": "D", "content": "[Placeholder for Section D — encouraging openness about how AI functions]" },
+          { "questionId": "31", "heading": "E", "content": "[Placeholder for Section E — the advantages of involving users in AI processes]" },
+          { "questionId": "32", "heading": "F", "content": "[Placeholder for Section F — a surprisingly successful AI application]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 3 has six sections, **A–F**.\nChoose the correct heading for each section from the list of headings below.\nWrite the correct number, **i–viii**, in boxes 27–32 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "headings": [
+              "i   An increasing divergence of attitudes towards AI",
+              "ii  Reasons why we have more faith in human judgement than in AI",
+              "iii The superiority of AI projections over those made by humans",
+              "iv  The process by which AI can help us make good decisions",
+              "v   The advantages of involving users in AI processes",
+              "vi  Widespread distrust of an AI innovation",
+              "vii Encouraging openness about how AI functions",
+              "viii A surprisingly successful AI application"
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 33–35 on your answer sheet.",
+          "startQuestion": 33,
+          "endQuestion": 35,
+          "data": {
+            "questions": [
+              {
+                "id": "33",
+                "text": "What is the writer doing in Section A?",
+                "options": [
+                  { "letter": "A", "text": "providing a solution to a concern" },
+                  { "letter": "B", "text": "justifying an opinion about an issue" },
+                  { "letter": "C", "text": "highlighting the existence of a problem" },
+                  { "letter": "D", "text": "explaining the reasons for a phenomenon" }
+                ]
+              },
+              {
+                "id": "34",
+                "text": "According to Section C, why might some people be reluctant to accept AI?",
+                "options": [
+                  { "letter": "A", "text": "They are afraid it will replace humans in decision-making jobs." },
+                  { "letter": "B", "text": "Its complexity makes them feel that they are at a disadvantage." },
+                  { "letter": "C", "text": "They would rather wait for the technology to be tested over a period of time." },
+                  { "letter": "D", "text": "Misunderstandings about how it works make it seem more challenging than it is." }
+                ]
+              },
+              {
+                "id": "35",
+                "text": "What does the writer say about the media in Section C of the text?",
+                "options": [
+                  { "letter": "A", "text": "It leads the public to be mistrustful of AI." },
+                  { "letter": "B", "text": "It devotes an excessive amount of attention to AI." },
+                  { "letter": "C", "text": "Its reports of incidents involving AI are often inaccurate." },
+                  { "letter": "D", "text": "It gives the impression that AI failures are due to designer error." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 36–40 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 36,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "36", "text": "Subjective depictions of AI in sci-fi films make people change their opinions about automation." },
+              { "id": "37", "text": "Portrayals of AI in media and entertainment are likely to become more positive." },
+              { "id": "38", "text": "Rejection of the possibilities of AI may have a negative effect on many people's lives." },
+              { "id": "39", "text": "Familiarity with AI has very little impact on people's attitudes to the technology." },
+              { "id": "40", "text": "AI applications which users are able to modify are more likely to gain consumer approval." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

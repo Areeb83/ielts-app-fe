@@ -1,0 +1,280 @@
+{
+  "testId": "book-13-reading-test-1",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Academic Reading Test 1",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Case Study: Tourism New Zealand website",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Case Study: Tourism New Zealand website. The passage discusses the www.newzealand.com website, its database of tourism services, special features on local topics including an interview with a former sports star and a film location tour, driving route information, a Travel Planner tool, and the 'Your Words' section allowing travellers to share links to their journals.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–7 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "title": "",
+            "headers": ["Section of website", "Comments"],
+            "rows": [
+              [
+                "Database of tourism services",
+                [
+                  "•  easy for tourism-related businesses to get on the list\n•  allowed businesses to ",
+                  { "id": "1", "type": "input" },
+                  " information regularly\n•  provided a country-wide evaluation of businesses, including their impact on the ",
+                  { "id": "2", "type": "input" }
+                ]
+              ],
+              [
+                "Special features on local topics",
+                [
+                  "•  e.g. an interview with a former sports ",
+                  { "id": "3", "type": "input" },
+                  ", and an interactive tour of various locations used in ",
+                  { "id": "4", "type": "input" }
+                ]
+              ],
+              [
+                "Information on driving routes",
+                [
+                  "•  varied depending on the ",
+                  { "id": "5", "type": "input" }
+                ]
+              ],
+              [
+                "Travel Planner",
+                [
+                  "•  included a map showing selected places, details of public transport and local ",
+                  { "id": "6", "type": "input" }
+                ]
+              ],
+              [
+                "'Your Words'",
+                [
+                  "•  travellers could send a link to their ",
+                  { "id": "7", "type": "input" }
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 8–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "8",  "text": "The website www.newzealand.com aimed to provide ready-made itineraries and packages for travel companies and individual tourists." },
+              { "id": "9",  "text": "It was found that most visitors started searching on the website by geographical location." },
+              { "id": "10", "text": "According to research, 26% of visitor satisfaction is related to their accommodation." },
+              { "id": "11", "text": "Visitors to New Zealand like to become involved in the local culture." },
+              { "id": "12", "text": "Visitors like staying in small hotels in New Zealand rather than in larger ones." },
+              { "id": "13", "text": "Many visitors feel it is unlikely that they will return to New Zealand after their visit." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Why we need to protect the polar bear",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**.\nChoose the correct heading for each paragraph from the list of headings below.\nWrite the correct number, **i–viii**, in boxes 14–19 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 19,
+          "data": {
+            "headings": [
+              "i    The productive outcomes that may result from boredom",
+              "ii   What teachers can do to prevent boredom",
+              "iii  A new explanation and a new cure for boredom",
+              "iv   Problems with a scientific approach to boredom",
+              "v    A potential danger arising from boredom",
+              "vi   Creating a system of classification for feelings of boredom",
+              "vii  Age groups most affected by boredom",
+              "viii Identifying those most affected by boredom"
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following people (Questions 20–23) and the list of ideas below.\nMatch each person with the correct idea, **A–E**.\nWrite the correct letter, **A–E**, in boxes 20–23 on your answer sheet.",
+          "startQuestion": 20,
+          "endQuestion": 23,
+          "data": {
+            "title": "List of Ideas",
+            "options": [
+              { "letter": "A", "text": "The way we live today may encourage boredom." },
+              { "letter": "B", "text": "One sort of boredom is worse than all the others." },
+              { "letter": "C", "text": "Levels of boredom may fall in the future." },
+              { "letter": "D", "text": "Trying to cope with boredom can increase its negative effects." },
+              { "letter": "E", "text": "Boredom may encourage us to avoid an unpleasant experience." }
+            ],
+            "questions": [
+              { "id": "20", "questionNumber": 20, "text": "Peter Toohey" },
+              { "id": "21", "questionNumber": 21, "text": "Thomas Goetz" },
+              { "id": "22", "questionNumber": 22, "text": "John Eastwood" },
+              { "id": "23", "questionNumber": 23, "text": "Francoise Wemelsfelder" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 24–26 on your answer sheet.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "title": "Responses to boredom",
+            "content": [
+              "For John Eastwood, the central feature of boredom is that people cannot ",
+              { "id": "24", "type": "input" },
+              ", due to a failure in what he calls the 'attention system', and as a result they become frustrated and irritable. His team suggests that those for whom ",
+              { "id": "25", "type": "input" },
+              " is an important aim in life may have problems in coping with boredom, whereas those who have the characteristic of ",
+              { "id": "26", "type": "input" },
+              " generally cope with it."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The power of play",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 3. The passage discusses computer-generated art, Aaron (a computer program that generates original artwork), the Painting Fool, Geraint Wiggins's views on computer creativity, Simon Colton's work, David Cope's EMI software which generates music in the style of classical composers, Douglas Hofstadter's criticism of EMI, and David Moffat's research into audience reactions to computer-generated music.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "What is the writer suggesting about computer-produced works in the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "People's acceptance of them can vary considerably." },
+                  { "letter": "B", "text": "A great deal of progress has already been attained in this field." },
+                  { "letter": "C", "text": "They have had more success in some artistic genres than in others." },
+                  { "letter": "D", "text": "The advances are not as significant as the public believes them to be." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "According to Geraint Wiggins, why are many people worried by computer art?",
+                "options": [
+                  { "letter": "A", "text": "It is aesthetically inferior to human art." },
+                  { "letter": "B", "text": "It may ultimately supersede human art." },
+                  { "letter": "C", "text": "It undermines a fundamental human quality." },
+                  { "letter": "D", "text": "It will lead to a deterioration in human ability." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "What is a key difference between Aaron and the Painting Fool?",
+                "options": [
+                  { "letter": "A", "text": "its programmer's background" },
+                  { "letter": "B", "text": "public response to its work" },
+                  { "letter": "C", "text": "the source of its subject matter" },
+                  { "letter": "D", "text": "the technical standard of its output" }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "What point does Simon Colton make in the fourth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "Software-produced art is often dismissed as childish and simplistic." },
+                  { "letter": "B", "text": "The same concepts of creativity should not be applied to all forms of art." },
+                  { "letter": "C", "text": "It is unreasonable to expect a machine to be as imaginative as a human being." },
+                  { "letter": "D", "text": "People tend to judge computer art and human art according to different criteria." }
+                ]
+              },
+              {
+                "id": "31",
+                "text": "The writer refers to the paintings of a chair as an example of computer art which",
+                "options": [
+                  { "letter": "A", "text": "achieves a particularly striking effect." },
+                  { "letter": "B", "text": "exhibits a certain level of genuine artistic skill." },
+                  { "letter": "C", "text": "closely resembles that of a well-known artist." },
+                  { "letter": "D", "text": "highlights the technical limitations of the software." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Complete each sentence with the correct ending, **A–G**, below.\nWrite the correct letter, **A–G**, in boxes 32–37 on your answer sheet.",
+          "startQuestion": 32,
+          "endQuestion": 37,
+          "data": {
+            "title": "List of Endings",
+            "options": [
+              { "letter": "A", "text": "generating work that was virtually indistinguishable from that of humans." },
+              { "letter": "B", "text": "knowing whether it was the work of humans or software." },
+              { "letter": "C", "text": "producing work entirely dependent on the imagination of its creator." },
+              { "letter": "D", "text": "comparing the artistic achievements of humans and computers." },
+              { "letter": "E", "text": "revealing the technical details of his program." },
+              { "letter": "F", "text": "persuading the public to appreciate computer art." },
+              { "letter": "G", "text": "discovering that it was the product of a computer program." }
+            ],
+            "questions": [
+              { "id": "32", "questionNumber": 32, "text": "Simon Colton says it is important to consider the long-term view when" },
+              { "id": "33", "questionNumber": 33, "text": "David Cope's EMI software surprised people by" },
+              { "id": "34", "questionNumber": 34, "text": "Geraint Wiggins criticised Cope for not" },
+              { "id": "35", "questionNumber": 35, "text": "Douglas Hofstadter claimed that EMI was" },
+              { "id": "36", "questionNumber": 36, "text": "Audiences who had listened to EMI's music became angry after" },
+              { "id": "37", "questionNumber": 37, "text": "The participants in David Moffat's study had to assess music without" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 38–40 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "38", "text": "Moffat's research may help explain people's reactions to EMI." },
+              { "id": "39", "text": "The non-experts in Moffat's study all responded in a predictable way." },
+              { "id": "40", "text": "Justin Kruger's findings cast doubt on Paul Bloom's theory about people's prejudice towards computer art." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

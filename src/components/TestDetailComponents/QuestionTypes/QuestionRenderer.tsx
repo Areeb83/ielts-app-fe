@@ -10,6 +10,8 @@ import MatchingFeature from "./MatchingFeature/MatchingFeature";
 import MatchingHeading from "./MatchingHeading/MatchingHeading";
 import DiagramLabelling from "./DiagramLabelling/DiagramLabelling";
 import SentenceCompletionDragDrop from "./SentenceCompletionDragDrop/SentenceCompletionDragDrop";
+import ParagraphMatching from "./ParagraphMatching/ParagraphMatching";
+import SummaryCompletionDragDrop from "./SummaryCompletionDragDrop/SummaryCompletionDragDrop";
 
 interface QuestionRendererProps {
     group: QuestionGroup;
@@ -28,7 +30,11 @@ interface QuestionRendererProps {
  * Add new question types here as you build them.
  */
 const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, draggingWordId, onDragStart, onDragEnd }) => {
-    const questionRange = group.hideRange ? "" : `Questions ${group.startQuestion}–${group.endQuestion}`;
+    const questionRange = group.hideRange
+        ? ""
+        : group.startQuestion === group.endQuestion
+            ? `Question ${group.startQuestion}`
+            : `Questions ${group.startQuestion}–${group.endQuestion}`;
 
     switch (group.type) {
         case "FLOW_CHART_DRAG_DROP":
@@ -142,6 +148,31 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     optionsBelow={testType === 'reading'}
+                />
+            );
+
+        case "SUMMARY_COMPLETION_DRAG_DROP":
+            return (
+                <SummaryCompletionDragDrop
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
+                    testType={testType}
+                />
+            );
+
+        case "PARAGRAPH_MATCHING":
+            return (
+                <ParagraphMatching
+                    instruction={group.instruction}
+                    questionRange={questionRange}
+                    // @ts-ignore
+                    data={group.data}
+                    answers={answers}
+                    onAnswerChange={onAnswerChange}
                 />
             );
 

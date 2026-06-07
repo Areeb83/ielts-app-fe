@@ -9,9 +9,9 @@ export const ROUTES = {
 
   // Dynamic skill routes (use builder functions below for navigation)
   LISTENING: '/:examType/listening',
-  LISTENING_TEST: '/:examType/listening/:bookId/test/:testId',
+  LISTENING_TEST: '/:examType/listening/:testId',
   READING: '/:examType/reading',
-  READING_TEST: '/:examType/reading/:bookId/test/:testId',
+  READING_TEST: '/:examType/reading/:testId',
   WRITING: '/:examType/writing',
   SPEAKING: '/:examType/speaking',
 } as const;
@@ -22,14 +22,14 @@ export const ROUTES = {
 export const buildListeningRoute = (examType: string) =>
   `/${examType}/listening`;
 
-export const buildListeningTestRoute = (examType: string, bookId: string, testId: string) =>
-  `/${examType}/listening/${bookId}/test/${testId}`;
+export const buildListeningTestRoute = (examType: string, testId: string) =>
+  `/${examType}/listening/${testId}`;
 
 export const buildReadingRoute = (examType: string) =>
   `/${examType}/reading`;
 
-export const buildReadingTestRoute = (examType: string, bookId: string, testId: string) =>
-  `/${examType}/reading/${bookId}/test/${testId}`;
+export const buildReadingTestRoute = (examType: string, testId: string) =>
+  `/${examType}/reading/${testId}`;
 
 export const buildWritingRoute = (examType: string) =>
   `/${examType}/writing`;

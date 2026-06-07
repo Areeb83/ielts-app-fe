@@ -58,16 +58,19 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
     onAnswerChange,
 }) => {
     const formatInstruction = (text: string) => {
-        const regex = /(NO MORE THAN [A-Z ]+|\*\*[^*]+\*\*)/g;
-        const parts = text.split(regex);
-        return parts.map((part, i) => {
-            if (part.match(/^NO MORE THAN/)) {
-                return <strong key={i}>{part}</strong>;
-            }
-            if (part.match(/^\*\*.*\*\*$/)) {
-                return <strong key={i}>{part.slice(2, -2)}</strong>;
-            }
-            return part;
+        const lines = text.split('\n');
+        return lines.map((line, li) => {
+            const parts = line.split(/(\*\*[^*]+\*\*|NO MORE THAN [A-Z ]+)/g);
+            const rendered = parts.map((part, i) => {
+                if (part.match(/^\*\*.*\*\*$/)) return <strong key={i}>{part.slice(2, -2)}</strong>;
+                if (part.match(/^NO MORE THAN/)) return <strong key={i}>{part}</strong>;
+                return part;
+            });
+            return (
+                <span key={li} style={{ display: 'block', marginBottom: li < lines.length - 1 ? '6px' : 0 }}>
+                    {rendered}
+                </span>
+            );
         });
     };
 

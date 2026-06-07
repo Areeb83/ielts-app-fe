@@ -1,0 +1,268 @@
+{
+  "testId": "book-19-test-2",
+  "bookId": "book-19",
+  "title": "Cambridge IELTS 19 – Reading Test 2",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Britain's Industrial Revolution",
+      "passage": {
+        "title": "Britain's Industrial Revolution",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the notes below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 1,
+          "endQuestion": 7,
+          "data": {
+            "title": "Britain's Industrial Revolution",
+            "sentences": [
+              { "content": [{ "type": "bold", "text": "Steam power" }] },
+              { "content": ["• Newcomen's steam engine was used in mines to remove water."] },
+              { "questionNumber": 1, "content": ["• In Watt and Boulton's steam engine, the movement of the ", { "id": "1", "type": "input" }, " was linked to a gear system."] },
+              { "questionNumber": 2, "content": ["• A greater supply of ", { "id": "2", "type": "input" }, " was required to power steam engines."] },
+              { "content": [{ "type": "bold", "text": "Textile industry" }] },
+              { "questionNumber": 3, "content": ["• Before the Industrial Revolution, spinners and weavers worked at home and in ", { "id": "3", "type": "input" }] },
+              { "questionNumber": 4, "content": ["• Not as much ", { "id": "4", "type": "input" }, " was needed to produce cloth once the spinning jenny and power loom were invented."] },
+              { "content": [{ "type": "bold", "text": "Iron industry" }] },
+              { "questionNumber": 5, "content": ["• Smelting of iron ore with coke resulted in material that was better ", { "id": "5", "type": "input" }] },
+              { "questionNumber": 6, "content": ["• Demand for iron increased with the growth of the ", { "id": "6", "type": "input" }] },
+              { "content": [{ "type": "bold", "text": "Communications" }] },
+              { "content": ["• Cooke and Wheatstone patented the first telegraphy system."] },
+              { "content": ["• The telegraphy system was used to prevent locomotives colliding."] },
+              { "content": [{ "type": "bold", "text": "Urbanisation" }] },
+              { "content": ["• Small towns turned into cities very quickly."] },
+              { "questionNumber": 7, "content": ["• The new cities were dirty, crowded and lacked sufficient ", { "id": "7", "type": "input" }] }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE**, **FALSE** or **NOT GIVEN**.",
+          "startQuestion": 8,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "8",  "questionNumber": 8,  "text": "Britain's canal network grew rapidly so that more goods could be transported around the country." },
+              { "id": "9",  "questionNumber": 9,  "text": "Costs in the iron industry rose when the technique of smelting iron ore with coke was introduced." },
+              { "id": "10", "questionNumber": 10, "text": "Samuel Morse's communication system was more reliable than that developed by William Cooke and Charles Wheatstone." },
+              { "id": "11", "questionNumber": 11, "text": "The economic benefits of industrialisation were limited to certain sectors of society." },
+              { "id": "12", "questionNumber": 12, "text": "Some skilled weavers believed that the introduction of the new textile machines would lead to job losses." },
+              { "id": "13", "questionNumber": 13, "text": "There was some sympathy among local people for the Luddites who were arrested near Huddersfield." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "Performance Stress",
+      "passage": {
+        "title": "Performance Stress",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" },
+          { "heading": "F", "content": "[Section F content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**. Which paragraph contains the following information? You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "reference to two chemical compounds which impact on performance" },
+              { "id": "15", "questionNumber": 15, "text": "examples of strategies for minimising the effects of stress" },
+              { "id": "16", "questionNumber": 16, "text": "how a sportsperson accounted for their own experience of stress" },
+              { "id": "17", "questionNumber": 17, "text": "study results indicating links between stress responses and performance" },
+              { "id": "18", "questionNumber": 18, "text": "mention of people who can influence how athletes perceive their stress responses" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the sentences below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 19,
+          "endQuestion": 22,
+          "data": {
+            "sentences": [
+              { "questionNumber": 19, "content": ["Performance stress involves many demands on the athlete, for example, coping with the possible risk of ", { "id": "19", "type": "input" }, "."] },
+              { "questionNumber": 20, "content": ["Cortisol can cause tennis players to produce fewer good ", { "id": "20", "type": "input" }, "."] },
+              { "questionNumber": 21, "content": ["Psychologists can help athletes to view their physiological responses as the effect of a positive feeling such as ", { "id": "21", "type": "input" }, "."] },
+              { "questionNumber": 22, "content": [{ "id": "22", "type": "input" }, " is an example of a psychological technique which can reduce an athlete's stress responses."] }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text?",
+          "startQuestion": 23,
+          "endQuestion": 24,
+          "data": {
+            "questions": [
+              {
+                "id": "23-24",
+                "text": "Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text?",
+                "options": [
+                  { "letter": "A", "text": "the stage at which she dropped out of the tournament" },
+                  { "letter": "B", "text": "symptoms of her performance stress at the tournament" },
+                  { "letter": "C", "text": "measures which she had taken to manage her stress levels" },
+                  { "letter": "D", "text": "aspects of the Wimbledon tournament which increased her stress levels" },
+                  { "letter": "E", "text": "reactions to her social media posts about her experience at Wimbledon" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25-26",
+                "text": "Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
+                "options": [
+                  { "letter": "A", "text": "the factors which determine how severe it may be" },
+                  { "letter": "B", "text": "how long it takes for its effects to become apparent" },
+                  { "letter": "C", "text": "which of its symptoms is most frequently encountered" },
+                  { "letter": "D", "text": "the types of athletes who are most likely to suffer from it" },
+                  { "letter": "E", "text": "the harm that can result if athletes experience it too often" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Maryam Mirzakhani",
+      "passage": {
+        "title": "Maryam Mirzakhani",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–K**, below.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "title": "Maryam Mirzakhani",
+            "options": [
+              { "letter": "A", "text": "appeal" },
+              { "letter": "B", "text": "determined" },
+              { "letter": "C", "text": "intrigued" },
+              { "letter": "D", "text": "single" },
+              { "letter": "E", "text": "achievement" },
+              { "letter": "F", "text": "devoted" },
+              { "letter": "G", "text": "involved" },
+              { "letter": "H", "text": "unique" },
+              { "letter": "I", "text": "innovative" },
+              { "letter": "J", "text": "satisfaction" },
+              { "letter": "K", "text": "intent" }
+            ],
+            "content": [
+              "Maryam Mirzakhani is regarded as ",
+              { "id": "27", "type": "dropzone" },
+              " in the field of mathematics because she was the only female holder of the prestigious Fields Medal – a record that she retained at the time of her death. However, maths held little ",
+              { "id": "28", "type": "dropzone" },
+              " for her as a child and in fact her performance was below average until she was ",
+              { "id": "29", "type": "dropzone" },
+              " by a difficult puzzle that one of her siblings showed her. Later, as a professional mathematician, she had an inquiring mind and proved herself to be ",
+              { "id": "30", "type": "dropzone" },
+              " when things did not go smoothly. She said she got the greatest ",
+              { "id": "31", "type": "dropzone" },
+              " from making ground-breaking discoveries and in fact she was responsible for some extremely ",
+              { "id": "32", "type": "dropzone" },
+              " mathematical studies."
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 33,
+          "endQuestion": 37,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "33", "questionNumber": 33, "text": "Many people who ended up winning prestigious intellectual prizes only reached an average standard when young." },
+              { "id": "34", "questionNumber": 34, "text": "Einstein's failures as a young man were due to his lack of confidence." },
+              { "id": "35", "questionNumber": 35, "text": "It is difficult to reach agreement on whether some children are actually born gifted." },
+              { "id": "36", "questionNumber": 36, "text": "Einstein was upset by the public's view of his life's work." },
+              { "id": "37", "questionNumber": 37, "text": "Einstein put his success down to the speed at which he dealt with scientific questions." }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "38",
+                "questionNumber": 38,
+                "text": "What does Eyre believe is needed for children to equal 'gifted' standards?",
+                "options": [
+                  { "letter": "A", "text": "strict discipline from the teaching staff" },
+                  { "letter": "B", "text": "assistance from their peers in the classroom" },
+                  { "letter": "C", "text": "the development of a spirit of inquiry towards their studies" },
+                  { "letter": "D", "text": "the determination to surpass everyone else's achievements" }
+                ]
+              },
+              {
+                "id": "39",
+                "questionNumber": 39,
+                "text": "What is the result of Ericsson's research?",
+                "options": [
+                  { "letter": "A", "text": "Very gifted students do not need to work on improving memory skills." },
+                  { "letter": "B", "text": "Being born with a special gift is not the key factor in becoming expert." },
+                  { "letter": "C", "text": "Including time for physical exercise is crucial in raising performance." },
+                  { "letter": "D", "text": "10,000 hours of relevant and demanding work will create a genius." }
+                ]
+              },
+              {
+                "id": "40",
+                "questionNumber": 40,
+                "text": "In the penultimate paragraph, it is stated the key to some deprived children's success is",
+                "options": [
+                  { "letter": "A", "text": "a regular and nourishing diet at home." },
+                  { "letter": "B", "text": "the loving support of more than one parent." },
+                  { "letter": "C", "text": "a community which has well-funded facilities for learning." },
+                  { "letter": "D", "text": "the guidance of someone who recognises the benefits of learning." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

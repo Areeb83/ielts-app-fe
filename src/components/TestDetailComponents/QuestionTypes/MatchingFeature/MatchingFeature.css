@@ -17,7 +17,7 @@
 }
 
 .matching-feature__instruction {
-    font-size: 16px !important;
+    font-size: 15px;
     font-weight: 400;
     margin: 0;
     color: #333;
@@ -54,7 +54,7 @@
 .matching-feature__table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
 }
 
@@ -176,12 +176,13 @@
     border-collapse: collapse;
     border: 2px solid #000;
     width: 100%;
+    font-size: 15px;
 }
 
 .matching-feature__options-title {
     padding: 12px 15px;
     text-align: left;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     border-bottom: 2px solid #000;
 }

@@ -16,13 +16,28 @@ interface MultipleChoiceProps {
 }
 
 const formatInstruction = (text: string) => {
-    const regex = /(\b(?:ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN)\b|NO MORE THAN [A-Z ]+|\*\*[^*]+\*\*)/g;
-    const parts = text.split(regex);
-    return parts.map((part, i) => {
-        if (part.match(/^\*\*.*\*\*$/)) return <strong key={i}>{part.slice(2, -2)}</strong>;
-        if (part && part.match(/^(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|NO MORE THAN)/)) return <strong key={i}>{part}</strong>;
-        return part;
-    });
+    const lines = text.split('\n');
+
+    const renderLine = (line: string, key: number) => {
+        const parts = line.split(/(\*\*[^*]+\*\*|\b(?:ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN)\b|NO MORE THAN [A-Z ]+)/g);
+        return parts.map((part, i) => {
+            if (part.match(/^\*\*.*\*\*$/)) return <strong key={`${key}-${i}`}>{part.slice(2, -2)}</strong>;
+            if (part && part.match(/^(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|NO MORE THAN)/)) return <strong key={`${key}-${i}`}>{part}</strong>;
+            return <React.Fragment key={`${key}-${i}`}>{part}</React.Fragment>;
+        });
+    };
+
+    // Single line — return inline (no block wrapping, so question number stays on same line)
+    if (lines.length === 1) {
+        return renderLine(lines[0], 0);
+    }
+
+    // Multi-line — wrap each in a block span with gap
+    return lines.map((line, li) => (
+        <span key={li} style={{ display: 'block', marginBottom: li < lines.length - 1 ? '6px' : 0 }}>
+            {renderLine(line, li)}
+        </span>
+    ));
 };
 
 const MultipleChoiceItem: React.FC<{
@@ -111,8 +126,8 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
     
     const explanatoryText = identificationData
         ? identificationData.optionsType === "TRUE_FALSE"
-            ? "Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this."
-            : "Choose YES if the statement agrees with the claims of the writer, choose NO if the statement contradicts the claims of the writer, or choose NOT GIVEN if it is impossible to say what the writer thinks about this."
+            ? "Choose **TRUE** if the statement agrees with the information given in the text,\nchoose **FALSE** if the statement contradicts the information,\nor choose **NOT GIVEN** if there is no information on this."
+            : "Choose **YES** if the statement agrees with the claims of the writer,\nchoose **NO** if the statement contradicts the claims of the writer,\nor choose **NOT GIVEN** if it is impossible to say what the writer thinks about this."
         : null;
 
     const questions = identificationData 
@@ -134,6 +149,10 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
 
             {"title" in data && (data as any).title && (
                 <h3 className="mc__title">{(data as any).title}</h3>
+            )}
+
+            {!isIdentification && instruction && (
+                <p className="mc__instruction">{formatInstruction(instruction)}</p>
             )}
 
             {explanatoryText && (

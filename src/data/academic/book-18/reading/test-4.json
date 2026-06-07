@@ -1,0 +1,327 @@
+{
+  "testId": "book-18-test-4",
+  "bookId": "book-18",
+  "title": "Cambridge IELTS 18 – Reading Test 4",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "READING PASSAGE 1",
+      "sectionHeading": "Green Roofs",
+      "passage": {
+        "title": "Green Roofs",
+        "sections": [
+          { "heading": "A", "content": "[Section A content to be added]" },
+          { "heading": "B", "content": "[Section B content to be added]" },
+          { "heading": "C", "content": "[Section C content to be added]" },
+          { "heading": "D", "content": "[Section D content to be added]" },
+          { "heading": "E", "content": "[Section E content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 1 has five paragraphs, **A–E**. Which paragraph contains the following information? You may use any letter more than once.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E"],
+            "questions": [
+              { "id": "1", "questionNumber": 1, "text": "mention of several challenges to be overcome before a green roof can be installed" },
+              { "id": "2", "questionNumber": 2, "text": "reference to a city where green roofs have been promoted for many years" },
+              { "id": "3", "questionNumber": 3, "text": "a belief that existing green roofs should be used as a model for new ones" },
+              { "id": "4", "questionNumber": 4, "text": "examples of how green roofs can work in combination with other green urban initiatives" },
+              { "id": "5", "questionNumber": 5, "text": "the need to make a persuasive argument for the financial benefits of green roofs" }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION",
+          "instruction": "Complete the summary below. Choose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 6,
+          "endQuestion": 9,
+          "data": {
+            "title": "Advantages of green roofs",
+            "sentences": [
+              {
+                "content": [
+                  "City rooftops covered with greenery have many advantages. These include lessening the likelihood that floods will occur, reducing how much money is spent on ",
+                  { "id": "6", "type": "input" },
+                  " and creating environments that are suitable for wildlife. In many cases, they can also be used for producing ",
+                  { "id": "7", "type": "input" }
+                ]
+              },
+              {
+                "content": [
+                  "There are also social benefits of green roofs. For example, the medical profession recommends ",
+                  { "id": "8", "type": "input" },
+                  " as an activity to help people cope with mental health issues. Studies have also shown that the availability of green spaces can prevent physical problems such as ",
+                  { "id": "9", "type": "input" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
+          "startQuestion": 10,
+          "endQuestion": 11,
+          "data": {
+            "questions": [
+              {
+                "id": "10-11",
+                "text": "Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
+                "options": [
+                  { "letter": "A", "text": "a longer growing season for edible produce" },
+                  { "letter": "B", "text": "more economical use of water" },
+                  { "letter": "C", "text": "greater water-storage capacity" },
+                  { "letter": "D", "text": "ability to cultivate more plant types" },
+                  { "letter": "E", "text": "a large surface area for growing plants" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, **A–E**. Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
+          "startQuestion": 12,
+          "endQuestion": 13,
+          "data": {
+            "questions": [
+              {
+                "id": "12-13",
+                "text": "Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
+                "options": [
+                  { "letter": "A", "text": "to provide habitats for a wide range of species" },
+                  { "letter": "B", "text": "to grow plants successfully even in the wettest climates" },
+                  { "letter": "C", "text": "to regulate the temperature of the immediate environment" },
+                  { "letter": "D", "text": "to generate power from a sustainable source" },
+                  { "letter": "E", "text": "to collect water to supply other buildings" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "READING PASSAGE 2",
+      "sectionHeading": "The Growth Mindset",
+      "passage": {
+        "title": "The Growth Mindset",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 14,
+          "endQuestion": 16,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "questionNumber": 14,
+                "text": "What can we learn from the first paragraph?",
+                "options": [
+                  { "letter": "A", "text": "where the notion of innate intelligence first began" },
+                  { "letter": "B", "text": "when ideas about the nature of intelligence began to shift" },
+                  { "letter": "C", "text": "how scientists have responded to changing views of intelligence" },
+                  { "letter": "D", "text": "why thinkers turned away from the idea of intelligence being fixed" }
+                ]
+              },
+              {
+                "id": "15",
+                "questionNumber": 15,
+                "text": "The second paragraph describes how schools encourage students to",
+                "options": [
+                  { "letter": "A", "text": "identify their personal ambitions." },
+                  { "letter": "B", "text": "help each other to realise their goals." },
+                  { "letter": "C", "text": "have confidence in their potential to succeed." },
+                  { "letter": "D", "text": "concentrate on where their particular strengths lie." }
+                ]
+              },
+              {
+                "id": "16",
+                "questionNumber": 16,
+                "text": "In the third paragraph, the writer suggests that students with a fixed mindset",
+                "options": [
+                  { "letter": "A", "text": "tend to be less competitive." },
+                  { "letter": "B", "text": "generally have a low sense of self-esteem." },
+                  { "letter": "C", "text": "will only work hard if they are given constant encouragement." },
+                  { "letter": "D", "text": "are afraid to push themselves beyond what they see as their limitations." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Match each statement with the correct person or people, **A–E**. You may use any letter more than once.",
+          "startQuestion": 17,
+          "endQuestion": 22,
+          "data": {
+            "title": "List of People",
+            "options": [
+              { "letter": "A", "text": "Alfred Binet" },
+              { "letter": "B", "text": "Carol Dweck" },
+              { "letter": "C", "text": "Andrew Gelman" },
+              { "letter": "D", "text": "Timothy Bates" },
+              { "letter": "E", "text": "David Yeager and Gregory Walton" }
+            ],
+            "questions": [
+              { "id": "17", "questionNumber": 17, "text": "The methodology behind the growth mindset studies was not strict enough." },
+              { "id": "18", "questionNumber": 18, "text": "The idea of the growth mindset has been incorrectly interpreted." },
+              { "id": "19", "questionNumber": 19, "text": "Intellectual ability is an unchangeable feature of each individual." },
+              { "id": "20", "questionNumber": 20, "text": "The growth mindset should be promoted without students being aware of it." },
+              { "id": "21", "questionNumber": 21, "text": "The growth mindset is not simply about boosting students' morale." },
+              { "id": "22", "questionNumber": 22, "text": "Research shows that the growth mindset has no effect on academic achievement." }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 23,
+          "endQuestion": 26,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "23", "questionNumber": 23, "text": "Dweck has handled criticisms of her work in an admirable way." },
+              { "id": "24", "questionNumber": 24, "text": "Students' self-perception is a more effective driver of self-confidence than actual achievement is." },
+              { "id": "25", "questionNumber": 25, "text": "Recent evidence about growth mindset interventions has attracted unfair coverage in the media." },
+              { "id": "26", "questionNumber": 26, "text": "Deliberate attempts to encourage students to strive for high achievement may have a negative effect." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "READING PASSAGE 3",
+      "sectionHeading": "Alfred Wegener",
+      "passage": {
+        "title": "Alfred Wegener",
+        "sections": [
+          { "content": "[Passage content to be added]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write **YES**, **NO** or **NOT GIVEN**.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "27", "questionNumber": 27, "text": "Wegener's ideas about continental drift were widely disputed while he was alive." },
+              { "id": "28", "questionNumber": 28, "text": "The idea that the continents remained fixed in place was defended in a number of respected scientific publications." },
+              { "id": "29", "questionNumber": 29, "text": "Wegener relied on a limited range of scientific fields to support his theory of continental drift." },
+              { "id": "30", "questionNumber": 30, "text": "The similarities between Wegener's theory of continental drift and modern-day plate tectonics are enormous." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of phrases, **A–J**, below.",
+          "startQuestion": 31,
+          "endQuestion": 36,
+          "data": {
+            "title": "Wegener's life and work",
+            "options": [
+              { "letter": "A", "text": "modest fame" },
+              { "letter": "B", "text": "vast range" },
+              { "letter": "C", "text": "record-breaking achievement" },
+              { "letter": "D", "text": "research methods" },
+              { "letter": "E", "text": "select group" },
+              { "letter": "F", "text": "professional interests" },
+              { "letter": "G", "text": "scientific debate" },
+              { "letter": "H", "text": "hazardous exploration" },
+              { "letter": "I", "text": "biographer's perspective" },
+              { "letter": "J", "text": "narrow investigation" }
+            ],
+            "content": [
+              "One of the remarkable things about Wegener from a ",
+              { "id": "31", "type": "dropzone" },
+              " is that although he proposed a theory of continental drift, he was not a geologist. His ",
+              { "id": "32", "type": "dropzone" },
+              " were limited to atmospheric physics. However, at the time he proposed his theory of continental drift in 1912, he was already a person of ",
+              { "id": "33", "type": "dropzone" },
+              ". Six years previously, there had been his ",
+              { "id": "34", "type": "dropzone" },
+              " of 52 hours in a hot-air balloon, followed by his well-publicised but ",
+              { "id": "35", "type": "dropzone" },
+              " of Greenland's coast. With the publication of his textbook on thermodynamics, he had also come to the attention of a ",
+              { "id": "36", "type": "dropzone" },
+              " of German scientists."
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "37",
+                "questionNumber": 37,
+                "text": "What is Mott T Greene doing in the fifth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "describing what motivated him to write the book" },
+                  { "letter": "B", "text": "explaining why it is desirable to read the whole book" },
+                  { "letter": "C", "text": "suggesting why Wegener pursued so many different careers" },
+                  { "letter": "D", "text": "indicating what aspects of Wegener's life interested him most" }
+                ]
+              },
+              {
+                "id": "38",
+                "questionNumber": 38,
+                "text": "What is said about Wegener in the sixth paragraph?",
+                "options": [
+                  { "letter": "A", "text": "He was not a particularly ambitious person." },
+                  { "letter": "B", "text": "He kept a record of all his scientific observations." },
+                  { "letter": "C", "text": "He did not adopt many of the scientific practices of the time." },
+                  { "letter": "D", "text": "He enjoyed discussing new discoveries with other scientists." }
+                ]
+              },
+              {
+                "id": "39",
+                "questionNumber": 39,
+                "text": "What does Greene say about some other famous scientists?",
+                "options": [
+                  { "letter": "A", "text": "Their published works had a greater impact than Wegener's did." },
+                  { "letter": "B", "text": "They had fewer doubts about their scientific ideas than Wegener did." },
+                  { "letter": "C", "text": "Their scientific ideas were more controversial than Wegener's." },
+                  { "letter": "D", "text": "They are easier subjects to write about than Wegener." }
+                ]
+              },
+              {
+                "id": "40",
+                "questionNumber": 40,
+                "text": "What is Greene's main point in the final paragraph?",
+                "options": [
+                  { "letter": "A", "text": "It is not enough in life to have good intentions." },
+                  { "letter": "B", "text": "People need to plan carefully if they want to succeed." },
+                  { "letter": "C", "text": "People have little control over many aspects of their lives." },
+                  { "letter": "D", "text": "It is important that people ensure they have the freedom to act." }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

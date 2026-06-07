@@ -1,0 +1,288 @@
+{
+  "testId": "book-11-test-2",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Academic Reading Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The Mary Rose",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for The Mary Rose.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write **TRUE** if the statement agrees with the information, **FALSE** if the statement contradicts the information, or **NOT GIVEN** if there is no information on this.",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "There is some doubt about what caused the Mary Rose to sink." },
+              { "id": "2", "text": "The Mary Rose was the only ship to sink in the battle of 19 July 1545." },
+              { "id": "3", "text": "Most of one side of the Mary Rose lay undamaged under the sea." },
+              { "id": "4", "text": "Alexander McKee knew that the wreck would contain many valuable historical objects." }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 5–8) and the list of dates below. Match each statement with the correct date, **A–G**. Write the correct letter, **A–G**, in boxes 5–8 on your answer sheet.",
+          "startQuestion": 5,
+          "endQuestion": 8,
+          "data": {
+            "title": "List of Dates",
+            "options": [
+              { "letter": "A", "text": "1836" },
+              { "letter": "B", "text": "1840" },
+              { "letter": "C", "text": "1965" },
+              { "letter": "D", "text": "1967" },
+              { "letter": "E", "text": "1971" },
+              { "letter": "F", "text": "1979" },
+              { "letter": "G", "text": "1982" }
+            ],
+            "questions": [
+              { "id": "5", "questionNumber": 5, "text": "A search for the Mary Rose was launched." },
+              { "id": "6", "questionNumber": 6, "text": "One person's exploration of the Mary Rose site stopped." },
+              { "id": "7", "questionNumber": 7, "text": "It was agreed that the hull of the Mary Rose should be raised." },
+              { "id": "8", "questionNumber": 8, "text": "The site of the Mary Rose was found by chance." }
+            ]
+          }
+        },
+        {
+          "type": "DIAGRAM_LABELLING",
+          "instruction": "Label the diagram below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "title": "Raising the hull of the Mary Rose: Stages one and two",
+            "imageSrc": "/images/book-11-test-2-passage1-mary-rose.jpg",
+            "questions": [
+              { "id": "9",  "questionNumber": 9  },
+              { "id": "10", "questionNumber": 10 },
+              { "id": "11", "questionNumber": 11 },
+              { "id": "12", "questionNumber": 12 },
+              { "id": "13", "questionNumber": 13 }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Moai: The statues of Easter Island",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" },
+          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 2 has seven paragraphs, **A–G**. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix, in boxes 14–20 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 20,
+          "data": {
+            "headings": [
+              "i   Evidence of innovative environment management practices",
+              "ii  An undisputed answer to a question about the moai",
+              "iii The future of the moai statues",
+              "iv  A theory which supports a local belief",
+              "v   The future of Easter Island",
+              "vi  Two opposing views about the Rapanui people",
+              "vii Destruction outside the inhabitants' control",
+              "viii How the statues made a situation worse",
+              "ix  Diminishing food resources"
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.",
+          "startQuestion": 21,
+          "endQuestion": 24,
+          "data": {
+            "title": "Jared Diamond's View",
+            "content": [
+              "Diamond believes that the Polynesian settlers on Rapa Nui destroyed its forests, cutting down its trees for fuel and clearing land for ",
+              { "id": "21", "type": "input" },
+              ". Twentieth-century discoveries of pollen prove that Rapa Nui had once been covered in palm forests, which had turned into grassland by the time the Europeans arrived on the island. When the islanders were no longer able to build the ",
+              { "id": "22", "type": "input" },
+              " they needed to go fishing, they began using the island's ",
+              { "id": "23", "type": "input" },
+              " as a food source, according to Diamond. Diamond also claims that the moai were built to show the power of the island's chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of ",
+              { "id": "24", "type": "input" },
+              "."
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose **TWO** letters, A–E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
+          "startQuestion": 25,
+          "endQuestion": 26,
+          "data": {
+            "questions": [
+              {
+                "id": "25 – 26",
+                "text": "On what points do Hunt and Lipo disagree with Diamond?",
+                "options": [
+                  { "letter": "A", "text": "the period when the moai were created" },
+                  { "letter": "B", "text": "how the moai were transported" },
+                  { "letter": "C", "text": "the impact of the moai on Rapanui society" },
+                  { "letter": "D", "text": "how the moai were carved" },
+                  { "letter": "E", "text": "the origins of the people who made the moai" }
+                ],
+                "multiple": true,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Making the most of trends",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 3.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B, C or D.\nWrite the correct letter in boxes 27–30 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 30,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "In the second paragraph, the writer refers to a shape-matching test in order to illustrate",
+                "options": [
+                  { "letter": "A", "text": "the subjective nature of art appreciation." },
+                  { "letter": "B", "text": "the reliance of modern art on abstract forms." },
+                  { "letter": "C", "text": "our tendency to be influenced by the opinions of others." },
+                  { "letter": "D", "text": "a common problem encountered when processing visual data." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "Angelina Hawley-Dolan's findings indicate that people",
+                "options": [
+                  { "letter": "A", "text": "mostly favour works of art which they know well." },
+                  { "letter": "B", "text": "hold fixed ideas about what makes a good work of art." },
+                  { "letter": "C", "text": "are often misled by their initial expectations of a work of art." },
+                  { "letter": "D", "text": "have the ability to perceive the intention behind works of art." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "Results of studies involving Robert Pepperell's pieces suggest that people",
+                "options": [
+                  { "letter": "A", "text": "can appreciate a painting without fully understanding it." },
+                  { "letter": "B", "text": "find it satisfying to work out what a painting represents." },
+                  { "letter": "C", "text": "vary widely in the time they spend looking at paintings." },
+                  { "letter": "D", "text": "generally prefer representational art to abstract art." }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "What do the experiments described in the fifth paragraph suggest about the paintings of Mondrian?",
+                "options": [
+                  { "letter": "A", "text": "They are more carefully put together than they appear." },
+                  { "letter": "B", "text": "They can be interpreted in a number of different ways." },
+                  { "letter": "C", "text": "They challenge our assumptions about shape and colour." },
+                  { "letter": "D", "text": "They are easier to appreciate than many other abstract works." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–H**, below.\nWrite the correct letters, **A–H**, in boxes 31–33 on your answer sheet.",
+          "startQuestion": 31,
+          "endQuestion": 33,
+          "data": {
+            "title": "Art and the Brain",
+            "content": [
+              "The discipline of neuroaesthetics aims to bring scientific objectivity to the study of art. Neurological studies of the brain, for example, demonstrate the impact which Impressionist paintings have on our ",
+              { "type": "dropzone", "id": "31" },
+              ". Alex Forsythe of the University of Liverpool believes many artists give their works the precise degree of ",
+              { "type": "dropzone", "id": "32" },
+              " which most appeals to the viewer's brain. She also observes that pleasing works of art often contain certain repeated ",
+              { "type": "dropzone", "id": "33" },
+              " which occur frequently in the natural world."
+            ],
+            "options": [
+              { "letter": "A", "text": "interpretation" },
+              { "letter": "B", "text": "complexity" },
+              { "letter": "C", "text": "emotions" },
+              { "letter": "D", "text": "movements" },
+              { "letter": "E", "text": "skill" },
+              { "letter": "F", "text": "layout" },
+              { "letter": "G", "text": "concern" },
+              { "letter": "H", "text": "images" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? Write **YES** if the statement agrees with the views of the writer, **NO** if the statement contradicts the views of the writer, or **NOT GIVEN** if there is no information on this.",
+          "startQuestion": 34,
+          "endQuestion": 39,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "34", "text": "Forsythe's findings contradicted previous beliefs on the function of 'fractals' in art." },
+              { "id": "35", "text": "Certain ideas regarding the link between 'mirror neurons' and art appreciation require further verification." },
+              { "id": "36", "text": "People's taste in paintings depends entirely on the current artistic trends of the period." },
+              { "id": "37", "text": "Scientists should seek to define the precise rules which govern people's reactions to works of art." },
+              { "id": "38", "text": "Art appreciation should always involve taking into consideration the cultural context in which an artist worked." },
+              { "id": "39", "text": "It is easier to find meaning in the field of science than in that of art." }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, A, B, C or D.\nWrite the correct letter in box 40 on your answer sheet.",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "40",
+                "text": "What would be the most appropriate subtitle for the article?",
+                "options": [
+                  { "letter": "A", "text": "Some scientific insights into how the brain responds to abstract art" },
+                  { "letter": "B", "text": "Recent studies focusing on the neural activity of abstract artists" },
+                  { "letter": "C", "text": "A comparison of the neurological bases of abstract and representational art" },
+                  { "letter": "D", "text": "How brain research has altered public opinion about abstract art" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

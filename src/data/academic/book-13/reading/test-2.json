@@ -1,0 +1,299 @@
+{
+  "testId": "book-13-reading-test-2",
+  "bookId": "book-13",
+  "title": "Cambridge IELTS 13 – Academic Reading Test 2",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Cinnamon",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Cinnamon. The passage covers the early history of cinnamon: in Biblical times it was added to oil and used to show affection; in Ancient Rome it was burned at funerals for its sweet smell; in the Middle Ages it was added to food (especially meat), indicated wealth, and was used to treat coughs. It was grown in Asia and brought by merchants' boats to Alexandria, then to Venice, from where traders sold it around Europe. The Portuguese controlled the trade in Ceylon in the 16th century, followed by the Dutch who took over gradually rather than immediately, and who planted their own trees.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–9 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 9,
+          "data": {
+            "title": "The Early History of Cinnamon",
+            "sections": [
+              {
+                "heading": "Biblical times:",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["added to ", { "id": "1", "type": "input" }]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["used to show ", { "id": "2", "type": "input" }, " between people"]
+                  }
+                ]
+              },
+              {
+                "heading": "Ancient Rome:",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["used for its sweet smell at ", { "id": "3", "type": "input" }]
+                  }
+                ]
+              },
+              {
+                "heading": "Middle Ages:",
+                "items": [
+                  {
+                    "bullet": "",
+                    "content": ["added to food, especially meat"]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["was an indication of a person's ", { "id": "4", "type": "input" }]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["known as a treatment for ", { "id": "5", "type": "input" }, " and other health problems"]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["grown in ", { "id": "6", "type": "input" }]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["merchants used ", { "id": "7", "type": "input" }, " to bring it to the Mediterranean"]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["arrived in the Mediterranean at ", { "id": "8", "type": "input" }]
+                  },
+                  {
+                    "bullet": "",
+                    "content": ["traders took it to ", { "id": "9", "type": "input" }, " and sold it to destinations around Europe"]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 10–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 10,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "10", "text": "The Portuguese had control over the cinnamon trade in Ceylon throughout the 16th century." },
+              { "id": "11", "text": "The Dutch took over the cinnamon trade from the Portuguese as soon as they arrived in Ceylon." },
+              { "id": "12", "text": "The trees planted by the Dutch produced larger quantities of cinnamon than the wild trees." },
+              { "id": "13", "text": "The spice trade maintained its economic importance during the 19th century." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Oxytocin",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "PARAGRAPH_MATCHING",
+          "instruction": "Reading Passage 2 has six paragraphs, **A–F**.\nWhich paragraph contains the following information?\nWrite the correct letter, **A–F**, in boxes 14–17 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 14,
+          "endQuestion": 17,
+          "data": {
+            "paragraphs": ["A", "B", "C", "D", "E", "F"],
+            "questions": [
+              { "id": "14", "questionNumber": 14, "text": "reference to research showing the beneficial effects of oxytocin on people" },
+              { "id": "15", "questionNumber": 15, "text": "reasons why the effects of oxytocin are complex" },
+              { "id": "16", "questionNumber": 16, "text": "mention of a period in which oxytocin attracted little scientific attention" },
+              { "id": "17", "questionNumber": 17, "text": "reference to people ignoring certain aspects of their research data" }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following research findings (Questions 18–20) and the list of researchers below.\nMatch each research finding with the correct researcher, **A–F**.\nWrite the correct letter, **A–F**, in boxes 18–20 on your answer sheet.",
+          "startQuestion": 18,
+          "endQuestion": 20,
+          "data": {
+            "title": "List of Researchers",
+            "options": [
+              { "letter": "A", "text": "Markus Heinrichs" },
+              { "letter": "B", "text": "Simone Shamay-Tsoory" },
+              { "letter": "C", "text": "Jennifer Bartz" },
+              { "letter": "D", "text": "Carolyn DeClerck" },
+              { "letter": "E", "text": "Carsten De Dreu" },
+              { "letter": "F", "text": "Sue Carter" }
+            ],
+            "questions": [
+              { "id": "18", "questionNumber": 18, "text": "People are more trusting when affected by oxytocin." },
+              { "id": "19", "questionNumber": 19, "text": "Oxytocin increases people's feelings of jealousy." },
+              { "id": "20", "questionNumber": 20, "text": "The effect of oxytocin varies from one type of person to another." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the summary below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 21–26 on your answer sheet.",
+          "startQuestion": 21,
+          "endQuestion": 26,
+          "data": {
+            "title": "Oxytocin research",
+            "content": [
+              "The earliest findings about oxytocin and bonding came from research involving ",
+              { "id": "21", "type": "input" },
+              ". It was also discovered that humans produce oxytocin during ",
+              { "id": "22", "type": "input" },
+              ". An experiment in 2005, in which participants were given either oxytocin or ",
+              { "id": "23", "type": "input" },
+              ", reinforced the belief that the hormone had a positive effect. However, later research suggests that this is not always the case. A study at the University of Haifa where participants took part in a ",
+              { "id": "24", "type": "input" },
+              " revealed the negative emotions which oxytocin can trigger. A study at the University of Antwerp showed people's lack of willingness to help ",
+              { "id": "25", "type": "input" },
+              " while under the influence of oxytocin. Meanwhile, research at the University of Amsterdam revealed that people who have been given oxytocin consider ",
+              { "id": "26", "type": "input" },
+              " that are familiar to them in their own country to have more positive associations than those from other cultures."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "Making the most of trends",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Making the most of trends. The passage discusses how managers can respond to consumer trends using different strategies. It covers examples including Coach (luxury bags maintaining premium pricing during a recession), Tesco (Greener Living programme with incentive points), Nike (collaborating with Apple for Nike+iPod and addressing health concerns), and iToys (ME2 handheld game combining fitness with gaming).]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "questions": [
+              {
+                "id": "27",
+                "text": "In the first paragraph, the writer says that most managers",
+                "options": [
+                  { "letter": "A", "text": "fail to spot the key consumer trends of the moment." },
+                  { "letter": "B", "text": "make the mistake of focusing only on the principal consumer trends." },
+                  { "letter": "C", "text": "misinterpret market research data relating to current consumer trends." },
+                  { "letter": "D", "text": "are unaware of the significant impact that trends have on consumers' lives." }
+                ]
+              },
+              {
+                "id": "28",
+                "text": "According to the third paragraph, Coach was anxious to",
+                "options": [
+                  { "letter": "A", "text": "follow what some of its competitors were doing." },
+                  { "letter": "B", "text": "maintain its prices throughout its range." },
+                  { "letter": "C", "text": "safeguard its reputation as a manufacturer of luxury goods." },
+                  { "letter": "D", "text": "modify the entire look of its brand to suit the economic climate." }
+                ]
+              },
+              {
+                "id": "29",
+                "text": "What point is made about Tesco's Greener Living programme?",
+                "options": [
+                  { "letter": "A", "text": "It did not require Tesco to modify its core business activities." },
+                  { "letter": "B", "text": "It succeeded in attracting a more eco-conscious clientele." },
+                  { "letter": "C", "text": "Its main aim was to raise consumers' awareness of environmental issues." },
+                  { "letter": "D", "text": "It was not the first time that Tesco had implemented such an initiative." }
+                ]
+              },
+              {
+                "id": "30",
+                "text": "What does the writer suggest about Nike's strategy?",
+                "options": [
+                  { "letter": "A", "text": "It was an extremely risky strategy at the time." },
+                  { "letter": "B", "text": "It was a strategy that only a major company could afford to follow." },
+                  { "letter": "C", "text": "It was the type of strategy that would not have been possible in the past." },
+                  { "letter": "D", "text": "It was the kind of strategy which might appear to have few obvious benefits." }
+                ]
+              },
+              {
+                "id": "31",
+                "text": "What was original about the ME2?",
+                "options": [
+                  { "letter": "A", "text": "It contained technology that had been developed for the sports industry." },
+                  { "letter": "B", "text": "It appealed to young people who were keen to improve their physical fitness." },
+                  { "letter": "C", "text": "It took advantage of a current trend for video games with colourful 3D graphics." },
+                  { "letter": "D", "text": "It was a handheld game that addressed people's concerns about unhealthy lifestyles." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 32–37) and the list of companies below.\nMatch each statement with the correct company, **A**, **B**, **C** or **D**.\nWrite the correct letter, **A**, **B**, **C** or **D**, in boxes 32–37 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 32,
+          "endQuestion": 37,
+          "data": {
+            "title": "List of Companies",
+            "options": [
+              { "letter": "A", "text": "Coach" },
+              { "letter": "B", "text": "Tesco" },
+              { "letter": "C", "text": "Nike" },
+              { "letter": "D", "text": "iToys" }
+            ],
+            "questions": [
+              { "id": "32", "questionNumber": 32, "text": "It turned the notion that its products could have harmful effects to its own advantage." },
+              { "id": "33", "questionNumber": 33, "text": "It extended its offering by collaborating with another manufacturer." },
+              { "id": "34", "questionNumber": 34, "text": "It implemented an incentive scheme to demonstrate its corporate social responsibility." },
+              { "id": "35", "questionNumber": 35, "text": "It discovered that customers had a positive attitude towards dealing with difficult circumstances." },
+              { "id": "36", "questionNumber": 36, "text": "It responded to a growing lifestyle trend in an unrelated product sector." },
+              { "id": "37", "questionNumber": 37, "text": "It successfully avoided having to charge its customers less for its core products." }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Complete each sentence with the correct ending, **A**, **B**, **C** or **D** below.\nWrite the correct letter, **A**, **B**, **C** or **D**, in boxes 38–40 on your answer sheet.",
+          "startQuestion": 38,
+          "endQuestion": 40,
+          "data": {
+            "title": "List of Endings",
+            "options": [
+              { "letter": "A", "text": "employ a combination of strategies to maintain your consumer base." },
+              { "letter": "B", "text": "identify the most appropriate innovation strategy to use." },
+              { "letter": "C", "text": "emphasise your brand's traditional values with the counteract-and-affirm strategy." },
+              { "letter": "D", "text": "use the combine-and-transcend strategy to integrate the two worlds." }
+            ],
+            "questions": [
+              { "id": "38", "questionNumber": 38, "text": "If there are any trend-related changes impacting on your category, you should" },
+              { "id": "39", "questionNumber": 39, "text": "If a current trend highlights a negative aspect of your category, you should" },
+              { "id": "40", "questionNumber": 40, "text": "If the consumers' new focus has an increasing lack of connection with your offering, you should" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

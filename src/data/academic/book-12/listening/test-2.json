@@ -291,7 +291,15 @@
           "endQuestion": 30,
           "data": {
             "title": "How James will write his paper on the Vikings",
-            "options": ["bullet points", "film", "notes", "structure", "student paper", "textbook", "documentary"],
+            "options": [
+              { "letter": "A", "text": "bullet points" },
+              { "letter": "B", "text": "film" },
+              { "letter": "C", "text": "notes" },
+              { "letter": "D", "text": "structure" },
+              { "letter": "E", "text": "student paper" },
+              { "letter": "F", "text": "textbook" },
+              { "letter": "G", "text": "documentary" }
+            ],
             "steps": [
               {
                 "type": "interactive",

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import QuestionRenderer from "../QuestionTypes/QuestionRenderer";
-import type { TestData, QuestionGroup, AnswerMap } from "../../../types/question";
+import type { TestData, QuestionGroup, AnswerMap, MatchingHeadingData } from "../../../types/question";
 import SplitPane from "../../ui/SplitPane/SplitPane";
 import ReadingPassage from "./ReadingPassage";
 import { useAutoScroll } from "../../../hooks";
@@ -119,6 +119,21 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
             );
         }
 
+        // Build a lookup from Roman numeral id → display text for MATCHING_HEADING questions
+        const headingLookup: Record<string, string> = {};
+        for (const group of currentSection.questionGroups) {
+            if (group.type === 'MATCHING_HEADING') {
+                const headingData = group.data as MatchingHeadingData;
+                for (const heading of headingData.headings) {
+                    const match = heading.match(/^([ivxlc]+)\s+/i);
+                    if (match) {
+                        const romanId = match[1].toLowerCase();
+                        headingLookup[romanId] = heading.replace(/^[ivxlc]+\s+/i, '').trim();
+                    }
+                }
+            }
+        }
+
         return (
             <ReadingPassage
                 data={currentSection.passage}
@@ -127,6 +142,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
                 draggingWordId={draggingWordId}
                 onDragStart={setDraggingWordId}
                 onDragEnd={() => setDraggingWordId(null)}
+                headingLookup={headingLookup}
             />
         );
     };

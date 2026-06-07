@@ -32,6 +32,12 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
         (val) => typeof val === "string" && val !== ""
     ) as string[];
 
+    // Helpers to handle both plain-string and { letter, text } option formats
+    const getOptId   = (opt: string | { letter: string; text: string }) =>
+        typeof opt === "string" ? opt : opt.letter;
+    const getOptText = (opt: string | { letter: string; text: string }) =>
+        typeof opt === "string" ? opt : opt.text;
+
     useAutoScroll(!!draggingWordId, { hotZoneTop: testType === 'reading' ? 150 : 90 });
 
     // ─── Drag Start: set explicit ghost image so state update can be synchronous ───
@@ -143,7 +149,7 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
                                                             {placedWord && placedWord !== "" ? (
                                                                 <DraggableWord
                                                                     id={placedWord}
-                                                                    text={placedWord}
+                                                                    text={getOptText(data.options.find((o) => getOptId(o) === placedWord) ?? placedWord)}
                                                                     isDragging={draggingWordId === placedWord}
                                                                     onDragStart={handleWordDragStart}
                                                                     onDragEnd={handleDragEnd}
@@ -189,17 +195,21 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
                     }}
                 >
                     <div className="options-pool__items">
-                        {data.options.map((opt) => (
-                            <DraggableWord
-                                key={opt}
-                                id={opt}
-                                text={opt}
-                                disabled={usedWords.includes(opt)}
-                                isDragging={draggingWordId === opt}
-                                onDragStart={handleWordDragStart}
-                                onDragEnd={handleDragEnd}
-                            />
-                        ))}
+                        {data.options.map((opt) => {
+                            const id   = getOptId(opt);
+                            const text = getOptText(opt);
+                            return (
+                                <DraggableWord
+                                    key={id}
+                                    id={id}
+                                    text={text}
+                                    disabled={usedWords.includes(id)}
+                                    isDragging={draggingWordId === id}
+                                    onDragStart={handleWordDragStart}
+                                    onDragEnd={handleDragEnd}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>

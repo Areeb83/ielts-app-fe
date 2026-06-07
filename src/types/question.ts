@@ -29,9 +29,14 @@ export type ContentPart = string | DropzonePart | InputPart | BoldPart;
 // ─── Question Group Data (per type) ─────────────────────────────────────────
 
 /** Flow Chart (Drag and Drop): Options pool & interactive steps */
+export interface FlowChartDragDropOption {
+  letter: string; // "A", "B", etc. — id stored as letter, text shown without letter
+  text: string;
+}
+
 export interface FlowChartDragDropData {
   title?: string;
-  options: string[];
+  options: string[] | FlowChartDragDropOption[]; // plain words OR lettered options
   steps: {
     type: "text" | "interactive";
     content: string | ContentPart[];
@@ -48,9 +53,21 @@ export interface SentenceCompletionData {
 }
 
 /** Summary Completion: Paragraph-style fill-in-the-blank text inputs */
+export interface NotesSectionItem {
+  bullet?: string;   // "•", "–", etc.
+  indent?: boolean;  // true = indented sub-item
+  content: ContentPart[];
+}
+
+export interface NotesSection {
+  heading?: string;
+  items: NotesSectionItem[];
+}
+
 export interface SummaryCompletionData {
   title?: string;
-  content: ContentPart[];
+  content?: ContentPart[];       // Flat paragraph mode (original)
+  sections?: NotesSection[];     // Structured notes mode (sub-headings + bullets)
 }
 
 /** Multiple Choice: Single answer (A/B/C) or multiple answers (Choose TWO) */
@@ -142,10 +159,39 @@ export interface MatchingHeadingData {
   headings: string[];
 }
 
+/** Summary Completion (Drag & Drop): Paragraph with inline drop zones + labeled options pool */
+export interface SummaryCompletionDragDropOption {
+  letter: string; // "A", "B", etc.
+  text: string;   // "interpretation", "complexity", etc.
+}
+
+export interface SummaryCompletionDragDropData {
+  title?: string;
+  content: ContentPart[]; // paragraph text interleaved with DropzoneParts
+  options: SummaryCompletionDragDropOption[];
+}
+
+/** Paragraph Matching: Dropdown (A–H) per question to select which paragraph contains info */
+export interface ParagraphMatchingQuestion {
+  id: string;
+  questionNumber: number;
+  text: string;
+}
+
+export interface ParagraphMatchingData {
+  paragraphs: string[]; // e.g. ["A","B","C","D","E","F","G","H"]
+  questions: ParagraphMatchingQuestion[];
+}
+
 /** Sentence Completion (Drag & Drop): Sentences with inline drop zones + options pool below */
+export interface SentenceCompletionDragDropOption {
+  letter: string; // "A", "B", "C"...
+  text: string;   // the ending/option text (displayed without the letter)
+}
+
 export interface SentenceCompletionDragDropData {
   title?: string;
-  options: string[];
+  options: SentenceCompletionDragDropOption[];
   sentences: {
     questionNumber?: number;
     content: ContentPart[]; // may include DropzonePart for the blanks
@@ -165,7 +211,7 @@ export interface IdentificationData {
 
 // ─── Question Group ─────────────────────────────────────────────────────────
 
-export type QuestionGroupType = "FLOW_CHART_DRAG_DROP" | "SENTENCE_COMPLETION" | "SENTENCE_COMPLETION_DRAG_DROP" | "SUMMARY_COMPLETION" | "MULTIPLE_CHOICE" | "TABLE_COMPLETION" | "MAP_DIAGRAM_LABELLING" | "DIAGRAM_LABELLING" | "IDENTIFICATION" | "MATCHING_FEATURE" | "MATCHING_HEADING";
+export type QuestionGroupType = "FLOW_CHART_DRAG_DROP" | "SENTENCE_COMPLETION" | "SENTENCE_COMPLETION_DRAG_DROP" | "SUMMARY_COMPLETION" | "SUMMARY_COMPLETION_DRAG_DROP" | "MULTIPLE_CHOICE" | "TABLE_COMPLETION" | "MAP_DIAGRAM_LABELLING" | "DIAGRAM_LABELLING" | "IDENTIFICATION" | "MATCHING_FEATURE" | "MATCHING_HEADING" | "PARAGRAPH_MATCHING";
 
 export interface QuestionGroup {
   type: QuestionGroupType;
@@ -173,7 +219,7 @@ export interface QuestionGroup {
   startQuestion: number;
   endQuestion: number;
   hideRange?: boolean;
-  data: FlowChartDragDropData | SentenceCompletionData | SentenceCompletionDragDropData | SummaryCompletionData | MultipleChoiceData | TableCompletionData | MapDiagramLabellingData | DiagramLabellingData | IdentificationData | MatchingFeatureData | MatchingHeadingData;
+  data: FlowChartDragDropData | SentenceCompletionData | SentenceCompletionDragDropData | SummaryCompletionData | SummaryCompletionDragDropData | MultipleChoiceData | TableCompletionData | MapDiagramLabellingData | DiagramLabellingData | IdentificationData | MatchingFeatureData | MatchingHeadingData | ParagraphMatchingData;
 }
 
 // ─── Passage Data (Structured for Reading) ──────────────────────────────────

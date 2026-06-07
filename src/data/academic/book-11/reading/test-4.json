@@ -1,0 +1,284 @@
+{
+  "testId": "book-11-test-4",
+  "bookId": "book-11",
+  "title": "Cambridge IELTS 11 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "Identical Twins",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Identical Twins.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–4 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 1,
+          "endQuestion": 4,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "1", "text": "There may be genetic causes for the differences in how young the skin of identical twins looks." },
+              { "id": "2", "text": "Twins are at greater risk of developing certain illnesses than non-twins." },
+              { "id": "3", "text": "Bouchard advertised in newspapers for twins who had been separated at birth." },
+              { "id": "4", "text": "Epigenetic processes are different from both genetic and environmental processes." }
+            ]
+          }
+        },
+        {
+          "type": "MATCHING_FEATURE",
+          "instruction": "Look at the following statements (Questions 5–9) and the list of researchers below.\nMatch each statement with the correct researcher, **A**, **B** or **C**.\nWrite the correct letter, **A**, **B** or **C**, in boxes 5–9 on your answer sheet.\n**NB** You may use any letter more than once.",
+          "startQuestion": 5,
+          "endQuestion": 9,
+          "data": {
+            "title": "List of Researchers",
+            "options": [
+              { "letter": "A", "text": "Francis Galton" },
+              { "letter": "B", "text": "Thomas Bouchard" },
+              { "letter": "C", "text": "Danielle Reed" }
+            ],
+            "questions": [
+              { "id": "5", "questionNumber": 5, "text": "invented a term used to distinguish two factors affecting human characteristics" },
+              { "id": "6", "questionNumber": 6, "text": "expressed the view that the study of epigenetics will increase our knowledge" },
+              { "id": "7", "questionNumber": 7, "text": "developed a mathematical method of measuring genetic influences" },
+              { "id": "8", "questionNumber": 8, "text": "pioneered research into genetics using twins" },
+              { "id": "9", "questionNumber": 9, "text": "carried out research into twins who had lived apart" }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–F**, below.\nWrite the correct letter, **A–F**, in boxes 10–13 on your answer sheet.",
+          "startQuestion": 10,
+          "endQuestion": 13,
+          "data": {
+            "title": "Epigenetic processes",
+            "content": [
+              "In epigenetic processes, ",
+              { "type": "dropzone", "id": "10" },
+              " influence the activity of our genes, for example in creating our internal ",
+              { "type": "dropzone", "id": "11" },
+              ". The study of epigenetic processes is uncovering a way in which our genes can be affected by our ",
+              { "type": "dropzone", "id": "12" },
+              ". One example is that if a pregnant rat suffers stress, the new-born rat may later show problems in its ",
+              { "type": "dropzone", "id": "13" },
+              "."
+            ],
+            "options": [
+              { "letter": "A", "text": "nurture" },
+              { "letter": "B", "text": "organs" },
+              { "letter": "C", "text": "code" },
+              { "letter": "D", "text": "chemicals" },
+              { "letter": "E", "text": "environment" },
+              { "letter": "F", "text": "behaviour" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "The psychology of film",
+        "sections": [
+          {
+            "content": "[Placeholder passage text for Reading Passage 2.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 14–18 on your answer sheet.",
+          "startQuestion": 14,
+          "endQuestion": 18,
+          "data": {
+            "questions": [
+              {
+                "id": "14",
+                "text": "In the first paragraph, the writer makes a point that",
+                "options": [
+                  { "letter": "A", "text": "the director should plan the sound track at an early stage in filming." },
+                  { "letter": "B", "text": "it would be wrong to overlook the contribution of sound to the artistry of films." },
+                  { "letter": "C", "text": "the music industry can have a beneficial influence on sound in film." },
+                  { "letter": "D", "text": "it is important for those working on the sound in a film to have sole responsibility for it." }
+                ]
+              },
+              {
+                "id": "15",
+                "text": "One reason that the writer refers to Humphrey Bogart is to exemplify",
+                "options": [
+                  { "letter": "A", "text": "the importance of the actor and the character appearing to have similar personalities." },
+                  { "letter": "B", "text": "the audience's wish that actors are visually appropriate for their roles." },
+                  { "letter": "C", "text": "the value of the actor having had similar feelings to the character." },
+                  { "letter": "D", "text": "the audience's preference for dialogue to be as authentic as possible." }
+                ]
+              },
+              {
+                "id": "16",
+                "text": "In the third paragraph, the writer suggests that",
+                "options": [
+                  { "letter": "A", "text": "audiences are likely to be critical of film dialogue that does not reflect their own experience." },
+                  { "letter": "B", "text": "film dialogue that appears to be dull may have a specific purpose." },
+                  { "letter": "C", "text": "filmmakers vary considerably in the skill with which they handle dialogue." },
+                  { "letter": "D", "text": "the most successful films are those with dialogue of a high quality." }
+                ]
+              },
+              {
+                "id": "17",
+                "text": "What does the writer suggest about Bringing Up Baby?",
+                "options": [
+                  { "letter": "A", "text": "The plot suffers from the filmmaker's wish to focus on humorous dialogue." },
+                  { "letter": "B", "text": "The dialogue helps to make it one of the best comedy films ever produced." },
+                  { "letter": "C", "text": "There is a mismatch between the speed of the dialogue and the speed of actions." },
+                  { "letter": "D", "text": "The nature of the dialogue emphasises key elements of the film." }
+                ]
+              },
+              {
+                "id": "18",
+                "text": "The writer refers to the 'click' of a door to make the point that realistic sounds",
+                "options": [
+                  { "letter": "A", "text": "are often used to give the audience a false impression of events in the film." },
+                  { "letter": "B", "text": "may be interpreted in different ways by different members of the audience." },
+                  { "letter": "C", "text": "may be modified in order to manipulate the audience's response to the film." },
+                  { "letter": "D", "text": "tend to be more significant in films presenting realistic situations." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 19–23 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 19,
+          "endQuestion": 23,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "19", "text": "Audiences are likely to be surprised if a film lacks background music." },
+              { "id": "20", "text": "Background music may anticipate a development in a film." },
+              { "id": "21", "text": "Background music has more effect on some people than on others." },
+              { "id": "22", "text": "Background music may help the audience to make certain connections within the film." },
+              { "id": "23", "text": "Audiences tend to be aware of how the background music is affecting them." }
+            ]
+          }
+        },
+        {
+          "type": "SENTENCE_COMPLETION_DRAG_DROP",
+          "instruction": "Complete each sentence with the correct ending, **A–E**, below.\nWrite the correct letter, **A–E**, in boxes 24–26 on your answer sheet.",
+          "startQuestion": 24,
+          "endQuestion": 26,
+          "data": {
+            "options": [
+              { "letter": "A", "text": "when the audience listens to the dialogue." },
+              { "letter": "B", "text": "if the film reflects the audience's own concerns." },
+              { "letter": "C", "text": "if voice, sound and music are combined appropriately." },
+              { "letter": "D", "text": "when the director is aware of how the audience will respond." },
+              { "letter": "E", "text": "when the actor's appearance, voice and moves are consistent with each other." }
+            ],
+            "sentences": [
+              {
+                "questionNumber": 24,
+                "content": ["The audience's response to different parts of a film can be controlled ", { "type": "dropzone", "id": "24" }]
+              },
+              {
+                "questionNumber": 25,
+                "content": ["The feelings and motivations of characters become clear ", { "type": "dropzone", "id": "25" }]
+              },
+              {
+                "questionNumber": 26,
+                "content": ["A character seems to be a real person rather than an actor ", { "type": "dropzone", "id": "26" }]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "An Introduction to Language",
+        "sections": [
+          { "label": "A", "content": "[Placeholder for Paragraph A]" },
+          { "label": "B", "content": "[Placeholder for Paragraph B]" },
+          { "label": "C", "content": "[Placeholder for Paragraph C]" },
+          { "label": "D", "content": "[Placeholder for Paragraph D]" },
+          { "label": "E", "content": "[Placeholder for Paragraph E]" },
+          { "label": "F", "content": "[Placeholder for Paragraph F]" }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "MATCHING_HEADING",
+          "instruction": "Reading Passage 3 has six paragraphs, **A–F**.\nChoose the correct heading for paragraphs A–F from the list of headings below.\nWrite the correct number, **i–vii**, in boxes 27–32 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 32,
+          "data": {
+            "headings": [
+              "i    Differences between languages highlight their impressiveness",
+              "ii   The way in which a few sounds are organised to convey a huge range of meaning",
+              "iii  Why the sounds used in different languages are not identical",
+              "iv   Apparently incompatible characteristics of language",
+              "v    Even silence can be meaningful",
+              "vi   Why language is the most important invention of all",
+              "vii  The universal ability to use language"
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–G**, below.\nWrite the correct letter, **A–G**, in boxes 33–36 on your answer sheet.",
+          "startQuestion": 33,
+          "endQuestion": 36,
+          "data": {
+            "title": "The importance of language",
+            "content": [
+              "The wheel is one invention that has had a major impact on ",
+              { "type": "dropzone", "id": "33" },
+              " aspects of life, but no impact has been as ",
+              { "type": "dropzone", "id": "34" },
+              " as that of language. Language is very ",
+              { "type": "dropzone", "id": "35" },
+              ", yet composed of just a small number of sounds. Language appears to be ",
+              { "type": "dropzone", "id": "36" },
+              " to use. However, its sophistication is often overlooked."
+            ],
+            "options": [
+              { "letter": "A", "text": "difficult" },
+              { "letter": "B", "text": "complex" },
+              { "letter": "C", "text": "original" },
+              { "letter": "D", "text": "admired" },
+              { "letter": "E", "text": "material" },
+              { "letter": "F", "text": "easy" },
+              { "letter": "G", "text": "fundamental" }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?\nIn boxes 37–40 on your answer sheet, write\n**YES** if the statement agrees with the views of the writer\n**NO** if the statement contradicts the views of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 37,
+          "endQuestion": 40,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "37", "text": "Human beings might have achieved their present position without language." },
+              { "id": "38", "text": "The Port-Royal grammarians did justice to the nature of language." },
+              { "id": "39", "text": "A complex idea can be explained more clearly in a sentence than in a single word." },
+              { "id": "40", "text": "The Sumerians were responsible for starting the recording of events." }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

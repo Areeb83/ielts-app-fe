@@ -1,0 +1,314 @@
+{
+  "testId": "book-15-reading-test-4",
+  "bookId": "book-15",
+  "title": "Cambridge IELTS 15 – Academic Reading Test 4",
+  "audioSrc": "",
+  "totalQuestions": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Reading Passage 1",
+      "passage": {
+        "title": "The huarango tree",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about the huarango tree in Peru (Ica valley): roots extend 80 metres, can access groundwater deep below the surface, was crucial part of local inhabitants' diet long ago, helped people survive droughts/famines, prevents erosion of the soil, prevents land from becoming a desert. Traditional uses: wood/trunk for fuel, bark and pods for medicine, branches for construction. Botanist Oliver Whaley working to restore huarango forests; local families have shared traditional uses; farmer Alberto Benevides is growing huarangos; Whaley needs cooperation of farmers to preserve wildlife; project doesn't need to cover huge area; no plans for Africa.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 1–5 on your answer sheet.",
+          "startQuestion": 1,
+          "endQuestion": 5,
+          "data": {
+            "title": "The importance of the huarango tree",
+            "sections": [
+              {
+                "heading": "",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["its roots can extend as far as 80 metres into the soil"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["can access ", { "id": "1", "type": "input" }, " deep below the surface"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["was a crucial part of local inhabitants' ", { "id": "2", "type": "input" }, " a long time ago"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["helped people to survive periods of ", { "id": "3", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["prevents ", { "id": "4", "type": "input" }, " of the soil"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["prevents land from becoming a ", { "id": "5", "type": "input" }]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "TABLE_COMPLETION",
+          "instruction": "Complete the table below.\nChoose **NO MORE THAN TWO WORDS** from the passage for each answer.\nWrite your answers in boxes 6–8 on your answer sheet.",
+          "startQuestion": 6,
+          "endQuestion": 8,
+          "data": {
+            "headers": ["Part of tree", "Traditional use"],
+            "rows": [
+              [
+                [{ "id": "6", "type": "input" }],
+                "fuel"
+              ],
+              [
+                [{ "id": "7", "type": "input" }, " and ", { "id": "7-2", "type": "input" }],
+                "medicine"
+              ],
+              [
+                [{ "id": "8", "type": "input" }],
+                "construction"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 9–13 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 9,
+          "endQuestion": 13,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "9",  "text": "Local families have told Whaley about some traditional uses of huarango products." },
+              { "id": "10", "text": "Farmer Alberto Benevides is now making a good profit from growing huarangos." },
+              { "id": "11", "text": "Whaley needs the co-operation of farmers to help preserve the area's wildlife." },
+              { "id": "12", "text": "For Whaley's project to succeed, it needs to be extended over a very large area." },
+              { "id": "13", "text": "Whaley has plans to go to Africa to set up a similar project." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Reading Passage 2",
+      "passage": {
+        "title": "Silbo Gomero",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about Silbo Gomero: a whistled language from La Gomera (one of the Canary Islands — mountainous terrain). Silbo can convey complex messages, not just simple ones. Brain study showed silbadores (Silbo speakers) and non-whistlers produced different results. The Guanches (original inhabitants) introduced Silbo; the Spanish adopted it in the 15th century. No precise data on number of whistle languages worldwide. Children in La Gomera now learn Silbo in school. How it works: high- and low-frequency tones represent different vowels/consonants in Spanish; pitch controlled using the tongue/finger; volume changed with cupped hand. Used by shepherds and isolated communities; transmits brief messages in daily use; can relay emergency information e.g. about accidents. Future threatened by mobile phones; Canaries authorities seeking UNESCO heritage status.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?\nIn boxes 14–19 on your answer sheet, write\n**TRUE** if the statement agrees with the information\n**FALSE** if the statement contradicts the information\n**NOT GIVEN** if there is no information on this",
+          "startQuestion": 14,
+          "endQuestion": 19,
+          "data": {
+            "optionsType": "TRUE_FALSE",
+            "questions": [
+              { "id": "14", "text": "La Gomera is the most mountainous of all the Canary Islands." },
+              { "id": "15", "text": "Silbo is only appropriate for short and simple messages." },
+              { "id": "16", "text": "In the brain-activity study, silbadores and non-whistlers produced different results." },
+              { "id": "17", "text": "The Spanish introduced Silbo to the islands in the 15th century." },
+              { "id": "18", "text": "There is precise data available regarding all of the whistle languages in existence today." },
+              { "id": "19", "text": "The children of Gomera now learn Silbo." }
+            ]
+          }
+        },
+        {
+          "type": "SUMMARY_COMPLETION",
+          "instruction": "Complete the notes below.\nChoose **ONE WORD ONLY** from the passage for each answer.\nWrite your answers in boxes 20–26 on your answer sheet.",
+          "startQuestion": 20,
+          "endQuestion": 26,
+          "data": {
+            "title": "Silbo Gomero",
+            "sections": [
+              {
+                "heading": "How Silbo is produced",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["high- and low-frequency tones represent different sounds in Spanish ", { "id": "20", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["pitch of whistle is controlled using silbador's ", { "id": "21", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": [{ "id": "22", "type": "input" }, " is changed with a cupped hand"]
+                  }
+                ]
+              },
+              {
+                "heading": "How Silbo is used",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["has long been used by shepherds and people living in secluded locations"]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["in everyday use for the transmission of brief ", { "id": "23", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["can relay essential information quickly, e.g. to inform people about ", { "id": "24", "type": "input" }]
+                  }
+                ]
+              },
+              {
+                "heading": "The future of Silbo",
+                "items": [
+                  {
+                    "bullet": "•",
+                    "content": ["future under threat because of new ", { "id": "25", "type": "input" }]
+                  },
+                  {
+                    "bullet": "•",
+                    "content": ["Canaries' authorities hoping to receive a UNESCO ", { "id": "26", "type": "input" }, " to help preserve it"]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Reading Passage 3",
+      "passage": {
+        "title": "The ethics of being a consumer",
+        "sections": [
+          {
+            "content": "[Placeholder passage text about big businesses, environmental damage, and consumer power: many big businesses harm people/environment with no moral standards; lack of control by governments and public involvement leads to problems like flooding/overfishing/destruction of trees. The public/consumers can prevent environmental damage by individual action. Ways the public can influence businesses: boycotts, selective purchasing, pressure groups, shareholder power. BSE example: a fast-food company forced their meat suppliers to follow the law rather than meat packers persuading government to reduce expenses. The writer argues consumers can influence businesses; public has done so before; writer believes it is important to distinguish acceptable from unacceptable behaviour; questions whether businesses will show more concern for environment in future.]"
+          }
+        ]
+      },
+      "questionGroups": [
+        {
+          "type": "SUMMARY_COMPLETION_DRAG_DROP",
+          "instruction": "Complete the summary using the list of words, **A–I**, below.\nWrite the correct letter, **A–I**, in boxes 27–31 on your answer sheet.",
+          "startQuestion": 27,
+          "endQuestion": 31,
+          "data": {
+            "title": "Big businesses",
+            "options": [
+              { "letter": "A", "text": "funding" },
+              { "letter": "B", "text": "trees" },
+              { "letter": "C", "text": "rare species" },
+              { "letter": "D", "text": "moral standards" },
+              { "letter": "E", "text": "control" },
+              { "letter": "F", "text": "involvement" },
+              { "letter": "G", "text": "flooding" },
+              { "letter": "H", "text": "overfishing" },
+              { "letter": "I", "text": "worker support" }
+            ],
+            "content": [
+              "Many big businesses today are prepared to harm people and the environment in order to make money, and they appear to have no ",
+              { "id": "27", "type": "dropzone" },
+              ". Lack of ",
+              { "id": "28", "type": "dropzone" },
+              " by governments and lack of public ",
+              { "id": "29", "type": "dropzone" },
+              " can lead to environmental problems such as ",
+              { "id": "30", "type": "dropzone" },
+              " or the destruction of ",
+              { "id": "31", "type": "dropzone" },
+              "."
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in boxes 32–34 on your answer sheet.",
+          "startQuestion": 32,
+          "endQuestion": 34,
+          "data": {
+            "questions": [
+              {
+                "id": "32",
+                "text": "The main idea of the third paragraph is that environmental damage",
+                "options": [
+                  { "letter": "A", "text": "requires political action if it is to be stopped." },
+                  { "letter": "B", "text": "is the result of ignorance on the part of the public." },
+                  { "letter": "C", "text": "could be prevented by the action of ordinary people." },
+                  { "letter": "D", "text": "can only be stopped by educating business leaders." }
+                ]
+              },
+              {
+                "id": "33",
+                "text": "In the fourth paragraph, the writer describes ways in which the public can",
+                "options": [
+                  { "letter": "A", "text": "reduce their own individual impact on the environment." },
+                  { "letter": "B", "text": "learn more about the impact of business on the environment." },
+                  { "letter": "C", "text": "raise awareness of the effects of specific environmental disasters." },
+                  { "letter": "D", "text": "influence the environmental policies of businesses and governments." }
+                ]
+              },
+              {
+                "id": "34",
+                "text": "What pressure was exerted by big business in the case of the disease BSE?",
+                "options": [
+                  { "letter": "A", "text": "Meat packers stopped supplying hamburgers to fast-food chains." },
+                  { "letter": "B", "text": "A fast-food company forced their meat suppliers to follow the law." },
+                  { "letter": "C", "text": "Meat packers persuaded the government to reduce their expenses." },
+                  { "letter": "D", "text": "A fast-food company encouraged the government to introduce legislation." }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "IDENTIFICATION",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 35–39 on your answer sheet, write\n**YES** if the statement agrees with the claims of the writer\n**NO** if the statement contradicts the claims of the writer\n**NOT GIVEN** if it is impossible to say what the writer thinks about this",
+          "startQuestion": 35,
+          "endQuestion": 39,
+          "data": {
+            "optionsType": "YES_NO",
+            "questions": [
+              { "id": "35", "text": "The public should be prepared to fund good environmental practices." },
+              { "id": "36", "text": "There is a contrast between the moral principles of different businesses." },
+              { "id": "37", "text": "It is important to make a clear distinction between acceptable and unacceptable behaviour." },
+              { "id": "38", "text": "The public have successfully influenced businesses in the past." },
+              { "id": "39", "text": "In the future, businesses will show more concern for the environment." }
+            ]
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "instruction": "Choose the correct letter, **A**, **B**, **C** or **D**.\nWrite the correct letter in box 40 on your answer sheet.",
+          "startQuestion": 40,
+          "endQuestion": 40,
+          "data": {
+            "questions": [
+              {
+                "id": "40",
+                "text": "What would be the best subheading for this passage?",
+                "options": [
+                  { "letter": "A", "text": "Will the world survive the threat caused by big businesses?" },
+                  { "letter": "B", "text": "How can big businesses be encouraged to be less driven by profit?" },
+                  { "letter": "C", "text": "What environmental dangers are caused by the greed of businesses?" },
+                  { "letter": "D", "text": "Are big businesses to blame for the damage they cause the environment?" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
