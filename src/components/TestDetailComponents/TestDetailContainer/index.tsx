@@ -136,6 +136,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
 
         return (
             <ReadingPassage
+                testId={testData.testId}
                 data={currentSection.passage}
                 answers={answers}
                 onAnswerChange={handleAnswerChange}

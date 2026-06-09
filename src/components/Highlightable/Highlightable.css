@@ -1,0 +1,36 @@
+.highlightable__container {
+    cursor: text;
+}
+
+.highlightable__mark {
+    background-color: #ffe066;
+    cursor: text;
+    border-radius: 2px;
+    padding: 1px 0;
+}
+
+.highlightable__mark:hover {
+    background-color: #ffd700;
+}
+
+.highlight-floating-btn {
+    position: fixed;
+    transform: translate(-50%, -100%);
+    margin-top: -6px;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    user-select: none;
+    letter-spacing: 0.3px;
+}
+
+.highlight-floating-btn:hover {
+    background-color: #2d2d50;
+}

@@ -116,6 +116,14 @@
     opacity: 0.01 !important;
 }
 
+/* ─── Paragraph heading label (A, B, C...) ─── */
+.passage-heading {
+    font-size: 15px !important;
+    font-weight: 700;
+    color: #222;
+    margin: 8px 0 2px 0;
+}
+
 /* ─── Passage paragraph text ─── */
 .passage-paragraph {
     font-size: 15px !important;

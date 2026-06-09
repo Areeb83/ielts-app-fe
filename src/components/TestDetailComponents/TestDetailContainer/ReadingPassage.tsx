@@ -2,9 +2,12 @@ import React from "react";
 import type { PassageData, AnswerMap } from "../../../types/question";
 import { DropZone } from "../QuestionTypes/FlowChartDragDrop/DropZone";
 import { DraggableWord } from "../QuestionTypes/FlowChartDragDrop/DraggableWord";
+import Highlightable from "../../Highlightable/Highlightable";
+import useHighlights from "../../Highlightable/useHighlights";
 import "./ReadingPassage.css";
 
 interface ReadingPassageProps {
+    testId: string;
     data: PassageData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
@@ -15,6 +18,7 @@ interface ReadingPassageProps {
 }
 
 const ReadingPassage: React.FC<ReadingPassageProps> = ({
+    testId,
     data,
     answers,
     onAnswerChange,
@@ -24,6 +28,8 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     headingLookup,
 }) => {
     const [dragOverZoneId, setDragOverZoneId] = React.useState<string | null>(null);
+    const { highlights, addHighlight, removeHighlightGroup } = useHighlights(testId);
+    const pendingHighlightsRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
 
     const handleDropOnZone = (targetZoneId: string) => {
         if (!draggingWordId) return;
@@ -43,9 +49,22 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
         setDragOverZoneId(null);
     };
 
+    // Index scheme: paragraphs use idx, title uses sections.length, headings use sections.length + 1 + idx
+    const titleIndex = data.sections.length;
+    const headingIndex = (idx: number) => data.sections.length + 1 + idx;
+
     return (
         <div className="reading-passage-container">
-            <h2 className="passage-title">{data.title}</h2>
+            <h2 className="passage-title">
+                <Highlightable
+                    text={data.title}
+                    paragraphIndex={titleIndex}
+                    highlights={highlights.filter((h) => h.paragraphIndex === titleIndex)}
+                    onAdd={addHighlight}
+                    onRemove={removeHighlightGroup}
+                    pendingHighlightsRef={pendingHighlightsRef}
+                />
+            </h2>
             <div className="passage-body">
                 {data.sections.map((section, idx) => (
                     <div key={idx} className="passage-section">
@@ -81,7 +100,28 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                                 </div>
                             )}
                         </div>
-                        <p className="passage-paragraph">{section.content}</p>
+                        {section.heading && (
+                            <p className="passage-heading">
+                                <Highlightable
+                                    text={section.heading}
+                                    paragraphIndex={headingIndex(idx)}
+                                    highlights={highlights.filter((h) => h.paragraphIndex === headingIndex(idx))}
+                                    onAdd={addHighlight}
+                                    onRemove={removeHighlightGroup}
+                                    pendingHighlightsRef={pendingHighlightsRef}
+                                />
+                            </p>
+                        )}
+                        <p className="passage-paragraph">
+                            <Highlightable
+                                text={section.content}
+                                paragraphIndex={idx}
+                                highlights={highlights.filter((h) => h.paragraphIndex === idx)}
+                                onAdd={addHighlight}
+                                onRemove={removeHighlightGroup}
+                                pendingHighlightsRef={pendingHighlightsRef}
+                            />
+                        </p>
                     </div>
                 ))}
             </div>
