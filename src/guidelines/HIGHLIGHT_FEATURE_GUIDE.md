@@ -1,31 +1,53 @@
 # Highlight Feature Guide
 
 ## What It Does
-Students can select and highlight text in yellow during a reading test. Highlights persist across page refreshes. Clicking a highlight shows a "Remove Highlight" button that removes all segments added in the same action.
+
+Students can select and highlight text in yellow during a reading test. Highlights are **in-memory only** — they reset on page reload. This is intentional: highlights are a temporary focusing tool for the current test attempt. Clicking a highlighted region shows a "Remove Highlight" button.
 
 ---
 
-## When to Add Highlight Support to a New Area
+## Where It's Applied
 
-Any text the student should be able to highlight needs to be wrapped in `<Highlightable>`. Currently it is applied to the **reading passage only** (title, section headings, paragraph content). If you add a new text area (e.g. General Training passages, a new passage layout), follow the steps below.
+### Left pane (Reading Passage) — `<Highlightable>` component
+Wraps individual text strings (title, headings, paragraphs) in the passage. Uses `<mark>` elements for rendering.
+
+### Right pane (Questions) — `<HighlightableContainer>` component
+Wraps the entire questions pane as a single container. Uses the **CSS Custom Highlight API** (`::highlight()`) for rendering — no DOM changes needed. Works over any content including mixed question types.
 
 ---
 
-## Step-by-Step: How to Apply Highlighting to a New Component
+## Architecture Overview
 
-### 1. Call `useHighlights` once at the parent level
+```
+src/components/Highlightable/
+  ├── useHighlights.ts             — In-memory state (add/remove), shared by left pane
+  ├── Highlightable.tsx            — Per-paragraph component for the passage (left pane)
+  ├── HighlightableContainer.tsx   — Whole-container component for questions (right pane)
+  ├── FloatingButton.tsx           — Portal-rendered "Highlight" / "Remove Highlight" button
+  └── Highlightable.css            — Mark styles, CSS highlight styles, floating button styles
+```
+
+**Files that use it:**
+```
+src/components/TestDetailComponents/TestDetailContainer/
+  ├── ReadingPassage.tsx   — Uses useHighlights() + <Highlightable> for passage text
+  └── index.tsx            — Uses <HighlightableContainer> to wrap the questions pane
+```
+
+---
+
+## Left Pane: `<Highlightable>` — How to Use
+
+### 1. Call `useHighlights()` once at the parent level
 
 ```tsx
 import useHighlights from '../../Highlightable/useHighlights';
 
-const { highlights, addHighlight, removeHighlightGroup } = useHighlights(testId);
+const { highlights, addHighlight, removeHighlightGroup } = useHighlights();
 ```
 
-- `testId` must be the test's unique id (e.g. `"book-19-test-1"`) — this is the localStorage key
-- Call this **once** in the parent component, NOT inside each `Highlightable`
-- `highlights` is a flat array of all highlights for the test
-
----
+- No arguments — highlights are in-memory, not persisted
+- Call this **once** in the parent component, NOT inside each `<Highlightable>`
 
 ### 2. Create a shared `pendingHighlightsRef`
 
@@ -33,156 +55,125 @@ const { highlights, addHighlight, removeHighlightGroup } = useHighlights(testId)
 const pendingHighlightsRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
 ```
 
-- This ref is **shared across all `Highlightable` instances** in the same parent
-- It enables cross-element selection (selecting across heading + paragraph highlights both)
-- Create it **once** in the parent, pass it down to every `Highlightable`
+- Shared across all `<Highlightable>` instances in the same parent
+- Enables cross-paragraph selection
+- Create **once** in the parent, pass down to every `<Highlightable>`
 
----
+### 3. Assign unique `paragraphIndex` values (scoped by section)
 
-### 3. Assign a unique `paragraphIndex` to each highlightable element
-
-Every `<Highlightable>` instance needs a **unique integer index** within the same `testId`. Indices must not collide.
+Every `<Highlightable>` needs a unique integer index. Indices are offset by `sectionIndex * 10000` to prevent collisions across sections.
 
 **Current scheme in `ReadingPassage`:**
+
 | Element | Index |
 |---|---|
-| Paragraph content | `idx` (0-based section index) |
-| Passage title | `sections.length` |
-| Section heading (A, B, C...) | `sections.length + 1 + idx` |
-
-If you add a new component, pick indices that don't overlap with existing ones. Using large offsets (e.g. `1000 + idx`) is safe.
-
----
+| Paragraph content | `sectionIndex * 10000 + idx` |
+| Passage title | `sectionIndex * 10000 + sections.length` |
+| Section heading | `sectionIndex * 10000 + sections.length + 1 + idx` |
 
 ### 4. Wrap each text element in `<Highlightable>`
 
 ```tsx
-import Highlightable from '../../Highlightable/Highlightable';
-
-<p className="passage-paragraph">
-    <Highlightable
-        text={section.content}
-        paragraphIndex={idx}
-        highlights={highlights.filter(h => h.paragraphIndex === idx)}
-        onAdd={addHighlight}
-        onRemove={removeHighlightGroup}
-        pendingHighlightsRef={pendingHighlightsRef}
-    />
-</p>
-```
-
-**Every prop is required — do not omit any:**
-| Prop | Type | Description |
-|---|---|---|
-| `text` | `string` | The full text string to render |
-| `paragraphIndex` | `number` | Unique index for this element |
-| `highlights` | `Highlight[]` | Pre-filtered to this element's index |
-| `onAdd` | `fn` | `addHighlight` from `useHighlights` |
-| `onRemove` | `fn` | `removeHighlightGroup` from `useHighlights` |
-| `pendingHighlightsRef` | `MutableRefObject` | Shared ref from parent |
-
-⚠️ **Do NOT pass `removeHighlight`** — it removes a single segment by `id`. You must pass `removeHighlightGroup` which removes all segments added in the same action (by `groupId`).
-
----
-
-### 5. Pass `testId` down if it isn't already available
-
-`useHighlights` needs `testId`. In `ReadingPassage` it comes from a prop added to the component:
-
-```tsx
-// ReadingPassage props
-interface ReadingPassageProps {
-    testId: string;
-    // ... other props
-}
-```
-
-It is passed from `TestDetailContainer`:
-```tsx
-<ReadingPassage
-    testId={testData.testId}
-    // ...
+<Highlightable
+    text={section.content}
+    paragraphIndex={base + idx}
+    highlights={highlights.filter(h => h.paragraphIndex === base + idx)}
+    onAdd={addHighlight}
+    onRemove={removeHighlightGroup}
+    pendingHighlightsRef={pendingHighlightsRef}
 />
 ```
 
-If you create a new passage component, make sure `testId` flows down to it.
+All props are required.
 
 ---
 
-## File Reference
+## Right Pane: `<HighlightableContainer>` — How It Works
 
-```
-src/components/Highlightable/
-  ├── useHighlights.ts       — State management + localStorage + groupId removal
-  ├── Highlightable.tsx      — Selection detection, text segmentation, button coordination
-  ├── FloatingButton.tsx     — Portal-rendered "Highlight" / "Remove Highlight" button
-  └── Highlightable.css      — Yellow mark style + floating button style
+In `TestDetailContainer/index.tsx`, the questions pane is wrapped in `<HighlightableContainer>` for reading tests:
+
+```tsx
+<HighlightableContainer
+    highlights={qHighlights.filter(h => h.sectionIndex === currentSectionIndex)}
+    onAdd={addQHighlight}
+    onRemove={removeQHighlight}
+>
+    {questionsContent}
+</HighlightableContainer>
 ```
 
-**Files that use it:**
-```
-src/components/TestDetailComponents/TestDetailContainer/
-  ├── ReadingPassage.tsx     — Applies highlighting to title, headings, paragraphs
-  └── index.tsx              — Passes testData.testId to ReadingPassage
-```
+- Wraps arbitrary children — no need to modify individual question components
+- Uses the CSS Custom Highlight API to paint highlights (no `<mark>` elements)
+- Stores highlights as absolute character offsets within the container's text content
+- Click-to-remove detects which highlight is at the click position via `caretRangeFromPoint`
+- Skips interactive elements (inputs, buttons, selects, labels) automatically
 
 ---
 
-## Things That Must NOT Be Forgotten
+## Overlapping Highlights
 
-### ❌ Don't call `useHighlights` inside `Highlightable`
-It must be called in the **parent**. Each `Highlightable` receives `highlights`, `onAdd`, `onRemove` as props.
+Highlights are stored as **independent layers that can overlap**. This means:
 
-### ❌ Don't create a separate `pendingHighlightsRef` per `Highlightable`
-All instances in the same passage **must share one ref**. Separate refs break cross-element selection — each instance would be unaware of others.
+1. Highlight A covers chars 10–30
+2. Highlight B covers chars 5–35 (overlaps A entirely)
+3. Both are stored separately in the highlights array
+4. `buildSegments` uses a boundary-sweep to split text at every highlight edge
+5. For overlapping regions, the **most recently added** highlight's `groupId` is shown
+6. Removing B peels off the top layer — A remains visible underneath
 
-### ❌ Don't use `removeHighlight` — use `removeHighlightGroup`
-`removeHighlight(id)` removes one segment. If the user highlighted across heading + paragraph in one action, clicking remove on the heading would only remove the heading highlight, leaving the paragraph highlighted. `removeHighlightGroup(groupId)` removes all segments from the same action.
-
-### ❌ Don't reuse `paragraphIndex` values across different elements
-If two `Highlightable` instances share the same `paragraphIndex`, their highlights will be mixed up — one element will render the other's highlights.
-
-### ❌ Don't place `<Highlightable>` inside a block element other than `<p>` or `<span>` ancestors
-`Highlightable` renders a `<span>` internally. Placing it inside a `<div>` is fine but placing it directly inside a table cell or flex container may cause unexpected layout.
-
-### ❌ Don't put `<Highlightable>` around interactive elements (inputs, dropzones, buttons)
-It only works on plain readable text. Wrapping interactive question components will interfere with their own mouse event handling.
+This "layered" approach ensures that removing a highlight always removes exactly what the user selected, regardless of what was highlighted before.
 
 ---
 
-## How Cross-Element Selection Works (Important for Debugging)
+## Chrome "Search" Bubble Suppression
 
-When a user selects text across multiple elements (e.g. heading to paragraph):
+Chrome shows a native "Search" button when text is selected. Both `Highlightable` and `HighlightableContainer` suppress this by:
 
-1. `document.mouseup` fires — all `Highlightable` instances have registered their own handler via `useEffect`
-2. Handlers fire **in DOM order** (registration order = render order)
-3. The instance where the selection **starts** (`container.contains(range.startContainer) === true`):
-   - Clears `pendingHighlightsRef.current`
-   - Pushes its own unhighlighted gaps
-   - Stores the button position in a local `pendingButtonPosRef`
-   - Calls `setTimeout(0)` to show the button after all handlers complete
-4. Other instances that the selection passes through push their gaps silently — no button
-5. `setTimeout(0)` fires — if `pendingHighlightsRef.current.length > 0`, the button is shown
-6. On confirm — a single `groupId = crypto.randomUUID()` is generated, all pending entries get `onAdd` called with that groupId
+1. Cloning the selection range
+2. Painting a fake selection via `CSS.highlights.set('pending-highlight', ...)` or `CSS.highlights.set('pending-container-selection', ...)`
+3. Clearing the native selection with `sel.removeAllRanges()`
 
-**Why `setTimeout(0)`?** All synchronous mouseup handlers complete first, so by the time the timeout fires, all instances have pushed their gaps. Without it, only the start instance's gaps would be in pending when the button is shown.
+Chrome sees no native selection, so it has nothing to attach its bubble to. The fake CSS highlight makes the text still look selected (blue tint).
+
+---
+
+## Per-Section Persistence
+
+Highlights persist when navigating between sections within the same test:
+
+- **Left pane**: `useHighlights()` is called inside `ReadingPassage` (which is NOT remounted on section change). `paragraphIndex` is offset by `sectionIndex * 10000` so highlights from different sections don't collide.
+- **Right pane**: `qHighlights` state lives in `TestDetailContainer`. Each highlight stores its `sectionIndex`. Only highlights matching `currentSectionIndex` are passed to `HighlightableContainer`.
 
 ---
 
 ## Data Model
 
 ```ts
+// Left pane (Highlightable)
 interface Highlight {
-    id: string;           // unique per segment
-    groupId: string;      // shared across all segments added in one confirm action
-    paragraphIndex: number;
-    start: number;        // char offset in the text string (inclusive)
-    end: number;          // char offset in the text string (exclusive)
+    id: string;             // unique per entry
+    groupId: string;        // shared across all entries added in one confirm action
+    paragraphIndex: number; // scoped by sectionIndex * 10000
+    start: number;          // char offset (inclusive)
+    end: number;            // char offset (exclusive)
 }
+
+// Right pane (HighlightableContainer)
+interface ContainerHighlight {
+    id: string;
+    groupId: string;
+    start: number;          // absolute char offset within container
+    end: number;
+}
+// + sectionIndex (added in TestDetailContainer state)
 ```
 
-**localStorage format:**
-```
-key:   "highlights-book-19-test-1"
-value: Highlight[]  (JSON array)
-```
+---
+
+## Rules
+
+- Do NOT call `useHighlights` inside `<Highlightable>` — call it in the parent
+- Do NOT create separate `pendingHighlightsRef` per `<Highlightable>` — all instances must share one
+- Do NOT reuse `paragraphIndex` across different elements or sections
+- Do NOT wrap interactive elements (inputs, dropzones, buttons) in `<Highlightable>`
+- Do NOT persist highlights to localStorage — they are intentionally in-memory only

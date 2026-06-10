@@ -8,6 +8,7 @@ import "./ReadingPassage.css";
 
 interface ReadingPassageProps {
     testId: string;
+    sectionIndex: number;
     data: PassageData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
@@ -19,6 +20,7 @@ interface ReadingPassageProps {
 
 const ReadingPassage: React.FC<ReadingPassageProps> = ({
     testId,
+    sectionIndex,
     data,
     answers,
     onAnswerChange,
@@ -49,9 +51,10 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
         setDragOverZoneId(null);
     };
 
-    // Index scheme: paragraphs use idx, title uses sections.length, headings use sections.length + 1 + idx
-    const titleIndex = data.sections.length;
-    const headingIndex = (idx: number) => data.sections.length + 1 + idx;
+    // Offset all indices by sectionIndex * 10000 so highlights don't collide across sections
+    const base = sectionIndex * 10000;
+    const titleIndex = base + data.sections.length;
+    const headingIndex = (idx: number) => base + data.sections.length + 1 + idx;
 
     return (
         <div className="reading-passage-container">
@@ -115,8 +118,8 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                         <p className="passage-paragraph">
                             <Highlightable
                                 text={section.content}
-                                paragraphIndex={idx}
-                                highlights={highlights.filter((h) => h.paragraphIndex === idx)}
+                                paragraphIndex={base + idx}
+                                highlights={highlights.filter((h) => h.paragraphIndex === base + idx)}
                                 onAdd={addHighlight}
                                 onRemove={removeHighlightGroup}
                                 pendingHighlightsRef={pendingHighlightsRef}

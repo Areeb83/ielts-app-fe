@@ -14,69 +14,65 @@ interface Segment {
  * offset of `offsetInNode` within `targetNode`.
  */
 function getAbsoluteOffset(container: Element, targetNode: Node, offsetInNode: number): number {
-    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
-    let total = 0;
-    let node: Node | null;
-    while ((node = walker.nextNode())) {
-        if (node === targetNode) {
-            return total + offsetInNode;
-        }
-        total += (node as Text).length;
-    }
-    return total;
+    const r = document.createRange();
+    r.selectNodeContents(container);
+    r.setEnd(targetNode, offsetInNode);
+    return r.toString().length;
 }
 
 /**
- * Splits `text` into plain and highlighted segments based on the highlights array.
+ * Splits `text` into plain and highlighted segments.
+ * Supports overlapping highlights — the most recently added highlight
+ * (last in array) "wins" the groupId for any overlapping region, so
+ * clicking Remove on it peels off only the top layer.
  */
 function buildSegments(text: string, highlights: Highlight[]): Segment[] {
-    const sorted = [...highlights].sort((a, b) => a.start - b.start);
-    const segments: Segment[] = [];
-    let cursor = 0;
-
-    for (const h of sorted) {
-        if (h.start > cursor) {
-            segments.push({ text: text.slice(cursor, h.start), highlighted: false });
-        }
-        const start = Math.max(h.start, cursor);
-        if (h.end > start) {
-            segments.push({ text: text.slice(start, h.end), highlighted: true, groupId: h.groupId });
-        }
-        cursor = Math.max(cursor, h.end);
+    if (highlights.length === 0) {
+        return [{ text, highlighted: false }];
     }
 
-    if (cursor < text.length) {
-        segments.push({ text: text.slice(cursor), highlighted: false });
+    // Collect all boundary points
+    const boundaries = new Set<number>();
+    boundaries.add(0);
+    boundaries.add(text.length);
+    for (const h of highlights) {
+        boundaries.add(Math.max(0, h.start));
+        boundaries.add(Math.min(text.length, h.end));
     }
 
-    return segments;
+    const sorted = [...boundaries].sort((a, b) => a - b);
+    const raw: Segment[] = [];
+
+    for (let i = 0; i < sorted.length - 1; i++) {
+        const segStart = sorted[i];
+        const segEnd = sorted[i + 1];
+        if (segStart === segEnd) continue;
+
+        // Find all highlights covering this segment; pick the last one (most recent)
+        const covering = highlights.filter(h => h.start <= segStart && h.end >= segEnd);
+
+        if (covering.length > 0) {
+            const topmost = covering[covering.length - 1];
+            raw.push({ text: text.slice(segStart, segEnd), highlighted: true, groupId: topmost.groupId });
+        } else {
+            raw.push({ text: text.slice(segStart, segEnd), highlighted: false });
+        }
+    }
+
+    // Merge adjacent segments with the same state
+    const merged: Segment[] = [];
+    for (const seg of raw) {
+        const last = merged[merged.length - 1];
+        if (last && last.highlighted === seg.highlighted && last.groupId === seg.groupId) {
+            last.text += seg.text;
+        } else {
+            merged.push({ ...seg });
+        }
+    }
+
+    return merged;
 }
 
-/**
- * Returns the gaps (non-highlighted ranges) within [start, end]
- * given a list of existing highlights for this paragraph.
- */
-function getUnhighlightedGaps(
-    start: number,
-    end: number,
-    existing: Highlight[]
-): { start: number; end: number }[] {
-    const sorted = existing
-        .filter((h) => h.start < end && h.end > start)
-        .sort((a, b) => a.start - b.start);
-
-    const gaps: { start: number; end: number }[] = [];
-    let cursor = start;
-
-    for (const h of sorted) {
-        const gapEnd = Math.min(h.start, end);
-        if (gapEnd > cursor) gaps.push({ start: cursor, end: gapEnd });
-        cursor = Math.max(cursor, h.end);
-    }
-
-    if (cursor < end) gaps.push({ start: cursor, end });
-    return gaps;
-}
 
 interface HighlightableProps {
     text: string;
@@ -112,11 +108,10 @@ const Highlightable: React.FC<HighlightableProps> = ({
 
         const startInside = container.contains(range.startContainer);
         const endInside = container.contains(range.endContainer);
-        const myHighlights = highlights.filter(h => h.paragraphIndex === paragraphIndex);
 
         if (!startInside) {
             // This instance doesn't show the button, but if it's within the
-            // selection range it should contribute its gaps to the shared pending list
+            // selection range it should contribute its full range to the shared pending list
             const fullyInside = range.intersectsNode(container);
             if (!fullyInside && !endInside) return;
 
@@ -125,8 +120,9 @@ const Highlightable: React.FC<HighlightableProps> = ({
                 ? getAbsoluteOffset(container, range.endContainer, range.endOffset)
                 : text.length;
 
-            const gaps = getUnhighlightedGaps(start, end, myHighlights);
-            gaps.forEach(g => pendingHighlightsRef.current.push({ paragraphIndex, ...g }));
+            if (end > start) {
+                pendingHighlightsRef.current.push({ paragraphIndex, start, end });
+            }
             return;
         }
 
@@ -141,10 +137,10 @@ const Highlightable: React.FC<HighlightableProps> = ({
         const rects = range.getClientRects();
         if (!rects.length) return;
 
-        // Clear stale pending, add own gaps (may be empty if fully highlighted)
+        // Clear stale pending, push the full selected range for this paragraph.
+        // addHighlight will clip any overlapping existing highlights.
         pendingHighlightsRef.current = [];
-        const gaps = getUnhighlightedGaps(start, end, myHighlights);
-        gaps.forEach(g => pendingHighlightsRef.current.push({ paragraphIndex, ...g }));
+        pendingHighlightsRef.current.push({ paragraphIndex, start, end });
 
         // Store button position — show after all handlers have fired so other
         // instances (paragraphs below) can also push their gaps into pending
@@ -170,7 +166,7 @@ const Highlightable: React.FC<HighlightableProps> = ({
             }
             pendingButtonPosRef.current = null;
         }, 0);
-    }, [highlights, text, paragraphIndex, pendingHighlightsRef]);
+    }, [text, paragraphIndex, pendingHighlightsRef]);
 
     useEffect(() => {
         document.addEventListener('mouseup', handleMouseUp);

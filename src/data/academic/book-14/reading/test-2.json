@@ -174,14 +174,14 @@
       "passage": {
         "title": "The future of work: is it really so different?",
         "sections": [
-          { "label": "A", "content": "[Placeholder for Section A]" },
-          { "label": "B", "content": "[Placeholder for Section B]" },
-          { "label": "C", "content": "[Placeholder for Section C]" },
-          { "label": "D", "content": "[Placeholder for Section D]" },
-          { "label": "E", "content": "[Placeholder for Section E]" },
-          { "label": "F", "content": "[Placeholder for Section F]" },
-          { "label": "G", "content": "[Placeholder for Section G]" },
-          { "label": "H", "content": "[Placeholder for Section H]" }
+          { "questionId": "27", "heading": "A", "content": "[Placeholder for Section A]" },
+          { "questionId": "28", "heading": "B", "content": "[Placeholder for Section B]" },
+          { "questionId": "29", "heading": "C", "content": "[Placeholder for Section C]" },
+          { "questionId": "30", "heading": "D", "content": "[Placeholder for Section D]" },
+          { "questionId": "31", "heading": "E", "content": "[Placeholder for Section E]" },
+          { "questionId": "32", "heading": "F", "content": "[Placeholder for Section F]" },
+          { "questionId": "33", "heading": "G", "content": "[Placeholder for Section G]" },
+          { "questionId": "34", "heading": "H", "content": "[Placeholder for Section H]" }
         ]
       },
       "questionGroups": [

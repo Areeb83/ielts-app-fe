@@ -5,7 +5,8 @@ import QuestionRenderer from "../QuestionTypes/QuestionRenderer";
 import type { TestData, QuestionGroup, AnswerMap, MatchingHeadingData } from "../../../types/question";
 import SplitPane from "../../ui/SplitPane/SplitPane";
 import ReadingPassage from "./ReadingPassage";
-import useHighlights from "../../Highlightable/useHighlights";
+import HighlightableContainer from "../../Highlightable/HighlightableContainer";
+import type { ContainerHighlight } from "../../Highlightable/HighlightableContainer";
 import { useAutoScroll } from "../../../hooks";
 import "../../../styles/TestPagesStyle.css";
 
@@ -38,13 +39,23 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
 
-    const { highlights: qHighlights, addHighlight: qAddHighlight, removeHighlightGroup: qRemoveGroup } = useHighlights();
-    const questionsPendingRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
-    const questionsHighlightProps = {
-        highlights: qHighlights,
-        onAdd: qAddHighlight,
-        onRemove: qRemoveGroup,
-        pendingRef: questionsPendingRef,
+    // Question-side highlights — scoped per section via sectionIndex
+    const [qHighlights, setQHighlights] = useState<(ContainerHighlight & { sectionIndex: number })[]>([]);
+    const addQHighlight = (segments: { start: number; end: number }[]) => {
+        const groupId = crypto.randomUUID();
+        setQHighlights(prev => [
+            ...prev,
+            ...segments.map(seg => ({
+                id: crypto.randomUUID(),
+                groupId,
+                sectionIndex: currentSectionIndex,
+                start: seg.start,
+                end: seg.end,
+            })),
+        ]);
+    };
+    const removeQHighlight = (groupId: string) => {
+        setQHighlights(prev => prev.filter(h => h.groupId !== groupId));
     };
 
     useAutoScroll(!!draggingWordId, { hotZoneTop: testType === 'reading' ? 150 : 90 });
@@ -81,44 +92,55 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
 
     // ─── Render ──────────────────────────────────────────────────────────
 
-    const renderQuestionsPane = () => (
-        <div style={{ padding: testType === 'reading' ? '0 10px' : '0' }}>
-            {/* Section title banner (Only for Listening or if not handled at top) */}
-            {testType === 'listening' && currentSection && (
-                <div className="section-header-banner" style={{ marginBottom: 24 }}>
-                    <h2 style={{ fontSize: 16, fontWeight: 700, color: "#333", margin: 0 }}>
-                        {currentSection.title} — Questions {currentSection.questionGroups[0]?.startQuestion}–{currentSection.questionGroups[currentSection.questionGroups.length - 1]?.endQuestion}
-                    </h2>
-                </div>
-            )}
+    const renderQuestionsPane = () => {
+        const content = (
+            <div style={{ padding: testType === 'reading' ? '0 10px' : '0' }}>
+                {/* Section title banner (Only for Listening or if not handled at top) */}
+                {testType === 'listening' && currentSection && (
+                    <div className="section-header-banner" style={{ marginBottom: 24 }}>
+                        <h2 style={{ fontSize: 16, fontWeight: 700, color: "#333", margin: 0 }}>
+                            {currentSection.title} — Questions {currentSection.questionGroups[0]?.startQuestion}–{currentSection.questionGroups[currentSection.questionGroups.length - 1]?.endQuestion}
+                        </h2>
+                    </div>
+                )}
 
-            {/* Question Group Renderers */}
-            <div className="section-questions-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                {currentSection?.sectionHeading && (
-                    <h2 className="section-sub-heading">
-                        {currentSection.sectionHeading}
-                    </h2>
-                )}
-                {currentSection ? (
-                    currentSection.questionGroups.map((group, index) => (
-                        <QuestionRenderer
-                            key={`${currentSection.sectionNumber}-${index}`}
-                            group={group}
-                            answers={answers}
-                            onAnswerChange={handleAnswerChange}
-                            testType={testType}
-                            draggingWordId={draggingWordId}
-                            onDragStart={setDraggingWordId}
-                            onDragEnd={() => setDraggingWordId(null)}
-                            highlightProps={testType === 'reading' ? questionsHighlightProps : undefined}
-                        />
-                    ))
-                ) : (
-                    <p>No questions found.</p>
-                )}
+                {/* Question Group Renderers */}
+                <div className="section-questions-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    {currentSection?.sectionHeading && (
+                        <h2 className="section-sub-heading">
+                            {currentSection.sectionHeading}
+                        </h2>
+                    )}
+                    {currentSection ? (
+                        currentSection.questionGroups.map((group, index) => (
+                            <QuestionRenderer
+                                key={`${currentSection.sectionNumber}-${index}`}
+                                group={group}
+                                answers={answers}
+                                onAnswerChange={handleAnswerChange}
+                                testType={testType}
+                                draggingWordId={draggingWordId}
+                                onDragStart={setDraggingWordId}
+                                onDragEnd={() => setDraggingWordId(null)}
+                            />
+                        ))
+                    ) : (
+                        <p>No questions found.</p>
+                    )}
+                </div>
             </div>
-        </div>
-    );
+        );
+
+        return (
+            <HighlightableContainer
+                highlights={qHighlights.filter(h => h.sectionIndex === currentSectionIndex)}
+                onAdd={addQHighlight}
+                onRemove={removeQHighlight}
+            >
+                {content}
+            </HighlightableContainer>
+        );
+    };
 
 
     const renderReadingPassage = () => {
@@ -148,6 +170,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
         return (
             <ReadingPassage
                 testId={testData.testId}
+                sectionIndex={currentSectionIndex}
                 data={currentSection.passage}
                 answers={answers}
                 onAnswerChange={handleAnswerChange}

@@ -117,13 +117,13 @@
       "passage": {
         "title": "The lost city",
         "sections": [
-          { "label": "A", "content": "[Placeholder for Paragraph A]" },
-          { "label": "B", "content": "[Placeholder for Paragraph B]" },
-          { "label": "C", "content": "[Placeholder for Paragraph C]" },
-          { "label": "D", "content": "[Placeholder for Paragraph D]" },
-          { "label": "E", "content": "[Placeholder for Paragraph E]" },
-          { "label": "F", "content": "[Placeholder for Paragraph F]" },
-          { "label": "G", "content": "[Placeholder for Paragraph G]" }
+          { "questionId": "14", "heading": "A", "content": "[Placeholder for Paragraph A]" },
+          { "questionId": "15", "heading": "B", "content": "[Placeholder for Paragraph B]" },
+          { "questionId": "16", "heading": "C", "content": "[Placeholder for Paragraph C]" },
+          { "questionId": "17", "heading": "D", "content": "[Placeholder for Paragraph D]" },
+          { "questionId": "18", "heading": "E", "content": "[Placeholder for Paragraph E]" },
+          { "questionId": "19", "heading": "F", "content": "[Placeholder for Paragraph F]" },
+          { "questionId": "20", "heading": "G", "content": "[Placeholder for Paragraph G]" }
         ]
       },
       "questionGroups": [

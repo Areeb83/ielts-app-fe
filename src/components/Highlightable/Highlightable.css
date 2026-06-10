@@ -2,7 +2,24 @@
     cursor: text;
 }
 
+.highlightable__container button,
+.highlightable__container input,
+.highlightable__container select,
+.highlightable__container textarea,
+.highlightable__container label {
+    cursor: pointer;
+}
+
 ::highlight(pending-highlight) {
+    background-color: rgba(49, 130, 206, 0.35);
+    color: inherit;
+}
+
+::highlight(container-highlights) {
+    background-color: #ffe066;
+}
+
+::highlight(pending-container-selection) {
     background-color: rgba(49, 130, 206, 0.35);
     color: inherit;
 }

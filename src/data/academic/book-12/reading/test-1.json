@@ -166,12 +166,12 @@
       "passage": {
         "title": "What is the purpose of gaining knowledge?",
         "sections": [
-          { "label": "A", "content": "[Placeholder for Section A]" },
-          { "label": "B", "content": "[Placeholder for Section B]" },
-          { "label": "C", "content": "[Placeholder for Section C]" },
-          { "label": "D", "content": "[Placeholder for Section D]" },
-          { "label": "E", "content": "[Placeholder for Section E]" },
-          { "label": "F", "content": "[Placeholder for Section F]" }
+          { "questionId": "27", "heading": "A", "content": "[Placeholder for Section A]" },
+          { "questionId": "28", "heading": "B", "content": "[Placeholder for Section B]" },
+          { "questionId": "29", "heading": "C", "content": "[Placeholder for Section C]" },
+          { "questionId": "30", "heading": "D", "content": "[Placeholder for Section D]" },
+          { "questionId": "31", "heading": "E", "content": "[Placeholder for Section E]" },
+          { "questionId": "32", "heading": "F", "content": "[Placeholder for Section F]" }
         ]
       },
       "questionGroups": [
