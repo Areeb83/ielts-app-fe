@@ -5,6 +5,7 @@ import QuestionRenderer from "../QuestionTypes/QuestionRenderer";
 import type { TestData, QuestionGroup, AnswerMap, MatchingHeadingData } from "../../../types/question";
 import SplitPane from "../../ui/SplitPane/SplitPane";
 import ReadingPassage from "./ReadingPassage";
+import useHighlights from "../../Highlightable/useHighlights";
 import { useAutoScroll } from "../../../hooks";
 import "../../../styles/TestPagesStyle.css";
 
@@ -36,6 +37,15 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
+
+    const { highlights: qHighlights, addHighlight: qAddHighlight, removeHighlightGroup: qRemoveGroup } = useHighlights();
+    const questionsPendingRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
+    const questionsHighlightProps = {
+        highlights: qHighlights,
+        onAdd: qAddHighlight,
+        onRemove: qRemoveGroup,
+        pendingRef: questionsPendingRef,
+    };
 
     useAutoScroll(!!draggingWordId, { hotZoneTop: testType === 'reading' ? 150 : 90 });
 
@@ -100,6 +110,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
                             draggingWordId={draggingWordId}
                             onDragStart={setDraggingWordId}
                             onDragEnd={() => setDraggingWordId(null)}
+                            highlightProps={testType === 'reading' ? questionsHighlightProps : undefined}
                         />
                     ))
                 ) : (

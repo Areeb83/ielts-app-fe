@@ -100,6 +100,7 @@ const Highlightable: React.FC<HighlightableProps> = ({
     const [mode, setMode] = useState<'highlight' | 'remove'>('highlight');
     const pendingRangeRef = useRef<{ start: number; end: number } | null>(null);
     const pendingRemoveIdRef = useRef<string | null>(null);
+    const pendingButtonPosRef = useRef<{ x: number; y: number } | null>(null);
 
     const handleMouseUp = useCallback(() => {
         const selection = window.getSelection();
@@ -137,19 +138,38 @@ const Highlightable: React.FC<HighlightableProps> = ({
 
         if (end <= start) return;
 
-        const gaps = getUnhighlightedGaps(start, end, myHighlights);
-        if (!gaps.length) return;
-
-        // Clear stale pending from previous selection, then add ours
-        pendingHighlightsRef.current = [];
-        gaps.forEach(g => pendingHighlightsRef.current.push({ paragraphIndex, ...g }));
-
         const rects = range.getClientRects();
         if (!rects.length) return;
-        setButtonPos({
+
+        // Clear stale pending, add own gaps (may be empty if fully highlighted)
+        pendingHighlightsRef.current = [];
+        const gaps = getUnhighlightedGaps(start, end, myHighlights);
+        gaps.forEach(g => pendingHighlightsRef.current.push({ paragraphIndex, ...g }));
+
+        // Store button position — show after all handlers have fired so other
+        // instances (paragraphs below) can also push their gaps into pending
+        pendingButtonPosRef.current = {
             x: rects[0].left + rects[0].width / 2,
             y: rects[0].top - 4,
-        });
+        };
+
+        setTimeout(() => {
+            if (pendingHighlightsRef.current.length > 0 && pendingButtonPosRef.current) {
+                const sel = window.getSelection();
+                if (sel && sel.rangeCount && !sel.isCollapsed) {
+                    // Paint a fake selection using the CSS Custom Highlight API so
+                    // the text still looks selected, then clear the native selection
+                    // so Chrome has nothing to attach its "Search" bubble to.
+                    const savedRange = sel.getRangeAt(0).cloneRange();
+                    if ('highlights' in CSS) {
+                        CSS.highlights.set('pending-highlight', new Highlight(savedRange));
+                    }
+                    sel.removeAllRanges();
+                }
+                setButtonPos(pendingButtonPosRef.current);
+            }
+            pendingButtonPosRef.current = null;
+        }, 0);
     }, [highlights, text, paragraphIndex, pendingHighlightsRef]);
 
     useEffect(() => {
@@ -157,7 +177,12 @@ const Highlightable: React.FC<HighlightableProps> = ({
         return () => document.removeEventListener('mouseup', handleMouseUp);
     }, [handleMouseUp]);
 
+    const clearPendingHighlight = useCallback(() => {
+        if ('highlights' in CSS) CSS.highlights.delete('pending-highlight');
+    }, []);
+
     const handleConfirm = useCallback(() => {
+        clearPendingHighlight();
         if (mode === 'remove') {
             if (pendingRemoveIdRef.current) {
                 onRemove(pendingRemoveIdRef.current);
@@ -174,15 +199,16 @@ const Highlightable: React.FC<HighlightableProps> = ({
         }
         setButtonPos(null);
         setMode('highlight');
-    }, [mode, onAdd, onRemove, pendingHighlightsRef]);
+    }, [mode, onAdd, onRemove, pendingHighlightsRef, clearPendingHighlight]);
 
     const handleDismiss = useCallback(() => {
+        clearPendingHighlight();
         pendingRangeRef.current = null;
         pendingRemoveIdRef.current = null;
         pendingHighlightsRef.current = [];
         setButtonPos(null);
         setMode('highlight');
-    }, [pendingHighlightsRef]);
+    }, [pendingHighlightsRef, clearPendingHighlight]);
 
     const segments = buildSegments(text, highlights);
 

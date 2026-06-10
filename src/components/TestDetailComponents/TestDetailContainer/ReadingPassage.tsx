@@ -28,7 +28,7 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     headingLookup,
 }) => {
     const [dragOverZoneId, setDragOverZoneId] = React.useState<string | null>(null);
-    const { highlights, addHighlight, removeHighlightGroup } = useHighlights(testId);
+    const { highlights, addHighlight, removeHighlightGroup } = useHighlights();
     const pendingHighlightsRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
 
     const handleDropOnZone = (targetZoneId: string) => {

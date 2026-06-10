@@ -1,5 +1,7 @@
 import React from "react";
 import type { AnswerMap, ParagraphMatchingData } from "../../../../types/question";
+import type { HighlightProps } from "../../../Highlightable/useHighlights";
+import Highlightable from "../../../Highlightable/Highlightable";
 import "./ParagraphMatching.css";
 
 interface ParagraphMatchingProps {
@@ -8,6 +10,7 @@ interface ParagraphMatchingProps {
     data: ParagraphMatchingData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    highlightProps?: HighlightProps;
 }
 
 const formatInstruction = (text: string) => {
@@ -39,6 +42,7 @@ const ParagraphMatching: React.FC<ParagraphMatchingProps> = ({
     data,
     answers,
     onAnswerChange,
+    highlightProps,
 }) => {
     return (
         <div className="paragraph-matching-container">
@@ -63,7 +67,21 @@ const ParagraphMatching: React.FC<ParagraphMatchingProps> = ({
                                 <option key={p} value={p}>{p}</option>
                             ))}
                         </select>
-                        <span className="paragraph-matching__text">{q.text}</span>
+                        <span className="paragraph-matching__text">
+                            {highlightProps ? (() => {
+                                const pIdx = 20000 + q.questionNumber;
+                                return (
+                                    <Highlightable
+                                        text={q.text}
+                                        paragraphIndex={pIdx}
+                                        highlights={highlightProps.highlights.filter(h => h.paragraphIndex === pIdx)}
+                                        onAdd={highlightProps.onAdd}
+                                        onRemove={highlightProps.onRemove}
+                                        pendingHighlightsRef={highlightProps.pendingRef}
+                                    />
+                                );
+                            })() : q.text}
+                        </span>
                     </div>
                 ))}
             </div>

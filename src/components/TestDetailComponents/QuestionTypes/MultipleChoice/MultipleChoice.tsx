@@ -5,6 +5,8 @@ import type {
     AnswerMap,
     IdentificationData,
 } from "../../../../types/question";
+import type { HighlightProps } from "../../../Highlightable/useHighlights";
+import Highlightable from "../../../Highlightable/Highlightable";
 import "./MultipleChoice.css";
 
 interface MultipleChoiceProps {
@@ -13,6 +15,7 @@ interface MultipleChoiceProps {
     data: MultipleChoiceData | IdentificationData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string | string[]) => void;
+    highlightProps?: HighlightProps;
 }
 
 const formatInstruction = (text: string) => {
@@ -44,7 +47,8 @@ const MultipleChoiceItem: React.FC<{
     question: MultipleChoiceQuestion;
     answers: AnswerMap;
     onAnswerChange: (id: string, value: string | string[]) => void;
-}> = ({ question, answers, onAnswerChange }) => {
+    highlightProps?: HighlightProps;
+}> = ({ question, answers, onAnswerChange, highlightProps }) => {
     const isMultiple = !!question.multiple;
     const maxCount = question.count ?? 1;
 
@@ -79,11 +83,22 @@ const MultipleChoiceItem: React.FC<{
     const isBlocked = (letter: string) =>
         isMultiple && !isSelected(letter) && selected.length >= maxCount;
 
+    const paragraphIndex = 20000 + parseInt(question.id, 10);
+
     return (
         <div className="mc-question">
             <p className="mc-question__text">
                 {!isMultiple && <span className="mc-question__number">{question.id}</span>}{!isMultiple && " "}
-                {formatInstruction(question.text)}
+                {highlightProps ? (
+                    <Highlightable
+                        text={question.text}
+                        paragraphIndex={paragraphIndex}
+                        highlights={highlightProps.highlights.filter(h => h.paragraphIndex === paragraphIndex)}
+                        onAdd={highlightProps.onAdd}
+                        onRemove={highlightProps.onRemove}
+                        pendingHighlightsRef={highlightProps.pendingRef}
+                    />
+                ) : formatInstruction(question.text)}
             </p>
             <div className="mc-question__options">
                 {question.options.map((option) => (
@@ -119,6 +134,7 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
     data,
     answers,
     onAnswerChange,
+    highlightProps,
 }) => {
     // Check if this is an identification question (T/F/NG or Y/N/NG)
     const isIdentification = "optionsType" in data;
@@ -168,6 +184,7 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
                         question={question}
                         answers={answers}
                         onAnswerChange={onAnswerChange}
+                        highlightProps={highlightProps}
                     />
                 ))}
             </div>

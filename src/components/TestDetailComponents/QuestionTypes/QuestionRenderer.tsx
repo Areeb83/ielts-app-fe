@@ -1,5 +1,6 @@
 import React from "react";
 import type { QuestionGroup, AnswerMap } from "../../../types/question";
+import type { HighlightProps } from "../../Highlightable/useHighlights";
 import FlowChartDragDrop from "./FlowChartDragDrop/FlowChartDragDrop";
 import SentenceCompletion from "./SentenceCompletion/SentenceCompletion";
 import SummaryCompletion from "./SummaryCompletion/SummaryCompletion";
@@ -22,6 +23,7 @@ interface QuestionRendererProps {
     draggingWordId?: string | null;
     onDragStart?: (wordId: string) => void;
     onDragEnd?: () => void;
+    highlightProps?: HighlightProps;
 }
 
 /**
@@ -29,7 +31,7 @@ interface QuestionRendererProps {
  * Maps a QuestionGroup's `type` to the correct renderer.
  * Add new question types here as you build them.
  */
-const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, draggingWordId, onDragStart, onDragEnd }) => {
+const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, draggingWordId, onDragStart, onDragEnd, highlightProps }) => {
     const questionRange = group.hideRange
         ? ""
         : group.startQuestion === group.endQuestion
@@ -99,6 +101,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    highlightProps={highlightProps}
                 />
             );
 
@@ -148,6 +151,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     optionsBelow={testType === 'reading'}
+                    highlightProps={highlightProps}
                 />
             );
 
@@ -173,6 +177,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    highlightProps={highlightProps}
                 />
             );
 

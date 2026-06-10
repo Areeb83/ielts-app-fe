@@ -1,5 +1,7 @@
 import React from "react";
 import type { AnswerMap, MatchingFeatureData } from "../../../../types/question";
+import type { HighlightProps } from "../../../Highlightable/useHighlights";
+import Highlightable from "../../../Highlightable/Highlightable";
 import "./MatchingFeature.css";
 
 interface MatchingFeatureProps {
@@ -9,6 +11,7 @@ interface MatchingFeatureProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     optionsBelow?: boolean;
+    highlightProps?: HighlightProps;
 }
 
 const formatInstruction = (text: string) => {
@@ -28,6 +31,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
     answers,
     onAnswerChange,
     optionsBelow = false,
+    highlightProps,
 }) => {
     const optionsBox = (
         <div className="matching-feature__options-box">
@@ -40,12 +44,26 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                     </tr>
                 </thead>
                 <tbody>
-                    {data.options.map((opt) => (
-                        <tr key={opt.letter}>
-                            <td className="matching-feature__opt-letter">{opt.letter}</td>
-                            <td className="matching-feature__opt-text">{opt.text}</td>
-                        </tr>
-                    ))}
+                    {data.options.map((opt, optIdx) => {
+                        const oPIdx = 25000 + optIdx;
+                        return (
+                            <tr key={opt.letter}>
+                                <td className="matching-feature__opt-letter">{opt.letter}</td>
+                                <td className="matching-feature__opt-text">
+                                    {highlightProps ? (
+                                        <Highlightable
+                                            text={opt.text}
+                                            paragraphIndex={oPIdx}
+                                            highlights={highlightProps.highlights.filter(h => h.paragraphIndex === oPIdx)}
+                                            onAdd={highlightProps.onAdd}
+                                            onRemove={highlightProps.onRemove}
+                                            pendingHighlightsRef={highlightProps.pendingRef}
+                                        />
+                                    ) : opt.text}
+                                </td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </table>
         </div>
@@ -89,7 +107,21 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                                         <td className="matching-feature__td-question">
                                             <div className="matching-feature__question-content">
                                                 <span className="matching-feature__q-num">{q.questionNumber}</span>
-                                                <span className="matching-feature__q-text">{q.text}</span>
+                                                <span className="matching-feature__q-text">
+                                                    {highlightProps ? (() => {
+                                                        const qPIdx = 20000 + q.questionNumber;
+                                                        return (
+                                                            <Highlightable
+                                                                text={q.text}
+                                                                paragraphIndex={qPIdx}
+                                                                highlights={highlightProps.highlights.filter(h => h.paragraphIndex === qPIdx)}
+                                                                onAdd={highlightProps.onAdd}
+                                                                onRemove={highlightProps.onRemove}
+                                                                pendingHighlightsRef={highlightProps.pendingRef}
+                                                            />
+                                                        );
+                                                    })() : q.text}
+                                                </span>
                                             </div>
                                         </td>
 

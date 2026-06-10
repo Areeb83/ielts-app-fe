@@ -1,4 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import type React from 'react';
+
+export interface HighlightProps {
+    highlights: Highlight[];
+    onAdd: (h: Omit<Highlight, 'id'>) => void;
+    onRemove: (groupId: string) => void;
+    pendingRef: React.MutableRefObject<{ paragraphIndex: number; start: number; end: number }[]>;
+}
 
 export interface Highlight {
     id: string;
@@ -8,21 +16,8 @@ export interface Highlight {
     end: number;
 }
 
-function useHighlights(testId: string) {
-    const storageKey = `highlights-${testId}`;
-
-    const [highlights, setHighlights] = useState<Highlight[]>(() => {
-        try {
-            const stored = localStorage.getItem(storageKey);
-            return stored ? JSON.parse(stored) : [];
-        } catch {
-            return [];
-        }
-    });
-
-    useEffect(() => {
-        localStorage.setItem(storageKey, JSON.stringify(highlights));
-    }, [highlights, storageKey]);
+function useHighlights() {
+    const [highlights, setHighlights] = useState<Highlight[]>([]);
 
     const addHighlight = (h: Omit<Highlight, 'id'>) => {
         setHighlights((prev) => [

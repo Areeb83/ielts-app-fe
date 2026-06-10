@@ -2,6 +2,11 @@
     cursor: text;
 }
 
+::highlight(pending-highlight) {
+    background-color: rgba(49, 130, 206, 0.35);
+    color: inherit;
+}
+
 .highlightable__mark {
     background-color: #ffe066;
     cursor: text;
