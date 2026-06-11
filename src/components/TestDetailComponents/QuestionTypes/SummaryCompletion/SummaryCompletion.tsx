@@ -8,6 +8,7 @@ interface SummaryCompletionProps {
     data: SummaryCompletionData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    reviewMode?: boolean;
 }
 
 /**
@@ -17,7 +18,8 @@ const AutoGrowingSummaryInput: React.FC<{
     id: string;
     value: string;
     onChange: (value: string) => void;
-}> = ({ id, value, onChange }) => {
+    disabled?: boolean;
+}> = ({ id, value, onChange, disabled }) => {
     const [width, setWidth] = React.useState<number | string>("200px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -36,11 +38,12 @@ const AutoGrowingSummaryInput: React.FC<{
             </span>
             <input
                 type="text"
-                className="summary-completion__input"
+                className={`summary-completion__input${disabled ? " summary-completion__input--review" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder=" "
+                disabled={disabled}
             />
             <span className="summary-fake-placeholder">{id}</span>
         </div>
@@ -53,6 +56,7 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     // Helper to render a content part (text or input) within the paragraph
     const renderContentPart = (part: ContentPart, index: number) => {
@@ -68,6 +72,7 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
                     id={part.id}
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
+                    disabled={reviewMode}
                 />
             );
         }

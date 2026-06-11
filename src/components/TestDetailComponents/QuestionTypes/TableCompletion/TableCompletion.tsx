@@ -8,6 +8,7 @@ interface TableCompletionProps {
     data: TableCompletionData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    reviewMode?: boolean;
 }
 
 /**
@@ -18,7 +19,8 @@ const AutoGrowingInput: React.FC<{
     id: string;
     value: string;
     onChange: (value: string) => void;
-}> = ({ id, value, onChange }) => {
+    disabled?: boolean;
+}> = ({ id, value, onChange, disabled }) => {
     const [width, setWidth] = React.useState<number | string>("120px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -39,11 +41,12 @@ const AutoGrowingInput: React.FC<{
             </span>
             <input
                 type="text"
-                className="table-completion__input"
+                className={`table-completion__input${disabled ? " table-completion__input--review" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder=" "
+                disabled={disabled}
             />
             <span className="table-completion__fake-placeholder">{id}</span>
         </div>
@@ -56,6 +59,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     const formatInstruction = (text: string) => {
         const lines = text.split('\n');
@@ -95,6 +99,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
                     id={part.id}
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
+                    disabled={reviewMode}
                 />
             );
         }
@@ -129,6 +134,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
                     id={cell.id}
                     value={value}
                     onChange={(val) => onAnswerChange(cell.id, val)}
+                    disabled={reviewMode}
                 />
             </td>
         );

@@ -13,6 +13,7 @@ interface FlowChartDragDropProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     testType?: 'listening' | 'reading';
+    reviewMode?: boolean;
 }
 
 const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
@@ -22,6 +23,7 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
     answers,
     onAnswerChange,
     testType,
+    reviewMode,
 }) => {
     // ─── Native DnD State (the "brain") ───
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
@@ -105,7 +107,7 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
     };
 
     return (
-        <div className="flow-chart-drag-drop">
+        <div className={`flow-chart-drag-drop${reviewMode ? " flow-chart-drag-drop--review" : ""}`}>
             {questionRange && (
                 <h4 className="flow-chart-drag-drop__range">{questionRange}</h4>
             )}

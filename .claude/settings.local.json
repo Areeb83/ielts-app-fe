@@ -20,7 +20,11 @@
       "Bash(node -e \"const d = require\\(''./src/data/academic/book-19/reading/test-1.json''\\); console.log\\(JSON.stringify\\(d.sections[0].passage?.sections?.[0], null, 2\\)\\)\")",
       "Bash(node -e \":*)",
       "Bash(grep -E \"\\\\.\\(tsx?|jsx?\\)$\")",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
+      "Bash(npx vite:*)",
+      "Bash(for dir:*)",
+      "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/components/TestDetailComponents/QuestionTypes/**)"
     ]
   }
 }

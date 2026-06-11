@@ -8,6 +8,7 @@ interface SentenceCompletionProps {
     data: SentenceCompletionData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    reviewMode?: boolean;
 }
 
 /**
@@ -18,7 +19,8 @@ const AutoGrowingInput: React.FC<{
     id: string;
     value: string;
     onChange: (value: string) => void;
-}> = ({ id, value, onChange }) => {
+    disabled?: boolean;
+}> = ({ id, value, onChange, disabled }) => {
     const [width, setWidth] = React.useState<number | string>("200px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -40,11 +42,12 @@ const AutoGrowingInput: React.FC<{
             </span>
             <input
                 type="text"
-                className="sentence-input"
+                className={`sentence-input${disabled ? " sentence-input--review" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder=" "
+                disabled={disabled}
             />
             <span className="fake-placeholder">{id}</span>
         </div>
@@ -57,6 +60,7 @@ const SentenceCompletion: React.FC<SentenceCompletionProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     // Helper to render a content part (text or input)
     const renderContentPart = (part: ContentPart, index: number) => {
@@ -84,6 +88,7 @@ const SentenceCompletion: React.FC<SentenceCompletionProps> = ({
                     id={part.id}
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
+                    disabled={reviewMode}
                 />
             );
         }

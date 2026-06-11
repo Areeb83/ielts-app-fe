@@ -69,3 +69,15 @@
     color: #1e293b;
     line-height: 1.5;
 }
+
+/* Review mode */
+.paragraph-matching__select--review {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border-color: #d1d5db;
+  cursor: default;
+  opacity: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

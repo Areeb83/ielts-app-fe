@@ -8,6 +8,7 @@ interface DiagramLabellingProps {
     data: DiagramLabellingData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    reviewMode?: boolean;
 }
 
 const formatInstruction = (text: string) => {
@@ -33,6 +34,7 @@ const DiagramLabelling: React.FC<DiagramLabellingProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     return (
         <div className="diagram-labelling-container">
@@ -60,9 +62,10 @@ const DiagramLabelling: React.FC<DiagramLabellingProps> = ({
                         )}
                         <input
                             type="text"
-                            className="diagram-labelling__input"
+                            className={`diagram-labelling__input${reviewMode ? " diagram-labelling__input--review" : ""}`}
                             value={(answers[q.id] as string) ?? ""}
                             onChange={(e) => onAnswerChange(q.id, e.target.value)}
+                            disabled={reviewMode}
                         />
                     </div>
                 ))}

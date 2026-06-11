@@ -244,3 +244,14 @@
     outline-offset: -2px;
     border-radius: 4px;
 }
+
+/* Review mode — disable all drag interactions */
+.flow-chart-drag-drop--review .draggable-word,
+.flow-chart-drag-drop--review .drop-zone,
+.flow-chart-drag-drop--review .options-pool {
+  pointer-events: none;
+  cursor: default;
+}
+.flow-chart-drag-drop--review .draggable-word {
+  opacity: 0.8;
+}

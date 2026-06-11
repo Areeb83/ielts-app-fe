@@ -10,103 +10,100 @@ After submitting a test, the user can click "Enter Review & Explanations" to see
 - **Test JSON** (`test-{n}.json`): Questions, passages (reading only), question groups
 - **Answer JSON** (`test-{n}-answers.json`): Correct answers per question with `acceptedAnswers[]`
 - **User Answers**: Passed via route state from the result page
+- **Shared Test Data Maps** (`src/data/testDataMaps.ts`): Centralized imports for all test JSONs
+- **Shared Answer Keys** (`src/data/answerKeys.ts`): Centralized imports for all answer JSONs
 
 ---
 
-## Parts Breakdown
+## Completed
 
-### Part 1: Scoring Utility
+### Part 1: Scoring Utility ✅
 **File:** `src/utils/scoring.ts`
 
-- Function: `scoreTest(userAnswers, answerKey)`
-- Compare each user answer against `acceptedAnswers[]` (case-insensitive, trimmed)
-- Returns: `{ correct: number, total: number, results: { questionNumber, userAnswer, correctAnswer, isCorrect }[] }`
-- IELTS band score conversion table (correct answers → band)
+- `scoreTest(userAnswers, answerKey)` — case-insensitive comparison with null safety
+- `getBandScore(correct)` — IELTS band conversion table
+- Returns `ScoreResult` with per-question breakdown
 
-**Status:** [ ] Not started
-
----
-
-### Part 2: Update Result Page with Real Scoring
+### Part 2: Result Page with Real Scoring ✅
 **File:** `src/pages/TestResultPage/TestResultPage.tsx`
 
-- Import answer key JSON for the current test
-- Use scoring utility to calculate actual correct count & band score
-- Pass scoring results to review page via route state
+- Uses `getAnswerKey()` + `scoreTest()` for real correct count & band score
+- Passes `userAnswers` + `scoreResult` to review page via route state
+- "Enter Review & Explanations" button navigates to `/review`
 
-**Status:** [ ] Not started
-
----
-
-### Part 3: Review Page Route & Layout
+### Part 3: Review Page Route & Layout ✅
 **File:** `src/pages/ReviewPage/ReviewPage.tsx`
 **Route:** `/:examType/:module/:testId/review`
 
-- Navbar: Same as result page (test title, Home, Retake buttons)
-- Hide homepage navbar/footer
-- Split pane layout:
-  - **Left pane**: Passage (reading) or transcript placeholder (listening)
-  - **Right pane**: Questions with answer validation
-- Section navigation (Part 1, Part 2, Part 3, Part 4 for listening / Section 1, 2, 3 for reading)
+- Navbar: Test title + "Review", report mistake button, close button (goes back)
+- Uses same `.header` class and `.listening-test-container` as test detail page
+- Split pane layout for both reading AND listening
+- Footer with section navigation (no submit button)
+- Reading: Passage on left, questions on right
+- Listening: Placeholder "Transcript not available yet" on left, questions on right
 
-**Status:** [ ] Not started
+### Part 4: Answer Summary ✅
+- `AnswerSummary` component below each question group
+- Green check for correct, red cross + strikethrough + correct answer for wrong
 
----
-
-### Part 4: Left Pane — Passage / Transcript Display
-**File:** Part of `ReviewPage.tsx` or separate component
-
-- **Reading**: Reuse existing `ReadingPassage` component (read-only mode, no drag-drop)
-- **Listening**: Transcript text (future — transcripts not in JSON yet). Show placeholder for now: "Transcript not available"
-- Correct answers highlighted/marked in the passage text
-
-**Status:** [ ] Not started
+### Shared Components Extracted ✅
+- `ReportMistakeButton` — used in both Header and ReviewPage
+- `testDataMaps.ts` — shared test data loader for all pages
+- `answerKeys.ts` — shared answer key loader
 
 ---
 
-### Part 5: Right Pane — Questions with Answer Validation
-**File:** `src/components/ReviewComponents/ReviewQuestionRenderer.tsx`
+## Remaining Work
 
-- Render all question groups (reuse existing question type components where possible)
-- All inputs/selections are **read-only** (disabled)
-- Input border colors:
-  - **Green** (`border-green-500`): User's answer matches accepted answers
-  - **Red** (`border-red-500`): User's answer is wrong or empty
-- Below each question group: show correct answers in a summary box
-  - Format: `Q1: tomatoes | Q2: urban centres | Q3: energy ...`
+### Part 5: Answer Display Text Resolution
+**Problem:** Some question types show full text on the UI but store answers as codes:
 
-**Status:** [ ] Not started
+#### Listening (affected types):
+| Type | Count | Answer Format | UI Shows |
+|------|-------|---------------|----------|
+| MULTIPLE_CHOICE | 119 groups | A/B/C | Full option text |
+| MATCHING_FEATURE | 44 groups | A/B/C | Feature descriptions |
+| MAP_DIAGRAM_LABELLING | 12 groups | A/B/C | Place names on map |
 
----
+#### Reading (affected types):
+| Type | Answer Format | UI Shows |
+|------|---------------|----------|
+| MULTIPLE_CHOICE | A/B/C | Full option text |
+| MATCHING_FEATURE | A/B/C | Feature descriptions |
+| MATCHING_HEADING | i/ii/iii | Heading text |
+| PARAGRAPH_MATCHING | A/B/C/D | Paragraph labels |
 
-### Part 6: Answer Summary Component
-**File:** `src/components/ReviewComponents/AnswerSummary.tsx`
+#### Non-affected types (text input = actual answer):
+- SENTENCE_COMPLETION
+- TABLE_COMPLETION
+- SUMMARY_COMPLETION
+- FLOW_CHART_DRAG_DROP
+- DIAGRAM_LABELLING
 
-- Takes question range and answer results
-- Displays correct answers in a clean grid/list
-- Shows user answer vs correct answer side by side
-- Color coded: green check for correct, red cross for wrong
+**Solution needed:** In the AnswerSummary, map answer codes back to display text using the question group data. Show both: `B — They do not contain any organic matter`
 
-**Status:** [ ] Not started
-
----
-
-## Assembly Order
-
-1. **Part 1** first — scoring utility (independent, no UI)
-2. **Part 2** — update result page to show real scores
-3. **Part 3** — review page skeleton with route and layout
-4. **Part 4** — left pane (passage display)
-5. **Part 5** — right pane (questions with validation)
-6. **Part 6** — answer summary below each group
+**Status:** [ ] Not started — **PRIORITY 1**
 
 ---
 
-## Open Questions
+### Part 6: Read-Only Question Rendering — **PRIORITY 1**
+**Current state:** Questions render via `QuestionRenderer` with user answers but inputs are not disabled.
 
-- [ ] Listening transcripts: Do we have or plan to add transcript text to listening test JSONs?
-- [ ] Should the review page allow re-playing audio sections for listening?
-- [ ] Should we show explanations text? (Not in current data — future BE feature?)
+**Needed:**
+- Disable all inputs, selects, drag-drop in review mode
+- Color input borders: green for correct, red for wrong
+- May need a `reviewMode` prop passed through `QuestionRenderer` to each question type component
+
+**Status:** [ ] Not started — **PRIORITY 1**
+
+---
+
+### Part 7: Listening Transcripts (Future)
+- Add transcript text to listening test JSONs
+- Render in left pane of review split pane
+- Highlight answer locations in transcript
+
+**Status:** [ ] Blocked — transcript data not available yet
 
 ---
 
@@ -114,20 +111,46 @@ After submitting a test, the user can click "Enter Review & Explanations" to see
 
 ```
 Test Page → Submit → Result Page → "Enter Review & Explanations" → Review Page
-                                  → "Back to Homepage" → Home
-                                  → "Retake" → Test Page
+                                 → "Back to Homepage" → Home
+                                 → "Retake" → Test Page
+
+Review Page → Close (X) → Back to Result Page
 ```
 
 ## State Flow
 
 ```
 TestDetailContainer (handleSubmit)
-  → navigate to /result with state: { answers, testType, totalQuestions, ... }
+  → navigate to /result with state: { testTitle, testType, totalQuestions, timeSpent, userAnswers }
 
 ResultPage
-  → loads answer key JSON
-  → runs scoreTest() to get correctCount, bandScore, results[]
+  → loads answer key via getAnswerKey(testId, testType)
+  → runs scoreTest(userAnswers, answerKey) → real correctCount, bandScore
   → displays score circles
   → "Enter Review & Explanations"
-    → navigate to /review with state: { testData, answers, answerKey, results[] }
+    → navigate to /review with state: { testTitle, testType, userAnswers, scoreResult }
+
+ReviewPage
+  → loads test data via getTestData(testId, testType)
+  → loads answer key via getAnswerKey(testId, testType) (fallback if scoreResult missing)
+  → renders split pane with passage/transcript + questions + answer summaries
+```
+
+## File Structure
+
+```
+src/
+├── utils/scoring.ts                    — scoreTest(), getBandScore()
+├── data/
+│   ├── testDataMaps.ts                 — shared test data imports
+│   └── answerKeys.ts                   — shared answer key imports
+├── components/TestDetailComponents/
+│   ├── ReportMistakeButton.tsx          — shared report dialog
+│   ├── Header.tsx                       — uses ReportMistakeButton
+│   ├── Footer.tsx                       — conditional submit button
+│   └── TestLoadingScreen.tsx            — loading spinner
+├── pages/
+│   ├── TestResultPage/TestResultPage.tsx — score circles + real scoring
+│   └── ReviewPage/ReviewPage.tsx        — split pane review with answers
+└── constants/routes.ts                  — LISTENING_REVIEW, READING_REVIEW
 ```

@@ -9,6 +9,7 @@ interface MatchingFeatureProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     optionsBelow?: boolean;
+    reviewMode?: boolean;
 }
 
 const formatInstruction = (text: string) => {
@@ -28,6 +29,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
     answers,
     onAnswerChange,
     optionsBelow = false,
+    reviewMode,
 }) => {
     const optionsBox = (
         <div className="matching-feature__options-box">
@@ -114,6 +116,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                                                             checked={isSelected}
                                                             onChange={(e) => onAnswerChange(q.id, e.target.value)}
                                                             className="matching-feature__radio-input"
+                                                            disabled={reviewMode}
                                                         />
                                                     </label>
                                                 </td>

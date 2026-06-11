@@ -142,3 +142,12 @@
 .sentence-input:not(:placeholder-shown)+.fake-placeholder {
   display: none;
 }
+
+/* Review mode — disabled input */
+.sentence-input--review {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border-color: #d1d5db;
+  cursor: default;
+  opacity: 1;
+}

@@ -12,6 +12,7 @@ interface SentenceCompletionDragDropProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     testType?: "listening" | "reading";
+    reviewMode?: boolean;
 }
 
 const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
@@ -21,6 +22,7 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
     answers,
     onAnswerChange,
     testType,
+    reviewMode,
 }) => {
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
     const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
@@ -122,7 +124,7 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
     };
 
     return (
-        <div className="sc-dnd">
+        <div className={`sc-dnd${reviewMode ? " sc-dnd--review" : ""}`}>
             {questionRange && <h4 className="sc-dnd__range">{questionRange}</h4>}
             <p className="sc-dnd__instruction">{formatInstruction(instruction)}</p>
 

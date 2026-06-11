@@ -2,7 +2,6 @@ import React, { useEffect, useState, useMemo } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useSetAtom } from "jotai";
 import { IoClose } from "react-icons/io5";
-import { FaCheck, FaTimes } from "react-icons/fa";
 import { isNavbarFooterVisibleAtom } from "../../store/uiStore";
 import ReportMistakeButton from "../../components/TestDetailComponents/ReportMistakeButton";
 import Footer from "../../components/TestDetailComponents/Footer";
@@ -15,6 +14,7 @@ import { scoreTest } from "../../utils/scoring";
 import type { AnswerMap, MatchingHeadingData } from "../../types/question";
 import type { ScoreResult, QuestionResult } from "../../utils/scoring";
 import "../../styles/TestPagesStyle.css";
+import "./ReviewPage.css";
 
 interface ReviewState {
     testTitle: string;
@@ -23,8 +23,8 @@ interface ReviewState {
     scoreResult: ScoreResult;
 }
 
-/** Answer summary shown below each question group */
-const AnswerSummary: React.FC<{
+/** Clean answer list shown below each question group */
+const ReviewAnswerList: React.FC<{
     startQuestion: number;
     endQuestion: number;
     results: QuestionResult[];
@@ -35,25 +35,33 @@ const AnswerSummary: React.FC<{
     if (groupResults.length === 0) return null;
 
     return (
-        <div className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <h4 className="text-sm font-bold text-gray-700 mb-3">Answers</h4>
-            <div className="grid grid-cols-1 gap-1.5">
+        <div className="review-answer-group">
+            <div className="review-answer-heading">
+                Answers {startQuestion}–{endQuestion}
+            </div>
+            <div className="review-answer-list">
                 {groupResults.map((r) => (
-                    <div key={r.questionNumber} className="flex items-center gap-2 text-sm">
-                        <span className="w-6 text-right font-semibold text-gray-500">{r.questionNumber}.</span>
-                        {r.isCorrect ? (
-                            <FaCheck size={12} className="text-green-600 shrink-0" />
-                        ) : (
-                            <FaTimes size={12} className="text-red-500 shrink-0" />
-                        )}
-                        <span className={`font-medium ${r.isCorrect ? "text-green-700" : "text-red-600 line-through"}`}>
-                            {r.userAnswer || "—"}
-                        </span>
-                        {!r.isCorrect && (
-                            <span className="text-green-700 font-medium">
-                                → {r.correctAnswers[0]}
+                    <div
+                        key={r.questionNumber}
+                        className={`review-answer-item ${r.isCorrect ? "review-correct" : "review-incorrect"}`}
+                    >
+                        <div className="review-answer-row">
+                            <span className="review-q-num">{r.questionNumber}</span>
+                            <span className="review-answer-text">
+                                <span className="review-label">Answer: </span>
+                                {r.correctAnswers.join(" | ")}
                             </span>
+                        </div>
+                        {!r.isCorrect && r.userAnswer && (
+                            <div className="review-your-answer">
+                                Your answer: <span>{r.userAnswer}</span>
+                            </div>
                         )}
+                        <div className="review-actions">
+                            <button className="review-action-btn">Explain</button>
+                            <button className="review-action-btn">Locate</button>
+                            <button className="review-action-btn">Report</button>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -122,7 +130,7 @@ const ReviewPage: React.FC = () => {
     // No-op for review mode — answers are read-only
     const noOp = () => {};
 
-    // ─── Right pane: Questions with answer validation ────────────────────
+    // ─── Right pane: Clean answer list ───────────────────────────────────
     const handlePrevious = () => setCurrentSectionIndex(prev => Math.max(prev - 1, 0));
     const handleNext = () => setCurrentSectionIndex(prev => Math.min(prev + 1, totalSections - 1));
     const handleSectionClick = (sectionNumber: number) => setCurrentSectionIndex(sectionNumber - 1);
@@ -138,7 +146,7 @@ const ReviewPage: React.FC = () => {
                 </div>
             )}
 
-            {/* Question groups + answer summaries */}
+            {/* Question groups + answer list */}
             <div className="flex flex-col gap-5">
                 {currentSection?.questionGroups.map((group, index) => (
                     <div key={`${currentSection.sectionNumber}-${index}`}>
@@ -147,8 +155,9 @@ const ReviewPage: React.FC = () => {
                             answers={userAnswers}
                             onAnswerChange={noOp}
                             testType={testType}
+                            reviewMode
                         />
-                        <AnswerSummary
+                        <ReviewAnswerList
                             startQuestion={group.startQuestion}
                             endQuestion={group.endQuestion}
                             results={scoreResult.results}

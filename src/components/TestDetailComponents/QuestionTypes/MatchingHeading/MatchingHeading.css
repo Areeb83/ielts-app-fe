@@ -138,3 +138,13 @@
     visibility: hidden !important;
     pointer-events: none;
 }
+
+/* Review mode — disable all drag interactions */
+.matching-heading--review .draggable-word,
+.matching-heading--review .matching-heading__pool {
+  pointer-events: none;
+  cursor: default;
+}
+.matching-heading--review .draggable-word {
+  opacity: 0.8;
+}

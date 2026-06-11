@@ -12,6 +12,7 @@ interface SummaryCompletionDragDropProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     testType?: "listening" | "reading";
+    reviewMode?: boolean;
 }
 
 const formatInstruction = (text: string) => {
@@ -38,6 +39,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
     answers,
     onAnswerChange,
     testType,
+    reviewMode,
 }) => {
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
     const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
@@ -129,7 +131,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
     };
 
     return (
-        <div className="sum-dnd">
+        <div className={`sum-dnd${reviewMode ? " sum-dnd--review" : ""}`}>
             {questionRange && <h4 className="sum-dnd__range">{questionRange}</h4>}
             <p className="sum-dnd__instruction">{formatInstruction(instruction)}</p>
 

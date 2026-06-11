@@ -8,6 +8,7 @@ interface MapDiagramLabellingProps {
     data: MapDiagramLabellingData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
+    reviewMode?: boolean;
 }
 
 const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
@@ -16,6 +17,7 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     // Format instruction to bold uppercase constraints (e.g., "NO MORE THAN TWO WORDS")
     const formatInstruction = (text: string) => {
@@ -132,6 +134,7 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
                                                             checked={isSelected}
                                                             onChange={(e) => onAnswerChange(q.id, e.target.value)}
                                                             className="map-diagram__radio-input"
+                                                            disabled={reviewMode}
                                                         />
                                                     </label>
                                                 </td>

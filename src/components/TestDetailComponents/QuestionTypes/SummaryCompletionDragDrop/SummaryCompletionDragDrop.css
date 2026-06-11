@@ -165,3 +165,14 @@
 .sum-dnd .dropzone .draggable-word--dragging {
     opacity: 0.01 !important;
 }
+
+/* Review mode — disable all drag interactions */
+.sum-dnd--review .draggable-word,
+.sum-dnd--review .drop-zone,
+.sum-dnd--review .sum-dnd__pool {
+  pointer-events: none;
+  cursor: default;
+}
+.sum-dnd--review .draggable-word {
+  opacity: 0.8;
+}

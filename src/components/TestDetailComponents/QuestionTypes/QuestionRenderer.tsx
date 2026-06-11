@@ -18,6 +18,7 @@ interface QuestionRendererProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string | string[]) => void;
     testType?: 'listening' | 'reading';
+    reviewMode?: boolean;
     // Shared drag state for cross-pane DnD (Matching Heading)
     draggingWordId?: string | null;
     onDragStart?: (wordId: string) => void;
@@ -29,7 +30,7 @@ interface QuestionRendererProps {
  * Maps a QuestionGroup's `type` to the correct renderer.
  * Add new question types here as you build them.
  */
-const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, draggingWordId, onDragStart, onDragEnd }) => {
+const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, reviewMode, draggingWordId, onDragStart, onDragEnd }) => {
     const questionRange = group.hideRange
         ? ""
         : group.startQuestion === group.endQuestion
@@ -48,6 +49,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     testType={testType}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -61,6 +63,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -74,6 +77,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     testType={testType}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -86,6 +90,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -99,6 +104,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -111,6 +117,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -123,6 +130,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -135,6 +143,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -148,6 +157,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     optionsBelow={testType === 'reading'}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -161,6 +171,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     testType={testType}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -173,6 +184,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     data={group.data}
                     answers={answers}
                     onAnswerChange={onAnswerChange}
+                    reviewMode={reviewMode}
                 />
             );
 
@@ -189,6 +201,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     draggingWordId={draggingWordId}
                     onDragStart={onDragStart ?? (() => { })}
                     onDragEnd={onDragEnd ?? (() => { })}
+                    reviewMode={reviewMode}
                 />
             );
 

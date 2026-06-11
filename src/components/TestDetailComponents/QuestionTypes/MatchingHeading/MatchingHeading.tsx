@@ -13,6 +13,7 @@ interface MatchingHeadingProps {
     draggingWordId?: string | null;
     onDragStart: (wordId: string) => void;
     onDragEnd: () => void;
+    reviewMode?: boolean;
 }
 
 const MatchingHeading: React.FC<MatchingHeadingProps> = ({
@@ -24,6 +25,7 @@ const MatchingHeading: React.FC<MatchingHeadingProps> = ({
     draggingWordId,
     onDragStart,
     onDragEnd,
+    reviewMode,
 }) => {
     const [isOverPool, setIsOverPool] = useState(false);
     const usedWords = Object.values(answers).filter(
@@ -78,7 +80,7 @@ const MatchingHeading: React.FC<MatchingHeadingProps> = ({
     };
 
     return (
-        <div className="matching-heading">
+        <div className={`matching-heading${reviewMode ? " matching-heading--review" : ""}`}>
             {questionRange && (
                 <h4 className="matching-heading__range">{questionRange}</h4>
             )}

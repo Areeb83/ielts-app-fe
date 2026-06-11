@@ -13,6 +13,7 @@ interface MultipleChoiceProps {
     data: MultipleChoiceData | IdentificationData;
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string | string[]) => void;
+    reviewMode?: boolean;
 }
 
 const formatInstruction = (text: string) => {
@@ -44,7 +45,8 @@ const MultipleChoiceItem: React.FC<{
     question: MultipleChoiceQuestion;
     answers: AnswerMap;
     onAnswerChange: (id: string, value: string | string[]) => void;
-}> = ({ question, answers, onAnswerChange }) => {
+    reviewMode?: boolean;
+}> = ({ question, answers, onAnswerChange, reviewMode }) => {
     const isMultiple = !!question.multiple;
     const maxCount = question.count ?? 1;
 
@@ -96,8 +98,8 @@ const MultipleChoiceItem: React.FC<{
                         ]
                             .filter(Boolean)
                             .join(" ")}
-                        onClick={() => handleClick(option.letter)}
-                        disabled={isBlocked(option.letter)}
+                        onClick={() => !reviewMode && handleClick(option.letter)}
+                        disabled={reviewMode || isBlocked(option.letter)}
                         aria-pressed={isSelected(option.letter)}
                     >
                         {isMultiple ? (
@@ -119,6 +121,7 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
     data,
     answers,
     onAnswerChange,
+    reviewMode,
 }) => {
     // Check if this is an identification question (T/F/NG or Y/N/NG)
     const isIdentification = "optionsType" in data;
@@ -168,6 +171,7 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
                         question={question}
                         answers={answers}
                         onAnswerChange={onAnswerChange}
+                        reviewMode={reviewMode}
                     />
                 ))}
             </div>

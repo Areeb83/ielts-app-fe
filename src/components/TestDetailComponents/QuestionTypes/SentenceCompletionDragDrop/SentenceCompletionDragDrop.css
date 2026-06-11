@@ -187,3 +187,14 @@
 .sc-dnd .dropzone .draggable-word--dragging {
     opacity: 0.01 !important;
 }
+
+/* Review mode — disable all drag interactions */
+.sc-dnd--review .draggable-word,
+.sc-dnd--review .drop-zone,
+.sc-dnd--review .sc-dnd__pool {
+  pointer-events: none;
+  cursor: default;
+}
+.sc-dnd--review .draggable-word {
+  opacity: 0.8;
+}

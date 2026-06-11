@@ -159,3 +159,12 @@
 .summary-completion__notes-content {
     flex: 1;
 }
+
+/* Review mode */
+.summary-completion__input--review {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border-color: #d1d5db;
+  cursor: default;
+  opacity: 1;
+}
