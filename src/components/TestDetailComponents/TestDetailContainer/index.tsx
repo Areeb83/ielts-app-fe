@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { PiClockLight } from "react-icons/pi";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -38,6 +39,8 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     testData,
     testType = 'listening',
 }) => {
+    const navigate = useNavigate();
+    const { examType, testId: routeTestId } = useParams<{ examType: string; testId: string }>();
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
@@ -154,8 +157,38 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     };
 
     const handleSubmit = () => {
-        console.log("User Answers:", answers);
-        alert("Submitted! Check the console for your answers.");
+        // Stop audio if playing
+        if (audioRef.current) {
+            audioRef.current.pause();
+        }
+
+        // Calculate time spent
+        let timeSpentStr = elapsedTime;
+        if (testType === 'listening' && audioRef.current) {
+            const secs = Math.floor(audioRef.current.currentTime);
+            const m = String(Math.floor(secs / 60)).padStart(2, '0');
+            const s = String(secs % 60).padStart(2, '0');
+            timeSpentStr = `${m}:${s}`;
+        } else if (testType === 'reading' && readingStartRef.current) {
+            const elapsed = Math.floor((Date.now() - readingStartRef.current) / 1000);
+            const m = String(Math.floor(elapsed / 60)).padStart(2, '0');
+            const s = String(elapsed % 60).padStart(2, '0');
+            timeSpentStr = `${m}:${s}`;
+        }
+
+        // Count answered questions (placeholder until backend scoring)
+        const answeredCount = Object.keys(answers).length;
+
+        navigate(`/${examType}/${testType}/${routeTestId}/result`, {
+            state: {
+                testTitle: testData.title,
+                testType,
+                totalQuestions: testData.totalQuestions,
+                correctAnswers: answeredCount,
+                bandScore: 0,
+                timeSpent: timeSpentStr,
+            },
+        });
     };
 
     // ─── Render ──────────────────────────────────────────────────────────
@@ -264,7 +297,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
             {/* Time's up overlay */}
             {timeUp && (
                 <div className="fixed inset-0 bg-black/75 z-[200] flex items-center justify-center">
-                    <div className="bg-white rounded-lg py-[60px] px-[60px] text-center w-full max-w-[600px] flex flex-col items-center">
+                    <div className="bg-white rounded-lg py-[60px] px-[60px] text-center w-full max-w-[650px] flex flex-col items-center">
                         <PiClockLight size={60} className="text-gray-700 mb-3" />
                         <h2 className="text-2xl font-bold mb-6">Time's Up!</h2>
                         <button

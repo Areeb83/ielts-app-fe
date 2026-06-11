@@ -1,5 +1,8 @@
 # Project Instructions
 
+## Naming Convention
+- Never write "Cambridge" with the full book and test number. Always use the short form: `C11`, `C12`, etc. for the book, and `Test 1`, `Test 2`, etc. for the test.
+
 ## Git Commits
 - Never add a `Co-Authored-By` line to commit messages.
 

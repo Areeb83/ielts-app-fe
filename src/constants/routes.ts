@@ -12,6 +12,8 @@ export const ROUTES = {
   LISTENING_TEST: '/:examType/listening/:testId',
   READING: '/:examType/reading',
   READING_TEST: '/:examType/reading/:testId',
+  LISTENING_RESULT: '/:examType/listening/:testId/result',
+  READING_RESULT: '/:examType/reading/:testId/result',
   WRITING: '/:examType/writing',
   SPEAKING: '/:examType/speaking',
 } as const;

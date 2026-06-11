@@ -41,3 +41,9 @@
 **Listening:** 36 / 36 tests done (All books complete ✅)
 
 > **Note:** Update this progress tracker every time a new test is added.
+
+---
+
+## TODO
+
+- [ ] Decide result page route structure when BE is ready — currently `/academic/:module/:testId/result` where `testId` is `book-11-test-1`. When BE is implemented, `testId` will likely be a backend-generated ID (UUID or numeric). Need to decide how the result page gets test metadata (book name, test number, module) — either from the BE response or from route state.
