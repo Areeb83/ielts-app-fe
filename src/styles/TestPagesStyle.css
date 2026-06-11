@@ -241,6 +241,8 @@
 .footer__questionNav {
     display: flex;
     gap: 5px;
+    flex: 1;
+    justify-content: center;
 }
 
 .footer__questionNo {

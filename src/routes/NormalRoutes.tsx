@@ -10,6 +10,7 @@ import { PricingPage } from "../pages/PricingPage";
 import { ListeningTestActualPage } from "../pages/ListeningTestPage/ListeningTestActualPage";
 import { ReadingTestActualPage } from "../pages/ReadingTestPage/ReadingTestActualPage";
 import TestResultPage from "../pages/TestResultPage/TestResultPage";
+import ReviewPage from "../pages/ReviewPage/ReviewPage";
 import { ROUTES } from "../constants";
 
 const NormalRoutes = () => {
@@ -24,6 +25,8 @@ const NormalRoutes = () => {
             <Route path={ROUTES.READING_TEST} element={<ReadingTestActualPage />} />
             <Route path={ROUTES.LISTENING_RESULT} element={<TestResultPage />} />
             <Route path={ROUTES.READING_RESULT} element={<TestResultPage />} />
+            <Route path={ROUTES.LISTENING_REVIEW} element={<ReviewPage />} />
+            <Route path={ROUTES.READING_REVIEW} element={<ReviewPage />} />
             <Route path={ROUTES.WRITING} element={<WritingTestsPage />} />
             <Route path={ROUTES.SPEAKING} element={<SpeakingTestsPage />} />
 

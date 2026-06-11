@@ -1,16 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useSetAtom } from "jotai";
 import { FaUser, FaHome, FaRedo } from "react-icons/fa";
 import { isNavbarFooterVisibleAtom } from "../../store/uiStore";
+import { getAnswerKey } from "../../data/answerKeys";
+import { scoreTest } from "../../utils/scoring";
+import type { AnswerMap } from "../../types/question";
 
 interface ResultState {
     testTitle: string;
     testType: "listening" | "reading";
     totalQuestions: number;
-    correctAnswers: number;
-    bandScore: number;
     timeSpent: string;
+    userAnswers: AnswerMap;
 }
 
 /** Circular progress ring — matches the test listing page style */
@@ -31,13 +33,11 @@ const CircleProgress: React.FC<{
         <div className="flex flex-col items-center gap-3">
             <div className="relative w-28 h-28">
                 <svg className="absolute inset-0" viewBox="0 0 100 100" aria-hidden>
-                    {/* Background ring */}
                     <circle
                         cx="50" cy="50" r={r}
                         stroke="currentColor" strokeWidth="10"
                         fill="none" className="text-gray-200"
                     />
-                    {/* Progress ring */}
                     <circle
                         cx="50" cy="50" r={r}
                         stroke="currentColor" strokeWidth="10"
@@ -50,7 +50,6 @@ const CircleProgress: React.FC<{
                         transform="rotate(-90 50 50)"
                     />
                 </svg>
-                {/* Center content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                     <div className="text-lg font-bold text-gray-900">{display}</div>
                     {subLabel && <div className="text-xs text-gray-500 mt-0.5">{subLabel}</div>}
@@ -75,6 +74,14 @@ const TestResultPage: React.FC = () => {
 
     const state = location.state as ResultState | undefined;
 
+    // Score the test using the answer key
+    const scoreResult = useMemo(() => {
+        if (!state || !testId) return null;
+        const answerKey = getAnswerKey(testId, state.testType);
+        if (!answerKey) return null;
+        return scoreTest(state.userAnswers, answerKey);
+    }, [state, testId]);
+
     if (!state) {
         return (
             <div className="flex items-center justify-center h-screen">
@@ -82,7 +89,7 @@ const TestResultPage: React.FC = () => {
                     <h2 className="text-xl font-semibold mb-4">No results found</h2>
                     <button
                         onClick={() => navigate("/")}
-                        className="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition-colors"
+                        className="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition-colors cursor-pointer"
                     >
                         Go Home
                     </button>
@@ -91,7 +98,9 @@ const TestResultPage: React.FC = () => {
         );
     }
 
-    const { testTitle, testType, totalQuestions, correctAnswers, bandScore, timeSpent } = state;
+    const { testTitle, testType, totalQuestions, timeSpent, userAnswers } = state;
+    const correctAnswers = scoreResult?.correct ?? 0;
+    const bandScore = scoreResult?.bandScore ?? 0;
 
     const isListening = testType === "listening";
     const ringColor = isListening ? "text-orange-500" : "text-green-700";
@@ -100,7 +109,6 @@ const TestResultPage: React.FC = () => {
         ? "bg-white text-orange-600 border-orange-500 hover:bg-orange-50"
         : "bg-white text-green-700 border-green-700 hover:bg-green-50";
 
-    // Parse book/test info from testId when available (will come from BE later)
     const bookMatch = testId?.match(/^(book-\d+)(?:-reading)?-(test-\d+)$/);
     const bookNum = bookMatch ? bookMatch[1].replace("book-", "C") : null;
     const testNum = bookMatch ? bookMatch[2].replace("test-", "Test ") : null;
@@ -114,6 +122,16 @@ const TestResultPage: React.FC = () => {
             ? `/${examType}/listening/${testId}`
             : `/${examType}/reading/${testId}`;
         navigate(route);
+    };
+    const handleReview = () => {
+        navigate(`/${examType}/${testType}/${testId}/review`, {
+            state: {
+                testTitle,
+                testType,
+                userAnswers,
+                scoreResult,
+            },
+        });
     };
 
     return (
@@ -181,6 +199,7 @@ const TestResultPage: React.FC = () => {
                     {/* Action Buttons */}
                     <div className="flex justify-center gap-3">
                         <button
+                            onClick={handleReview}
                             className={`px-6 py-2.5 rounded-lg font-medium transition-colors border-2 text-white cursor-pointer ${accentBg}`}
                         >
                             Enter Review & Explanations

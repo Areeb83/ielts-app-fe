@@ -55,11 +55,13 @@ const Footer: React.FC<FooterProps> = ({
             </nav>
 
             {/* Submit / Review button */}
-            <div className="footer__submit">
-                <button onClick={onSubmit} aria-label="Review your answers">
-                    <i className="fa fa-check" aria-hidden="true"></i> Submit
-                </button>
-            </div>
+            {onSubmit && (
+                <div className="footer__submit">
+                    <button onClick={onSubmit} aria-label="Review your answers">
+                        <i className="fa fa-check" aria-hidden="true"></i> Submit
+                    </button>
+                </div>
+            )}
         </footer>
     );
 };

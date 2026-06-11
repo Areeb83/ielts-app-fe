@@ -176,17 +176,13 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
             timeSpentStr = `${m}:${s}`;
         }
 
-        // Count answered questions (placeholder until backend scoring)
-        const answeredCount = Object.keys(answers).length;
-
         navigate(`/${examType}/${testType}/${routeTestId}/result`, {
             state: {
                 testTitle: testData.title,
                 testType,
                 totalQuestions: testData.totalQuestions,
-                correctAnswers: answeredCount,
-                bandScore: 0,
                 timeSpent: timeSpentStr,
+                userAnswers: answers,
             },
         });
     };
