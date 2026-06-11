@@ -216,3 +216,17 @@
     height: 18px;
     accent-color: #3182ce;
 }
+
+/* Review mode — stack image above table */
+.map-diagram__content--vertical {
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-diagram__content--vertical .map-diagram__image-wrapper {
+    max-width: 100%;
+}
+
+.map-diagram__content--vertical .map-diagram__table-wrapper {
+    flex: unset;
+}

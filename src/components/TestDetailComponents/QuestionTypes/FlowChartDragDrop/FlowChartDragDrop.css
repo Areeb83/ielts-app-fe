@@ -245,13 +245,28 @@
     border-radius: 4px;
 }
 
-/* Review mode — disable all drag interactions */
+/* Review mode — vertical layout, disable drag */
+.flow-chart-drag-drop--review .flow-chart-drag-drop__content {
+  flex-direction: column;
+}
+
 .flow-chart-drag-drop--review .draggable-word,
-.flow-chart-drag-drop--review .drop-zone,
+.flow-chart-drag-drop--review .dropzone,
 .flow-chart-drag-drop--review .options-pool {
   pointer-events: none;
   cursor: default;
 }
-.flow-chart-drag-drop--review .draggable-word {
-  opacity: 0.8;
+
+.flow-chart-drag-drop--review .options-pool {
+  width: 100%;
+  min-width: unset;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.flow-chart-drag-drop--review .options-pool__items {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
 }

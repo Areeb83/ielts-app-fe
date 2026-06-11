@@ -197,7 +197,9 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
                     }}
                 >
                     <div className="options-pool__items">
-                        {data.options.map((opt) => {
+                        {data.options
+                            .filter((opt) => !reviewMode || !usedWords.includes(getOptId(opt)))
+                            .map((opt) => {
                             const id   = getOptId(opt);
                             const text = getOptText(opt);
                             return (

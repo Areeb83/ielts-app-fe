@@ -161,7 +161,9 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
                     handleDropOnPool();
                 }}
             >
-                {data.options.map((opt) => (
+                {data.options
+                    .filter((opt) => !reviewMode || !usedLetters.includes(opt.letter))
+                    .map((opt) => (
                     <DraggableWord
                         key={opt.letter}
                         id={opt.letter}

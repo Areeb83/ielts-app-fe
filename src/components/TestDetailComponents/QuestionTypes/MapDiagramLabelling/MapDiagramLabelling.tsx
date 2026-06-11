@@ -44,7 +44,7 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
             </div>
 
             {data.title && <h3 className="map-diagram__title">{data.title}</h3>}
-            <div className="map-diagram__content">
+            <div className={`map-diagram__content${reviewMode ? " map-diagram__content--vertical" : ""}`}>
                 {/* Left Side: Image or Text */}
                 <div className="map-diagram__image-wrapper">
                     {data.leftSideContent ? (

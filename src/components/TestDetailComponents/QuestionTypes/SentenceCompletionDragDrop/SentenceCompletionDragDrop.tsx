@@ -163,7 +163,9 @@ const SentenceCompletionDragDrop: React.FC<SentenceCompletionDragDropProps> = ({
                     handleDropOnPool();
                 }}
             >
-                {data.options.map((opt) => (
+                {data.options
+                    .filter((opt) => !reviewMode || !usedWords.includes(opt.letter))
+                    .map((opt) => (
                     <DraggableWord
                         key={opt.letter}
                         id={opt.letter}

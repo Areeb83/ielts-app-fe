@@ -104,7 +104,9 @@ const MatchingHeading: React.FC<MatchingHeadingProps> = ({
                         }}
                     >
                         <div className="matching-heading__pool-items options-pool__items">
-                            {data.headings.map((heading, index) => {
+                            {data.headings
+                                .filter((heading) => !reviewMode || !usedWords.includes(getRomanId(heading)))
+                                .map((heading, index) => {
                                 const romanId = getRomanId(heading);
                                 const displayText = heading.replace(/^[ivxlc]+\s+/i, "").trim();
                                 return (
