@@ -18,7 +18,9 @@
       "Bash(find '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' -name README* -o -name readme*)",
       "Bash(grep -r \"TODO\\\\|FIXME\\\\|grading\\\\|grade\" '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' --include=*.ts --include=*.tsx)",
       "Bash(node -e \"const d = require\\(''./src/data/academic/book-19/reading/test-1.json''\\); console.log\\(JSON.stringify\\(d.sections[0].passage?.sections?.[0], null, 2\\)\\)\")",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(grep -E \"\\\\.\\(tsx?|jsx?\\)$\")",
+      "Bash(npx tsc:*)"
     ]
   }
 }

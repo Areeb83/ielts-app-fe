@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSetAtom } from 'jotai';
 import TestDetailContainer from '../../components/TestDetailComponents/TestDetailContainer';
+import TestLoadingScreen from '../../components/TestDetailComponents/TestLoadingScreen';
 import { isNavbarFooterVisibleAtom } from '../../store/uiStore';
 import type { TestData } from '../../types/question';
 
@@ -89,13 +90,23 @@ export function ReadingTestActualPage() {
     const navigate = useNavigate();
     const setNavbarFooterVisible = useSetAtom(isNavbarFooterVisibleAtom);
 
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         setNavbarFooterVisible(false);
         return () => setNavbarFooterVisible(true);
     }, [setNavbarFooterVisible]);
 
+    // Simulate loading (will be replaced by real API call later)
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 2000);
+        return () => clearTimeout(timer);
+    }, []);
+
     // Look up the test data
     const testData = testId ? testDataMap[testId] : undefined;
+
+    if (loading) return <TestLoadingScreen />;
 
     if (!testData) {
         return (

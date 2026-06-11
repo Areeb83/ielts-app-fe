@@ -2,7 +2,7 @@
   "testId": "book-11-test-3",
   "bookId": "book-11",
   "title": "Cambridge IELTS 11 – Listening Test 3",
-  "audioSrc": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+  "audioSrc": "/audios/academic/book-11/test-3.mp3",
   "totalQuestions": 40,
   "sections": [
     {

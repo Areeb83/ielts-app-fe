@@ -2,7 +2,7 @@
   "testId": "book-15-test-3",
   "bookId": "book-15",
   "title": "Cambridge IELTS 15 – Listening Test 3",
-  "audioSrc": "",
+  "audioSrc": "/audios/academic/book-15/test-3.mp3",
   "totalQuestions": 40,
   "sections": [
     {

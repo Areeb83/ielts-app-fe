@@ -2,7 +2,7 @@
   "testId": "book-16-test-2",
   "bookId": "book-16",
   "title": "Cambridge IELTS 16 – Listening Test 2",
-  "audioSrc": "",
+  "audioSrc": "/audios/academic/book-16/test-2.mp3",
   "totalQuestions": 40,
   "sections": [
     {

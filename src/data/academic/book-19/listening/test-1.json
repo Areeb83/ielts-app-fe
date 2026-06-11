@@ -2,7 +2,7 @@
   "testId": "book-19-test-1",
   "bookId": "book-19",
   "title": "Cambridge IELTS 19 – Listening Test 1",
-  "audioSrc": "",
+  "audioSrc": "/audios/academic/book-19/test-1.mp3",
   "totalQuestions": 40,
   "sections": [
     {

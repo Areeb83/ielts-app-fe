@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
+import { PiClockLight } from "react-icons/pi";
 import Header from "../Header";
 import Footer from "../Footer";
+import ListeningOverlay from "../ListeningOverlay";
 import QuestionRenderer from "../QuestionTypes/QuestionRenderer";
 import type { TestData, QuestionGroup, AnswerMap, MatchingHeadingData } from "../../../types/question";
 import SplitPane from "../../ui/SplitPane/SplitPane";
@@ -8,6 +10,7 @@ import ReadingPassage from "./ReadingPassage";
 import HighlightableContainer from "../../Highlightable/HighlightableContainer";
 import type { ContainerHighlight } from "../../Highlightable/HighlightableContainer";
 import { useAutoScroll } from "../../../hooks";
+import audioDurations from "../../../data/audio-durations.json";
 import "../../../styles/TestPagesStyle.css";
 
 interface TestDetailContainerProps {
@@ -38,6 +41,71 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
+
+    // Listening overlay & audio
+    const [showListeningOverlay, setShowListeningOverlay] = useState(testType === 'listening');
+    const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+
+    const [elapsedTime, setElapsedTime] = useState("--:--");
+    const [timeUp, setTimeUp] = useState(false);
+    const [volume, setVolume] = useState(1);
+
+    const handleVolumeChange = useCallback((v: number) => {
+        setVolume(v);
+        if (audioRef.current) {
+            audioRef.current.volume = v;
+        }
+    }, []);
+
+    const handlePlay = useCallback(() => {
+        setShowListeningOverlay(false);
+        if (audioRef.current) {
+            audioRef.current.play().catch(() => {});
+        }
+    }, []);
+
+    // Countdown timer — listening: based on audio duration, reading: fixed 60 minutes
+    const totalDuration = testType === 'listening'
+        ? ((audioDurations as Record<string, number>)[testData.testId] ?? 0) + 30
+        : 60 * 60;
+
+    const readingStartRef = useRef<number | null>(null);
+
+    useEffect(() => {
+        if (testType === 'reading') {
+            readingStartRef.current = Date.now();
+        }
+    }, [testType]);
+
+    const formatRemaining = (seconds: number): string => {
+        const m = Math.floor(seconds / 60);
+        if (seconds <= 180) {
+            const s = seconds % 60;
+            return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+        return `${m}`;
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            let remaining = -1;
+            if (testType === 'listening') {
+                const audio = audioRef.current;
+                if (audio && !audio.paused && totalDuration > 0) {
+                    remaining = Math.max(0, Math.floor(totalDuration - audio.currentTime));
+                }
+            } else if (testType === 'reading' && readingStartRef.current) {
+                const elapsed = Math.floor((Date.now() - readingStartRef.current) / 1000);
+                remaining = Math.max(0, totalDuration - elapsed);
+            }
+            if (remaining >= 0) {
+                setElapsedTime(formatRemaining(remaining));
+                if (remaining === 0) setTimeUp(true);
+            }
+        }, 500);
+        return () => clearInterval(interval);
+    }, [testType, totalDuration]);
 
     // Question-side highlights — scoped per section via sectionIndex
     const [qHighlights, setQHighlights] = useState<(ContainerHighlight & { sectionIndex: number })[]>([]);
@@ -182,10 +250,47 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
         );
     };
 
+    // Build audio path from testData (e.g. "book-11-test-1" → "/audios/academic/book-11/test-1.mp3")
+    const audioSrc = testData.audioSrc || (() => {
+        const parts = testData.testId.match(/^(book-\d+)-(test-\d+)$/);
+        return parts ? `/audios/academic/${parts[1]}/${parts[2]}.mp3` : '';
+    })();
+
     return (
         <div className="listening-test-container" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+            {/* Listening overlay */}
+            {showListeningOverlay && <ListeningOverlay onPlay={handlePlay} />}
+
+            {/* Time's up overlay */}
+            {timeUp && (
+                <div className="fixed inset-0 bg-black/75 z-[200] flex items-center justify-center">
+                    <div className="bg-white rounded-lg py-[60px] px-[60px] text-center w-full max-w-[600px] flex flex-col items-center">
+                        <PiClockLight size={60} className="text-gray-700 mb-3" />
+                        <h2 className="text-2xl font-bold mb-6">Time's Up!</h2>
+                        <button
+                            onClick={handleSubmit}
+                            className="bg-black text-white border-none rounded px-8 py-3 text-base font-semibold cursor-pointer hover:bg-gray-900"
+                        >
+                            Submit Test
+                        </button>
+                    </div>
+                </div>
+            )}
+
+            {/* Hidden audio element for listening tests */}
+            {testType === 'listening' && audioSrc && (
+                <audio
+                    ref={audioRef}
+                    src={audioSrc}
+                    preload="auto"
+                    onPlay={() => setIsAudioPlaying(true)}
+                    onPause={() => setIsAudioPlaying(false)}
+                    onEnded={() => setIsAudioPlaying(false)}
+                />
+            )}
+
             {/* Header */}
-            <Header candidateId={candidateId} />
+            <Header candidateId={candidateId} testType={testType} isAudioPlaying={isAudioPlaying} elapsedTime={elapsedTime} volume={volume} onVolumeChange={handleVolumeChange} />
 
             {/* Main Content */}
             <main className="test-content" style={{ flexGrow: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
