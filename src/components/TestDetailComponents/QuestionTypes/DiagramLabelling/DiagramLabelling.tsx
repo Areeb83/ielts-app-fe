@@ -9,6 +9,7 @@ interface DiagramLabellingProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const formatInstruction = (text: string) => {
@@ -35,6 +36,7 @@ const DiagramLabelling: React.FC<DiagramLabellingProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    activeQuestion,
 }) => {
     return (
         <div className="diagram-labelling-container">
@@ -56,7 +58,7 @@ const DiagramLabelling: React.FC<DiagramLabellingProps> = ({
             <div className="diagram-labelling__inputs">
                 {data.questions.map((q) => (
                     <div key={q.id} className="diagram-labelling__row">
-                        <span className="diagram-labelling__num">{q.questionNumber}</span>
+                        <span className={`diagram-labelling__num${activeQuestion === Number(q.id) ? " diagram-labelling__num--active" : ""}`}>{q.questionNumber}</span>
                         {q.label && (
                             <span className="diagram-labelling__label-text">{q.label}</span>
                         )}

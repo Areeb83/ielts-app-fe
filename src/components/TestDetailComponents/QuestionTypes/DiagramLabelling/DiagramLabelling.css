@@ -58,6 +58,13 @@
     color: #000;
     min-width: 28px;
     flex-shrink: 0;
+    padding: 1px 4px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.diagram-labelling__num--active {
+    border-color: #3b82f6;
 }
 
 .diagram-labelling__label-text {

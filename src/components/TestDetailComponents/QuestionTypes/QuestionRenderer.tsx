@@ -135,6 +135,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     reviewMode={reviewMode}
+                    activeQuestion={activeQuestion}
                 />
             );
 
