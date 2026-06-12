@@ -15,6 +15,8 @@ interface MultipleChoiceProps {
     onAnswerChange: (questionId: string, value: string | string[]) => void;
     reviewMode?: boolean;
     activeQuestion?: number;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
+    correctAnswerMap?: Record<string, string[]>;
 }
 
 const formatInstruction = (text: string) => {
@@ -48,7 +50,9 @@ const MultipleChoiceItem: React.FC<{
     onAnswerChange: (id: string, value: string | string[]) => void;
     reviewMode?: boolean;
     isActive?: boolean;
-}> = ({ question, answers, onAnswerChange, reviewMode, isActive }) => {
+    status?: 'correct' | 'wrong';
+    correctAnswers?: string[];
+}> = ({ question, answers, onAnswerChange, reviewMode, isActive, status, correctAnswers }) => {
     const isMultiple = !!question.multiple;
     const maxCount = question.count ?? 1;
 
@@ -83,6 +87,23 @@ const MultipleChoiceItem: React.FC<{
     const isBlocked = (letter: string) =>
         isMultiple && !isSelected(letter) && selected.length >= maxCount;
 
+    const isCorrectOption = (letter: string) =>
+        correctAnswers?.some(a => a.toUpperCase() === letter.toUpperCase()) ?? false;
+
+    // In review mode, determine per-option class:
+    // 1. User selected + correct answer → green
+    // 2. User selected + wrong answer → red
+    // 3. Not selected + is correct answer → blue (show correct)
+    const getReviewClass = (letter: string) => {
+        if (!status || !correctAnswers) return "";
+        if (isSelected(letter) && isCorrectOption(letter)) return "mc-option--review-correct";
+        if (isSelected(letter) && !isCorrectOption(letter)) return "mc-option--review-wrong";
+        if (!isSelected(letter) && isCorrectOption(letter)) {
+            return status === 'wrong' ? "mc-option--review-answer" : "";
+        }
+        return "";
+    };
+
     return (
         <div className="mc-question">
             <p className="mc-question__text">
@@ -97,6 +118,7 @@ const MultipleChoiceItem: React.FC<{
                             "mc-option",
                             isSelected(option.letter) ? "mc-option--selected" : "",
                             isBlocked(option.letter) ? "mc-option--blocked" : "",
+                            getReviewClass(option.letter),
                         ]
                             .filter(Boolean)
                             .join(" ")}
@@ -125,6 +147,8 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
     onAnswerChange,
     reviewMode,
     activeQuestion,
+    questionStatus,
+    correctAnswerMap,
 }) => {
     // Check if this is an identification question (T/F/NG or Y/N/NG)
     const isIdentification = "optionsType" in data;
@@ -179,6 +203,37 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
                             isActive = activeQuestion === Number(question.id);
                         }
                     }
+                    // Determine status for this question
+                    let itemStatus: 'correct' | 'wrong' | undefined;
+                    if (questionStatus) {
+                        const rangeMatch2 = question.id.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                        if (rangeMatch2) {
+                            const start = Number(rangeMatch2[1]);
+                            const end = Number(rangeMatch2[2]);
+                            let allCorrect = true;
+                            for (let n = start; n <= end; n++) {
+                                if (questionStatus[String(n)] !== 'correct') allCorrect = false;
+                            }
+                            itemStatus = allCorrect ? 'correct' : 'wrong';
+                        } else {
+                            itemStatus = questionStatus[question.id];
+                        }
+                    }
+
+                    // Gather correct answers for this question
+                    let itemCorrectAnswers: string[] | undefined;
+                    if (correctAnswerMap) {
+                        const rangeMatch3 = question.id.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                        if (rangeMatch3) {
+                            itemCorrectAnswers = [];
+                            for (let n = Number(rangeMatch3[1]); n <= Number(rangeMatch3[2]); n++) {
+                                itemCorrectAnswers.push(...(correctAnswerMap[String(n)] ?? []));
+                            }
+                        } else {
+                            itemCorrectAnswers = correctAnswerMap[question.id];
+                        }
+                    }
+
                     return (
                         <MultipleChoiceItem
                             key={question.id}
@@ -187,6 +242,8 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
                             onAnswerChange={onAnswerChange}
                             reviewMode={reviewMode}
                             isActive={isActive}
+                            status={itemStatus}
+                            correctAnswers={itemCorrectAnswers}
                         />
                     );
                 })}

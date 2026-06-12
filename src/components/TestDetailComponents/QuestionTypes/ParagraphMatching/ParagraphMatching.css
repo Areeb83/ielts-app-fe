@@ -88,3 +88,13 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+.paragraph-matching__select--correct {
+  border-color: #22c55e !important;
+  background-color: #f0fdf4;
+}
+
+.paragraph-matching__select--wrong {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2;
+}

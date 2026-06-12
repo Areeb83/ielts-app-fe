@@ -206,3 +206,19 @@
 .sc-dnd--review .draggable-word {
   opacity: 0.8;
 }
+
+.sc-dnd .dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.sc-dnd .dropzone--filled.dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.sc-dnd .dropzone--wrong {
+  border-color: #ef4444 !important;
+}
+
+.sc-dnd .dropzone--filled.dropzone--wrong {
+  border-color: #ef4444 !important;
+}

@@ -1,9 +1,10 @@
 import type { AnswerMap } from "../types/question";
 
 export interface AnswerKeyEntry {
-    questionNumber: number;
+    questionNumber: number | string;
     answerType: string;
     acceptedAnswers: string[];
+    count?: number;
 }
 
 export interface AnswerKey {
@@ -25,14 +26,14 @@ export interface ScoreResult {
     results: QuestionResult[];
 }
 
+const normalize = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
+
 /**
  * Compare a user's answer against accepted answers.
  * Case-insensitive, trimmed, ignores extra spaces.
  */
 function isAnswerCorrect(userAnswer: string | string[] | undefined, acceptedAnswers: string[]): boolean {
     if (!userAnswer) return false;
-
-    const normalize = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
 
     if (Array.isArray(userAnswer)) {
         // For multi-select questions — check if any entry matches
@@ -53,21 +54,51 @@ export function scoreTest(userAnswers: AnswerMap | undefined | null, answerKey: 
     let correct = 0;
 
     for (const entry of answerKey.answers) {
-        const qNum = String(entry.questionNumber);
-        const userAnswer = answers[qNum];
-        const isCorrect = isAnswerCorrect(userAnswer, entry.acceptedAnswers);
+        const qNumStr = String(entry.questionNumber);
 
-        if (isCorrect) correct++;
+        // Check if this is a multi-select range entry like "25-26"
+        const rangeMatch = qNumStr.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+        if (rangeMatch && entry.count) {
+            const start = Number(rangeMatch[1]);
+            const end = Number(rangeMatch[2]);
+            // User answer stored under key with en-dash + spaces: "25 – 26"
+            const answerKey1 = `${start} – ${end}`;
+            const answerKey2 = `${start}-${end}`;
+            const answerKey3 = `${start} - ${end}`;
+            const userAnswer = answers[answerKey1] ?? answers[answerKey2] ?? answers[answerKey3] ?? answers[qNumStr];
+            const userArr = Array.isArray(userAnswer) ? userAnswer : [];
 
-        results.push({
-            questionNumber: entry.questionNumber,
-            userAnswer: Array.isArray(userAnswer) ? userAnswer.join(", ") : (userAnswer ?? ""),
-            correctAnswers: entry.acceptedAnswers,
-            isCorrect,
-        });
+            // Expand into individual results for each question in the range
+            for (let n = start; n <= end; n++) {
+                const idx = n - start;
+                const singleUserAnswer = userArr[idx] ?? "";
+                const isMatch = entry.acceptedAnswers.some(aa =>
+                    normalize(singleUserAnswer) === normalize(aa)
+                );
+                if (isMatch) correct++;
+                results.push({
+                    questionNumber: n,
+                    userAnswer: singleUserAnswer,
+                    correctAnswers: entry.acceptedAnswers,
+                    isCorrect: isMatch,
+                });
+            }
+        } else {
+            const userAnswer = answers[qNumStr];
+            const isCorrect = isAnswerCorrect(userAnswer, entry.acceptedAnswers);
+
+            if (isCorrect) correct++;
+
+            results.push({
+                questionNumber: typeof entry.questionNumber === 'string' ? Number(entry.questionNumber) || 0 : entry.questionNumber,
+                userAnswer: Array.isArray(userAnswer) ? userAnswer.join(", ") : (userAnswer ?? ""),
+                correctAnswers: entry.acceptedAnswers,
+                isCorrect,
+            });
+        }
     }
 
-    const total = answerKey.answers.length;
+    const total = results.length;
 
     return {
         correct,

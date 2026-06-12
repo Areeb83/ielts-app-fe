@@ -11,6 +11,7 @@ interface MatchingFeatureProps {
     optionsBelow?: boolean;
     reviewMode?: boolean;
     activeQuestion?: number;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 const formatInstruction = (text: string) => {
@@ -32,6 +33,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
     optionsBelow = false,
     reviewMode,
     activeQuestion,
+    questionStatus,
 }) => {
     const optionsBox = (
         <div className="matching-feature__options-box">
@@ -92,8 +94,9 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                             {data.questions.map((q) => {
                                 const selectedAnswer = answers[q.id] as string;
 
+                                const status = questionStatus?.[q.id];
                                 return (
-                                    <tr key={q.id} className="matching-feature__row">
+                                    <tr key={q.id} className={`matching-feature__row${status === 'correct' ? ' matching-feature__row--correct' : ''}${status === 'wrong' ? ' matching-feature__row--wrong' : ''}`}>
                                         <td className="matching-feature__td-question">
                                             <div className="matching-feature__question-content">
                                                 <span className={`matching-feature__q-num${activeQuestion === Number(q.id) ? " matching-feature__q-num--active" : ""}`}>{q.questionNumber}</span>
@@ -108,7 +111,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                                             return (
                                                 <td
                                                     key={opt.letter}
-                                                    className={`matching-feature__td-radio ${isSelected ? 'selected' : ''}`}
+                                                    className={`matching-feature__td-radio ${isSelected ? 'selected' : ''}${isSelected && questionStatus?.[q.id] === 'correct' ? ' matching-feature__td-radio--correct' : ''}${isSelected && questionStatus?.[q.id] === 'wrong' ? ' matching-feature__td-radio--wrong' : ''}`}
                                                 >
                                                     <label className="matching-feature__label">
                                                         <input

@@ -14,6 +14,7 @@ interface SummaryCompletionDragDropProps {
     testType?: "listening" | "reading";
     reviewMode?: boolean;
     activeQuestion?: number;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 const formatInstruction = (text: string) => {
@@ -42,6 +43,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
     testType,
     reviewMode,
     activeQuestion,
+    questionStatus,
 }) => {
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
     const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
@@ -111,6 +113,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
                     id={part.id}
                     isActive={activeQuestion === Number(part.id)}
                     isOver={dragOverZoneId === part.id}
+                    status={questionStatus?.[part.id]}
                     onDragOver={() => {
                         setDragOverZoneId(part.id);
                         setDragOverPool(false);

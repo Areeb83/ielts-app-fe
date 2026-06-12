@@ -10,6 +10,7 @@ interface MapDiagramLabellingProps {
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
     activeQuestion?: number;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
@@ -20,6 +21,7 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
     onAnswerChange,
     reviewMode,
     activeQuestion,
+    questionStatus,
 }) => {
     // Format instruction to bold uppercase constraints (e.g., "NO MORE THAN TWO WORDS")
     const formatInstruction = (text: string) => {
@@ -112,8 +114,9 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
                             {data.questions.map((q) => {
                                 const selectedAnswer = answers[q.id] as string;
 
+                                const status = questionStatus?.[q.id];
                                 return (
-                                    <tr key={q.id} className="map-diagram__row">
+                                    <tr key={q.id} className={`map-diagram__row${status === 'correct' ? ' map-diagram__row--correct' : ''}${status === 'wrong' ? ' map-diagram__row--wrong' : ''}`}>
                                         {/* Question Text Cell */}
                                         <td className="map-diagram__td-question">
                                             <span className={`map-diagram__q-num${activeQuestion === Number(q.id) ? " map-diagram__q-num--active" : ""}`}>{q.questionNumber}</span>
@@ -126,7 +129,7 @@ const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
                                             return (
                                                 <td
                                                     key={opt}
-                                                    className={`map-diagram__td-radio ${isSelected ? 'selected' : ''}`}
+                                                    className={`map-diagram__td-radio ${isSelected ? 'selected' : ''}${isSelected && questionStatus?.[q.id] === 'correct' ? ' map-diagram__td-radio--correct' : ''}${isSelected && questionStatus?.[q.id] === 'wrong' ? ' map-diagram__td-radio--wrong' : ''}`}
                                                 >
                                                     <label className="map-diagram__label">
                                                         <input

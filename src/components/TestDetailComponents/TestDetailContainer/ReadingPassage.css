@@ -140,3 +140,19 @@
     text-align: justify;
     margin: 0;
 }
+
+.passage-section__dropzone-wrapper .dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.passage-section__dropzone-wrapper .dropzone--filled.dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.passage-section__dropzone-wrapper .dropzone--wrong {
+  border-color: #ef4444 !important;
+}
+
+.passage-section__dropzone-wrapper .dropzone--filled.dropzone--wrong {
+  border-color: #ef4444 !important;
+}

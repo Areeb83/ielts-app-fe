@@ -5,6 +5,7 @@ interface DropZoneProps {
     children?: React.ReactNode;
     isOver?: boolean;
     isActive?: boolean;
+    status?: 'correct' | 'wrong';
     onDragOver?: (e: React.DragEvent<HTMLSpanElement>) => void;
     onDragLeave?: (e: React.DragEvent<HTMLSpanElement>) => void;
     onDrop?: (e: React.DragEvent<HTMLSpanElement>) => void;
@@ -15,6 +16,7 @@ export const DropZone: React.FC<DropZoneProps> = ({
     children,
     isOver,
     isActive,
+    status,
     onDragOver,
     onDragLeave,
     onDrop,
@@ -23,6 +25,7 @@ export const DropZone: React.FC<DropZoneProps> = ({
     const filledClass = hasContent ? "dropzone--filled" : "";
     const overClass = isOver ? "dropzone--over" : "";
     const activeClass = isActive ? "dropzone--active" : "";
+    const statusClass = status === 'correct' ? 'dropzone--correct' : status === 'wrong' ? 'dropzone--wrong' : '';
 
     const handleDragOver = (e: React.DragEvent<HTMLSpanElement>) => {
         e.preventDefault(); // CRITICAL: allows the drop to happen
@@ -45,7 +48,7 @@ export const DropZone: React.FC<DropZoneProps> = ({
 
     return (
         <span
-            className={`dropzone ${filledClass} ${overClass} ${activeClass}`}
+            className={`dropzone ${filledClass} ${overClass} ${activeClass} ${statusClass}`}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}

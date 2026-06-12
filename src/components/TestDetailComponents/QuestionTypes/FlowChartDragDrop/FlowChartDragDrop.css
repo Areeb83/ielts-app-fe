@@ -279,3 +279,19 @@
   flex-wrap: wrap;
   gap: 6px;
 }
+
+.flow-chart-drag-drop .dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.flow-chart-drag-drop .dropzone--filled.dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.flow-chart-drag-drop .dropzone--wrong {
+  border-color: #ef4444 !important;
+}
+
+.flow-chart-drag-drop .dropzone--filled.dropzone--wrong {
+  border-color: #ef4444 !important;
+}

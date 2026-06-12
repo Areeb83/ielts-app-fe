@@ -184,3 +184,19 @@
 .sum-dnd--review .draggable-word {
   opacity: 0.8;
 }
+
+.sum-dnd .dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.sum-dnd .dropzone--filled.dropzone--correct {
+  border-color: #22c55e !important;
+}
+
+.sum-dnd .dropzone--wrong {
+  border-color: #ef4444 !important;
+}
+
+.sum-dnd .dropzone--filled.dropzone--wrong {
+  border-color: #ef4444 !important;
+}

@@ -237,9 +237,12 @@ const ReviewPage: React.FC = () => {
 
     // Build question status map: { "1": "correct", "2": "wrong", ... }
     const questionStatus: Record<string, 'correct' | 'wrong'> = {};
+    // Build correct answer map: { "1": ["B"], "2": ["TRUE"], ... }
+    const correctAnswerMap: Record<string, string[]> = {};
     if (scoreResult) {
         for (const r of scoreResult.results) {
             questionStatus[String(r.questionNumber)] = r.isCorrect ? 'correct' : 'wrong';
+            correctAnswerMap[String(r.questionNumber)] = r.correctAnswers;
         }
     }
 
@@ -265,6 +268,7 @@ const ReviewPage: React.FC = () => {
                             testType={testType}
                             reviewMode
                             questionStatus={questionStatus}
+                            correctAnswerMap={correctAnswerMap}
                         />
                         <ReviewAnswerList
                             startQuestion={group.startQuestion}
@@ -311,6 +315,7 @@ const ReviewPage: React.FC = () => {
                 onDragStart={noOp}
                 onDragEnd={noOp}
                 headingLookup={headingLookup}
+                questionStatus={questionStatus}
             />
         );
     };

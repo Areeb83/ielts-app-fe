@@ -211,3 +211,20 @@
 .matching-feature__options-table tr:last-child td {
     border-bottom: none;
 }
+
+/* Row-level correct/wrong background */
+.matching-feature__row--correct {
+  background-color: #f0fdf4;
+}
+
+.matching-feature__row--correct:hover {
+  background-color: #f0fdf4;
+}
+
+.matching-feature__row--wrong {
+  background-color: #fef2f2;
+}
+
+.matching-feature__row--wrong:hover {
+  background-color: #fef2f2;
+}

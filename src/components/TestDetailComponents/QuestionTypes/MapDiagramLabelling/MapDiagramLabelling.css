@@ -237,3 +237,12 @@
 .map-diagram__content--vertical .map-diagram__table-wrapper {
     flex: unset;
 }
+
+/* Row-level correct/wrong background */
+.map-diagram__row--correct {
+  background-color: #f0fdf4;
+}
+
+.map-diagram__row--wrong {
+  background-color: #fef2f2;
+}
