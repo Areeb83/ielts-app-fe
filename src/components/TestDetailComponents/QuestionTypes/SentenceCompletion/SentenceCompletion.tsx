@@ -9,6 +9,7 @@ interface SentenceCompletionProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 /**
@@ -20,7 +21,8 @@ const AutoGrowingInput: React.FC<{
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
-}> = ({ id, value, onChange, disabled }) => {
+    status?: 'correct' | 'wrong';
+}> = ({ id, value, onChange, disabled, status }) => {
     const [width, setWidth] = React.useState<number | string>("200px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -42,7 +44,7 @@ const AutoGrowingInput: React.FC<{
             </span>
             <input
                 type="text"
-                className={`sentence-input${disabled ? " sentence-input--review" : ""}`}
+                className={`sentence-input${disabled ? " sentence-input--review" : ""}${status === "correct" ? " sentence-input--correct" : ""}${status === "wrong" ? " sentence-input--wrong" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
@@ -61,6 +63,7 @@ const SentenceCompletion: React.FC<SentenceCompletionProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    questionStatus,
 }) => {
     // Helper to render a content part (text or input)
     const renderContentPart = (part: ContentPart, index: number) => {
@@ -89,6 +92,7 @@ const SentenceCompletion: React.FC<SentenceCompletionProps> = ({
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
                     disabled={reviewMode}
+                    status={questionStatus?.[part.id]}
                 />
             );
         }

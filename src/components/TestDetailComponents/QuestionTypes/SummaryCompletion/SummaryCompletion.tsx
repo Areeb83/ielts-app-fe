@@ -9,6 +9,7 @@ interface SummaryCompletionProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 /**
@@ -19,7 +20,8 @@ const AutoGrowingSummaryInput: React.FC<{
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
-}> = ({ id, value, onChange, disabled }) => {
+    status?: 'correct' | 'wrong';
+}> = ({ id, value, onChange, disabled, status }) => {
     const [width, setWidth] = React.useState<number | string>("200px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -38,7 +40,7 @@ const AutoGrowingSummaryInput: React.FC<{
             </span>
             <input
                 type="text"
-                className={`summary-completion__input${disabled ? " summary-completion__input--review" : ""}`}
+                className={`summary-completion__input${disabled ? " summary-completion__input--review" : ""}${status === "correct" ? " summary-completion__input--correct" : ""}${status === "wrong" ? " summary-completion__input--wrong" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
@@ -57,6 +59,7 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    questionStatus,
 }) => {
     // Helper to render a content part (text or input) within the paragraph
     const renderContentPart = (part: ContentPart, index: number) => {
@@ -73,6 +76,7 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
                     disabled={reviewMode}
+                    status={questionStatus?.[part.id]}
                 />
             );
         }

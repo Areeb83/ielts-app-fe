@@ -9,6 +9,7 @@ interface TableCompletionProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 /**
@@ -20,7 +21,8 @@ const AutoGrowingInput: React.FC<{
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
-}> = ({ id, value, onChange, disabled }) => {
+    status?: 'correct' | 'wrong';
+}> = ({ id, value, onChange, disabled, status }) => {
     const [width, setWidth] = React.useState<number | string>("120px");
     const spanRef = React.useRef<HTMLSpanElement>(null);
 
@@ -41,7 +43,7 @@ const AutoGrowingInput: React.FC<{
             </span>
             <input
                 type="text"
-                className={`table-completion__input${disabled ? " table-completion__input--review" : ""}`}
+                className={`table-completion__input${disabled ? " table-completion__input--review" : ""}${status === "correct" ? " table-completion__input--correct" : ""}${status === "wrong" ? " table-completion__input--wrong" : ""}`}
                 style={{ width: typeof width === 'number' ? `${width}px` : width }}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
@@ -60,6 +62,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    questionStatus,
 }) => {
     const formatInstruction = (text: string) => {
         const lines = text.split('\n');
@@ -100,6 +103,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
                     value={value}
                     onChange={(val) => onAnswerChange(part.id, val)}
                     disabled={reviewMode}
+                    status={questionStatus?.[part.id]}
                 />
             );
         }
@@ -135,6 +139,7 @@ const TableCompletion: React.FC<TableCompletionProps> = ({
                     value={value}
                     onChange={(val) => onAnswerChange(cell.id, val)}
                     disabled={reviewMode}
+                    status={questionStatus?.[cell.id]}
                 />
             </td>
         );

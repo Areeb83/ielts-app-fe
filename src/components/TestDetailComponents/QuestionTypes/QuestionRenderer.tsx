@@ -20,6 +20,7 @@ interface QuestionRendererProps {
     testType?: 'listening' | 'reading';
     reviewMode?: boolean;
     activeQuestion?: number;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
     // Shared drag state for cross-pane DnD (Matching Heading)
     draggingWordId?: string | null;
     onDragStart?: (wordId: string) => void;
@@ -31,7 +32,7 @@ interface QuestionRendererProps {
  * Maps a QuestionGroup's `type` to the correct renderer.
  * Add new question types here as you build them.
  */
-const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, reviewMode, activeQuestion, draggingWordId, onDragStart, onDragEnd }) => {
+const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onAnswerChange, testType, reviewMode, activeQuestion, questionStatus, draggingWordId, onDragStart, onDragEnd }) => {
     const questionRange = group.hideRange
         ? ""
         : group.startQuestion === group.endQuestion
@@ -66,6 +67,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     reviewMode={reviewMode}
+                    questionStatus={questionStatus}
                 />
             );
 
@@ -94,6 +96,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     reviewMode={reviewMode}
+                    questionStatus={questionStatus}
                 />
             );
 
@@ -122,6 +125,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     answers={answers}
                     onAnswerChange={onAnswerChange}
                     reviewMode={reviewMode}
+                    questionStatus={questionStatus}
                 />
             );
 
@@ -136,6 +140,7 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({ group, answers, onA
                     onAnswerChange={onAnswerChange}
                     reviewMode={reviewMode}
                     activeQuestion={activeQuestion}
+                    questionStatus={questionStatus}
                 />
             );
 

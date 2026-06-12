@@ -235,6 +235,14 @@ const ReviewPage: React.FC = () => {
         }
     };
 
+    // Build question status map: { "1": "correct", "2": "wrong", ... }
+    const questionStatus: Record<string, 'correct' | 'wrong'> = {};
+    if (scoreResult) {
+        for (const r of scoreResult.results) {
+            questionStatus[String(r.questionNumber)] = r.isCorrect ? 'correct' : 'wrong';
+        }
+    }
+
     const renderQuestionsPane = () => (
         <div style={{ padding: '0 10px' }}>
             {/* Section header */}
@@ -256,6 +264,7 @@ const ReviewPage: React.FC = () => {
                             onAnswerChange={noOp}
                             testType={testType}
                             reviewMode
+                            questionStatus={questionStatus}
                         />
                         <ReviewAnswerList
                             startQuestion={group.startQuestion}
