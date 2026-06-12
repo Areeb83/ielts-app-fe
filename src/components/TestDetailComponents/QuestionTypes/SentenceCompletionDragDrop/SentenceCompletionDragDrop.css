@@ -128,7 +128,7 @@
     min-width: 120px;
     min-height: 26px;
     background-color: #fff;
-    border: 1.7px dashed #0056b3 !important;
+    border: 1.7px dashed #888 !important;
     border-radius: 8px !important;
     margin: 1px 3px;
     padding: 0;
@@ -142,17 +142,25 @@
     font-weight: 700;
 }
 
+.sc-dnd .dropzone--active {
+    border-color: #3b82f6 !important;
+}
+
 .sc-dnd .dropzone--over {
     background-color: #e6edff;
     border-color: #0056b3 !important;
 }
 
 .sc-dnd .dropzone--filled {
-    border-color: #0056b3 !important;
+    border-color: #888 !important;
     border-style: solid !important;
     min-width: 120px;
     background-color: transparent;
     cursor: move;
+}
+
+.sc-dnd .dropzone--filled.dropzone--active {
+    border-color: #3b82f6 !important;
 }
 
 .sc-dnd .dropzone--filled.dropzone--over {

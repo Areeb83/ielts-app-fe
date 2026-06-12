@@ -1,0 +1,158 @@
+/* ── IELTS Question Navigation Footer ─────────────────────── */
+
+.ielts-footer {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ── Parts row ─────────────────────────────────────────────── */
+.ielts-footer__parts-row {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    padding-right: 100px; /* space for submit button */
+}
+
+/* Vertical divider between parts */
+.ielts-footer__divider {
+    width: 1px;
+    align-self: stretch;
+    background: #e3e6ea;
+    margin: 0;
+}
+
+/* ── Part base ─────────────────────────────────────────────── */
+.ielts-footer__part {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Active part — only takes the width it needs, no wrapping */
+.ielts-footer__part--active {
+    flex-shrink: 0;
+    padding: 0 16px 10px;
+}
+
+/* Collapsed parts — grow equally to fill remaining space */
+.ielts-footer__part--collapsed {
+    flex: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 16px 10px;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background-color 0.15s ease;
+}
+
+.ielts-footer__part--collapsed:hover {
+    background-color: #f3f4f6;
+}
+
+/* ── Part label ────────────────────────────────────────────── */
+.ielts-footer__part-label {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a1a1a;
+    white-space: nowrap;
+}
+
+/* Solid bar above every part label */
+.ielts-footer__part-label--bar {
+    border-top: 3px solid #1a1a1a;
+    padding-top: 16px;
+}
+
+/* ── Counter for collapsed parts ───────────────────────────── */
+.ielts-footer__counter {
+    font-size: 14px;
+    color: #9aa0a6;
+    white-space: nowrap;
+}
+
+/* ── Question numbers ──────────────────────────────────────── */
+.ielts-footer__numbers {
+    display: flex;
+    gap: 4px;
+}
+
+/* Each question number button — bar on top via pseudo-element */
+.ielts-footer__num-btn {
+    width: 28px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    position: relative;
+}
+
+.ielts-footer__num-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    right: 2px;
+    height: 3px;
+    background: #d4d8dd;
+}
+
+/* Range button (e.g. "25-26") — auto width */
+.ielts-footer__num-btn--range {
+    width: auto;
+}
+
+/* Answered — green bar */
+.ielts-footer__num-btn--answered::before {
+    background: #2f9e44;
+}
+
+.ielts-footer__num {
+    min-width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #1a1a1a;
+    border: 1.5px solid transparent;
+    box-sizing: border-box;
+    padding: 0 2px;
+}
+
+/* Current question — blue box */
+.ielts-footer__num--current {
+    border-color: #3b82f6;
+}
+
+/* ── Submit button (flush right) ───────────────────────────── */
+.ielts-footer__submit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: #e5e7eb;
+    color: #333;
+    border: none;
+    border-left: 1px solid #ddd;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ielts-footer__submit-btn:hover {
+    background-color: #222;
+    color: #fff;
+}

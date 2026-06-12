@@ -223,6 +223,8 @@
     left: 0;
     right: 0;
     z-index: 100;
+    /* Needed for absolute submit button */
+    isolation: isolate;
 }
 
 .footer__navButtons button {
@@ -260,17 +262,28 @@
     border-color: #0072ce;
 }
 
-.footer__submit button {
-    background-color: #0072ce;
-    color: #fff;
+/* Submit button — flush right, full footer height */
+.footer__submit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: #e5e7eb;
+    color: #333;
     border: none;
-    padding: 5px 15px;
+    border-left: 1px solid #ddd;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.footer__submit button:hover {
-    background-color: #005bb5;
+.footer__submit-btn:hover {
+    background-color: #222;
+    color: #fff;
 }
 
 

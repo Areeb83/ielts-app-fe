@@ -111,6 +111,13 @@
     flex-shrink: 0;
     font-weight: 700;
     color: #000;
+    padding: 1px 4px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.matching-feature__q-num--active {
+    border-color: #3b82f6;
 }
 
 .matching-feature__q-text {

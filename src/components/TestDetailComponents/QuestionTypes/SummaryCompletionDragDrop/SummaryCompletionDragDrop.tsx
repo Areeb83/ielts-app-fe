@@ -13,6 +13,7 @@ interface SummaryCompletionDragDropProps {
     onAnswerChange: (questionId: string, value: string) => void;
     testType?: "listening" | "reading";
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const formatInstruction = (text: string) => {
@@ -40,6 +41,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
     onAnswerChange,
     testType,
     reviewMode,
+    activeQuestion,
 }) => {
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
     const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
@@ -107,6 +109,7 @@ const SummaryCompletionDragDrop: React.FC<SummaryCompletionDragDropProps> = ({
                 <DropZone
                     key={part.id}
                     id={part.id}
+                    isActive={activeQuestion === Number(part.id)}
                     isOver={dragOverZoneId === part.id}
                     onDragOver={() => {
                         setDragOverZoneId(part.id);

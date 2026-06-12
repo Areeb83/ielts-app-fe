@@ -14,6 +14,7 @@ interface MultipleChoiceProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string | string[]) => void;
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const formatInstruction = (text: string) => {
@@ -46,7 +47,8 @@ const MultipleChoiceItem: React.FC<{
     answers: AnswerMap;
     onAnswerChange: (id: string, value: string | string[]) => void;
     reviewMode?: boolean;
-}> = ({ question, answers, onAnswerChange, reviewMode }) => {
+    isActive?: boolean;
+}> = ({ question, answers, onAnswerChange, reviewMode, isActive }) => {
     const isMultiple = !!question.multiple;
     const maxCount = question.count ?? 1;
 
@@ -84,7 +86,7 @@ const MultipleChoiceItem: React.FC<{
     return (
         <div className="mc-question">
             <p className="mc-question__text">
-                {!isMultiple && <span className="mc-question__number">{question.id}</span>}{!isMultiple && " "}
+                <span className={`mc-question__number${isActive ? " mc-question__number--active" : ""}`}>{question.id}</span>{" "}
                 {formatInstruction(question.text)}
             </p>
             <div className="mc-question__options">
@@ -122,6 +124,7 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    activeQuestion,
 }) => {
     // Check if this is an identification question (T/F/NG or Y/N/NG)
     const isIdentification = "optionsType" in data;
@@ -165,15 +168,28 @@ const MultipleChoice: React.FC<MultipleChoiceProps> = ({
             )}
 
             <div className="mc__questions">
-                {questions.map((question) => (
-                    <MultipleChoiceItem
-                        key={question.id}
-                        question={question}
-                        answers={answers}
-                        onAnswerChange={onAnswerChange}
-                        reviewMode={reviewMode}
-                    />
-                ))}
+                {questions.map((question) => {
+                    // Check if activeQuestion matches — handles both "27" and "25 – 26" formats
+                    let isActive = false;
+                    if (activeQuestion != null) {
+                        const rangeMatch = question.id.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                        if (rangeMatch) {
+                            isActive = activeQuestion >= Number(rangeMatch[1]) && activeQuestion <= Number(rangeMatch[2]);
+                        } else {
+                            isActive = activeQuestion === Number(question.id);
+                        }
+                    }
+                    return (
+                        <MultipleChoiceItem
+                            key={question.id}
+                            question={question}
+                            answers={answers}
+                            onAnswerChange={onAnswerChange}
+                            reviewMode={reviewMode}
+                            isActive={isActive}
+                        />
+                    );
+                })}
             </div>
         </div>
     );

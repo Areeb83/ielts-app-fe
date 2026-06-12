@@ -14,6 +14,7 @@ interface FlowChartDragDropProps {
     onAnswerChange: (questionId: string, value: string) => void;
     testType?: 'listening' | 'reading';
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
@@ -24,6 +25,7 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
     onAnswerChange,
     testType,
     reviewMode,
+    activeQuestion,
 }) => {
     // ─── Native DnD State (the "brain") ───
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
@@ -139,6 +141,7 @@ const FlowChartDragDrop: React.FC<FlowChartDragDropProps> = ({
                                                             key={part.id}
                                                             id={part.id}
                                                             isOver={dragOverZoneId === part.id}
+                                                            isActive={activeQuestion === Number(part.id)}
                                                             onDragOver={() => {
                                                                 setDragOverZoneId(part.id);
                                                                 setDragOverPool(false);

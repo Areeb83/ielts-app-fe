@@ -10,6 +10,7 @@ interface MatchingFeatureProps {
     onAnswerChange: (questionId: string, value: string) => void;
     optionsBelow?: boolean;
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const formatInstruction = (text: string) => {
@@ -30,6 +31,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
     onAnswerChange,
     optionsBelow = false,
     reviewMode,
+    activeQuestion,
 }) => {
     const optionsBox = (
         <div className="matching-feature__options-box">
@@ -94,7 +96,7 @@ const MatchingFeature: React.FC<MatchingFeatureProps> = ({
                                     <tr key={q.id} className="matching-feature__row">
                                         <td className="matching-feature__td-question">
                                             <div className="matching-feature__question-content">
-                                                <span className="matching-feature__q-num">{q.questionNumber}</span>
+                                                <span className={`matching-feature__q-num${activeQuestion === Number(q.id) ? " matching-feature__q-num--active" : ""}`}>{q.questionNumber}</span>
                                                 <span className="matching-feature__q-text">
                                                     {q.text}
                                                 </span>

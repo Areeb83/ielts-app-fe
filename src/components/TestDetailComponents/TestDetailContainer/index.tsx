@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { PiClockLight } from "react-icons/pi";
 import Header from "../Header";
-import Footer from "../Footer";
+import Footer, { type FooterPart } from "../Footer";
 import ListeningOverlay from "../ListeningOverlay";
 import QuestionRenderer from "../QuestionTypes/QuestionRenderer";
 import type { TestData, QuestionGroup, AnswerMap, MatchingHeadingData } from "../../../types/question";
@@ -44,6 +44,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
+    const [activeQuestion, setActiveQuestion] = useState(1);
 
     // Listening overlay & audio
     const [showListeningOverlay, setShowListeningOverlay] = useState(testType === 'listening');
@@ -148,8 +149,131 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
         setCurrentSectionIndex(sectionNumber - 1);
     };
 
+    // Build footer parts from test sections
+    const footerParts: FooterPart[] = testData.sections.map((section, idx) => {
+        const firstGroup = section.questionGroups[0];
+        const lastGroup = section.questionGroups[section.questionGroups.length - 1];
+        const start = firstGroup?.startQuestion ?? 1;
+        const end = lastGroup?.endQuestion ?? start;
+
+        // Detect multi-select MC questions to merge in footer
+        const mergedRanges: [number, number][] = [];
+        for (const group of section.questionGroups) {
+            if (group.type === 'MULTIPLE_CHOICE' && group.data && 'questions' in group.data) {
+                for (const q of (group.data as any).questions) {
+                    if (q.multiple) {
+                        const match = q.id.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                        if (match) {
+                            mergedRanges.push([Number(match[1]), Number(match[2])]);
+                        }
+                    }
+                }
+            }
+        }
+
+        return {
+            id: idx + 1,
+            label: `Part ${idx + 1}`,
+            questions: Array.from({ length: end - start + 1 }, (_, i) => start + i),
+            ...(mergedRanges.length > 0 ? { mergedRanges } : {}),
+        };
+    });
+
+    // Find the actual DOM element for a question number
+    // Returns { scrollTarget, focusTarget } — scrollTarget for scrollIntoView, focusTarget for .focus()
+    const findQuestionElement = (q: number) => {
+        const qStr = String(q);
+
+        // 1. Text inputs: fake-placeholder spans sit next to the <input> inside a wrapper
+        const placeholderSelectors = [
+            '.fake-placeholder',
+            '.table-completion__fake-placeholder',
+            '.summary-fake-placeholder',
+        ];
+        for (const selector of placeholderSelectors) {
+            const els = document.querySelectorAll(selector);
+            for (const el of els) {
+                if (el.textContent?.trim() === qStr) {
+                    const wrapper = el.closest('.input-wrapper, .table-completion__input-wrapper, .summary-input-wrapper');
+                    const input = wrapper?.querySelector('input') as HTMLElement | null;
+                    return { scrollTarget: wrapper || el, focusTarget: input };
+                }
+            }
+        }
+
+        // 2. DiagramLabelling: number span next to input in a row
+        const diagNums = document.querySelectorAll('.diagram-labelling__num');
+        for (const el of diagNums) {
+            if (el.textContent?.trim() === qStr) {
+                const row = el.closest('.diagram-labelling__row');
+                const input = row?.querySelector('input') as HTMLElement | null;
+                return { scrollTarget: row || el, focusTarget: input };
+            }
+        }
+
+        // 3. Radio inputs (MatchingFeature, MapDiagramLabelling)
+        const radio = document.querySelector(`input[name="question-${q}"]`);
+        if (radio) return { scrollTarget: radio.closest('tr') || radio, focusTarget: null };
+
+        // 4. Other non-input types (MC, ParagraphMatching, DragDrop, etc.)
+        const otherSelectors = [
+            '.mc-question__number',
+            '.paragraph-matching__num',
+            '.map-diagram__q-num',
+            '.matching-feature__q-num',
+            '.sc-dnd__question-number',
+            '.dropzone__placeholder',
+        ];
+        for (const selector of otherSelectors) {
+            const els = document.querySelectorAll(selector);
+            for (const el of els) {
+                const text = el.textContent?.trim() ?? '';
+                // Exact match (e.g. "27") or range match (e.g. "25 – 26" contains 25)
+                const rangeMatch = text.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                const matches = rangeMatch
+                    ? q >= Number(rangeMatch[1]) && q <= Number(rangeMatch[2])
+                    : text === qStr;
+                if (matches) {
+                    return { scrollTarget: el.closest('.mc-question, .paragraph-matching__row, .sc-dnd__sentence-row, .flow-chart__step, .dropzone') || el, focusTarget: null };
+                }
+            }
+        }
+
+        return null;
+    };
+
+    // Find which section a question belongs to, switch section, scroll to it, focus input
+    const handleSelectQuestion = (q: number) => {
+        setActiveQuestion(q);
+        const sectionIdx = testData.sections.findIndex((section) => {
+            const first = section.questionGroups[0]?.startQuestion ?? 0;
+            const last = section.questionGroups[section.questionGroups.length - 1]?.endQuestion ?? 0;
+            return q >= first && q <= last;
+        });
+
+        const scrollAndFocus = () => {
+            const result = findQuestionElement(q);
+            if (result) {
+                result.scrollTarget?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // Focus the input after scroll settles
+                if (result.focusTarget) {
+                    setTimeout(() => (result.focusTarget as HTMLElement).focus(), 300);
+                }
+            }
+        };
+
+        if (sectionIdx !== -1 && sectionIdx !== currentSectionIndex) {
+            setCurrentSectionIndex(sectionIdx);
+            setTimeout(scrollAndFocus, 100);
+        } else {
+            scrollAndFocus();
+        }
+    };
+
     const handleAnswerChange = (questionId: string, value: string) => {
         setAnswers((prev) => ({ ...prev, [questionId]: value }));
+        const qNum = Number(questionId);
+        if (!isNaN(qNum)) setActiveQuestion(qNum);
         // If an answer is changed, any active drag is effectively complete.
         // Clearing it here is much more robust than relying on onDragEnd events
         // which can be lost when elements are unmounted during a move.
@@ -210,16 +334,18 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
                     )}
                     {currentSection ? (
                         currentSection.questionGroups.map((group, index) => (
-                            <QuestionRenderer
-                                key={`${currentSection.sectionNumber}-${index}`}
-                                group={group}
-                                answers={answers}
-                                onAnswerChange={handleAnswerChange}
-                                testType={testType}
-                                draggingWordId={draggingWordId}
-                                onDragStart={setDraggingWordId}
-                                onDragEnd={() => setDraggingWordId(null)}
-                            />
+                            <div key={`${currentSection.sectionNumber}-${index}`}>
+                                <QuestionRenderer
+                                    group={group}
+                                    answers={answers}
+                                    onAnswerChange={handleAnswerChange}
+                                    testType={testType}
+                                    activeQuestion={activeQuestion}
+                                    draggingWordId={draggingWordId}
+                                    onDragStart={setDraggingWordId}
+                                    onDragEnd={() => setDraggingWordId(null)}
+                                />
+                            </div>
                         ))
                     ) : (
                         <p>No questions found.</p>
@@ -275,6 +401,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
                 onDragStart={setDraggingWordId}
                 onDragEnd={() => setDraggingWordId(null)}
                 headingLookup={headingLookup}
+                activeQuestion={activeQuestion}
             />
         );
     };
@@ -343,13 +470,12 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
                 </div>
             </main>
 
-            {/* Footer — navigates by section */}
+            {/* Footer — IELTS question navigation */}
             <Footer
-                currentQuestion={currentSectionIndex + 1}
-                totalQuestions={totalSections}
-                onPrevious={handlePrevious}
-                onNext={handleNext}
-                onQuestionClick={handleSectionClick}
+                parts={footerParts}
+                answers={answers}
+                currentQuestion={activeQuestion}
+                onSelectQuestion={handleSelectQuestion}
                 onSubmit={handleSubmit}
             />
         </div>

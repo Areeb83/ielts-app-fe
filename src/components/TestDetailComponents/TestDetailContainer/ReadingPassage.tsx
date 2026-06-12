@@ -16,6 +16,7 @@ interface ReadingPassageProps {
     onDragStart: (wordId: string) => void;
     onDragEnd: () => void;
     headingLookup?: Record<string, string>;
+    activeQuestion?: number;
 }
 
 const ReadingPassage: React.FC<ReadingPassageProps> = ({
@@ -28,6 +29,7 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     onDragStart,
     onDragEnd,
     headingLookup,
+    activeQuestion,
 }) => {
     const [dragOverZoneId, setDragOverZoneId] = React.useState<string | null>(null);
     const { highlights, addHighlight, removeHighlightGroup } = useHighlights();
@@ -77,6 +79,7 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                                     <DropZone
                                         id={section.questionId}
                                         isOver={dragOverZoneId === section.questionId}
+                                        isActive={activeQuestion === Number(section.questionId)}
                                         onDragOver={() => setDragOverZoneId(section.questionId!)}
                                         onDragLeave={() => setDragOverZoneId(null)}
                                         onDrop={() => handleDropOnZone(section.questionId!)}

@@ -4,7 +4,7 @@ import { useSetAtom } from "jotai";
 import { IoClose } from "react-icons/io5";
 import { isNavbarFooterVisibleAtom } from "../../store/uiStore";
 import ReportMistakeButton from "../../components/TestDetailComponents/ReportMistakeButton";
-import Footer from "../../components/TestDetailComponents/Footer";
+import Footer, { type FooterPart } from "../../components/TestDetailComponents/Footer";
 import QuestionRenderer from "../../components/TestDetailComponents/QuestionTypes/QuestionRenderer";
 import ReadingPassage from "../../components/TestDetailComponents/TestDetailContainer/ReadingPassage";
 import SplitPane from "../../components/ui/SplitPane/SplitPane";
@@ -131,9 +131,109 @@ const ReviewPage: React.FC = () => {
     const noOp = () => {};
 
     // ─── Right pane: Clean answer list ───────────────────────────────────
-    const handlePrevious = () => setCurrentSectionIndex(prev => Math.max(prev - 1, 0));
-    const handleNext = () => setCurrentSectionIndex(prev => Math.min(prev + 1, totalSections - 1));
-    const handleSectionClick = (sectionNumber: number) => setCurrentSectionIndex(sectionNumber - 1);
+
+    // Build footer parts from test sections
+    const footerParts: FooterPart[] = testData.sections.map((section, idx) => {
+        const firstGroup = section.questionGroups[0];
+        const lastGroup = section.questionGroups[section.questionGroups.length - 1];
+        const start = firstGroup?.startQuestion ?? 1;
+        const end = lastGroup?.endQuestion ?? start;
+
+        const mergedRanges: [number, number][] = [];
+        for (const group of section.questionGroups) {
+            if (group.type === 'MULTIPLE_CHOICE' && group.data && 'questions' in group.data) {
+                for (const q of (group.data as any).questions) {
+                    if (q.multiple) {
+                        const match = q.id.match(/^(\d+)\s*[–-]\s*(\d+)$/);
+                        if (match) {
+                            mergedRanges.push([Number(match[1]), Number(match[2])]);
+                        }
+                    }
+                }
+            }
+        }
+
+        return {
+            id: idx + 1,
+            label: `Part ${idx + 1}`,
+            questions: Array.from({ length: end - start + 1 }, (_, i) => start + i),
+            ...(mergedRanges.length > 0 ? { mergedRanges } : {}),
+        };
+    });
+
+    const [activeQuestion, setActiveQuestion] = useState(
+        currentSection?.questionGroups[0]?.startQuestion ?? 1
+    );
+
+    // Find the actual DOM element for a question number (same logic as test detail page)
+    const findQuestionElement = (q: number): Element | null => {
+        const qStr = String(q);
+
+        const placeholderSelectors = [
+            '.fake-placeholder',
+            '.table-completion__fake-placeholder',
+            '.summary-fake-placeholder',
+        ];
+        for (const selector of placeholderSelectors) {
+            const els = document.querySelectorAll(selector);
+            for (const el of els) {
+                if (el.textContent?.trim() === qStr) {
+                    return el.closest('.input-wrapper, .table-completion__input-wrapper, .summary-input-wrapper') || el;
+                }
+            }
+        }
+
+        const diagNums = document.querySelectorAll('.diagram-labelling__num');
+        for (const el of diagNums) {
+            if (el.textContent?.trim() === qStr) {
+                return el.closest('.diagram-labelling__row') || el;
+            }
+        }
+
+        const radio = document.querySelector(`input[name="question-${q}"]`);
+        if (radio) return radio.closest('tr') || radio;
+
+        const otherSelectors = [
+            '.mc-question__number',
+            '.paragraph-matching__num',
+            '.map-diagram__q-num',
+            '.matching-feature__q-num',
+            '.sc-dnd__question-number',
+            '.dropzone__placeholder',
+            '.review-q-num',
+        ];
+        for (const selector of otherSelectors) {
+            const els = document.querySelectorAll(selector);
+            for (const el of els) {
+                if (el.textContent?.trim() === qStr) {
+                    return el.closest('.mc-question, .paragraph-matching__row, .sc-dnd__sentence-row, .flow-chart__step, .dropzone, .review-answer-item') || el;
+                }
+            }
+        }
+
+        return null;
+    };
+
+    const handleSelectQuestion = (q: number) => {
+        setActiveQuestion(q);
+        const sectionIdx = testData.sections.findIndex((section) => {
+            const first = section.questionGroups[0]?.startQuestion ?? 0;
+            const last = section.questionGroups[section.questionGroups.length - 1]?.endQuestion ?? 0;
+            return q >= first && q <= last;
+        });
+
+        const scrollTo = () => {
+            const el = findQuestionElement(q);
+            el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        };
+
+        if (sectionIdx !== -1 && sectionIdx !== currentSectionIndex) {
+            setCurrentSectionIndex(sectionIdx);
+            setTimeout(scrollTo, 100);
+        } else {
+            scrollTo();
+        }
+    };
 
     const renderQuestionsPane = () => (
         <div style={{ padding: '0 10px' }}>
@@ -235,11 +335,10 @@ const ReviewPage: React.FC = () => {
 
             {/* Footer */}
             <Footer
-                currentQuestion={currentSectionIndex + 1}
-                totalQuestions={totalSections}
-                onPrevious={handlePrevious}
-                onNext={handleNext}
-                onQuestionClick={handleSectionClick}
+                parts={footerParts}
+                answers={userAnswers}
+                currentQuestion={activeQuestion}
+                onSelectQuestion={handleSelectQuestion}
             />
         </div>
     );

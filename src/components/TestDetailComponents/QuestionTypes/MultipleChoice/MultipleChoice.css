@@ -188,6 +188,13 @@
     color: #1a1a1a;
     margin-right: 8px;
     font-size: 15px;
+    padding: 1px 4px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.mc-question__number--active {
+    border-color: #3b82f6;
 }
 
 /* Review mode */

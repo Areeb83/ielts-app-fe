@@ -9,6 +9,7 @@ interface ParagraphMatchingProps {
     answers: AnswerMap;
     onAnswerChange: (questionId: string, value: string) => void;
     reviewMode?: boolean;
+    activeQuestion?: number;
 }
 
 const formatInstruction = (text: string) => {
@@ -41,6 +42,7 @@ const ParagraphMatching: React.FC<ParagraphMatchingProps> = ({
     answers,
     onAnswerChange,
     reviewMode,
+    activeQuestion,
 }) => {
     return (
         <div className="paragraph-matching-container">
@@ -54,7 +56,7 @@ const ParagraphMatching: React.FC<ParagraphMatchingProps> = ({
             <div className="paragraph-matching__list">
                 {data.questions.map((q) => (
                     <div key={q.id} className="paragraph-matching__row">
-                        <span className="paragraph-matching__num">{q.questionNumber}</span>
+                        <span className={`paragraph-matching__num${activeQuestion === Number(q.id) ? " paragraph-matching__num--active" : ""}`}>{q.questionNumber}</span>
                         <select
                             className={`paragraph-matching__select${reviewMode ? " paragraph-matching__select--review" : ""}`}
                             value={(answers[q.id] as string) ?? ""}

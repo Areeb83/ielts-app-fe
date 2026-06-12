@@ -44,7 +44,7 @@
     width: 100%;
     min-height: 31px;
     background-color: #fff;
-    border: 1.7px dashed #0056b3 !important;
+    border: 1.7px dashed #888 !important;
     border-radius: 8px !important;
     margin: 1px 0;
     padding: 0; /* Remove padding here so word can fill it */
@@ -56,17 +56,25 @@
     overflow: hidden; /* Keep word within rounded corners */
 }
 
+.passage-section__dropzone-wrapper .dropzone--active {
+    border-color: #3b82f6 !important;
+}
+
 .passage-section__dropzone-wrapper .dropzone--over {
     background-color: #e6edff;
     border-color: #0056b3 !important;
 }
 
 .passage-section__dropzone-wrapper .dropzone--filled {
-    border-color: #0056b3 !important;
+    border-color: #888 !important;
     border-style: solid !important;
     min-width: 200px;
     background-color: transparent;
     cursor: move;
+}
+
+.passage-section__dropzone-wrapper .dropzone--filled.dropzone--active {
+    border-color: #3b82f6 !important;
 }
 
 .passage-section__dropzone-wrapper .dropzone--filled.dropzone--over {

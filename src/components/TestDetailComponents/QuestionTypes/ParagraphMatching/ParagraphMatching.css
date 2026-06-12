@@ -42,6 +42,13 @@
     color: #000;
     min-width: 28px;
     flex-shrink: 0;
+    padding: 1px 4px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.paragraph-matching__num--active {
+    border-color: #3b82f6;
 }
 
 .paragraph-matching__select {
