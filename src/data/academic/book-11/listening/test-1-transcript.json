@@ -1,0 +1,385 @@
+{
+  "testId": "book-11-test-1",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Section 1",
+      "transcript": [
+        {
+          "speaker": "OFFICIAL",
+          "text": "Hello?"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, hello. I wanted to enquire about hiring a room in the Village Hall, for the evening of September the first."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Let me just see … Yes, we have both rooms available that evening. There's our Main Hall – that's got seating for 200 people. Or there's the Charlton Room …"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Sorry?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "<q id=\"1\">The Charlton Room – C-H-A-R-L-T-O-N. That's</q> got seating for up to one hundred."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, we're organising a dinner to raise money for a charity, and we're hoping for at least 150 people, so I think we'll go for the Main Hall. How much would that cost?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Let's see. You wanted it for the evening of September 1st?"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, that's a Saturday."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "So from six pm to midnight <q id=\"2\">that'd be £115 – that's</q> the weekend price, it's £75 on weekdays."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "That's all right."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "And I have to tell you there's also a deposit of £250, which is returnable of course as long as there's no damage. But we do insist that this is <q id=\"3\">paid in cash,</q> we don't take cards for that. You can pay the actual rent of the room however you like though – cash, credit card, cheque ..."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, well I suppose that's OK. So does the charge include use of tables and chairs and so on?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Oh, yes."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "<q id=\"4\">And what about parking?</q>"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "<q id=\"4\">Yeah, that's all included.</q> The only thing that isn't included is ... you said you were organising a dinner?"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yeah."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Well, you'll have to pay extra for the kitchen if you want to use that. It's £25. It's got very good facilities – good quality cookers and fridges and so on."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "OK, well I suppose that's all right. We can cover the cost in our entry charges."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Right. So I'll make a note of that. Now there are just one or two things you need to think about before the event. For example, <q id=\"5\">you'll have to see about getting a licence if you're planning to have any music during the meal.</q>"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, really?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "It's quite straightforward, I'll give you the details later on. And about a week or ten days before your event you'll need to contact the caretaker, that's Mr Evans, <q id=\"6\">to make the arrangements for entry –</q> he'll sort that out with you."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "And do I give him the payment as well?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "No, you do that directly with me."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right. Now is there anything I need to know about what happens during the event?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Well, as you'll be aware, of course the building is no smoking throughout."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Of course."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Now, are you having a band?"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Well, they'll have a lot of equipment, so rather than using the front door they should <q id=\"7\">park their van round the back and use the stage door there.</q> You can open that from inside but don't forget to lock it at the end."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "OK."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "And talking of bands, I'm sure I don't need to tell you this, but you must make sure that no one fiddles about with the black box by the fire door – that's a system that cuts in when the volume reaches a certain level. It's a legal requirement."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Sure. Anyway, we want people to be able to talk to one another so we don't want anything too loud. Oh, that reminds me, we'll be having speeches – are there any microphones available?"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "Yeah. Just let the caretaker know, he'll get those for you. Right, now when the event is over we do ask that the premises are left in good condition. So there's <q id=\"8\">a locked cupboard and you'll be informed of the code you need to open that.</q> It's got all the cleaning equipment, brushes and detergent and so on."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right. So what do we need to do after everyone's gone? <q id=\"9\">Sweep the floors I suppose?</q>"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "<q id=\"9\">Well, actually they have to be washed, not just swept.</q> Then you'll be provided with black plastic bags, so all the rubbish must be collected up and left outside the door."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Of course. We'll make sure everything's left tidy. Oh, and I forgot to ask, <q id=\"10\">I presume we can have decorations in the room?</q>"
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "<q id=\"10\">Yes, but you must take them down afterwards.</q>"
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Sure."
+        },
+        {
+          "speaker": "OFFICIAL",
+          "text": "And the chairs and tables should be stacked up neatly at the back of the room."
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "I'll make sure I've got a few people to help me."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Section 2",
+      "transcript": [
+        {
+          "speaker": "",
+          "text": "Welcome to the Fiddy Working Heritage Farm. This open-air museum gives you the experience of agriculture and rural life in the English countryside at the end of the nineteenth century. So you'll see a typical farm of that period, and like me, all the staff are dressed in clothes of that time."
+        },
+        {
+          "speaker": "",
+          "text": "I must give you some advice and safety tips before we go any further. As it's a working farm, please <q id=\"11\">don't frighten or injure the animals.</q> We have a lot here, and many of them are breeds that are now quite rare."
+        },
+        {
+          "speaker": "",
+          "text": "And do stay at a safe distance from the tools: <q id=\"12\">some of them have sharp points which can be pretty dangerous, so please don't touch them.</q> We don't want any accidents, do we?"
+        },
+        {
+          "speaker": "",
+          "text": "The ground is very uneven, and you might slip if you're wearing sandals so <q id=\"13\">I'm glad to see you're all wearing shoes – we always advise people to do that.</q>"
+        },
+        {
+          "speaker": "",
+          "text": "Now, children of all ages are very welcome here, and usually even very young children love the ducks and lambs, so do bring them along next time you come."
+        },
+        {
+          "speaker": "",
+          "text": "<q id=\"14\">I don't think any of you have brought dogs with you, but in case you have, I'm afraid they'll have to stay in the car park, unless they're guide dogs.</q> I'm sure you'll understand that they could cause a lot of problems on a farm."
+        },
+        {
+          "speaker": "",
+          "text": "Now let me give you some idea of the layout of the farm. The building where you bought your tickets is the New Barn, immediately to your right, and we're now at the beginning of the main path to the farmland – and of course the car park is on your left. <q id=\"15\">The scarecrow you can see in the car park in the corner, beside the main path,</q> is a traditional figure for keeping the birds away from crops, but our scarecrow is a permanent sculpture. It's taller than a human being, so you can see it from quite a distance."
+        },
+        {
+          "speaker": "",
+          "text": "<q id=\"16\">If you look ahead of you, you'll see a maze. It's opposite the New Barn, beside the side path that branches off to the right just over there.</q> The maze is made out of hedges which are too tall for young children to see over them, but it's quite small, so you can't get lost in it!"
+        },
+        {
+          "speaker": "",
+          "text": "Now, can you see the bridge crossing the fish pool further up the main path? <q id=\"17\">If you want to go to the café, go towards the bridge and turn right just before it. Walk along the side path and the café's on the first bend you come to.</q> The building was originally the schoolhouse, and it's well over a hundred years old."
+        },
+        {
+          "speaker": "",
+          "text": "As you may know, we run skills workshops here, where you can learn traditional crafts like woodwork and basket-making. You can see examples of the work, and talk to someone about the courses, in the Black Barn. <q id=\"18\">If you take the side path to the right, here, just by the New Barn, you'll come to the Black Barn just where the path first bends.</q>"
+        },
+        {
+          "speaker": "",
+          "text": "Now I mustn't forget to tell you about picnicking, as I can see some of you have brought your lunch with you. You can picnic in the field, though do clear up behind you, of course. <q id=\"19\">Or if you'd prefer a covered picnic area, there's one near the farmyard: just after you cross the bridge, there's a covered picnic spot on the right.</q>"
+        },
+        {
+          "speaker": "",
+          "text": "And the last thing to mention is <q id=\"20\">Fiddy House itself. From here you can cross the bridge then walk along the footpath through the field to the left of the farmyard. That goes to the house,</q> and it'll give you a lovely view of it. It's certainly worth a few photographs, but as it's a private home, I'm afraid you can't go inside."
+        },
+        {
+          "speaker": "",
+          "text": "Right. Well, if you're all ready, we'll set off on our tour of the farm."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Section 3",
+      "transcript": [
+        {
+          "speaker": "LISA",
+          "text": "OK, Greg, so I finally managed to read the article you mentioned – the one about the study on gender in physics."
+        },
+        {
+          "speaker": "GREG",
+          "text": "About the study of college students done by Akira Miyake and his team? Yeah. I was interested that the researchers were actually a mix of psychologists and physicists. That's an unusual combination."
+        },
+        {
+          "speaker": "LISA",
+          "text": "Yeah. I got a little confused at first about which students the study was based on. They weren't actually majoring in physics – <q id=\"21\">they were majoring in what's known as the STEM disciplines. That's science, technology, engineering and ...</q>"
+        },
+        {
+          "speaker": "GREG",
+          "text": "<q id=\"21\">... and math.</q> Yes, but they were all doing physics courses as part of their studies."
+        },
+        {
+          "speaker": "LISA",
+          "text": "That's correct. So as I understood it, Miyake and co started from the fact that women are underrepresented in introductory physics courses at college, and also that on average, the women who do enrol on these courses perform more poorly than the men. No one really knows why this is the case."
+        },
+        {
+          "speaker": "GREG",
+          "text": "Yeah. <q id=\"22\">But what the researchers wanted to find out was basically what they could do about the relatively low level of the women's results.</q> But in order to find a solution they needed to find out more about the nature of the problem."
+        },
+        {
+          "speaker": "LISA",
+          "text": "Right – now let's see if I can remember … it was that in the physics class, the female students thought the male students all assumed that women weren't any good at physics … was that it? And they thought that the men expected them to get poor results in their tests."
+        },
+        {
+          "speaker": "GREG",
+          "text": "That's what the women thought, and that made them nervous, so they did get poor results. <q id=\"23\">But actually they were wrong ... No one was making any assumptions about the female students at all.</q>"
+        },
+        {
+          "speaker": "LISA",
+          "text": "Anyway, what Miyake's team did was quite simple – getting the students to do some writing before they went into the physics class. What did they call it?"
+        },
+        {
+          "speaker": "GREG",
+          "text": "Values-affirmation – <q id=\"24\">they had to write an essay focusing on things that were significant to them, not particularly to do with the subject they were studying, but more general things like music, or people who mattered to them.</q>"
+        },
+        {
+          "speaker": "LISA",
+          "text": "Right. So the idea of doing the writing is that this gets the students thinking in a positive way."
+        },
+        {
+          "speaker": "GREG",
+          "text": "<q id=\"25\">And putting these thoughts into words can relax them and help them overcome the psychological factors that lead to poor performance.</q> Yeah. <q id=\"26\">But what the researchers in the study hadn't expected was that this one activity raised the women's physics grades from the C to the B range.</q>"
+        },
+        {
+          "speaker": "LISA",
+          "text": "A huge change. Pity it wasn't to an A, but still! No, but it does suggest that the women were seriously underperforming beforehand, in comparison with the men."
+        },
+        {
+          "speaker": "GREG",
+          "text": "Yes. Mind you, Miyake's article left out a lot of details. Like, did the students do the writing just once, or several times? <q id=\"27\">And had they been told why they were doing the writing? That might have affected the results.</q>"
+        },
+        {
+          "speaker": "LISA",
+          "text": "You mean, if they know the researchers thought it might help them to improve, then they'd just try to fulfil that expectation?"
+        },
+        {
+          "speaker": "GREG",
+          "text": "Exactly."
+        },
+        {
+          "speaker": "GREG",
+          "text": "So anyway, I thought for our project we could do a similar study, but investigate whether it really was the writing activity that had that result."
+        },
+        {
+          "speaker": "LISA",
+          "text": "OK. So we could ask them to do a writing task about something completely different ... something more factual? Like a general knowledge topic."
+        },
+        {
+          "speaker": "GREG",
+          "text": "Maybe ... or we could have half the students doing a writing task and half doing something else, like an oral task."
+        },
+        {
+          "speaker": "LISA",
+          "text": "Or even, <q id=\"28\">half do the same writing task as in the original research and half do a factual writing task.</q> Then we'd see if it really is the topic that made the difference, or something else."
+        },
+        {
+          "speaker": "GREG",
+          "text": "That's it. Good. So at our meeting with the supervisor on Monday we can tell him we've decided on our project. We should have our aims ready by then. I suppose we need to read the original study – the article's just a summary."
+        },
+        {
+          "speaker": "LISA",
+          "text": "And there was another article I read, by Smolinsky. It was about her research on how women and men perform in mixed teams in class, compared with single-sex teams and on their own."
+        },
+        {
+          "speaker": "GREG",
+          "text": "Let me guess ... the women were better at teamwork."
+        },
+        {
+          "speaker": "LISA",
+          "text": "That's what I expected, but actually <q id=\"29\">the men and the women got the same results whether they were working in teams or on their own.</q> But I guess it's not that relevant to us."
+        },
+        {
+          "speaker": "GREG",
+          "text": "What worries me anyway is how we're going to get everything done in the time."
+        },
+        {
+          "speaker": "LISA",
+          "text": "We'll be OK now we know what we're doing. Though I'm not clear how we assess whether the students in our experiment actually make any progress or not ..."
+        },
+        {
+          "speaker": "GREG",
+          "text": "No. We may need some advice on that. The main thing's to make sure we have the right size sample, not too big or too small."
+        },
+        {
+          "speaker": "LISA",
+          "text": "That shouldn't be difficult. Right, what do we need to do next?"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Section 4",
+      "transcript": [
+        {
+          "speaker": "",
+          "text": "I've been looking at ocean biodiversity, that's the diversity of species that live in the world's oceans. About 20 years ago biologists developed the idea of what they called 'biodiversity hotspots'. These are the areas which have the greatest mixture of species, so one example is Madagascar. <q id=\"31\">These hotspots are significant because they allow us to locate key areas for focusing efforts at conservation.</q> Biologists can identify hotspots on land, fairly easily, but until recently, very little was known about species distribution and diversity in the oceans, and no one even knew if hotspots existed there."
+        },
+        {
+          "speaker": "",
+          "text": "Then a Canadian biologist called Boris Worm did some research in 2005 on data on ocean species that he got from the fishing industry. Worm located five hotspots for large ocean predators like sharks, and looked at what they had in common. <q id=\"32\">The main thing he'd expected to find was that they had very high concentrations of food, but to his surprise that was only true for four of the hotspots – the remaining hotspot was quite badly off in that regard.</q> But what he did find was that in all cases, the <q id=\"33\">water at the surface of the ocean had relatively high temperatures, even when it was cool at greater depths,</q> so this seemed to be a factor in supporting a diverse range of these large predators. However, this wasn't enough on its own, because he also found that the <q id=\"34\">water needed to have enough oxygen in it –</q> so these two factors seemed necessary to support the high metabolic rate of these large fish."
+        },
+        {
+          "speaker": "",
+          "text": "A couple of years later, in 2007, a researcher called Lisa Ballance, who was working in California, also started looking for ocean hotspots, but not for fish – <q id=\"35\">what she was interested in was marine mammals, things like seals.</q> And she found three places in the oceans which were hotspots, and what these had in common was that these hotspots were all located at boundaries between ocean currents, and this seems to be the sort of place that has lots of the plankton that some of these species feed on."
+        },
+        {
+          "speaker": "",
+          "text": "So now people who want to protect the species that are endangered need to get as much information as possible. For example, there's an international project called the Census of Marine Life. They've been surveying oceans all over the world, including the Arctic. One thing they found there which stunned other researchers was that <q id=\"36\">there were large numbers of species which live below the ice –</q> sometimes under a layer up to 20 metres thick. Some of these species had never been seen before. They've even found species of octopus living in these conditions. And other scientists working on the same project, but researching very different habitats on the ocean floor, have found large numbers of species congregating around volcanoes, attracted to them by the warmth and nutrients there."
+        },
+        {
+          "speaker": "",
+          "text": "However, biologists still don't know how serious the threat to their survival is for each individual species. So a body called the Global Marine Species Assessment is now creating a list of endangered species on land, so they consider things like the size of the population – how many members of one species there are in a particular place – and then look at their distribution in geographical terms, although this is quite difficult when you're looking at fish, because they're so mobile, and then <q id=\"37\">thirdly they calculate the rate at which the decline of the species is happening.</q>"
+        },
+        {
+          "speaker": "",
+          "text": "So far only 1,500 species have been assessed, but they want to increase this figure to 20,000. <q id=\"38\">For each one they assess, they use the data they collect on that species to produce a map showing its distribution.</q> Ultimately they will be able to use these to figure out not only where most species are located but also where they are most threatened."
+        },
+        {
+          "speaker": "",
+          "text": "So finally, what can be done to retain the diversity of species in the world's oceans? Firstly, we need to set up more reserves in our oceans, places where marine species are protected. We have some, but not enough. In addition, to preserve species such as leatherback turtles, which live out in the high seas but have their nesting sites on the American coast, <q id=\"39\">we need to create corridors for migration,</q> so they can get from one area to another safely. As well as this, action needs to be taken to lower the levels of fishing quotas to prevent overfishing of endangered species. And finally, there's the problem of 'by-catch'. This refers to the catching of unwanted fish by fishing boats – they're returned to the sea, but they're often dead or dying. If these commercial fishing boats used equipment which was more selective, <q id=\"40\">so that only the fish wanted for consumption were caught,</q> this problem could be overcome."
+        },
+        {
+          "speaker": "",
+          "text": "OK. So does anyone have any ..."
+        }
+      ]
+    }
+  ]
+}

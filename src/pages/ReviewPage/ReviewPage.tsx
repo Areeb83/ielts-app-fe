@@ -10,6 +10,8 @@ import ReadingPassage from "../../components/TestDetailComponents/TestDetailCont
 import SplitPane from "../../components/ui/SplitPane/SplitPane";
 import { getTestData } from "../../data/testDataMaps";
 import { getAnswerKey } from "../../data/answerKeys";
+import { getTranscript } from "../../data/transcriptMaps";
+import TranscriptPane from "../../components/TestDetailComponents/TranscriptPane/TranscriptPane";
 import { scoreTest } from "../../utils/scoring";
 import type { AnswerMap, MatchingHeadingData } from "../../types/question";
 import type { ScoreResult, QuestionResult } from "../../utils/scoring";
@@ -281,12 +283,31 @@ const ReviewPage: React.FC = () => {
         </div>
     );
 
-    // ─── Left pane: Reading passage ─────────────────────────────────────
+    // Load transcript for listening tests
+    const transcriptData = isListening && testId ? getTranscript(testId) : null;
+
+    // ─── Left pane: Reading passage or Listening transcript ──────────────
     const renderPassagePane = () => {
+        // Listening: show transcript if available
+        if (isListening) {
+            const transcriptSection = transcriptData?.sections.find(
+                (s) => s.sectionNumber === currentSection?.sectionNumber
+            );
+            if (transcriptSection) {
+                return <TranscriptPane section={transcriptSection} />;
+            }
+            return (
+                <div className="flex items-center justify-center h-full text-gray-400 p-10">
+                    <p>Transcript not available yet</p>
+                </div>
+            );
+        }
+
+        // Reading: show passage
         if (!currentSection?.passage) {
             return (
                 <div className="flex items-center justify-center h-full text-gray-400 p-10">
-                    <p>{isListening ? "Transcript not available yet" : "No passage available"}</p>
+                    <p>No passage available</p>
                 </div>
             );
         }

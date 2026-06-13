@@ -1,0 +1,64 @@
+.transcript-pane {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #222;
+}
+
+.transcript-pane__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.transcript-pane__lines {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transcript-pane__line {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.transcript-pane__speaker {
+    font-weight: 700;
+    color: #333;
+    min-width: 90px;
+    flex-shrink: 0;
+    font-size: 14px;
+    padding-top: 1px;
+}
+
+.transcript-pane__text {
+    flex: 1;
+    color: #222;
+}
+
+/* No speaker — text takes full width */
+.transcript-pane__line--full {
+    display: block;
+}
+
+/* Answer highlight — same yellow as the text highlight feature */
+.transcript__answer {
+    background-color: #ffe066;
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+
+.transcript__answer-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 2px;
+}
+
+.transcript__answer-text {
+    font-weight: 400;
+    color: #000;
+}
