@@ -1,0 +1,103 @@
+{
+  "testId": "book-13-test-1",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Section 1",
+      "transcript": [
+        { "speaker": "OFFICIAL", "text": "Hello, Tourist Information Centre, Mike speaking, how can I help you?" },
+        { "speaker": "WOMAN", "text": "Oh, hi. I wanted to find out about cookery classes. I believe there are some one-day classes for tourists?" },
+        { "speaker": "OFFICIAL", "text": "Well, they're open to everyone, but tourists are always welcome. OK, let me give you some details of what's available. There several classes. One very popular one is at the Food Studio." },
+        { "speaker": "WOMAN", "text": "OK." },
+        { "speaker": "OFFICIAL", "text": "They focus on seasonal products, and as well as teaching you how to cook them, they also show you how to <q id=\"1\">choose</q> them." },
+        { "speaker": "WOMAN", "text": "Right, that sounds good. How big are the classes?" },
+        { "speaker": "OFFICIAL", "text": "I'm not sure exactly, but they'll be quite small." },
+        { "speaker": "WOMAN", "text": "And could I get a <q id=\"2\">private</q> lesson there?" },
+        { "speaker": "OFFICIAL", "text": "I think so ... let me check, yes, they do offer those. Though in fact most of the people who attend the classes find it's a nice way of getting to know one another." },
+        { "speaker": "WOMAN", "text": "I suppose it must be, yes." },
+        { "speaker": "OFFICIAL", "text": "And this company has a special deal for clients where they offer a discount of <q id=\"3\">20 percent</q> if you return for a further class." },
+        { "speaker": "WOMAN", "text": "OK. But you said there were several classes?" },
+        { "speaker": "OFFICIAL", "text": "That's right. Another one you might be interested in is Bond's Cookery School. They're quite new, they just opened six months ago, but I've heard good things about them. They concentrate on teaching you to prepare <q id=\"4\">healthy</q> food, and they have quite a lot of specialist staff." },
+        { "speaker": "WOMAN", "text": "So is that food for people on a diet and things like that? I don't know if I'd be interested in that." },
+        { "speaker": "OFFICIAL", "text": "Well, I don't think they particularly focus on low calorie diets or weight loss. It's more to do with recipes that look at specific needs, like including ingredients that will help build up your <q id=\"5\">bones</q> and make them stronger, that sort of thing." },
+        { "speaker": "WOMAN", "text": "I see. Well, I might be interested, I'm not sure. Do they have a website I could check?" },
+        { "speaker": "OFFICIAL", "text": "Yes, just key in the name of the school – it'll come up. And if you want to know more about them, every Thursday evening they have a <q id=\"6\">lecture</q> at the school. It's free and you don't need to book or anything, just turn up at 7.30. And that might give you an idea of whether you want to go to an actual class." },
+        { "speaker": "OFFICIAL", "text": "OK, there's one more place you might be interested in. That's got a rather strange name, it's called The <q id=\"7\">Arretsa</q> Centre – that's spelled A-R-R-E-T-S-A." },
+        { "speaker": "WOMAN", "text": "OK." },
+        { "speaker": "OFFICIAL", "text": "They've got a very good reputation. They do a bit of meat and fish cookery but they mostly specialise in <q id=\"8\">vegetarian</q> dishes." },
+        { "speaker": "WOMAN", "text": "Right. That's certainly an area I'd like to learn more about. I've got lots of friends who don't eat meat. In fact, I think I might have seen that school today. Is it just by the <q id=\"9\">market</q>?" },
+        { "speaker": "OFFICIAL", "text": "That's right. So they don't have any problem getting their ingredients. They're right next door. And they also offer a special two-hour course in how to use a <q id=\"10\">knife</q>. They cover all the different skills – buying them, sharpening, chopping techniques. It gets booked up quickly though so you'd need to check it was available." },
+        { "speaker": "WOMAN", "text": "Right, well thank you very much. I'll go and ..." }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Section 2",
+      "transcript": [
+        { "speaker": "", "text": "Good evening everyone. My name's Phil Sutton, and I'm chairman of the Highways Committee. We've called this meeting to inform members of the public about the new regulations for traffic and parking we're proposing for Granford. I'll start by summarising these changes before we open the meeting to questions." },
+        { "speaker": "", "text": "So, why do we need to make these changes to traffic systems in Granford? Well, we're very aware that traffic is becoming an increasing problem. It's been especially noticeable with the increase in heavy traffic while they've been building the new hospital. <q id=\"11\">But it's the overall rise in the volume of traffic of all kinds that's concerning us.</q> To date there's not been any increase in traffic accidents, but that's not something we want to see happen, obviously." },
+        { "speaker": "", "text": "We recently carried out a survey of local residents, and their responses were interesting. <q id=\"12\">People were very concerned about the lack of visibility on some roads due to cars parked along the sides of the roads.</q> We'd expected complaints about the congestion near the school when parents are dropping off their children or picking them up, but this wasn't top of the list, and nor were noise and fumes from trucks and lorries, though they were mentioned by some people." },
+        { "speaker": "", "text": "We think these new traffic regulations would make a lot of difference. But we still have a long way to go. We've managed to keep our proposals within budget, just, so they can be covered by the Council. <q id=\"13\">But, of course, it's no good introducing new regulations if we don't have a way of making sure that everyone obeys them,</q> and that's an area we're still working on with the help of representatives from the police force." },
+        { "speaker": "", "text": "OK, so this slide shows a map of the central area of Granford, with the High Street in the middle and School Road on the right. Now, <q id=\"14\">we already have a set of traffic lights in the High Street at the junction with Station Road, but we're planning to have another set at the other end, at the School Road junction,</q> to regulate the flow of traffic along the High Street." },
+        { "speaker": "", "text": "We've decided we definitely need a pedestrian crossing. We considered putting this on School Road, just outside the school, but in the end we decided that could lead to a lot of traffic congestion so <q id=\"15\">we decided to locate it on the High Street, crossing the road in front of the supermarket.</q> That's a very busy area, so it should help things there." },
+        { "speaker": "", "text": "<q id=\"16\">At present, parking isn't allowed on the High Street outside the library, but we're going to change that, and allow parking there,</q> but not at the other end of the High Street near School Road." },
+        { "speaker": "", "text": "<q id=\"17\">There'll be a new 'No Parking' sign on School Road, just by the entrance to the school, forbidding parking for 25 metres.</q> This should improve visibility for drivers and pedestrians, especially on the bend just to the north of the school." },
+        { "speaker": "", "text": "As far as disabled drivers are concerned, at present they have parking outside the supermarket, but lorries also use those spaces, so <q id=\"18\">we've got two new disabled parking spaces on the side road up towards the bank.</q> It's not ideal, but probably better than the present arrangement." },
+        { "speaker": "", "text": "<q id=\"19\">We also plan to widen the pavement on School Road. We think we can manage to get an extra half-metre on the bend just before you get to the school, on the same side of the road.</q>" },
+        { "speaker": "", "text": "Finally, <q id=\"20\">we've introduced new restrictions on loading and unloading for the supermarket, so lorries will only be allowed to stop there before 8 am. That's the supermarket on School Road</q> – we kept to the existing arrangements with the High Street supermarket." },
+        { "speaker": "", "text": "OK. So that's about it. Now, would anyone ..." }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Section 3",
+      "transcript": [
+        { "speaker": "EMMA", "text": "We've got to choose a topic for our experiment, haven't we, Jack? Were you thinking of something to do with seeds?" },
+        { "speaker": "JACK", "text": "That's right. I thought we could look at seed germination – how a seed begins to grow." },
+        { "speaker": "EMMA", "text": "OK. Any particular reason? I know you're hoping to work in plant science eventually ..." },
+        { "speaker": "JACK", "text": "Yeah, but practically everything we do is going to feed into that. No, <q id=\"21\">there's an optional module on seed structure and function in the third year that I might do, so I thought it might be useful for that.</q> If I choose that option, I don't have to do a dissertation module." },
+        { "speaker": "EMMA", "text": "Good idea." },
+        { "speaker": "JACK", "text": "Well, I thought for this experiment we could look at the relationship between seed size and the way the seeds are planted. So, we could plant different sized seeds in different ways, and see which grow best." },
+        { "speaker": "EMMA", "text": "OK. We'd need to allow time for the seeds to come up." },
+        { "speaker": "JACK", "text": "<q id=\"22\">That should be fine if we start now. A lot of the other possible experiments need quite a bit longer.</q>" },
+        { "speaker": "EMMA", "text": "<q id=\"22\">So that'd make it a good one to choose.</q> And I don't suppose it'd need much equipment; we're not doing chemical analysis or anything. Though that's not really an issue, we've got plenty of equipment in the laboratory." },
+        { "speaker": "JACK", "text": "Yeah. We need to have a word with the tutor if we're going to go ahead with it though. I'm sure our aim's OK. It's not very ambitious but the assignment's only ten percent of our final mark, isn't it? <q id=\"23\">But we need to be sure we're the only ones doing it.</q>" },
+        { "speaker": "EMMA", "text": "Yeah, it's only five percent actually, but it'd be a bit boring if everyone was doing it." },
+        { "speaker": "JACK", "text": "Did you read that book on seed germination on our reading list?" },
+        { "speaker": "EMMA", "text": "The one by Graves? I looked through it for my last experiment, though it wasn't all that relevant there. It would be for this experiment, though. <q id=\"24\">I found it quite hard to follow – lots about the theory, which I hadn't expected.</q>" },
+        { "speaker": "JACK", "text": "Yes, I'd been hoping for something more practical. It does include references to the recent findings on genetically-modified seeds, though." },
+        { "speaker": "EMMA", "text": "Yes, that was interesting." },
+        { "speaker": "JACK", "text": "I read an article about seed germination by Lee Hall." },
+        { "speaker": "EMMA", "text": "About seeds that lie in the ground for ages and only germinate after a fire?" },
+        { "speaker": "JACK", "text": "That's the one. I knew a bit about it already, but not about this research. <q id=\"25\">His analysis of figures comparing the times of the fires and the proportion of seeds that germinated was done in a lot of detail – very impressive.</q>" },
+        { "speaker": "EMMA", "text": "Was that the article with the illustrations of early stages of plant development? They were very clear." },
+        { "speaker": "JACK", "text": "I think those diagrams were in another article." },
+        { "speaker": "EMMA", "text": "Anyway, shall we have a look at the procedure for our experiment? We'll need to get going with it quite soon." },
+        { "speaker": "JACK", "text": "Right. So the first thing we have to do is find our seeds. I think vegetable seeds would be best. And obviously they mustn't all be the same size. <q id=\"26\">So, how many sorts do we need? About four different ones?</q>" },
+        { "speaker": "EMMA", "text": "I think that would be enough. There'll be quite a large number of seeds for each one." },
+        { "speaker": "JACK", "text": "<q id=\"27\">Then, for each seed we need to find out how much it weighs,</q> and also measure its dimensions, and we need to keep a careful record of all that." },
+        { "speaker": "EMMA", "text": "That'll be quite time-consuming. <q id=\"28\">And we also need to decide how deep we're going to plant the seeds</q> – right on the surface, a few millimetres down, or several centimetres." },
+        { "speaker": "JACK", "text": "OK. So then we get planting. <q id=\"29\">Do you think we can plant several seeds together in the same plant pot?</q>" },
+        { "speaker": "EMMA", "text": "<q id=\"29\">No, I think we need a different one for each seed.</q>" },
+        { "speaker": "JACK", "text": "Right. And we'll need to label them – we can use different coloured labels. Then we wait for the seeds to germinate – I reckon that'll be about three weeks, depending on what the weather's like. <q id=\"30\">Then we see if our plants have come up, and write down how tall they've grown.</q>" },
+        { "speaker": "EMMA", "text": "Then all we have to do is look at our numbers, and see if there's any relation between them." },
+        { "speaker": "JACK", "text": "That's right. So ..." }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Section 4",
+      "transcript": [
+        { "speaker": "", "text": "Hi. Today we're going to be looking at animals in urban environments and I'm going to be telling you about some research on how they're affected by these environments." },
+        { "speaker": "", "text": "Now, in evolutionary terms, urban environments represent huge upheavals, the sorts of massive changes that usually happen over millions of years. And we used to think that only a few species could adapt to this new environment. <q id=\"31\">One species which is well known as being highly adaptable is the crow, and there've been various studies about how they manage to learn new skills.</q> Another successful species is <q id=\"32\">the pigeon, because they're able to perch on ledges on the walls of city buildings, just like they once perched on cliffs by the sea.</q>" },
+        { "speaker": "", "text": "But in fact, we're now finding that these early immigrants were just the start of a more general movement of animals into cities, and of adaptation by these animals to city life. And <q id=\"33\">one thing that researchers are finding especially interesting is the speed with which they're doing this – we're not talking about gradual evolution here – these animals are changing fast.</q>" },
+        { "speaker": "", "text": "Let me tell you about some of the studies that have been carried out in this area. So, in the University of Minnesota, a biologist called Emilie Snell-Rood and her colleagues looked at specimens of urbanised small mammals such as mice and gophers that had been collected in Minnesota, and that are now kept in museums there. And she looked at specimens that had been collected over the last hundred years, which is a very short time in evolutionary terms. And <q id=\"34\">she found that during that time, these small mammals had experienced a jump in brain size when compared to rural mammals.</q> Now, we can't be sure this means they're more intelligent, but since the sizes of other parts of the body didn't change, it does suggest that something cognitive was going on. And <q id=\"35\">Snell-Rood thinks that this change might reflect the cognitive demands of adjusting to city life – having to look in different places to find food, for example, and coping with a whole new set of dangers.</q>" },
+        { "speaker": "", "text": "Then over in Germany at the Max Planck Institute, <q id=\"36\">there's another biologist called Catarina Miranda who's done some experiments with blackbirds living in urban and rural areas. And she's been looking not at their anatomy but at their behaviour.</q> So as you might expect, she's found that the urban blackbirds tend to be quite bold – they're prepared to face up to a lot of threats that would frighten away their country counterparts. But <q id=\"37\">there's one type of situation that does seem to frighten the urban blackbirds, and that's anything new – anything they haven't experienced before.</q> And if you think about it, that's quite sensible for a bird living in the city." },
+        { "speaker": "", "text": "Jonathan Atwell, in Indiana University, is looking at how a range of animals respond to urban environments. <q id=\"38\">He's found that when they're under stress, their endocrine systems react by reducing the amount of hormones such as corticosterone into their blood.</q> It's a sensible-seeming adaptation. A rat that gets scared every time a subway train rolls past won't be very successful." },
+        { "speaker": "", "text": "There's just one more study I'd like to mention which is by Sarah Partan and her team, and <q id=\"39\">they've been looking at how squirrels communicate in an urban environment, and they've found that a routine part of their communication is carried out by waving their tails.</q> You do also see this in the country, but it's much more prevalent in cities, possibly because it's effective in a noisy environment." },
+        { "speaker": "", "text": "So what are the long-term implications of this? <q id=\"40\">One possibility is that we may see completely new species developing in cities. But on the other hand, it's possible that not all of these adaptations will be permanent.</q> Once the animal's got accustomed to its new environment, it may no longer need the features it's developed." },
+        { "speaker": "", "text": "So, now we've had a look ..." }
+      ]
+    }
+  ]
+}

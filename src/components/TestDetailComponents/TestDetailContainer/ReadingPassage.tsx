@@ -58,7 +58,8 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     // Offset all indices by sectionIndex * 10000 so highlights don't collide across sections
     const base = sectionIndex * 10000;
     const titleIndex = base + data.sections.length;
-    const headingIndex = (idx: number) => base + data.sections.length + 1 + idx;
+    const subtitleIndex = titleIndex + 1;
+    const headingIndex = (idx: number) => base + data.sections.length + 2 + idx;
 
     return (
         <div className="reading-passage-container">
@@ -72,10 +73,34 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                     pendingHighlightsRef={pendingHighlightsRef}
                 />
             </h2>
+            {data.subtitle && (
+                <p className="passage-subtitle">
+                    <Highlightable
+                        text={data.subtitle}
+                        paragraphIndex={subtitleIndex}
+                        highlights={highlights.filter((h) => h.paragraphIndex === subtitleIndex)}
+                        onAdd={addHighlight}
+                        onRemove={removeHighlightGroup}
+                        pendingHighlightsRef={pendingHighlightsRef}
+                    />
+                </p>
+            )}
             <div className="passage-body">
                 {data.sections.map((section, idx) => (
                     <div key={idx} className="passage-section">
                         <div className="passage-section__header">
+                            {section.heading && (
+                                <p className="passage-heading">
+                                    <Highlightable
+                                        text={section.heading}
+                                        paragraphIndex={headingIndex(idx)}
+                                        highlights={highlights.filter((h) => h.paragraphIndex === headingIndex(idx))}
+                                        onAdd={addHighlight}
+                                        onRemove={removeHighlightGroup}
+                                        pendingHighlightsRef={pendingHighlightsRef}
+                                    />
+                                </p>
+                            )}
                             {section.questionId && (
                                 <div className="passage-section__dropzone-wrapper">
                                     <DropZone
@@ -109,18 +134,6 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
                                 </div>
                             )}
                         </div>
-                        {section.heading && (
-                            <p className="passage-heading">
-                                <Highlightable
-                                    text={section.heading}
-                                    paragraphIndex={headingIndex(idx)}
-                                    highlights={highlights.filter((h) => h.paragraphIndex === headingIndex(idx))}
-                                    onAdd={addHighlight}
-                                    onRemove={removeHighlightGroup}
-                                    pendingHighlightsRef={pendingHighlightsRef}
-                                />
-                            </p>
-                        )}
                         <p className="passage-paragraph">
                             <Highlightable
                                 text={section.content}

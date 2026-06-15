@@ -1,0 +1,113 @@
+{
+  "testId": "book-14-test-3",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Section 1",
+      "transcript": [
+        { "speaker": "ANGELA", "text": "Hello, Flanders conference hotel." },
+        { "speaker": "MAN", "text": "Oh, hi. I wanted to ask about conference facilities at the hotel. Have I come through to the right person?" },
+        { "speaker": "ANGELA", "text": "You have. I'm the customer services manager. My name's Angela. So how can I help you?" },
+        { "speaker": "MAN", "text": "Well, I'm calling from Barrett and Stansons, we're a medical company based in Perth." },
+        { "speaker": "ANGELA", "text": "Oh yes." },
+        { "speaker": "MAN", "text": "And we're organising a conference for our clients to be held in Sydney. It'll be held over two days and we're expecting about fifty or sixty people." },
+        { "speaker": "ANGELA", "text": "When were you thinking of having it?" },
+        { "speaker": "MAN", "text": "Some time early next year, like the end of January? It'd have to be a weekend." },
+        { "speaker": "ANGELA", "text": "Let me see … our conference facilities are already booked for the weekend beginning January 28th. We could do the first weekend in February?" },
+        { "speaker": "MAN", "text": "How about January 21st?" },
+        { "speaker": "ANGELA", "text": "I'm afraid that's booked too." },
+        { "speaker": "MAN", "text": "Well, let's go for the February date then." },
+        { "speaker": "ANGELA", "text": "So that's the weekend beginning the 4th." },
+        { "speaker": "MAN", "text": "OK. Now can you tell me a bit about what conference facilities you have?" },
+        { "speaker": "ANGELA", "text": "Sure. So for talks and presentations we have the Tesla room." },
+        { "speaker": "MAN", "text": "Sorry?" },
+        { "speaker": "ANGELA", "text": "<q id=\"1\">Tesla</q> – that's spelled T-E-S-L-A. It holds up to a hundred people, and it's fully equipped with a projector and so on." },
+        { "speaker": "MAN", "text": "How about a <q id=\"2\">microphone?</q>" },
+        { "speaker": "ANGELA", "text": "Yes, that'll be all set up ready for you, and there'll be one that members of the audience can use too, for questions, if necessary." },
+        { "speaker": "MAN", "text": "Fine. And we'll also need some sort of open area where people can sit and have a cup of coffee, and we'd like to have an <q id=\"3\">exhibition</q> of our products and services there as well, so that'll need to be quite a big space." },
+        { "speaker": "ANGELA", "text": "That's fine, there's a central atrium with all those facilities, and you can come before the conference starts if you want to set everything up." },
+        { "speaker": "MAN", "text": "Great. And I presume there's <q id=\"4\">wifi?</q>" },
+        { "speaker": "ANGELA", "text": "Oh yes, that's free and available throughout the hotel." },
+        { "speaker": "MAN", "text": "OK." },
+        { "speaker": "ANGELA", "text": "Would you also like us to provide a buffet lunch? We can do a two-course meal with a number of different options." },
+        { "speaker": "MAN", "text": "What sort of price are we looking at for that?" },
+        { "speaker": "ANGELA", "text": "Well, I can send you a copy of the standard menu. That's $<q id=\"5\">45</q> per person. Or you can have the special for $25 more." },
+        { "speaker": "MAN", "text": "I think the standard should be OK, but yes, send me the menu." },
+        { "speaker": "MAN", "text": "Now we're also going to need accommodation on the Saturday night for some of the participants … I'm not sure how many, but probably about 25. So what do you charge for a room?" },
+        { "speaker": "ANGELA", "text": "Well, for conference attendees we have a 25% reduction, so we can offer you rooms at $<q id=\"6\">135.</q> Normally a standard room's $180." },
+        { "speaker": "MAN", "text": "And does that include breakfast?" },
+        { "speaker": "ANGELA", "text": "Sure. And of course, guests can also make use of all the other facilities at the hotel. So we've got a spa where you can get massages and facials and so on, and there's a <q id=\"7\">pool</q> up on the roof for the use of guests." },
+        { "speaker": "MAN", "text": "Great. Now what about transport links? The hotel's downtown, isn't it?" },
+        { "speaker": "ANGELA", "text": "Yes, it's about 12 kilometres from the <q id=\"8\">airport,</q> but there's a complimentary shuttle bus for guests. And it's only about ten minutes' walk from the central railway station." },
+        { "speaker": "MAN", "text": "OK. Now, I don't know Sydney very well, can you just give me an idea of the location of the hotel?" },
+        { "speaker": "ANGELA", "text": "Well, it's downtown on Wilby Street, that's quite a small street, and it's not very far from the <q id=\"9\">sea.</q> And of course if the conference attendees want to go out on the Saturday evening there's a huge choice of places to eat. Then if they want to make a night of it, they can go on to one of the <q id=\"10\">clubs</q> in the area – there are a great many to choose from." },
+        { "speaker": "MAN", "text": "OK. So if we go ahead with this, can you give me some information about how much …" }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Section 2",
+      "transcript": [
+        { "speaker": "", "text": "Good morning. My name's Lucy Crittenden, and I'm the Director of Operations for an organisation that arranges volunteering in this part of the country. I'm hoping I can persuade one or two of you to become volunteers yourselves. Let me start by briefly explaining what we mean by volunteering." },
+        { "speaker": "", "text": "Volunteers are teenagers and adults who choose to spend some time, unpaid, helping other people in some way. Most volunteers devote two or three hours to this every week, while a few do much more. The people they help may have physical or behavioural difficulties, for example." },
+        { "speaker": "", "text": "Volunteers can do all sorts of things, depending on their own abilities and interests. If they're supporting a family that's struggling, for example, they may be able to give them tips on cooking, or recommend how to plan their budget or how to shop sensibly on their income. They might even do <q id=\"11\">some painting or wallpapering,</q> perhaps alongside any members of the family who are able to do it. Or even do <q id=\"12\">some babysitting</q> so that parents can go out for a while." },
+        { "speaker": "", "text": "The benefit from volunteering isn't only for the people being helped. Volunteers also gain from it: they're using their skills to cope with somebody's mental or physical ill health, and <q id=\"13\">volunteering may be a valuable element of their CV when they're applying for jobs:</q> employers usually look favourably on someone who's given up time to help others. Significantly, most volunteers <q id=\"14\">feel that what they're doing gives them a purpose in their lives.</q> And in my opinion, they're lucky in that respect, as many people don't have that feeling." },
+        { "speaker": "", "text": "Now I'd like to tell you what some of our volunteers have said about what they do, to give you an idea of the range of ways in which they can help people." },
+        { "speaker": "", "text": "Habib supports an elderly lady who's beginning to show signs of dementia. Once a week they, along with other elderly people, go to the local community centre, where a group of people come in and sing. The songs <q id=\"15\">take the listeners back to their youth,</q> and for a little while they can forget the difficulties that they face now." },
+        { "speaker": "", "text": "Our volunteer Consuela is an amazing woman. <q id=\"16\">She has difficulty walking herself, but she doesn't let that stop her.</q> She helps a couple of people with similar difficulties, who had almost stopped walking altogether. <q id=\"16\">By using herself as an example, Consuela encourages them to walk more and more.</q>" },
+        { "speaker": "", "text": "Minh visits a young man who lives alone and can't leave his home on his own, so he hardly ever saw anyone. But together <q id=\"17\">they go out to the cinema, or to see friends</q> the young man hadn't been able to visit for a long time." },
+        { "speaker": "", "text": "Tanya visits an elderly woman once a week. When the woman found out that Tanya is a professional dressmaker, she got interested. Tanya showed her some soft toys she'd made, and <q id=\"18\">the woman decided to try it herself.</q> And now she really enjoys it, and spends hours making toys. They're not perhaps up to Tanya's standard yet, but she gains a lot of pleasure from doing it." },
+        { "speaker": "", "text": "Alexei is a volunteer with a family that faces a number of difficulties. By calmly talking over possible solutions with family members, he's helping them to realise that they aren't helpless, and that <q id=\"19\">they can do something themselves to improve their situation.</q> This has been great for their self-esteem." },
+        { "speaker": "", "text": "And the last volunteer I'll mention, though there are plenty more, is Juba. She volunteers with a teenage girl with learning difficulties, who wasn't very good at talking to other people. Juba's worked very patiently with her, <q id=\"20\">and now the girl is far better at expressing herself, and at understanding other people.</q>" },
+        { "speaker": "", "text": "OK, I hope that's given you an idea of what volunteering is all about. Now I'd like ..." }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Section 3",
+      "transcript": [
+        { "speaker": "LIZZIE", "text": "So how are you getting on with your teaching practice at the High School, Joe?" },
+        { "speaker": "JOE", "text": "Well I've been put in charge of the school marching band, and it's quite a responsibility. I'd like to talk it over with you." },
+        { "speaker": "LIZZIE", "text": "Go ahead. You'd better start by giving me a bit of background." },
+        { "speaker": "JOE", "text": "OK. Well the band has students in it from all years, so they're aged 11 to 18, and there are about <q id=\"21\">50</q> of them altogether. It's quite a popular activity within the school. I've never worked with a band of more than 20 before, and this is very different." },
+        { "speaker": "LIZZIE", "text": "I can imagine." },
+        { "speaker": "JOE", "text": "They aren't really good enough to enter national band competitions, but they're in a <q id=\"22\">regional</q> one later in the term. Even if they don't win, and I don't expect them to, hopefully it'll be an incentive for them to try and improve." },
+        { "speaker": "LIZZIE", "text": "Yes, hopefully." },
+        { "speaker": "JOE", "text": "Well, now the town council's organising a <q id=\"23\">carnival</q> in the summer, and the band has been asked to perform. If you ask me, they aren't really up to it yet, and I need to get them functioning better as a band, and in a very short time." },
+        { "speaker": "LIZZIE", "text": "Have you been doing anything with them? Apart from practising the music, I mean." },
+        { "speaker": "JOE", "text": "I played a recording I came across, of a <q id=\"24\">drummer</q> talking about how playing in a band had changed his life. I think it was an after-dinner speech. I thought it was pretty inspiring, because being in the band had stopped him from getting involved in crime. The students seemed to find it interesting, too." },
+        { "speaker": "LIZZIE", "text": "That's good." },
+        { "speaker": "JOE", "text": "I'm planning to show them that old <q id=\"25\">film</q> from the 1940s 'Strike Up the Band', and talk about it with the students. What do you think?" },
+        { "speaker": "LIZZIE", "text": "Good idea. As it's about a school band, it might make the students realise how much they can achieve if they work together." },
+        { "speaker": "JOE", "text": "That's what I've got in mind. I'm hoping I can take some of the band to a <q id=\"26\">parade</q> that's going to take place next month. A couple of marching bands will be performing, and the atmosphere should be quite exciting. It depends on whether I can persuade the school to hire a coach or two to take us there." },
+        { "speaker": "LIZZIE", "text": "Mmm. They sound like good ideas to me." },
+        { "speaker": "JOE", "text": "Thanks." },
+        { "speaker": "JOE", "text": "Can I tell you about a few people in the band who I'm finding it quite difficult to cope with? I'm sure you'll have some ideas about what I can do." },
+        { "speaker": "LIZZIE", "text": "Go ahead." },
+        { "speaker": "JOE", "text": "There's a flautist who says she loves playing in the band. We rehearse twice a week after school, but <q id=\"27\">she's hardly ever there.</q> Then she looks for me the next day and gives me a very plausible reason – she says she had to help her mother, or she's been ill, but to be honest, I don't believe her." },
+        { "speaker": "LIZZIE", "text": "Oh dear! Any more students with difficulties?" },
+        { "speaker": "JOE", "text": "Plenty! There's a trumpeter who thinks she's the best musician in the band, though she certainly isn't. <q id=\"28\">She's always saying what she thinks other people should do,</q> which makes my job pretty difficult." },
+        { "speaker": "LIZZIE", "text": "She sounds a bit of a nightmare!" },
+        { "speaker": "JOE", "text": "You can say that again. One of the trombonists has got an impressive sense of rhythm, and could be an excellent musician – except that <q id=\"29\">he has breathing difficulties, and he doesn't really have enough breath for the trombone.</q> He'd be much better off playing percussion, for instance, but he refuses to give up. So he ends up only playing half the notes." },
+        { "speaker": "LIZZIE", "text": "I suppose you have to admire his determination." },
+        { "speaker": "JOE", "text": "Maybe. One of the percussionists isn't too bad, but <q id=\"30\">he never seems to interact with other people, and he always rushes off as soon as the rehearsal ends.</q> I don't know if there are family reasons, or what. But it isn't good in a band, where people really need to feel they're part of a group." },
+        { "speaker": "LIZZIE", "text": "Hmm." },
+        { "speaker": "JOE", "text": "There are others too, but at least that gives you an idea of what I'm up against. Do you have any thoughts about what I can do, Lizzie?" }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Section 4",
+      "transcript": [
+        { "speaker": "", "text": "As you all know, the university is planning an arts festival for later this year, and here in the music department we've planned three concerts. These will be public performances, and the programme has just been finalised. The theme of the festival is links between the UK and Australia, and this is reflected in the music: each concert will feature both British and Australian composers. I'll tell briefly about the Australian music, as you probably won't be familiar with that." },
+        { "speaker": "", "text": "The first concert will include music by Liza Lim, who was born in Perth, Western Australia, in 1966. As a child, Lim originally learned to play the piano – like so many children – and also the <q id=\"31\">violin,</q> but when she was 11 her teachers encouraged her to start composing. She found this was her real strength, and she studied and later taught composition, both in Australia and in other countries. As a composer, she has received commissions from numerous orchestras, other performers and festivals in several countries." },
+        { "speaker": "", "text": "Liza Lim's compositions are vibrant and full of <q id=\"32\">energy,</q> and she often explores Asian and Australian Aboriginal cultural sources, including the native instrument, the didgeridoo: this is featured in a work called The Compass. Her music is very expressive, so although it is <q id=\"33\">complex,</q> it has the power of connecting with audiences and performers alike." },
+        { "speaker": "", "text": "In the festival we're going to give a semi-staged performance of The Oresteia. This is an <q id=\"34\">opera</q> in seven parts, based on the trilogy of ancient Greek tragedies by Aeschylus. Lim composed this when she was in her mid-20s, and she also wrote the text, along with Barrie Kosky. It's performed by six singers, a dancer, and an orchestra that, as well as standard orchestral instruments, includes electric guitar, and a traditional Turkish stringed instrument. Lim wrote that because the stories in the tragedies are not easy to tell, the sounds she creates are also <q id=\"35\">disturbing,</q> and they include breathing, sobbing, laughing and whistling. The work lasts around 75 minutes, and the rest of the concert will consist of orchestral works by the British composers Ralph Vaughan Williams and Frederick Delius." },
+        { "speaker": "", "text": "Moving on now to our second concert, this will begin with instrumental music by British composers – Benjamin Britten and Judith Weir. After the interval we'll go to Australia for a piece by Ross Edwards: The Tower of Remoteness. According to Edwards, the inspiration for this piece came from nature, when he was sitting alone in the dry bed of a creek, overshadowed by the leaves of palm trees, listening to the birds and insects. The Tower of Remoteness is scored for piano and <q id=\"36\">clarinet.</q> Edwards says he realised years after writing the piece that he had subconsciously modelled its opening phrase on a bird call." },
+        { "speaker": "", "text": "Ross Edwards was born in 1943 in Sydney, Australia, and studied at the Sydney Conservatorium of Music and the universities of Adelaide and Sydney. He's well known in Australia, and in fact he's one of the country's most performed composers. He's written a wide range of music, from symphonies and concertos to some composed specifically for children. Edwards's music has been described as being 'deeply connected to Australia', and it can be regarded as a celebration of the <q id=\"37\">diversity</q> of cultures that Australia can be proud of." },
+        { "speaker": "", "text": "The last of the three Australian composers to be represented in our festival is Carl Vine. Born in 1954, Vine, like Liza Lim, comes from Perth, Western Australia. He took up the cornet at the age of five, switching to the piano five years later. However, he went to university to study <q id=\"38\">physics,</q> before changing to composition. After graduating he moved to Sydney and worked as a freelance pianist and composer. Before long he had become prominent in Australia as a composer for <q id=\"39\">dance,</q> and in fact has written 25 scores of that type." },
+        { "speaker": "", "text": "In our third concert, Vine will be represented by his music for the flag hand-over ceremony of the <q id=\"40\">Olympics</q> held in 1996. This seven-minute orchestral piece was of course heard by millions of people worldwide, and we'll hear it alongside works written by British composers Edward Elgar and, more recently, Thomas Adès." }
+      ]
+    }
+  ]
+}

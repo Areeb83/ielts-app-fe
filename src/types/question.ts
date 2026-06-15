@@ -225,13 +225,14 @@ export interface QuestionGroup {
 // ─── Passage Data (Structured for Reading) ──────────────────────────────────
 
 export interface PassageSection {
-  label?: string; // e.g. "Section A"
+  heading?: string; // e.g. "A", "B", "C"
   questionId?: string; // e.g. "14"
   content: string; // The text of the section
 }
 
 export interface PassageData {
   title: string;
+  subtitle?: string; // e.g. byline or sub-heading below the main title
   sections: PassageSection[];
 }
 

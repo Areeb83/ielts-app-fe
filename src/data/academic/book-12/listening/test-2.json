@@ -26,7 +26,7 @@
               {
                 "questionNumber": 1,
                 "content": [
-                  "• In town centre, starting at ",
+                  "In town centre, starting at ",
                   { "id": "1", "type": "input" }
                 ]
               },

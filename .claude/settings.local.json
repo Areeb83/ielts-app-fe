@@ -24,7 +24,8 @@
       "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
       "Bash(npx vite:*)",
       "Bash(for dir:*)",
-      "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/components/TestDetailComponents/QuestionTypes/**)"
+      "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/components/TestDetailComponents/QuestionTypes/**)",
+      "Bash(node:*)"
     ]
   }
 }
