@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, useState, useRef } from "react";
 import type { PassageData, AnswerMap } from "../../../types/question";
 import { DropZone } from "../QuestionTypes/FlowChartDragDrop/DropZone";
 import { DraggableWord } from "../QuestionTypes/FlowChartDragDrop/DraggableWord";
@@ -20,7 +20,7 @@ interface ReadingPassageProps {
     questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
-const ReadingPassage: React.FC<ReadingPassageProps> = ({
+const ReadingPassage: FC<ReadingPassageProps> = ({
     testId,
     sectionIndex,
     data,
@@ -33,9 +33,9 @@ const ReadingPassage: React.FC<ReadingPassageProps> = ({
     activeQuestion,
     questionStatus,
 }) => {
-    const [dragOverZoneId, setDragOverZoneId] = React.useState<string | null>(null);
+    const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
     const { highlights, addHighlight, removeHighlightGroup } = useHighlights();
-    const pendingHighlightsRef = React.useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
+    const pendingHighlightsRef = useRef<{ paragraphIndex: number; start: number; end: number }[]>([]);
 
     const handleDropOnZone = (targetZoneId: string) => {
         if (!draggingWordId) return;

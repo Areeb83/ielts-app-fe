@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC } from "react";
 import type { AnswerMap, DiagramLabellingData } from "../../../../types/question";
 import "./DiagramLabelling.css";
 
@@ -30,7 +30,7 @@ const formatInstruction = (text: string) => {
     });
 };
 
-const DiagramLabelling: React.FC<DiagramLabellingProps> = ({
+const DiagramLabelling: FC<DiagramLabellingProps> = ({
     instruction,
     questionRange,
     data,

@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, useState, useRef, useEffect } from "react";
 import type { AnswerMap, ContentPart, SummaryCompletionData } from "../../../../types/question";
 import "./SummaryCompletion.css";
 
@@ -15,17 +15,17 @@ interface SummaryCompletionProps {
 /**
  * A helper component that renders an input that grows as the user types.
  */
-const AutoGrowingSummaryInput: React.FC<{
+const AutoGrowingSummaryInput: FC<{
     id: string;
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
     status?: 'correct' | 'wrong';
 }> = ({ id, value, onChange, disabled, status }) => {
-    const [width, setWidth] = React.useState<number | string>("200px");
-    const spanRef = React.useRef<HTMLSpanElement>(null);
+    const [width, setWidth] = useState<number | string>("200px");
+    const spanRef = useRef<HTMLSpanElement>(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (spanRef.current) {
             const measuredWidth = spanRef.current.offsetWidth;
             // Added 10px buffer for cursor comfort.
@@ -52,7 +52,7 @@ const AutoGrowingSummaryInput: React.FC<{
     );
 };
 
-const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
+const SummaryCompletion: FC<SummaryCompletionProps> = ({
     instruction,
     questionRange,
     data,
@@ -68,7 +68,7 @@ const SummaryCompletion: React.FC<SummaryCompletionProps> = ({
         }
 
         if (part.type === "input") {
-            const value = answers[part.id] || "";
+            const value = (answers[part.id] as string) || "";
             return (
                 <AutoGrowingSummaryInput
                     key={part.id}

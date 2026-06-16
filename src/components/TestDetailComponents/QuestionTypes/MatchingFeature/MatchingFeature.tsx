@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC } from "react";
 import type { AnswerMap, MatchingFeatureData } from "../../../../types/question";
 import "./MatchingFeature.css";
 
@@ -24,7 +24,7 @@ const formatInstruction = (text: string) => {
     });
 };
 
-const MatchingFeature: React.FC<MatchingFeatureProps> = ({
+const MatchingFeature: FC<MatchingFeatureProps> = ({
     instruction,
     questionRange,
     data,

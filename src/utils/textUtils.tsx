@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * Formats IELTS instructions by bolding constraints like "NO MORE THAN TWO WORDS".
  */

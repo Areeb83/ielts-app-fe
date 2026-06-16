@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, Fragment } from "react";
 import type { AnswerMap, ParagraphMatchingData } from "../../../../types/question";
 import "./ParagraphMatching.css";
 
@@ -28,15 +28,15 @@ const formatInstruction = (text: string) => {
         });
 
         return (
-            <React.Fragment key={si}>
+            <Fragment key={si}>
                 {si > 0 && <br />}
                 {rendered}
-            </React.Fragment>
+            </Fragment>
         );
     });
 };
 
-const ParagraphMatching: React.FC<ParagraphMatchingProps> = ({
+const ParagraphMatching: FC<ParagraphMatchingProps> = ({
     instruction,
     questionRange,
     data,

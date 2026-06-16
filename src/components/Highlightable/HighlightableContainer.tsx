@@ -218,7 +218,6 @@ const HighlightableContainer: React.FC<HighlightableContainerProps> = ({
         const container = containerRef.current;
         if (!container) return;
 
-        // @ts-expect-error caretRangeFromPoint is non-standard but available in Chrome
         const caretRange: Range | null = document.caretRangeFromPoint(e.clientX, e.clientY);
         if (!caretRange || !container.contains(caretRange.startContainer)) return;
 

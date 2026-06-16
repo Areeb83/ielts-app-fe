@@ -5,7 +5,9 @@ import axios, {
 } from 'axios';
 
 // ─── Configuration ───────────────────────────────────────────────────────────
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+// Backend runs on port 8000. Set VITE_API_BASE_URL in your .env file.
+// Example: VITE_API_BASE_URL=http://localhost:8000/api
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
 const REQUEST_TIMEOUT = 15_000; // 15 seconds
 
 // ─── Create Axios Instance ──────────────────────────────────────────────────

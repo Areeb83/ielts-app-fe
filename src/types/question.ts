@@ -211,16 +211,36 @@ export interface IdentificationData {
 
 // ─── Question Group ─────────────────────────────────────────────────────────
 
-export type QuestionGroupType = "FLOW_CHART_DRAG_DROP" | "SENTENCE_COMPLETION" | "SENTENCE_COMPLETION_DRAG_DROP" | "SUMMARY_COMPLETION" | "SUMMARY_COMPLETION_DRAG_DROP" | "MULTIPLE_CHOICE" | "TABLE_COMPLETION" | "MAP_DIAGRAM_LABELLING" | "DIAGRAM_LABELLING" | "IDENTIFICATION" | "MATCHING_FEATURE" | "MATCHING_HEADING" | "PARAGRAPH_MATCHING";
-
-export interface QuestionGroup {
-  type: QuestionGroupType;
+/** Shared fields present on every question group */
+interface QuestionGroupBase {
   instruction: string;
   startQuestion: number;
   endQuestion: number;
   hideRange?: boolean;
-  data: FlowChartDragDropData | SentenceCompletionData | SentenceCompletionDragDropData | SummaryCompletionData | SummaryCompletionDragDropData | MultipleChoiceData | TableCompletionData | MapDiagramLabellingData | DiagramLabellingData | IdentificationData | MatchingFeatureData | MatchingHeadingData | ParagraphMatchingData;
 }
+
+/**
+ * Discriminated union on `type` — TypeScript automatically narrows `group.data`
+ * to the correct interface inside each `case` of a switch on `group.type`.
+ * This eliminates the need for @ts-ignore in QuestionRenderer.
+ */
+export type QuestionGroup =
+  | (QuestionGroupBase & { type: "FLOW_CHART_DRAG_DROP";          data: FlowChartDragDropData })
+  | (QuestionGroupBase & { type: "SENTENCE_COMPLETION";           data: SentenceCompletionData })
+  | (QuestionGroupBase & { type: "SENTENCE_COMPLETION_DRAG_DROP"; data: SentenceCompletionDragDropData })
+  | (QuestionGroupBase & { type: "SUMMARY_COMPLETION";            data: SummaryCompletionData })
+  | (QuestionGroupBase & { type: "SUMMARY_COMPLETION_DRAG_DROP";  data: SummaryCompletionDragDropData })
+  | (QuestionGroupBase & { type: "MULTIPLE_CHOICE";               data: MultipleChoiceData })
+  | (QuestionGroupBase & { type: "TABLE_COMPLETION";              data: TableCompletionData })
+  | (QuestionGroupBase & { type: "MAP_DIAGRAM_LABELLING";         data: MapDiagramLabellingData })
+  | (QuestionGroupBase & { type: "DIAGRAM_LABELLING";             data: DiagramLabellingData })
+  | (QuestionGroupBase & { type: "IDENTIFICATION";                data: IdentificationData })
+  | (QuestionGroupBase & { type: "MATCHING_FEATURE";              data: MatchingFeatureData })
+  | (QuestionGroupBase & { type: "MATCHING_HEADING";              data: MatchingHeadingData })
+  | (QuestionGroupBase & { type: "PARAGRAPH_MATCHING";            data: ParagraphMatchingData });
+
+/** Convenience type — all valid question group type strings */
+export type QuestionGroupType = QuestionGroup['type'];
 
 // ─── Passage Data (Structured for Reading) ──────────────────────────────────
 

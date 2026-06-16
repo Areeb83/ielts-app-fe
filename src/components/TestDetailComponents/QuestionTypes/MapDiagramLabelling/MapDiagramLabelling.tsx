@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC } from "react";
 import type { AnswerMap, MapDiagramLabellingData } from "../../../../types/question";
 import "./MapDiagramLabelling.css";
 
@@ -13,7 +13,7 @@ interface MapDiagramLabellingProps {
     questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
-const MapDiagramLabelling: React.FC<MapDiagramLabellingProps> = ({
+const MapDiagramLabelling: FC<MapDiagramLabellingProps> = ({
     instruction,
     questionRange,
     data,

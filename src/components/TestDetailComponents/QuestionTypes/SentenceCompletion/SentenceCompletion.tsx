@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, useState, useRef, useEffect } from "react";
 import type { AnswerMap, ContentPart, SentenceCompletionData } from "../../../../types/question";
 import "./SentenceCompletion.css";
 
@@ -16,17 +16,17 @@ interface SentenceCompletionProps {
  * A helper component that renders an input that grows as the user types.
  * It uses a hidden span to measure the text width.
  */
-const AutoGrowingInput: React.FC<{
+const AutoGrowingInput: FC<{
     id: string;
     value: string;
     onChange: (value: string) => void;
     disabled?: boolean;
     status?: 'correct' | 'wrong';
 }> = ({ id, value, onChange, disabled, status }) => {
-    const [width, setWidth] = React.useState<number | string>("200px");
-    const spanRef = React.useRef<HTMLSpanElement>(null);
+    const [width, setWidth] = useState<number | string>("200px");
+    const spanRef = useRef<HTMLSpanElement>(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (spanRef.current) {
             // Measure the span width. Add some extra space for the cursor/comfort.
             const measuredWidth = spanRef.current.offsetWidth;
@@ -56,7 +56,7 @@ const AutoGrowingInput: React.FC<{
     );
 };
 
-const SentenceCompletion: React.FC<SentenceCompletionProps> = ({
+const SentenceCompletion: FC<SentenceCompletionProps> = ({
     instruction,
     questionRange,
     data,

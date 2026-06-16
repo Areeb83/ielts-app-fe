@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSetAtom } from 'jotai';
 import TestDetailContainer from '../../components/TestDetailComponents/TestDetailContainer';
 import TestLoadingScreen from '../../components/TestDetailComponents/TestLoadingScreen';
+import ErrorBoundary from '../../components/ErrorBoundary';
 import { isNavbarFooterVisibleAtom } from '../../store/uiStore';
 import type { TestData } from '../../types/question';
 
@@ -122,10 +123,12 @@ export function ListeningTestActualPage() {
 
     return (
         <div style={{ minHeight: '100vh', backgroundColor: '#fff' }}>
-            <TestDetailContainer
-                candidateId={`Student-${bookId}-${testId}`}
-                testData={testData}
-            />
+            <ErrorBoundary>
+                <TestDetailContainer
+                    candidateId={`Student-${bookId}-${testId}`}
+                    testData={testData}
+                />
+            </ErrorBoundary>
         </div>
     );
 }

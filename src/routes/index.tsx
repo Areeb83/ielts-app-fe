@@ -1,6 +1,6 @@
 import NormalRoutes from "./NormalRoutes"
 
-const BaseRoutes = (): JSX.Element => {
+const BaseRoutes = () => {
   return <NormalRoutes />;
 };
 

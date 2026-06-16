@@ -14,6 +14,7 @@ interface MatchingHeadingProps {
     onDragStart: (wordId: string) => void;
     onDragEnd: () => void;
     reviewMode?: boolean;
+    questionStatus?: Record<string, 'correct' | 'wrong'>;
 }
 
 const MatchingHeading: React.FC<MatchingHeadingProps> = ({

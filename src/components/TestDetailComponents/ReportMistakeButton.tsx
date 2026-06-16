@@ -1,18 +1,21 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { GoAlert } from "react-icons/go";
 import {
     Dialog, DialogContent, DialogHeader, DialogTitle,
     DialogDescription, DialogFooter, DialogClose,
 } from "../ui/dialog";
 
-const ReportMistakeButton: React.FC = () => {
+const ReportMistakeButton = () => {
     const [reportOpen, setReportOpen] = useState(false);
     const [reportType, setReportType] = useState("");
     const [reportQuestion, setReportQuestion] = useState("");
     const [reportDescription, setReportDescription] = useState("");
 
     const handleReportSubmit = useCallback(() => {
-        console.log("Report submitted:", { reportType, reportQuestion, reportDescription });
+        // TODO: wire up to the report API endpoint when backend is ready
+        if (import.meta.env.DEV) {
+            console.log("Report submitted:", { reportType, reportQuestion, reportDescription });
+        }
         setReportType("");
         setReportQuestion("");
         setReportDescription("");

@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, Fragment } from "react";
 import type {
     MultipleChoiceData,
     MultipleChoiceQuestion,
@@ -27,7 +27,7 @@ const formatInstruction = (text: string) => {
         return parts.map((part, i) => {
             if (part.match(/^\*\*.*\*\*$/)) return <strong key={`${key}-${i}`}>{part.slice(2, -2)}</strong>;
             if (part && part.match(/^(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|NO MORE THAN)/)) return <strong key={`${key}-${i}`}>{part}</strong>;
-            return <React.Fragment key={`${key}-${i}`}>{part}</React.Fragment>;
+            return <Fragment key={`${key}-${i}`}>{part}</Fragment>;
         });
     };
 
@@ -44,7 +44,7 @@ const formatInstruction = (text: string) => {
     ));
 };
 
-const MultipleChoiceItem: React.FC<{
+const MultipleChoiceItem: FC<{
     question: MultipleChoiceQuestion;
     answers: AnswerMap;
     onAnswerChange: (id: string, value: string | string[]) => void;
@@ -139,7 +139,7 @@ const MultipleChoiceItem: React.FC<{
     );
 };
 
-const MultipleChoice: React.FC<MultipleChoiceProps> = ({
+const MultipleChoice: FC<MultipleChoiceProps> = ({
     instruction,
     questionRange,
     data,

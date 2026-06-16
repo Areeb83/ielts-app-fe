@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC, type ReactNode } from "react";
 import type { TranscriptSection } from "../../../data/transcriptMaps";
 import "./TranscriptPane.css";
 
@@ -7,8 +7,8 @@ interface TranscriptPaneProps {
 }
 
 /** Parse text with <q id="N">answer</q> tags into React elements */
-function renderTranscriptText(text: string): React.ReactNode[] {
-    const parts: React.ReactNode[] = [];
+function renderTranscriptText(text: string): ReactNode[] {
+    const parts: ReactNode[] = [];
     const regex = /<q id="(\d+)">(.*?)<\/q>/g;
     let lastIndex = 0;
     let match;
@@ -38,7 +38,7 @@ function renderTranscriptText(text: string): React.ReactNode[] {
     return parts;
 }
 
-const TranscriptPane: React.FC<TranscriptPaneProps> = ({ section }) => {
+const TranscriptPane: FC<TranscriptPaneProps> = ({ section }) => {
     return (
         <div className="transcript-pane">
             <h3 className="transcript-pane__title">{section.title}</h3>

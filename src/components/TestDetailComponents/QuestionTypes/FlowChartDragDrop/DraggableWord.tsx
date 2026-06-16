@@ -1,15 +1,15 @@
-import React from "react";
+import { type FC, type DragEvent } from "react";
 
 interface DraggableWordProps {
     id: string;
     text: string;
     disabled?: boolean;
     isDragging?: boolean;
-    onDragStart?: (wordId: string, e: React.DragEvent<HTMLDivElement>) => void;
+    onDragStart?: (wordId: string, e: DragEvent<HTMLDivElement>) => void;
     onDragEnd?: () => void;
 }
 
-export const DraggableWord: React.FC<DraggableWordProps> = ({
+export const DraggableWord: FC<DraggableWordProps> = ({
     id,
     text,
     disabled,
@@ -25,7 +25,7 @@ export const DraggableWord: React.FC<DraggableWordProps> = ({
         .filter(Boolean)
         .join(" ");
 
-    const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
+    const handleDragStart = (e: DragEvent<HTMLDivElement>) => {
         // Set minimal dataTransfer so the browser shows a drag ghost
         e.dataTransfer.effectAllowed = "move";
         e.dataTransfer.setData("text/plain", id);
