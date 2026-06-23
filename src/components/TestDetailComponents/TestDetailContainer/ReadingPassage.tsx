@@ -1,10 +1,44 @@
-import { type FC, useState, useRef } from "react";
+import { type FC, type ReactNode, useState, useRef } from "react";
 import type { PassageData, AnswerMap } from "../../../types/question";
 import { DropZone } from "../QuestionTypes/FlowChartDragDrop/DropZone";
 import { DraggableWord } from "../QuestionTypes/FlowChartDragDrop/DraggableWord";
 import Highlightable from "../../Highlightable/Highlightable";
 import useHighlights from "../../Highlightable/useHighlights";
 import "./ReadingPassage.css";
+
+/** Strip <q id="N">...</q> tags → plain text (for use during the actual test) */
+function stripQTags(text: string): string {
+    return text.replace(/<q id="\d+">(.*?)<\/q>/g, '$1');
+}
+
+/** Parse <q id="N">...</q> tags → highlighted answer spans (for review mode) */
+function renderPassageText(text: string): ReactNode[] {
+    const parts: ReactNode[] = [];
+    const regex = /<q id="(\d+)">(.*?)<\/q>/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+        if (match.index > lastIndex) {
+            parts.push(text.slice(lastIndex, match.index));
+        }
+        const qId = match[1];
+        const answer = match[2];
+        parts.push(
+            <span key={`q-${qId}-${match.index}`} className="passage__answer">
+                <span className="passage__answer-label">Q{qId}</span>
+                <span className="passage__answer-text">{answer}</span>
+            </span>
+        );
+        lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex < text.length) {
+        parts.push(text.slice(lastIndex));
+    }
+
+    return parts;
+}
 
 interface ReadingPassageProps {
     testId: string;
@@ -18,6 +52,7 @@ interface ReadingPassageProps {
     headingLookup?: Record<string, string>;
     activeQuestion?: number;
     questionStatus?: Record<string, 'correct' | 'wrong'>;
+    isReview?: boolean;
 }
 
 const ReadingPassage: FC<ReadingPassageProps> = ({
@@ -32,6 +67,7 @@ const ReadingPassage: FC<ReadingPassageProps> = ({
     headingLookup,
     activeQuestion,
     questionStatus,
+    isReview = false,
 }) => {
     const [dragOverZoneId, setDragOverZoneId] = useState<string | null>(null);
     const { highlights, addHighlight, removeHighlightGroup } = useHighlights();
@@ -135,14 +171,18 @@ const ReadingPassage: FC<ReadingPassageProps> = ({
                             )}
                         </div>
                         <p className="passage-paragraph">
-                            <Highlightable
-                                text={section.content}
-                                paragraphIndex={base + idx}
-                                highlights={highlights.filter((h) => h.paragraphIndex === base + idx)}
-                                onAdd={addHighlight}
-                                onRemove={removeHighlightGroup}
-                                pendingHighlightsRef={pendingHighlightsRef}
-                            />
+                            {isReview ? (
+                                renderPassageText(section.content)
+                            ) : (
+                                <Highlightable
+                                    text={stripQTags(section.content)}
+                                    paragraphIndex={base + idx}
+                                    highlights={highlights.filter((h) => h.paragraphIndex === base + idx)}
+                                    onAdd={addHighlight}
+                                    onRemove={removeHighlightGroup}
+                                    pendingHighlightsRef={pendingHighlightsRef}
+                                />
+                            )}
                         </p>
                     </div>
                 ))}

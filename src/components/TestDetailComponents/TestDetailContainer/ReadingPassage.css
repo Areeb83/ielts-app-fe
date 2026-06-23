@@ -166,3 +166,22 @@
 .passage-section__dropzone-wrapper .dropzone--filled.dropzone--wrong {
   border-color: #ef4444 !important;
 }
+
+/* ─── Answer location highlight (review mode only) ─── */
+.passage__answer {
+    background-color: #ffe066;
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+
+.passage__answer-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 3px;
+}
+
+.passage__answer-text {
+    font-weight: 400;
+    color: #000;
+}

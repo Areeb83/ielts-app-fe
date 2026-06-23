@@ -337,6 +337,7 @@ const ReviewPage: React.FC = () => {
                 onDragEnd={noOp}
                 headingLookup={headingLookup}
                 questionStatus={questionStatus}
+                isReview={true}
             />
         );
     };
