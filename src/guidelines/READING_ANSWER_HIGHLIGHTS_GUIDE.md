@@ -287,9 +287,9 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 | C16  | Test 1 | ❌        | ❌        | ❌        |
 | C16  | Test 2 | ❌        | ❌        | ❌        |
 | C16  | Test 3 | ❌        | ❌        | ❌        |
-| C16  | Test 4 | ❌        | ❌        | ❌        |
-| C17  | Test 1 | ❌        | ❌        | ❌        |
-| C17  | Test 2 | ❌        | ❌        | ❌        |
+| C16  | Test 4 | ✅        | ✅        | ✅        |
+| C17  | Test 1 | ✅        | ✅        | ✅        |
+| C17  | Test 2 | ✅        | ✅        | ✅        |
 | C17  | Test 3 | ✅        | ✅        | ✅        |
 | C17  | Test 4 | ✅        | ✅        | ✅        |
 | C18  | Test 1 | ✅        | ✅        | ✅        |
@@ -301,7 +301,7 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 | C19  | Test 3 | ✅        | ✅        | ✅        |
 | C19  | Test 4 | ✅        | ✅        | ✅        |
 
-**Passages highlighted:** 30 / 108
+**Passages highlighted:** 39 / 108
 
 ---
 
