@@ -271,22 +271,22 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 | C12  | Test 1 | ❌        | ❌        | ❌        |
 | C12  | Test 2 | ❌        | ❌        | ❌        |
 | C12  | Test 3 | ❌        | ❌        | ❌        |
-| C12  | Test 4 | ❌        | ❌        | ❌        |
-| C13  | Test 1 | ❌        | ❌        | ❌        |
-| C13  | Test 2 | ❌        | ❌        | ❌        |
-| C13  | Test 3 | ❌        | ❌        | ❌        |
-| C13  | Test 4 | ❌        | ❌        | ❌        |
-| C14  | Test 1 | ❌        | ❌        | ❌        |
-| C14  | Test 2 | ❌        | ❌        | ❌        |
-| C14  | Test 3 | ❌        | ❌        | ❌        |
-| C14  | Test 4 | ❌        | ❌        | ❌        |
-| C15  | Test 1 | ❌        | ❌        | ❌        |
-| C15  | Test 2 | ❌        | ❌        | ❌        |
-| C15  | Test 3 | ❌        | ❌        | ❌        |
-| C15  | Test 4 | ❌        | ❌        | ❌        |
-| C16  | Test 1 | ❌        | ❌        | ❌        |
-| C16  | Test 2 | ❌        | ❌        | ❌        |
-| C16  | Test 3 | ❌        | ❌        | ❌        |
+| C12  | Test 4 | ✅        | ✅        | ✅        |
+| C13  | Test 1 | ✅        | ✅        | ✅        |
+| C13  | Test 2 | ✅        | ✅        | ✅        |
+| C13  | Test 3 | ✅        | ✅        | ✅        |
+| C13  | Test 4 | ✅        | ✅        | ✅        |
+| C14  | Test 1 | ✅        | ✅        | ✅        |
+| C14  | Test 2 | ✅        | ✅        | ✅        |
+| C14  | Test 3 | ✅        | ✅        | ✅        |
+| C14  | Test 4 | ✅        | ✅        | ✅        |
+| C15  | Test 1 | ✅        | ✅        | ✅        |
+| C15  | Test 2 | ✅        | ✅        | ✅        |
+| C15  | Test 3 | ✅        | ✅        | ✅        |
+| C15  | Test 4 | ✅        | ✅        | ✅        |
+| C16  | Test 1 | ✅        | ✅        | ✅        |
+| C16  | Test 2 | ✅        | ✅        | ✅        |
+| C16  | Test 3 | ✅        | ✅        | ✅        |
 | C16  | Test 4 | ✅        | ✅        | ✅        |
 | C17  | Test 1 | ✅        | ✅        | ✅        |
 | C17  | Test 2 | ✅        | ✅        | ✅        |
@@ -301,7 +301,7 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 | C19  | Test 3 | ✅        | ✅        | ✅        |
 | C19  | Test 4 | ✅        | ✅        | ✅        |
 
-**Passages highlighted:** 39 / 108
+**Passages highlighted:** 87 / 108
 
 ---
 
