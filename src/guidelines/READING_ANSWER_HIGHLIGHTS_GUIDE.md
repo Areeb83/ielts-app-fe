@@ -264,13 +264,13 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 
 | Book | Test   | Passage 1 | Passage 2 | Passage 3 |
 |------|--------|-----------|-----------|-----------|
-| C11  | Test 1 | ❌        | ❌        | ❌        |
-| C11  | Test 2 | ❌        | ❌        | ❌        |
-| C11  | Test 3 | ❌        | ❌        | ❌        |
-| C11  | Test 4 | ❌        | ❌        | ❌        |
-| C12  | Test 1 | ❌        | ❌        | ❌        |
-| C12  | Test 2 | ❌        | ❌        | ❌        |
-| C12  | Test 3 | ❌        | ❌        | ❌        |
+| C11  | Test 1 | ✅        | ✅        | ✅        |
+| C11  | Test 2 | ✅        | ✅        | ✅        |
+| C11  | Test 3 | ✅        | ✅        | ✅        |
+| C11  | Test 4 | ✅        | ✅        | ✅        |
+| C12  | Test 1 | ✅        | ✅        | ✅        |
+| C12  | Test 2 | ✅        | ✅        | ✅        |
+| C12  | Test 3 | ✅        | ✅        | ✅        |
 | C12  | Test 4 | ✅        | ✅        | ✅        |
 | C13  | Test 1 | ✅        | ✅        | ✅        |
 | C13  | Test 2 | ✅        | ✅        | ✅        |
@@ -301,7 +301,7 @@ Track which passages have had answer highlights added. A passage is ✅ only whe
 | C19  | Test 3 | ✅        | ✅        | ✅        |
 | C19  | Test 4 | ✅        | ✅        | ✅        |
 
-**Passages highlighted:** 87 / 108
+**Passages highlighted:** 108 / 108
 
 ---
 

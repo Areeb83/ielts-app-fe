@@ -25,7 +25,8 @@
       "Bash(npx vite:*)",
       "Bash(for dir:*)",
       "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/components/TestDetailComponents/QuestionTypes/**)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx\\)$\")"
     ]
   }
 }
