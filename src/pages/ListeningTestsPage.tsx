@@ -152,9 +152,12 @@ export function ListeningTestsPage() {
                     transition={{ duration: 1.5, repeat: Infinity, delay: 0.3 }}
                   />
                 </motion.g>
-                {/* Person's head */}
-                <circle cx="60" cy="75" r="15" fill="#FDBA74" />
-                <path d="M50 70 Q60 60 70 70" fill="#1F2937" />
+                {/* Person's head — matching Speaking face */}
+                <circle cx="60" cy="75" r="18" fill="#FDBA74" />
+                <path d="M48 70 Q60 60 72 70" fill="#1F2937" />
+                <circle cx="54" cy="75" r="2" fill="#1F2937" />
+                <circle cx="66" cy="75" r="2" fill="#1F2937" />
+                <path d="M52 82 Q60 86 68 82" stroke="#1F2937" strokeWidth="2" fill="none" strokeLinecap="round" />
               </svg>
             </motion.div>
           </div>

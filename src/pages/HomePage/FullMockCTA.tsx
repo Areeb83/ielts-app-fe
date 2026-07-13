@@ -150,19 +150,19 @@ export function FullMockCTA() {
                     {/* Clock */}
                     <circle cx="100" cy="100" r="25" fill="white" opacity="0.9" />
                     <circle cx="100" cy="100" r="18" fill="none" stroke="#F97316" strokeWidth="2" />
-                    <motion.line
-                      x1="100"
-                      y1="100"
-                      x2="100"
-                      y2="90"
-                      stroke="#F97316"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                      style={{ transformOrigin: "100px 100px" }}
-                    />
-                    <line x1="100" y1="100" x2="108" y2="100" stroke="#F97316" strokeWidth="2" strokeLinecap="round" />
+                    <g>
+                      <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 100 100"
+                        to="360 100 100"
+                        dur="7s"
+                        repeatCount="indefinite"
+                      />
+                      <line x1="100" y1="100" x2="100" y2="86" stroke="#F97316" strokeWidth="1.5" strokeLinecap="round" />
+                    </g>
+                    <line x1="100" y1="100" x2="109" y2="93" stroke="#F97316" strokeWidth="2" strokeLinecap="round" />
+                    <circle cx="100" cy="100" r="2" fill="#F97316" />
                   </motion.g>
                 </svg>
               </div>
