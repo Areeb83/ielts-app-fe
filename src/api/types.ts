@@ -66,6 +66,7 @@ export interface TestData {
   sections: number;
   status: 'not_started' | 'in_progress' | 'completed';
   result?: ListeningTestResult;
+  locked?: boolean;
 }
 
 export interface ListeningBooksResponse {

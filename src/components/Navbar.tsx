@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { ChevronDown, Home, BookOpen, DollarSign, User, Menu, X } from 'lucide-react';
+import { useAtomValue } from 'jotai';
+import { ChevronDown, Home, BookOpen, DollarSign, User, Menu, X, LogIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import {
@@ -10,10 +11,15 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from './ui/dropdown-menu';
+import { isAuthenticatedAtom, userAtom } from '../store/authStore';
+import { useAuth } from '../hooks/useAuth';
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const isAuthenticated = useAtomValue(isAuthenticatedAtom);
+  const user = useAtomValue(userAtom);
+  const { logout } = useAuth();
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -25,6 +31,11 @@ export function Navbar() {
     { name: 'Writing Tests', path: '/writing', icon: '✍️' },
     { name: 'Speaking Tests', path: '/speaking', icon: '🗣️' },
   ];
+
+  const handleLogout = async () => {
+    setMobileMenuOpen(false);
+    await logout();
+  };
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
@@ -46,8 +57,8 @@ export function Navbar() {
             <Link
               to="/"
               className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
-                isActive('/') 
-                  ? 'text-orange-500 bg-orange-50' 
+                isActive('/')
+                  ? 'text-orange-500 bg-orange-50'
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
@@ -87,8 +98,8 @@ export function Navbar() {
             <Link
               to="/pricing"
               className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
-                isActive('/pricing') 
-                  ? 'text-orange-500 bg-orange-50' 
+                isActive('/pricing')
+                  ? 'text-orange-500 bg-orange-50'
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
@@ -96,35 +107,64 @@ export function Navbar() {
               <span className="font-medium">Pricing</span>
             </Link>
 
-            {/* Profile Avatar */}
+            {/* Auth Section */}
             <DropdownMenu>
               <DropdownMenuTrigger className="outline-none">
                 <Avatar className="w-9 h-9 cursor-pointer border-2 border-transparent hover:border-orange-500 transition-colors">
-                  <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=Student" />
-                  <AvatarFallback className="bg-orange-500 text-white">
-                    <User className="w-5 h-5" />
-                  </AvatarFallback>
+                  {isAuthenticated && user ? (
+                    <>
+                      {user.avatar ? (
+                        <AvatarImage src={user.avatar} />
+                      ) : null}
+                      <AvatarFallback className="bg-orange-500 text-white text-sm font-semibold">
+                        {user.name.charAt(0).toUpperCase()}
+                      </AvatarFallback>
+                    </>
+                  ) : (
+                    <AvatarFallback className="bg-gray-200 text-gray-500">
+                      <User className="w-5 h-5" />
+                    </AvatarFallback>
+                  )}
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
-                <div className="px-2 py-1.5">
-                  <p className="text-sm font-medium text-gray-900">Student Name</p>
-                  <p className="text-xs text-gray-500">student@example.com</p>
-                </div>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="cursor-pointer">
-                  My Profile
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
-                  My Progress
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
-                  Settings
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="cursor-pointer text-red-600">
-                  Sign Out
-                </DropdownMenuItem>
+                {isAuthenticated && user ? (
+                  <>
+                    <div className="px-2 py-1.5">
+                      <p className="text-sm font-medium text-gray-900">{user.name}</p>
+                      <p className="text-xs text-gray-500">{user.email}</p>
+                    </div>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem asChild className="cursor-pointer">
+                      <Link to="/profile">My Profile</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild className="cursor-pointer">
+                      <Link to="/progress">My Progress</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="cursor-pointer">
+                      Settings
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem className="cursor-pointer text-red-600" onClick={handleLogout}>
+                      Sign Out
+                    </DropdownMenuItem>
+                  </>
+                ) : (
+                  <>
+                    <DropdownMenuItem asChild className="cursor-pointer">
+                      <Link to="/login" className="flex items-center gap-2">
+                        <LogIn className="w-4 h-4" />
+                        <span>Login</span>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild className="cursor-pointer">
+                      <Link to="/register" className="flex items-center gap-2">
+                        <User className="w-4 h-4" />
+                        <span>Sign Up</span>
+                      </Link>
+                    </DropdownMenuItem>
+                  </>
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
@@ -154,8 +194,8 @@ export function Navbar() {
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                  isActive('/') 
-                    ? 'text-orange-500 bg-orange-50' 
+                  isActive('/')
+                    ? 'text-orange-500 bg-orange-50'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
@@ -174,8 +214,8 @@ export function Navbar() {
                     to={option.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                      isActive(option.path) 
-                        ? 'text-orange-500 bg-orange-50' 
+                      isActive(option.path)
+                        ? 'text-orange-500 bg-orange-50'
                         : 'text-gray-700 hover:bg-gray-50'
                     }`}
                   >
@@ -190,8 +230,8 @@ export function Navbar() {
                 to="/pricing"
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                  isActive('/pricing') 
-                    ? 'text-orange-500 bg-orange-50' 
+                  isActive('/pricing')
+                    ? 'text-orange-500 bg-orange-50'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
@@ -199,32 +239,58 @@ export function Navbar() {
                 <span className="font-medium">Pricing</span>
               </Link>
 
-              {/* Profile Section */}
+              {/* Auth Section */}
               <div className="pt-4 border-t border-gray-200 space-y-2">
-                <div className="flex items-center gap-3 px-4 py-2">
-                  <Avatar className="w-10 h-10">
-                    <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=Student" />
-                    <AvatarFallback className="bg-orange-500 text-white">
+                {isAuthenticated && user ? (
+                  <>
+                    <div className="flex items-center gap-3 px-4 py-2">
+                      <Avatar className="w-10 h-10">
+                        {user.avatar ? <AvatarImage src={user.avatar} /> : null}
+                        <AvatarFallback className="bg-orange-500 text-white text-sm font-semibold">
+                          {user.name.charAt(0).toUpperCase()}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">{user.name}</p>
+                        <p className="text-xs text-gray-500">{user.email}</p>
+                      </div>
+                    </div>
+                    <Link to="/profile" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+                      My Profile
+                    </Link>
+                    <Link to="/progress" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+                      My Progress
+                    </Link>
+                    <button className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+                      Settings
+                    </button>
+                    <button
+                      onClick={handleLogout}
+                      className="w-full text-left px-4 py-3 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
+                    >
+                      Sign Out
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <Link
+                      to="/login"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+                    >
+                      <LogIn className="w-5 h-5" />
+                      <span>Login</span>
+                    </Link>
+                    <Link
+                      to="/register"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+                    >
                       <User className="w-5 h-5" />
-                    </AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="text-sm font-medium text-gray-900">Student Name</p>
-                    <p className="text-xs text-gray-500">student@example.com</p>
-                  </div>
-                </div>
-                <button className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
-                  My Profile
-                </button>
-                <button className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
-                  My Progress
-                </button>
-                <button className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
-                  Settings
-                </button>
-                <button className="w-full text-left px-4 py-3 rounded-lg text-red-600 hover:bg-red-50 transition-colors">
-                  Sign Out
-                </button>
+                      <span>Sign Up</span>
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </motion.div>

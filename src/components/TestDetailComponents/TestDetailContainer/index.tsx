@@ -12,6 +12,9 @@ import HighlightableContainer from "../../Highlightable/HighlightableContainer";
 import type { ContainerHighlight } from "../../Highlightable/HighlightableContainer";
 import { useAutoScroll } from "../../../hooks";
 import audioDurations from "../../../data/audio-durations.json";
+import axiosInstance from "../../../api/axiosInstance";
+import { getAccessToken } from "../../../api/axiosInstance";
+import { toast } from "sonner";
 import "../../../styles/TestPagesStyle.css";
 
 interface TestDetailContainerProps {
@@ -44,6 +47,7 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
     const [answers, setAnswers] = useState<AnswerMap>({});
     const [draggingWordId, setDraggingWordId] = useState<string | null>(null);
+    const [submitting, setSubmitting] = useState(false);
     const [activeQuestion, setActiveQuestion] = useState(1);
 
     // Listening overlay & audio
@@ -280,26 +284,59 @@ const TestDetailContainer: React.FC<TestDetailContainerProps> = ({
         setDraggingWordId(null);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        if (submitting) return;
+
         // Stop audio if playing
         if (audioRef.current) {
             audioRef.current.pause();
         }
 
-        // Calculate time spent
-        let timeSpentStr = elapsedTime;
+        // Calculate time spent in seconds
+        let timeSpentSecs = 0;
         if (testType === 'listening' && audioRef.current) {
-            const secs = Math.floor(audioRef.current.currentTime);
-            const m = String(Math.floor(secs / 60)).padStart(2, '0');
-            const s = String(secs % 60).padStart(2, '0');
-            timeSpentStr = `${m}:${s}`;
+            timeSpentSecs = Math.floor(audioRef.current.currentTime);
         } else if (testType === 'reading' && readingStartRef.current) {
-            const elapsed = Math.floor((Date.now() - readingStartRef.current) / 1000);
-            const m = String(Math.floor(elapsed / 60)).padStart(2, '0');
-            const s = String(elapsed % 60).padStart(2, '0');
-            timeSpentStr = `${m}:${s}`;
+            timeSpentSecs = Math.floor((Date.now() - readingStartRef.current) / 1000);
         }
 
+        const timeSpentStr = `${String(Math.floor(timeSpentSecs / 60)).padStart(2, '0')}:${String(timeSpentSecs % 60).padStart(2, '0')}`;
+
+        // Try server-side scoring if logged in
+        const hasToken = !!getAccessToken();
+        if (hasToken && routeTestId) {
+            setSubmitting(true);
+            try {
+                const bookSlug = routeTestId.split('-test-')[0];
+                const testSlug = `test-${routeTestId.split('-test-')[1]}`;
+                const { data } = await axiosInstance.post(
+                    `/${testType}/${examType}/books/${bookSlug}/tests/${testSlug}/submit`,
+                    { answers, timeSpent: timeSpentSecs }
+                );
+                const serverResult = data.data;
+
+                navigate(`/${examType}/${testType}/${routeTestId}/result`, {
+                    state: {
+                        testTitle: testData.title,
+                        testType,
+                        totalQuestions: testData.totalQuestions,
+                        timeSpent: timeSpentStr,
+                        userAnswers: answers,
+                        bandScore: serverResult.bandScore,
+                        correctAnswers: serverResult.correctAnswers,
+                        results: serverResult.results,
+                    },
+                });
+                return;
+            } catch (err) {
+                console.error('Server submit failed, falling back to client scoring:', err);
+                toast.error('Could not save to server. Scoring locally.');
+            } finally {
+                setSubmitting(false);
+            }
+        }
+
+        // Fallback: client-side scoring
         navigate(`/${examType}/${testType}/${routeTestId}/result`, {
             state: {
                 testTitle: testData.title,

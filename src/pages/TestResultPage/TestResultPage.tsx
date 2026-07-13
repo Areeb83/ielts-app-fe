@@ -1,10 +1,11 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useSetAtom } from "jotai";
 import { FaUser, FaHome, FaRedo } from "react-icons/fa";
 import { isNavbarFooterVisibleAtom } from "../../store/uiStore";
-import { getAnswerKey } from "../../data/answerKeys";
+import { fetchAnswerKey } from "../../data/answerKeys";
 import { scoreTest } from "../../utils/scoring";
+import type { ScoreResult } from "../../utils/scoring";
 import type { AnswerMap } from "../../types/question";
 
 interface ResultState {
@@ -13,6 +14,10 @@ interface ResultState {
     totalQuestions: number;
     timeSpent: string;
     userAnswers: AnswerMap;
+    // Server-scored (present when user is authenticated)
+    bandScore?: number;
+    correctAnswers?: number;
+    results?: { questionNumber: number; isCorrect: boolean }[];
 }
 
 /** Circular progress ring — matches the test listing page style */
@@ -74,12 +79,31 @@ const TestResultPage: React.FC = () => {
 
     const state = location.state as ResultState | undefined;
 
-    // Score the test using the answer key
-    const scoreResult = useMemo(() => {
-        if (!state || !testId) return null;
-        const answerKey = getAnswerKey(testId, state.testType);
-        if (!answerKey) return null;
-        return scoreTest(state.userAnswers, answerKey);
+    const [scoreResult, setScoreResult] = useState<ScoreResult | null>(null);
+
+    useEffect(() => {
+        if (!state || !testId) return;
+
+        // If server already scored it, use that directly
+        if (state.bandScore !== undefined && state.correctAnswers !== undefined) {
+            setScoreResult({
+                correct: state.correctAnswers,
+                total: state.totalQuestions,
+                bandScore: state.bandScore,
+                results: (state.results ?? []).map((r) => ({
+                    questionNumber: r.questionNumber,
+                    isCorrect: r.isCorrect,
+                    userAnswer: '',
+                    correctAnswers: [],
+                })),
+            });
+            return;
+        }
+
+        // Fallback: client-side scoring
+        fetchAnswerKey(testId, state.testType).then((answerKey) => {
+            if (answerKey) setScoreResult(scoreTest(state.userAnswers, answerKey));
+        });
     }, [state, testId]);
 
     if (!state) {

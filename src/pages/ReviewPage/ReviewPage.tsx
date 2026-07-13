@@ -8,13 +8,14 @@ import Footer, { type FooterPart } from "../../components/TestDetailComponents/F
 import QuestionRenderer from "../../components/TestDetailComponents/QuestionTypes/QuestionRenderer";
 import ReadingPassage from "../../components/TestDetailComponents/TestDetailContainer/ReadingPassage";
 import SplitPane from "../../components/ui/SplitPane/SplitPane";
-import { getTestData } from "../../data/testDataMaps";
-import { getAnswerKey } from "../../data/answerKeys";
-import { getTranscript } from "../../data/transcriptMaps";
+import { fetchAnswerKey } from "../../data/answerKeys";
+import { fetchTranscript } from "../../data/transcriptMaps";
+import type { TranscriptData } from "../../data/transcriptMaps";
 import TranscriptPane from "../../components/TestDetailComponents/TranscriptPane/TranscriptPane";
 import { scoreTest } from "../../utils/scoring";
-import type { AnswerMap, MatchingHeadingData } from "../../types/question";
+import type { AnswerMap, TestData, MatchingHeadingData } from "../../types/question";
 import type { ScoreResult, QuestionResult } from "../../utils/scoring";
+import axiosInstance from "../../api/axiosInstance";
 import "../../styles/TestPagesStyle.css";
 import "./ReviewPage.css";
 
@@ -87,18 +88,50 @@ const ReviewPage: React.FC = () => {
 
     // Load test data and score — infer testType from URL if state is missing
     const testType = state?.testType ?? (location.pathname.includes("/listening/") ? "listening" : "reading");
-    const testData = testId ? getTestData(testId, testType) : null;
     const userAnswers = state?.userAnswers ?? {};
 
-    const scoreResult = useMemo(() => {
-        if (state?.scoreResult) return state.scoreResult;
-        if (!testId) return null;
-        const answerKey = getAnswerKey(testId, testType);
-        if (!answerKey) return null;
-        return scoreTest(userAnswers, answerKey);
-    }, [state, testId, testType, userAnswers]);
-
+    const [testData, setTestData] = useState<TestData | null>(null);
+    const [scoreResult, setScoreResult] = useState<ScoreResult | null>(state?.scoreResult ?? null);
+    const [transcriptData, setTranscriptData] = useState<TranscriptData | null>(null);
+    const [loading, setLoading] = useState(true);
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+    const [activeQuestion, setActiveQuestion] = useState(1);
+
+    useEffect(() => {
+        if (!testId) return;
+
+        const isListening = testType === "listening";
+
+        const bookSlug = testId.split('-test-')[0];
+        const testSlug = `test-${testId.split('-test-')[1]}`;
+        const skill = isListening ? 'listening' : 'reading';
+
+        const promises: [Promise<any>, Promise<any>, Promise<TranscriptData | null>] = [
+            axiosInstance.get(`/${skill}/academic/books/${bookSlug}/tests/${testSlug}`),
+            !state?.scoreResult ? fetchAnswerKey(testId, testType) : Promise.resolve(null),
+            isListening ? fetchTranscript(testId) : Promise.resolve(null),
+        ];
+
+        Promise.all(promises).then(([testRes, answerKey, transcript]) => {
+            setTestData(testRes.data.data as TestData);
+            if (answerKey && !state?.scoreResult) {
+                setScoreResult(scoreTest(userAnswers, answerKey));
+            }
+            if (transcript) setTranscriptData(transcript);
+            setLoading(false);
+        }).catch((err) => {
+            console.error('Failed to load review data:', err);
+            setLoading(false);
+        });
+    }, [testId, testType]);
+
+    if (loading) {
+        return (
+            <div className="flex items-center justify-center h-screen">
+                <div className="text-center text-gray-500">Loading review...</div>
+            </div>
+        );
+    }
 
     if (!testData || !scoreResult) {
         return (
@@ -163,9 +196,6 @@ const ReviewPage: React.FC = () => {
         };
     });
 
-    const [activeQuestion, setActiveQuestion] = useState(
-        currentSection?.questionGroups[0]?.startQuestion ?? 1
-    );
 
     // Find the actual DOM element for a question number (same logic as test detail page)
     const findQuestionElement = (q: number): Element | null => {
@@ -282,9 +312,6 @@ const ReviewPage: React.FC = () => {
             </div>
         </div>
     );
-
-    // Load transcript for listening tests
-    const transcriptData = isListening && testId ? getTranscript(testId) : null;
 
     // ─── Left pane: Reading passage or Listening transcript ──────────────
     const renderPassagePane = () => {

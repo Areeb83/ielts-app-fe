@@ -1,29 +1,34 @@
 import { motion } from 'motion/react';
 import { Check, Zap, Crown, Star } from 'lucide-react';
-import { Footer } from '../components/Footer';
 
 export function PricingPage() {
   const plans = [
     {
-      name: 'Free',
-      price: '$0',
-      period: 'forever',
-      description: 'Perfect for getting started',
+      name: '1 Month',
+      price: '$19',
+      period: 'month',
+      totalPrice: '$19',
+      description: 'Try it out for a month',
       icon: Star,
       features: [
-        'Access to 5 practice tests',
-        'Basic progress tracking',
-        'Reading & Listening tests',
-        'Community support',
+        'Unlimited access to all tests',
+        'All 4 skills (L, R, W, S)',
+        'Detailed performance analytics',
+        'Speaking practice with AI',
+        'Writing evaluation & feedback',
+        'Progress tracking',
+        'Email support',
       ],
-      cta: 'Start Free',
+      cta: 'Get Started',
       popular: false,
     },
     {
-      name: 'Pro',
-      price: '$29',
-      period: 'per month',
-      description: 'Most popular for serious learners',
+      name: '2 Months',
+      price: '$14.50',
+      period: 'month',
+      totalPrice: '$29',
+      savings: 'Save 24%',
+      description: 'Most popular choice',
       icon: Zap,
       features: [
         'Unlimited access to all tests',
@@ -34,25 +39,27 @@ export function PricingPage() {
         'Downloadable score reports',
         'Priority email support',
       ],
-      cta: 'Start Pro Trial',
+      cta: 'Get 2 Months',
       popular: true,
     },
     {
-      name: 'Premium',
-      price: '$79',
-      period: 'per month',
-      description: 'For those who want it all',
+      name: '6 Months',
+      price: '$13.17',
+      period: 'month',
+      totalPrice: '$79',
+      savings: 'Save 31%',
+      description: 'Best value for your journey',
       icon: Crown,
       features: [
-        'Everything in Pro',
-        '1-on-1 tutoring sessions (4/month)',
-        'Personalized study plan',
-        'Mock test evaluation by experts',
-        'Speaking practice with native tutors',
-        'Custom test creation',
-        '24/7 priority support',
+        'Unlimited access to all tests',
+        'All 4 skills (L, R, W, S)',
+        'Detailed performance analytics',
+        'Speaking practice with AI',
+        'Writing evaluation & feedback',
+        'Downloadable score reports',
+        'Priority email support',
       ],
-      cta: 'Get Premium',
+      cta: 'Get 6 Months',
       popular: false,
     },
   ];
@@ -74,11 +81,11 @@ export function PricingPage() {
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Choose Your
-            <span className="block text-orange-500">Learning Path</span>
+            <span className="block text-orange-500">Duration</span>
           </h1>
 
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Start free and upgrade when you're ready. All plans include access to our Cambridge IELTS test library.
+            All plans include full access to our Cambridge IELTS test library. The longer you commit, the more you save.
           </p>
         </motion.div>
 
@@ -113,18 +120,28 @@ export function PricingPage() {
                   <p className="text-gray-600 mb-6">{plan.description}</p>
 
                   {/* Price */}
-                  <div className="mb-6">
+                  <div className="mb-2">
                     <div className="flex items-baseline gap-2">
                       <span className="text-5xl font-bold text-gray-900">{plan.price}</span>
                       <span className="text-gray-600">/ {plan.period}</span>
                     </div>
                   </div>
 
+                  {/* Total + Savings */}
+                  <div className="mb-6 flex items-center gap-2">
+                    <span className="text-sm text-gray-500">Billed {plan.totalPrice} total</span>
+                    {plan.savings && (
+                      <span className="text-xs font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">
+                        {plan.savings}
+                      </span>
+                    )}
+                  </div>
+
                   {/* CTA Button */}
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full py-3 px-6 rounded-lg font-medium mb-8 transition-colors ${plan.popular
+                    className={`w-full py-3 px-6 rounded-lg font-medium mb-8 transition-colors cursor-pointer ${plan.popular
                         ? 'bg-orange-500 text-white hover:bg-orange-600 shadow-lg'
                         : 'bg-gray-900 text-white hover:bg-gray-800'
                       }`}
@@ -164,20 +181,20 @@ export function PricingPage() {
           <div className="space-y-6">
             {[
               {
-                question: 'Can I change plans later?',
-                answer: 'Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately.',
+                question: 'Can I change my plan duration later?',
+                answer: 'Yes! You can upgrade to a longer duration at any time. The remaining balance from your current plan will be applied.',
               },
               {
-                question: 'Is there a free trial for paid plans?',
-                answer: 'Yes, we offer a 7-day free trial for both Pro and Premium plans. No credit card required.',
+                question: 'Is there a free trial?',
+                answer: 'We offer 5 free practice tests so you can try the platform before committing to a plan.',
               },
               {
                 question: 'What payment methods do you accept?',
-                answer: 'We accept all major credit cards, PayPal, and bank transfers for annual subscriptions.',
+                answer: 'We accept payments via bank transfer. After selecting a plan, you will receive our bank details to complete the transaction.',
               },
               {
                 question: 'Can I get a refund?',
-                answer: 'Yes, we offer a 30-day money-back guarantee if you\'re not satisfied with your purchase.',
+                answer: 'Yes, we offer a 7-day money-back guarantee if you\'re not satisfied with your purchase.',
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
@@ -202,13 +219,12 @@ export function PricingPage() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white text-orange-600 rounded-lg font-medium shadow-lg hover:shadow-xl transition-shadow"
+            className="px-8 py-4 bg-white text-orange-600 rounded-lg font-medium shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
           >
             Contact Support
           </motion.button>
         </motion.div>
       </div>
-
     </div>
   );
 }

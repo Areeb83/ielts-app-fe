@@ -1,14 +1,17 @@
 
-import { Headphones, Clock, BookOpen, ChevronLeft, ChevronRight, GraduationCap, Globe, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
+import { Headphones, Clock, BookOpen, ChevronLeft, ChevronRight, GraduationCap, Globe, Loader2, AlertCircle, RefreshCw, Lock } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { useListeningBooks } from '../hooks';
+import { useAuthGuard } from '../hooks/useAuthGuard';
+import { AuthRequiredModal } from '../components/AuthRequiredModal';
 import type { TestData } from '../api/types';
 import { buildListeningTestRoute } from '../constants';
 
 export function ListeningTestsPage() {
   const { examType } = useParams<{ examType: string }>();
   const navigate = useNavigate();
+  const { guardedNavigate, showAuthModal, onLogin, onRegister, onCloseModal } = useAuthGuard();
   const isAcademic = examType === 'academic';
   const examLabel = isAcademic ? 'Academic' : 'General Training';
 
@@ -311,24 +314,37 @@ export function ListeningTestsPage() {
                               </div>
 
                               <div className="mt-5 flex flex-col gap-2">
-                                <button
-                                  type="button"
-                                  onClick={() => navigate(buildListeningTestRoute(examType!, test.id))}
-                                  className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted
-                                    ? 'bg-white text-orange-600 border-orange-500 hover:bg-orange-50'
-                                    : 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'
-                                    }`}
-                                >
-                                  {isCompleted ? 'Retake' : 'Start Test'}
-                                </button>
-
-                                {isCompleted && (
+                                {test.locked ? (
                                   <button
                                     type="button"
-                                    className="w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 border-gray-200 text-gray-700 hover:bg-gray-50"
+                                    disabled
+                                    className="w-full px-4 py-2 rounded-lg font-medium border-2 border-gray-200 bg-gray-100 text-gray-400 flex items-center justify-center gap-2 cursor-not-allowed"
                                   >
-                                    Review
+                                    <Lock className="w-4 h-4" />
+                                    Upgrade to Pro
                                   </button>
+                                ) : (
+                                  <>
+                                    <button
+                                      type="button"
+                                      onClick={() => guardedNavigate(buildListeningTestRoute(examType!, test.id))}
+                                      className={`w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 ${isCompleted
+                                        ? 'bg-white text-orange-600 border-orange-500 hover:bg-orange-50'
+                                        : 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'
+                                        }`}
+                                    >
+                                      {isCompleted ? 'Retake' : 'Start Test'}
+                                    </button>
+
+                                    {isCompleted && (
+                                      <button
+                                        type="button"
+                                        className="w-full px-4 py-2 rounded-lg font-medium transition-colors border-2 border-gray-200 text-gray-700 hover:bg-gray-50"
+                                      >
+                                        Review
+                                      </button>
+                                    )}
+                                  </>
                                 )}
                               </div>
                             </div>
@@ -425,6 +441,13 @@ export function ListeningTestsPage() {
           </motion.div>
         </div>
       </section>
+
+      <AuthRequiredModal
+        open={showAuthModal}
+        onClose={onCloseModal}
+        onLogin={onLogin}
+        onRegister={onRegister}
+      />
     </div>
   );
 }

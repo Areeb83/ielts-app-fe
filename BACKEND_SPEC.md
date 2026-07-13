@@ -24,8 +24,8 @@
 |---------------|-----------------------------|
 | Runtime       | Node.js                     |
 | Framework     | Express.js (or NestJS)      |
-| Database      | PostgreSQL                  |
-| ORM           | Prisma (or TypeORM)         |
+| Database      | MongoDB                     |
+| ODM           | Mongoose                    |
 | Auth          | JWT (access + refresh)      |
 | Validation    | Zod (or Joi)                |
 | File Storage  | S3 / Cloudflare R2 (audio)  |

@@ -7,6 +7,11 @@ import { SpeakingTestsPage } from "../pages/SpeakingTestsPage";
 import { AcademicTestsPage } from "../pages/AcademicTestsPage";
 import { GeneralTestsPage } from "../pages/GeneralTestsPage";
 import { PricingPage } from "../pages/PricingPage";
+import { LoginPage } from "../pages/LoginPage";
+import { RegisterPage } from "../pages/RegisterPage";
+import { ForgotPasswordPage } from "../pages/ForgotPasswordPage";
+import { ProfilePage } from "../pages/ProfilePage";
+import { ProgressPage } from "../pages/ProgressPage";
 import { ListeningTestActualPage } from "../pages/ListeningTestPage/ListeningTestActualPage";
 import { ReadingTestActualPage } from "../pages/ReadingTestPage/ReadingTestActualPage";
 import TestResultPage from "../pages/TestResultPage/TestResultPage";
@@ -17,6 +22,11 @@ const NormalRoutes = () => {
     return (
         <Routes>
             <Route path={ROUTES.HOME} element={<HomePage />} />
+            <Route path={ROUTES.LOGIN} element={<LoginPage />} />
+            <Route path={ROUTES.REGISTER} element={<RegisterPage />} />
+            <Route path={ROUTES.FORGOT_PASSWORD} element={<ForgotPasswordPage />} />
+            <Route path={ROUTES.PROFILE} element={<ProfilePage />} />
+            <Route path={ROUTES.PROGRESS} element={<ProgressPage />} />
 
             {/* Dynamic exam type routes: :examType will be "academic" or "general" */}
             <Route path={ROUTES.LISTENING} element={<ListeningTestsPage />} />

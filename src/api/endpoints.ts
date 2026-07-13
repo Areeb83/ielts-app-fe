@@ -28,6 +28,11 @@ export const ENDPOINTS = {
   // ─── Reading Tests ───────────────────────────────────────────────────────
   READING: {
     BOOKS: (examType: string) => `/reading/${examType}/books`,
+    TEST_DETAIL: (examType: string, bookId: string, testId: string) =>
+      `/reading/${examType}/books/${bookId}/tests/${testId}`,
+    SUBMIT_TEST: (examType: string, bookId: string, testId: string) =>
+      `/reading/${examType}/books/${bookId}/tests/${testId}/submit`,
+    USER_RESULTS: (examType: string) => `/reading/${examType}/results`,
   },
 
   // ─── Writing Tests ───────────────────────────────────────────────────────
