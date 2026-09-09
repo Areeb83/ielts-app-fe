@@ -1,6 +1,14 @@
-node_modules
-dist
-dist-ssr
-*.local
-.vscode
+# Dependencies
+node_modules/
+
+# Local media and personal documents - deliberately kept off GitHub.
+# Leading slash = root folders only, so Frontend/public/audios stays tracked.
+/audios/
+/ielts books/
+
+# Secrets
+Backend/.env
+
+# OS / editor
 .DS_Store
+Thumbs.db

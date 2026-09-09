@@ -1,32 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1LcVj3uu0C-jOQaJcg6h5ThSDFQrjWb26\" -o \"C:/Users/Laptopwala/Desktop/orange ielts/Frontend/public/images/book-12-test-4-part2-map.jpg\")",
-      "Bash(curl:*)",
-      "Bash(xargs grep:*)",
-      "Bash(for f:*)",
-      "Bash(do echo:*)",
-      "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/data/academic/**)",
-      "Bash(done)",
-      "Bash(do node:*)",
-      "Bash(do)",
-      "Bash(sed -i 's/\"\"paragraphOptions\"\"/\"\"paragraphs\"\"/g' \"$f\")",
-      "Bash(grep -r \"acceptedAnswers\\\\|answerType\\\\|SINGLE\\\\|MULTIPLE\" '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' --include=*.ts --include=*.tsx)",
-      "Bash(find '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' -type f \\\\\\(-name *util* -o -name *service* -o -name *helper* \\\\\\) \\\\\\(-name *.ts -o -name *.tsx \\\\\\))",
-      "Bash(grep -r \"import.*answers\\\\|import.*answer\" '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' --include=*.ts --include=*.tsx)",
-      "Bash(grep -r \"import.*test.*answers\\\\|\\\\.json.*answers\" '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' --include=*.ts --include=*.tsx)",
-      "Bash(find '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' -name README* -o -name readme*)",
-      "Bash(grep -r \"TODO\\\\|FIXME\\\\|grading\\\\|grade\" '/c/Users/Laptopwala/Desktop/orange ielts/Frontend/src' --include=*.ts --include=*.tsx)",
-      "Bash(node -e \"const d = require\\(''./src/data/academic/book-19/reading/test-1.json''\\); console.log\\(JSON.stringify\\(d.sections[0].passage?.sections?.[0], null, 2\\)\\)\")",
+      "Bash(npm run:*)",
+      "Bash(timeout 20 node index.js)",
       "Bash(node -e \":*)",
-      "Bash(grep -E \"\\\\.\\(tsx?|jsx?\\)$\")",
-      "Bash(npx tsc:*)",
-      "Bash(grep -E \"\\\\.\\(css|scss\\)$\")",
-      "Bash(npx vite:*)",
-      "Bash(for dir:*)",
-      "Read(//c/Users/Laptopwala/Desktop/orange ielts/Frontend/src/components/TestDetailComponents/QuestionTypes/**)",
+      "Bash(npm uninstall:*)",
       "Bash(node:*)",
-      "Bash(grep -E \"\\\\.\\(ts|tsx\\)$\")"
+      "Bash(npx tsc:*)",
+      "Bash(for b:*)",
+      "Bash(do echo:*)",
+      "Bash(done)",
+      "Bash(find 'C:\\\\Users\\\\Laptopwala\\\\Desktop\\\\orange ielts\\\\Frontend\\\\src' -path */routes/* -o -name routes.tsx)",
+      "Bash(grep -r \"Sign Out\\\\|My Profile\\\\|My Progress\" 'C:\\\\Users\\\\Laptopwala\\\\Desktop\\\\orange ielts\\\\Frontend\\\\src' --include=*.tsx --include=*.ts)",
+      "Bash(npm install:*)",
+      "Bash(find 'C:\\\\Users\\\\Laptopwala\\\\Desktop\\\\orange ielts\\\\Frontend' -name main.tsx -o -name .env*)"
     ]
   }
 }
